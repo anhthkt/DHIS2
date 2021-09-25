@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="../api/apps/HISPVN-Core-Modules/EHA/report/css/loading.css" />
     <script src="../api/apps/p2CustomReport/js/CommonUtil.js"></script>
     <script src="../api/apps/p2CustomReport/js/DataValueUtil.js"></script>
-    <script src="../api/apps/ha_ncd_customreport/js/tcla_db.js"></script>
-    <link type="text/css" rel="stylesheet" media="screen,print" href="../dhis-web-commons/css/widgets.css?_rev=9d1554c" />
+    <script src="../api/apps/p2KlnReports/js/tcla_db.js"></script>
+    <link type="text/css" rel="stylesheet" media="screen,print"
+        href="../dhis-web-commons/css/widgets.css?_rev=9d1554c" />
 
     <style>
         @keyframes spinner {
@@ -132,7 +133,7 @@
                 <button class="tablinks" onclick="changeSection(event, 'All')">Show All</button>
             </div> -->
     </div>
-    
+
     <div id="printingTable">
         <div id="Sec3" class="tabcontent active">
             <table id="table_id3" class="row-border" width="100%">
@@ -146,7 +147,9 @@
                         <th style="text-align: center;" rowspan="2">Ngày phát hiện</th>
                         <th style="text-align: center;" rowspan="2">Nơi phát hiện</th>
                         <th style="text-align: center;" rowspan="2">Phân loại bệnh</th>
-                        <th style="text-align: center;" colspan="12">Kết quả quản lý điều trị của bệnh nhân theo tháng (Có đến khám: Có đạt mục tiêu điều trị = C; Không đạt = K; Không đến khám/Không biết = để trống)</th>
+                        <th style="text-align: center;" colspan="12">Kết quả quản lý điều trị của bệnh nhân theo tháng
+                            (Có đến khám: Có đạt mục tiêu điều trị = C; Không đạt = K; Không đến khám/Không biết = để
+                            trống)</th>
                         <th style="text-align: center;" rowspan="2">Ghi chú</th>
                     </tr>
                     <tr>
@@ -255,7 +258,7 @@
                 </thead>
             </table>
         </div>
-        
+
     </div>
 
     <div id="overlay" class="report">
@@ -327,9 +330,9 @@
     var config = {
         baseUrl: "http://daotao.tkyt.vn/kln/",
         username: "anhth",
-        password: "Cntt2018@)!*",
+        password: "Csdl2018@)!*",
     };
-    let desURL = debugging ? 'http://daotao.tkyt.vn/kln' : '..'
+    var desURL;
 
     var allowOrg = null;
     var banOrg = null;
@@ -419,7 +422,7 @@
     };
     async function isAllowedOrg(selectedOrgID) {
 
-        let banOrgPull = await pull('api/organisationUnits.json?paging=false&filter=level:in:[1,2]');
+        let banOrgPull = await pull('api/organisationUnits.json?paging=false&filter=level:in:[1,2,3]');
         banOrg = banOrgPull.organisationUnits.map(e => e.id);
 
         if (banOrg && allowOrg) {
@@ -483,7 +486,7 @@
                         //Check orgSelect
                         let allowedOrg = await isAllowedOrg(orgUnitSelectedID)
                         if (!allowedOrg.isAllowed) {
-                            $("#alert").text('Báo cáo này chỉ áp dụng đến tuyến xã.');
+                            $("#alert").text('Báo cáo này chỉ áp dụng cho tuyến xã.');
                         } else {
                             $(this).dialog("close");
                             $(".titleOu").text(orgUnitSelected.name);
@@ -635,6 +638,13 @@
         if (['http://kln.tkyt.vn', 'http://daotao.tkyt.vn'].includes(window.parent.location.origin)) {
             debugging = false;//product is require FALSE
         }
+
+        let mapBaseUrl = {
+            "daotao.tkyt.vn": window.parent.location.origin + "/kln",
+            "kln.tkyt.vn": window.parent.location.origin
+        }
+
+        desURL = debugging ? "http://daotao.tkyt.vn/kln" : mapBaseUrl[window.parent.location.hostname];
         if (debugging) {
             orgUnitSelected = { id: "LOdti1gATwC", name: "Việt nam" }
         }
