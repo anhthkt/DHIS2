@@ -1,0 +1,657 @@
+{
+    "indicators": [
+        {
+            "lastUpdated": "2021-09-07T12:44:14.485",
+            "id": "p9AB1vax19l",
+            "created": "2021-09-07T12:44:14.485",
+            "name": "TYT chỉ có thuốc kết hợp điều trị ĐTĐ",
+            "shortName": "TYT chỉ có thuốc kết hợp điều trị ĐTĐ",
+            "publicAccess": "rw------",
+            "denominatorDescription": "1",
+            "numeratorDescription": "TYT chỉ có thuốc kết hợp điều trị ĐTĐ",
+            "numerator": "I{wiJACsR3t0M}",
+            "denominator": "1",
+            "annualized": false,
+            "indicatorType": {
+                "id": "k8VJ2uMXQcf"
+            },
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "translations": [],
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "userAccesses": [],
+            "legendSets": []
+        },
+        {
+            "lastUpdated": "2021-09-07T12:35:26.020",
+            "id": "Fkdf0iuATzH",
+            "created": "2021-09-07T12:35:26.020",
+            "name": "TYT có 1 nhóm thuốc THA",
+            "shortName": "TYT có 1 nhóm thuốc THA",
+            "publicAccess": "rw------",
+            "denominatorDescription": "1",
+            "numeratorDescription": "TYT có 1 nhóm thuốc THA",
+            "numerator": "I{FwPDQTHN9T4}",
+            "denominator": "1",
+            "annualized": false,
+            "indicatorType": {
+                "id": "k8VJ2uMXQcf"
+            },
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "translations": [],
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "userAccesses": [],
+            "legendSets": []
+        },
+        {
+            "lastUpdated": "2021-09-07T12:40:55.106",
+            "id": "K1rpNTNEPp6",
+            "created": "2021-09-07T12:40:55.106",
+            "name": "TYT có 1 nhóm thuốc ĐTĐ",
+            "shortName": "TYT có 1 nhóm thuốc ĐTĐ",
+            "publicAccess": "rw------",
+            "denominatorDescription": "1",
+            "numeratorDescription": "TYT có 1 nhóm thuốc ĐTĐ",
+            "numerator": "I{RJe1I8cOFSQ}",
+            "denominator": "1",
+            "annualized": false,
+            "indicatorType": {
+                "id": "k8VJ2uMXQcf"
+            },
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "translations": [],
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "userAccesses": [],
+            "legendSets": []
+        },
+        {
+            "lastUpdated": "2021-09-07T12:37:25.165",
+            "id": "vUAbs8p2wmm",
+            "created": "2021-09-07T12:37:25.165",
+            "name": "TYT có 2 nhóm thuốc THA",
+            "shortName": "TYT có 2 nhóm thuốc THA",
+            "publicAccess": "rw------",
+            "denominatorDescription": "1",
+            "numeratorDescription": "TYT có 2 nhóm thuốc THA",
+            "numerator": "I{GvQvbPwSqD1}",
+            "denominator": "1",
+            "annualized": false,
+            "indicatorType": {
+                "id": "k8VJ2uMXQcf"
+            },
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "translations": [],
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "userAccesses": [],
+            "legendSets": []
+        },
+        {
+            "lastUpdated": "2021-09-07T12:42:37.029",
+            "id": "zkfCcqs7At7",
+            "created": "2021-09-07T12:42:37.029",
+            "name": "TYT có 2 nhóm thuốc ĐTĐ",
+            "shortName": "TYT có 2 nhóm thuốc ĐTĐ",
+            "publicAccess": "rw------",
+            "denominatorDescription": "1",
+            "numeratorDescription": "TYT có 2 nhóm thuốc ĐTĐ",
+            "numerator": "I{GGYz8MQ9Xtg}",
+            "denominator": "1",
+            "annualized": false,
+            "indicatorType": {
+                "id": "k8VJ2uMXQcf"
+            },
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "translations": [],
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "userAccesses": [],
+            "legendSets": []
+        },
+        {
+            "lastUpdated": "2021-09-07T12:39:07.558",
+            "id": "YFfWIRFvSyB",
+            "created": "2021-09-07T12:39:07.558",
+            "name": "TYT có 3 nhóm thuốc THA",
+            "shortName": "TYT có 3 nhóm thuốc THA",
+            "publicAccess": "rw------",
+            "denominatorDescription": "1",
+            "numeratorDescription": "TYT có 3 nhóm thuốc THA",
+            "numerator": "I{LwOyIPMAfRV}",
+            "denominator": "1",
+            "annualized": false,
+            "indicatorType": {
+                "id": "k8VJ2uMXQcf"
+            },
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "translations": [],
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "userAccesses": [],
+            "legendSets": []
+        },
+        {
+            "lastUpdated": "2021-09-08T04:06:40.317",
+            "id": "aYsoCLL5NwL",
+            "created": "2021-05-27T08:06:37.230",
+            "name": "TYT có dự trữ đủ thuốc THA",
+            "shortName": "TYT có dự trữ đủ thuốc THA",
+            "publicAccess": "rw------",
+            "denominatorDescription": "Số bệnh nhân THA đến khám và lấy thuốc",
+            "numeratorDescription": "Tổng số viên thuốc điều trị THA hiện có",
+            "numerator": "#{rlLecgNVVwl}",
+            "denominator": "I{P00QerkeEMD}  * 30 ",
+            "annualized": false,
+            "decimals": 2,
+            "indicatorType": {
+                "id": "k8VJ2uMXQcf"
+            },
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "translations": [],
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "userAccesses": [],
+            "legendSets": []
+        },
+        {
+            "lastUpdated": "2021-09-08T04:06:57.678",
+            "id": "DWAdkfy81PO",
+            "created": "2021-05-27T08:43:25.238",
+            "name": "TYT có dự trữ đủ thuốc ĐTĐ",
+            "shortName": "TYT có dự trữ đủ thuốc ĐTĐ",
+            "publicAccess": "rw------",
+            "denominatorDescription": "Số bệnh nhân ĐTĐ đến khám và lấy thuốc",
+            "numeratorDescription": "Tổng số viên thuốc điều trị ĐTĐ hiện có",
+            "numerator": "#{MLLIbQrTQRD}",
+            "denominator": "I{HE3RjMFz3Av} * 30",
+            "annualized": false,
+            "decimals": 2,
+            "indicatorType": {
+                "id": "k8VJ2uMXQcf"
+            },
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "translations": [],
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "userAccesses": [],
+            "legendSets": []
+        },
+        {
+            "lastUpdated": "2021-09-08T03:09:36.095",
+            "id": "eaHru6nZlFa",
+            "created": "2021-09-07T12:34:50.306",
+            "name": "TYT không khám và cấp thuốc THA trong tháng vừa qua",
+            "shortName": "TYT không khám và cấp thuốc THA trong tháng ",
+            "publicAccess": "rw------",
+            "denominatorDescription": "1",
+            "numeratorDescription": "TYT không có thuốc THA",
+            "numerator": "I{V1hxPC3aKKm}",
+            "denominator": "1",
+            "annualized": false,
+            "indicatorType": {
+                "id": "k8VJ2uMXQcf"
+            },
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "translations": [],
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "userAccesses": [],
+            "legendSets": []
+        },
+        {
+            "lastUpdated": "2021-09-08T03:09:55.285",
+            "id": "O4YvZVBx2Dt",
+            "created": "2021-09-07T13:00:01.670",
+            "name": "TYT không khám và cấp thuốc ĐTĐ trong tháng vừa qua",
+            "shortName": "TYT không khám và cấp thuốc ĐTĐ trong tháng ",
+            "publicAccess": "rw------",
+            "denominatorDescription": "1",
+            "numeratorDescription": "TYT không có thuốc THA",
+            "numerator": "I{ePn8r5q4jgf}",
+            "denominator": "1",
+            "annualized": false,
+            "indicatorType": {
+                "id": "k8VJ2uMXQcf"
+            },
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "translations": [],
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "userAccesses": [],
+            "legendSets": []
+        },
+        {
+            "lastUpdated": "2021-09-07T12:45:41.561",
+            "id": "R15LuFYfGAs",
+            "created": "2021-09-07T12:45:41.561",
+            "name": "Tỷ lệ TYT chỉ có thuốc kết hợp điều trị ĐTĐ",
+            "shortName": "Tỷ lệ TYT chỉ có thuốc kết hợp điều trị ĐTĐ",
+            "publicAccess": "rw------",
+            "denominatorDescription": "TYT có 1, 2 nhóm thuốc và thuốc kết hợp điều trị ĐTĐ",
+            "numeratorDescription": "TYT chỉ có thuốc kết hợp điều trị ĐTĐ",
+            "numerator": "I{wiJACsR3t0M}",
+            "denominator": "I{XLRrYsvr3QL}",
+            "annualized": false,
+            "indicatorType": {
+                "id": "eFtpkqL1lpJ"
+            },
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "translations": [],
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "userAccesses": [],
+            "legendSets": []
+        },
+        {
+            "lastUpdated": "2021-09-07T12:36:38.211",
+            "id": "QsXeHxPH6tx",
+            "created": "2021-09-07T12:36:38.211",
+            "name": "Tỷ lệ TYT có 1 nhóm thuốc THA",
+            "shortName": "Tỷ lệ TYT có 1 nhóm thuốc THA",
+            "publicAccess": "rw------",
+            "denominatorDescription": "TYT có từ 1 đến 3 nhóm thuốc THA",
+            "numeratorDescription": "TYT có 1 nhóm thuốc THA",
+            "numerator": "I{FwPDQTHN9T4}",
+            "denominator": "I{RxcAINe2HTv}",
+            "annualized": false,
+            "indicatorType": {
+                "id": "eFtpkqL1lpJ"
+            },
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "translations": [],
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "userAccesses": [],
+            "legendSets": []
+        },
+        {
+            "lastUpdated": "2021-09-07T12:41:41.210",
+            "id": "pPVBwHhV1yl",
+            "created": "2021-09-07T12:41:41.210",
+            "name": "Tỷ lệ TYT có 1 nhóm thuốc ĐTĐ",
+            "shortName": "Tỷ lệ TYT có 1 nhóm thuốc ĐTĐ",
+            "publicAccess": "rw------",
+            "denominatorDescription": "TYT có 1, 2 nhóm thuốc và thuốc kết hợp điều trị ĐTĐ",
+            "numeratorDescription": "TYT có 1 nhóm thuốc ĐTĐ",
+            "numerator": "I{RJe1I8cOFSQ}",
+            "denominator": "I{XLRrYsvr3QL}",
+            "annualized": false,
+            "indicatorType": {
+                "id": "eFtpkqL1lpJ"
+            },
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "translations": [],
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "userAccesses": [],
+            "legendSets": []
+        },
+        {
+            "lastUpdated": "2021-09-07T12:38:08.738",
+            "id": "SgnxaZNIrQy",
+            "created": "2021-09-07T12:38:08.738",
+            "name": "Tỷ lệ TYT có 2 nhóm thuốc THA",
+            "shortName": "Tỷ lệ TYT có 2 nhóm thuốc THA",
+            "publicAccess": "rw------",
+            "denominatorDescription": "TYT có từ 1 đến 3 nhóm thuốc THA",
+            "numeratorDescription": "TYT có 1 nhóm thuốc THA",
+            "numerator": "I{GvQvbPwSqD1}",
+            "denominator": "I{RxcAINe2HTv}",
+            "annualized": false,
+            "indicatorType": {
+                "id": "eFtpkqL1lpJ"
+            },
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "translations": [],
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "userAccesses": [],
+            "legendSets": []
+        },
+        {
+            "lastUpdated": "2021-09-07T12:43:41.973",
+            "id": "GrldGquVnZf",
+            "created": "2021-09-07T12:43:41.973",
+            "name": "Tỷ lệ TYT có 2 nhóm thuốc ĐTĐ",
+            "shortName": "Tỷ lệ TYT có 2 nhóm thuốc ĐTĐ",
+            "publicAccess": "rw------",
+            "denominatorDescription": "TYT có 1, 2 nhóm thuốc và thuốc kết hợp điều trị ĐTĐ",
+            "numeratorDescription": "TYT có 2 nhóm thuốc ĐTĐ",
+            "numerator": "I{GGYz8MQ9Xtg}",
+            "denominator": "I{XLRrYsvr3QL}",
+            "annualized": false,
+            "indicatorType": {
+                "id": "eFtpkqL1lpJ"
+            },
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "translations": [],
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "userAccesses": [],
+            "legendSets": []
+        },
+        {
+            "lastUpdated": "2021-09-07T12:39:37.019",
+            "id": "eQbvaUt2Aw3",
+            "created": "2021-09-07T12:39:37.019",
+            "name": "Tỷ lệ TYT có 3 nhóm thuốc THA",
+            "shortName": "Tỷ lệ TYT có 3 nhóm thuốc THA",
+            "publicAccess": "rw------",
+            "denominatorDescription": "TYT có từ 1 đến 3 nhóm thuốc THA",
+            "numeratorDescription": "TYT có 3 nhóm thuốc THA",
+            "numerator": "I{LwOyIPMAfRV}",
+            "denominator": "I{RxcAINe2HTv}",
+            "annualized": false,
+            "indicatorType": {
+                "id": "eFtpkqL1lpJ"
+            },
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "translations": [],
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "userAccesses": [],
+            "legendSets": []
+        },
+        {
+            "lastUpdated": "2021-09-08T04:20:15.254",
+            "id": "y4U7PN6nsUY",
+            "created": "2021-09-08T04:20:15.254",
+            "name": "Tỷ lệ TYT có huyết áp kế điện tử còn sử dụng được",
+            "shortName": "Tỷ lệ TYT có huyết áp kế điện tử còn sử dụng được",
+            "publicAccess": "rw------",
+            "denominatorDescription": "TYT có từ 1 đến 3 nhóm thuốc THA",
+            "numeratorDescription": "TYT có huyết áp kế điện tử còn sử dụng được",
+            "numerator": "D{m2os4g4edN7.j8iFtQyl0tQ}",
+            "denominator": "I{RxcAINe2HTv}",
+            "annualized": false,
+            "indicatorType": {
+                "id": "eFtpkqL1lpJ"
+            },
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "translations": [],
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "userAccesses": [],
+            "legendSets": []
+        },
+        {
+            "lastUpdated": "2021-09-08T04:18:02.104",
+            "id": "UNheACH9jZA",
+            "created": "2021-09-08T04:18:02.104",
+            "name": "Tỷ lệ TYT có thực hiện cấp thuốc 28-30 ngày cho phần lớn bệnh nhân THA",
+            "shortName": "Tỷ lệ TYT cấp thuốc 28-30 ngày cho phần lớn BN THA",
+            "publicAccess": "rw------",
+            "denominatorDescription": "TYT có từ 1 đến 3 nhóm thuốc THA",
+            "numeratorDescription": "Có thực hiện cấp thuốc 28-30 ngày cho phần lớn bệnh nhân THA",
+            "numerator": "D{m2os4g4edN7.yUgBbBWZYMi}",
+            "denominator": "I{RxcAINe2HTv}",
+            "annualized": false,
+            "indicatorType": {
+                "id": "eFtpkqL1lpJ"
+            },
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "translations": [],
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "userAccesses": [],
+            "legendSets": []
+        },
+        {
+            "lastUpdated": "2021-09-08T04:18:47.293",
+            "id": "AmqmHF9mqTJ",
+            "created": "2021-09-08T04:18:47.293",
+            "name": "Tỷ lệ TYT có thực hiện cấp thuốc 28-30 ngày cho phần lớn bệnh nhân ĐTĐ",
+            "shortName": "Tỷ lệ TYT cấp thuốc 28-30 ngày cho phần lớn BN ĐTĐ",
+            "publicAccess": "rw------",
+            "denominatorDescription": "TYT có từ 1 đến 3 nhóm thuốc THA",
+            "numeratorDescription": "Có thực hiện cấp thuốc 28-30 ngày cho phần lớn bệnh nhân ĐTĐ",
+            "numerator": "D{m2os4g4edN7.WHZjMfm4ay1}",
+            "denominator": "I{RxcAINe2HTv}",
+            "annualized": false,
+            "indicatorType": {
+                "id": "eFtpkqL1lpJ"
+            },
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "translations": [],
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "userAccesses": [],
+            "legendSets": []
+        },
+        {
+            "lastUpdated": "2021-09-08T03:28:45.253",
+            "id": "WrbSzIdEjN6",
+            "created": "2021-09-08T03:28:45.253",
+            "name": "Tỷ lệ TYT không khám và cấp thuốc THA trong tháng vừa qua",
+            "shortName": "Tỷ lệ TYT không khám và cấp thuốc THA trong tháng ",
+            "publicAccess": "rw------",
+            "denominatorDescription": "TYT có báo cáo biểu tổng hợp cung ứng thuốc THA và ĐTĐ",
+            "numeratorDescription": "TYT không khám và cấp thuốc THA trong tháng vừa qua",
+            "numerator": "I{V1hxPC3aKKm}",
+            "denominator": "I{oObJiIrCTCb}",
+            "annualized": false,
+            "indicatorType": {
+                "id": "eFtpkqL1lpJ"
+            },
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "translations": [],
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "userAccesses": [],
+            "legendSets": []
+        },
+        {
+            "lastUpdated": "2021-09-08T03:33:30.593",
+            "id": "nVSgYH9Nr1T",
+            "created": "2021-09-08T03:33:30.593",
+            "name": "Tỷ lệ TYT không khám và cấp thuốc ĐTĐ trong tháng vừa qua",
+            "shortName": "Tỷ lệ TYT không khám và cấp thuốc ĐTĐ trong tháng ",
+            "publicAccess": "rw------",
+            "denominatorDescription": "TYT có báo cáo biểu tổng hợp cung ứng thuốc THA và ĐTĐ",
+            "numeratorDescription": "TYT không khám và cấp thuốc ĐTĐ trong tháng vừa qua",
+            "numerator": "I{ePn8r5q4jgf}",
+            "denominator": "I{oObJiIrCTCb}",
+            "annualized": false,
+            "indicatorType": {
+                "id": "eFtpkqL1lpJ"
+            },
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "translations": [],
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "userAccesses": [],
+            "legendSets": []
+        }
+    ]
+}

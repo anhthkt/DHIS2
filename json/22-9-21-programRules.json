@@ -1,0 +1,48 @@
+{
+    "programRules": [
+        {
+            "created": "2021-09-22T21:12:45.682",
+            "lastUpdated": "2021-09-22T21:15:40.947",
+            "name": "THA_GhiRoChanDoan_Hide",
+            "id": "vxMiAkasz3G",
+            "condition": "#{THA_ChanDoan} != '5' ",
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "programStage": {
+                "id": "WeA1NcfqeyZ"
+            },
+            "program": {
+                "id": "NAleauPZvIE"
+            },
+            "translations": [],
+            "programRuleActions": [
+                
+            ]
+        },
+        {
+            "created": "2021-09-22T21:14:05.479",
+            "lastUpdated": "2021-09-22T21:24:48.829",
+            "name": "ĐTĐ_GhiRoChanDoan_Hide",
+            "id": "K6ngKw4w3ZS",
+            "condition": "#{DTD_ChanDoan}  != '4'",
+            "lastUpdatedBy": {
+                "displayName": "Hoang Tran Anh",
+                "id": "XS0QSpYe3nz",
+                "username": "anhth"
+            },
+            "programStage": {
+                "id": "zb4274oHwSq"
+            },
+            "program": {
+                "id": "a7arqsOKzsr"
+            },
+            "translations": [],
+            "programRuleActions": [
+                
+            ]
+        }
+    ]
+}

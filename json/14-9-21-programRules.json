@@ -1,0 +1,128 @@
+{
+    "programRules": [
+        {
+            "created": "2021-09-13T13:21:20.900",
+            "lastUpdated": "2021-09-14T07:46:21.574",
+            "name": "THA_HATT Cảnh báo làm tròn",
+            "id": "cOnFyO11QbM",
+            "priority": 2,
+            "condition": "d2:hasValue(#{THA_Validate_HATT}) && #{THA_Validate_HATT1} == '1' && (#{THA_Validate_HATT} == '0' || #{THA_Validate_HATT} == '5')",
+            "lastUpdatedBy": {
+                "displayName": "Hoang Tran Anh",
+                "id": "XS0QSpYe3nz",
+                "username": "anhth"
+            },
+            "programStage": {
+                "id": "WeA1NcfqeyZ"
+            },
+            "program": {
+                "id": "NAleauPZvIE"
+            },
+            "translations": [],
+            "programRuleActions": []
+        },
+        {
+            "created": "2021-09-14T06:56:27.582",
+            "lastUpdated": "2021-09-14T07:46:28.323",
+            "name": "THA_HATT Làm tròn Assign 0",
+            "id": "kJ6mVgn8eBW",
+            "condition": "!(d2:hasValue(#{HATamThu}) && (d2:right(d2:floor(#{HATamThu}*2),1)) == '0' && (#{HATamThu} - d2:floor(#{HATamThu})) == '0')",
+            "lastUpdatedBy": {
+                "displayName": "Hoang Tran Anh",
+                "id": "XS0QSpYe3nz",
+                "username": "anhth"
+            },
+            "programStage": {
+                "id": "WeA1NcfqeyZ"
+            },
+            "program": {
+                "id": "NAleauPZvIE"
+            },
+            "translations": [],
+            "programRuleActions": []
+        },
+        {
+            "created": "2021-09-14T06:55:56.395",
+            "lastUpdated": "2021-09-14T07:46:35.849",
+            "name": "THA_HATT Làm tròn Assign 1",
+            "id": "eaXlyjnzKuK",
+            "condition": "d2:hasValue(#{HATamThu}) && (d2:right(d2:floor(#{HATamThu}*2),1)) == '0' && (#{HATamThu} - d2:floor(#{HATamThu})) == '0'",
+            "lastUpdatedBy": {
+                "displayName": "Hoang Tran Anh",
+                "id": "XS0QSpYe3nz",
+                "username": "anhth"
+            },
+            "programStage": {
+                "id": "WeA1NcfqeyZ"
+            },
+            "program": {
+                "id": "NAleauPZvIE"
+            },
+            "translations": [],
+            "programRuleActions": []
+        },
+        {
+            "created": "2021-09-13T16:09:18.762",
+            "lastUpdated": "2021-09-14T02:24:19.177",
+            "name": "THA_HATTr Cảnh báo làm tròn",
+            "id": "Wwi29lvUhEU",
+            "priority": 2,
+            "condition": "d2:hasValue(#{THA_Validate_HATTr}) && #{THA_Validate_HATTr1} == '' && (#{THA_Validate_HATTr} == '0' || #{THA_Validate_HATTr} == '5')",
+            "lastUpdatedBy": {
+                "displayName": "Hoang Tran Anh",
+                "id": "XS0QSpYe3nz",
+                "username": "anhth"
+            },
+            "programStage": {
+                "id": "WeA1NcfqeyZ"
+            },
+            "program": {
+                "id": "NAleauPZvIE"
+            },
+            "translations": [],
+            "programRuleActions": []
+        },
+        {
+            "created": "2021-09-13T13:06:17.303",
+            "lastUpdated": "2021-09-14T07:46:43.348",
+            "name": "THA_Validate HATT",
+            "id": "sPX6x1PNWQj",
+            "priority": 1,
+            "condition": "d2:hasValue(#{HATamThu})",
+            "lastUpdatedBy": {
+                "displayName": "Hoang Tran Anh",
+                "id": "XS0QSpYe3nz",
+                "username": "anhth"
+            },
+            "programStage": {
+                "id": "WeA1NcfqeyZ"
+            },
+            "program": {
+                "id": "NAleauPZvIE"
+            },
+            "translations": [],
+            "programRuleActions": []
+        },
+        {
+            "created": "2021-09-13T16:08:31.941",
+            "lastUpdated": "2021-09-14T02:24:37.224",
+            "name": "THA_Validate HATTr",
+            "id": "uZ92OfG8blx",
+            "priority": 1,
+            "condition": "d2:hasValue(#{HATamTruong})",
+            "lastUpdatedBy": {
+                "displayName": "Hoang Tran Anh",
+                "id": "XS0QSpYe3nz",
+                "username": "anhth"
+            },
+            "programStage": {
+                "id": "WeA1NcfqeyZ"
+            },
+            "program": {
+                "id": "NAleauPZvIE"
+            },
+            "translations": [],
+            "programRuleActions": []
+        }
+    ]
+}

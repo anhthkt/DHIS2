@@ -1,0 +1,52 @@
+{
+    "optionSets": [
+        {
+            "created": "2021-08-25T08:34:40.839",
+            "lastUpdated": "2021-08-25T08:36:56.477",
+            "name": "Biến chứng (New)",
+            "id": "l5A7rNfMMTZ",
+            "publicAccess": "rw------",
+            "version": 4,
+            "valueType": "TEXT",
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "translations": [],
+            "userAccesses": [],
+            "options": []
+        },
+        {
+            "created": "2021-08-25T11:05:09.299",
+            "lastUpdated": "2021-08-25T11:05:43.399",
+            "name": "Nguy cơ tim mạch",
+            "id": "uKDuH5x2dwT",
+            "publicAccess": "rw------",
+            "version": 3,
+            "valueType": "TEXT",
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "translations": [],
+            "userAccesses": [],
+            "options": []
+        }
+    ]
+}
