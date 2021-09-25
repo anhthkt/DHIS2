@@ -163,8 +163,8 @@ function TCLADB() {
             id: "hfGTym6BfK1", title: "Ghi rõ biến chứng"
         },
         {
-            id: "mOguWgQg1or", title: "Y bác sĩ khám bệnh"
-        }//YBSKhamBenh
+            id: "fBj7BCdA665", title: "Nhận xét"
+        }
     ];
 
     const eventLAMetadata_book = [
