@@ -1,0 +1,130 @@
+{
+    "dataSet": "tONFZrjm2UU",
+    "period": "202105",
+    "orgUnit": "lNXs1lrOMMn",
+    "dataValues": [
+      {
+        "dataElement": "aukRGBVqzv6",
+        "categoryOptionCombo": "HllvX50cXC0",
+        "value": "1"
+      },
+      {
+        "dataElement": "dXa1wH26j3t",
+        "categoryOptionCombo": "HllvX50cXC0",
+        "value": "1"
+      },
+      {
+        "dataElement": "h48D8XSiMHI",
+        "categoryOptionCombo": "HllvX50cXC0",
+        "value": "1"
+      },
+      {
+        "dataElement": "I8Eg0GDLPdk",
+        "categoryOptionCombo": "HllvX50cXC0",
+        "value": "1"
+      },
+      {
+        "dataElement": "kRJZBm6P2RE",
+        "categoryOptionCombo": "HllvX50cXC0",
+        "value": "1"
+      },
+      {
+        "dataElement": "LgX47Q4nlLs",
+        "categoryOptionCombo": "HllvX50cXC0",
+        "value": "1"
+      },
+      {
+        "dataElement": "MLLIbQrTQRD",
+        "categoryOptionCombo": "HllvX50cXC0",
+        "value": "50"
+      },
+      {
+        "dataElement": "MohkAARZ92g",
+        "categoryOptionCombo": "HllvX50cXC0",
+        "value": "1"
+      },
+      {
+        "dataElement": "ozCZLYw0dRF",
+        "categoryOptionCombo": "HllvX50cXC0",
+        "value": "0"
+      },
+      {
+        "dataElement": "R9Rdr3BAGYJ",
+        "categoryOptionCombo": "HllvX50cXC0",
+        "value": "1"
+      },
+      {
+        "dataElement": "RHcaS5LVP6E",
+        "categoryOptionCombo": "HllvX50cXC0",
+        "value": "1"
+      },
+      {
+        "dataElement": "rlLecgNVVwl",
+        "categoryOptionCombo": "HllvX50cXC0",
+        "value": "100"
+      },
+      {
+        "dataElement": "rV5DaUaGIzR",
+        "categoryOptionCombo": "HllvX50cXC0",
+        "value": "0"
+      },
+      {
+        "dataElement": "x4ZakxVdTKf",
+        "categoryOptionCombo": "HllvX50cXC0",
+        "value": "0"
+      },
+      {
+        "dataElement": "a3y72XOLlNT",
+        "categoryOptionCombo": "HllvX50cXC0",
+        "value": "1"
+      }
+    ]
+  }
+
+  <!-- url: ../api/dataValueSets dataSet="tONFZrjm2UU" Biểu 3, orgUnit="lNXs1lrOMMn" Xã Khánh An, period="202106" 
+value="1/0" 1:Yes 0:No-->
+<dataValueSet xmlns="http://dhis2.org/schema/dxf/2.0" dataSet="tONFZrjm2UU" orgUnit="lNXs1lrOMMn" period="202106">
+  <dataValue categoryOptionCombo="HllvX50cXC0" dataElement="aukRGBVqzv6" name="Có thuốc Gliclazide" value="1"/>
+  <dataValue categoryOptionCombo="HllvX50cXC0" dataElement="dXa1wH26j3t" name="Có thuốc kết hợp UCMC/UCTT và hypothiazide hoặc tương tự" value="1"/>
+  <dataValue categoryOptionCombo="HllvX50cXC0" dataElement="h48D8XSiMHI" name="Có thực hiện cấp thuốc 28-30 ngày cho phần lớn bệnh nhân THA" value="1"/>
+  <dataValue categoryOptionCombo="HllvX50cXC0" dataElement="I8Eg0GDLPdk" name="Có thuốc chẹn kênh can xi " value="1"/>
+  <dataValue categoryOptionCombo="HllvX50cXC0" dataElement="kRJZBm6P2RE" name="Có thuốc kết hợp chẹn kênh canxi và hypothiazide hoặc tương tự" value="1"/>
+  <dataValue categoryOptionCombo="HllvX50cXC0" dataElement="LgX47Q4nlLs" name="Có thuốc lợi tiểu thiazide hoặc tương tự" value="1"/>
+  <dataValue categoryOptionCombo="HllvX50cXC0" dataElement="MLLIbQrTQRD" name="Tổng số viên thuốc điều trị ĐTĐ hiện có" value="110"/>
+  <dataValue categoryOptionCombo="HllvX50cXC0" dataElement="MohkAARZ92g" name="Có thuốc kết hợp chẹn kênh canxi và UCMC/UCTT" value="0"/>
+  <dataValue categoryOptionCombo="HllvX50cXC0" dataElement="ozCZLYw0dRF" name="Có thuốc Metformin" value="1"/>
+  <dataValue categoryOptionCombo="HllvX50cXC0" dataElement="R9Rdr3BAGYJ" name="Có thuốc kết hợp 3 loại đơn chất trên" value="0"/>
+  <dataValue categoryOptionCombo="HllvX50cXC0" dataElement="RHcaS5LVP6E" name="Có thuốc ức chế men chuyển và/hoặc ức chế thụ thể" value="1"/>
+  <dataValue categoryOptionCombo="HllvX50cXC0" dataElement="rlLecgNVVwl" name="Tổng số viên thuốc điều trị THA hiện có" value="120"/>
+  <dataValue categoryOptionCombo="HllvX50cXC0" dataElement="rV5DaUaGIzR" name="Có thực hiện cấp thuốc 28-30 ngày cho phần lớn bệnh nhân ĐTĐ" value="1"/>
+  <dataValue categoryOptionCombo="HllvX50cXC0" dataElement="x4ZakxVdTKf" name="Có thuốc kết hợp 2 loại đơn chất trên" value="1"/>
+  <dataValue categoryOptionCombo="HllvX50cXC0" dataElement="a3y72XOLlNT" name="TYT - Có huyết áp kế điện tử còn sửa dụng được" value="0"/>
+</dataValueSet>
+
+<!-- url: ../api/dataValueSets dataSet="ZFvlCbqkwTz" Biểu 1, orgUnit="lNXs1lrOMMn" Xã Khánh An, period="2021" 
+value="1" 1:True if False not dataValue-->
+<dataValueSet xmlns="http://dhis2.org/schema/dxf/2.0" dataSet="ZFvlCbqkwTz" orgUnit="lNXs1lrOMMn" period="2021">
+  <dataValue categoryOptionCombo="GvoEANq375m" dataElement="ZYDqKZDP7Rz" name="DS Trung bình 1/7 Nữ" value="2"/>
+  <dataValue categoryOptionCombo="NZTXFyz6GLm" dataElement="ZYDqKZDP7Rz" name="DS Trung bình 1/7 Nam" value="3"/>
+  <dataValue categoryOptionCombo="HllvX50cXC0" dataElement="di5uXc5PQCP" name="DS Số người >= 18tuoi" value="3"/>
+  <dataValue categoryOptionCombo="HllvX50cXC0" dataElement="S117HX9INOg" name="Số thôn bản" value="3"/>
+  <dataValue categoryOptionCombo="HllvX50cXC0" dataElement="KaNOeN9lTVb" name="Thôn bản có nv y tế" value="2"/>
+  <dataValue categoryOptionCombo="HllvX50cXC0" dataElement="eOucYwMcxnv" name="Trạm y tế có triển khai khám chữa bệnh bảo hiểm y tế" value="1"/>
+  <dataValue categoryOptionCombo="HllvX50cXC0" dataElement="A1HRS93Y8IU" name="Trạm y tế có bác sĩ làm việc" value="1"/>
+</dataValueSet>
+
+<!-- url: ../api/dataValueSets dataSet="sREZzyIKiHi" Biểu 2, orgUnit="lNXs1lrOMMn" Xã Khánh An, period="202106" -->
+<dataValueSet xmlns="http://dhis2.org/schema/dxf/2.0" dataSet="sREZzyIKiHi" orgUnit="lNXs1lrOMMn" period="202106">
+  <dataValue categoryOptionCombo="HllvX50cXC0" dataElement="BFAbhsS6QIT" name="Số người được đo huyết áp" value="5"/>
+  <dataValue categoryOptionCombo="HllvX50cXC0" dataElement="PabR7pMTrf7" name="Số người được xác định nghi ngờ tăng huyết áp" value="3"/>
+  <dataValue categoryOptionCombo="HllvX50cXC0" dataElement="nHlNX0YD3tJ" name="Số người được sàng lọc nguy cơ đái tháo đường bằng bộ câu hỏi" value="3"/>
+  <dataValue categoryOptionCombo="HllvX50cXC0" dataElement="nw8ceWWjnZw" name="Số người được xác định nguy cơ cao ĐTĐ" value="3"/>
+  <dataValue categoryOptionCombo="HllvX50cXC0" dataElement="VOwLBEERAnR" name="Số người được xét nghiệm đường máu" value="2"/>
+  <dataValue categoryOptionCombo="HllvX50cXC0" dataElement="esp6n51RMw2" name="Số người phát hiện tiền đái tháo đường" value="1"/>
+  <dataValue categoryOptionCombo="HllvX50cXC0" dataElement="o3pBEq65AmM" name="Số người được sàng lọc BPTNMT/ hen phế quản" value="1"/>
+  <dataValue categoryOptionCombo="HllvX50cXC0" dataElement="tyfESOuXUgH" name="Số người phát hiện nghi ngờ mắc BPTNMT/ hen phế quản	" value="1"/>
+  <dataValue categoryOptionCombo="HllvX50cXC0" dataElement="OPJYZ2qNlNE" name="Số người được sàng lọc ung thư" value="1"/>
+  <dataValue categoryOptionCombo="HllvX50cXC0" dataElement="I5Eecyk5KJP" name="Số người phát hiện nghi ngờ mắc ung thư" value="1"/>
+  <dataValue categoryOptionCombo="HllvX50cXC0" dataElement="ME9u95zbIug" name="Số người mắc tai biến mạch máu não" value="1"/>
+  <dataValue categoryOptionCombo="HllvX50cXC0" dataElement="MJ17pL0wtHd" name="Số người được khám sức khỏe định kỳ" value="5"/>
+</dataValueSet>

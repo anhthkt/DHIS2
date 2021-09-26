@@ -1,0 +1,174 @@
+{
+    "programRules": [
+        {
+            "created": "2021-09-07T09:24:35.972",
+            "lastUpdated": "2021-09-10T17:32:44.945",
+            "name": "CungUngThuoc_DTD_Hide field 1",
+            "id": "v280Ybzmi1O",
+            "condition": "#{CoKhamVaCapThuocDTD} == 0",
+            "lastUpdatedBy": {
+                "displayName": "Hoang Tran Anh",
+                "id": "XS0QSpYe3nz",
+                "username": "anhth"
+            },
+            "program": {
+                "id": "m2os4g4edN7"
+            },
+            "translations": [],
+            "programRuleActions": []
+        },
+        {
+            "created": "2021-09-10T15:42:59.742",
+            "lastUpdated": "2021-09-10T15:42:59.742",
+            "name": "CungUngThuoc_DTD_Hide field 2",
+            "id": "oI20NIYWwLO",
+            "condition": "#{CoDuThuocDTD} == 0",
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "program": {
+                "id": "m2os4g4edN7"
+            },
+            "translations": [],
+            "programRuleActions": []
+        },
+        {
+            "created": "2021-09-08T01:36:31.666",
+            "lastUpdated": "2021-09-10T15:53:04.463",
+            "name": "CungUngThuoc_DTD_Madatory field 1",
+            "id": "fmv2ZnDWt8w",
+            "condition": "#{CoDuThuocDTD} == 1",
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "program": {
+                "id": "m2os4g4edN7"
+            },
+            "translations": [],
+            "programRuleActions": []
+        },
+        {
+            "created": "2021-09-10T15:52:32.792",
+            "lastUpdated": "2021-09-10T15:52:32.792",
+            "name": "CungUngThuoc_DTD_Madatory field 2",
+            "id": "IedhRgOxTZM",
+            "condition": "#{CoKhamVaCapThuocDTD} == 1",
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "program": {
+                "id": "m2os4g4edN7"
+            },
+            "translations": [],
+            "programRuleActions": []
+        },
+        {
+            "created": "2021-09-10T16:27:47.127",
+            "lastUpdated": "2021-09-10T17:29:30.417",
+            "name": "CungUngThuoc_DTD_Warning field 2",
+            "id": "LzzUhKH1YLl",
+            "condition": "#{CoDuThuocDTD} == '1' && #{CoThuocMetformin} == '0' && #{CoThuocGliclazide} == '0' &&#{CoThuocKetHop2ThanhPhanBaoGomMetforminVaGliclazide} == '0'",
+            "lastUpdatedBy": {
+                "displayName": "Hoang Tran Anh",
+                "id": "XS0QSpYe3nz",
+                "username": "anhth"
+            },
+            "program": {
+                "id": "m2os4g4edN7"
+            },
+            "translations": [],
+            "programRuleActions": []
+        },
+        {
+            "created": "2021-09-07T09:23:58.706",
+            "lastUpdated": "2021-09-10T15:20:37.530",
+            "name": "CungUngThuoc_THA_Hide field 1",
+            "id": "zcixEGnvRCw",
+            "condition": "#{CoKhamVaCapThuocTHA} == 0",
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "program": {
+                "id": "m2os4g4edN7"
+            },
+            "translations": [],
+            "programRuleActions": []
+        },
+        {
+            "created": "2021-09-10T15:42:08.115",
+            "lastUpdated": "2021-09-10T15:42:08.115",
+            "name": "CungUngThuoc_THA_Hide field 2",
+            "id": "SAHNKizjscO",
+            "condition": "#{CoDuThuocTHA} == 0",
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "program": {
+                "id": "m2os4g4edN7"
+            },
+            "translations": [],
+            "programRuleActions": []
+        },
+        {
+            "created": "2021-09-08T01:37:59.278",
+            "lastUpdated": "2021-09-10T15:54:36.703",
+            "name": "CungUngThuoc_THA_Madatory field1",
+            "id": "AejAhWOOf9N",
+            "condition": "#{CoDuThuocTHA} == 1",
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "program": {
+                "id": "m2os4g4edN7"
+            },
+            "translations": [],
+            "programRuleActions": []
+        },
+        {
+            "created": "2021-09-10T15:55:53.413",
+            "lastUpdated": "2021-09-10T15:55:53.413",
+            "name": "CungUngThuoc_THA_Madatory field2",
+            "id": "e6REZYiwcLV",
+            "condition": "#{CoKhamVaCapThuocTHA}==1",
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "program": {
+                "id": "m2os4g4edN7"
+            },
+            "translations": [],
+            "programRuleActions": []
+        },
+        {
+            "created": "2021-09-10T16:45:43.889",
+            "lastUpdated": "2021-09-10T17:28:57.134",
+            "name": "CungUngThuoc_THA_Warning field 2",
+            "id": "cjVRscOIUT4",
+            "condition": "#{CoDuThuocTHA} == '1' && #{CoThuocChenKenhCanXi} == '0' && #{CoThuocUCMC-UCTT} == '0' && #{CoThuocLoiTieuHypothiazide} == '0' && #{CoThuocKetHop2ThanhPhanBaoGomChenKenhCanXiVaHypothiazide} == '0' && #{CoThuocKetHop2ThanhPhanBaoGomChenKenhCanXiVaUCMC-UCTT} == '0' && #{CoThuocKetHop2ThanhPhanBaoGomUCMC-UCTTVaHypothiazide} == '0' && #{CoThuocKetHop3ThanhPhan} == '0'",
+            "lastUpdatedBy": {
+                "displayName": "Hoang Tran Anh",
+                "id": "XS0QSpYe3nz",
+                "username": "anhth"
+            },
+            "program": {
+                "id": "m2os4g4edN7"
+            },
+            "translations": [],
+            "programRuleActions": []
+        }
+    ]
+}

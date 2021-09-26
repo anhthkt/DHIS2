@@ -1,0 +1,29 @@
+{
+    "optionSets": [
+        {
+            "created": "2021-09-21T09:09:25.503",
+            "lastUpdated": "2021-09-22T20:59:59.979",
+            "name": "Chẩn đoán THA",
+            "id": "XnqEOT7QBxw",
+            "publicAccess": "rw------",
+            "version": 7,
+            "valueType": "TEXT",
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "translations": [],
+            "userAccesses": [],
+            "options": [
+            ]
+        }
+    ]
+}

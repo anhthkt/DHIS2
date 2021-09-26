@@ -1,0 +1,72 @@
+{
+    "programRules": [
+        {
+            "created": "2021-09-07T09:24:35.972",
+            "lastUpdated": "2021-09-07T09:27:08.111",
+            "name": "CungUngThuoc_DTD_Hide field",
+            "id": "v280Ybzmi1O",
+            "condition": "#{CoKhamVaCapThuocDTD} == 0",
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "program": {
+                "id": "m2os4g4edN7"
+            },
+            "translations": [],
+            "programRuleActions": []
+        },
+        {
+            "created": "2021-09-08T01:36:31.666",
+            "lastUpdated": "2021-09-08T01:36:31.666",
+            "name": "CungUngThuoc_DTD_Madatory field",
+            "id": "fmv2ZnDWt8w",
+            "condition": "#{CoKhamVaCapThuocDTD} == 1",
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "program": {
+                "id": "m2os4g4edN7"
+            },
+            "translations": [],
+            "programRuleActions": []
+        },
+        {
+            "created": "2021-09-07T09:23:58.706",
+            "lastUpdated": "2021-09-07T09:45:52.327",
+            "name": "CungUngThuoc_THA_Hide field",
+            "id": "zcixEGnvRCw",
+            "condition": "#{CoKhamVaCapThuocTHA} == 0",
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "program": {
+                "id": "m2os4g4edN7"
+            },
+            "translations": [],
+            "programRuleActions": []
+        },
+        {
+            "created": "2021-09-08T01:37:59.278",
+            "lastUpdated": "2021-09-08T01:37:59.278",
+            "name": "CungUngThuoc_THA_Madatory field",
+            "id": "AejAhWOOf9N",
+            "condition": "#{CoKhamVaCapThuocTHA} == 1",
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "program": {
+                "id": "m2os4g4edN7"
+            },
+            "translations": [],
+            "programRuleActions": []
+        }
+    ]
+}
