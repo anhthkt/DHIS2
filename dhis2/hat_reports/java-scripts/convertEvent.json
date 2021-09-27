@@ -1,0 +1,267 @@
+import {writeJsonFile} from ("write-json-file")
+
+let arrInput =
+{
+    "dataSet": "tONFZrjm2UU",
+    "completeDate": "2021-09-01T01:27:10.000+0000",
+    "period": "202108",
+    "orgUnit": "v6zIV06UmGY",
+    "dataValues": [
+        {
+            "dataElement": "rlLecgNVVwl",
+            "period": "202108",
+            "orgUnit": "v6zIV06UmGY",
+            "categoryOptionCombo": "HllvX50cXC0",
+            "attributeOptionCombo": "HllvX50cXC0",
+            "value": "370",
+            "storedBy": "24412",
+            "created": "2021-09-01T01:25:46.109+0000",
+            "lastUpdated": "2021-09-01T01:25:46.109+0000",
+            "followup": false
+        },
+        {
+            "dataElement": "RHcaS5LVP6E",
+            "period": "202108",
+            "orgUnit": "v6zIV06UmGY",
+            "categoryOptionCombo": "HllvX50cXC0",
+            "attributeOptionCombo": "HllvX50cXC0",
+            "value": "false",
+            "storedBy": "24412",
+            "created": "2021-08-31T07:08:01.327+0000",
+            "lastUpdated": "2021-08-31T07:08:01.327+0000",
+            "followup": false
+        },
+        {
+            "dataElement": "R9Rdr3BAGYJ",
+            "period": "202108",
+            "orgUnit": "v6zIV06UmGY",
+            "categoryOptionCombo": "HllvX50cXC0",
+            "attributeOptionCombo": "HllvX50cXC0",
+            "value": "false",
+            "storedBy": "24412",
+            "created": "2021-08-31T07:08:26.857+0000",
+            "lastUpdated": "2021-08-31T07:08:26.857+0000",
+            "followup": false
+        },
+        {
+            "dataElement": "LgX47Q4nlLs",
+            "period": "202108",
+            "orgUnit": "v6zIV06UmGY",
+            "categoryOptionCombo": "HllvX50cXC0",
+            "attributeOptionCombo": "HllvX50cXC0",
+            "value": "false",
+            "storedBy": "24412",
+            "created": "2021-08-31T07:08:07.384+0000",
+            "lastUpdated": "2021-08-31T07:08:07.384+0000",
+            "followup": false
+        },
+        {
+            "dataElement": "h48D8XSiMHI",
+            "period": "202108",
+            "orgUnit": "v6zIV06UmGY",
+            "categoryOptionCombo": "HllvX50cXC0",
+            "attributeOptionCombo": "HllvX50cXC0",
+            "value": "true",
+            "storedBy": "24412",
+            "created": "2021-08-31T07:08:33.018+0000",
+            "lastUpdated": "2021-08-31T07:08:33.018+0000",
+            "followup": false
+        },
+        {
+            "dataElement": "rV5DaUaGIzR",
+            "period": "202108",
+            "orgUnit": "v6zIV06UmGY",
+            "categoryOptionCombo": "HllvX50cXC0",
+            "attributeOptionCombo": "HllvX50cXC0",
+            "value": "false",
+            "storedBy": "24412",
+            "created": "2021-08-31T07:09:19.839+0000",
+            "lastUpdated": "2021-08-31T07:09:19.839+0000",
+            "followup": false
+        },
+        {
+            "dataElement": "I8Eg0GDLPdk",
+            "period": "202108",
+            "orgUnit": "v6zIV06UmGY",
+            "categoryOptionCombo": "HllvX50cXC0",
+            "attributeOptionCombo": "HllvX50cXC0",
+            "value": "true",
+            "storedBy": "24412",
+            "created": "2021-08-31T07:07:57.011+0000",
+            "lastUpdated": "2021-08-31T07:07:57.011+0000",
+            "followup": false
+        },
+        {
+            "dataElement": "a3y72XOLlNT",
+            "period": "202108",
+            "orgUnit": "v6zIV06UmGY",
+            "categoryOptionCombo": "HllvX50cXC0",
+            "attributeOptionCombo": "HllvX50cXC0",
+            "value": "true",
+            "storedBy": "24412",
+            "created": "2021-08-31T07:09:11.342+0000",
+            "lastUpdated": "2021-08-31T07:09:11.342+0000",
+            "followup": false
+        },
+        {
+            "dataElement": "ozCZLYw0dRF",
+            "period": "202108",
+            "orgUnit": "v6zIV06UmGY",
+            "categoryOptionCombo": "HllvX50cXC0",
+            "attributeOptionCombo": "HllvX50cXC0",
+            "value": "false",
+            "storedBy": "24412",
+            "created": "2021-08-31T07:09:15.811+0000",
+            "lastUpdated": "2021-08-31T07:09:15.811+0000",
+            "followup": false
+        },
+        {
+            "dataElement": "aukRGBVqzv6",
+            "period": "202108",
+            "orgUnit": "v6zIV06UmGY",
+            "categoryOptionCombo": "HllvX50cXC0",
+            "attributeOptionCombo": "HllvX50cXC0",
+            "value": "false",
+            "storedBy": "24412",
+            "created": "2021-08-31T07:09:17.196+0000",
+            "lastUpdated": "2021-08-31T07:09:17.196+0000",
+            "followup": false
+        },
+        {
+            "dataElement": "x4ZakxVdTKf",
+            "period": "202108",
+            "orgUnit": "v6zIV06UmGY",
+            "categoryOptionCombo": "HllvX50cXC0",
+            "attributeOptionCombo": "HllvX50cXC0",
+            "value": "false",
+            "storedBy": "24412",
+            "created": "2021-08-31T07:08:13.110+0000",
+            "lastUpdated": "2021-08-31T07:08:13.110+0000",
+            "followup": false
+        },
+        {
+            "dataElement": "MohkAARZ92g",
+            "period": "202108",
+            "orgUnit": "v6zIV06UmGY",
+            "categoryOptionCombo": "HllvX50cXC0",
+            "attributeOptionCombo": "HllvX50cXC0",
+            "value": "false",
+            "storedBy": "24412",
+            "created": "2021-08-31T07:09:19.240+0000",
+            "lastUpdated": "2021-08-31T07:09:19.240+0000",
+            "followup": false
+        },
+        {
+            "dataElement": "kRJZBm6P2RE",
+            "period": "202108",
+            "orgUnit": "v6zIV06UmGY",
+            "categoryOptionCombo": "HllvX50cXC0",
+            "attributeOptionCombo": "HllvX50cXC0",
+            "value": "false",
+            "storedBy": "24412",
+            "created": "2021-09-01T01:27:00.303+0000",
+            "lastUpdated": "2021-09-01T01:27:00.303+0000",
+            "followup": false
+        },
+        {
+            "dataElement": "dXa1wH26j3t",
+            "period": "202108",
+            "orgUnit": "v6zIV06UmGY",
+            "categoryOptionCombo": "HllvX50cXC0",
+            "attributeOptionCombo": "HllvX50cXC0",
+            "value": "false",
+            "storedBy": "24412",
+            "created": "2021-08-31T07:08:20.873+0000",
+            "lastUpdated": "2021-08-31T07:08:20.873+0000",
+            "followup": false
+        }
+    ]
+}
+
+let result = {
+    "events": []
+}
+
+let iEvent = {
+    "programStage": "PsjANoxkM9o",
+    "orgUnit": "lNXs1lrOMMn",
+    "program": "m2os4g4edN7",
+    "status": "COMPLETED",
+    "attributeCategoryOptions": "xYerKDKCefk",
+    "attributeOptionCombo": "HllvX50cXC0",
+    "dataValues": [
+        {
+            "dataElement": "JFGX1TmY0xL",
+            "value": "true"
+        },
+        {
+            "dataElement": "D9k02A8N5nE",
+            "value": "false"
+        },
+        {
+            "dataElement": "WHZjMfm4ay1",
+            "value": "true"
+        },
+        {
+            "dataElement": "tiGNbWaUfDN",
+            "value": "false"
+        },
+        {
+            "dataElement": "XDdM6pGUoLM",
+            "value": "true"
+        },
+        {
+            "dataElement": "pVxE2Fo1qe5",
+            "value": "true"
+        },
+        {
+            "dataElement": "rta1bVCriat",
+            "value": "true"
+        },
+        {
+            "dataElement": "FVjtaNfbZp3",
+            "value": "345"
+        },
+        {
+            "dataElement": "G4UeYJf44It",
+            "value": "false"
+        },
+        {
+            "dataElement": "i0M5ygSORRY",
+            "value": "false"
+        },
+        {
+            "dataElement": "xHJLP7iofM1",
+            "value": "8"
+        },
+        {
+            "dataElement": "oMM3XryyZa6",
+            "value": "true"
+        },
+        {
+            "dataElement": "c2iq3ADGesQ",
+            "value": "34"
+        },
+        {
+            "dataElement": "yUgBbBWZYMi",
+            "value": "false"
+        },
+        {
+            "dataElement": "hPWdJuFk5qF",
+            "value": "true"
+        },
+        {
+            "dataElement": "YpPjveUc0wA",
+            "value": "false"
+        },
+        {
+            "dataElement": "j8iFtQyl0tQ",
+            "value": "false"
+        },
+        {
+            "dataElement": "xcKXWpW2h0e",
+            "value": "true"
+        }
+    ]
+}
+result.events.push(iEvent)
