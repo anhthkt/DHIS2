@@ -310,6 +310,7 @@ function TCLADB() {
             id: "jd8vkowkM7G", title: "Phân loại bệnh"
             , col: 8
             , isOption: true
+            , sqlSorting: "des"
         },
         {
             title: "firstMonth_to_lastMonth"
@@ -359,7 +360,13 @@ function TCLADB() {
     var requestApiManager = [], intergrateObject;
     //Table3
     async function loadReport() {
+        let mapBaseUrl = {
+            "daotao.tkyt.vn": window.parent.location.origin + "/kln",
+            "kln.tkyt.vn": window.parent.location.origin
+        }
 
+        desURL = debugging ? "http://daotao.tkyt.vn/kln" : mapBaseUrl[window.parent.location.hostname];
+        
         let rqContent;
         p2ild.asyncLoadSupport ? rqContent = p2ild.asyncLoadSupport.createManager() : {};
 
@@ -372,6 +379,7 @@ function TCLADB() {
         //LA
         rqContent.createWorker().createHolderTitleRow('la', `table_id2`
             , prepareDataTable(await getEventByTeiByOuLA(), listColumn = [...teiMetaData_book, ...eventLAMetadata_book, ...coreDhisMetadata_book]))
+        //TT37
         rqContent.createWorker().createHolderTitleRow('tt37', `table_id3`
             , prepareDataTable(await getEventByTeiByOuTT37(), listColumn = TT37Metadata))
         rqContent.triggleAllNetworkTask();
@@ -435,6 +443,7 @@ function TCLADB() {
                 "program": programID
                 , "dimension": ["col_tei", "col_monthly", "col_yearly", "col_executiondate", "col_ouname", ...teiMetaData_book.map(e => e.id), ...eventLAMetadata_book.map(e => e.id)]
                 , "filterBoth": { "pe": periods.split(';') }
+                , "orderBy": TT37Metadata.filter(e => e.sqlSorting != undefined).map(e => { let rs = {}; rs[e.id] = e.sqlSorting; return rs })
                 , "filterSql": {
                     "tei": teiByOu,
                     "jd8vkowkM7G": ["5"],//LA
@@ -498,21 +507,45 @@ function TCLADB() {
                 let jsonHeaders = json.headers
                 let data = _.groupBy(json.rows, jsonHeaders.tei)
                 let idx = 0;
+                let isTT37 = idRowAnchor == 'table_id3' ? true : false
                 //For list tei
                 Object.keys(data).forEach((key, stt) => {
-                    let initRow = getTeiEventToArray({ oriJson: json, jsonHeaders, stt: ++stt, teiData: data[key], listColumn, isTT37: idRowAnchor == 'table_id3' ? true : false });
+                    let initRow = getTeiEventToArray({ oriJson: json, jsonHeaders, stt: ++stt, teiData: data[key], listColumn, isTT37 });
                     dataByRow = dataByRow.concat(initRow)
                 })
-                console.log(dataByRow)
+                // console.log(dataByRow)
 
-                $(`#${idRowAnchor}`).DataTable({
+                // $(`#${idRowAnchor}`).DataTable({
+                //     data: dataByRow,
+                //     "columnDefs": [],
+                //     dom: 'Bfrtip',
+                //     buttons: [
+                //         'excel', 'print'
+                //     ]
+                // })
+                let tableData = {
                     data: dataByRow,
-                    "columnDefs": [],
+                    "columnDefs": [{
+                        "searchable": false,
+                        "orderable": false,
+                        "targets": 0
+                    }],
+
                     dom: 'Bfrtip',
+                    // sort: false,
                     buttons: [
                         'excel', 'print'
                     ]
-                })
+                }
+                if (isTT37) {
+                    tableData['order'] = listColumn.filter(e => e.sqlSorting != undefined).map(e => { let rs = []; rs = [e.col, e.sqlSorting]; return rs })
+                }
+                let t = $(`#${idRowAnchor}`).DataTable(tableData)
+                t.on('order.dt search.dt', function () {
+                    t.column(0, { search: 'applied', order: 'applied' }).nodes().each(function (cell, i) {
+                        cell.innerHTML = i + 1;
+                    });
+                }).draw();
                 thisApi.getOwnerManager().setRequestStatusByRowID(idRowAnchor, p2ild.asyncLoadSupport.STATUS_API.SUCCESS)
             })()
         }
