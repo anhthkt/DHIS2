@@ -310,7 +310,7 @@ function TCLADB() {
             id: "jd8vkowkM7G", title: "Phân loại bệnh"
             , col: 8
             , isOption: true
-            , sqlSorting: "des"
+            , sqlSorting: "desc"
         },
         {
             title: "firstMonth_to_lastMonth"
@@ -541,11 +541,13 @@ function TCLADB() {
                     tableData['order'] = listColumn.filter(e => e.sqlSorting != undefined).map(e => { let rs = []; rs = [e.col, e.sqlSorting]; return rs })
                 }
                 let t = $(`#${idRowAnchor}`).DataTable(tableData)
-                t.on('order.dt search.dt', function () {
-                    t.column(0, { search: 'applied', order: 'applied' }).nodes().each(function (cell, i) {
-                        cell.innerHTML = i + 1;
-                    });
-                }).draw();
+                if(isTT37){
+                    t.on('order.dt search.dt', function () {
+                        t.column(0, { search: 'applied', order: 'applied' }).nodes().each(function (cell, i) {
+                            cell.innerHTML = i + 1;
+                        });
+                    }).draw();
+                }
                 thisApi.getOwnerManager().setRequestStatusByRowID(idRowAnchor, p2ild.asyncLoadSupport.STATUS_API.SUCCESS)
             })()
         }
