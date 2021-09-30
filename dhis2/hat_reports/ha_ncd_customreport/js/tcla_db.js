@@ -138,7 +138,10 @@ function TCLADB() {
         },
         {
             id: "iihmh4K0k18", title: "Thuốc"
-            , col: 15
+            , col: 15, convertOutputValue: (metaData) => {
+                let { rawValue,listColumn, foundCol, jsonHeaders, event, jsonMetaData } = metaData;
+                return rawValue?.split('\n').join('<br>') || '';
+            }
         },
         {
             id: "mVdtFRM2gFX", title: "Ghi chú"
@@ -148,10 +151,10 @@ function TCLADB() {
                 let bienChung = event[jsonHeaders['X0kBm02Gyft']] || ""
                 let ghiRoBienChung = event[jsonHeaders['hfGTym6BfK1']] || ""
                 let nhanxet = getValueAsOptionName({ jsonMetaData, event, jsonHeaders, de: 'fBj7BCdA665' }) || ""
-                nhanxet = nhanxet ? `<br>Nhận xét: ${nhanxet}` : '';
+                nhanxet = nhanxet ? `<br>${nhanxet}` : '';
                 let resultStr = '';
                 resultStr = bienChung == '2'//Co
-                    ? `Có biến chứng: ${ghiRoBienChung}` : ''
+                    ? `${ghiRoBienChung}` : ''
                 resultStr += `${nhanxet}`
                 return resultStr;
             }
@@ -231,7 +234,10 @@ function TCLADB() {
         },
         {
             id: "iihmh4K0k18", title: "Thuốc"
-            , col: 14
+            , col: 14, convertOutputValue: (metaData) => {
+                let { rawValue,listColumn, foundCol, jsonHeaders, event, jsonMetaData } = metaData;
+                return rawValue?.split('\n').join('<br>') || '';
+            }
         },
         {
             id: "mVdtFRM2gFX", title: "Ghi chú"
@@ -241,10 +247,10 @@ function TCLADB() {
                 let bienChung = event[jsonHeaders['X0kBm02Gyft']] || ""
                 let ghiRoBienChung = event[jsonHeaders['hfGTym6BfK1']] || ""
                 let nhanxet = getValueAsOptionName({ jsonMetaData, event, jsonHeaders, de: 'fBj7BCdA665' }) || ""
-                nhanxet = nhanxet ? `<br>Nhận xét: ${nhanxet}` : '';
+                nhanxet = nhanxet ? `<br>${nhanxet}` : '';
                 let resultStr = '';
                 resultStr = bienChung == '2'//Co
-                    ? `Có biến chứng: ${ghiRoBienChung}` : ''
+                    ? `${ghiRoBienChung}` : ''
                 resultStr += `${nhanxet}`
                 return resultStr;
             }

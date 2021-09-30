@@ -1,0 +1,25 @@
+{
+  "name": "@p2ild/importapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
+    "form-data": "^2.5.1",
+    "fs": "0.0.1-security",
+    "gh": "^2.8.9",
+    "git": "^0.1.5",
+    "lodash": "^4.17.21",
+    "read-excel-file": "^5.2.10",
+    "write-json-file": "^5.0.0",
+    "xlsx": "^0.17.2",
+    "zip-dir": "^2.0.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
