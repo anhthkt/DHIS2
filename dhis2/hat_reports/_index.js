@@ -6,7 +6,7 @@ var zipdir = require('zip-dir');
 const baseUrl = [
   `https://dev.tkyt.vn/lucky/api/apps`
 
-  // `${process.env.urlInstanceKln}/api/32/apps`,
+  `${process.env.urlInstanceKln}/api/32/apps`,
   // `http://172.16.31.96:8524/api/32/apps`
   // `${process.env.urlInstanceBaocao91}/api/apps`,
   // `${process.env.urlInstanceBaocao92}/api/apps`

@@ -258,9 +258,9 @@
 <script defer>
     var debugging = true;
     var config = {
-        baseUrl: "http://daotao.tkyt.vn/kln/",
-        username: "anhth",
-        password: "Csdl2018@)!*",
+        baseUrl: "http://daotao.tkyt.vn/kln",
+        username: "",
+        password: "",
     };
 
     var allowOrg = null;
@@ -277,7 +277,7 @@
     // let orgUnitSelected.name = dhis2 ? dhis2.report.organisationUnit.name : "An Giang";
 
     var pull = (endPoint) => {
-        return fetch(config.baseUrl + endPoint, {
+        return fetch(config.baseUrl +'/'+ endPoint, {
             credentials: "include",
             headers: {
                 Authorization: !config.username
@@ -421,7 +421,7 @@
                         //Check orgSelect
                         let allowedOrg = await isAllowedOrg(orgUnitSelectedID)
                         if (!allowedOrg.isAllowed) {
-                            $("#alert").text('Báo cáo này chỉ áp dụng đến tuyến huyện.');
+                            $("#alert").text('Báo cáo này chỉ áp dụng cho từng CSYT.');
                         } else {
                             $(this).dialog("close");
                             $(".titleOu").text(orgUnitSelected.name);
@@ -573,6 +573,15 @@
         if (['http://kln.tkyt.vn', 'http://daotao.tkyt.vn'].includes(window.parent.location.origin)) {
             debugging = false;//product is require FALSE
         }
+        
+        let mapBaseUrl = {
+            "daotao.tkyt.vn": window.parent.location.origin + "/kln/",
+            "kln.tkyt.vn": window.parent.location.origin
+        }
+
+        config.baseUrl = mapBaseUrl[window.parent.location.hostname] ;
+        desURL = mapBaseUrl[window.parent.location.hostname];
+
         if (debugging) {
             orgUnitSelected = { id: "LOdti1gATwC", name: "Việt nam" }
         }

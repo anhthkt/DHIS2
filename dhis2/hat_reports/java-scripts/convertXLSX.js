@@ -11,21 +11,38 @@ let data = workbook.Sheets[sheetName];
 // const directory = 'output'
 
 let result = {};
-for (let k in data) {
-    if (data.hasOwnProperty(k)) {
-        if (k[0] === '!') continue;
-        if (!_.isArray(result[k.slice(1)])) result[k.slice(1)] = [];
-        result[k.slice(1)].push(data[k].v);
-    }
+for(let row = 3; row < 100; row++) {
+    let m = `A${row}`
+    if (data[`A${row}`] == undefined) break;
+    result[m.slice(1)] = [];
+    result[m.slice(1)].push(data[m].v);
 }
 
+let cols = ['B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N']
+
+for (let i = 0; i < cols.length; i++) {
+    for(let row = 3; row < Object.keys(result).length + 3; row++) {
+        let k = `${cols[i]}${row}`
+        if (data[`${cols[i]}${row}`] == undefined) {result[k.slice(1)].push('');continue;
+    } else {
+        result[k.slice(1)].push(`${data[k].v}`);}
+    }
+}
+// for (let k in data) {
+//     if (data.hasOwnProperty(k)) {
+//         if (k[0] === '!') continue;
+//         if (!_.isArray(result[k.slice(1)])) result[k.slice(1)] = [];
+//         result[k.slice(1)].push(data[k].v);
+//     }
+// }
+s
 let resultTei = {
     "trackedEntityInstances": []
 };
 let keys = Object.keys(result)
 let mTei
 for (let i = 2; i < keys.length; i++) {
-    console.log(result[i][6])
+    // console.log(result[i][6])
     if (result[i][0] !== 'STT') {
         // fs.appendFileSync(`${__dirname}/${directory}/importTei.json`,
 
@@ -102,7 +119,7 @@ for (let i = 2; i < keys.length; i++) {
     }
     resultTei.trackedEntityInstances.push(mTei)
 }
-fs.writeFileSync(`${__dirname}/output/importTei-HoaBinh.json`, JSON.stringify(resultTei));
+fs.writeFileSync(`${__dirname}/output/importTei-${sheetName}.json`, JSON.stringify(resultTei));
 // writeJson(`${__dirname}/${directory}/importTei.json`, resultTei)
 // fs.readdir(`./${directory}`, function (err, files) {
 //   files.forEach(function (file) {

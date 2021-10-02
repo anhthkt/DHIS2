@@ -327,9 +327,9 @@
 <script defer>
     var debugging = true;
     var config = {
-        baseUrl: "http://daotao.tkyt.vn/kln/",
-        username: "anhth",
-        password: "Csdl2018@)!*",
+        baseUrl: "http://daotao.tkyt.vn/kln",
+        username: "",
+        password: "",
     };
     var desURL;
 
@@ -347,7 +347,7 @@
     // let orgUnitSelected.name = dhis2 ? dhis2.report.organisationUnit.name : "An Giang";
 
     var pull = (endPoint) => {
-        return fetch(config.baseUrl + endPoint, {
+        return fetch(config.baseUrl +'/'+ endPoint, {
             credentials: "include",
             headers: {
                 Authorization: !config.username
@@ -643,7 +643,9 @@
             "kln.tkyt.vn": window.parent.location.origin
         }
 
-        desURL = debugging ? "http://daotao.tkyt.vn/kln" : mapBaseUrl[window.parent.location.hostname];
+        config.baseUrl = mapBaseUrl[window.parent.location.hostname] ;
+        desURL = mapBaseUrl[window.parent.location.hostname];
+
         if (debugging) {
             orgUnitSelected = { id: "LOdti1gATwC", name: "Việt nam" }
         }
