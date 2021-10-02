@@ -74,7 +74,7 @@ function TCLACsyt() {
             , isOption: true
         },
         {
-            col: 9, id: "vVs8M3PXMX1", title: "Mức Mức độ uống rượu bia"
+            col: 9, id: "vVs8M3PXMX1", title: "Mức độ uống rượu bia"
             , isOption: true
         },
         {
@@ -120,6 +120,10 @@ function TCLACsyt() {
         },
         {
             col: 14, id: "iihmh4K0k18", title: "Thuốc"
+            , convertOutputValue: (metaData) => {
+                let { rawValue,listColumn, foundCol, jsonHeaders, event, jsonMetaData } = metaData;
+                return rawValue?.split('\n').join('<br>') || '';
+            }
         },
         {
             col: 15, id: "mVdtFRM2gFX", title: "Ghi chú"
@@ -128,10 +132,12 @@ function TCLACsyt() {
                 let bienChung = event[jsonHeaders['X0kBm02Gyft']] || ""
                 let ghiRoBienChung = event[jsonHeaders['hfGTym6BfK1']] || ""
                 let nhanxet = getValueAsOptionName({ jsonMetaData, event, jsonHeaders, de: 'fBj7BCdA665' }) || ""
-                nhanxet = nhanxet ? `<br>Nhận xét: ${nhanxet}` : '';
+                // nhanxet = nhanxet ? `<br>Nhận xét: ${nhanxet}` : '';
+                nhanxet = nhanxet ? `<br>${nhanxet}` : '';
                 let resultStr = '';
                 resultStr = bienChung == '2'//Co
-                    ? `Có biến chứng: ${ghiRoBienChung}` : ''
+                    // ? `Có biến chứng: ${ghiRoBienChung}` : ''
+                    ? `${ghiRoBienChung} \n` : ''
                 resultStr += `${nhanxet}`
                 return resultStr;
             }
@@ -170,7 +176,7 @@ function TCLACsyt() {
             , isOption: true
         },
         {
-            col: 9, id: "vVs8M3PXMX1", title: "Mức Mức độ uống rượu bia"
+            col: 9, id: "vVs8M3PXMX1", title: "Mức độ uống rượu bia"
             , isOption: true
         },
         {
@@ -206,6 +212,10 @@ function TCLACsyt() {
         },
         {
             col: 13, id: "iihmh4K0k18", title: "Thuốc"
+            , convertOutputValue: (metaData) => {
+                let { rawValue,listColumn, foundCol, jsonHeaders, event, jsonMetaData } = metaData;
+                return rawValue?.split('\n').join('<br>') || '';
+            }
         },
         {
             col: 14, id: "mVdtFRM2gFX", title: "Ghi chú"
@@ -214,10 +224,12 @@ function TCLACsyt() {
                 let bienChung = event[jsonHeaders['X0kBm02Gyft']] || ""
                 let ghiRoBienChung = event[jsonHeaders['hfGTym6BfK1']] || ""
                 let nhanxet = getValueAsOptionName({ jsonMetaData, event, jsonHeaders, de: 'fBj7BCdA665' }) || ""
-                nhanxet = nhanxet ? `<br>Nhận xét: ${nhanxet}` : '';
+                // nhanxet = nhanxet ? `<br>Nhận xét: ${nhanxet}` : '';
+                nhanxet = nhanxet ? `<br>${nhanxet}` : '';
                 let resultStr = '';
                 resultStr = bienChung == '2'//Co
-                    ? `Có biến chứng: ${ghiRoBienChung}` : ''
+                    // ? `Có biến chứng: ${ghiRoBienChung}` : ''
+                    ? `${ghiRoBienChung}` : ''
                 resultStr += `${nhanxet}`
                 return resultStr;
             }

@@ -20,7 +20,7 @@ let resultTei = {
 
     "trackedEntityInstances": []
 }
-for (let i = 0; i < 21; i++) {
+for (let i = 0; i < 2; i++) {
     let mOrgUnit = `${arrOrgUnit[getRandomInt(0, arrOrgUnit.length - 1)]}`
     let mEnrollmentDate = `2021-08-27`
     let mEventDate = `2021-${getRandomIntStart0(1, 8)}-${getRandomIntStart0(1, 27)}`
