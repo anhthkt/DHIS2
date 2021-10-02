@@ -7,7 +7,6 @@
     <script src="../api/apps/p2CustomReport/js/CommonUtil.js"></script>
     <script src="../api/apps/p2CustomReport/js/DataValueUtil.js"></script>
     <script src="../api/apps/p2KlnReports/js/hencopd_csyt.js"></script>
-
     <link type="text/css" rel="stylesheet" media="screen,print"
         href="../dhis-web-commons/css/widgets.css?_rev=9d1554c" />
 
@@ -119,7 +118,7 @@
 
 
     <div style="text-align: center;">
-        <strong class="mainTitle">SỔ THEO DÕI QUẢN LÝ BỆNH NHÂN HEN THEO CSYT</strong><br>
+        <strong class="mainTitle">SỔ THEO DÕI QUẢN LÝ BỆNH NHÂN COPD/HEN THEO CSYT</strong><br>
         <!-- <small style="font-weight: 100;">(gồm những bệnh nhân được quản lý điều trị theo từng
             CSYT, bao gồm cả BN ở địa bàn
             khác)</small> -->
@@ -127,8 +126,8 @@
     </div>
     <span class="titleOu" align="center"></span>
     <div class="tab noprint">
-        <button class="tablinks" onclick="changeSection(event, 'Sec1')" id="defaultOpen">Phần 1(COPD)</button>
-        <button class="tablinks" onclick="changeSection(event, 'Sec2')">Phần 2(HEN)</button>
+        <button class="tablinks" onclick="changeSection(event, 'Sec1')" id="defaultOpen">Phần 1 (COPD)</button>
+        <button class="tablinks" onclick="changeSection(event, 'Sec2')">Phần 2 (HEN)</button>
         <!-- <button class="tablinks" onclick="changeSection(event, 'Sec3')">MSM-CHias</button> -->
         <!-- <div>
                 <button class="tablinks" onclick="changeSection(event, 'All')">Show All</button>
@@ -137,7 +136,7 @@
     <div id="printingTable">
 
         <div id="Sec1" class="tabcontent">
-            <table id="table_id1" class="row-border" width="100%">
+            <table id="table_copd" class="row-border" width="100%">
                 <thead>
                     <tr class="tr">
                         <th colspan="6"><strong>Thông tin hành chính</strong></th>
@@ -159,7 +158,7 @@
                         <!-- <th>Mức độ khó thở theo mMRC</th>
                         <th>Điểm CAT</th>
                         <th>Số đợt cấp/12 tháng</th> -->
-                        <th>FEV1</th>
+                        <th>Mức độ giảm FEV1</th>
                         <th>Mức độ nặng</th>
                         <th>Kết quả điều trị</th>
                         <th>Thuốc</th>
@@ -169,7 +168,7 @@
             </table>
         </div>
         <div id="Sec2" class="tabcontent active">
-            <table id="table_id2" class="row-border" width="100%">
+            <table id="table_hen" class="row-border" width="100%">
                 <thead>
                     <tr class="tr">
                         <th colspan="6"><strong>Thông tin hành chính</strong></th>
@@ -190,7 +189,7 @@
                         <th>Hút thuốc lá</th>
                         <!-- <th>Mức độ khó thở </th>
                         <th>Làm việc và sinh hoạt</th> -->
-                        <th>Lưu lượng đỉnh - FEV1</th>
+                        <th>Mức độ giảm Lưu lượng đỉnh hoặc FEV1</th>
                         <!-- <th>FEV1</th> -->
                         <th>Kết quả điều trị</th>
                         <th>Thuốc</th>
@@ -268,9 +267,9 @@
 <script defer>
     var debugging = true;
     var config = {
-        baseUrl: "http://daotao.tkyt.vn/kln/",
-        username: "duylp",
-        password: "$P2ild1994",
+        baseUrl: "http://daotao.tkyt.vn/kln",
+        username: "",
+        password: "",
     };
 
     var allowOrg = null;
@@ -287,7 +286,7 @@
     // let orgUnitSelected.name = dhis2 ? dhis2.report.organisationUnit.name : "An Giang";
 
     var pull = (endPoint) => {
-        return fetch(config.baseUrl + endPoint, {
+        return fetch(config.baseUrl +'/'+ endPoint, {
             credentials: "include",
             headers: {
                 Authorization: !config.username
@@ -361,8 +360,15 @@
     };
     async function isAllowedOrg(selectedOrgID) {
 
-        let banOrgPull = await pull('api/organisationUnits.json?paging=false&filter=level:in:[1,2]');
-        banOrg = banOrgPull.organisationUnits.map(e => e.id);
+        // let banOrgPull = await pull('api/organisationUnits.json?paging=false&filter=level:in:[1,2,3]');
+        // banOrg = banOrgPull.organisationUnits.map(e => e.id);
+
+
+        let banOrgGroupPull = await pull(`api/organisationUnits/${selectedOrgID}.json?fields=organisationUnitGroups[id]&paging=false`);
+        let banOrgGroup = banOrgGroupPull.organisationUnitGroups.map(e => e.id)
+        return banOrgGroup.length == 0 || banOrgGroup.some(e => e == 'W4U1KdFeIJH' || e == 'mH8ggZyC39Z')
+            ? { isAllowed: false, message: "" }
+            : { isAllowed: true, message: "" }
 
         if (banOrg && allowOrg) {
             console.log("1")
@@ -391,6 +397,7 @@
             return { isAllowed: false, message: "" };;
         }
     }
+
     function get_period_dialog() {
         $("#dialog").dialog({
             title: "Báo cáo chuẩn và Thời điểm",
@@ -425,7 +432,7 @@
                         //Check orgSelect
                         let allowedOrg = await isAllowedOrg(orgUnitSelectedID)
                         if (!allowedOrg.isAllowed) {
-                            $("#alert").text('Báo cáo này chỉ áp dụng đến tuyến huyện.');
+                            $("#alert").text('Báo cáo này chỉ áp dụng cho từng CSYT.');
                         } else {
                             $(this).dialog("close");
                             $(".titleOu").text(orgUnitSelected.name);
@@ -577,6 +584,15 @@
         if (['http://kln.tkyt.vn', 'http://daotao.tkyt.vn'].includes(window.parent.location.origin)) {
             debugging = true;//product is require FALSE
         }
+        
+        let mapBaseUrl = {
+            "daotao.tkyt.vn": window.parent.location.origin + "/kln/",
+            "kln.tkyt.vn": window.parent.location.origin
+        }
+
+        config.baseUrl = mapBaseUrl[window.parent.location.hostname] ;
+        desURL = mapBaseUrl[window.parent.location.hostname];
+
         if (debugging) {
             orgUnitSelected = { id: "LOdti1gATwC", name: "Việt nam" }
         }
