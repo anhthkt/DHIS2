@@ -119,7 +119,7 @@
 
 
     <div style="text-align: center;">
-        <strong class="mainTitle">SỔ THEO DÕI QUẢN LÝ BỆNH NHÂN HEN THEO ĐỊA BÀN</strong><br>
+        <strong class="mainTitle">SỔ THEO DÕI QUẢN LÝ BỆNH NHÂN COPD/HEN THEO ĐỊA BÀN</strong><br>
         <!-- <small style="font-weight: 100;">(gồm những bệnh nhân được quản lý điều trị theo từng
             CSYT, bao gồm cả BN ở địa bàn
             khác)</small> -->
@@ -127,9 +127,9 @@
     </div>
     <span class="titleOu" align="center"></span>
     <div class="tab noprint">
-        <button class="tablinks" onclick="changeSection(event, 'Sec1')" id="defaultOpen">Phần 1(COPD)</button>
-        <button class="tablinks" onclick="changeSection(event, 'Sec2')">Phần 2(HEN)</button>
-        <button class="tablinks" onclick="changeSection(event, 'Sec3')">Phần 3(TT37)</button>
+        <button class="tablinks" onclick="changeSection(event, 'Sec3')" id="defaultOpen">Phần 1 (TT37)</button>
+        <button class="tablinks" onclick="changeSection(event, 'Sec1')">Phần 2 (COPD)</button>
+        <button class="tablinks" onclick="changeSection(event, 'Sec2')">Phần 3 (HEN)</button>
 
         <!-- <button class="tablinks" onclick="changeSection(event, 'Sec3')">MSM-CHias</button> -->
         <!-- <div>
@@ -138,85 +138,21 @@
     </div>
     <div id="printingTable">
 
-        <div id="Sec1" class="tabcontent">
-            <table id="table_id1" class="row-border" width="100%">
-                <thead>
-                    <tr class="tr">
-                        <th colspan="6"><strong>Thông tin hành chính</strong></th>
-                        <th colspan="10">
-                            <strong>Quản lý điều trị</strong>
-                        </th>
-                    </tr>
-
-                    <tr class="tr">
-                        <th>STT</th>
-                        <th>Họ tên</th>
-                        <th>Giới tính</th>
-                        <th>Năm sinh</th>
-                        <th>Mã BHYT/Số CMT</th>
-                        <th>SĐT</th>
-                        <th>Ngày khám</th>
-                        <th>Chẩn đoán</th>
-                        <th>Hút thuốc lá</th>
-                        <!-- <th>Mức độ khó thở theo mMRC</th>
-                        <th>Điểm CAT</th>
-                        <th>Số đợt cấp/12 tháng</th> -->
-                        <th>FEV1</th>
-                        <th>Mức độ nặng</th>
-                        <th>Kết quả điều trị</th>
-                        <th>Thuốc</th>
-                        <th>Ghi chú</th>
-                    </tr>
-                </thead>
-            </table>
-        </div>
-        <div id="Sec2" class="tabcontent active">
-            <table id="table_id2" class="row-border" width="100%">
-                <thead>
-                    <tr class="tr">
-                        <th colspan="6"><strong>Thông tin hành chính</strong></th>
-                        <th colspan="9">
-                            <strong>Quản lý điều trị</strong>
-                        </th>
-                    </tr>
-
-                    <tr class="tr">
-                        <th>STT</th>
-                        <th>Họ tên</th>
-                        <th>Giới tính</th>
-                        <th>Năm sinh</th>
-                        <th>Mã BHYT/Số CMT</th>
-                        <th>SĐT</th>
-                        <th>Ngày khám</th>
-                        <th>Chẩn đoán</th>
-                        <th>Hút thuốc lá</th>
-                        <!-- <th>Mức độ khó thở </th>
-                        <th>Làm việc và sinh hoạt</th> -->
-                        <th>Lưu lượng đỉnh-FEV1</th>
-                        <!-- <th>FEV1</th> -->
-                        <th>Kết quả điều trị</th>
-                        <th>Thuốc</th>
-                        <th>Ghi chú</th>
-                    </tr>
-                </thead>
-            </table>
-        </div>
-
         <div id="Sec3" class="tabcontent">
-            <table id="table_id3" class="row-border" width="100%">
+            <table id="table_tt37" class="row-border" width="100%">
                 <thead>
                     <tr class="tr">
                         <th style="text-align: center;" rowspan="2">STT </th>
                         <th style="text-align: center;" rowspan="2">Họ và tên</th>
-                        <th style="text-align: center;" colspan="2">Tuổi</th>
+                        <th style="text-align: center;" colspan="2">Năm sinh</th>
                         <th style="text-align: center;" rowspan="2">Địa chỉ</th>
                         <th style="text-align: center;" rowspan="2">Nghề nghiệp</th>
                         <th style="text-align: center;" rowspan="2">Ngày phát hiện</th>
                         <th style="text-align: center;" rowspan="2">Nơi phát hiện</th>
                         <th style="text-align: center;" rowspan="2">Phân loại bệnh</th>
-                        <th style="text-align: center;" colspan="12">Kết quả quản lý điều trị tại trạm y tế của bệnh
-                            nhân theo tháng(Có đến khám: Có đạt huyết áp mục tiêu = C; Không đạt = K; Không đến
-                            khám/Không biết = để trống)</th>
+                        <th style="text-align: center;" colspan="12">Kết quả quản lý điều trị của bệnh nhân theo tháng
+                            (Có đến khám: Có đạt mục tiêu điều trị = C; Không đạt = K; Không đến khám/Không biết = để
+                            trống)</th>
                         <th style="text-align: center;" rowspan="2">Ghi chú</th>
                     </tr>
                     <tr>
@@ -264,6 +200,72 @@
                 </tbody>
             </table>
         </div>
+        <div id="Sec1" class="tabcontent">
+            <table id="table_id1" class="row-border" width="100%">
+                <thead>
+                    <tr class="tr">
+                        <th colspan="6"><strong>Thông tin hành chính</strong></th>
+                        <th colspan="10">
+                            <strong>Quản lý điều trị</strong>
+                        </th>
+                    </tr>
+
+                    <tr class="tr">
+                        <th>STT</th>
+                        <th>Họ tên</th>
+                        <th>Giới tính</th>
+                        <th>Năm sinh</th>
+                        <th>Mã BHYT/Số CMT</th>
+                        <th>SĐT</th>
+                        <th>Ngày khám</th>
+                        <th>Nơi khám</th>
+                        <th>Chẩn đoán</th>
+                        <th>Hút thuốc lá</th>
+                        <!-- <th>Mức độ khó thở theo mMRC</th>
+                        <th>Điểm CAT</th>
+                        <th>Số đợt cấp/12 tháng</th> -->
+                        <th>Mức độ giảm FEV1</th>
+                        <th>Mức độ nặng</th>
+                        <th>Kết quả điều trị</th>
+                        <th>Thuốc</th>
+                        <th>Ghi chú</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div id="Sec2" class="tabcontent active">
+            <table id="table_id2" class="row-border" width="100%">
+                <thead>
+                    <tr class="tr">
+                        <th colspan="6"><strong>Thông tin hành chính</strong></th>
+                        <th colspan="9">
+                            <strong>Quản lý điều trị</strong>
+                        </th>
+                    </tr>
+
+                    <tr class="tr">
+                        <th>STT</th>
+                        <th>Họ tên</th>
+                        <th>Giới tính</th>
+                        <th>Năm sinh</th>
+                        <th>Mã BHYT/Số CMT</th>
+                        <th>SĐT</th>
+                        <th>Ngày khám</th>
+                        <th>Nơi khám</th>
+                        <th>Chẩn đoán</th>
+                        <th>Hút thuốc lá</th>
+                        <!-- <th>Mức độ khó thở </th>
+                        <th>Làm việc và sinh hoạt</th> -->
+                        <th>Mức độ giảm Lưu lượng đỉnh hoặc FEV1</th>
+                        <!-- <th>FEV1</th> -->
+                        <th>Kết quả điều trị</th>
+                        <th>Thuốc</th>
+                        <th>Ghi chú</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
     </div>
 
     <div id="overlay" class="report">
@@ -334,10 +336,9 @@
     var debugging = true;
     var config = {
         baseUrl: "http://daotao.tkyt.vn/kln/",
-        username: "duylp",
-        password: "$P2ild1994",
+        username: "",
+        password: "",
     };
-    let desURL = debugging ? 'http://daotao.tkyt.vn/kln' : '..'
 
     var allowOrg = null;
     var banOrg = null;
@@ -353,7 +354,7 @@
     // let orgUnitSelected.name = dhis2 ? dhis2.report.organisationUnit.name : "An Giang";
 
     var pull = (endPoint) => {
-        return fetch(config.baseUrl + endPoint, {
+        return fetch(config.baseUrl + '/' + endPoint, {
             credentials: "include",
             headers: {
                 Authorization: !config.username
@@ -410,8 +411,8 @@
                 },
                 {
                     name: "Monthly Custom",
-                    type: "MonthlyCustomMYMY",
-                    brief: "Choose from month to month"
+                    type: "MonthlyCustom",
+                    brief: "Choose from month to month in a year"
                 }
                 // ,
                 // {
@@ -427,7 +428,7 @@
     };
     async function isAllowedOrg(selectedOrgID) {
 
-        let banOrgPull = await pull('api/organisationUnits.json?paging=false&filter=level:in:[1,2]');
+        let banOrgPull = await pull('api/organisationUnits.json?paging=false&filter=level:in:[1,2,3]');
         banOrg = banOrgPull.organisationUnits.map(e => e.id);
 
         if (banOrg && allowOrg) {
@@ -491,7 +492,7 @@
                         //Check orgSelect
                         let allowedOrg = await isAllowedOrg(orgUnitSelectedID)
                         if (!allowedOrg.isAllowed) {
-                            $("#alert").text('Báo cáo này chỉ áp dụng đến tuyến huyện.');
+                            $("#alert").text('Báo cáo này chỉ áp dụng cho tuyến xã.');
                         } else {
                             $(this).dialog("close");
                             $(".titleOu").text(orgUnitSelected.name);
@@ -549,6 +550,35 @@
                 break;
             }
             case "MonthlyCustomMYMY":
+                {
+                    let startMonth = period.data[0].startMonth.substr(4, 6);
+                    let startYear = period.data[0].startMonth.substr(0, 4);
+
+                    let endMonth = period.data[0].endMonth.substr(4, 6);
+                    let endYear = period.data[0].endMonth.substr(0, 4);
+
+                    subTitle = "Tháng " + startMonth + "/" + startYear + "-" + endMonth + "/" + endYear;
+                    let transform = [];
+
+                    if (startYear == endYear) {
+                        for (var i = startMonth * 1; i <= endMonth * 1; i++) {
+                            transform.push(startYear + pad2(i));
+                        }
+                    } else {
+                        for (var i = startMonth * 1; i <= 12; i++) {
+                            transform.push(startYear + pad2(i));
+                        }
+                        for (var i = 1; i <= endMonth * 1; i++) {
+                            transform.push(endYear + pad2(i));
+                        }
+                    }
+
+                    periods = transform.join(";");
+                    type_reported = "mlc";
+                    string_period = "Báo cáo tháng " + startMonth + "/" + startYear + "-" + endMonth + "/" + endYear;
+                    break;
+                }
+            case "MonthlyCustom":
                 {
                     let startMonth = period.data[0].startMonth.substr(4, 6);
                     let startYear = period.data[0].startMonth.substr(0, 4);
@@ -641,8 +671,17 @@
 
     jQuery(document).ready(function () {
         if (['http://kln.tkyt.vn', 'http://daotao.tkyt.vn'].includes(window.parent.location.origin)) {
-            debugging = true;//product is require FALSE
+            debugging = false;//product is require FALSE
         }
+
+        let mapBaseUrl = {
+            "daotao.tkyt.vn": window.parent.location.origin + "/kln/",
+            "kln.tkyt.vn": window.parent.location.origin
+        }
+
+        config.baseUrl = mapBaseUrl[window.parent.location.hostname];
+        desURL = mapBaseUrl[window.parent.location.hostname];
+
         if (debugging) {
             orgUnitSelected = { id: "LOdti1gATwC", name: "Việt nam" }
         }
@@ -885,6 +924,4 @@
         };
         return DataTable.Buttons;
     }));
-
-
 </script>
