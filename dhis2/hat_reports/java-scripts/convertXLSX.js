@@ -116,7 +116,7 @@ function exportTeiFromExcel(sheetName, programId, idOrgUnit) {
                 {
                     "displayName": "Số CMT/CCCD",
                     "attribute": "ZQ93P672wQR",
-                    "value": `${result[i][8]}`
+                    "value": `${add0toCMT(result[i][8])}`
                 },
                 {
                     "displayName": "Số điện thoại",
@@ -193,4 +193,9 @@ function convertCode(mValue) {
     if (mValue && mValue.toLowerCase() == 'Khác'.toLowerCase()) {
         return '6'
     }
+}
+
+function add0toCMT(mCMT) {
+    if (mCMT == '') return ''
+    return mCMT = `0${mCMT}`
 }
