@@ -1,0 +1,412 @@
+{
+    "optionSets": [
+        {
+            "created": "2021-08-12T00:54:30.900",
+            "lastUpdated": "2021-09-19T13:54:01.485",
+            "name": "Bệnh không lây nhiễm khác",
+            "id": "eURpg05t5Lo",
+            "publicAccess": "rw------",
+            "version": 8,
+            "valueType": "TEXT",
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "translations": [],
+            "userAccesses": [],
+            "options": []
+        },
+        {
+            "created": "2021-09-22T14:21:02.871",
+            "lastUpdated": "2021-09-22T15:13:07.030",
+            "name": "Chẩn đoán TTPL",
+            "id": "hwbFA7MJOEQ",
+            "publicAccess": "rw------",
+            "version": 18,
+            "valueType": "TEXT",
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "translations": [],
+            "userAccesses": [],
+            "options": []
+        },
+        {
+            "created": "2021-08-10T07:35:45.400",
+            "lastUpdated": "2021-08-10T07:36:17.101",
+            "name": "COPD/Hen",
+            "id": "mdAQdjTpnEw",
+            "publicAccess": "rw------",
+            "version": 2,
+            "valueType": "TEXT",
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "translations": [],
+            "userAccesses": [],
+            "options": []
+        },
+        {
+            "created": "2020-03-28T16:45:57.713",
+            "lastUpdated": "2021-08-11T04:27:51.323",
+            "name": "Dân  tộc",
+            "id": "NMqwGEHefgg",
+            "publicAccess": "rw------",
+            "version": 1,
+            "valueType": "TEXT",
+            "lastUpdatedBy": {
+                "displayName": "Hoang Tran Anh",
+                "id": "XS0QSpYe3nz",
+                "username": "anhth"
+            },
+            "user": {
+                "displayName": "Hoang Tran Anh",
+                "id": "XS0QSpYe3nz",
+                "username": "anhth"
+            },
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "translations": [],
+            "userAccesses": [],
+            "options": []
+        },
+        {
+            "created": "2021-08-10T09:03:30.760",
+            "lastUpdated": "2021-08-11T04:35:22.536",
+            "name": "Kiểm tra tại nhà Tâm thần",
+            "id": "LxkJkxHRDg5",
+            "publicAccess": "rw------",
+            "version": 5,
+            "valueType": "TEXT",
+            "lastUpdatedBy": {
+                "displayName": "Hoang Tran Anh",
+                "id": "XS0QSpYe3nz",
+                "username": "anhth"
+            },
+            "user": {
+                "displayName": "Hoang Tran Anh",
+                "id": "XS0QSpYe3nz",
+                "username": "anhth"
+            },
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "translations": [],
+            "userAccesses": [],
+            "options": []
+        },
+        {
+            "created": "2021-08-12T01:01:22.360",
+            "lastUpdated": "2021-08-12T01:01:36.297",
+            "name": "Kết quả điều trị bệnh KLN khác",
+            "id": "lxM5tZMshjM",
+            "publicAccess": "rw------",
+            "version": 2,
+            "valueType": "TEXT",
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "translations": [],
+            "userAccesses": [],
+            "options": []
+        },
+        {
+            "created": "2021-08-10T07:09:34.003",
+            "lastUpdated": "2021-08-10T07:09:57.457",
+            "name": "Kết quả điều trị COPD/Hen",
+            "id": "YoQhQ2neVeg",
+            "publicAccess": "rw------",
+            "version": 2,
+            "valueType": "TEXT",
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "translations": [],
+            "userAccesses": [],
+            "options": []
+        },
+        {
+            "created": "2021-08-16T03:33:05.184",
+            "lastUpdated": "2021-08-16T03:33:44.372",
+            "name": "Làm việc và sinh hoạt",
+            "id": "EUJVNt2oUKw",
+            "publicAccess": "rw------",
+            "version": 3,
+            "valueType": "TEXT",
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "translations": [],
+            "userAccesses": [],
+            "options": []
+        },
+        {
+            "created": "2021-08-16T02:51:38.241",
+            "lastUpdated": "2021-09-16T07:00:18.671",
+            "name": "Lưu lượng đỉnh/FEV1",
+            "id": "AQaJKDOpBaI",
+            "publicAccess": "rw------",
+            "version": 4,
+            "valueType": "TEXT",
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "translations": [],
+            "userAccesses": [],
+            "options": []
+        },
+        {
+            "created": "2021-08-16T03:23:53.657",
+            "lastUpdated": "2021-08-16T03:32:39.311",
+            "name": "Mức độ khó thở",
+            "id": "XaBa58hiD4m",
+            "publicAccess": "rw------",
+            "version": 3,
+            "valueType": "TEXT",
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "translations": [],
+            "userAccesses": [],
+            "options": []
+        },
+        {
+            "created": "2021-08-16T02:47:33.470",
+            "lastUpdated": "2021-08-18T04:38:04.523",
+            "name": "Mức độ khó thở theo mMRC",
+            "id": "wIoY5sX5PSZ",
+            "publicAccess": "rw------",
+            "version": 6,
+            "valueType": "TEXT",
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "translations": [],
+            "userAccesses": [],
+            "options": []
+        },
+        {
+            "created": "2021-09-16T07:03:09.157",
+            "lastUpdated": "2021-09-16T07:03:33.539",
+            "name": "Mức độ nặng",
+            "id": "Re9gbiaSupu",
+            "publicAccess": "rw------",
+            "version": 4,
+            "valueType": "TEXT",
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "translations": [],
+            "userAccesses": [],
+            "options": []
+        },
+        {
+            "created": "2021-08-10T09:05:41.585",
+            "lastUpdated": "2021-08-16T03:32:13.005",
+            "name": "Mức độ PHCN Tâm thần",
+            "id": "wCVW1Ece2gy",
+            "publicAccess": "rw------",
+            "version": 4,
+            "valueType": "TEXT",
+            "lastUpdatedBy": {
+                "displayName": "Hoang Tran Anh",
+                "id": "XS0QSpYe3nz",
+                "username": "anhth"
+            },
+            "user": {
+                "displayName": "Hoang Tran Anh",
+                "id": "XS0QSpYe3nz",
+                "username": "anhth"
+            },
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "translations": [],
+            "userAccesses": [],
+            "options": []
+        },
+        {
+            "created": "2021-08-30T03:10:18.191",
+            "lastUpdated": "2021-08-30T03:11:22.973",
+            "name": "Mức độ ảnh hưởng",
+            "id": "JG47ueCZBv1",
+            "publicAccess": "rw------",
+            "version": 3,
+            "valueType": "TEXT",
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "translations": [],
+            "userAccesses": [],
+            "options": []
+        },
+        {
+            "created": "2021-08-16T14:32:11.232",
+            "lastUpdated": "2021-08-16T14:33:02.460",
+            "name": "Số đợt cấp/12 tháng",
+            "id": "L8aKOLtJbrj",
+            "publicAccess": "rw------",
+            "version": 2,
+            "valueType": "TEXT",
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "translations": [],
+            "userAccesses": [],
+            "options": []
+        },
+        {
+            "created": "2021-08-10T08:57:53.404",
+            "lastUpdated": "2021-09-18T09:42:04.571",
+            "name": "Tâm thần",
+            "id": "Yy4IuBXUIAm",
+            "publicAccess": "rw------",
+            "version": 6,
+            "valueType": "TEXT",
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Hoang Tran Anh",
+                "id": "XS0QSpYe3nz",
+                "username": "anhth"
+            },
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "translations": [],
+            "userAccesses": [],
+            "options": []
+        },
+        {
+            "created": "2021-08-16T02:49:44.181",
+            "lastUpdated": "2021-08-16T02:51:10.421",
+            "name": "Điểm CAT",
+            "id": "nFvxdBXpCSf",
+            "publicAccess": "rw------",
+            "version": 4,
+            "valueType": "TEXT",
+            "lastUpdatedBy": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "user": {
+                "displayName": "Mai Thanh ",
+                "id": "qVzRJmKGpzz",
+                "username": "maint"
+            },
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "translations": [],
+            "userAccesses": [],
+            "options": []
+        }
+    ]
+}
