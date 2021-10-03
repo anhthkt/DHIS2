@@ -7,7 +7,8 @@ var zipdir = require('zip-dir');
 
 const baseUrl = [
   //`https://dev.tkyt.vn/lucky/api/apps`,
-  `http://daotao.tkyt.vn/kln/api/apps`
+  `http://daotao.tkyt.vn/kln/api/apps`,
+  `http://kln.tkyt.vn/api/apps`
 
 
   // `${process.env.urlInstanceKln}/api/32/apps`,

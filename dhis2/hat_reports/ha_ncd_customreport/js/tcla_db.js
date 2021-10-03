@@ -371,7 +371,7 @@ function TCLADB() {
             "kln.tkyt.vn": window.parent.location.origin
         }
 
-        desURL = debugging ? "http://daotao.tkyt.vn/kln" : mapBaseUrl[window.parent.location.hostname];
+        desURL =  mapBaseUrl[window.parent.location.hostname];
         
         let rqContent;
         p2ild.asyncLoadSupport ? rqContent = p2ild.asyncLoadSupport.createManager() : {};
