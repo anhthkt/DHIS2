@@ -2,30 +2,34 @@ const fs = require('fs');
 const xlsx = require('xlsx');
 // const writeJson = require('write-json-file');
 let _ = require('lodash');
-let workbook = xlsx.readFile(`${__dirname}/input/ThaiNguyen-T8.xlsx`);
+let workbook = xlsx.readFile(`${__dirname}/input/CẦU BÀ.xlsx`);
 console.log(workbook);
-
-let programId = 'NAleauPZvIE'; //THA
-// let programId = 'a7arqsOKzsr'; //DTD
 
 let arrSheetNames = workbook.SheetNames;
 for(let s = 0; s < arrSheetNames.length; s++) {
     let sheetName = workbook.SheetNames[s]; 
-    let idOrgUnit = ''
-    if(sheetName == 'Hoà Bình') idOrgUnit = 'vYNh45sem7i' //1
-    if(sheetName == 'Hóa Thượng') idOrgUnit = 'YCA43Nc7S1z' //2
-    if(sheetName == 'Hóa Trung') idOrgUnit = 'kHLq5gmKwLm' //3
-    if(sheetName == 'Hợp Tiến') idOrgUnit = 'ABePoFM0SAl' //4
-    if(sheetName == 'Khe Mo') idOrgUnit = 'uDHaZn0wJHE' //5
-    if(sheetName == 'Minh Lập') idOrgUnit = 'BlgJL2aTra1' //6
-    if(sheetName == 'Nam Hòa') idOrgUnit = 'EoAavdaRpSP' //7
-    if(sheetName == 'Quang Sơn') idOrgUnit = 'bPRcX1L7VEo' //8
-    if(sheetName == 'Tân Long') idOrgUnit = 'vlY8uRJpLGN' //9
-    if(sheetName == 'Thị Trấn Sông Cầu') idOrgUnit = 'oykIOtBbmqY' //10
-    if(sheetName == 'Văn Hán') idOrgUnit = 'qNGgBD2b7CZ' //11
-    if(sheetName == 'Văn Lăng') idOrgUnit = 'hsXst1hK4kQ' //12
-    if(sheetName == 'Thị trấn Trại Cau') idOrgUnit = 'cA147gYNx4g' //13
-    if(sheetName == 'Tân Lợi') idOrgUnit = 'F1G4Pjopnb4' //14
+    let idOrgUnit = '' 
+    idOrgUnit = 'pDux3W1fkih' //Xa Cau Ba
+    // if(sheetName == 'Hoà Bình') idOrgUnit = 'vYNh45sem7i' //1
+    // if(sheetName == 'Hóa Thượng') idOrgUnit = 'YCA43Nc7S1z' //2
+    // if(sheetName == 'Hóa Trung') idOrgUnit = 'kHLq5gmKwLm' //3
+    // if(sheetName == 'Hợp Tiến') idOrgUnit = 'ABePoFM0SAl' //4
+    // if(sheetName == 'Khe Mo') idOrgUnit = 'uDHaZn0wJHE' //5
+    // if(sheetName == 'Minh Lập') idOrgUnit = 'BlgJL2aTra1' //6
+    // if(sheetName == 'Nam Hòa') idOrgUnit = 'EoAavdaRpSP' //7
+    // if(sheetName == 'Quang Sơn') idOrgUnit = 'bPRcX1L7VEo' //8
+    // if(sheetName == 'Tân Long') idOrgUnit = 'vlY8uRJpLGN' //9
+    // if(sheetName == 'Thị Trấn Sông Cầu') idOrgUnit = 'oykIOtBbmqY' //10
+    // if(sheetName == 'Văn Hán') idOrgUnit = 'qNGgBD2b7CZ' //11
+    // if(sheetName == 'Văn Lăng') idOrgUnit = 'hsXst1hK4kQ' //12
+    // if(sheetName == 'Thị trấn Trại Cau') idOrgUnit = 'cA147gYNx4g' //13
+    // if(sheetName == 'Tân Lợi') idOrgUnit = 'F1G4Pjopnb4' //14
+    
+    // let programId = ''
+    // if(sheetName == 'THA') programId = 'NAleauPZvIE'; //THA
+    // if(sheetName == 'DTD') programId = 'a7arqsOKzsr'; //DTD
+    let programId = 'NAleauPZvIE'; //THA
+    // let programId = 'a7arqsOKzsr'; //DTD
     exportTeiFromExcel(sheetName, programId, idOrgUnit);
 }
 
@@ -82,8 +86,8 @@ function exportTeiFromExcel(sheetName, programId, idOrgUnit) {
                 {
                     "orgUnit": `${idOrgUnit}`,
                     "program": `${programId}`,
-                    "enrollmentDate": "2021-10-02",
-                    "incidentDate": "2021-10-02",
+                    "enrollmentDate": "2021-10-05",
+                    "incidentDate": "2021-10-05",
                     "events": []
                 }
             ],
@@ -145,6 +149,16 @@ function exportTeiFromExcel(sheetName, programId, idOrgUnit) {
                     "attribute": "ZYzDKzTIhM2",
                     "value": `${convertCode(result[i][13])}`
                 }
+                // {
+                //     "displayName": "Ngày phát hiện ĐTĐ",
+                //     "attribute": "LnYKf02oBmF",
+                //     "value": `${formatDate(result[i][12])}`
+                // },
+                // {
+                //     "displayName": "Nơi phát hiện ĐTĐ",
+                //     "attribute": "LHVZXlBbn2l",
+                //     "value": `${convertCode(result[i][13])}`
+                // }
             ]
         }
         resultTei.trackedEntityInstances.push(mTei)
