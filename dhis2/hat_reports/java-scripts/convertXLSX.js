@@ -2,14 +2,14 @@ const fs = require('fs');
 const xlsx = require('xlsx');
 // const writeJson = require('write-json-file');
 let _ = require('lodash');
-let workbook = xlsx.readFile(`${__dirname}/input/CẦU BÀ.xlsx`);
+let workbook = xlsx.readFile(`${__dirname}/input/THONG TIN BENH NHAN CAO HUYẾT ÁP - MŨI NÉ THÁNG 9 -2021-DTD.xlsx`);
 console.log(workbook);
 
 let arrSheetNames = workbook.SheetNames;
 for(let s = 0; s < arrSheetNames.length; s++) {
     let sheetName = workbook.SheetNames[s]; 
     let idOrgUnit = '' 
-    idOrgUnit = 'pDux3W1fkih' //Xa Cau Ba
+    // idOrgUnit = 'pDux3W1fkih' //Xa Cau Ba
     // if(sheetName == 'Hoà Bình') idOrgUnit = 'vYNh45sem7i' //1
     // if(sheetName == 'Hóa Thượng') idOrgUnit = 'YCA43Nc7S1z' //2
     // if(sheetName == 'Hóa Trung') idOrgUnit = 'kHLq5gmKwLm' //3
@@ -28,13 +28,14 @@ for(let s = 0; s < arrSheetNames.length; s++) {
     // let programId = ''
     // if(sheetName == 'THA') programId = 'NAleauPZvIE'; //THA
     // if(sheetName == 'DTD') programId = 'a7arqsOKzsr'; //DTD
-    let programId = 'NAleauPZvIE'; //THA
-    // let programId = 'a7arqsOKzsr'; //DTD
-    exportTeiFromExcel(sheetName, programId, idOrgUnit);
+    // let programId = 'NAleauPZvIE'; //THA
+    let programId = 'a7arqsOKzsr'; //DTD
+    exportTeiFromExcel(sheetName, programId);
 }
 
 
-function exportTeiFromExcel(sheetName, programId, idOrgUnit) {
+// function exportTeiFromExcel(sheetName, programId, idOrgUnit) {
+function exportTeiFromExcel(sheetName, programId) {
     let data = workbook.Sheets[sheetName];
 
     let result = {};
@@ -75,6 +76,17 @@ function exportTeiFromExcel(sheetName, programId, idOrgUnit) {
     //     if (result[i][0] !== 'STT') {
     // fs.appendFileSync(`${__dirname}/${directory}/importTei.json`,
     for (let i = 3; i < Object.keys(result).length + 3; i++) {
+        let idOrgUnit = '';
+        if (result[i][1] == 'Mũi Né') idOrgUnit = 'TT13UyGnAqr';
+        if (result[i][1] == 'Thiện Nghiệp') idOrgUnit = 'fN1Kp1PcQDv';
+        if (result[i][1] == 'Hàm Tiến') idOrgUnit = 'NEmThafkt61';
+        if (result[i][1] == 'Đức Nghĩa') idOrgUnit = 'JVPnZyRJsot';
+        if (result[i][1] == 'Phú Tài') idOrgUnit = 'ZxNCYQffC1r';
+        if (result[i][1] == 'Bình Hưng') idOrgUnit = 'Ds0tve5Cubq';
+        if (result[i][1] == 'Xuân An') idOrgUnit = 'CH6l2vJbw8l';
+        if (result[i][1] == 'Phú Long') idOrgUnit = 'aeTPX9GBml0';
+        if (result[i][1] == 'Phú Hài') idOrgUnit = 'uhkjfOu0BCM';
+        if (result[i][1] == 'Bắc Bình') idOrgUnit = 'Kuj9UIBKIuZ';
         mTei = {
             "orgUnit": `${idOrgUnit}`,
             "trackedEntityType": "EL3fkeMR3xK",
@@ -86,8 +98,8 @@ function exportTeiFromExcel(sheetName, programId, idOrgUnit) {
                 {
                     "orgUnit": `${idOrgUnit}`,
                     "program": `${programId}`,
-                    "enrollmentDate": "2021-10-05",
-                    "incidentDate": "2021-10-05",
+                    "enrollmentDate": "2021-10-06",
+                    "incidentDate": "2021-10-06",
                     "events": []
                 }
             ],
@@ -139,26 +151,26 @@ function exportTeiFromExcel(sheetName, programId, idOrgUnit) {
                     "attribute": "L4djJU4gMyb",
                     "value": `${result[i][10]}`
                 },
-                {
-                    "displayName": "Ngày phát hiện THA",
-                    "attribute": "RSNvyMilQxs",
-                    "value": `${formatDate(result[i][12])}`
-                },
-                {
-                    "displayName": "Nơi phát hiện THA",
-                    "attribute": "ZYzDKzTIhM2",
-                    "value": `${convertCode(result[i][13])}`
-                }
                 // {
-                //     "displayName": "Ngày phát hiện ĐTĐ",
-                //     "attribute": "LnYKf02oBmF",
+                //     "displayName": "Ngày phát hiện THA",
+                //     "attribute": "RSNvyMilQxs",
                 //     "value": `${formatDate(result[i][12])}`
                 // },
                 // {
-                //     "displayName": "Nơi phát hiện ĐTĐ",
-                //     "attribute": "LHVZXlBbn2l",
+                //     "displayName": "Nơi phát hiện THA",
+                //     "attribute": "ZYzDKzTIhM2",
                 //     "value": `${convertCode(result[i][13])}`
                 // }
+                {
+                    "displayName": "Ngày phát hiện ĐTĐ",
+                    "attribute": "LnYKf02oBmF",
+                    "value": `${formatDate(result[i][12])}`
+                },
+                {
+                    "displayName": "Nơi phát hiện ĐTĐ",
+                    "attribute": "LHVZXlBbn2l",
+                    "value": `${convertCode(result[i][13])}`
+                }
             ]
         }
         resultTei.trackedEntityInstances.push(mTei)
