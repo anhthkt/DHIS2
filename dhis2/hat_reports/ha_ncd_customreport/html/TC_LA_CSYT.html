@@ -334,7 +334,7 @@
                 },
                 {
                     name: "Monthly Custom",
-                    type: "MonthlyCustomMYMY",
+                    type: "MonthlyCustom",
                     brief: "Choose from month to month"
                 }
                 // ,
@@ -507,6 +507,36 @@
                     string_period = "Báo cáo tháng " + startMonth + "/" + startYear + "-" + endMonth + "/" + endYear;
                     break;
                 }
+            case "MonthlyCustom":
+            {
+                let startMonth = period.data[0].startMonth.substr(4, 6);
+                let startYear = period.data[0].startMonth.substr(0, 4);
+
+                let endMonth = period.data[0].endMonth.substr(4, 6);
+                let endYear = period.data[0].endMonth.substr(0, 4);
+
+                subTitle = "Tháng " + startMonth + "/" + startYear + "-" + endMonth + "/" + endYear;
+                let transform = [];
+
+                if (startYear == endYear) {
+                    for (var i = startMonth * 1; i <= endMonth * 1; i++) {
+                        transform.push(startYear + pad2(i));
+                    }
+                } else {
+                    for (var i = startMonth * 1; i <= 12; i++) {
+                        transform.push(startYear + pad2(i));
+                    }
+                    for (var i = 1; i <= endMonth * 1; i++) {
+                        transform.push(endYear + pad2(i));
+                    }
+                }
+
+                periods = transform.join(";");
+                type_reported = "mlc";
+                string_period = "Báo cáo tháng " + startMonth + "/" + startYear + "-" + endMonth + "/" + endYear;
+                break;
+            }
+        
             case "Monthly":
                 {
                     let month = period.data[0].value.substr(4, 6);
