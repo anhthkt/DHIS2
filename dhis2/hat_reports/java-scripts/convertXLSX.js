@@ -2,35 +2,21 @@ const fs = require('fs');
 const xlsx = require('xlsx');
 // const writeJson = require('write-json-file');
 let _ = require('lodash');
-let workbook = xlsx.readFile(`${__dirname}/input/Que-Luu-Quang-Nam.xlsx`);
+let workbook = xlsx.readFile(`${__dirname}/input/danh sách THA và ĐTĐ xã Quế xuân.xlsx`);
 console.log(workbook);
 
 let arrSheetNames = workbook.SheetNames;
 for(let s = 0; s < arrSheetNames.length; s++) {
     let sheetName = workbook.SheetNames[s]; 
-    let idOrgUnit = 'qE5nEnteB5z' //Xa Que Luu
-    // idOrgUnit = 'pDux3W1fkih' //Xa Cau Ba
-    // if(sheetName == 'Hoà Bình') idOrgUnit = 'vYNh45sem7i' //1
-    // if(sheetName == 'Hóa Thượng') idOrgUnit = 'YCA43Nc7S1z' //2
-    // if(sheetName == 'Hóa Trung') idOrgUnit = 'kHLq5gmKwLm' //3
-    // if(sheetName == 'Hợp Tiến') idOrgUnit = 'ABePoFM0SAl' //4
-    // if(sheetName == 'Khe Mo') idOrgUnit = 'uDHaZn0wJHE' //5
-    // if(sheetName == 'Minh Lập') idOrgUnit = 'BlgJL2aTra1' //6
-    // if(sheetName == 'Nam Hòa') idOrgUnit = 'EoAavdaRpSP' //7
-    // if(sheetName == 'Quang Sơn') idOrgUnit = 'bPRcX1L7VEo' //8
-    // if(sheetName == 'Tân Long') idOrgUnit = 'vlY8uRJpLGN' //9
-    // if(sheetName == 'Thị Trấn Sông Cầu') idOrgUnit = 'oykIOtBbmqY' //10
-    // if(sheetName == 'Văn Hán') idOrgUnit = 'qNGgBD2b7CZ' //11
-    // if(sheetName == 'Văn Lăng') idOrgUnit = 'hsXst1hK4kQ' //12
-    // if(sheetName == 'Thị trấn Trại Cau') idOrgUnit = 'cA147gYNx4g' //13
-    // if(sheetName == 'Tân Lợi') idOrgUnit = 'F1G4Pjopnb4' //14
+    
+    let idOrgUnit = 'fy1gCukD3Ow' //Que Xuan 1
     
     let programId = ''
-    if(sheetName == 'Que-Luu-THA') programId = 'NAleauPZvIE'; //THA
-    if(sheetName == 'Que-Luu-DTD') programId = 'a7arqsOKzsr'; //DTD
-    if(sheetName == 'Que-Luu-Phoi') programId = 'gPWs4FRX9dj'; //COPD/HEN
-    if(sheetName == 'Que-Luu-Hen') programId = 'gPWs4FRX9dj'; //TTPL
-    if(sheetName == 'Que-Luu-UngThu') programId = 'XrC0U6IV4W0'; //KLN Khac
+    if(sheetName == 'THA') programId = 'NAleauPZvIE'; //THA
+    if(sheetName == 'DTD') programId = 'a7arqsOKzsr'; //DTD
+    // if(sheetName == 'Que-Luu-Phoi') programId = 'gPWs4FRX9dj'; //COPD/HEN
+    // if(sheetName == 'Que-Luu-Hen') programId = 'gPWs4FRX9dj'; //TTPL
+    // if(sheetName == 'Que-Luu-UngThu') programId = 'XrC0U6IV4W0'; //KLN Khac
     // let programId = 'NAleauPZvIE'; //THA
     // let programId = 'a7arqsOKzsr'; //DTD
     if (programId == '') continue; //
@@ -137,7 +123,7 @@ function exportTeiFromExcel(sheetName, programId, idOrgUnit) {
                     {
                         "displayName": "Số CMT/CCCD",
                         "attribute": "ZQ93P672wQR",
-                        "value": `${add0toCMT(result[i][8])}`
+                        "value": `${result[i][8]}`
                     },
                     {
                         "displayName": "Số điện thoại",
@@ -236,7 +222,7 @@ function exportTeiFromExcel(sheetName, programId, idOrgUnit) {
                     {
                         "displayName": "Số CMT/CCCD",
                         "attribute": "ZQ93P672wQR",
-                        "value": `${add0toCMT(result[i][8])}`
+                        "value": `${result[i][8]}`
                     },
                     {
                         "displayName": "Số điện thoại",
@@ -335,7 +321,7 @@ function exportTeiFromExcel(sheetName, programId, idOrgUnit) {
                     {
                         "displayName": "Số CMT/CCCD",
                         "attribute": "ZQ93P672wQR",
-                        "value": `${add0toCMT(result[i][8])}`
+                        "value": `${result[i][8]}`
                     },
                     {
                         "displayName": "Số điện thoại",
@@ -404,7 +390,11 @@ function exportTeiFromExcel(sheetName, programId, idOrgUnit) {
 
 function formatDate(mdate) {
     if (mdate == '') return ''
-    mdate = `${mdate.split('-')[2]}-${mdate.split('-')[1]}-${mdate.split('-')[0]}`
+    let style = mdate.substr(-5).charAt(0)
+    let mdateYear = `${mdate.split(`${style}`)[2]}`
+    let mdateMonth = `0${mdate.split(`${style}`)[0]}`.substr(-2)
+    let mdateDay = `0${mdate.split(`${style}`)[1]}`.substr(-2)
+    mdate = `${mdateYear}-${mdateMonth}-${mdateDay}`
     return mdate
 }
 
@@ -440,3 +430,6 @@ function add0toCMT(mCMT) {
     if (mCMT == '') return ''
     return mCMT = `0${mCMT}`
 }
+
+
+//=IF(N3="TYT"; "Trạm Y tế"; IF(N3="BVtỉnh"; "Bệnh viện tỉnh"; IF(N3="BV Khánh Vĩnh"; "Bệnh viện huyện"; IF(N3="PKĐK"; "Bệnh viện tư nhân"; "Khác"))))
