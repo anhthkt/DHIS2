@@ -2,13 +2,13 @@ const fs = require('fs');
 const xlsx = require('xlsx');
 // const writeJson = require('write-json-file');
 let _ = require('lodash');
-let workbook = xlsx.readFile(`${__dirname}/input/THONG TIN BENH NHAN CAO HUYẾT ÁP - MŨI NÉ THÁNG 9 -2021-DTD.xlsx`);
+let workbook = xlsx.readFile(`${__dirname}/input/Que-Luu-Quang-Nam.xlsx`);
 console.log(workbook);
 
 let arrSheetNames = workbook.SheetNames;
 for(let s = 0; s < arrSheetNames.length; s++) {
     let sheetName = workbook.SheetNames[s]; 
-    let idOrgUnit = '' 
+    let idOrgUnit = 'qE5nEnteB5z' //Xa Que Luu
     // idOrgUnit = 'pDux3W1fkih' //Xa Cau Ba
     // if(sheetName == 'Hoà Bình') idOrgUnit = 'vYNh45sem7i' //1
     // if(sheetName == 'Hóa Thượng') idOrgUnit = 'YCA43Nc7S1z' //2
@@ -25,17 +25,21 @@ for(let s = 0; s < arrSheetNames.length; s++) {
     // if(sheetName == 'Thị trấn Trại Cau') idOrgUnit = 'cA147gYNx4g' //13
     // if(sheetName == 'Tân Lợi') idOrgUnit = 'F1G4Pjopnb4' //14
     
-    // let programId = ''
-    // if(sheetName == 'THA') programId = 'NAleauPZvIE'; //THA
-    // if(sheetName == 'DTD') programId = 'a7arqsOKzsr'; //DTD
+    let programId = ''
+    if(sheetName == 'Que-Luu-THA') programId = 'NAleauPZvIE'; //THA
+    if(sheetName == 'Que-Luu-DTD') programId = 'a7arqsOKzsr'; //DTD
+    if(sheetName == 'Que-Luu-Phoi') programId = 'gPWs4FRX9dj'; //COPD/HEN
+    if(sheetName == 'Que-Luu-Hen') programId = 'gPWs4FRX9dj'; //TTPL
+    if(sheetName == 'Que-Luu-UngThu') programId = 'XrC0U6IV4W0'; //KLN Khac
     // let programId = 'NAleauPZvIE'; //THA
-    let programId = 'a7arqsOKzsr'; //DTD
-    exportTeiFromExcel(sheetName, programId);
+    // let programId = 'a7arqsOKzsr'; //DTD
+    if (programId == '') continue; //
+    exportTeiFromExcel(sheetName, programId, idOrgUnit);
 }
 
 
 // function exportTeiFromExcel(sheetName, programId, idOrgUnit) {
-function exportTeiFromExcel(sheetName, programId) {
+function exportTeiFromExcel(sheetName, programId, idOrgUnit) {
     let data = workbook.Sheets[sheetName];
 
     let result = {};
@@ -76,103 +80,314 @@ function exportTeiFromExcel(sheetName, programId) {
     //     if (result[i][0] !== 'STT') {
     // fs.appendFileSync(`${__dirname}/${directory}/importTei.json`,
     for (let i = 3; i < Object.keys(result).length + 3; i++) {
-        let idOrgUnit = '';
-        if (result[i][1] == 'Mũi Né') idOrgUnit = 'TT13UyGnAqr';
-        if (result[i][1] == 'Thiện Nghiệp') idOrgUnit = 'fN1Kp1PcQDv';
-        if (result[i][1] == 'Hàm Tiến') idOrgUnit = 'NEmThafkt61';
-        if (result[i][1] == 'Đức Nghĩa') idOrgUnit = 'JVPnZyRJsot';
-        if (result[i][1] == 'Phú Tài') idOrgUnit = 'ZxNCYQffC1r';
-        if (result[i][1] == 'Bình Hưng') idOrgUnit = 'Ds0tve5Cubq';
-        if (result[i][1] == 'Xuân An') idOrgUnit = 'CH6l2vJbw8l';
-        if (result[i][1] == 'Phú Long') idOrgUnit = 'aeTPX9GBml0';
-        if (result[i][1] == 'Phú Hài') idOrgUnit = 'uhkjfOu0BCM';
-        if (result[i][1] == 'Bắc Bình') idOrgUnit = 'Kuj9UIBKIuZ';
-        mTei = {
-            "orgUnit": `${idOrgUnit}`,
-            "trackedEntityType": "EL3fkeMR3xK",
-            "inactive": false,
-            "deleted": false,
-            "featureType": "NONE",
-            "programOwners": [],
-            "enrollments": [
-                {
-                    "orgUnit": `${idOrgUnit}`,
-                    "program": `${programId}`,
-                    "enrollmentDate": "2021-10-06",
-                    "incidentDate": "2021-10-06",
-                    "events": []
-                }
-            ],
-            "relationships": [],
-            "attributes": [
-                {
-                    "code": "WHO_001",
-                    "displayName": "Mã BHYT",
-                    "attribute": "JHb1hzseNMg",
-                    "value": `${result[i][7]}`
-                },
-                {
-                    "code": "WHO_002",
-                    "displayName": "Họ và tên",
-                    "attribute": "xBoLC0aruyJ",
-                    "value": `${result[i][4]}`
-                },
-                {
-                    "code": "WHO_003",
-                    "displayName": "Giới tính",
-                    "attribute": "rwreLO34Xg7",
-                    "value": `${convertCode(result[i][5])}`
-                },
-                {
-                    "code": "WHO_004",
-                    "displayName": "Năm sinh",
-                    "attribute": "C7USC9MC8yH",
-                    "value": `${formatDate(result[i][6])}`
-                },
-                {
-                    "displayName": "Số CMT/CCCD",
-                    "attribute": "ZQ93P672wQR",
-                    "value": `${add0toCMT(result[i][8])}`
-                },
-                {
-                    "displayName": "Số điện thoại",
-                    "attribute": "mZbgWADLTKY",
-                    "value": `${result[i][11]}`
-                },
-                {
-                    "code": "WHO_005",
-                    "displayName": "Địa chỉ",
-                    "attribute": "Bxp1Lhr8ZeN",
-                    "value": `${result[i][9]}`
-                },
-                {
-                    "code": "WHO_006",
-                    "displayName": "Nghề nghiệp",
-                    "attribute": "L4djJU4gMyb",
-                    "value": `${result[i][10]}`
-                },
-                // {
-                //     "displayName": "Ngày phát hiện THA",
-                //     "attribute": "RSNvyMilQxs",
-                //     "value": `${formatDate(result[i][12])}`
-                // },
-                // {
-                //     "displayName": "Nơi phát hiện THA",
-                //     "attribute": "ZYzDKzTIhM2",
-                //     "value": `${convertCode(result[i][13])}`
-                // }
-                {
-                    "displayName": "Ngày phát hiện ĐTĐ",
-                    "attribute": "LnYKf02oBmF",
-                    "value": `${formatDate(result[i][12])}`
-                },
-                {
-                    "displayName": "Nơi phát hiện ĐTĐ",
-                    "attribute": "LHVZXlBbn2l",
-                    "value": `${convertCode(result[i][13])}`
-                }
-            ]
+        // let idOrgUnit = '';
+        // if (result[i][1] == 'Cổ Lũng') idOrgUnit = 'Q9jQLU2C2ri';
+        // if (result[i][1] == 'Thiện Nghiệp') idOrgUnit = 'fN1Kp1PcQDv';
+        // if (result[i][1] == 'Hàm Tiến') idOrgUnit = 'NEmThafkt61';
+        // if (result[i][1] == 'Đức Nghĩa') idOrgUnit = 'JVPnZyRJsot';
+        // if (result[i][1] == 'Phú Tài') idOrgUnit = 'ZxNCYQffC1r';
+        // if (result[i][1] == 'Bình Hưng') idOrgUnit = 'Ds0tve5Cubq';
+        // if (result[i][1] == 'Xuân An') idOrgUnit = 'CH6l2vJbw8l';
+        // if (result[i][1] == 'Phú Long') idOrgUnit = 'aeTPX9GBml0';
+        // if (result[i][1] == 'Phú Hài') idOrgUnit = 'uhkjfOu0BCM';
+        // if (result[i][1] == 'Bắc Bình') idOrgUnit = 'Kuj9UIBKIuZ';
+        if(programId == 'NAleauPZvIE'){
+            mTei = {
+                "orgUnit": `${idOrgUnit}`,
+                "trackedEntityType": "EL3fkeMR3xK",
+                "inactive": false,
+                "deleted": false,
+                "featureType": "NONE",
+                "programOwners": [],
+                "enrollments": [
+                    {
+                        "orgUnit": `${idOrgUnit}`,
+                        "program": `${programId}`,
+                        "enrollmentDate": "2021-10-06",
+                        "incidentDate": "2021-10-06",
+                        "events": []
+                    }
+                ],
+                "relationships": [],
+                "attributes": [
+                    {
+                        "code": "WHO_001",
+                        "displayName": "Mã BHYT",
+                        "attribute": "JHb1hzseNMg",
+                        "value": `${result[i][7]}`
+                    },
+                    {
+                        "code": "WHO_002",
+                        "displayName": "Họ và tên",
+                        "attribute": "xBoLC0aruyJ",
+                        "value": `${result[i][4]}`
+                    },
+                    {
+                        "code": "WHO_003",
+                        "displayName": "Giới tính",
+                        "attribute": "rwreLO34Xg7",
+                        "value": `${convertCode(result[i][5])}`
+                    },
+                    {
+                        "code": "WHO_004",
+                        "displayName": "Năm sinh",
+                        "attribute": "C7USC9MC8yH",
+                        "value": `${formatDate(result[i][6])}`
+                    },
+                    {
+                        "displayName": "Số CMT/CCCD",
+                        "attribute": "ZQ93P672wQR",
+                        "value": `${add0toCMT(result[i][8])}`
+                    },
+                    {
+                        "displayName": "Số điện thoại",
+                        "attribute": "mZbgWADLTKY",
+                        "value": `${result[i][11]}`
+                    },
+                    {
+                        "code": "WHO_005",
+                        "displayName": "Địa chỉ",
+                        "attribute": "Bxp1Lhr8ZeN",
+                        "value": `${result[i][9]}`
+                    },
+                    {
+                        "code": "WHO_006",
+                        "displayName": "Nghề nghiệp",
+                        "attribute": "L4djJU4gMyb",
+                        "value": `${result[i][10]}`
+                    },
+                    {
+                        "displayName": "Ngày phát hiện THA",
+                        "attribute": "RSNvyMilQxs",
+                        "value": `${formatDate(result[i][12])}`
+                    },
+                    {
+                        "displayName": "Nơi phát hiện THA",
+                        "attribute": "ZYzDKzTIhM2",
+                        "value": `${convertCode(result[i][13])}`
+                    }
+                    // {
+                    //     "displayName": "Ngày phát hiện ĐTĐ",
+                    //     "attribute": "LnYKf02oBmF",
+                    //     "value": `${formatDate(result[i][12])}`
+                    // },
+                    // {
+                    //     "displayName": "Nơi phát hiện ĐTĐ",
+                    //     "attribute": "LHVZXlBbn2l",
+                    //     "value": `${convertCode(result[i][13])}`
+                    // }
+                    // {
+                    //     "displayName": "Ngày phát hiện ĐTĐ",
+                    //     "attribute": "LnYKf02oBmF",
+                    //     "value": `${formatDate(result[i][12])}`
+                    // },
+                    // {
+                    //     "displayName": "Nơi phát hiện ĐTĐ",
+                    //     "attribute": "LHVZXlBbn2l",
+                    //     "value": `${convertCode(result[i][13])}`
+                    // }
+                ]
+            }
         }
+
+        if(programId == 'a7arqsOKzsr'){
+            mTei = {
+                "orgUnit": `${idOrgUnit}`,
+                "trackedEntityType": "EL3fkeMR3xK",
+                "inactive": false,
+                "deleted": false,
+                "featureType": "NONE",
+                "programOwners": [],
+                "enrollments": [
+                    {
+                        "orgUnit": `${idOrgUnit}`,
+                        "program": `${programId}`,
+                        "enrollmentDate": "2021-10-06",
+                        "incidentDate": "2021-10-06",
+                        "events": []
+                    }
+                ],
+                "relationships": [],
+                "attributes": [
+                    {
+                        "code": "WHO_001",
+                        "displayName": "Mã BHYT",
+                        "attribute": "JHb1hzseNMg",
+                        "value": `${result[i][7]}`
+                    },
+                    {
+                        "code": "WHO_002",
+                        "displayName": "Họ và tên",
+                        "attribute": "xBoLC0aruyJ",
+                        "value": `${result[i][4]}`
+                    },
+                    {
+                        "code": "WHO_003",
+                        "displayName": "Giới tính",
+                        "attribute": "rwreLO34Xg7",
+                        "value": `${convertCode(result[i][5])}`
+                    },
+                    {
+                        "code": "WHO_004",
+                        "displayName": "Năm sinh",
+                        "attribute": "C7USC9MC8yH",
+                        "value": `${formatDate(result[i][6])}`
+                    },
+                    {
+                        "displayName": "Số CMT/CCCD",
+                        "attribute": "ZQ93P672wQR",
+                        "value": `${add0toCMT(result[i][8])}`
+                    },
+                    {
+                        "displayName": "Số điện thoại",
+                        "attribute": "mZbgWADLTKY",
+                        "value": `${result[i][11]}`
+                    },
+                    {
+                        "code": "WHO_005",
+                        "displayName": "Địa chỉ",
+                        "attribute": "Bxp1Lhr8ZeN",
+                        "value": `${result[i][9]}`
+                    },
+                    {
+                        "code": "WHO_006",
+                        "displayName": "Nghề nghiệp",
+                        "attribute": "L4djJU4gMyb",
+                        "value": `${result[i][10]}`
+                    },
+                    // {
+                    //     "displayName": "Ngày phát hiện THA",
+                    //     "attribute": "RSNvyMilQxs",
+                    //     "value": `${formatDate(result[i][12])}`
+                    // },
+                    // {
+                    //     "displayName": "Nơi phát hiện THA",
+                    //     "attribute": "ZYzDKzTIhM2",
+                    //     "value": `${convertCode(result[i][13])}`
+                    // }
+                    {
+                        "displayName": "Ngày phát hiện ĐTĐ",
+                        "attribute": "LnYKf02oBmF",
+                        "value": `${formatDate(result[i][12])}`
+                    },
+                    {
+                        "displayName": "Nơi phát hiện ĐTĐ",
+                        "attribute": "LHVZXlBbn2l",
+                        "value": `${convertCode(result[i][13])}`
+                    }
+                    // {
+                    //     "displayName": "Ngày phát hiện ĐTĐ",
+                    //     "attribute": "LnYKf02oBmF",
+                    //     "value": `${formatDate(result[i][12])}`
+                    // },
+                    // {
+                    //     "displayName": "Nơi phát hiện ĐTĐ",
+                    //     "attribute": "LHVZXlBbn2l",
+                    //     "value": `${convertCode(result[i][13])}`
+                    // }
+                ]
+            }
+        }
+
+        if(programId == 'gPWs4FRX9dj' || programId == 'WmEGO8Ipykm' || programId == 'XrC0U6IV4W0'){
+            mTei = {
+                "orgUnit": `${idOrgUnit}`,
+                "trackedEntityType": "EL3fkeMR3xK",
+                "inactive": false,
+                "deleted": false,
+                "featureType": "NONE",
+                "programOwners": [],
+                "enrollments": [
+                    {
+                        "orgUnit": `${idOrgUnit}`,
+                        "program": `${programId}`,
+                        "enrollmentDate": "2021-10-06",
+                        "incidentDate": "2021-10-06",
+                        "events": []
+                    }
+                ],
+                "relationships": [],
+                "attributes": [
+                    {
+                        "code": "WHO_001",
+                        "displayName": "Mã BHYT",
+                        "attribute": "JHb1hzseNMg",
+                        "value": `${result[i][7]}`
+                    },
+                    {
+                        "code": "WHO_002",
+                        "displayName": "Họ và tên",
+                        "attribute": "xBoLC0aruyJ",
+                        "value": `${result[i][4]}`
+                    },
+                    {
+                        "code": "WHO_003",
+                        "displayName": "Giới tính",
+                        "attribute": "rwreLO34Xg7",
+                        "value": `${convertCode(result[i][5])}`
+                    },
+                    {
+                        "code": "WHO_004",
+                        "displayName": "Năm sinh",
+                        "attribute": "C7USC9MC8yH",
+                        "value": `${formatDate(result[i][6])}`
+                    },
+                    {
+                        "displayName": "Số CMT/CCCD",
+                        "attribute": "ZQ93P672wQR",
+                        "value": `${add0toCMT(result[i][8])}`
+                    },
+                    {
+                        "displayName": "Số điện thoại",
+                        "attribute": "mZbgWADLTKY",
+                        "value": `${result[i][11]}`
+                    },
+                    {
+                        "code": "WHO_005",
+                        "displayName": "Địa chỉ",
+                        "attribute": "Bxp1Lhr8ZeN",
+                        "value": `${result[i][9]}`
+                    },
+                    {
+                        "code": "WHO_006",
+                        "displayName": "Nghề nghiệp",
+                        "attribute": "L4djJU4gMyb",
+                        "value": `${result[i][10]}`
+                    },
+                    // {
+                    //     "displayName": "Ngày phát hiện THA",
+                    //     "attribute": "RSNvyMilQxs",
+                    //     "value": `${formatDate(result[i][12])}`
+                    // },
+                    // {
+                    //     "displayName": "Nơi phát hiện THA",
+                    //     "attribute": "ZYzDKzTIhM2",
+                    //     "value": `${convertCode(result[i][13])}`
+                    // }
+                    // {
+                    //     "displayName": "Ngày phát hiện ĐTĐ",
+                    //     "attribute": "LnYKf02oBmF",
+                    //     "value": `${formatDate(result[i][12])}`
+                    // },
+                    // {
+                    //     "displayName": "Nơi phát hiện ĐTĐ",
+                    //     "attribute": "LHVZXlBbn2l",
+                    //     "value": `${convertCode(result[i][13])}`
+                    // }
+                    // {
+                    //     "displayName": "Ngày phát hiện ĐTĐ",
+                    //     "attribute": "LnYKf02oBmF",
+                    //     "value": `${formatDate(result[i][12])}`
+                    // },
+                    // {
+                    //     "displayName": "Nơi phát hiện ĐTĐ",
+                    //     "attribute": "LHVZXlBbn2l",
+                    //     "value": `${convertCode(result[i][13])}`
+                    // }
+                ]
+            }
+        }
+
         resultTei.trackedEntityInstances.push(mTei)
     }
 
