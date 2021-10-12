@@ -2,14 +2,14 @@ const fs = require('fs');
 const xlsx = require('xlsx');
 // const writeJson = require('write-json-file');
 let _ = require('lodash');
-let workbook = xlsx.readFile(`${__dirname}/input/danh sách THA và ĐTĐ xã Quế xuân.xlsx`);
+let workbook = xlsx.readFile(`${__dirname}/input/GIANG LY.xlsx`);
 console.log(workbook);
 
 let arrSheetNames = workbook.SheetNames;
 for(let s = 0; s < arrSheetNames.length; s++) {
     let sheetName = workbook.SheetNames[s]; 
     
-    let idOrgUnit = 'fy1gCukD3Ow' //Que Xuan 1
+    let idOrgUnit = 'L5ZUrhTYz4T' //Xa Giang Ly
     
     let programId = ''
     if(sheetName == 'THA') programId = 'NAleauPZvIE'; //THA
@@ -392,8 +392,8 @@ function formatDate(mdate) {
     if (mdate == '') return ''
     let style = mdate.substr(-5).charAt(0)
     let mdateYear = `${mdate.split(`${style}`)[2]}`
-    let mdateMonth = `0${mdate.split(`${style}`)[0]}`.substr(-2)
-    let mdateDay = `0${mdate.split(`${style}`)[1]}`.substr(-2)
+    let mdateMonth = `0${mdate.split(`${style}`)[1]}`.substr(-2)
+    let mdateDay = `0${mdate.split(`${style}`)[0]}`.substr(-2)
     mdate = `${mdateYear}-${mdateMonth}-${mdateDay}`
     return mdate
 }
