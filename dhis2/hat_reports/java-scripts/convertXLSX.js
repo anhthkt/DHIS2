@@ -2,15 +2,15 @@ const fs = require('fs');
 const xlsx = require('xlsx');
 // const writeJson = require('write-json-file');
 let _ = require('lodash');
-let workbook = xlsx.readFile(`${__dirname}/input/GIANG LY.xlsx`);
+let workbook = xlsx.readFile(`${__dirname}/input/thong tin benh nhân KLN quế hiệp, quế sơn, quảng nam .xlsx`);
 console.log(workbook);
 
 let arrSheetNames = workbook.SheetNames;
 for(let s = 0; s < arrSheetNames.length; s++) {
     let sheetName = workbook.SheetNames[s]; 
     
-    let idOrgUnit = 'L5ZUrhTYz4T' //Xa Giang Ly
-    
+    let idOrgUnit = 'A2qBHBebrL5' //Xa Quế Hiệp
+    let orgName = 'Xa Que Hiep'
     let programId = ''
     if(sheetName == 'THA') programId = 'NAleauPZvIE'; //THA
     if(sheetName == 'DTD') programId = 'a7arqsOKzsr'; //DTD
@@ -20,12 +20,12 @@ for(let s = 0; s < arrSheetNames.length; s++) {
     // let programId = 'NAleauPZvIE'; //THA
     // let programId = 'a7arqsOKzsr'; //DTD
     if (programId == '') continue; //
-    exportTeiFromExcel(sheetName, programId, idOrgUnit);
+    exportTeiFromExcel(sheetName, programId, idOrgUnit, orgName);
 }
 
 
 // function exportTeiFromExcel(sheetName, programId, idOrgUnit) {
-function exportTeiFromExcel(sheetName, programId, idOrgUnit) {
+function exportTeiFromExcel(sheetName, programId, idOrgUnit, orgName) {
     let data = workbook.Sheets[sheetName];
 
     let result = {};
@@ -377,7 +377,7 @@ function exportTeiFromExcel(sheetName, programId, idOrgUnit) {
         resultTei.trackedEntityInstances.push(mTei)
     }
 
-    fs.writeFileSync(`${__dirname}/output/importTei-${sheetName}.json`, JSON.stringify(resultTei));
+    fs.writeFileSync(`${__dirname}/output/importTei-${orgName}-${sheetName}.json`, JSON.stringify(resultTei));
     // writeJson(`${__dirname}/${directory}/importTei.json`, resultTei)
     // fs.readdir(`./${directory}`, function (err, files) {
     //   files.forEach(function (file) {
