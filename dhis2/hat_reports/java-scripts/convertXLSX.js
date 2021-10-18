@@ -2,15 +2,15 @@ const fs = require('fs');
 const xlsx = require('xlsx');
 // const writeJson = require('write-json-file');
 let _ = require('lodash');
-let workbook = xlsx.readFile(`${__dirname}/input/thong tin benh nhân KLN quế hiệp, quế sơn, quảng nam .xlsx`);
+let workbook = xlsx.readFile(`${__dirname}/input/THONG TIN BN TĂNG HUYẾT ÁP 2021 Xã Minh Khương Hàm Yên.xlsx`);
 console.log(workbook);
 
 let arrSheetNames = workbook.SheetNames;
 for(let s = 0; s < arrSheetNames.length; s++) {
     let sheetName = workbook.SheetNames[s]; 
     
-    let idOrgUnit = 'A2qBHBebrL5' //Xa Quế Hiệp
-    let orgName = 'Xa Que Hiep'
+    let idOrgUnit = 'ch5njKVl7wl'
+    let orgName = 'Xa Minh Khuong'
     let programId = ''
     if(sheetName == 'THA') programId = 'NAleauPZvIE'; //THA
     if(sheetName == 'DTD') programId = 'a7arqsOKzsr'; //DTD
