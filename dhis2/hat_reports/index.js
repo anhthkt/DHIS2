@@ -7,9 +7,10 @@ var zipdir = require('zip-dir');
 
 const baseUrl = [
   //`https://dev.tkyt.vn/lucky/api/apps`,
-  `http://daotao.tkyt.vn/kln/api/apps`,
-  `http://kln.tkyt.vn/api/apps`
-
+  // `http://daotao.tkyt.vn/kln/api/apps`,
+  // `http://kln.tkyt.vn/api/apps`
+  `http://172.16.101.91:8420/api/apps`,
+  `http://172.16.101.92:8420/api/apps`
 
   // `${process.env.urlInstanceKln}/api/32/apps`,
   // `http://172.16.31.96:8524/api/32/apps`
@@ -54,7 +55,7 @@ async function importApp(appName,appVersion,isOverrideManifest) {
       axios.create({
         auth: {
           username: 'anhth',
-          password: 'Csdl2018@)!*'
+          password: 'CsDl2018@)!*'
         },
         headers: form.getHeaders(),
       }).post(mUrl, form).then(response => {
@@ -74,11 +75,11 @@ function reloadApp() {
   console.log('Updating list app...')
   let postData = new FormData();
   postData.append('appReload', 'true');
-  axios.post(`http://daotao.tkyt.vn/kln/api/maintenance`, postData, {
+  axios.post(`http://baocao.tkyt.vn/api/maintenance`, postData, {
     headers: postData.getHeaders(),
     auth: {
       username: 'anhth',
-      password: 'Csdl2018@)!*'
+      password: 'CsDl2018@)!*'
     }
   }).then(response => {
     console.log('--------- Success_UPDATE_LIST_APP --------')

@@ -45,7 +45,7 @@ function ThongTinChung() {
             });
         })
     }
-    let numberColumnCatch = 11;
+    let numberColumnCatch = 10;
 
     async function loadReport() {
         var requestApiManagerContent, requestApiManagerTotal;
@@ -194,8 +194,8 @@ function ThongTinChung() {
                             htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.getValueDE(json, "A1HRS93Y8IU.HllvX50cXC0", childID)) + "</td>"; //9
                             htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.getValueDE(json, "S117HX9INOg.HllvX50cXC0", childID)) + "</td>"; //10
                             htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.getValueDE(json, "KaNOeN9lTVb.HllvX50cXC0", childID)) + "</td>"; //11
-                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + "" + "</td>"; //12
-                            worker.storageData(0)
+                            // htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + "" + "</td>"; //12
+                            // worker.storageData(0)
                             htmlReport += "</tr>";
                         })
                         $(`#${idRowAnchor}`).after(htmlReport);
