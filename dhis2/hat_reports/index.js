@@ -6,7 +6,7 @@ const axios = require(`axios`)
 var zipdir = require('zip-dir');
 
 const baseUrl = [
-  `https://dev.tkyt.vn/lucky/api/apps`,
+  `http://dev.tkyt.vn/lucky/api/apps`,
   // `http://daotao.tkyt.vn/kln/api/apps`,
   // `http://kln.tkyt.vn/api/apps`
   // `http://172.16.101.91:8420/api/apps`,

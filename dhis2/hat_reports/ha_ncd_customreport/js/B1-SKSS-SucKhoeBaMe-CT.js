@@ -45,7 +45,7 @@ function ThongTinChung() {
             });
         })
     }
-    let numberColumnCatch = 10;
+    let numberColumnCatch = 33;
 
     async function loadReport() {
         var requestApiManagerContent, requestApiManagerTotal;
@@ -67,7 +67,10 @@ function ThongTinChung() {
 
         switch (orgHirch) {
             case LEVEL_ORG_SELECT_TYPE.TW:
-                requestApiManagerTotal.createWorker().createHolderTitleRow(`tb1ColumnIncrise`, `tongSo`, sumWorker(['writeRow'], "", "TỔNG SỐ"))
+                // requestApiManagerTotal.createWorker().createHolderTitleRow(`tb1ColumnIncrise`, `tongSo`, sumWorker(['writeRow'], "", "TỔNG SỐ"))
+                // requestApiManagerContent.createWorker().createHolderTitleRow('tongSo', `writeRow`, writeRow(sumAll))
+                requestApiManagerContent.setHandleSuccessAll(lastLoad)
+                requestApiManagerContent.createWorker().createHolderTitleRow('tb1ColumnIncrise', `tongSo`, writeRow([]))
                 requestApiManagerContent.createWorker().createHolderTitleRow('tongSo', `writeRow`, writeRow(sumAll))
                 break;
             case LEVEL_ORG_SELECT_TYPE.INDIVIDUAL_OU:
@@ -75,13 +78,14 @@ function ThongTinChung() {
                 requestApiManagerContent.createWorker().createHolderTitleRow(`tb1ColumnIncrise`, `writeRow`, writeRow([]))
                 break;
             case LEVEL_ORG_SELECT_TYPE.TINH:
-                requestApiManagerTotal.createWorker().createHolderTitleRow(`tb1ColumnIncrise`, `tongSo`, sumWorker(['writeRow'], "", "TỔNG SỐ"))
+                // requestApiManagerTotal.createWorker().createHolderTitleRow(`tb1ColumnIncrise`, `tongSo`, sumWorker(['writeRow'], "", "TỔNG SỐ"))
+                requestApiManagerContent.setHandleSuccessAll(lastLoad)
+                requestApiManagerContent.createWorker().createHolderTitleRow('tb1ColumnIncrise', `tongSo`, writeRow([]))
                 requestApiManagerContent.createWorker().createHolderTitleRow('tongSo', `writeRow`, writeRow(sumAll))
                 break;
             case LEVEL_ORG_SELECT_TYPE.HUYEN:
                 requestApiManagerTotal.createWorker().createHolderTitleRow(`tb1ColumnIncrise`, `tongSo`, sumWorker(['writeRow'], "", "TỔNG SỐ"))
                 requestApiManagerContent.createWorker().createHolderTitleRow('tongSo', `writeRow`, writeRow(sumAll))
-
                 var btn = _.cloneDeep(ApproveButtonBuilder)
                 btn.initButton(btn.BUTTON_TYPE.TYPE_APPROVE, orgUnitSelectedID, ["ZFvlCbqkwTz"], periods)
                 btn.createButtonWithPosition($("#printing"))
@@ -149,7 +153,7 @@ function ThongTinChung() {
             let htmlReport = "";
             var childOrg = [];
             var stt = 0
-            const des = "ZYDqKZDP7Rz;ZYDqKZDP7Rz.GvoEANq375m;zCDQoPon98A.HllvX50cXC0;v9f7yBuGbi6.HllvX50cXC0;WbZdhvTmYiU.HllvX50cXC0;A1HRS93Y8IU.HllvX50cXC0;S117HX9INOg.HllvX50cXC0;KaNOeN9lTVb.HllvX50cXC0"
+            const des = "eVcAnW2mO1n;UYjF45zrZmV;WxmTd6q3VRn;bRoUldKcvm6;vcS2yMpo1UL;uCfgNzu58BZ;HCLD11DQ08c;SjfMTcD2Mue;AtpZpubv2GW;s00pzu2bFow;LpxNEOc8P6Z;G80uScPn7Sk;qOQNxIAAOeN;bOHkio114aV;Zk3iMA292J2;WSH2AYS257Z;cgZjsIqjO0b;fqb4WJeji1q;LdlETep3e3n;o934x7t0yqy;tjnybRhrkJk;G0m2Yj6aa9t;H5WUNffChO8;YfPAiNsPQBl;L3WIVnCtqqg;glM1J4UA39s;or19ZwQA1TW;whZrfpaC8ef;ZOJBgAbjVtK;LLr12AjrMtu;jUouGVPDWCD;e7DWzWCcfSJ;DqRun3AXTz4"
             return new Promise((resolve, reject) => {
                 $.get("../api/analytics.json?dimension=dx:" + des + "&dimension=ou:" + p2ild.ou.stringGroups(idGroups, orgUnitSelectedID) + "&filter=pe:" + periods + "&skipRounding=true", function (json) {
 
@@ -165,7 +169,6 @@ function ThongTinChung() {
                     console.log(childOrg)
                     p2ild.ou.filterCloseOrgUnit(childOrg, periods).then(childOrg => {
 
-
                         childOrg.forEach(function (childID) {
                             let strButton = ""
                             if (idGroups != "OHWM3DxkeMR") {
@@ -175,25 +178,46 @@ function ThongTinChung() {
                                 listBtn.push(btn);
                             }
                             stt++;
-                            let cot6 = p2ild.dvu.getValueDE(json, "v9f7yBuGbi6.HllvX50cXC0", childID)
-                            let cot7 = p2ild.dvu.getValueDE(json, "WbZdhvTmYiU.HllvX50cXC0", childID)
-                            let cot8 = ''
-                            if(cot6 == 0){
-                                cot8 = 0;
-                            } else {
-                                cot8 = (p2ild.dvu.numberWithThousands(value = cot7 , isRevert = true)/p2ild.dvu.numberWithThousands(value = cot6 , isRevert = true))*100
+                            if(idGroups == ''){
+                                htmlReport += "<tr style='font-weight:bold'><td align='center'>" + "" + "</td>";//1
+                                htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + "TỔNG SỐ" + "</td>";//2                                
+                            }else{
+                                htmlReport += "<tr><td align='center'>" + stt + "</td>";//1
+                                htmlReport += "<td>" + json.metaData.items[childID].name + "<br>" + strButton + "</td>";//2
                             }
-                            htmlReport += "<tr><td align='center'>" + stt + "</td>";//1
-                            htmlReport += "<td>" + json.metaData.items[childID].name + "<br>" + strButton + "</td>";//2
-                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.getValueDE(json, "ZYDqKZDP7Rz", childID), true) + "</td>"; //3
-                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.getValueDE(json, "ZYDqKZDP7Rz.GvoEANq375m", childID)) + "</td>"; //4
-                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.getValueDE(json, "zCDQoPon98A.HllvX50cXC0", childID)) + "</td>"; //5
-                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(cot6) + "</td>"; //6
-                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(cot7) + "</td>"; //7
-                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(cot8.toFixed(0)) + "</td>"; //8 Ty le
-                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.getValueDE(json, "A1HRS93Y8IU.HllvX50cXC0", childID)) + "</td>"; //9
-                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.getValueDE(json, "S117HX9INOg.HllvX50cXC0", childID)) + "</td>"; //10
-                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.getValueDE(json, "KaNOeN9lTVb.HllvX50cXC0", childID)) + "</td>"; //11
+                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.getValueDE(json, "eVcAnW2mO1n", childID), true) + "</td>"; //3
+                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.getValueDE(json, "UYjF45zrZmV", childID)) + "</td>"; //4
+                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.numberWithThousands(p2ild.dvu.roundNumber(p2ild.dvu.getValueDE(json, "WxmTd6q3VRn", childID, undefined, false),2), false)) + "</td>"; //5
+                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.numberWithThousands(p2ild.dvu.roundNumber(p2ild.dvu.getValueDE(json, "bRoUldKcvm6", childID, undefined, false),2), false)) + "</td>"; //6
+                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.numberWithThousands(p2ild.dvu.roundNumber(p2ild.dvu.getValueDE(json, "vcS2yMpo1UL", childID, undefined, false),2), false)) + "</td>"; //7
+                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.numberWithThousands(p2ild.dvu.roundNumber(p2ild.dvu.getValueDE(json, "uCfgNzu58BZ", childID, undefined, false),2), false)) + "</td>"; //8
+                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.numberWithThousands(p2ild.dvu.roundNumber(p2ild.dvu.getValueDE(json, "HCLD11DQ08c", childID, undefined, false),2), false)) + "</td>"; //9
+                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.numberWithThousands(p2ild.dvu.roundNumber(p2ild.dvu.getValueDE(json, "SjfMTcD2Mue", childID, undefined, false),2), false)) + "</td>"; //10
+                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.numberWithThousands(p2ild.dvu.roundNumber(p2ild.dvu.getValueDE(json, "AtpZpubv2GW", childID, undefined, false),2), false)) + "</td>"; //11
+                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.numberWithThousands(p2ild.dvu.roundNumber(p2ild.dvu.getValueDE(json, "s00pzu2bFow", childID, undefined, false),2), false)) + "</td>"; //12
+                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.numberWithThousands(p2ild.dvu.roundNumber(p2ild.dvu.getValueDE(json, "LpxNEOc8P6Z", childID, undefined, false),2), false)) + "</td>"; //13
+                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.numberWithThousands(p2ild.dvu.roundNumber(p2ild.dvu.getValueDE(json, "G80uScPn7Sk", childID, undefined, false),2), false)) + "</td>"; //14
+                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.numberWithThousands(p2ild.dvu.roundNumber(p2ild.dvu.getValueDE(json, "qOQNxIAAOeN", childID, undefined, false),2), false)) + "</td>"; //15
+                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.numberWithThousands(p2ild.dvu.roundNumber(p2ild.dvu.getValueDE(json, "bOHkio114aV", childID, undefined, false),2), false)) + "</td>"; //16
+                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.numberWithThousands(p2ild.dvu.roundNumber(p2ild.dvu.getValueDE(json, "Zk3iMA292J2", childID, undefined, false),2), false)) + "</td>"; //17
+                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.numberWithThousands(p2ild.dvu.roundNumber(p2ild.dvu.getValueDE(json, "WSH2AYS257Z", childID, undefined, false),2), false)) + "</td>"; //18
+                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.numberWithThousands(p2ild.dvu.roundNumber(p2ild.dvu.getValueDE(json, "cgZjsIqjO0b", childID, undefined, false),2), false)) + "</td>"; //19
+                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.numberWithThousands(p2ild.dvu.roundNumber(p2ild.dvu.getValueDE(json, "fqb4WJeji1q", childID, undefined, false),2), false)) + "</td>"; //20
+                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.numberWithThousands(p2ild.dvu.roundNumber(p2ild.dvu.getValueDE(json, "LdlETep3e3n", childID, undefined, false),2), false)) + "</td>"; //21
+                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.numberWithThousands(p2ild.dvu.roundNumber(p2ild.dvu.getValueDE(json, "o934x7t0yqy", childID, undefined, false),2), false)) + "</td>"; //22
+                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.numberWithThousands(p2ild.dvu.roundNumber(p2ild.dvu.getValueDE(json, "tjnybRhrkJk", childID, undefined, false),2), false)) + "</td>"; //23
+                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.numberWithThousands(p2ild.dvu.roundNumber(p2ild.dvu.getValueDE(json, "G0m2Yj6aa9t", childID, undefined, false),2), false)) + "</td>"; //24
+                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.numberWithThousands(p2ild.dvu.roundNumber(p2ild.dvu.getValueDE(json, "H5WUNffChO8", childID, undefined, false),2), false)) + "</td>"; //25
+                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.numberWithThousands(p2ild.dvu.roundNumber(p2ild.dvu.getValueDE(json, "YfPAiNsPQBl", childID, undefined, false),2), false)) + "</td>"; //26
+                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.numberWithThousands(p2ild.dvu.roundNumber(p2ild.dvu.getValueDE(json, "L3WIVnCtqqg", childID, undefined, false),2), false)) + "</td>"; //27
+                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.numberWithThousands(p2ild.dvu.roundNumber(p2ild.dvu.getValueDE(json, "glM1J4UA39s", childID, undefined, false),2), false)) + "</td>"; //28
+                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.numberWithThousands(p2ild.dvu.roundNumber(p2ild.dvu.getValueDE(json, "or19ZwQA1TW", childID, undefined, false),2), false)) + "</td>"; //29
+                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.numberWithThousands(p2ild.dvu.roundNumber(p2ild.dvu.getValueDE(json, "whZrfpaC8ef", childID, undefined, false),2), false)) + "</td>"; //30
+                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.numberWithThousands(p2ild.dvu.roundNumber(p2ild.dvu.getValueDE(json, "ZOJBgAbjVtK", childID, undefined, false),2), false)) + "</td>"; //31
+                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.numberWithThousands(p2ild.dvu.roundNumber(p2ild.dvu.getValueDE(json, "LLr12AjrMtu", childID, undefined, false),2), false)) + "</td>"; //32
+                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.numberWithThousands(p2ild.dvu.roundNumber(p2ild.dvu.getValueDE(json, "jUouGVPDWCD", childID, undefined, false),2), false)) + "</td>"; //33
+                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.getValueDE(json, "e7DWzWCcfSJ", childID)) + "</td>"; //34
+                            htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + worker.storageData(p2ild.dvu.getValueDE(json, "DqRun3AXTz4", childID)) + "</td>"; //35
                             // htmlReport += "<td align='center' style='font-family:Times, Times New Roman, Georgia, serif'>" + "" + "</td>"; //12
                             // worker.storageData(0)
                             htmlReport += "</tr>";
@@ -201,8 +225,6 @@ function ThongTinChung() {
                         $(`#${idRowAnchor}`).after(htmlReport);
                         requestApiManager.content.setRequestStatusByRowID(idRowAnchor, p2ild.asyncLoadSupport.STATUS_API.SUCCESS)
                         resolve();
-
-
                     });
                 }).catch(e => {
                     requestApiManager.content.findRequestByRowID(idRowAnchor).setDataRequest(e)
@@ -229,8 +251,8 @@ function ThongTinChung() {
 
     function setValue() {
         function excuteFuncWithIdRowAnchor(idRowAnchor) {
-            var stringDEs = ["ZYDqKZDP7Rz.GvoEANq375m","zCDQoPon98A.HllvX50cXC0","v9f7yBuGbi6.HllvX50cXC0","WbZdhvTmYiU.HllvX50cXC0","A1HRS93Y8IU.HllvX50cXC0","S117HX9INOg.HllvX50cXC0","KaNOeN9lTVb.HllvX50cXC0"];
-            var stringTotalDE = ["totalZYDqKZDP7Rz"];
+            var stringDEs = ["eVcAnW2mO1n","UYjF45zrZmV","WxmTd6q3VRn","bRoUldKcvm6","vcS2yMpo1UL","uCfgNzu58BZ","HCLD11DQ08c","SjfMTcD2Mue","AtpZpubv2GW","s00pzu2bFow","LpxNEOc8P6Z","G80uScPn7Sk","qOQNxIAAOeN","bOHkio114aV","Zk3iMA292J2","WSH2AYS257Z","cgZjsIqjO0b","fqb4WJeji1q","LdlETep3e3n","o934x7t0yqy","tjnybRhrkJk","G0m2Yj6aa9t","H5WUNffChO8","YfPAiNsPQBl","L3WIVnCtqqg","glM1J4UA39s","or19ZwQA1TW","whZrfpaC8ef","ZOJBgAbjVtK","LLr12AjrMtu","jUouGVPDWCD","e7DWzWCcfSJ","DqRun3AXTz4"];
+            // var stringTotalDE = ["totalZYDqKZDP7Rz"];
             var stringIndicatorDE = [];
             var resultDe = [];
             var stringAPI = "";

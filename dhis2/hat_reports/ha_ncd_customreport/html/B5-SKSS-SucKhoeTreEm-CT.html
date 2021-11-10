@@ -12,13 +12,9 @@
 <script src="../api/apps/p2CustomReport/js/DesignUtil.js"></script>
 <script src="../api/apps/p2CustomReport/js/ApproveUtil.js"></script>
 
-<script src="../api/apps/ha_ncd_customreport/js/B1-SKSS-SucKhoeBaMe-CT.js"></script>
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.25/fc-3.3.3/fh-3.1.9/datatables.min.css" />
-<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.25/fc-3.3.3/fh-3.1.9/datatables.min.js"></script>
-<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.7.1/js/dataTables.buttons.min.js"></script>
-<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.colVis.min.js"></script>
+<script src="../api/apps/ha_ncd_customreport/js/B5-SKSS-SucKhoeTreEm-CT.js"></script>
 <link type="text/css" rel="stylesheet" media="screen,print" href="../dhis-web-commons/css/widgets.css?_rev=9d1554c" />
-<!-- <style>
+<style>
     #mainPage td,
     #mainPage p,
     #mainPage strong {
@@ -71,88 +67,6 @@
 
     td.highlight {
         background-color: #ffa !important;
-    }
-</style> -->
-<style>
-    #mainPage td,
-    #mainPage p,
-    #mainPage strong {
-        font-size: 16px !important;
-        font-family: Times, Times New Roman, Georgia, serif;
-    }
-
-    .locate_cell {
-        overflow: hidden;
-    }
-
-    #btnPrint {
-        display: none;
-    }
-
-
-    .locate_cell td,
-    .locate_cell th {
-        padding: 10px;
-        position: relative;
-        outline: 0;
-    }
-
-    body:not(.nohover) tbody tr:hover {
-        background-color: #ffa;
-    }
-
-    /* body:not(.nohover) th:hover {
-        background-color: #ffa;
-    } */
-
-    .locate_cell td:hover::after,
-    .locate_cell thead th:not(:empty):hover::after,
-    .locate_cell td:focus::after,
-    .locate_cell thead th:not(:empty):focus::after {
-        content: '';
-        height: 10000px;
-        left: 0;
-        position: absolute;
-        top: -5000px;
-        width: 100%;
-        z-index: -1;
-    }
-
-    .locate_cell td:hover::after,
-    .locate_cell th:hover::after {
-                background-color: #ffa;
-    }
-
-    .locate_cell td:focus::after,
-    .locate_cell th:focus::after {
-        background-color: lightblue;
-    }
-
-    /*  Define the background color for all the EVEN table columns  */
-    .locate_cell tr td:nth-child(odd) {
-        background-color: white;
-    }
-    .locate_cell tr td:nth-child(even) {
-        background-color: white;
-    }
-
-    th,
-    td {
-        border: 0px solid white !important;
-    }
-
-    .table-content td,
-    .table-content th {
-        border: 1px solid black !important;
-    }
-
-
-    td.highlight {
-        background-color: #ffa !important;
-    }
-
-    .table-content {
-        overflow: scroll;
     }
 </style>
 <script type="text/javascript">
@@ -225,44 +139,42 @@
 
 
 
-    // function get_period_dialog() {
-    //     $("#dialog").dialog({
-    //         title: "Báo cáo chuẩn và Thời điểm",
-    //         resizable: false,
-    //         width: 1100,
-    //         height: 500,
-    //         modal: true,
-    //         position: ['center', 20],
-    //         buttons: {
-    //             "Xuất báo cáo": function () {
-    //                 var orgId = selectionTreeSelection.getSelectedUid();
-    //                 var orgName = $("#oustOrgUnit" + orgId[0] + " a[class='selected']").text();
-    //                 orgUnitSelected = { id: orgId[0], name: orgName };
-    //                 orgUnitSelectedID = orgUnitSelected.id;
-    //                 console.log(orgUnitSelected);
-    //                 if (orgId.length == 0) {
-    //                     $("#alert").text("");
-    //                     $("#alert").text("Xin chọn đơn vị báo cáo!");
-    //                 } else if (periods == null || periods == "") {
-    //                     $("#alert").text("");
-    //                     $("#alert").text("Xin chọn Báo cáo hoặc Thời điểm!");
-    //                 } else {
-    //                     $(this).dialog("close");
-    //                     //Check orgSelect is orgHuyen
-    //                     create_report(string_period);
-    //                 }
-    //             },
-    //             "Tắt": function () {
-    //                 $(this).dialog("close");
-    //             }
-    //         }
-    //     });
-    //     $(function () {
-    //         $(".rdtOpen").removeClass("rdtOpen")
-    //     });
-    // }
-
-    
+    function get_period_dialog() {
+        $("#dialog").dialog({
+            title: "Báo cáo chuẩn và Thời điểm",
+            resizable: false,
+            width: 1100,
+            height: 500,
+            modal: true,
+            position: ['center', 20],
+            buttons: {
+                "Xuất báo cáo": function () {
+                    var orgId = selectionTreeSelection.getSelectedUid();
+                    var orgName = $("#oustOrgUnit" + orgId[0] + " a[class='selected']").text();
+                    orgUnitSelected = { id: orgId[0], name: orgName };
+                    orgUnitSelectedID = orgUnitSelected.id;
+                    console.log(orgUnitSelected);
+                    if (orgId.length == 0) {
+                        $("#alert").text("");
+                        $("#alert").text("Xin chọn đơn vị báo cáo!");
+                    } else if (periods == null || periods == "") {
+                        $("#alert").text("");
+                        $("#alert").text("Xin chọn Báo cáo hoặc Thời điểm!");
+                    } else {
+                        $(this).dialog("close");
+                        //Check orgSelect is orgHuyen
+                        create_report(string_period);
+                    }
+                },
+                "Tắt": function () {
+                    $(this).dialog("close");
+                }
+            }
+        });
+        $(function () {
+            $(".rdtOpen").removeClass("rdtOpen")
+        });
+    }
 
     function load_period_form(type) {
         var today = new Date();
@@ -454,105 +366,6 @@
             ]
         }
     };
-
-    async function isAllowedOrg(selectedOrgID) {
-
-            // let banOrgPull = await pull('api/organisationUnits.json?paging=false&filter=level:in:[1,2,3]');
-            // banOrg = banOrgPull.organisationUnits.map(e => e.id);
-
-
-            let banOrgGroupPull = await pull(`api/organisationUnits/${selectedOrgID}.json?fields=organisationUnitGroups[id]&paging=false`);
-            let banOrgGroup = banOrgGroupPull.organisationUnitGroups.map(e => e.id)
-            return banOrgGroup.length == 0 || banOrgGroup.some(e => e == 'W4U1KdFeIJH' || e == 'mH8ggZyC39Z')
-                ? { isAllowed: false, message: "" }
-                : { isAllowed: true, message: "" }
-
-            if (banOrg && allowOrg) {
-                console.log("1")
-                if (banOrg.includes(selectedOrgID)) {
-                    return { isAllowed: false, message: "" };
-                }
-                if (allowOrg.includes(selectedOrgID)) {
-                    return { isAllowed: true, message: "" };
-                }
-                return { isAllowed: false, message: "" };
-            }
-
-            if (banOrg) {
-                console.log("2")
-                if (banOrg.includes(selectedOrgID)) {
-                    return { isAllowed: false, message: "" };
-                }
-                return { isAllowed: true, message: "" };
-            }
-
-            if (allowOrg) {
-                console.log("3")
-                if (allowOrg.includes(selectedOrgID)) {
-                    return { isAllowed: true, message: "" };;
-                }
-                return { isAllowed: false, message: "" };;
-            }
-        }
-    
-    function get_period_dialog() {
-        $("#dialog").dialog({
-            title: "Báo cáo chuẩn và Thời điểm",
-            resizable: false,
-            width: 900,
-            height: 580,
-            modal: true,
-            buttons: {
-                "Xuất báo cáo": async function () {
-                    var orgId = selectionTreeSelection?.getSelectedUid();
-                    var orgName = $("#oustOrgUnit" + orgId?.[0] + " a[class='selected']").text();
-                    if (!debugging) orgUnitSelected = { id: orgId[0], name: orgName };
-                    orgUnitSelectedID = orgUnitSelected.id;
-                    console.log(orgUnitSelected);
-
-                    if (debugging) {
-                        $(this).dialog("close");
-                        $(".titleOu").text(orgUnitSelected.name);
-                        $(".period_string").text(string_period);
-                        $("#overlay").fadeIn(300);
-                        loadReport();
-                        return
-                    }
-
-                    if (orgId?.length == 0) {
-                        $("#alert").text("");
-                        $("#alert").text("Xin chọn đơn vị báo cáo!");
-                    } else if (periods == null || periods == "") {
-                        $("#alert").text("");
-                        $("#alert").text("Xin chọn Báo cáo hoặc Thời điểm!");
-                    } else {
-                        //Check orgSelect
-                        let allowedOrg = await isAllowedOrg(orgUnitSelectedID)
-                        if (!allowedOrg.isAllowed) {
-                            $("#alert").text('Báo cáo này chỉ áp dụng cho từng CSYT.');
-                        } else {
-                            $(this).dialog("close");
-                            $(".titleOu").text(orgUnitSelected.name);
-                            $(".period_string").text(string_period);
-                            $("#overlay").fadeIn(300);
-                            loadReport();
-                        }
-                    }
-                },
-                "Tắt": function () {
-                    $(this).dialog("close");
-                }
-            }
-        });
-        $(function () {
-            $(".rdtOpen").removeClass("rdtOpen")
-        });
-        debugging
-            ? $('body > div.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-dialog-buttons.ui-draggable > div.ui-dialog-buttonpane.ui-widget-content.ui-helper-clearfix > div > button:nth-child(1)').click()
-            : {}
-    }
-    
-
 </script>
 <div class="preloader"></div>
 <div id="dialog">
@@ -601,12 +414,12 @@
                         <p class="orgUnits" align="left">&nbsp;</p>
                     </tr>
                     <tr>
-                        <td align="center" colspan="35">
+                        <td align="center" colspan="11">
                             <strong style="font-size:16px">CHỈ SỐ SỨC KHỎE BÀ MẸ </strong>
                         </td>
                     </tr>
                     <tr>
-                        <td class="periods" align="center" colspan="35">&nbsp;</td>
+                        <td class="periods" align="center" colspan="11">&nbsp;</td>
                     </tr>
                     <tr>
                         <td>
