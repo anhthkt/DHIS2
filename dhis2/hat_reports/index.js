@@ -1,3 +1,4 @@
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 const result = require(`dotenv`).config({ path: `${__dirname}/../dhis.env` })
 
 const FormData = require('form-data')
@@ -6,7 +7,7 @@ const axios = require(`axios`)
 var zipdir = require('zip-dir');
 
 const baseUrl = [
-  `http://dev.tkyt.vn/lucky/api/apps`,
+  `https://dev.tkyt.vn/lucky/api/apps`,
   // `http://daotao.tkyt.vn/kln/api/apps`,
   // `http://kln.tkyt.vn/api/apps`
   // `http://172.16.101.91:8420/api/apps`,
@@ -30,7 +31,7 @@ const baseUrl = [
 // importApp(appname = 'p2_core_customreport')
 importApp(
   appname = 'ha_ncd_customreport',
-  appVersion = '1.0',
+  appVersion = '1.1',
   isOverrideManifest = true
   )
 
@@ -75,7 +76,7 @@ function reloadApp() {
   console.log('Updating list app...')
   let postData = new FormData();
   postData.append('appReload', 'true');
-  axios.post(`dev.tkyt.vn/lucky/api/maintenance`, postData, {
+  axios.post(`https://dev.tkyt.vn/lucky/api/maintenance`, postData, {
     headers: postData.getHeaders(),
     auth: {
       username: 'anhth',

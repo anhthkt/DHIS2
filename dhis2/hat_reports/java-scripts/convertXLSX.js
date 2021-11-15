@@ -2,14 +2,14 @@ const fs = require('fs');
 const xlsx = require('xlsx');
 // const writeJson = require('write-json-file');
 let _ = require('lodash');
-let workbook = xlsx.readFile(`${__dirname}/input/DaNang-ThanhKhe-DTD.xlsx`);
+let workbook = xlsx.readFile(`${__dirname}/input/DaNang-HoaVang-HoaLien-DTD.xlsx`);
 console.log(workbook);
 
 let arrSheetNames = workbook.SheetNames;
 for(let s = 0; s < arrSheetNames.length; s++) {
     let sheetName = workbook.SheetNames[s];
     // Name file output
-    let orgName = 'DaNang-ThanhKhe-DTD'
+    let orgName = 'DaNang-HoaVang-HoaLien'
 
     let idOrgUnit = ''
      
@@ -1673,6 +1673,502 @@ function getIdOrg (nameOrg){
         {
             "id": "YZgywqEjywO",
             "name": "Phòng khám đa khoa Hữu Nghị"
+        }
+    ]
+
+    //Phú Yên
+    let arrOrgPY = [
+        {
+            "id": "a1jZGf2P85p",
+            "name": "Xã Suối Trai"
+        },
+        {
+            "id": "A50W9mKkTqi",
+            "name": "Xã Xuân Quang 3"
+        },
+        {
+            "id": "aaeVIEhzOpC",
+            "name": "Xã Hòa Tân Đông"
+        },
+        {
+            "id": "aENYcJvnZTz",
+            "name": "Xã Xuân Thọ 1"
+        },
+        {
+            "id": "b7scBzgplma",
+            "name": "Xã Hòa Định Đông"
+        },
+        {
+            "id": "bDrVD9V4VTL",
+            "name": "Xã Xuân Quang 2"
+        },
+        {
+            "id": "bG5JwN04nBW",
+            "name": "Xã Hòa Tân Tây"
+        },
+        {
+            "id": "blX6K9M85Km",
+            "name": "Phường 5"
+        },
+        {
+            "id": "bv3vj9p8cle",
+            "name": "TTYT Huyện Đồng Xuân"
+        },
+        {
+            "id": "C9cnPGbO5KZ",
+            "name": "Phòng Y tế Dân số huyện Phú Hòa"
+        },
+        {
+            "id": "CT9TEcDxXAN",
+            "name": "Xã Hòa Quang Nam"
+        },
+        {
+            "id": "CTj7pXnhHt0",
+            "name": "Xã Phú Mỡ"
+        },
+        {
+            "id": "DaHe0uPopan",
+            "name": "Xã Xuân Cảnh"
+        },
+        {
+            "id": "dF9Eua6tu2a",
+            "name": "Xã An Hòa Hải"
+        },
+        {
+            "id": "dFPIp2Lchvi",
+            "name": "Xã Sông Hinh"
+        },
+        {
+            "id": "dfZzut83Mz5",
+            "name": "Phường Hòa Xuân Tây"
+        },
+        {
+            "id": "eIr0WCxMOgu",
+            "name": "Xã Bình Ngọc"
+        },
+        {
+            "id": "eJWSEVZZbPu",
+            "name": "Xã Xuân Phương"
+        },
+        {
+            "id": "enHpSA0B5QA",
+            "name": "Xã Xuân Bình"
+        },
+        {
+            "id": "EUQgnNw0YsT",
+            "name": "Phòng Y tế Dân số thành phố Tuy Hòa"
+        },
+        {
+            "id": "ExLhEwh7d4h",
+            "name": "Phòng Y tế Dân số huyện Sơn Hòa"
+        },
+        {
+            "id": "F9ABiyiikkE",
+            "name": "Xã Hòa Xuân Nam"
+        },
+        {
+            "id": "fdZOCr3tFCY",
+            "name": "TTYT Thị xã Sông Cầu"
+        },
+        {
+            "id": "FfoBKmcNGst",
+            "name": "Xã Xuân Sơn Bắc"
+        },
+        {
+            "id": "fmdMqElC1w2",
+            "name": "Xã An Dân"
+        },
+        {
+            "id": "fo2oeEnEcd8",
+            "name": "Xã Hòa Kiến"
+        },
+        {
+            "id": "FTXUjh11IOb",
+            "name": "Xã EaBia"
+        },
+        {
+            "id": "fvVpZIW5SK2",
+            "name": "Phường Xuân Phú"
+        },
+        {
+            "id": "gEdccq0aPsV",
+            "name": "Xã Cà Lúi"
+        },
+        {
+            "id": "gycqDD53vmo",
+            "name": "TTYT Huyện Tuy An"
+        },
+        {
+            "id": "H9F9tnsJVWq",
+            "name": "Phường Phú Thạnh"
+        },
+        {
+            "id": "HdvNpWSjsoU",
+            "name": "Xã Hòa Đồng"
+        },
+        {
+            "id": "hK5ZrAKrxSI",
+            "name": "Xã An Thạch"
+        },
+        {
+            "id": "hx3p74OVNRv",
+            "name": "Phường 2"
+        },
+        {
+            "id": "HXM15yM64vN",
+            "name": "Xã Xuân Lãnh"
+        },
+        {
+            "id": "hZXKJPcRy0T",
+            "name": "Xã Hòa Quang Bắc"
+        },
+        {
+            "id": "iO3LdTx26U5",
+            "name": "Phòng Y tế Dân số huyện Tây Hòa"
+        },
+        {
+            "id": "J1k1GC28SPO",
+            "name": "Xã An Hiệp"
+        },
+        {
+            "id": "j25FYuN7h5h",
+            "name": "Xã An Chấn"
+        },
+        {
+            "id": "J60s6HpZe4V",
+            "name": "Xã Sơn Giang"
+        },
+        {
+            "id": "Jbjxn7l3a6N",
+            "name": "TTYT Huyện Sông Hinh"
+        },
+        {
+            "id": "jDtEL4avcTC",
+            "name": "Phường Xuân Đài"
+        },
+        {
+            "id": "jGTSThfO5kW",
+            "name": "Xã Xuân Quang 1"
+        },
+        {
+            "id": "Jwpmw3M8Ky0",
+            "name": "Xã Hòa Trị"
+        },
+        {
+            "id": "KbG5puyuCMl",
+            "name": "Phường 9"
+        },
+        {
+            "id": "kLNJSQyPhRa",
+            "name": "Phường Xuân Thành"
+        },
+        {
+            "id": "Kntv5E3Inhw",
+            "name": "Xã Sơn Long"
+        },
+        {
+            "id": "KqG04PH0Rq3",
+            "name": "TTYT Thành phố Tuy Hoà"
+        },
+        {
+            "id": "KSuZysNyvpk",
+            "name": "Xã Xuân Lâm"
+        },
+        {
+            "id": "Kw7paVeZvlT",
+            "name": "Thị trấn Củng Sơn"
+        },
+        {
+            "id": "LC7fQxmvEaB",
+            "name": "Xã Hòa An"
+        },
+        {
+            "id": "lFhwa0dr8cj",
+            "name": "Xã Bình Kiến"
+        },
+        {
+            "id": "liEYtF7rni4",
+            "name": "Xã Sơn Nguyên"
+        },
+        {
+            "id": "lViLtORyPjT",
+            "name": "Xã Sơn Định"
+        },
+        {
+            "id": "lZAeVS4KzAm",
+            "name": "Xã Sơn Hội"
+        },
+        {
+            "id": "MfjnpAf69uO",
+            "name": "Xã Đức Bình Tây"
+        },
+        {
+            "id": "MiK3UX7A028",
+            "name": "Xã An Ninh Tây"
+        },
+        {
+            "id": "MwJhCRouIF0",
+            "name": "Phường Hoà Vinh"
+        },
+        {
+            "id": "N2jESXNq6AH",
+            "name": "Phường 8"
+        },
+        {
+            "id": "ncKFzou45pn",
+            "name": "Xã An Hải"
+        },
+        {
+            "id": "NewSeezu3d0",
+            "name": "Phường Hòa Hiệp Bắc"
+        },
+        {
+            "id": "nkp9qFT3TvK",
+            "name": "Xã An Nghiệp"
+        },
+        {
+            "id": "NNUocgB1gkF",
+            "name": "Xã An Xuân"
+        },
+        {
+            "id": "NVDSF3QIaQb",
+            "name": "Phường Hòa Hiệp Nam"
+        },
+        {
+            "id": "O6pWEQ3j6Xq",
+            "name": "Xã Xuân Phước"
+        },
+        {
+            "id": "oCvN2tCIqzq",
+            "name": "Phường 1"
+        },
+        {
+            "id": "ofirQAjs2JW",
+            "name": "Phòng Y tế Dân số huyện Tuy An"
+        },
+        {
+            "id": "OjuYBVU9uAG",
+            "name": "Xã Suối Bạc"
+        },
+        {
+            "id": "oVx7CdSSiNg",
+            "name": "Xã An Phú"
+        },
+        {
+            "id": "oybMuoy2x4u",
+            "name": "Xã Xuân Hải"
+        },
+        {
+            "id": "OYELNBdLDaJ",
+            "name": "Xã Hòa Bình 1"
+        },
+        {
+            "id": "p5JSenswCX5",
+            "name": "Phường Phú Đông"
+        },
+        {
+            "id": "P5YSyMc6D1q",
+            "name": "Xã EaBar"
+        },
+        {
+            "id": "P8yO75o2Mja",
+            "name": "Phường 3"
+        },
+        {
+            "id": "PldiJXvqFww",
+            "name": "Xã An Định"
+        },
+        {
+            "id": "pVxksCMEXaS",
+            "name": "Xã Đa Lộc"
+        },
+        {
+            "id": "q1TtCh3qjVy",
+            "name": "Xã Sơn Hà"
+        },
+        {
+            "id": "qqa0bRQQYYw",
+            "name": "Xã Hòa Thịnh"
+        },
+        {
+            "id": "QRumsg8LQeW",
+            "name": "Xã Hòa Xuân Đông"
+        },
+        {
+            "id": "qWPHsIRa2c4",
+            "name": "Xã Đức Bình Đông"
+        },
+        {
+            "id": "QZExeklV2WJ",
+            "name": "Xã Sơn Thành Tây"
+        },
+        {
+            "id": "r3TE3GtrzKd",
+            "name": "Xã Krông Pa"
+        },
+        {
+            "id": "Rd7WcSjKrAt",
+            "name": "Xã Sơn Thành Đông"
+        },
+        {
+            "id": "rdfLat4lmxV",
+            "name": "TTYT Huyện Tây Hoà"
+        },
+        {
+            "id": "rGWKF1haKje",
+            "name": "Xã EaTrol"
+        },
+        {
+            "id": "rnApxZz9mbl",
+            "name": "TTYT Huyện Sơn Hòa"
+        },
+        {
+            "id": "RXcwdMDoU8t",
+            "name": "Phòng Y tế Dân số Thị xã Sông Cầu"
+        },
+        {
+            "id": "sxxgmqYaHtb",
+            "name": "Xã Phước Tân"
+        },
+        {
+            "id": "TE14T8gSb8O",
+            "name": "Xã An Lĩnh"
+        },
+        {
+            "id": "Tf4iBKzoKJN",
+            "name": "Phòng Y tế Dân số thị xã Đông Hòa"
+        },
+        {
+            "id": "tFsRECjUZIi",
+            "name": "Xã Ea Lâm"
+        },
+        {
+            "id": "tgVbAzcAIsM",
+            "name": "Xã Hòa Mỹ Tây"
+        },
+        {
+            "id": "TmZNY0kWL6g",
+            "name": "Phường 6"
+        },
+        {
+            "id": "uBlCx60vLXF",
+            "name": "TTYT Thị xã Đông Hòa"
+        },
+        {
+            "id": "UfmLV1onSvd",
+            "name": "Xã An Cư"
+        },
+        {
+            "id": "V6FLpsemwIZ",
+            "name": "Xã An Hòa"
+        },
+        {
+            "id": "V6xKLGHdrtr",
+            "name": "Xã Ealy"
+        },
+        {
+            "id": "vdxjh3E0cki",
+            "name": "Xã An Ninh Đông"
+        },
+        {
+            "id": "VrLTc62FSoJ",
+            "name": "Xã Hòa Thắng"
+        },
+        {
+            "id": "VvXhk114JkN",
+            "name": "Xã Xuân Lộc"
+        },
+        {
+            "id": "VZ04sZrsE5e",
+            "name": "TTYT Huyện Phú Hoà"
+        },
+        {
+            "id": "wCfLaJ4Bmon",
+            "name": "Xã Hòa Thành"
+        },
+        {
+            "id": "wdm5LoA7FzN",
+            "name": "Xã Sơn Xuân"
+        },
+        {
+            "id": "WflbxOQRJVG",
+            "name": "Phường 7"
+        },
+        {
+            "id": "WH3VgnOHoPy",
+            "name": "Xã Hòa Định Tây"
+        },
+        {
+            "id": "WRnlzF1D6cL",
+            "name": "Xã Hòa Phong"
+        },
+        {
+            "id": "wtPUTohJPfr",
+            "name": "Xã Ea Bá"
+        },
+        {
+            "id": "WWa7KWEG8Cg",
+            "name": "Phòng Y tế Dân số huyện Đồng Xuân"
+        },
+        {
+            "id": "x5pEshYbCo9",
+            "name": "Xã Hòa Tâm"
+        },
+        {
+            "id": "XBaNQoWdYDZ",
+            "name": "Xã Xuân Thọ 2"
+        },
+        {
+            "id": "XFYYOlCbqaK",
+            "name": "Xã Xuân Long"
+        },
+        {
+            "id": "xjuVSH9ofGt",
+            "name": "Xã An Mỹ"
+        },
+        {
+            "id": "XSivAy7rfoj",
+            "name": "Xã Xuân Hòa"
+        },
+        {
+            "id": "YAYTdFgevYJ",
+            "name": "Xã An Thọ"
+        },
+        {
+            "id": "YF05RQxSrSM",
+            "name": "Xã Sơn Phước"
+        },
+        {
+            "id": "YIoh1f2vd37",
+            "name": "Xã Eachà Rang"
+        },
+        {
+            "id": "yvASzB9rkiJ",
+            "name": "Phòng Y tế Dân số huyện Sông Hinh"
+        },
+        {
+            "id": "yxDngqzEKMD",
+            "name": "Xã Xuân Thịnh"
+        },
+        {
+            "id": "Zd725vGTTiZ",
+            "name": "Xã Hòa Mỹ Đông"
+        },
+        {
+            "id": "ZkNiwwN33jk",
+            "name": "Xã Xuân Sơn Nam"
+        },
+        {
+            "id": "ZoFUrOnPF6T",
+            "name": "Phường 4"
+        },
+        {
+            "id": "ZPq0OvKsDUf",
+            "name": "Xã Hòa Hội"
+        },
+        {
+            "id": "zTzgrnGeAwC",
+            "name": "Xã Hòa Phú"
         }
     ]
     let idOrg = '';
