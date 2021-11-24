@@ -2,14 +2,22 @@ const fs = require('fs');
 const xlsx = require('xlsx');
 // const writeJson = require('write-json-file');
 let _ = require('lodash');
+<<<<<<< HEAD
 let workbook = xlsx.readFile(`${__dirname}/input/Ngũ Hành Sơn THA.xlsx`);
+=======
+let workbook = xlsx.readFile(`${__dirname}/input/DaNang-NHS-DTD.xlsx`);
+>>>>>>> ce20e91cb79c4ce3424434a0a676cade3ad245c1
 console.log(workbook);
 
 let arrSheetNames = workbook.SheetNames;
 for(let s = 0; s < arrSheetNames.length; s++) {
     let sheetName = workbook.SheetNames[s];
     // Name file output
+<<<<<<< HEAD
     let orgName = 'Dak Lak'
+=======
+    let orgName = 'DaNang-NHS'
+>>>>>>> ce20e91cb79c4ce3424434a0a676cade3ad245c1
 
     let idOrgUnit = ''
      
