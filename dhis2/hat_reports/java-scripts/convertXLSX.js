@@ -2,14 +2,14 @@ const fs = require('fs');
 const xlsx = require('xlsx');
 // const writeJson = require('write-json-file');
 let _ = require('lodash');
-let workbook = xlsx.readFile(`${__dirname}/input/DaNang-HoaVang-HoaLien-DTD.xlsx`);
+let workbook = xlsx.readFile(`${__dirname}/input/DaNang-NHS-DTD.xlsx`);
 console.log(workbook);
 
 let arrSheetNames = workbook.SheetNames;
 for(let s = 0; s < arrSheetNames.length; s++) {
     let sheetName = workbook.SheetNames[s];
     // Name file output
-    let orgName = 'DaNang-HoaVang-HoaLien'
+    let orgName = 'DaNang-NHS'
 
     let idOrgUnit = ''
      
