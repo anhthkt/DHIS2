@@ -2,9 +2,7 @@
   "name": "@p2ild/importapp",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
+  "scripts": {},
   "author": "",
   "license": "ISC",
   "dependencies": {

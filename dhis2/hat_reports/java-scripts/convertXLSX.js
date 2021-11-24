@@ -2,14 +2,14 @@ const fs = require('fs');
 const xlsx = require('xlsx');
 // const writeJson = require('write-json-file');
 let _ = require('lodash');
-let workbook = xlsx.readFile(`${__dirname}/input/DaNang-HoaVang-HoaLien-DTD.xlsx`);
+let workbook = xlsx.readFile(`${__dirname}/input/Ngũ Hành Sơn THA.xlsx`);
 console.log(workbook);
 
 let arrSheetNames = workbook.SheetNames;
 for(let s = 0; s < arrSheetNames.length; s++) {
     let sheetName = workbook.SheetNames[s];
     // Name file output
-    let orgName = 'DaNang-HoaVang-HoaLien'
+    let orgName = 'Dak Lak'
 
     let idOrgUnit = ''
      
@@ -1309,7 +1309,7 @@ function getIdOrg (nameOrg){
         }
     ]
     // Đà Nẵng 
-    let arrOrg = [
+    let arrOrgDN = [
         {
             "id": "wIalkCzACQj",
             "name": "Xã Hòa Tiến"
@@ -2169,6 +2169,906 @@ function getIdOrg (nameOrg){
         {
             "id": "zTzgrnGeAwC",
             "name": "Xã Hòa Phú"
+        }
+    ]
+
+    // Dak Lak
+    let arrOrg = [
+        {
+            "id": "A02SSzvNraq",
+            "name": "PYT Tp.Buôn Ma Thuột"
+        },
+        {
+            "id": "A7TW3M95sD3",
+            "name": "Xã Hòa Thuận"
+        },
+        {
+            "id": "absirJcaslJ",
+            "name": "Xã Bình Thuận"
+        },
+        {
+            "id": "Ah4aNp6LevO",
+            "name": "Xã Ea BHốk"
+        },
+        {
+            "id": "aJCcdcn0pil",
+            "name": "Xã Chư KBô"
+        },
+        {
+            "id": "ajyXb4FsQr3",
+            "name": "Xã Hòa Lễ"
+        },
+        {
+            "id": "AlKBJQnM2rI",
+            "name": "Xã Ea KPam"
+        },
+        {
+            "id": "aNdvTsFkL6T",
+            "name": "Xã Cư Né"
+        },
+        {
+            "id": "AtAF4MvPwmL",
+            "name": "Xã Tam Giang"
+        },
+        {
+            "id": "aUtTCSdXrjC",
+            "name": "TTYT Huyện Krông Năng"
+        },
+        {
+            "id": "avg1VR5ymqQ",
+            "name": "Xã Krông Á"
+        },
+        {
+            "id": "b5uIRPy2AJn",
+            "name": "PYT M'Drắk"
+        },
+        {
+            "id": "b6I1b8THnHH",
+            "name": "Bệnh viện Mắt Tây Nguyên"
+        },
+        {
+            "id": "bBKJCHHthoK",
+            "name": "Xã Ea Siên"
+        },
+        {
+            "id": "bCmu8HD3Zvu",
+            "name": "Xã Ea Puk"
+        },
+        {
+            "id": "BdDEY45dftJ",
+            "name": "Xã Ea Drông"
+        },
+        {
+            "id": "bFCg6J71aEW",
+            "name": "Thị trấn Ea Kar"
+        },
+        {
+            "id": "biQb42JfHXa",
+            "name": "Xã Ia JLơi"
+        },
+        {
+            "id": "Bpq2pKALzAf",
+            "name": "Phường Tân An"
+        },
+        {
+            "id": "BtlEZUWaMeH",
+            "name": "Xã Quảng Điền"
+        },
+        {
+            "id": "CGaufrPpquY",
+            "name": "Xã Ea Tir"
+        },
+        {
+            "id": "cj5glf4GKy1",
+            "name": "Xã Ea Pil"
+        },
+        {
+            "id": "CJgV002Np7R",
+            "name": "Xã Cư Pơng"
+        },
+        {
+            "id": "CJkCNi2HjU8",
+            "name": "Xã Cư Prông"
+        },
+        {
+            "id": "CnxWqjpBohn",
+            "name": "Xã Ea R'Bin"
+        },
+        {
+            "id": "Cwf2cglwgQd",
+            "name": "Phường Thành Nhất"
+        },
+        {
+            "id": "CXx7m878Ylr",
+            "name": "Xã Ea Trul"
+        },
+        {
+            "id": "CyG28plKF7a",
+            "name": "Bệnh viện Nhi Đức Tâm "
+        },
+        {
+            "id": "D4xar50nJZN",
+            "name": "PYT Ea Kar"
+        },
+        {
+            "id": "dFl5UQxMo8h",
+            "name": "Xã Hòa An"
+        },
+        {
+            "id": "DkQ17pDLnXf",
+            "name": "Xã Vụ Bổn"
+        },
+        {
+            "id": "dlBWmNQ2ZvJ",
+            "name": "Xã Ea Sol"
+        },
+        {
+            "id": "DPgFa3CvUb3",
+            "name": "Xã Ea Trang"
+        },
+        {
+            "id": "DSGHLnYZE9x",
+            "name": "Xã Cư ÊBur"
+        },
+        {
+            "id": "DzENpfpSUxV",
+            "name": "Xã Quảng Hiệp"
+        },
+        {
+            "id": "E8zEw69vtla",
+            "name": "Phường Tân Tiến"
+        },
+        {
+            "id": "eF5zMsmUwkS",
+            "name": "Xã Đắk Liêng"
+        },
+        {
+            "id": "eIjgw1JiZbP",
+            "name": "Xã Ea Nuôl"
+        },
+        {
+            "id": "ej3pzWK9AIP",
+            "name": "Xã Ea Nam"
+        },
+        {
+            "id": "eNuTqP8bTMI",
+            "name": "Xã Ea Tam"
+        },
+        {
+            "id": "ESq6Z1Ms9vo",
+            "name": "Xã Hòa Thắng"
+        },
+        {
+            "id": "EvH3upGsJbH",
+            "name": "Xã Pơng Drang"
+        },
+        {
+            "id": "EwU53gaK6TG",
+            "name": "Phường Đoàn Kết"
+        },
+        {
+            "id": "EwY9aiEfqNW",
+            "name": "Xã Cư KTy"
+        },
+        {
+            "id": "FdWowIxWm9S",
+            "name": "Phường Thống Nhất"
+        },
+        {
+            "id": "fIpNIRyVkjJ",
+            "name": "Xã Ea Ngai"
+        },
+        {
+            "id": "fJZxWMLURsA",
+            "name": "Xã Ea Tiêu"
+        },
+        {
+            "id": "fWsywbp8kos",
+            "name": "Xã Ea M' Doal"
+        },
+        {
+            "id": "FzEZNrRCP76",
+            "name": "Xã Ea Kênh"
+        },
+        {
+            "id": "gbxBsZCoqXu",
+            "name": "Phường Đạt Hiếu"
+        },
+        {
+            "id": "GGXNAqLhJjL",
+            "name": "Phường Bình Tân"
+        },
+        {
+            "id": "gOCN7bUpUej",
+            "name": "Xã Hòa Đông"
+        },
+        {
+            "id": "gu9jOUW65PM",
+            "name": "Xã Ea Kuêh"
+        },
+        {
+            "id": "gumi1e7RyVn",
+            "name": "Xã Krông Jing"
+        },
+        {
+            "id": "GWTBT7YJkxP",
+            "name": "Xã Cư ELang"
+        },
+        {
+            "id": "Gy8CtdJsf9Q",
+            "name": "TTYT Huyện Krông Búk"
+        },
+        {
+            "id": "gz1IcnKsGdQ",
+            "name": "PYT Krông Bông"
+        },
+        {
+            "id": "H5Y3CCW3Smt",
+            "name": "Xã Cư Ê Wi"
+        },
+        {
+            "id": "H8tpLFLT88G",
+            "name": "Thị trấn Quảng Phú"
+        },
+        {
+            "id": "HBGsPrf8Pnl",
+            "name": "PYT Krông Ana"
+        },
+        {
+            "id": "Hfa9qx8K2tz",
+            "name": "Thị trấn Krông Kmar"
+        },
+        {
+            "id": "HkQ52zNzozJ",
+            "name": "Xã Ea Ô"
+        },
+        {
+            "id": "hKRRTEXItzJ",
+            "name": "Xã Yang Tao"
+        },
+        {
+            "id": "HlR5mEMI32M",
+            "name": "Xã Hòa Sơn"
+        },
+        {
+            "id": "hUcMyOxqToB",
+            "name": "Xã Ea Kmút"
+        },
+        {
+            "id": "IbfCgxPCgNC",
+            "name": "Xã Ea H'MLay"
+        },
+        {
+            "id": "IdRntAXvC2G",
+            "name": "PYT Buôn Đôn"
+        },
+        {
+            "id": "iGKzQvQ4XMD",
+            "name": "Xã Cư KBang"
+        },
+        {
+            "id": "iKkRu3BZS3B",
+            "name": "PYT Krông Năng"
+        },
+        {
+            "id": "iMrodM7opmo",
+            "name": "Xã Hòa Tân"
+        },
+        {
+            "id": "INketVj6fnG",
+            "name": "TTYT Huyện Cư M'gar"
+        },
+        {
+            "id": "IrxWH5QnXYU",
+            "name": "Xã Tân Lập"
+        },
+        {
+            "id": "ItmoVAe8Slz",
+            "name": "Phường Tự An"
+        },
+        {
+            "id": "iwmQ1KU7mgV",
+            "name": "Xã Tân Tiến"
+        },
+        {
+            "id": "IylwavuEckl",
+            "name": "Phường Tân Thành"
+        },
+        {
+            "id": "jij3nc8pc9N",
+            "name": "Phường Tân Lập"
+        },
+        {
+            "id": "jk09D8OFqhU",
+            "name": "TTYT Huyện Buôn Đôn"
+        },
+        {
+            "id": "jLuN8PLzZ5D",
+            "name": "Xã Ea H'leo"
+        },
+        {
+            "id": "JO2OdRyjtpm",
+            "name": "Xã Ea D'Rơng"
+        },
+        {
+            "id": "jOX4PLClIcd",
+            "name": "Xã Khuê Ngọc Điền"
+        },
+        {
+            "id": "jTujo1l4ak1",
+            "name": "Xã Ea Tar"
+        },
+        {
+            "id": "JW4fh2S5Oh7",
+            "name": "Xã Ea Sô"
+        },
+        {
+            "id": "JWQy0dPKymB",
+            "name": "TTYT Huyện Cư Kuin"
+        },
+        {
+            "id": "kgKhkOzNAID",
+            "name": "Phường Thiện An"
+        },
+        {
+            "id": "kHbsu98uwz9",
+            "name": "PYT Krông Búk"
+        },
+        {
+            "id": "Ko3hAUpCfax",
+            "name": "Xã Ea Ning"
+        },
+        {
+            "id": "kogMqbuKKa9",
+            "name": "Xã Ea Tóh"
+        },
+        {
+            "id": "KQnpHPZV7Ml",
+            "name": "Xã Cư Drăm"
+        },
+        {
+            "id": "L3YjnphRa6h",
+            "name": "Xã Ea Hiu"
+        },
+        {
+            "id": "L5cqmCIaMb6",
+            "name": "Xã Ea M'DRóh"
+        },
+        {
+            "id": "L5pu557ANbT",
+            "name": "Xã Hòa Thành"
+        },
+        {
+            "id": "lNv4bSfjKta",
+            "name": "Phường An Bình"
+        },
+        {
+            "id": "LP3DQZBQKNt",
+            "name": "Xã Dlê Yang"
+        },
+        {
+            "id": "LPMaWxGxCDp",
+            "name": "Xã Dang Kang"
+        },
+        {
+            "id": "lSfKZWXMNin",
+            "name": "TTYT Huyện M'Đrắk"
+        },
+        {
+            "id": "LtWvk1KvnOV",
+            "name": "Xã Ea Bung"
+        },
+        {
+            "id": "lVl9Tk3BK34",
+            "name": "Xã Ea Rốk"
+        },
+        {
+            "id": "lXsGFrgvz7Z",
+            "name": "Xã Dray Sáp"
+        },
+        {
+            "id": "m6p7bj5Yzb2",
+            "name": "Xã Ea Blang"
+        },
+        {
+            "id": "m9ub7p1KiEP",
+            "name": "TTYT Huyện Krông Bông"
+        },
+        {
+            "id": "mBXJyF566Zm",
+            "name": "Xã Cư Huê"
+        },
+        {
+            "id": "MgVGVha7aSU",
+            "name": "Xã Hòa Hiệp"
+        },
+        {
+            "id": "mmsWxmfLvdS",
+            "name": "TTYT Huyện Ea Kar"
+        },
+        {
+            "id": "MqkYOUpBWwV",
+            "name": "Xã Ea Wer"
+        },
+        {
+            "id": "mWI50ur4qWi",
+            "name": "Thị trấn Ea Drăng"
+        },
+        {
+            "id": "n59FIt5NSRB",
+            "name": "Xã Ea Tu"
+        },
+        {
+            "id": "NbGuMMXc1t2",
+            "name": "Xã Ea M'nang"
+        },
+        {
+            "id": "ndNFkwQZnEH",
+            "name": "Phường Tân Hòa"
+        },
+        {
+            "id": "nF9Id9FQOOe",
+            "name": "PYT Tx Buôn Hồ"
+        },
+        {
+            "id": "nG7wvnVWhLx",
+            "name": "Xã Quảng Tiến"
+        },
+        {
+            "id": "nIatpHmcBoa",
+            "name": "Xã Cư Dliê M'nông"
+        },
+        {
+            "id": "NMXun4uJ6Mn",
+            "name": "Xã Ya Tờ Mốt"
+        },
+        {
+            "id": "No3l9nDOxGE",
+            "name": "Xã Bình Hòa"
+        },
+        {
+            "id": "nPCsmpxDLtO",
+            "name": "Xã Ea Yiêng"
+        },
+        {
+            "id": "NWCVSckqANS",
+            "name": "Xã Hòa Tiến"
+        },
+        {
+            "id": "O3K8QWj3QrU",
+            "name": "Thị trấn Ea Pốk"
+        },
+        {
+            "id": "O5TjBdTfmem",
+            "name": "Bệnh viện Đa khoa Hòa Bình "
+        },
+        {
+            "id": "oarEdDCgWEF",
+            "name": "Bệnh viện đa khoa thị xã Buôn Hồ"
+        },
+        {
+            "id": "of6yXttNKSi",
+            "name": "TTYT Huyện Krông Pắc"
+        },
+        {
+            "id": "oFRkrmVqzUD",
+            "name": "Thị trấn Phước An"
+        },
+        {
+            "id": "oKDgxm4Gr7P",
+            "name": "Xã Ea Hồ"
+        },
+        {
+            "id": "ooqSN71bZu0",
+            "name": "Thị trấn Buôn Trấp"
+        },
+        {
+            "id": "OQqcc00r1Rk",
+            "name": "Xã Nam Ka"
+        },
+        {
+            "id": "OSGf9iCtuyv",
+            "name": "Xã Đắk Nuê"
+        },
+        {
+            "id": "otD5vPva5V8",
+            "name": "Xã Ea Ktur"
+        },
+        {
+            "id": "otJyMJzSS3t",
+            "name": "Xã Cư Klông"
+        },
+        {
+            "id": "OumomxH1zit",
+            "name": "Xã Ea Sar"
+        },
+        {
+            "id": "OX4lK8VsSuB",
+            "name": "TTYT Huyện Ea Súp"
+        },
+        {
+            "id": "p1qiwJBlTJO",
+            "name": "PYT Lắk"
+        },
+        {
+            "id": "PCPYtRk3SN2",
+            "name": "Xã Hòa Xuân"
+        },
+        {
+            "id": "pDE0OQdlZbI",
+            "name": "Xã Ea H'đinh"
+        },
+        {
+            "id": "pfp1lKVNEhA",
+            "name": "Thị trấn Ea Súp"
+        },
+        {
+            "id": "pGCnSp7wF8a",
+            "name": "Thị trấn Krông Năng"
+        },
+        {
+            "id": "pMVHlfnXgND",
+            "name": "Phường Khánh Xuân"
+        },
+        {
+            "id": "pr6ll0X0Ywf",
+            "name": "Xã Ea Sin"
+        },
+        {
+            "id": "prvGpbWsHw9",
+            "name": "Xã Hòa Phú"
+        },
+        {
+            "id": "PSq8SBn5Hge",
+            "name": "Xã Ia Lốp"
+        },
+        {
+            "id": "PYrBxf5Ud3D",
+            "name": "TTYT Huyện Lắk"
+        },
+        {
+            "id": "q0851paOfDY",
+            "name": "Xã Cư M'Lan"
+        },
+        {
+            "id": "qAR4LpRWc1u",
+            "name": "Xã Ea Uy"
+        },
+        {
+            "id": "QhBiBrZ1tzr",
+            "name": "Xã Krông Na"
+        },
+        {
+            "id": "QIPboFwmmC4",
+            "name": "Phường An Lạc"
+        },
+        {
+            "id": "QKZbisxErVV",
+            "name": "Bệnh viện Đa khoa Thiện Hạnh"
+        },
+        {
+            "id": "QV1bLiymYAI",
+            "name": "Xã Cuor Đăng"
+        },
+        {
+            "id": "QzOIZR6Jbbk",
+            "name": "Xã Cư Jang"
+        },
+        {
+            "id": "QZzQkMXwYWp",
+            "name": "Xã Tân Hoà"
+        },
+        {
+            "id": "R0o2OaHRyBm",
+            "name": "Xã Hòa Khánh"
+        },
+        {
+            "id": "r9eONcSob6b",
+            "name": "Xã Xuân Phú"
+        },
+        {
+            "id": "rfX0RNLoAB6",
+            "name": "Xã Ea Dăh"
+        },
+        {
+            "id": "rhKym30EOpB",
+            "name": "Xã Ea Tân"
+        },
+        {
+            "id": "RO5asKKWoUd",
+            "name": "Xã Ea KNuec"
+        },
+        {
+            "id": "ROw9KiYT94P",
+            "name": "Xã Ea Păl"
+        },
+        {
+            "id": "RTQI1Atdf1Y",
+            "name": "Xã Ea Lai"
+        },
+        {
+            "id": "SDG0bNIsPo2",
+            "name": "Xã Ea Khal"
+        },
+        {
+            "id": "sfX8AT1aNqO",
+            "name": "Xã Krông Nô"
+        },
+        {
+            "id": "siPIPE8yzQT",
+            "name": "TTYT Huyện Ea H'leo"
+        },
+        {
+            "id": "Slb2AhoTtKk",
+            "name": "Xã Phú Xuân "
+        },
+        {
+            "id": "SmbdY9EflQ8",
+            "name": "Xã Ia RVê"
+        },
+        {
+            "id": "SpRh20CxEu6",
+            "name": "Xã ĐLiê Ya"
+        },
+        {
+            "id": "sseD7KcfAgg",
+            "name": "Xã Cư M'ta"
+        },
+        {
+            "id": "StbJ4eyqbE0",
+            "name": "Xã Ea Huar"
+        },
+        {
+            "id": "suTOQ28bTJv",
+            "name": "Xã Ea HĐing"
+        },
+        {
+            "id": "SWFAUuPItPS",
+            "name": "Xã Cư M'gar"
+        },
+        {
+            "id": "Tc8tsKoYRwM",
+            "name": "Phường Ea Tam"
+        },
+        {
+            "id": "tgyaHzqvr2J",
+            "name": "Xã Ea Kao"
+        },
+        {
+            "id": "TzxZRGkYEAw",
+            "name": "Bệnh viện Đa khoa Cao Nguyên "
+        },
+        {
+            "id": "U1g363wfJLa",
+            "name": "Phường Thắng Lợi"
+        },
+        {
+            "id": "u68OvSHdHgw",
+            "name": "Xã Băng A Drênh"
+        },
+        {
+            "id": "ub3H0radJCj",
+            "name": "Xã Cư Bao"
+        },
+        {
+            "id": "uc8C7ZJro92",
+            "name": "PYT Krông Pắc"
+        },
+        {
+            "id": "UCoaK0rLSxR",
+            "name": "Xã Ea Bông"
+        },
+        {
+            "id": "UDtLNvgvfIL",
+            "name": "Xã Phú Xuân (Trạm y tế 49)"
+        },
+        {
+            "id": "UeAp0Xi71OK",
+            "name": "Xã Cư Mốt"
+        },
+        {
+            "id": "uIn7MuO3ON2",
+            "name": "Xã Cư Suê"
+        },
+        {
+            "id": "UMoNfQ6amd5",
+            "name": "Xã Ea Tih"
+        },
+        {
+            "id": "UV0ilXbqeI1",
+            "name": "Xã Cư K Róa"
+        },
+        {
+            "id": "UwTgIap07in",
+            "name": "Xã KRông Búk"
+        },
+        {
+            "id": "UXuW5aSDtvS",
+            "name": "Phòng khám Đa khoa 719"
+        },
+        {
+            "id": "v29jW2EsAJw",
+            "name": "Xã Cư Ni"
+        },
+        {
+            "id": "v6zIV06UmGY",
+            "name": "Thị trấn M'Đrắk"
+        },
+        {
+            "id": "vCGdLUymiWS",
+            "name": "Xã Ea Riêng"
+        },
+        {
+            "id": "vCHG23MgfE6",
+            "name": "PYT Cư Kuin"
+        },
+        {
+            "id": "VGt9BJBS3eu",
+            "name": "Xã Ea Kiết"
+        },
+        {
+            "id": "vieOPDY3Nq6",
+            "name": "TTYT Thị Xã Buôn Hồ"
+        },
+        {
+            "id": "vkGTOqQoIFh",
+            "name": "Phường Tân Lợi"
+        },
+        {
+            "id": "vkojmnqEMze",
+            "name": "Thị trấn Ea Knốp"
+        },
+        {
+            "id": "Vs21bDccwr4",
+            "name": "PYT Ea Súp"
+        },
+        {
+            "id": "vzGotq4APxX",
+            "name": "Xã Phú Lộc"
+        },
+        {
+            "id": "w0QM09VYJO1",
+            "name": "Xã Ea Na"
+        },
+        {
+            "id": "w2cHdUJf75S",
+            "name": "Xã Buôn Tría"
+        },
+        {
+            "id": "w3V8SsiasXP",
+            "name": "Xã Cư Prao"
+        },
+        {
+            "id": "w7G6NRimbIB",
+            "name": "PYT Ea H' Leo"
+        },
+        {
+            "id": "W9aoQ3T4keQ",
+            "name": "Xã Cư A Mung"
+        },
+        {
+            "id": "W9hHvdCXrww",
+            "name": "Xã Ea Ral"
+        },
+        {
+            "id": "wLUYGePoVLl",
+            "name": "Xã Bông Krang"
+        },
+        {
+            "id": "WTVcpVxszjW",
+            "name": "Xã Dray Bhăng"
+        },
+        {
+            "id": "wWhdAeDz04x",
+            "name": "Xã Cư San"
+        },
+        {
+            "id": "WX7dIkYlfaO",
+            "name": "Xã Ea Wy"
+        },
+        {
+            "id": "x2gBIGjg7pK",
+            "name": "TTYT Huyện Krông A Na"
+        },
+        {
+            "id": "X7vfXfIBHyG",
+            "name": "TTYT Thành phố Buôn Ma Thuột"
+        },
+        {
+            "id": "xGY7mbFxCo2",
+            "name": "Xã Ea Hiao"
+        },
+        {
+            "id": "XicRu4pPTZ1",
+            "name": "Xã Ea Phê"
+        },
+        {
+            "id": "XiuQ6IEPEEH",
+            "name": "PYT Cư M'Gar"
+        },
+        {
+            "id": "XkvozZlP1e3",
+            "name": "Xã Ea Hu"
+        },
+        {
+            "id": "xlCYx0FoNkS",
+            "name": "Xã Cuôr KNia"
+        },
+        {
+            "id": "XpoODDetH96",
+            "name": "Xã Ea Kly"
+        },
+        {
+            "id": "XrB5pTGKlPZ",
+            "name": "Xã Yang Reh"
+        },
+        {
+            "id": "XuhENq1mNVn",
+            "name": "Xã Buôn Triết"
+        },
+        {
+            "id": "xxhLq6ETrXv",
+            "name": "Xã Ea Tul"
+        },
+        {
+            "id": "yA0gtD4eKSW",
+            "name": "Xã Hòa Phong"
+        },
+        {
+            "id": "YAuKeeuPfUj",
+            "name": "Phường Thành Công"
+        },
+        {
+            "id": "Yc2T5LrlLcQ",
+            "name": "Xã Ea Lê"
+        },
+        {
+            "id": "yDDrNFisyPz",
+            "name": "Xã Ea Đar"
+        },
+        {
+            "id": "YiApjkrFc71",
+            "name": "Thị trấn Liên Sơn"
+        },
+        {
+            "id": "YUQ3SYuJd1I",
+            "name": "Xã Đắk Phơi"
+        },
+        {
+            "id": "YxQN401IlqP",
+            "name": "Xã Yang Mao"
+        },
+        {
+            "id": "Z76yAD5Hetl",
+            "name": "Xã Cư Bông"
+        },
+        {
+            "id": "zavoTSoHanG",
+            "name": "Xã Ea Yông"
+        },
+        {
+            "id": "zBIwE5jO8XA",
+            "name": "Bệnh viện đa khoa TP Buôn Ma Thuột"
+        },
+        {
+            "id": "ZDLW6eXyRUi",
+            "name": "Xã Dur KMăl"
+        },
+        {
+            "id": "znWYMtN9U0O",
+            "name": "Xã Ea Kuăng"
+        },
+        {
+            "id": "Zpbh0VOhfbV",
+            "name": "Phường Thống Nhất"
+        },
+        {
+            "id": "ZxhbwOSepFx",
+            "name": "Xã Ea Bar"
+        },
+        {
+            "id": "zyKHRwzUjxO",
+            "name": "Xã Cư Pui"
         }
     ]
     let idOrg = '';
