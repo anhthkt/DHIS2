@@ -9,6 +9,7 @@ p2ild['report_skss'] = skte();
 
 function skte() {
     let requestApiManager = [];
+    var defaultPrinting;
     /* Fragment organisationUnit by level */
     let sumI, sumII, sumIII, sumA, sumB1, sumB2, sumB, sumAll, orgTrucThuocBo, orgThuocBo;
     var intergrateObject, orgHirch, modal, listDataElement;
@@ -27,12 +28,11 @@ function skte() {
 
     //Observer height change
     function initObserveHeightViewport() {
-        p2ild.hookWebReport235.offSetHeightHeaderViewport += 50
-        viewportHeight = window.innerHeight - $('#tableHeader').height() - $('.orgUnits').height() - p2ild.hookWebReport235.offSetHeightHeaderViewport;
+        p2ild.hookWebReport235.offSetHeightHeaderViewport = 50
+        viewportHeight = window.innerHeight - p2ild.hookWebReport235.offSetHeightHeaderViewport;
 
         window.addEventListener("resize", function () {
-            viewportHeight = window.innerHeight - $('#tableHeader').height() - $('.orgUnits').height() - p2ild.hookWebReport235.offSetHeightHeaderViewport;
-            recalculateHeighScrollTable($('.dataTables_scrollBody'),viewportHeight)
+            recalculateHeighScrollTable();
         });
     }
 
@@ -43,19 +43,19 @@ function skte() {
                     sumAll = ['mH8ggZyC39Z']
                     orgTrucThuocBo = "ISsmukUNfU8"//Các đơn vị trực thuộc Bộ
                     orgThuocBo = "rY8ZzbdZcim"//Các đơn vị thuộc Bộ
-                    p2ild.report_skss.orgHirch = (LEVEL_ORG_SELECT_TYPE.TW)
+                    this.orgHirch = (LEVEL_ORG_SELECT_TYPE.TW)
                 } else if (json.organisationUnitGroups.some(x => x.id == "mH8ggZyC39Z")) { //Tinh
                     sumAll = ['W4U1KdFeIJH']
-                    p2ild.report_skss.orgHirch = (LEVEL_ORG_SELECT_TYPE.TINH)
+                    this.orgHirch = (LEVEL_ORG_SELECT_TYPE.TINH)
                 } else if (json.organisationUnitGroups.some(x => x.id == "W4U1KdFeIJH")) { //Huyen
                     sumAll = ['OHWM3DxkeMR']
-                    p2ild.report_skss.orgHirch = (LEVEL_ORG_SELECT_TYPE.HUYEN)
+                    this.orgHirch = (LEVEL_ORG_SELECT_TYPE.HUYEN)
                 } else if (json.organisationUnitGroups.some(x => x.id == "OHWM3DxkeMR")) { //Xa
-                    p2ild.report_skss.orgHirch = (LEVEL_ORG_SELECT_TYPE.XA)
+                    this.orgHirch = (LEVEL_ORG_SELECT_TYPE.XA)
                 } else {
-                    p2ild.report_skss.orgHirch = (LEVEL_ORG_SELECT_TYPE.INDIVIDUAL_OU)
+                    this.orgHirch = (LEVEL_ORG_SELECT_TYPE.INDIVIDUAL_OU)
                 }
-                resolve(p2ild.report_skss.orgHirch)
+                resolve(this.orgHirch)
             });
         })
     }
@@ -76,10 +76,10 @@ function skte() {
         this.requestApiManager['total'] = requestApiManagerTotal;
         requestApiManagerTotal.setHandleSuccessAll(lastLoad)
 
-        orgHirch = await checkSelectedOrganisationUnit()
-        showTableDataByOrgSelect(orgHirch.tableID)
+        this.orgHirch = await checkSelectedOrganisationUnit()
+        showTableDataByOrgSelect(this.orgHirch.tableID)
 
-        switch (orgHirch) {
+        switch (this.orgHirch) {
             case LEVEL_ORG_SELECT_TYPE.TW:
                 requestApiManager_content.setHandleSuccessAll(lastLoad)
                 requestApiManager_content.createWorker().createHolderTitleRow('tb1ColumnIncrise', `tongSo`, writeRow(
@@ -153,7 +153,7 @@ function skte() {
     }
 
     var sumWorker = function (listIDWorker, seri, title) {
-        async function excuteFuncWithIdRowAnchor(idRowAnchor) {
+        async function excuteFuncWithIdRowAnchor(idRowAnchor, worker) {
             let prepareSumArr = await p2ild.asyncLoadSupport.sumDataWorker(requestApiManager, listIDWorker)
 
             let htmlReport = "";
@@ -164,7 +164,7 @@ function skte() {
             } else {
                 htmlReport += "<td align='left'><strong>" + title + "</strong></td>"; //2}
             }
-            let worker = requestApiManager.total.findRequestByRowID(idRowAnchor)
+            // let worker = requestApiManager.total.findRequestByRowID(idRowAnchor)
             prepareSumArr.forEach((e, idx) => {
                 if (idx == 0) {
                     htmlReport += "<td align='center'><strong>" + p2ild.dvu.numberWithThousands(worker.storageData(prepareSumArr[idx], true)) + "</strong></td>";
@@ -184,7 +184,7 @@ function skte() {
             htmlReport += "</tr>";
 
             $(`#${idRowAnchor}`).after(htmlReport);
-            requestApiManager.total.setRequestStatusByRowID(idRowAnchor, p2ild.asyncLoadSupport.STATUS_API.SUCCESS)
+            worker.getOwnerManager().setRequestStatusByRowID(idRowAnchor, p2ild.asyncLoadSupport.STATUS_API.SUCCESS)
         }
         return {
             excuteFuncWithIdRowAnchor: excuteFuncWithIdRowAnchor
@@ -216,11 +216,10 @@ function skte() {
         function excuteFuncWithIdRowAnchor(idRowAnchor, worker) {
             options = options || {}
             let { labelStt, labelOrg, style } = options
-
             let htmlReport = "";
             var childOrg = [];
             var stt = 0
-            const des = "eVcAnW2mO1n;UYjF45zrZmV;WxmTd6q3VRn;bRoUldKcvm6;vcS2yMpo1UL;uCfgNzu58BZ;HCLD11DQ08c;SjfMTcD2Mue;AtpZpubv2GW;s00pzu2bFow;LpxNEOc8P6Z;G80uScPn7Sk;qOQNxIAAOeN;bOHkio114aV;Zk3iMA292J2;WSH2AYS257Z;cgZjsIqjO0b;fqb4WJeji1q;LdlETep3e3n;o934x7t0yqy;tjnybRhrkJk;G0m2Yj6aa9t;H5WUNffChO8;YfPAiNsPQBl;L3WIVnCtqqg;glM1J4UA39s;or19ZwQA1TW;whZrfpaC8ef;ZOJBgAbjVtK;LLr12AjrMtu;jUouGVPDWCD;e7DWzWCcfSJ;DqRun3AXTz4"
+            // const des = "eVcAnW2mO1n;UYjF45zrZmV;WxmTd6q3VRn;bRoUldKcvm6;vcS2yMpo1UL;uCfgNzu58BZ;HCLD11DQ08c;SjfMTcD2Mue;AtpZpubv2GW;s00pzu2bFow;LpxNEOc8P6Z;G80uScPn7Sk;qOQNxIAAOeN;bOHkio114aV;Zk3iMA292J2;WSH2AYS257Z;cgZjsIqjO0b;fqb4WJeji1q;LdlETep3e3n;o934x7t0yqy;tjnybRhrkJk;G0m2Yj6aa9t;H5WUNffChO8;YfPAiNsPQBl;L3WIVnCtqqg;glM1J4UA39s;or19ZwQA1TW;whZrfpaC8ef;ZOJBgAbjVtK;LLr12AjrMtu;jUouGVPDWCD;e7DWzWCcfSJ;DqRun3AXTz4"
             return new Promise((resolve, reject) => {
                 (async () => {
                     let org = idGroups instanceof Array ? p2ild.ou.stringGroups(idGroups, orgUnitSelectedID) : idGroups;
@@ -285,7 +284,7 @@ function skte() {
                             htmlReport += "</tr>";
                         })
                         $(`#${idRowAnchor}`).after(htmlReport);
-                        requestApiManager.content.setRequestStatusByRowID(idRowAnchor, p2ild.asyncLoadSupport.STATUS_API.SUCCESS)
+                        worker.getOwnerManager().setRequestStatusByRowID(idRowAnchor, p2ild.asyncLoadSupport.STATUS_API.SUCCESS)
                         resolve();
                     });
                 })()
@@ -364,27 +363,27 @@ function skte() {
 
 
 
-    function initDataTable() {
-        $('.rowHolder').remove();
-        console.log('maxHeight scrollY', `${viewportHeight - $('#tableHeader').height() - $('.orgUnits').height() - $(`#${orgHirch.tableID} thead`).height()}`)
-        mDataTable = $(`#${orgHirch.tableID}`).DataTable({
-            scrollY: `${viewportHeight - $('#tableHeader').height() - $('.orgUnits').height() - $(`#${orgHirch.tableID} thead`).height()}px`,
-            scrollX: 'true',
-            scrollCollapse: true,
-            paging: false,
-            searching: false,
-            sort: false
-        });
-        table.on('draw', function () {
-            // your code here
-        });
-        //Data table highlight row
-        $(`#${orgHirch.tableID} tbody`).on('mouseenter', 'td', function () {
-            var colIdx = mDataTable.cell(this).index().column;
-            $(mDataTable.cells().nodes()).removeClass('highlight');
-            $(mDataTable.column(colIdx).nodes()).addClass('highlight');
-        });
-    }
+    // function initDataTable() {
+    //     $('.rowHolder').remove();
+    //     console.log('maxHeight scrollY', `${viewportHeight - $('#tableHeader').height() - $('.orgUnits').height() - $(`#${orgHirch.tableID} thead`).height()}`)
+    //     mDataTable = $(`#${orgHirch.tableID}`).DataTable({
+    //         scrollY: `${viewportHeight - $('#tableHeader').height() - $('.orgUnits').height() - $(`#${orgHirch.tableID} thead`).height()}px`,
+    //         scrollX: 'true',
+    //         scrollCollapse: true,
+    //         paging: false,
+    //         searching: false,
+    //         sort: false
+    //     });
+    //     table.on('draw', function () {
+    //         // your code here
+    //     });
+    //     //Data table highlight row
+    //     $(`#${orgHirch.tableID} tbody`).on('mouseenter', 'td', function () {
+    //         var colIdx = mDataTable.cell(this).index().column;
+    //         $(mDataTable.cells().nodes()).removeClass('highlight');
+    //         $(mDataTable.column(colIdx).nodes()).addClass('highlight');
+    //     });
+    // }
 
     function getAPI(api) {
         return new Promise((resolve, reject) => {
@@ -400,25 +399,30 @@ function skte() {
         })
     }
 
-    function recalculateHeighScrollTable(element, viewportHeight) {
-        
-        element.css('height', `${viewportHeight}`)
-        element.css('max-height',viewportHeight )
+    function recalculateHeighScrollTable() {
+        let viewportHeight = window.innerHeight - $('.dataTables_scrollHead').height() - $('#header').height() - p2ild.hookWebReport235.offSetHeightHeaderViewport
+        $('.dataTables_scrollBody').css('height', `${viewportHeight}`)
+        $('.dataTables_scrollBody').css('max-height', viewportHeight)
+        mDataTable.draw();
+
+        //set width of table header to unlimit
+        $('.dataTables_scrollHeadInner').css('width', '')  
     }
 
     function initDataTable() {
         $('.rowHolder').remove();
-        mDataTable = $(`#${orgHirch.tableID}`).DataTable({
-            scrollY: `${viewportHeight - $('#tableHeader').height() - $('.orgUnits').height() - $(`#${orgHirch.tableID} thead`).height()}px`,
+        mDataTable = $(`#${this.orgHirch.tableID}`).DataTable({
+            scrollY: `${window.innerHeight - p2ild.hookWebReport235.offSetHeightHeaderViewport}px`,
             scrollX: 'true',
             scrollCollapse: true,
             paging: false,
             searching: false,
             sort: false
         });
-
+        //recalculateHeighScrollTable
+        setTimeout(() => recalculateHeighScrollTable(), 1000);
         //Data table highlight row
-        $(`#${orgHirch.tableID} tbody`).on('mouseenter', 'td', function () {
+        $(`#${this.orgHirch.tableID} tbody`).on('mouseenter', 'td', function () {
             var colIdx = mDataTable.cell(this).index().column;
             $(mDataTable.cells().nodes()).removeClass('highlight');
             $(mDataTable.column(colIdx).nodes()).addClass('highlight');
@@ -427,17 +431,16 @@ function skte() {
 
     function lastLoad() {
         p2ild.DesignUtil.hidePreload();
-        initObserveHeightViewport();
-        initDataTable()
+        initObserveHeightViewport.apply(p2ild.report_skss);
+        p2ild.ExportDataUtils.cloneTableDataWithoutLib.apply(p2ild.ExportDataUtils);
+        initDataTable.apply(p2ild.report_skss);
     }
-
-
 
     return {
         requestApiManager: requestApiManager,
         loadReport: loadReport,
         onDocumentReady: onDocumentReady,
         checkSelectedOrganisationUnit: checkSelectedOrganisationUnit,
-        orgHirch: orgHirch,
+        orgHirch: orgHirch
     }
 }

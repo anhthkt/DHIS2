@@ -74,6 +74,17 @@
     td.highlight {
         background-color: #ffa !important;
     }
+
+    .dataTables_scrollBody thead {
+        opacity: 0%;
+        visibility: collapse;
+    }
+
+    #formreport th {
+        font-size: 16px;
+        font-family: Times, Times New Roman, Georgia, serif;
+        text-align: center
+    }
 </style>
 <script type="text/javascript">
     var isDebug = true;
@@ -95,7 +106,9 @@
 
     var orgUnitSelected = dhis2.report.organisationUnit; //get current selected orgUnit
     var orgUnitSelectedID = orgUnitSelected.id;
-
+    let { onDocumentReady
+        , checkSelectedOrganisationUnit
+    } = p2ild.report_skss;
     var period = "";
     var type_reported = "";
 
@@ -115,9 +128,6 @@
 
     var listBtn = []
 
-
-
-
     /*Prepare report*/
     jQuery(document).ready(function () {
         p2ild.DesignUtil.hidePreload();
@@ -126,7 +136,7 @@
             2.Yearly
             3.Six-monthly
         */
-        p2ild.report_skss.onDocumentReady()
+        onDocumentReady.apply(p2ild.report_skss)
         load_period_form("Yearly");
         renderPeriodPickerComponent(document.getElementById("PeriodPickerComponent"), {
             handler: handler,
@@ -144,7 +154,6 @@
     }
 
 
-
     function get_period_dialog() {
         $("#dialog").dialog({
             title: "Báo cáo chuẩn và Thời điểm",
@@ -156,11 +165,12 @@
             buttons: {
                 "Xuất báo cáo": function () {
                     (async () => {
+                        p2ild.ExportDataUtils.resetPrintingDivToDefault.apply(p2ild.ExportDataUtils);
                         var orgId = selectionTreeSelection.getSelectedUid();
                         var orgName = $("#oustOrgUnit" + orgId[0] + " a[class='selected']").text();
                         orgUnitSelected = { id: orgId[0], name: orgName };
                         orgUnitSelectedID = orgUnitSelected.id;
-                        let isValidOrg = await p2ild.report_skss.checkSelectedOrganisationUnit()
+                        let isValidOrg = await p2ild.report_skss.checkSelectedOrganisationUnit.apply(p2ild.report_skss)
                         console.log(orgUnitSelected);
                         if (orgId.length == 0) {
                             $("#alert").text("");
@@ -198,12 +208,12 @@
     /*Init Report*/
     function create_report(string_period) {
         if ($('#btnReload').toArray().length == 1) $('#header > div > div:nth-child(2)').before(`<input type="button" id="btnReload" value="Chọn lại đơn vị và thời điểm xem dữ liệu" onclick="get_period_dialog()" style="margin: 10px 10px 10px 0px;border-radius: 5px;opacity: 2%;">`)
-        $(`#${p2ild.report_skss.orgHirch.tableID}`)?.DataTable()?.destroy();
+        // $(`#${p2ild.report_skss.orgHirch.tableID}`)?.DataTable()?.destroy();
         $(".preloader").show();
         $(".orgUnits").append(orgUnitSelected.name);
         console.log(type_reported, string_period);
         $(".periods").append(string_period);
-        $(`#${p2ild.report_skss.orgHirch.tableID} tbody tr:not(#tb1ColumnIncrise)`).remove()
+        // $(`#${p2ild.report_skss.orgHirch.tableID} tbody tr:not(#tb1ColumnIncrise)`).remove()
         loadReport();
     }
 
@@ -228,12 +238,12 @@
 
     /* Fragment organisationUnit by level */
     function loadReport() {
-        p2ild.report_skss.loadReport()
+        p2ild.report_skss.loadReport.apply(p2ild.report_skss)
     }
 
-    function downloadexcel() {
-        window.open('data:application/vnd.ms-excel,' + encodeURIComponent($('div[id$=printing]').html()));
-    }
+    // function downloadexcel() {
+    //     window.open('data:application/vnd.ms-excel,' + encodeURIComponent($('div[id$=printing]').html()));
+    // }
     // Period Picker
 
     function pad2(number) {
@@ -421,11 +431,24 @@
     <div id="downloadExcel">
         <!-- table header -->
         <div id="formreport">
+            <div style="float: left;" class="hideInPrint">
+                <input type="button" id="btnReload" value="Chọn lại đơn vị và thời điểm xem dữ liệu"
+                    onclick="get_period_dialog()" style="margin: 0px 10px 10px 0px;padding: 5px;">
+                <input type="button" id="btnExport" value="Tải Excel" style="margin: 0px 10px 10px 0px;padding: 5px;"
+                    onclick="p2ild.ExportDataUtils.downloadExcel.apply(p2ild.ExportDataUtils)">
+                <input type="button" id="btnPrint" value="In báo cáo"
+                    onclick="p2ild.ExportDataUtils.printWindow.apply(p2ild.ExportDataUtils)"
+                    style="margin: 0px 10px 10px 0px;padding: 5px;">
+            </div>
             <table id="tableHeader" class="mainTable table" border="0" width="100%" cellspacing="0" cellpadding="0">
                 <tbody>
                     <tr>
+                        <td>
+                            <p class="orgUnits" align="left">&nbsp;</p>
+                        </td>
+                    </tr>
+                    <tr>
                         <td>Biểu 5/CT&nbsp;</td>
-                        <p class="orgUnits" align="left">&nbsp;</p>
                     </tr>
                     <tr>
                         <td align="center" colspan="20">
@@ -445,8 +468,7 @@
             <div class="table-content">
 
                 <!-- Table BCX -->
-                <table display='none' width='100%' border='1' id='bcx' class='mainTable locate_cell' cellpadding='2'
-                    cellspacing='0'>
+                <table display='none' width='100%' border='1' id='bcx' class='mainTable locate_cell' cellpadding='2' cellspacing='0'>
                     <tbody>
                         <tr class="tr">
                             <td class="order" style="text-align: center;"><strong><span><span><span
@@ -565,7 +587,7 @@
                     </thead>
                     <tbody>
 
-                        <tr class="tr" id="tb1ColumnIncrise">
+                        <tr id="tb1ColumnIncrise">
                             <td align="center" style="text-align: center;  font-style: italic;">1</td>
                             <td align="center" style="text-align: center;  font-style: italic;">2</td>
                             <td align="center" style="text-align: center;  font-style: italic;">3</td>
@@ -619,7 +641,7 @@
                     </thead>
                     <tbody>
 
-                        <tr class="tr" id="tb1ColumnIncrise">
+                        <tr id="tb1ColumnIncrise">
                             <td align="center" style="text-align: center;  font-style: italic;">1</td>
                             <td align="center" style="text-align: center;  font-style: italic;">2</td>
                             <td align="center" style="text-align: center;  font-style: italic;">3</td>
@@ -673,7 +695,7 @@
                     </thead>
                     <tbody>
 
-                        <tr class="tr" id="tb1ColumnIncrise">
+                        <tr id="tb1ColumnIncrise">
                             <td align="center" style="text-align: center;  font-style: italic;">1</td>
                             <td align="center" style="text-align: center;  font-style: italic;">2</td>
                             <td align="center" style="text-align: center;  font-style: italic;">3</td>
@@ -698,15 +720,7 @@
                         </tr>
                     </tbody>
                 </table>
-
             </div>
-
-
         </div>
     </div>
 </div>
-<input type="button" id="btnExport" class="hideInPrint" value="Tải Excel"
-    onclick="tableToExcel('downloadExcel','EXCEL')" />
-<input type="button" id="btnPrint" class="hideInPrint" value="In báo cáo" onclick="window.print()" />
-<br><input type="button" id="btnReload" value="Chọn lại đơn vị và thời điểm xem dữ liệu" onclick="get_period_dialog()"
-    style="margin: 10px 10px 10px 0px;border-radius: 5px;">

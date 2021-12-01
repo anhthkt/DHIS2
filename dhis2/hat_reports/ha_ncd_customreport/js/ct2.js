@@ -5,9 +5,9 @@ var p2ild = p2ild || {
      * */
 }
 
-p2ild['report_skss'] = skbm();
+p2ild['ct2'] = ct2();
 
-function skbm() {
+function ct2() {
     let requestApiManager = [];
     var defaultPrinting;
     /* Fragment organisationUnit by level */
@@ -163,7 +163,6 @@ function skbm() {
             } else {
                 htmlReport += "<td align='left'><strong>" + title + "</strong></td>"; //2}
             }
-            // let worker = requestApiManager.total.findRequestByRowID(idRowAnchor)
             prepareSumArr.forEach((e, idx) => {
                 if (idx == 0) {
                     htmlReport += "<td align='center'><strong>" + p2ild.dvu.numberWithThousands(worker.storageData(prepareSumArr[idx], true)) + "</strong></td>";
@@ -189,40 +188,16 @@ function skbm() {
             excuteFuncWithIdRowAnchor: excuteFuncWithIdRowAnchor
         }
     }
+
     listDataElement = [
-        { ID: "eVcAnW2mO1n", title: 'Tổng số phụ nữ có thai (hiện đang mang thai)' },
-        { ID: "UYjF45zrZmV", title: 'Tổng số phụ nữ mới có thai' },
-        { ID: "WxmTd6q3VRn", title: 'Tỷ lệ mang thai ở VTNt' },
-        { ID: 'bRoUldKcvm6', title: "Số lượt khám thai trung bình của phụ nữ đẻ" },
-        { ID: 'vcS2yMpo1UL', title: "Tỷ lệ đẻ ở vị thành niên", },
-        { ID: 'uCfgNzu58BZ', title: "Tỷ lệ đẻ là người DTTS", },
-        { ID: 'HCLD11DQ08c', title: "Tỷ lệ đẻ được quản lý thai", },
-        { ID: 'SjfMTcD2Mue', title: "Tỷ lệ PN có thai tiêm đủ mũi vắc xin uốn ván", },
-        { ID: 'AtpZpubv2GW', title: "Tỷ lệ đẻ được KT ≥ 4 lần trong 3 thời kỳ", },
-        { ID: 's00pzu2bFow', title: "Tỷ lệ đẻ là DTTS được KT ≥ 4 lần/3 thời kỳ", },
-        { ID: 'LpxNEOc8P6Z', title: "Tỷ lệ đẻ được XN Viêm gan B khi mang thai", },
-        { ID: 'G80uScPn7Sk', title: "Tỷ lệ đẻ được XN Viêm gan B khi chuyển dạ", },
-        { ID: 'qOQNxIAAOeN', title: "Tỷ lệ đẻ được XN Viêm gan B", },
-        { ID: 'bOHkio114aV', title: "Tỷ lệ đẻ có KQ XN VGB+", },
-        { ID: 'Zk3iMA292J2', title: "Tỷ lệ đẻ được XN Giang mai khi mang thai", },
-        { ID: 'WSH2AYS257Z', title: "Tỷ lệ đẻ được XN Giang mai khi chuyển dạ", },
-        { ID: 'cgZjsIqjO0b', title: "Tỷ lệ đẻ được XN Giang mai", },
-        { ID: 'fqb4WJeji1q', title: "Tỷ lệ đẻ có KQ XN GM+", },
-        { ID: 'LdlETep3e3n', title: "Tỷ lệ đẻ được XN HIV khi mang thai", },
-        { ID: 'o934x7t0yqy', title: "Tỷ lệ đẻ được XN HIV khi chuyển dạ", },
-        { ID: 'tjnybRhrkJk', title: "Tỷ lệ đẻ được XN HIV", },
-        { ID: 'G0m2Yj6aa9t', title: "Tỷ lệ đẻ có KQ khẳng định nhiễm HIV", },
-        { ID: 'H5WUNffChO8', title: "Tỷ lệ đẻ có KQ HIV+ trong thời kỳ mang thai", },
-        { ID: 'YfPAiNsPQBl', title: "Tỷ lệ đẻ được XN đường huyết khi mang thai", },
-        { ID: 'L3WIVnCtqqg', title: "Tỷ lệ đẻ có KQ XN đường huyết khi mang thai cao", },
-        { ID: 'glM1J4UA39s', title: "Tỷ lệ đẻ ngoài CSYT", },
-        { ID: 'or19ZwQA1TW', title: "Tỷ lệ đẻ được CBYT đỡ", },
-        { ID: 'whZrfpaC8ef', title: "Tỷ lệ đẻ được CB có kỹ năng đỡ", },
-        { ID: 'ZOJBgAbjVtK', title: "Tỷ lệ đẻ được cấp giấy chứng sinh", },
-        { ID: 'LLr12AjrMtu', title: "Tỷ lệ BM/TSS được CS tại nhà trong 6 tuần đầu", },
-        { ID: 'jUouGVPDWCD', title: "Tỷ lệ BM-TSS được CS tại nhà trong tuần đầu", },
-        { ID: 'e7DWzWCcfSJ', title: "Số ca tử vong mẹ", },
-        { ID: 'DqRun3AXTz4', title: "Số ca tử vong mẹ được thẩm định", }
+        { ID: "vyhdh8Y8FQh", title: 'Tỷ lệ mắc tai biến sản khoa' },
+        { ID: "riTWNzQtvIW", title: 'Tỷ lệ băng huyết' },
+        { ID: "rJckn8wXrNX", title: 'Tỷ lệ sản giật' },
+        { ID: 'RbP2Ukel0p5', title: "Tỷ lệ uốn ván sơ sinh" },
+        { ID: 'BBTyqmSDt83', title: "Tỷ lệ vỡ tử cung", },
+        { ID: 'pZVjmW0pybx', title: "Tỷ lệ nhiễm trùng", },
+        { ID: 'EvzzcjQ4a7H', title: "Tỷ lệ do phá thai", },
+        { ID: 'GxJIl2HBNbx', title: "Tỷ lệ tai biến khác", }
     ]
 
     let { getValueDE, roundNumber, numberWithThousands } = p2ild.dvu;
@@ -233,7 +208,6 @@ function skbm() {
             let htmlReport = "";
             var childOrg = [];
             var stt = 0
-            // const des = "eVcAnW2mO1n;UYjF45zrZmV;WxmTd6q3VRn;bRoUldKcvm6;vcS2yMpo1UL;uCfgNzu58BZ;HCLD11DQ08c;SjfMTcD2Mue;AtpZpubv2GW;s00pzu2bFow;LpxNEOc8P6Z;G80uScPn7Sk;qOQNxIAAOeN;bOHkio114aV;Zk3iMA292J2;WSH2AYS257Z;cgZjsIqjO0b;fqb4WJeji1q;LdlETep3e3n;o934x7t0yqy;tjnybRhrkJk;G0m2Yj6aa9t;H5WUNffChO8;YfPAiNsPQBl;L3WIVnCtqqg;glM1J4UA39s;or19ZwQA1TW;whZrfpaC8ef;ZOJBgAbjVtK;LLr12AjrMtu;jUouGVPDWCD;e7DWzWCcfSJ;DqRun3AXTz4"
             return new Promise((resolve, reject) => {
                 (async () => {
                     let org = idGroups instanceof Array ? p2ild.ou.stringGroups(idGroups, orgUnitSelectedID) : idGroups;
@@ -380,30 +354,6 @@ function skbm() {
         return { excuteFuncWithIdRowAnchor: excuteFuncWithIdRowAnchor }
     }
 
-
-
-    // function initDataTable() {
-    //     $('.rowHolder').remove();
-    //     console.log('maxHeight scrollY', `${viewportHeight - $('#tableHeader').height() - $('.orgUnits').height() - $(`#${orgHirch.tableID} thead`).height()}`)
-    //     mDataTable = $(`#${orgHirch.tableID}`).DataTable({
-    //         scrollY: `${viewportHeight - $('#tableHeader').height() - $('.orgUnits').height() - $(`#${orgHirch.tableID} thead`).height()}px`,
-    //         scrollX: 'true',
-    //         scrollCollapse: true,
-    //         paging: false,
-    //         searching: false,
-    //         sort: false
-    //     });
-    //     table.on('draw', function () {
-    //         // your code here
-    //     });
-    //     //Data table highlight row
-    //     $(`#${orgHirch.tableID} tbody`).on('mouseenter', 'td', function () {
-    //         var colIdx = mDataTable.cell(this).index().column;
-    //         $(mDataTable.cells().nodes()).removeClass('highlight');
-    //         $(mDataTable.column(colIdx).nodes()).addClass('highlight');
-    //     });
-    // }
-
     function getAPI(api) {
         return new Promise((resolve, reject) => {
             (async () => {
@@ -450,9 +400,9 @@ function skbm() {
 
     function lastLoad() {
         p2ild.DesignUtil.hidePreload();
-        initObserveHeightViewport.apply(p2ild.report_skss);
+        initObserveHeightViewport.apply(p2ild.ct2);
         p2ild.ExportDataUtils.cloneTableDataWithoutLib.apply(p2ild.ExportDataUtils);
-        initDataTable.apply(p2ild.report_skss);
+        initDataTable.apply(p2ild.ct2);
     }
 
     return {
