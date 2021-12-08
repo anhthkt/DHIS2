@@ -273,7 +273,6 @@ function skbm() {
 
                         childOrg.forEach(function (childID) {
                             stt++;
-
                             htmlReport += `<tr ${style ? style : ''}><td align='center'>${labelStt != '' ? stt : labelStt}</td>`;
                             htmlReport += `<td>${!labelOrg ? json.metaData.items[childID].name : labelOrg}</td>`;
 

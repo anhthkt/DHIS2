@@ -2,14 +2,14 @@ const fs = require('fs');
 const xlsx = require('xlsx');
 // const writeJson = require('write-json-file');
 let _ = require('lodash');
-let workbook = xlsx.readFile(`${__dirname}/input/Thông tin BN Xã Sơn Thành Đông, Huyện Tây Hòa.xlsx`);
+let workbook = xlsx.readFile(`${__dirname}/input/DaNang-NHS-DTD.xlsx`);
 console.log(workbook);
 
 let arrSheetNames = workbook.SheetNames;
 for(let s = 0; s < arrSheetNames.length; s++) {
     let sheetName = workbook.SheetNames[s];
     // Name file output
-    let orgName = 'Xã Sơn Thành Đông'
+    let orgName = 'DaNang-SonTra'
 
     let idOrgUnit = ''
      
@@ -1309,7 +1309,7 @@ function getIdOrg (nameOrg){
         }
     ]
     // Đà Nẵng 
-    let arrOrgDN = [
+    let arrOrg = [
         {
             "id": "wIalkCzACQj",
             "name": "Xã Hòa Tiến"
@@ -1677,7 +1677,7 @@ function getIdOrg (nameOrg){
     ]
 
     //Phú Yên
-    let arrOrg = [
+    let arrOrgPY = [
         {
             "id": "a1jZGf2P85p",
             "name": "Xã Suối Trai"
@@ -3199,12 +3199,12 @@ function exportTeiFromExcel(sheetName, programId, idOrgUnit, orgName) {
                         "displayName": "Nơi phát hiện THA",
                         "attribute": "ZYzDKzTIhM2",
                         "value": `${convertCode(result[i][13])}`
+                    },
+                    {
+                        "displayName": "Chọn Xã/ Phường/ Thị trấn",
+                        "attribute": "Gy1fkmBZpFk",
+                        "value": `${idOrgUnit}`
                     }
-                    // {
-                    //     "displayName": "Ngày phát hiện ĐTĐ",
-                    //     "attribute": "LnYKf02oBmF",
-                    //     "value": `${formatDate(result[i][12])}`
-                    // },
                     // {
                     //     "displayName": "Nơi phát hiện ĐTĐ",
                     //     "attribute": "LHVZXlBbn2l",
@@ -3308,6 +3308,11 @@ function exportTeiFromExcel(sheetName, programId, idOrgUnit, orgName) {
                         "displayName": "Nơi phát hiện ĐTĐ",
                         "attribute": "LHVZXlBbn2l",
                         "value": `${convertCode(result[i][13])}`
+                    },
+                    {
+                        "displayName": "Chọn Xã/ Phường/ Thị trấn",
+                        "attribute": "Gy1fkmBZpFk",
+                        "value": `${idOrgUnit}`
                     }
                     // {
                     //     "displayName": "Ngày phát hiện ĐTĐ",
@@ -3388,6 +3393,11 @@ function exportTeiFromExcel(sheetName, programId, idOrgUnit, orgName) {
                         "attribute": "L4djJU4gMyb",
                         "value": `${result[i][10]}`
                     },
+                    {
+                        "displayName": "Chọn Xã/ Phường/ Thị trấn",
+                        "attribute": "Gy1fkmBZpFk",
+                        "value": `${idOrgUnit}`
+                    }
                     // {
                     //     "displayName": "Ngày phát hiện THA",
                     //     "attribute": "RSNvyMilQxs",
