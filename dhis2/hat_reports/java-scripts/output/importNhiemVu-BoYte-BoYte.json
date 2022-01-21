@@ -1,0 +1,5050 @@
+{
+    "trackedEntityInstances": [
+        {
+            "orgUnit": "khILD1S2d81",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009861"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Khẩn trương hoàn thành việc xây dựng các văn bản quy phạm pháp luật đã đăng ký thực hiện, kế hoạch xây dựng văn bản quy phạm pháp luật năm 2022. Ban cán sự Đảng Bộ Y tế xem xét trách nhiệm người đứng đầu và các hình thức thi đua, khen thưởng đối với tập thể, cá nhân nếu không hoàn thành nhiệm vụ."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Nguyễn Thanh Phong"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "khILD1S2d81",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "khILD1S2d81",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "khILD1S2d81",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009874"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "chú trọng công tác bảo đảm an toàn thực phẩm dịp Tết 2022; tăng cường công tác quản lý, truyền thông về an toàn thực phẩm; tiếp tục rà soát Luật An toàn thực phẩm."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Nguyễn Thanh Phong"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "khILD1S2d81",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "khILD1S2d81",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "bkaVfr2QF9a",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009853"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Báo cáo các đề án đào tạo nhân lực y tế cho vùng khó khăn, vùng sâu, vùng xa."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Phạm Văn Tác"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "bkaVfr2QF9a",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "bkaVfr2QF9a",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "bkaVfr2QF9a",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009852"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Chuẩn bị nội dung cho cuộc họp với Lãnh đạo Bộ về Nghị định về đào tạo đặc thù trong lĩnh vực sức khỏe;"
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Phạm Văn Tác"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "bkaVfr2QF9a",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "bkaVfr2QF9a",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "bkaVfr2QF9a",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009863"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Khẩn trương hoàn thành việc xây dựng các văn bản quy phạm pháp luật đã đăng ký thực hiện, kế hoạch xây dựng văn bản quy phạm pháp luật năm 2022. Ban cán sự Đảng Bộ Y tế xem xét trách nhiệm người đứng đầu và các hình thức thi đua, khen thưởng đối với tập thể, cá nhân nếu không hoàn thành nhiệm vụ."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Phạm Văn Tác"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "bkaVfr2QF9a",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "bkaVfr2QF9a",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "o4HGBqPEBWR",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009865"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Khẩn trương hoàn thành việc xây dựng các văn bản quy phạm pháp luật đã đăng ký thực hiện, kế hoạch xây dựng văn bản quy phạm pháp luật năm 2022. Ban cán sự Đảng Bộ Y tế xem xét trách nhiệm người đứng đầu và các hình thức thi đua, khen thưởng đối với tập thể, cá nhân nếu không hoàn thành nhiệm vụ."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Vũ Tuấn Cường"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "o4HGBqPEBWR",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "o4HGBqPEBWR",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "o4HGBqPEBWR",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009876"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "khẩn trương trình Lãnh đạo Bộ về Luật dược sửa đổi và phương án giải quyết tồn đọng hồ sơ, báo cáo tại cuộc họp Giao ban Cơ quan Bộ tiếp theo; báo cáo về tổ chức Hội nghị xúc tiến đầu tư, kêu gọi đầu tư cho ngành dược."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Vũ Tuấn Cường"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "o4HGBqPEBWR",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "o4HGBqPEBWR",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "MLo2HUxMhT7",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009869"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Khẩn trương hoàn thành việc xây dựng các văn bản quy phạm pháp luật đã đăng ký thực hiện, kế hoạch xây dựng văn bản quy phạm pháp luật năm 2022. Ban cán sự Đảng Bộ Y tế xem xét trách nhiệm người đứng đầu và các hình thức thi đua, khen thưởng đối với tập thể, cá nhân nếu không hoàn thành nhiệm vụ."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Nguyễn Thế Thịnh"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "MLo2HUxMhT7",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "MLo2HUxMhT7",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "HZdF2XeVs5c",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009851"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Tiếp tục tập trung triển khai công tác phòng, chống dịch bệnh. Chủ trì, phối hợp với Vụ Kế hoạch - Tài chính, Vụ Bảo hiểm y tế và các đơn vị liên quan hoàn thiện Thông tư quy định nội dung chi tiết của gói dịch vụ y tế cơ bản phục vụ chăm sóc sức khỏe ban đầu, dự phòng và nâng cao sức khỏe do Trạm Y tế xã, phường, thị trấn thực hiện;"
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": "s0zDU2od4dH"
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Phan Trọng Lân"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "HZdF2XeVs5c",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "HZdF2XeVs5c",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "HZdF2XeVs5c",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009872"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Chủ trì, phối hợp với các đơn vị liên quan trình Lãnh đạo Bộ về Bộ tiêu chí chuẩn quốc gia Trung tâm Kiểm soát bệnh tật tuyến tỉnh."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Phan Trọng Lân"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "HZdF2XeVs5c",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "HZdF2XeVs5c",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "HZdF2XeVs5c",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009870"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Khẩn trương hoàn thành việc xây dựng các văn bản quy phạm pháp luật đã đăng ký thực hiện, kế hoạch xây dựng văn bản quy phạm pháp luật năm 2022. Ban cán sự Đảng Bộ Y tế xem xét trách nhiệm người đứng đầu và các hình thức thi đua, khen thưởng đối với tập thể, cá nhân nếu không hoàn thành nhiệm vụ."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Phan Trọng Lân"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "HZdF2XeVs5c",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "HZdF2XeVs5c",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "HZdF2XeVs5c",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009871"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Khẩn trương trình Lãnh đạo Bộ về Dự án Luật Phòng bệnh;"
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Phan Trọng Lân"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "HZdF2XeVs5c",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "HZdF2XeVs5c",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "JLlgszn1B3N",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009860"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Khẩn trương hoàn thành việc xây dựng các văn bản quy phạm pháp luật đã đăng ký thực hiện, kế hoạch xây dựng văn bản quy phạm pháp luật năm 2022. Ban cán sự Đảng Bộ Y tế xem xét trách nhiệm người đứng đầu và các hình thức thi đua, khen thưởng đối với tập thể, cá nhân nếu không hoàn thành nhiệm vụ."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Nguyễn Mạnh Cường"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "JLlgszn1B3N",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "JLlgszn1B3N",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "JLlgszn1B3N",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009886"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "xây dựng kế hoạch thanh tra năm 2022. Báo cáo Ban Chỉ đạo phòng, chống tham nhũng Trung ương về kết quả kế hoạch thực hiện kết luận của Thanh tra Chính phủ."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Nguyễn Mạnh Cường"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "JLlgszn1B3N",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "JLlgszn1B3N",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "tTbsjyGgjp3",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009850"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Khẩn trương hoàn thành việc xây dựng các văn bản quy phạm pháp luật đã đăng ký thực hiện, kế hoạch xây dựng văn bản quy phạm pháp luật năm 2022. Ban cán sự Đảng Bộ Y tế xem xét trách nhiệm người đứng đầu và các hình thức thi đua, khen thưởng đối với tập thể, cá nhân nếu không hoàn thành nhiệm vụ."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Nguyễn Doãn Tú"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "tTbsjyGgjp3",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "tTbsjyGgjp3",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "tTbsjyGgjp3",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009858"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "tiếp tục tập trung xây dựng, hoàn thiện Đề án tăng cường năng lực hệ thống y tế cơ sở tuyến huyện và tuyến xã đến năm 2030. Báo cáo về tiến độ xây dựng Dự án Luật Dân số tại cuộc Giao ban Cơ quan Bộ tiếp theo; nghiên cứu vấn đề dân số và phát triển."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Nguyễn Doãn Tú"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "tTbsjyGgjp3",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "tTbsjyGgjp3",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "NN5O0k8tqYf",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009839"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Khẩn trương hoàn thành việc xây dựng các văn bản quy phạm pháp luật đã đăng ký thực hiện, kế hoạch xây dựng văn bản quy phạm pháp luật năm 2022. Ban cán sự Đảng Bộ Y tế xem xét trách nhiệm người đứng đầu và các hình thức thi đua, khen thưởng đối với tập thể, cá nhân nếu không hoàn thành nhiệm vụ."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Hà Anh Đức"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "NN5O0k8tqYf",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "NN5O0k8tqYf",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "NN5O0k8tqYf",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009889"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Phối hợp với Cục Công nghệ thông tin tiếp tục nâng cao ứng dụng công nghệ thông tin trong xử lý văn bản hành chính; xây dựng Đề án về bộ chỉ số theo dõi, đánh giá và công cụ điều hành hệ thống y tế."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Hà Anh Đức"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "NN5O0k8tqYf",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "NN5O0k8tqYf",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "NN5O0k8tqYf",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009887"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Xây dựng lịch phân công trực Tết, Chỉ thị Tết 2022 và kế hoạch tổ chức Tết 2022 bảo đảm trang trọng, an toàn phòng, chống dịch;"
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Hà Anh Đức"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "NN5O0k8tqYf",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "NN5O0k8tqYf",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "NN5O0k8tqYf",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009888"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Đôn đốc, thông báo các đơn vị triển khai nhiệm vụ Chính phủ, Thủ tướng Chính phủ giao;"
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Hà Anh Đức"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "NN5O0k8tqYf",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "NN5O0k8tqYf",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "s0zDU2od4dH",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009884"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "báo cáo Lãnh đạo Bộ về tổng kết công tác bảo hiểm y tế năm 2022, kế hoạch công tác bảo hiểm y tế năm 2022; Đề án liên thông bảo hiểm y tế với các quốc gia khác."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Đặng Việt Hùng"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "s0zDU2od4dH",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "s0zDU2od4dH",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "Y3rTSSXILB3",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009885"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "xây dựng Đề án đối ngoại năm 2022; nghiên cứu tổ chức một số sự kiện ngoại giao, đối ngoại."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Đặng Quang Tấn"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "Y3rTSSXILB3",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "Y3rTSSXILB3",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "Iby3JidtKp9",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009854"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Báo cáo Lãnh đạo Bộ về Đề án về cải cách, đổi mới y tế cơ sở; vấn đề thanh toán bảo hiểm y tế để nâng cao chi trả cho bảo hiểm y tế;"
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Nguyễn Nam Liên"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "Iby3JidtKp9",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "Iby3JidtKp9",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "Iby3JidtKp9",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009855"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Rà soát lại các văn bản, hướng dẫn, chỉ đạo trong công tác chi tiêu, mua sắm, phân bổ, sử dụng trang thiết bị, thuốc, vật tư, sinh phẩm…phục vụ báo cáo Thanh tra Chính phủ và Kiểm toán Nhà nước;"
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Nguyễn Nam Liên"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "Iby3JidtKp9",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "Iby3JidtKp9",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "Iby3JidtKp9",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009856"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Tiếp tục hoàn thiện Chiến lược quốc gia bảo vệ, chăm sóc và nâng cao sức khỏe nhân dân giai đoạn 2022 - 2030, tầm nhìn đến năm 2045; gửi xin ý kiến góp ý của Ban Cán sự Đảng Bộ Y tế;"
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Nguyễn Nam Liên"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "Iby3JidtKp9",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "Iby3JidtKp9",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "Iby3JidtKp9",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009857"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Đầu mối tổ chức Hội nghị tổng kết ngành năm 2022."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Nguyễn Nam Liên"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "Iby3JidtKp9",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "Iby3JidtKp9",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "VwqVkW8B1gM",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009836"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Khẩn trương hoàn thành việc xây dựng các văn bản quy phạm pháp luật đã đăng ký thực hiện, kế hoạch xây dựng văn bản quy phạm pháp luật năm 2022. Ban cán sự Đảng Bộ Y tế xem xét trách nhiệm người đứng đầu và các hình thức thi đua, khen thưởng đối với tập thể, cá nhân nếu không hoàn thành nhiệm vụ."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Trần Thị Trang"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "VwqVkW8B1gM",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "VwqVkW8B1gM",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "szpUAlx9pFW",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009847"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Khẩn trương hoàn thành việc xây dựng các văn bản quy phạm pháp luật đã đăng ký thực hiện, kế hoạch xây dựng văn bản quy phạm pháp luật năm 2022. Ban cán sự Đảng Bộ Y tế xem xét trách nhiệm người đứng đầu và các hình thức thi đua, khen thưởng đối với tập thể, cá nhân nếu không hoàn thành nhiệm vụ."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Nguyễn Đức Vinh"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "szpUAlx9pFW",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "szpUAlx9pFW",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "szpUAlx9pFW",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009883"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "báo cáo Lãnh đạo Bộ về tiến độ triển khai và kế hoạch triển khai thời gian tới của Nghị quyết về giải pháp ổn định và phát triển đội ngũ y tế thôn bản và Cô đỡ thôn bản; Kế hoạch hành động phòng chống suy dinh dưỡng thấp còi ở trẻ em dưới 5 tuổi khu vực miền núi, đồng bào dân tộc thiểu số, giai đoạn 2022 - 2025."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Nguyễn Đức Vinh"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "szpUAlx9pFW",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "szpUAlx9pFW",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "Fkr4oH95Erk",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009848"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Khẩn trương hoàn thành việc xây dựng các văn bản quy phạm pháp luật đã đăng ký thực hiện, kế hoạch xây dựng văn bản quy phạm pháp luật năm 2022. Ban cán sự Đảng Bộ Y tế xem xét trách nhiệm người đứng đầu và các hình thức thi đua, khen thưởng đối với tập thể, cá nhân nếu không hoàn thành nhiệm vụ."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Nguyễn Minh Lợi"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "Fkr4oH95Erk",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "Fkr4oH95Erk",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "Fkr4oH95Erk",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009879"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Trình kế hoạch xây dựng Luật Trang thiết bị y tế;"
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Nguyễn Minh Lợi"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "Fkr4oH95Erk",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "Fkr4oH95Erk",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "Fkr4oH95Erk",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009878"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Tập trung triển khai Kế hoạch thực hiện Nghị định số 98/2022/NĐ-CP, trong đó chú trọng công tác kê khai và quản lý giá trang thiết bị, thành lập Tổ công tác liên ngành;"
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Nguyễn Minh Lợi"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "Fkr4oH95Erk",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "Fkr4oH95Erk",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "nBPfJIfk5wM",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009838"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Khẩn trương hoàn thành việc xây dựng các văn bản quy phạm pháp luật đã đăng ký thực hiện, kế hoạch xây dựng văn bản quy phạm pháp luật năm 2022. Ban cán sự Đảng Bộ Y tế xem xét trách nhiệm người đứng đầu và các hình thức thi đua, khen thưởng đối với tập thể, cá nhân nếu không hoàn thành nhiệm vụ."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Nguyễn Đình Anh"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "nBPfJIfk5wM",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "nBPfJIfk5wM",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "cwgABEvhikL",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009837"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Khẩn trương hoàn thành việc xây dựng các văn bản quy phạm pháp luật đã đăng ký thực hiện, kế hoạch xây dựng văn bản quy phạm pháp luật năm 2022. Ban cán sự Đảng Bộ Y tế xem xét trách nhiệm người đứng đầu và các hình thức thi đua, khen thưởng đối với tập thể, cá nhân nếu không hoàn thành nhiệm vụ."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Nguyễn Hồng Sơn"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "cwgABEvhikL",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "cwgABEvhikL",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "cwgABEvhikL",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009882"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "chủ trì, phối hợp với các đơn vị liên quan hoàn thiện Nghị định Chính phủ quy định chức năng, nhiệm vụ, quyền hạn của Bộ Y tế và Đề án sắp xếp các đơn vị thuộc Bộ để báo cáo Ban Cán sự Đảng Bộ Y tế. Tiếp tục triển khai các hoạt động về tinh giản bộ máy, cơ cấu tổ chức, nâng cao hiệu quả hoạt động, cải cách hành chính."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Nguyễn Hồng Sơn"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "cwgABEvhikL",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "cwgABEvhikL",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "nBPfJIfk5wM",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009859"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Tiếp tục hoàn thiện chương trình tổ chức Lễ tôn vinh Thầy thuốc tham gia phòng, chống dịch COVID-19;"
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Hoàng Thị Thơm"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "nBPfJIfk5wM",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "nBPfJIfk5wM",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "nBPfJIfk5wM",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009900"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Xây dựng và trình Lãnh đạo Bộ về Kế hoạch công tác truyền thông, tổ chức ngày Thầy thuốc Việt Nam 27/2/2022;"
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Hoàng Thị Khánh Phương"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "nBPfJIfk5wM",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "nBPfJIfk5wM",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "GTVHvbT8asZ",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009862"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Khẩn trương hoàn thành việc xây dựng các văn bản quy phạm pháp luật đã đăng ký thực hiện, kế hoạch xây dựng văn bản quy phạm pháp luật năm 2022. Ban cán sự Đảng Bộ Y tế xem xét trách nhiệm người đứng đầu và các hình thức thi đua, khen thưởng đối với tập thể, cá nhân nếu không hoàn thành nhiệm vụ."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Trần Xuân Đà"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "GTVHvbT8asZ",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "GTVHvbT8asZ",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "l2xhm3bYqHx",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009873"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "tiếp tục hoàn thiện Đề án đầu tư phát triển Trung tâm Kiểm soát bệnh tật tuyến tỉnh giai đoạn 2022-2030; chỉ đạo các vấn đề, quy định liên quan đến phòng, chống HIV/AIDS, mại dâm."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Nguyễn Chí Lung"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "l2xhm3bYqHx",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "l2xhm3bYqHx",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "bY3Y84e0QZo",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009866"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Khẩn trương hoàn thành việc xây dựng các văn bản quy phạm pháp luật đã đăng ký thực hiện, kế hoạch xây dựng văn bản quy phạm pháp luật năm 2022. Ban cán sự Đảng Bộ Y tế xem xét trách nhiệm người đứng đầu và các hình thức thi đua, khen thưởng đối với tập thể, cá nhân nếu không hoàn thành nhiệm vụ."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Dương Huy Lương"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "bY3Y84e0QZo",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "bY3Y84e0QZo",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "bY3Y84e0QZo",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009877"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "khẩn trương trình phương án phân cấp, phân quyền việc cấp, cấp lại, điều chỉnh giấy phép hoạt động đối với bệnh viện tư nhân. Tiếp tục chỉ đạo các địa phương về vấn đề điều trị giảm tử vong và phân bổ thuốc điều trị COVID-19 (phối hợp với Cục Khoa học công nghệ và Đào tạo)."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Dương Huy Lương"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "bY3Y84e0QZo",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "bY3Y84e0QZo",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "XelleUu2LD9",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009875"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "tiếp tục đôn đốc, hướng dẫn các đơn vị, địa phương Sơ kết Nghị quyết số 128/NQ-CP; bám sát việc phê duyệt Chương trình phòng, chống dịch COVID-19."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Trần Anh Thành"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "XelleUu2LD9",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "XelleUu2LD9",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "nBPfJIfk5wM",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009902"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Tiếp tục xây dựng và triển khai có hiệu quả các chương trình truyền thông nhằm khơi dậy phong trào, động viên các cán bộ ngành y tế hăng hái, tích cực tham gia công tác phòng, chống dịch."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Vũ Mạnh Cường"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "nBPfJIfk5wM",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "nBPfJIfk5wM",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "nBPfJIfk5wM",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009901"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-09"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "3"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Xây dựng Kế hoạch truyền thông năm 2022, kịch bản đáp ứng khi xảy ra khủng hoảng truyền thông;"
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "2143/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-12-22"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Kết luận, chỉ đạo của Bộ trưởng Nguyễn Thanh Long tại buổi Giao ban Cơ quan Bộ ngày 17/12/2022."
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Vũ Mạnh Cường"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "nBPfJIfk5wM",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "nBPfJIfk5wM",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "Iby3JidtKp9",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009802"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-07"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "4"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Về kinh phí cấp cho các đơn vị pháp y tâm thần: Giao Vụ Kế hoạch - Tài chính\nphối hợp với các Vụ, Cục liên quan ưu tiên cấp kinh phí cho các đơn vị thực hiện\ngiám định pháp y tâm thần, có phương án ưu tiên phù hợp trình Lãnh đạo Bộ\ntrong tháng 01/2022."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "34/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-01-07"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Thông báo kết luận của Thứ trưởng Trần Văn Thuấn tại buổi họp về việc rà soát hoạt động thực hiện Đề án “Tiếp tục đổi mới và nâng cao hiệu quả hoạt động giám định tư pháp” và Kế hoạch số 1823/KH-BYT ngày 24/11/2020 của Bộ trưởng Bộ Y tế về “Triển khai thi hành Luật sửa đổi, bổ sung một số điều của Luật Giám định tư pháp”"
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": "2022-01-31"
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Nguyễn Nam Liên"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "Iby3JidtKp9",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "Iby3JidtKp9",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "Iby3JidtKp9",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009784"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-07"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "4"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Có văn bản báo cáo Ban Cán sự Đảng Bộ Y tế chuyển chủ đầu tư xây\ndựng trụ sở mới của các đơn vị thuộc khối giám định pháp y, giám định pháp y\ntâm thần cho các đơn vị để triển khai công việc thuận lợi và nhanh chóng."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "34/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-01-07"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Thông báo kết luận của Thứ trưởng Trần Văn Thuấn tại buổi họp về việc rà soát hoạt động thực hiện Đề án “Tiếp tục đổi mới và nâng cao hiệu quả hoạt động giám định tư pháp” và Kế hoạch số 1823/KH-BYT ngày 24/11/2020 của Bộ trưởng Bộ Y tế về “Triển khai thi hành Luật sửa đổi, bổ sung một số điều của Luật Giám định tư pháp”"
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Nguyễn Nam Liên"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "Iby3JidtKp9",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "Iby3JidtKp9",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "Iby3JidtKp9",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009801"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-07"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "4"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Giải quyết nhanh chóng, trong thời gian ngắn nhất có thể về việc hướng\ndẫn các chế độ, phụ cấp, quyền lợi cho cán bộ, nhân viên trong lĩnh vực giám\nđịnh pháp y, pháp y tâm thần theo quy định."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "34/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-01-07"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Thông báo kết luận của Thứ trưởng Trần Văn Thuấn tại buổi họp về việc rà soát hoạt động thực hiện Đề án “Tiếp tục đổi mới và nâng cao hiệu quả hoạt động giám định tư pháp” và Kế hoạch số 1823/KH-BYT ngày 24/11/2020 của Bộ trưởng Bộ Y tế về “Triển khai thi hành Luật sửa đổi, bổ sung một số điều của Luật Giám định tư pháp”"
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Nguyễn Nam Liên"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "Iby3JidtKp9",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "Iby3JidtKp9",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "VwqVkW8B1gM",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009803"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-07"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "4"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Tổ chức đánh giá, hoàn thiện các văn bản quy phạm pháp luật về giám định\ntư pháp do Bộ Y tế ban hành hoặc trình cơ quan nhà nước có thẩm quyền ban hành\nvà đề xuất sửa đổi, bổ sung (nếu cần)."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "34/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-01-07"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Thông báo kết luận của Thứ trưởng Trần Văn Thuấn tại buổi họp về việc rà soát hoạt động thực hiện Đề án “Tiếp tục đổi mới và nâng cao hiệu quả hoạt động giám định tư pháp” và Kế hoạch số 1823/KH-BYT ngày 24/11/2020 của Bộ trưởng Bộ Y tế về “Triển khai thi hành Luật sửa đổi, bổ sung một số điều của Luật Giám định tư pháp”"
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": "2022-01-31"
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Trần Thị Trang"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "VwqVkW8B1gM",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "VwqVkW8B1gM",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "bY3Y84e0QZo",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009800"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-07"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "4"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Có văn bản gửi các Vụ, Cục và đơn vị liên quan cử cán bộ đầu mối phối hợp\nthực hiện nhiệm vụ, cử Lãnh đạo và chuyên viên tham gia đoàn kiểm tra, giám sát\ncông tác giám định pháp y, giám định pháp y tâm thần, điều trị bắt buộc chữa bệnh\nnăm 2022."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "34/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-01-07"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Thông báo kết luận của Thứ trưởng Trần Văn Thuấn tại buổi họp về việc rà soát hoạt động thực hiện Đề án “Tiếp tục đổi mới và nâng cao hiệu quả hoạt động giám định tư pháp” và Kế hoạch số 1823/KH-BYT ngày 24/11/2020 của Bộ trưởng Bộ Y tế về “Triển khai thi hành Luật sửa đổi, bổ sung một số điều của Luật Giám định tư pháp”"
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Dương Huy Lương"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "bY3Y84e0QZo",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "bY3Y84e0QZo",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "bY3Y84e0QZo",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009783"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-07"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "4"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Đề xuất Lãnh đạo Bộ thành lập đoàn kiểm tra, thành viên gồm các\nBộ/ngành, Vụ/Cục và đơn vị có liên quan để kiểm tra, giám sát, thanh tra, xem\nxét và nắm bắt các tồn tại, vướng mắc, đồng thời làm việc với Ủy ban nhân dân\ncác tỉnh/thành phố trực thuộc Trung ương, nơi các đơn vị của Bộ Y tế đóng trên địa bàn về bố trí hạ tầng cơ sở vật chất, trang thiết bị để đảm bảo thực hiện công\ntác chuyên môn hiệu quả."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "34/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-01-07"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Thông báo kết luận của Thứ trưởng Trần Văn Thuấn tại buổi họp về việc rà soát hoạt động thực hiện Đề án “Tiếp tục đổi mới và nâng cao hiệu quả hoạt động giám định tư pháp” và Kế hoạch số 1823/KH-BYT ngày 24/11/2020 của Bộ trưởng Bộ Y tế về “Triển khai thi hành Luật sửa đổi, bổ sung một số điều của Luật Giám định tư pháp”"
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Dương Huy Lương"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "bY3Y84e0QZo",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "bY3Y84e0QZo",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "bY3Y84e0QZo",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009782"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-07"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "4"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Đầu mối tổng hợp, hoàn thiện báo cáo kết quả hoạt công tác giám định\npháp y, giám định pháp y tâm thần năm 2022; tổng hợp kết quả hoạt động của các\ncác Vụ/Cục và các đơn vị đối với các nhiệm vụ được giao tại Quyết định số\n3158/QĐ-BYT ngày 24/5/2018 và Kế hoạch số 1823/KH-BYT ngày 24/11/2020\ntrình Lãnh đạo Bộ ký ban hành."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "34/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-01-07"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Thông báo kết luận của Thứ trưởng Trần Văn Thuấn tại buổi họp về việc rà soát hoạt động thực hiện Đề án “Tiếp tục đổi mới và nâng cao hiệu quả hoạt động giám định tư pháp” và Kế hoạch số 1823/KH-BYT ngày 24/11/2020 của Bộ trưởng Bộ Y tế về “Triển khai thi hành Luật sửa đổi, bổ sung một số điều của Luật Giám định tư pháp”"
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": ""
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Dương Huy Lương"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "bY3Y84e0QZo",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "bY3Y84e0QZo",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "HZdF2XeVs5c",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009760"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-06"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "5"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Chủ trì, phối hợp với Viện Vệ sinh dịch tễ Trung ương\nvà các đơn vị liên quan hoàn thiện dự thảo Kế hoạch mua và phân bổ vắc xin\nphòng COVID-19 năm 2022 (trước 17h00 ngày 05/01/2022), trên cơ sở:\n(1) Rà soát tất cả đối tượng tiêm theo Công văn số 10722/BYT-DP ngày\n17/12/2022 của Bộ Y tế về việc tiêm vắc xin phòng COVID-19 liều cơ bản, liều\nnhắc lại và theo các hướng dẫn tiêm vắc xin mới nhất của Bộ Y tế, đồng thời cập\nnhật số liệu từ các địa phương, xác định nhu cầu cụ thể cho từng loại vắc xin;\n(2) Rà soát số lượng vắc xin đã ký hợp đồng mua và số lượng vắc xin tiếp nhận\nhỗ trợ từ COVAX Facility để xây dựng Kế hoạch mua vắc xin sử dụng đảm bảo\nlàm việc hiệu quả, tránh lãng phí."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "19/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-01-05"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Thông báo kết luận của Đồng chí Đỗ Xuân Tuyên, Thứ trưởng Bộ Y tế, tại cuộc họp về kế hoạch mua vắc xin và thuốc điều trị COVID-19 năm 2022"
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": "2022-01-05"
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Phan Trọng Lân"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "HZdF2XeVs5c",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "HZdF2XeVs5c",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "HZdF2XeVs5c",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009762"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-06"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "5"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Căn cứ nội dung Báo cáo tình hình dịch và kết quả triển khai công tác\nphòng, chống dịch COVID-19, khẩn trương xây dựng dự thảo Báo cáo tình hình\ndịch và công tác triển khai tiêm vắc xin phòng COVID-19 của năm 2022, để báo cáo\nThủ tướng Chính phủ trước ngày 07/01/2022"
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "19/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-01-05"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Thông báo kết luận của Đồng chí Đỗ Xuân Tuyên, Thứ trưởng Bộ Y tế, tại cuộc họp về kế hoạch mua vắc xin và thuốc điều trị COVID-19 năm 2022"
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": "2022-01-07"
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Phan Trọng Lân"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "HZdF2XeVs5c",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "HZdF2XeVs5c",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "HZdF2XeVs5c",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009763"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-06"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "5"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Chủ trì, phối hợp với Viện Vệ sinh dịch tễ Trung ương rà soát lại và\nxây dựng hướng dẫn về sử dụng đối với từng loại vắc xin phòng COVID-19\nthời gian tới, hoàn thành trước ngày 10/01/2022."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "19/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-01-05"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Thông báo kết luận của Đồng chí Đỗ Xuân Tuyên, Thứ trưởng Bộ Y tế, tại cuộc họp về kế hoạch mua vắc xin và thuốc điều trị COVID-19 năm 2022"
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": "2022-01-10"
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Phan Trọng Lân"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "HZdF2XeVs5c",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "HZdF2XeVs5c",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "HZdF2XeVs5c",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009764"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-06"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "5"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Dự thảo văn bản trình Bộ Y tế ký gửi Bộ Ngoại giao đề nghị phối hợp\nchặt chẽ và thông tin kịp thời cho Bộ Y tế trong việc tiếp nhận viện trợ vắc xin\nphòng COVID-19, xong trước ngày 10/01/2022."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "19/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-01-05"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Thông báo kết luận của Đồng chí Đỗ Xuân Tuyên, Thứ trưởng Bộ Y tế, tại cuộc họp về kế hoạch mua vắc xin và thuốc điều trị COVID-19 năm 2022"
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": "2022-01-10"
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Phan Trọng Lân"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "HZdF2XeVs5c",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "HZdF2XeVs5c",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "cwgABEvhikL",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009781"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-06"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "5"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Chủ trì, phối hợp với các Đơn vị liên quan rà soát\nlại thành viên các Tổ chuyên môn của Tiểu ban Y tế thuộc Ban Chỉ đạo Quốc gia\nphòng, chống dịch COVID-19, tham mưu trình báo cáo Bộ trưởng kiện toàn,\nhoàn thành trước ngày 10/01/2022."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "19/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-01-05"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Thông báo kết luận của Đồng chí Đỗ Xuân Tuyên, Thứ trưởng Bộ Y tế, tại cuộc họp về kế hoạch mua vắc xin và thuốc điều trị COVID-19 năm 2022"
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": "2022-01-10"
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Nguyễn Hồng Sơn"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "cwgABEvhikL",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "cwgABEvhikL",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "bY3Y84e0QZo",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009780"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-06"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "5"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Khẩn trương báo cáo, tham mưu Thứ trưởng\nNguyễn Trường Sơn có văn bản của Bộ Y tế gửi Ủy ban nhân dân các tỉnh,\nthành phố trực thuộc Trung ương thống kê số ca mắc bình quân/01 vạn dân, số\nbệnh nhân nặng điều trị ICU/số người nhiễm, từ đợt dịch thứ tư đến hết ngày\n31/12/2022, kèm theo biểu mẫu, phụ lục báo cáo (để làm cơ sở xây dựng nhu cầu thuốc điều trị COVID-19 của năm 2022), trình Lãnh đạo Bộ ký và ban hành\ntrước 17h00 ngày 05/01/2022."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "19/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-01-05"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Thông báo kết luận của Đồng chí Đỗ Xuân Tuyên, Thứ trưởng Bộ Y tế, tại cuộc họp về kế hoạch mua vắc xin và thuốc điều trị COVID-19 năm 2022"
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": "2022-01-05"
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Dương Huy Lương"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "bY3Y84e0QZo",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "bY3Y84e0QZo",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orgUnit": "bY3Y84e0QZo",
+            "trackedEntityType": "jbQmOZQTCvZ",
+            "inactive": false,
+            "deleted": false,
+            "featureType": "NONE",
+            "programOwners": [],
+            "relationships": [],
+            "attributes": [
+                {
+                    "attribute": "bEKyhj3UZ1A",
+                    "value": "500009761"
+                },
+                {
+                    "attribute": "WZ9r8gaJ9GE",
+                    "value": "2"
+                },
+                {
+                    "attribute": "pTtMHDazedk",
+                    "value": "2022-01-06"
+                },
+                {
+                    "attribute": "l2J7nHDYgWV",
+                    "value": "5"
+                },
+                {
+                    "attribute": "hybfvRWTZAm",
+                    "value": "Trên cơ sở số liệu báo cáo từ các địa phương, Cục Quản lý Khám, chữa bệnh\ntổng hợp nhu cầu số lượng thuốc điều trị COVID-19 cho từng nhóm bệnh nhân\ntrong năm 2022, trình báo cáo Lãnh đạo Bộ để tổ chức mua sắm trước ngày\n15/01/2022."
+                },
+                {
+                    "attribute": "QDKF1LkOQNi",
+                    "value": "19/TB-BYT"
+                },
+                {
+                    "attribute": "hQuINlqtfyM",
+                    "value": "2022-01-05"
+                },
+                {
+                    "attribute": "kDwLFCKCKF0",
+                    "value": "Thông báo kết luận của Đồng chí Đỗ Xuân Tuyên, Thứ trưởng Bộ Y tế, tại cuộc họp về kế hoạch mua vắc xin và thuốc điều trị COVID-19 năm 2022"
+                },
+                {
+                    "attribute": "wt6rbxne6UG",
+                    "value": ""
+                },
+                {
+                    "attribute": "BnbudHFCrfx",
+                    "value": "2022-01-15"
+                },
+                {
+                    "attribute": "lIp0g9CGswE",
+                    "value": "Dương Huy Lương"
+                }
+            ],
+            "enrollments": [
+                {
+                    "orgUnit": "bY3Y84e0QZo",
+                    "program": "MTtLjthdDgH",
+                    "enrollmentDate": "2022-01-21",
+                    "incidentDate": "2022-01-21",
+                    "events": [
+                        {
+                            "program": "MTtLjthdDgH",
+                            "orgUnit": "bY3Y84e0QZo",
+                            "eventDate": "2022-01-21",
+                            "status": "COMPLETED",
+                            "storedBy": "anhth",
+                            "programStage": "Kxa3fOFhJx9",
+                            "dataValues": [
+                                {
+                                    "dataElement": "azz71WwE2Q2",
+                                    "value": "1"
+                                },
+                                {
+                                    "dataElement": "BO84P6Rt7RG",
+                                    "value": ""
+                                },
+                                {
+                                    "dataElement": "Uk09m0hfRQ5",
+                                    "value": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

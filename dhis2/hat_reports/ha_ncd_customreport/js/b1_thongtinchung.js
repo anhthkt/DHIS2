@@ -127,9 +127,17 @@ function ThongTinChung() {
                 requestApiManager_content.createWorker().createHolderTitleRow('tongSo', `writeRowHuyen`, writeRow(sumAll))
                 break;
             case LEVEL_ORG_SELECT_TYPE.HUYEN:
-                requestApiManagerTotal.createWorker().createHolderTitleRow(`tb1ColumnIncrise`, `tongSo`, sumWorker(['writeRow'], "", "TỔNG SỐ"))
+                requestApiManager_content.setHandleSuccessAll(lastLoad)
+                requestApiManager_content.createWorker().createHolderTitleRow('tb1ColumnIncrise', `tongSo`, writeRow(
+                    [],
+                    remapJson = undefined,
+                    {
+                        labelStt: "",
+                        labelOrg: "Tổng số",
+                        style: 'style="font-weight: bold;text-align:center"'
+                    }
+                ))
                 requestApiManager_content.createWorker().createHolderTitleRow('tongSo', `writeRow`, writeRow(sumAll))
-
                 break;
             case LEVEL_ORG_SELECT_TYPE.XA:
                 requestApiManager_content.setHandleSuccessAll(lastLoad)
@@ -170,10 +178,10 @@ function ThongTinChung() {
                     let cot8 = (worker.storageData(prepareSumArr[4]) / worker.storageData(prepareSumArr[3])) * 100
                     htmlReport += "<td align='center'><strong>" + cot8.toFixed(0) + "</strong></td>";
                     worker.storageData(0)
-                } else
-                if (idx == 9) {
-                    htmlReport += "<td align='center'><strong>" + '' + "</strong></td>";//3   
-                    worker.storageData(0)
+                // } else
+                // if (idx == 9) {
+                //     htmlReport += "<td align='center'><strong>" + '' + "</strong></td>";//3   
+                //     worker.storageData(0)
                 } else {
                     htmlReport += "<td align='center'><strong>" + p2ild.dvu.numberWithThousands(worker.storageData(prepareSumArr[idx])) + "</strong></td>";//3
                 }
