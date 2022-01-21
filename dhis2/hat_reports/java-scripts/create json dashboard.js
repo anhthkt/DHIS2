@@ -34,7 +34,7 @@ for(let s = 0; s < arrSheetNames.length-1; s++) {
 }
 
 // function exportTeiFromExcel(sheetName, programId, idOrgUnit) {
-function exportTeiFromExcel(sheetName, programId, eventDate, orgName) {
+    async function exportTeiFromExcel(sheetName, programId, eventDate, orgName) {
     let data = workbook.Sheets[sheetName];
 
     let result = {};
@@ -57,7 +57,6 @@ function exportTeiFromExcel(sheetName, programId, eventDate, orgName) {
             }
         }
     }
-    (async function () {
         var resultTei = {
             "trackedEntityInstances": []
         };
@@ -65,13 +64,7 @@ function exportTeiFromExcel(sheetName, programId, eventDate, orgName) {
         for (let i = 5; i < Object.keys(result).length + 5; i++) {
             let checkTei = await checkTeiExist(`${result[i][1]}`);
             if (checkTei != 0) {
-                await new Promise((resolve) => {
-                    setTimeout(() => {
-                        console.log('Vao day roi');
-                        resolve();
-                    }, 2000);
-                });
-                
+                console.log('Vao day roi');
             } else {
                 mTei = {
                     "orgUnit": `${result[i][15]}`,
@@ -166,7 +159,6 @@ function exportTeiFromExcel(sheetName, programId, eventDate, orgName) {
     
     fs.writeFileSync(`${__dirname}/output/importNhiemVu-${orgName}-${sheetName}.json`, JSON.stringify(resultTei));
     console.log("[*] Create JSON files successfully!!")
-    })();
     // var resultTei = {
     //     "trackedEntityInstances": []
     // };
@@ -418,7 +410,7 @@ function convertCode(mValue) {
     }
 }
 
-function checkTeiExist(mUID) {
+async function checkTeiExist(mUID) {
     return new Promise((resolve,reject)=>{
         let result = 0;
         let url = ``
