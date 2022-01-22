@@ -1,3 +1,8 @@
+// CHÚ Ý 
+// THAY ĐỔI NGÀY SỰ KIỆN: EVENTDATE 
+// TÊN CỦA SHEET TRÊN FILE EXCEL: SHEETNAME
+
+
 const _axios = require("axios");
 const fs = require('fs');
 const xlsx = require('xlsx');
@@ -34,7 +39,7 @@ for(let s = 0; s < arrSheetNames.length-1; s++) {
 }
 
 // function exportTeiFromExcel(sheetName, programId, idOrgUnit) {
-    async function exportTeiFromExcel(sheetName, programId, eventDate, orgName) {
+async function exportTeiFromExcel(sheetName, programId, eventDate, orgName) {
     let data = workbook.Sheets[sheetName];
 
     let result = {};
@@ -57,320 +62,137 @@ for(let s = 0; s < arrSheetNames.length-1; s++) {
             }
         }
     }
-        var resultTei = {
-            "trackedEntityInstances": []
-        };
-        var mTei = ''
-        for (let i = 5; i < Object.keys(result).length + 5; i++) {
-            let checkTei = await checkTeiExist(`${result[i][1]}`);
-            if (checkTei != 0) {
-                console.log('Vao day roi');
-            } else {
-                mTei = {
-                    "orgUnit": `${result[i][15]}`,
-                    "trackedEntityType": "jbQmOZQTCvZ",
-                    "inactive": false,
-                    "deleted": false,
-                    "featureType": "NONE",
-                    "programOwners": [],
-                    "relationships": [],
-                    "attributes": [
-                        {
-                            "attribute": "bEKyhj3UZ1A",
-                            "value": `${result[i][1]}`
-                        },
-                        {
-                            "attribute": "WZ9r8gaJ9GE",
-                            "value": `${programId}`
-                        },
-                        {
-                            "attribute": "pTtMHDazedk",
-                            "value": `${formatDate(result[i][2])}`
-                        },
-                        {
-                            "attribute": "l2J7nHDYgWV",
-                            "value": `${result[i][14]}`
-                        },
-                        {
-                            "attribute": "hybfvRWTZAm",
-                            "value": `${result[i][4]}`
-                        },
-                        {
-                            "attribute": "QDKF1LkOQNi",
-                            "value": `${result[i][5]}`
-                        },
-                        {
-                            "attribute": "hQuINlqtfyM",
-                            "value": `${formatDate(result[i][6])}`
-                        },
-                        {
-                            "attribute": "kDwLFCKCKF0",
-                            "value": `${result[i][7]}`
-                        },
-                        {
-                            "attribute": "wt6rbxne6UG",
-                            "value": `${result[i][17]}`
-                        },
-                        {
-                            "attribute": "BnbudHFCrfx",
-                            "value": `${formatDate(result[i][12])}`
-                        },
-                        {
-                            "attribute": "lIp0g9CGswE",
-                            "value": `${result[i][13]}`
-                        }
-                    ],
-                    "enrollments": [
-                        {
-                            "orgUnit": `${result[i][15]}`,
-                            "program": "MTtLjthdDgH",
-                            "enrollmentDate": `${eventDate}`,
-                            "incidentDate": `${eventDate}`,
-                            "events": [
-                                {
-                                    "program": "MTtLjthdDgH",
-                                    "orgUnit": `${result[i][15]}`,
-                                    "eventDate": `${eventDate}`,
-                                    "status": "COMPLETED",
-                                    "storedBy": "anhth",
-                                    "programStage": "Kxa3fOFhJx9",
-                                    "dataValues": [
-                                        {
-                                            "dataElement": "azz71WwE2Q2",
-                                            "value": `${result[i][16]}`
-                                        },
-                                        {
-                                            "dataElement": "BO84P6Rt7RG",
-                                            "value": ""
-                                        },
-                                        {
-                                            "dataElement": "Uk09m0hfRQ5",
-                                            "value": ""
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-                resultTei.trackedEntityInstances.push(mTei)
+    var resultTeis = {
+        "trackedEntityInstances": []
+    };
+    var mTei = '';
+    var resultEvents = {
+        "events": []
+    };
+    var mEvent = '';
+    for (let i = 5; i < Object.keys(result).length + 5; i++) {
+        let checkTei = await checkTeiExist(`${result[i][1]}`);
+        if (checkTei.status != 0) {
+            // `console.log('Vao day roi');
+            mEvent = {
+                "program": "MTtLjthdDgH",
+                "orgUnit": `${result[i][15]}`,
+                "eventDate": `${eventDate}`,
+                "status": "ACTIVE",
+                "programStage": "Kxa3fOFhJx9",
+                "trackedEntityInstance": `${checkTei.teiID}`,
+                "dataValues": [
+                    {
+                        "dataElement": "azz71WwE2Q2",
+                        "value": `${result[i][16]}`
+                    },
+                    {
+                        "dataElement": "BO84P6Rt7RG",
+                        "value": ""
+                    },
+                    {
+                        "dataElement": "Uk09m0hfRQ5",
+                        "value": ""
+                    }
+                ]
             }
+            resultEvents.events.push(mEvent);
+        } else {
+            mTei = {
+                "orgUnit": `${result[i][15]}`,
+                "trackedEntityType": "jbQmOZQTCvZ",
+                "inactive": false,
+                "deleted": false,
+                "featureType": "NONE",
+                "programOwners": [],
+                "relationships": [],
+                "attributes": [
+                    {
+                        "attribute": "bEKyhj3UZ1A",
+                        "value": `${result[i][1]}`
+                    },
+                    {
+                        "attribute": "WZ9r8gaJ9GE",
+                        "value": `${programId}`
+                    },
+                    {
+                        "attribute": "pTtMHDazedk",
+                        "value": `${formatDate(result[i][2])}`
+                    },
+                    {
+                        "attribute": "l2J7nHDYgWV",
+                        "value": `${result[i][14]}`
+                    },
+                    {
+                        "attribute": "hybfvRWTZAm",
+                        "value": `${result[i][4]}`
+                    },
+                    {
+                        "attribute": "QDKF1LkOQNi",
+                        "value": `${result[i][5]}`
+                    },
+                    {
+                        "attribute": "hQuINlqtfyM",
+                        "value": `${formatDate(result[i][6])}`
+                    },
+                    {
+                        "attribute": "kDwLFCKCKF0",
+                        "value": `${result[i][7]}`
+                    },
+                    {
+                        "attribute": "wt6rbxne6UG",
+                        "value": `${result[i][17]}`
+                    },
+                    {
+                        "attribute": "BnbudHFCrfx",
+                        "value": `${formatDate(result[i][12])}`
+                    },
+                    {
+                        "attribute": "lIp0g9CGswE",
+                        "value": `${result[i][13]}`
+                    }
+                ],
+                "enrollments": [
+                    {
+                        "orgUnit": `${result[i][15]}`,
+                        "program": "MTtLjthdDgH",
+                        "enrollmentDate": `${eventDate}`,
+                        "incidentDate": `${eventDate}`,
+                        "events": [
+                            {
+                                "program": "MTtLjthdDgH",
+                                "orgUnit": `${result[i][15]}`,
+                                "eventDate": `${eventDate}`,
+                                "status": "COMPLETED",
+                                "storedBy": "anhth",
+                                "programStage": "Kxa3fOFhJx9",
+                                "dataValues": [
+                                    {
+                                        "dataElement": "azz71WwE2Q2",
+                                        "value": `${result[i][16]}`
+                                    },
+                                    {
+                                        "dataElement": "BO84P6Rt7RG",
+                                        "value": ""
+                                    },
+                                    {
+                                        "dataElement": "Uk09m0hfRQ5",
+                                        "value": ""
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+            resultTeis.trackedEntityInstances.push(mTei);
         }
-    
-    fs.writeFileSync(`${__dirname}/output/importNhiemVu-${orgName}-${sheetName}.json`, JSON.stringify(resultTei));
-    console.log("[*] Create JSON files successfully!!")
-    // var resultTei = {
-    //     "trackedEntityInstances": []
-    // };
-    // var mTei = ''
-    // for (let i = 5; i < Object.keys(result).length + 5; i++) {
-
-    //     mTei = {
-    //         "orgUnit": `${result[i][15]}`,
-    //         "trackedEntityType": "jbQmOZQTCvZ",
-    //         "inactive": false,
-    //         "deleted": false,
-    //         "featureType": "NONE",
-    //         "programOwners": [],
-    //         "relationships": [],
-    //         "attributes": [
-    //             {
-    //                 "attribute": "bEKyhj3UZ1A",
-    //                 "value": `${result[i][1]}`
-    //             },
-    //             {
-    //                 "attribute": "WZ9r8gaJ9GE",
-    //                 "value": `${programId}`
-    //             },
-    //             {
-    //                 "attribute": "pTtMHDazedk",
-    //                 "value": `${formatDate(result[i][2])}`
-    //             },
-    //             {
-    //                 "attribute": "l2J7nHDYgWV",
-    //                 "value": `${result[i][14]}`
-    //             },
-    //             {
-    //                 "attribute": "hybfvRWTZAm",
-    //                 "value": `${result[i][4]}`
-    //             },
-    //             {
-    //                 "attribute": "QDKF1LkOQNi",
-    //                 "value": `${result[i][5]}`
-    //             },
-    //             {
-    //                 "attribute": "hQuINlqtfyM",
-    //                 "value": `${formatDate(result[i][6])}`
-    //             },
-    //             {
-    //                 "attribute": "kDwLFCKCKF0",
-    //                 "value": `${result[i][7]}`
-    //             },
-    //             {
-    //                 "attribute": "wt6rbxne6UG",
-    //                 "value": `${result[i][17]}`
-    //             },
-    //             {
-    //                 "attribute": "BnbudHFCrfx",
-    //                 "value": `${formatDate(result[i][12])}`
-    //             },
-    //             {
-    //                 "attribute": "lIp0g9CGswE",
-    //                 "value": `${result[i][13]}`
-    //             }
-    //         ],
-    //         "enrollments": [
-    //             {
-    //                 "orgUnit": `${result[i][15]}`,
-    //                 "program": "MTtLjthdDgH",
-    //                 "enrollmentDate": `${eventDate}`,
-    //                 "incidentDate": `${eventDate}`,
-    //                 "events": [
-    //                     {
-    //                         "program": "MTtLjthdDgH",
-    //                         "orgUnit": `${result[i][15]}`,
-    //                         "eventDate": `${eventDate}`,
-    //                         "status": "COMPLETED",
-    //                         "storedBy": "anhth",
-    //                         "programStage": "Kxa3fOFhJx9",
-    //                         "dataValues": [
-    //                             {
-    //                                 "dataElement": "azz71WwE2Q2",
-    //                                 "value": `${result[i][16]}`
-    //                             },
-    //                             {
-    //                                 "dataElement": "BO84P6Rt7RG",
-    //                                 "value": ""
-    //                             },
-    //                             {
-    //                                 "dataElement": "Uk09m0hfRQ5",
-    //                                 "value": ""
-    //                             }
-    //                         ]
-    //                     }
-    //                 ]
-    //             }
-    //         ]
-    //     }
-    //     resultTei.trackedEntityInstances.push(mTei)
-    // }
-    // fs.writeFileSync(`${__dirname}/output/importNhiemVu-${sheetName}-2022.json`, JSON.stringify(resultTei));
-    // console.log("[*] Create JSON files successfully!!")
+    }
+    fs.writeFileSync(`${__dirname}/output/importEvents-NhiemVu-${orgName}-${sheetName}.json`, JSON.stringify(resultEvents));
+    console.log("[*] Create JSON files New Events successfully!!")
+    fs.writeFileSync(`${__dirname}/output/importTeis-NhiemVu-${orgName}-${sheetName}.json`, JSON.stringify(resultTeis));
+    console.log("[*] Create JSON files New Teis successfully!!")
 }
-
-
-    
-    // (async function () {
-    //     var resultTei = {
-    //         "trackedEntityInstances": []
-    //     };
-    //     var mTei = ''
-    //     for (let i = 5; i < Object.keys(result).length + 5; i++) {
-    //         let checkTei = await checkTeiExist(`${result[i][1]}`);
-    //         if (checkTei != 0) {
-    //             await new Promise((resolve) => {
-    //                 setTimeout(() => {
-    //                     console.log('Vao day roi');
-    //                     resolve();
-    //                 }, 2000);
-    //             });
-                
-    //         } else {
-    //             mTei = {
-    //                 "orgUnit": `${result[i][15]}`,
-    //                 "trackedEntityType": "jbQmOZQTCvZ",
-    //                 "inactive": false,
-    //                 "deleted": false,
-    //                 "featureType": "NONE",
-    //                 "programOwners": [],
-    //                 "relationships": [],
-    //                 "attributes": [
-    //                     {
-    //                         "attribute": "bEKyhj3UZ1A",
-    //                         "value": `${result[i][1]}`
-    //                     },
-    //                     {
-    //                         "attribute": "WZ9r8gaJ9GE",
-    //                         "value": `${programId}`
-    //                     },
-    //                     {
-    //                         "attribute": "pTtMHDazedk",
-    //                         "value": `${formatDate(result[i][2])}`
-    //                     },
-    //                     {
-    //                         "attribute": "l2J7nHDYgWV",
-    //                         "value": `${result[i][14]}`
-    //                     },
-    //                     {
-    //                         "attribute": "hybfvRWTZAm",
-    //                         "value": `${result[i][4]}`
-    //                     },
-    //                     {
-    //                         "attribute": "QDKF1LkOQNi",
-    //                         "value": `${result[i][5]}`
-    //                     },
-    //                     {
-    //                         "attribute": "hQuINlqtfyM",
-    //                         "value": `${formatDate(result[i][6])}`
-    //                     },
-    //                     {
-    //                         "attribute": "kDwLFCKCKF0",
-    //                         "value": `${result[i][7]}`
-    //                     },
-    //                     {
-    //                         "attribute": "wt6rbxne6UG",
-    //                         "value": `${result[i][17]}`
-    //                     },
-    //                     {
-    //                         "attribute": "BnbudHFCrfx",
-    //                         "value": `${formatDate(result[i][12])}`
-    //                     },
-    //                     {
-    //                         "attribute": "lIp0g9CGswE",
-    //                         "value": `${result[i][13]}`
-    //                     }
-    //                 ],
-    //                 "enrollments": [
-    //                     {
-    //                         "orgUnit": `${result[i][15]}`,
-    //                         "program": "MTtLjthdDgH",
-    //                         "enrollmentDate": `${eventDate}`,
-    //                         "incidentDate": `${eventDate}`,
-    //                         "events": [
-    //                             {
-    //                                 "program": "MTtLjthdDgH",
-    //                                 "orgUnit": `${result[i][15]}`,
-    //                                 "eventDate": `${eventDate}`,
-    //                                 "status": "COMPLETED",
-    //                                 "storedBy": "anhth",
-    //                                 "programStage": "Kxa3fOFhJx9",
-    //                                 "dataValues": [
-    //                                     {
-    //                                         "dataElement": "azz71WwE2Q2",
-    //                                         "value": `${result[i][16]}`
-    //                                     },
-    //                                     {
-    //                                         "dataElement": "BO84P6Rt7RG",
-    //                                         "value": ""
-    //                                     },
-    //                                     {
-    //                                         "dataElement": "Uk09m0hfRQ5",
-    //                                         "value": ""
-    //                                     }
-    //                                 ]
-    //                             }
-    //                         ]
-    //                     }
-    //                 ]
-    //             }
-    //             resultTei.trackedEntityInstances.push(mTei)
-    //         }
-    //     }
-    
-    // fs.writeFileSync(`${__dirname}/output/importNhiemVu-${orgName}-${sheetName}.json`, JSON.stringify(resultTei));
-    // console.log("[*] Create JSON files successfully!!")
-    // })();
-
 
 function formatDate(mdate) {
     if (mdate == '') return ''
@@ -382,45 +204,21 @@ function formatDate(mdate) {
     return mdate
 }
 
-function convertCode(mValue) {
-    if (mValue == '') return ''
-    if (mValue && mValue.toLowerCase() == 'Nam'.toLowerCase()) {
-        return '01'
-    }
-    if (mValue && mValue.toLowerCase() == 'Nữ'.toLowerCase()) {
-        return '02'
-    }
-    if (mValue && mValue.toLowerCase() == 'Trạm Y tế'.toLowerCase()) {
-        return '1'
-    }
-    if (mValue && mValue.toLowerCase() == 'Bệnh viện huyện'.toLowerCase()) {
-        return '2'
-    }
-    if (mValue && mValue.toLowerCase() == 'Bệnh viện tỉnh'.toLowerCase()) {
-        return '3'
-    }
-    if (mValue && mValue.toLowerCase() == 'Bệnh viện trung ương'.toLowerCase()) {
-        return '4'
-    }
-    if (mValue && mValue.toLowerCase() == 'Bệnh viện tư nhân'.toLowerCase()) {
-        return '5'
-    }
-    if (mValue && mValue.toLowerCase() == 'Khác'.toLowerCase()) {
-        return '6'
-    }
-}
-
-async function checkTeiExist(mUID) {
+function checkTeiExist(mUID) {
     return new Promise((resolve,reject)=>{
-        let result = 0;
+        let result = {"status": "","teiID": "", "orgUnitID": ""};
         let url = ``
         console.log(url = baseUrl + `/api/trackedEntityInstances.json?ouMode=ACCESSIBLE&program=MTtLjthdDgH&attribute=bEKyhj3UZ1A:EQ:${mUID}&paging=false`)
         _axios.get(url, authentication).then(res => {
-            let resData = res.data;
-            if (res.data.trackedEntityInstances.length = 1) {
-                result = res.data.trackedEntityInstances[0].orgUnit;
+            let checkKey = res.data.trackedEntityInstances.length
+            if (checkKey == 1) {
+                result.status = '1'
+                result.teiID = res.data.trackedEntityInstances[0].trackedEntityInstance;
+                result.orgUnitID = res.data.trackedEntityInstances[0].orgUnit;
+            } else {
+                result.status = '0'
             }
+            resolve(result);
         })
-        resolve(result);
     })
 }
