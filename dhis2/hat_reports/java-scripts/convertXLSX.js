@@ -15,7 +15,7 @@ const authentication = {
     }
 }
 
-let workbook = xlsx.readFile(`${__dirname}/input/DaNang-NHS-THA.xlsx`);
+let workbook = xlsx.readFile(`${__dirname}/input/DaNang-NHS-DTD.xlsx`);
 console.log(workbook);
 
 let arrSheetNames = workbook.SheetNames;
@@ -6430,7 +6430,7 @@ function getIdOrg (nameOrg){
 }
 
 // function exportTeiFromExcel(sheetName, programId, idOrgUnit) {
-function exportTeiFromExcel(sheetName, programId, idOrgUnit, orgName) {
+async function exportTeiFromExcel(sheetName, programId, idOrgUnit, orgName) {
     let data = workbook.Sheets[sheetName];
     
     let result = {};
@@ -6470,10 +6470,25 @@ function exportTeiFromExcel(sheetName, programId, idOrgUnit, orgName) {
     //     // console.log(result[i][6])
     //     if (result[i][0] !== 'STT') {
     // fs.appendFileSync(`${__dirname}/${directory}/importTei.json`,
+    var resultEnrollments = {
+        "enrollments": []
+    };
+    var mEnrollment = '';
     for (let i = 3; i < Object.keys(result).length + 3; i++) {
- 
+        let checkTei = await checkTeiExist(`${result[i][7]}`);
         idOrgUnit = getIdOrg(result[i][1]);
-        if (checkTeiExist(`${result[i][7]}`) == 0) {
+        if (checkTei.status != 0) {
+            mEnrollment = {
+                "orgUnit": `${checkTei.orgUnitID}`,
+                "program": "a7arqsOKzsr",
+                "trackedEntityType": "EL3fkeMR3xK",
+                "trackedEntityInstance": `${checkTei.teiID}`,
+                "enrollmentDate": "2021-01-01",
+                "incidentDate": "2021-01-01",
+                "events": []
+            }
+            resultEnrollments.enrollments.push(mEnrollment);
+        } else {
             if (programId == 'NAleauPZvIE') {
                 mTei = {
                     "orgUnit": `${idOrgUnit}`,
@@ -6783,16 +6798,10 @@ function exportTeiFromExcel(sheetName, programId, idOrgUnit, orgName) {
             resultTei.trackedEntityInstances.push(mTei)
         }
     }
-
-    fs.writeFileSync(`${__dirname}/output/importTei-${orgName}-${sheetName}.json`, JSON.stringify(resultTei));
-    // writeJson(`${__dirname}/${directory}/importTei.json`, resultTei)
-    // fs.readdir(`./${directory}`, function (err, files) {
-    //   files.forEach(function (file) {
-    //     let x = fs.readFileSync(`./${directory}/${file}`, 'utf8')
-    //     fs.writeFileSync(`./${directory}/${file}`, `[${x.substring(0, x.length -1).trim()}]`, {mode: 0x1b6})
-    //   })
-    // })
-    console.log("[*] Create JSON files successfully!!")
+    fs.writeFileSync(`${__dirname}/output/importEnrollments-NhiemVu-${orgName}-${sheetName}.json`, JSON.stringify(resultEnrollments));
+    console.log("[*] Create JSON files New Enrollments successfully!!")
+    fs.writeFileSync(`${__dirname}/output/importTeis-${orgName}-${sheetName}.json`, JSON.stringify(resultTei));
+    console.log("[*] Create JSON files New Teis successfully!!")
 }
 
 function formatDate(mdate) {
@@ -6839,12 +6848,21 @@ function add0toCMT(mCMT) {
 }
 
 function checkTeiExist(mBHYT) {
-    let result = 0;
-    let url = ``
-    console.log(url = baseUrl + `/api/trackedEntityInstances.json?ou=nJm9lSLVvG8&ouMode=ACCESSIBLE&program=NAleauPZvIE&attribute=JHb1hzseNMg:EQ:${mBHYT}&paging=false`)
-    _axios.get(url, authentication).then(res => {
-        let resData = res.data;
-        return result = res.data.trackedEntityInstances.length;
+    return new Promise((resolve, reject) => {
+        let result = { "status": "", "teiID": "", "orgUnitID": "" };
+        let url = ``
+        url = baseUrl + `/api/trackedEntityInstances.json?ou=nJm9lSLVvG8&ouMode=ACCESSIBLE&program=NAleauPZvIE&attribute=JHb1hzseNMg:EQ:${mBHYT}&paging=false`
+        _axios.get(url, authentication).then(res => {
+            let checkKey = res.data.trackedEntityInstances.length
+            if (checkKey == 1) {
+                result.status = '1'
+                result.teiID = res.data.trackedEntityInstances[0].trackedEntityInstance;
+                result.orgUnitID = res.data.trackedEntityInstances[0].orgUnit;
+            } else {
+                result.status = '0'
+            }
+            resolve(result);
+        })
     })
 }
 

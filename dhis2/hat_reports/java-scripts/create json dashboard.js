@@ -208,13 +208,7 @@ function checkTeiExist(mUID) {
     return new Promise((resolve,reject)=>{
         let result = {"status": "","teiID": "", "orgUnitID": ""};
         let url = ``
-        console.log(url = baseUrl + `/api/trackedEntityInstances.json?ouMode=ACCESSIBLE&program=MTtLjthdDgH&attribute=bEKyhj3UZ1A:EQ:${mUID}&paging=false`)
-<<<<<<< HEAD
-        let resData = await _axios.get(url, authentication).then(res => {
-            // let resData = res.data;
-            if (res.data.trackedEntityInstances.length = 1) {
-                result = res.data.trackedEntityInstances[0].orgUnit;
-=======
+        url = baseUrl + `/api/trackedEntityInstances.json?ouMode=ACCESSIBLE&program=MTtLjthdDgH&attribute=bEKyhj3UZ1A:EQ:${mUID}&paging=false`
         _axios.get(url, authentication).then(res => {
             let checkKey = res.data.trackedEntityInstances.length
             if (checkKey == 1) {
@@ -223,7 +217,6 @@ function checkTeiExist(mUID) {
                 result.orgUnitID = res.data.trackedEntityInstances[0].orgUnit;
             } else {
                 result.status = '0'
->>>>>>> 591588e7a2014141f9e9e01813513e267d6f04db
             }
             resolve(result);
         })
