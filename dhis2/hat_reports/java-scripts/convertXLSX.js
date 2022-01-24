@@ -15,14 +15,14 @@ const authentication = {
     }
 }
 
-let workbook = xlsx.readFile(`${__dirname}/input/DaNang-NHS-DTD.xlsx`);
+let workbook = xlsx.readFile(`${__dirname}/input/DanhsachBenhNhan.xlsx`);
 console.log(workbook);
 
 let arrSheetNames = workbook.SheetNames;
 for(let s = 0; s < arrSheetNames.length; s++) {
     let sheetName = workbook.SheetNames[s];
     // Name file output
-    let orgName = 'HaNam'
+    let orgName = 'HaNoi'
 
     let idOrgUnit = ''
      
@@ -3086,7 +3086,7 @@ function getIdOrg (nameOrg){
     ]
 
     // Ha Noi
-    let arrOrgHaNoi = [
+    let arrOrg = [
         {
             "id": "a3o5JmNTo1G",
             "name": "Phường Biên Giang"
@@ -5910,7 +5910,7 @@ function getIdOrg (nameOrg){
     ]
 
     // Ha Nam
-    let arrOrg = [
+    let arrOrgHaNam = [
         {
             "id": "kGNtYxgWtmn",
             "name": "Xã Đồng Du"
@@ -6798,7 +6798,7 @@ async function exportTeiFromExcel(sheetName, programId, idOrgUnit, orgName) {
             resultTei.trackedEntityInstances.push(mTei)
         }
     }
-    fs.writeFileSync(`${__dirname}/output/importEnrollments-NhiemVu-${orgName}-${sheetName}.json`, JSON.stringify(resultEnrollments));
+    fs.writeFileSync(`${__dirname}/output/importEnrollments-${orgName}-${sheetName}.json`, JSON.stringify(resultEnrollments));
     console.log("[*] Create JSON files New Enrollments successfully!!")
     fs.writeFileSync(`${__dirname}/output/importTeis-${orgName}-${sheetName}.json`, JSON.stringify(resultTei));
     console.log("[*] Create JSON files New Teis successfully!!")
