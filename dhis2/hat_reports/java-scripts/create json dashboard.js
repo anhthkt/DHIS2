@@ -415,8 +415,8 @@ async function checkTeiExist(mUID) {
         let result = 0;
         let url = ``
         console.log(url = baseUrl + `/api/trackedEntityInstances.json?ouMode=ACCESSIBLE&program=MTtLjthdDgH&attribute=bEKyhj3UZ1A:EQ:${mUID}&paging=false`)
-        _axios.get(url, authentication).then(res => {
-            let resData = res.data;
+        let resData = await _axios.get(url, authentication).then(res => {
+            // let resData = res.data;
             if (res.data.trackedEntityInstances.length = 1) {
                 result = res.data.trackedEntityInstances[0].orgUnit;
             }
