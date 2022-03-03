@@ -1,0 +1,13 @@
+err
+finally
+result false
+err
+finally
+SyntaxError: Unexpected token ':'
+    at new Function (<anonymous>)
+    at evaluate (/Users/hoangbui/Documents/Work/D2VN/trigger-PRules/RuleEngine/ruleEngine.js:223:34)
+    at /Users/hoangbui/Documents/Work/D2VN/trigger-PRules/RuleEngine/ruleEngine.js:181:20
+    at Array.forEach (<anonymous>)
+    at runProgramRules (/Users/hoangbui/Documents/Work/D2VN/trigger-PRules/RuleEngine/ruleEngine.js:179:16)
+    at /Users/hoangbui/Documents/Work/D2VN/trigger-PRules/index_programRules.js:463:24
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)

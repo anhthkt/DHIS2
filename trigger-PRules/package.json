@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "btoa": "^1.2.1",
+    "dhis2-uid": "^0.1.2",
+    "fs": "^0.0.1-security",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1",
+    "node-fetch": "^2.6.1",
+    "pg": "^8.5.1",
+    "snake-case": "^3.0.4"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "predictors": "node predictor.js"
+  }
+}

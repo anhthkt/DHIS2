@@ -186,6 +186,11 @@ async function exportTeiFromExcel(sheetName, programId, eventDate, orgName) {
                 ]
             }
             resultTeis.trackedEntityInstances.push(mTei);
+            let iTei = {
+                "trackedEntityInstances": []
+            };
+            iTei.trackedEntityInstances.push(mTei)
+            console.log(i, await importTei(iTei))
         }
     }
     fs.writeFileSync(`${__dirname}/output/importEvents-NhiemVu-${orgName}-${sheetName}.json`, JSON.stringify(resultEvents));
@@ -220,5 +225,34 @@ function checkTeiExist(mUID) {
             }
             resolve(result);
         })
+    })
+}
+
+function importTei(iTei) {
+    return new Promise((resolve, reject) => {
+        let result = { "status": "", "teiID": "", "orgUnitID": "" };
+        let url = ``
+        url = baseUrl + `/api/trackedEntityInstances`
+        _axios({
+            method: "post",
+            url: url,
+            auth: {
+                username: 'anhth',
+                password: '1234567@Aa'
+            },
+            data: iTei
+          })
+            .then(function (response) {
+              //handle success
+              result.status = response.data.message;
+              console.log(response);
+              resolve(result);
+            })
+            .catch(function (response) {
+              //handle error
+              result.status = response.data.message;
+              console.log(response);
+              resolve(result);
+            });
     })
 }
