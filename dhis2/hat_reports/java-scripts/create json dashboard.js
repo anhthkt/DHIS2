@@ -29,7 +29,7 @@ for(let s = 0; s < arrSheetNames.length-1; s++) {
     // Name file output
     let orgName = 'BoYte'
 
-    let eventDate = '2021-12-30'
+    let eventDate = '2022-03-06'
    
     if(sheetName == 'BoYte') programId = '2'; //Bo Y te
     if(sheetName == 'ChinhPhu') programId = '0'; //Chinh Phu
@@ -190,7 +190,7 @@ async function exportTeiFromExcel(sheetName, programId, eventDate, orgName) {
                 "trackedEntityInstances": []
             };
             iTei.trackedEntityInstances.push(mTei)
-            console.log(i, await importTei(iTei))
+            console.log(i-4, await importTei(iTei))
         }
     }
     fs.writeFileSync(`${__dirname}/output/importEvents-NhiemVu-${orgName}-${sheetName}.json`, JSON.stringify(resultEvents));
