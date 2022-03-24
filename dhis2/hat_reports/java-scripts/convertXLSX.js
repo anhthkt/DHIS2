@@ -3945,7 +3945,7 @@ function getIdOrg (nameOrg){
         },
         {
             "id": "HUEyPlD1cTg",
-            "name": "xã  Đông Quang"
+            "name": "Xã Đông Quang"
         },
         {
             "id": "HVSxcjHkJUz",
@@ -7214,7 +7214,7 @@ function getIdOrg (nameOrg){
     ]
 
     // Long An
-    let arrOrg = [
+    let arrOrgLongAn = [
             {
                 "id": "a61q4wHCnp7",
                 "name": "Xã Mỹ Quý Tây"
@@ -8056,6 +8056,767 @@ function getIdOrg (nameOrg){
                 "name": "Xã Quê Mỹ Thạnh"
             }
         ]
+    
+    // An Giang
+    let arrOrg = [
+        {
+            "id": "A9TTy61HhWT",
+            "name": "Xã An Hảo"
+        },
+        {
+            "id": "aE97ryJdRV1",
+            "name": "Xã Phú Bình"
+        },
+        {
+            "id": "aEHzJiOALDM",
+            "name": "Phòng y tế Thành phố Châu Đốc"
+        },
+        {
+            "id": "aFWhTSmJd5v",
+            "name": "Xã Ô Lâm"
+        },
+        {
+            "id": "AniNiDnBD9a",
+            "name": "Phường Long Sơn"
+        },
+        {
+            "id": "Aq578B58tWM",
+            "name": "Xã Phú Hưng"
+        },
+        {
+            "id": "AqrtFS2uUe3",
+            "name": "Thị trấn Nhà Bàng"
+        },
+        {
+            "id": "AV1LOEnFsk5",
+            "name": "Xã Mỹ Hiệp"
+        },
+        {
+            "id": "B1Vl8Epj9rN",
+            "name": "Xã Đa Phước"
+        },
+        {
+            "id": "bA7NdecrIE9",
+            "name": "Phòng y tế Huyện Tịnh Biên"
+        },
+        {
+            "id": "BaDWb5YxeTh",
+            "name": "Xã Vọng Đông"
+        },
+        {
+            "id": "bByT5eoQTzu",
+            "name": "Xã Phú Vĩnh"
+        },
+        {
+            "id": "BcKHMitfdD0",
+            "name": "Thị trấn Chợ Vàm"
+        },
+        {
+            "id": "BCVhRd3UO2G",
+            "name": "Phòng khám ĐKKV Đồng Ky "
+        },
+        {
+            "id": "BG25MCJTr3t",
+            "name": "Thị trấn Tịnh Biên"
+        },
+        {
+            "id": "bN765ZuykmB",
+            "name": "Xã Bình Thành"
+        },
+        {
+            "id": "bUlAd0B52VD",
+            "name": "Phòng y tế Huyện Chợ Mới"
+        },
+        {
+            "id": "cAezjc24Nnh",
+            "name": "Thị trấn Long Bình"
+        },
+        {
+            "id": "CFwu1WXMp18",
+            "name": "Xã Vĩnh Hanh"
+        },
+        {
+            "id": "CIbSUaRp5Or",
+            "name": "Phường Mỹ Hòa"
+        },
+        {
+            "id": "cqe2YQlkYpZ",
+            "name": "TTYT Huyện Châu Thành"
+        },
+        {
+            "id": "CtQwoF3yXNh",
+            "name": "Xã Vọng Thê"
+        },
+        {
+            "id": "DemYfepAHIC",
+            "name": "Xã Lạc Quới"
+        },
+        {
+            "id": "dH1HjqnyYU5",
+            "name": "Xã Vĩnh Trường"
+        },
+        {
+            "id": "ds8dSnXzkga",
+            "name": "Phường Bình Khánh"
+        },
+        {
+            "id": "DUACL8PEWby",
+            "name": "Phường Mỹ Phước"
+        },
+        {
+            "id": "Dum5CiPY2le",
+            "name": "Phòng khám ĐKKV Thạnh Mỹ Tây (Sáp nhập 2020)"
+        },
+        {
+            "id": "dz0ytT2Wdi0",
+            "name": "Xã Vĩnh Phước"
+        },
+        {
+            "id": "e6nTU4Gn9Vi",
+            "name": "Xã Nhơn Hưng"
+        },
+        {
+            "id": "e815vua0QBm",
+            "name": "Xã Tây Phú"
+        },
+        {
+            "id": "ebmis3sHmdn",
+            "name": "Xã Vĩnh Bình"
+        },
+        {
+            "id": "Ec4ZMp6Mc7J",
+            "name": "Xã Tân Hòa"
+        },
+        {
+            "id": "eCA1e2xFUwF",
+            "name": "Xã Mỹ Đức"
+        },
+        {
+            "id": "eERFCGxvzQg",
+            "name": "Phường Mỹ Long"
+        },
+        {
+            "id": "Ef5A77H53cP",
+            "name": "Thị trấn Tri Tôn"
+        },
+        {
+            "id": "egW8yx1rTyT",
+            "name": "Xã Mỹ Phú Đông"
+        },
+        {
+            "id": "eKXbnKF3l7t",
+            "name": "Xã Vĩnh Châu"
+        },
+        {
+            "id": "emoETjH9nU5",
+            "name": "Xã Cô Tô"
+        },
+        {
+            "id": "f4ju70GZSDo",
+            "name": "Xã Vĩnh Trung"
+        },
+        {
+            "id": "F9fmnv4Agug",
+            "name": "Xã Phú Thọ"
+        },
+        {
+            "id": "fPxF7YfPpAS",
+            "name": "Xã Vĩnh Tế"
+        },
+        {
+            "id": "FslWkivJgPq",
+            "name": "Xã Ô Long Vỹ"
+        },
+        {
+            "id": "G0YNdUlxNuI",
+            "name": "Thị trấn An Châu"
+        },
+        {
+            "id": "GPowYwIUS1p",
+            "name": "Thị trấn Phú Mỹ"
+        },
+        {
+            "id": "H2bpynSP0Iy",
+            "name": "Xã Lê Chánh"
+        },
+        {
+            "id": "h5f41PoLgNf",
+            "name": "Xã Phú Thạnh"
+        },
+        {
+            "id": "HC6gndOsvdt",
+            "name": "Xã Long Điền B"
+        },
+        {
+            "id": "hCynYQ82Tt2",
+            "name": "Xã Phú Lâm"
+        },
+        {
+            "id": "hfOq94xSLX8",
+            "name": "Phòng y tế Huyện Tri Tôn"
+        },
+        {
+            "id": "hW4RSMqrULB",
+            "name": "Xã Bình Long"
+        },
+        {
+            "id": "hwPGZmkg8Oz",
+            "name": "Phường Mỹ Bình"
+        },
+        {
+            "id": "I71CPkG227S",
+            "name": "Xã Vĩnh Phú"
+        },
+        {
+            "id": "i7t9qfKQHpg",
+            "name": "Phòng y tế Huyện Châu Phú"
+        },
+        {
+            "id": "i9laNHKYNET",
+            "name": "Phòng khám ĐKKV Tịnh Biên "
+        },
+        {
+            "id": "IA6JKyLNawk",
+            "name": "TTYT Huyện Phú Tân"
+        },
+        {
+            "id": "ieIjB36g9Qu",
+            "name": "Xã Phú Thuận"
+        },
+        {
+            "id": "ihQbtsXW01b",
+            "name": "Phường Mỹ Thới"
+        },
+        {
+            "id": "IvYQGk3g3gf",
+            "name": "Phòng y tế Thành phố Long Xuyên"
+        },
+        {
+            "id": "iYkskhvbf0h",
+            "name": "Xã Bình Mỹ"
+        },
+        {
+            "id": "J0mo074tNzu",
+            "name": "Xã Long Hòa"
+        },
+        {
+            "id": "JpEvzmQPrKP",
+            "name": "Xã An Cư"
+        },
+        {
+            "id": "jy4FGVG4xWI",
+            "name": "Xã Thới Sơn"
+        },
+        {
+            "id": "K1jUxI2nY8O",
+            "name": "Xã Vĩnh Lộc"
+        },
+        {
+            "id": "K5q0yqtsLns",
+            "name": "Xã Phú Lộc"
+        },
+        {
+            "id": "KCIIq9TQvgV",
+            "name": "Xã Hòa Lạc"
+        },
+        {
+            "id": "kef3Fq11inu",
+            "name": "Xã Vĩnh Hậu"
+        },
+        {
+            "id": "kjtWteOoIZ2",
+            "name": "Phòng y tế Thị xã Tân Châu"
+        },
+        {
+            "id": "l11GZOldSrG",
+            "name": "TTYT Thị xã Tân Châu"
+        },
+        {
+            "id": "lBHiZ0B7bIZ",
+            "name": "Xã Mỹ Hội Đông"
+        },
+        {
+            "id": "ljbyH9wsFvj",
+            "name": "Xã Phú Hiệp"
+        },
+        {
+            "id": "lNXs1lrOMMn",
+            "name": "Xã Khánh An"
+        },
+        {
+            "id": "LsxL32CZRtg",
+            "name": "Phường Đông Xuyên"
+        },
+        {
+            "id": "mEFDdbKauMT",
+            "name": "Xã Định Thành"
+        },
+        {
+            "id": "mmgTir4hkTt",
+            "name": "Xã Nhơn Hội"
+        },
+        {
+            "id": "mO4LW57KYlm",
+            "name": "Xã Vĩnh Trạch"
+        },
+        {
+            "id": "mR0KVsmRFc7",
+            "name": "Xã Kiến Thành"
+        },
+        {
+            "id": "MsEptJJSFbd",
+            "name": "Xã Vĩnh Hội Đông"
+        },
+        {
+            "id": "MtVqJrBE6JA",
+            "name": "Xã Mỹ An"
+        },
+        {
+            "id": "mvD9cMM6ITP",
+            "name": "Xã Tân Lợi"
+        },
+        {
+            "id": "n3jHM5TxNgs",
+            "name": "Xã Thạnh Mỹ Tây"
+        },
+        {
+            "id": "Nd6fvXeEt3I",
+            "name": "Xã Châu Phong"
+        },
+        {
+            "id": "NGtYklHRtGv",
+            "name": "Xã Vĩnh Nhuận"
+        },
+        {
+            "id": "NllmaiOTckB",
+            "name": "Phòng y tế Huyện Thoại Sơn"
+        },
+        {
+            "id": "o5AFgPXNwX1",
+            "name": "Phường Mỹ Thạnh"
+        },
+        {
+            "id": "O60A64VZTjM",
+            "name": "Thị trấn Chợ Mới"
+        },
+        {
+            "id": "o6RsKSLH1gq",
+            "name": "Xã Mỹ Phú"
+        },
+        {
+            "id": "OhLXnsUwlOr",
+            "name": "Xã Phú Hội"
+        },
+        {
+            "id": "oiSVVv9UeNO",
+            "name": "Xã Mỹ Hòa Hưng"
+        },
+        {
+            "id": "oKLKZkpMb7M",
+            "name": "Xã Long An"
+        },
+        {
+            "id": "OLjPujdfMjA",
+            "name": "Xã An Phú"
+        },
+        {
+            "id": "OmT9gTdjtgH",
+            "name": "Xã Núi Voi"
+        },
+        {
+            "id": "OpcnVp4Ye0P",
+            "name": "Xã Vĩnh Lợi"
+        },
+        {
+            "id": "oPz2zI7WjGR",
+            "name": "Phòng khám ĐKKV An Châu "
+        },
+        {
+            "id": "or9hopOQOsy",
+            "name": "Phòng khám ĐKKV Mỹ Luông "
+        },
+        {
+            "id": "oywCRpLYfCF",
+            "name": "Xã Hòa Bình"
+        },
+        {
+            "id": "p2A5ShbeI0V",
+            "name": "Xã Tân Tuyến"
+        },
+        {
+            "id": "P4QWrvQVbRQ",
+            "name": "Xã Bình Phước Xuân"
+        },
+        {
+            "id": "p5J5grSR7nb",
+            "name": "Xã Khánh Hòa"
+        },
+        {
+            "id": "PaGuFlEdS90",
+            "name": "Xã Châu Lăng"
+        },
+        {
+            "id": "PaJJ1kUUnB2",
+            "name": "Xã Khánh Bình"
+        },
+        {
+            "id": "Pbc7J1acNMk",
+            "name": "Xã Long Giang"
+        },
+        {
+            "id": "PEDH8RiGzjN",
+            "name": "Xã Tà Đảnh"
+        },
+        {
+            "id": "pfOStvn0mrx",
+            "name": "Xã Đào Hữu Cảnh"
+        },
+        {
+            "id": "PGEUP9liAbu",
+            "name": "Xã An Nông"
+        },
+        {
+            "id": "pggOaCM0jUQ",
+            "name": "TTYT Huyện Tịnh Biên"
+        },
+        {
+            "id": "pISrgsPKiKl",
+            "name": "Phường Châu Phú A"
+        },
+        {
+            "id": "pnZh7qRJq2I",
+            "name": "Phường Núi Sam"
+        },
+        {
+            "id": "Ppk2U1cK36v",
+            "name": "Phường Vĩnh Ngươn"
+        },
+        {
+            "id": "pRypKwEXTp1",
+            "name": "Xã Bình Chánh"
+        },
+        {
+            "id": "pZF00dUmuTJ",
+            "name": "Phường Long Thạnh"
+        },
+        {
+            "id": "Q5FoOov186F",
+            "name": "Xã Văn Giáo"
+        },
+        {
+            "id": "Q7S3mcwlZz8",
+            "name": "Xã Vĩnh Xương"
+        },
+        {
+            "id": "qeBWV75wC9e",
+            "name": "Phòng khám ĐKKV Óc Eo (Sáp nhập 2020)"
+        },
+        {
+            "id": "qjo9Ng6n6l7",
+            "name": "Thị trấn Ba Chúc"
+        },
+        {
+            "id": "qln1vvxeqMr",
+            "name": "TTYT Huyện Tri Tôn"
+        },
+        {
+            "id": "qmho9XBhBNM",
+            "name": "Xã Cần Đăng"
+        },
+        {
+            "id": "qnOTMUHovhU",
+            "name": "Phòng khám ĐKKV Chi Lăng (Sáp nhập 2020)"
+        },
+        {
+            "id": "R3Nxtuob3g2",
+            "name": "Xã Tấn Mỹ"
+        },
+        {
+            "id": "rdCAmwINdLE",
+            "name": "Phường Mỹ Quý"
+        },
+        {
+            "id": "RhQYlS2qHj0",
+            "name": "Xã Vĩnh Khánh"
+        },
+        {
+            "id": "RJMyHkiVZfK",
+            "name": "TTYT Huyện Chợ Mới"
+        },
+        {
+            "id": "rPkn7Mu7r1u",
+            "name": "Xã Bình Thủy"
+        },
+        {
+            "id": "s0fhED6Ssi4",
+            "name": "Xã An Thạnh Trung"
+        },
+        {
+            "id": "s3VkPKNuiSE",
+            "name": "Thị trấn Mỹ Luông"
+        },
+        {
+            "id": "s6xAByrzkKj",
+            "name": "Xã Tân Trung"
+        },
+        {
+            "id": "s7aY61ZrMCw",
+            "name": "Xã Bình Thạnh Đông"
+        },
+        {
+            "id": "sauHHdbEGYx",
+            "name": "Xã Phước Hưng"
+        },
+        {
+            "id": "scdQ3JZXVZf",
+            "name": "Xã An Hòa"
+        },
+        {
+            "id": "ScSQjHszXf1",
+            "name": "Thị Trấn Óc Eo"
+        },
+        {
+            "id": "sNOkTPIHYp3",
+            "name": "Phòng khám ĐKKV Ba Chúc (Sáp nhập 2020)"
+        },
+        {
+            "id": "SouMxW8PKTH",
+            "name": "Phòng khám ĐKKV Long Giang (Sáp nhập 2020)"
+        },
+        {
+            "id": "sWGDZiheQ58",
+            "name": "Xã Bình Phú"
+        },
+        {
+            "id": "T2yJh02sQBT",
+            "name": "Phường Mỹ Xuyên"
+        },
+        {
+            "id": "t9NtqyApKQj",
+            "name": "Thị trấn Cái Dầu"
+        },
+        {
+            "id": "TbZnMM8nRnq",
+            "name": "Xã Hiệp Xương"
+        },
+        {
+            "id": "TFrN3wcty5r",
+            "name": "Xã Mỹ Khánh"
+        },
+        {
+            "id": "ThmgypAOtFe",
+            "name": "Xã Bình Hòa"
+        },
+        {
+            "id": "TIAy8OlpfXR",
+            "name": "Xã Vĩnh Gia"
+        },
+        {
+            "id": "TNxHOJwYsaX",
+            "name": "TTYT Huyện An Phú"
+        },
+        {
+            "id": "tWQ4nHn9HIK",
+            "name": "Xã Vĩnh Thành"
+        },
+        {
+            "id": "u53tneEgn7N",
+            "name": "Xã Tân Phú"
+        },
+        {
+            "id": "u9QXfcUzeO7",
+            "name": "Thị trấn Núi Sập"
+        },
+        {
+            "id": "UC70fiuHW8R",
+            "name": "Xã Phú Thành"
+        },
+        {
+            "id": "uCKZhKLJgzx",
+            "name": "Xã Tân Lập"
+        },
+        {
+            "id": "UgKQvyV3lei",
+            "name": "Xã Hòa An"
+        },
+        {
+            "id": "uK9k9fJ21MI",
+            "name": "Xã Thoại Giang"
+        },
+        {
+            "id": "umPHDDFsvpA",
+            "name": "TTYT Huyện Châu Phú"
+        },
+        {
+            "id": "UqF6vO9TBYN",
+            "name": "Xã Hội An"
+        },
+        {
+            "id": "UUbB4wNtv3J",
+            "name": "Phường Long Hưng"
+        },
+        {
+            "id": "VBCtXT2deNk",
+            "name": "TTYT Thành phố Châu Đốc"
+        },
+        {
+            "id": "VOhCDrFeUwL",
+            "name": "Phòng y tế Huyện An Phú"
+        },
+        {
+            "id": "VRfoGqbijpS",
+            "name": "Thị trấn An Phú"
+        },
+        {
+            "id": "VsdVcHt6x0O",
+            "name": "Xã Phú Hữu"
+        },
+        {
+            "id": "vU2ducJiHqx",
+            "name": "Phòng y tế Huyện Phú Tân"
+        },
+        {
+            "id": "vwUir9AjFhz",
+            "name": "Xã Kiến An"
+        },
+        {
+            "id": "w1Jh4qkYYlB",
+            "name": "Xã Định Mỹ"
+        },
+        {
+            "id": "W3h8h8wz7mB",
+            "name": "Xã Quốc Thái"
+        },
+        {
+            "id": "W3ixhlYABQg",
+            "name": "Xã An Tức"
+        },
+        {
+            "id": "W5bYAA99pOK",
+            "name": "TTYT Thành phố Long Xuyên"
+        },
+        {
+            "id": "W8d3NskCsaS",
+            "name": "Xã Phú An"
+        },
+        {
+            "id": "WBtyDZiXImQ",
+            "name": "Phường Châu Phú B"
+        },
+        {
+            "id": "whB3WZvaS13",
+            "name": "Xã Lương Phi"
+        },
+        {
+            "id": "WHlDaK1XI4Q",
+            "name": "Xã Bình Thạnh"
+        },
+        {
+            "id": "wltFn4MNe0a",
+            "name": "Thị Trấn Phú Hòa"
+        },
+        {
+            "id": "WNWaKsJdCk3",
+            "name": "Xã Tân Thạnh"
+        },
+        {
+            "id": "wTXAiDfabzT",
+            "name": "Xã Vĩnh Thạnh Trung"
+        },
+        {
+            "id": "wwhuzgZMxGb",
+            "name": "Phòng y tế Huyện Châu Thành"
+        },
+        {
+            "id": "Wx61ysR9xYg",
+            "name": "Xã Phú Long"
+        },
+        {
+            "id": "X2bveet1QcB",
+            "name": "Xã Phú Xuân"
+        },
+        {
+            "id": "X2P1vSZIWV2",
+            "name": "Xã Vĩnh Hòa"
+        },
+        {
+            "id": "X65ntvfsNF2",
+            "name": "Xã Núi Tô"
+        },
+        {
+            "id": "xdybnFpAdG4",
+            "name": "Thị trấn Chi Lăng"
+        },
+        {
+            "id": "xF7EG6jKfGR",
+            "name": "Phường Long Phú"
+        },
+        {
+            "id": "xfEjXAmbt69",
+            "name": "Xã Tân An"
+        },
+        {
+            "id": "XLpw0nIWuqj",
+            "name": "Xã Vĩnh An"
+        },
+        {
+            "id": "XNrxDPNZqMK",
+            "name": "Phường Bình Đức"
+        },
+        {
+            "id": "xNulCihXVLl",
+            "name": "Xã Long Kiến"
+        },
+        {
+            "id": "xUu8QhC6ZcY",
+            "name": "Xã Vĩnh Chánh"
+        },
+        {
+            "id": "XZkFcvQIStZ",
+            "name": "Phòng khám ĐKKV Chợ Vàm (Sáp nhập 2020)"
+        },
+        {
+            "id": "yaBk6XccO73",
+            "name": "Xã Lương An Trà"
+        },
+        {
+            "id": "ycTo3Bi8HI2",
+            "name": "Xã Long Điền A"
+        },
+        {
+            "id": "YImcp6eVjPF",
+            "name": "Xã Lê Trì"
+        },
+        {
+            "id": "yk9jvWItg6Z",
+            "name": "Phường Long Châu"
+        },
+        {
+            "id": "yMl3qchHAVX",
+            "name": "TTYT Huyện Thoại Sơn"
+        },
+        {
+            "id": "YRI4BfWJ7ur",
+            "name": "Xã Hòa Bình Thạnh"
+        },
+        {
+            "id": "zcrJQrZ6tlA",
+            "name": "Phường Vĩnh Mỹ"
+        },
+        {
+            "id": "zDrBdvPmVAN",
+            "name": "Xã An Bình"
+        },
+        {
+            "id": "ZvbgWHfhgXH",
+            "name": "Xã Nhơn Mỹ"
+        },
+        {
+            "id": "zvPwwNGAMbR",
+            "name": "Phòng khám ĐKKV Vĩnh Hòa (Sáp nhập 2020)"
+        }
+    ]
+
 
     let idOrg = '';
     arrOrg.forEach(e=>{
@@ -8071,7 +8832,7 @@ async function exportTeiFromExcel(sheetName, programId, idOrgUnit, orgName) {
     let data = workbook.Sheets[sheetName];
     
     let result = {};
-    for (let row = 3; row < 1000; row++) {
+    for (let row = 3; row < 10000; row++) {
         let m = `A${row}`
         if (data[`A${row}`] == undefined) break;
         result[m.slice(1)] = [];
@@ -8111,341 +8872,366 @@ async function exportTeiFromExcel(sheetName, programId, idOrgUnit, orgName) {
         "enrollments": []
     };
     var mEnrollment = '';
+    let checkTeiorgUnitID;
+    let checkTeiteiID;
+    let checkTeiprogramID;
     for (let i = 3; i < Object.keys(result).length + 3; i++) {
-        let checkTei = await checkTeiExist(`${result[i][7]}`);
         idOrgUnit = getIdOrg(result[i][1]);
-        if (checkTei.status != 0) {
-            mEnrollment = {
-                "orgUnit": `${checkTei.orgUnitID}`,
-                "program": "a7arqsOKzsr",
-                "trackedEntityType": "EL3fkeMR3xK",
-                "trackedEntityInstance": `${checkTei.teiID}`,
-                "enrollmentDate": "2021-01-01",
-                "incidentDate": "2021-01-01",
-                "events": []
-            }
-            resultEnrollments.enrollments.push(mEnrollment);
-        } else {
-            if (programId == 'NAleauPZvIE') {
-                mTei = {
-                    "orgUnit": `${idOrgUnit}`,
-                    "trackedEntityType": "EL3fkeMR3xK",
-                    "inactive": false,
-                    "deleted": false,
-                    "featureType": "NONE",
-                    "programOwners": [],
-                    "enrollments": [
-                        {
-                            "orgUnit": `${idOrgUnit}`,
-                            "program": `${programId}`,
-                            "enrollmentDate": "2021-01-01",
-                            "incidentDate": "2021-01-01",
-                            "events": []
-                        }
-                    ],
-                    "relationships": [],
-                    "attributes": [
-                        {
-                            "code": "WHO_001",
-                            "displayName": "Mã BHYT",
-                            "attribute": "JHb1hzseNMg",
-                            "value": `${result[i][7]}`
-                        },
-                        {
-                            "code": "WHO_002",
-                            "displayName": "Họ và tên",
-                            "attribute": "xBoLC0aruyJ",
-                            "value": `${result[i][4]}`
-                        },
-                        {
-                            "code": "WHO_003",
-                            "displayName": "Giới tính",
-                            "attribute": "rwreLO34Xg7",
-                            "value": `${convertCode(result[i][5])}`
-                        },
-                        {
-                            "code": "WHO_004",
-                            "displayName": "Năm sinh",
-                            "attribute": "C7USC9MC8yH",
-                            "value": `${formatDate(result[i][6])}`
-                        },
-                        {
-                            "displayName": "Số CMT/CCCD",
-                            "attribute": "ZQ93P672wQR",
-                            "value": `${result[i][8]}`
-                        },
-                        {
-                            "displayName": "Số điện thoại",
-                            "attribute": "mZbgWADLTKY",
-                            "value": `${result[i][11]}`
-                        },
-                        {
-                            "code": "WHO_005",
-                            "displayName": "Địa chỉ",
-                            "attribute": "Bxp1Lhr8ZeN",
-                            "value": `${result[i][9]}`
-                        },
-                        {
-                            "code": "WHO_006",
-                            "displayName": "Nghề nghiệp",
-                            "attribute": "L4djJU4gMyb",
-                            "value": `${result[i][10]}`
-                        },
-                        {
-                            "displayName": "Ngày phát hiện THA",
-                            "attribute": "RSNvyMilQxs",
-                            "value": `${formatDate(result[i][12])}`
-                        },
-                        {
-                            "displayName": "Nơi phát hiện THA",
-                            "attribute": "ZYzDKzTIhM2",
-                            "value": `${convertCode(result[i][13])}`
-                        },
-                        {
-                            "displayName": "Chọn Xã/ Phường/ Thị trấn",
-                            "attribute": "Gy1fkmBZpFk",
-                            "value": `${idOrgUnit}`
-                        }
-                        // {
-                        //     "displayName": "Nơi phát hiện ĐTĐ",
-                        //     "attribute": "LHVZXlBbn2l",
-                        //     "value": `${convertCode(result[i][13])}`
-                        // }
-                        // {
-                        //     "displayName": "Ngày phát hiện ĐTĐ",
-                        //     "attribute": "LnYKf02oBmF",
-                        //     "value": `${formatDate(result[i][12])}`
-                        // },
-                        // {
-                        //     "displayName": "Nơi phát hiện ĐTĐ",
-                        //     "attribute": "LHVZXlBbn2l",
-                        //     "value": `${convertCode(result[i][13])}`
-                        // }
-                    ]
+        let checkTeiTHA;
+        let checkTeiDTD;
+        
+            checkTeiTHA = await checkTeiTHAExist(`${result[i][7]}`, `${result[i][8]}`);
+            checkTeiDTD = await checkTeiDTDExist(`${result[i][7]}`, `${result[i][8]}`);
+            if (checkTeiTHA.status != 0 || checkTeiDTD.status != 0) {
+                if(checkTeiTHA.status == 1 && checkTeiDTD.status == 0 && sheetName == 'DTD') {
+                    checkTeiorgUnitID = checkTeiTHA.orgUnitID
+                    checkTeiteiID = checkTeiTHA.teiID
+                    checkTeiprogramID = "a7arqsOKzsr"
+                    mEnrollment = {
+                        "orgUnit": `${checkTeiorgUnitID}`,
+                        "program": `${checkTeiprogramID}`,
+                        "trackedEntityType": "EL3fkeMR3xK",
+                        "trackedEntityInstance": `${checkTeiteiID}`,
+                        "enrollmentDate": "2021-01-01",
+                        "incidentDate": "2021-01-01",
+                        "events": []
+                    }
+                    resultEnrollments.enrollments.push(mEnrollment);
+                } 
+                if(checkTeiTHA.status == 0 && checkTeiDTD.status == 1 && sheetName == 'THA') {
+                    checkTeiorgUnitID = checkTeiDTD.orgUnitID
+                    checkTeiteiID = checkTeiDTD.teiID
+                    checkTeiprogramID = "NAleauPZvIE"
+                    mEnrollment = {
+                        "orgUnit": `${checkTeiorgUnitID}`,
+                        "program": `${checkTeiprogramID}`,
+                        "trackedEntityType": "EL3fkeMR3xK",
+                        "trackedEntityInstance": `${checkTeiteiID}`,
+                        "enrollmentDate": "2021-01-01",
+                        "incidentDate": "2021-01-01",
+                        "events": []
+                    }
+                    resultEnrollments.enrollments.push(mEnrollment);
                 }
-            }
-
-            if (programId == 'a7arqsOKzsr') {
-                mTei = {
-                    "orgUnit": `${idOrgUnit}`,
-                    "trackedEntityType": "EL3fkeMR3xK",
-                    "inactive": false,
-                    "deleted": false,
-                    "featureType": "NONE",
-                    "programOwners": [],
-                    "enrollments": [
-                        {
-                            "orgUnit": `${idOrgUnit}`,
-                            "program": `${programId}`,
-                            "enrollmentDate": "2021-01-01",
-                            "incidentDate": "2021-01-01",
-                            "events": []
-                        }
-                    ],
-                    "relationships": [],
-                    "attributes": [
-                        {
-                            "code": "WHO_001",
-                            "displayName": "Mã BHYT",
-                            "attribute": "JHb1hzseNMg",
-                            "value": `${result[i][7]}`
-                        },
-                        {
-                            "code": "WHO_002",
-                            "displayName": "Họ và tên",
-                            "attribute": "xBoLC0aruyJ",
-                            "value": `${result[i][4]}`
-                        },
-                        {
-                            "code": "WHO_003",
-                            "displayName": "Giới tính",
-                            "attribute": "rwreLO34Xg7",
-                            "value": `${convertCode(result[i][5])}`
-                        },
-                        {
-                            "code": "WHO_004",
-                            "displayName": "Năm sinh",
-                            "attribute": "C7USC9MC8yH",
-                            "value": `${formatDate(result[i][6])}`
-                        },
-                        {
-                            "displayName": "Số CMT/CCCD",
-                            "attribute": "ZQ93P672wQR",
-                            "value": `${result[i][8]}`
-                        },
-                        {
-                            "displayName": "Số điện thoại",
-                            "attribute": "mZbgWADLTKY",
-                            "value": `${result[i][11]}`
-                        },
-                        {
-                            "code": "WHO_005",
-                            "displayName": "Địa chỉ",
-                            "attribute": "Bxp1Lhr8ZeN",
-                            "value": `${result[i][9]}`
-                        },
-                        {
-                            "code": "WHO_006",
-                            "displayName": "Nghề nghiệp",
-                            "attribute": "L4djJU4gMyb",
-                            "value": `${result[i][10]}`
-                        },
-                        // {
-                        //     "displayName": "Ngày phát hiện THA",
-                        //     "attribute": "RSNvyMilQxs",
-                        //     "value": `${formatDate(result[i][12])}`
-                        // },
-                        // {
-                        //     "displayName": "Nơi phát hiện THA",
-                        //     "attribute": "ZYzDKzTIhM2",
-                        //     "value": `${convertCode(result[i][13])}`
-                        // }
-                        {
-                            "displayName": "Ngày phát hiện ĐTĐ",
-                            "attribute": "LnYKf02oBmF",
-                            "value": `${formatDate(result[i][12])}`
-                        },
-                        {
-                            "displayName": "Nơi phát hiện ĐTĐ",
-                            "attribute": "LHVZXlBbn2l",
-                            "value": `${convertCode(result[i][13])}`
-                        },
-                        {
-                            "displayName": "Chọn Xã/ Phường/ Thị trấn",
-                            "attribute": "Gy1fkmBZpFk",
-                            "value": `${idOrgUnit}`
-                        }
-                        // {
-                        //     "displayName": "Ngày phát hiện ĐTĐ",
-                        //     "attribute": "LnYKf02oBmF",
-                        //     "value": `${formatDate(result[i][12])}`
-                        // },
-                        // {
-                        //     "displayName": "Nơi phát hiện ĐTĐ",
-                        //     "attribute": "LHVZXlBbn2l",
-                        //     "value": `${convertCode(result[i][13])}`
-                        // }
-                    ]
-                }
-            }
-
-            if (programId == 'gPWs4FRX9dj' || programId == 'WmEGO8Ipykm' || programId == 'XrC0U6IV4W0') {
-                mTei = {
-                    "orgUnit": `${idOrgUnit}`,
-                    "trackedEntityType": "EL3fkeMR3xK",
-                    "inactive": false,
-                    "deleted": false,
-                    "featureType": "NONE",
-                    "programOwners": [],
-                    "enrollments": [
-                        {
-                            "orgUnit": `${idOrgUnit}`,
-                            "program": `${programId}`,
-                            "enrollmentDate": "2021-01-01",
-                            "incidentDate": "2021-01-01",
-                            "events": []
-                        }
-                    ],
-                    "relationships": [],
-                    "attributes": [
-                        {
-                            "code": "WHO_001",
-                            "displayName": "Mã BHYT",
-                            "attribute": "JHb1hzseNMg",
-                            "value": `${result[i][7]}`
-                        },
-                        {
-                            "code": "WHO_002",
-                            "displayName": "Họ và tên",
-                            "attribute": "xBoLC0aruyJ",
-                            "value": `${result[i][4]}`
-                        },
-                        {
-                            "code": "WHO_003",
-                            "displayName": "Giới tính",
-                            "attribute": "rwreLO34Xg7",
-                            "value": `${convertCode(result[i][5])}`
-                        },
-                        {
-                            "code": "WHO_004",
-                            "displayName": "Năm sinh",
-                            "attribute": "C7USC9MC8yH",
-                            "value": `${formatDate(result[i][6])}`
-                        },
-                        {
-                            "displayName": "Số CMT/CCCD",
-                            "attribute": "ZQ93P672wQR",
-                            "value": `${result[i][8]}`
-                        },
-                        {
-                            "displayName": "Số điện thoại",
-                            "attribute": "mZbgWADLTKY",
-                            "value": `${result[i][11]}`
-                        },
-                        {
-                            "code": "WHO_005",
-                            "displayName": "Địa chỉ",
-                            "attribute": "Bxp1Lhr8ZeN",
-                            "value": `${result[i][9]}`
-                        },
-                        {
-                            "code": "WHO_006",
-                            "displayName": "Nghề nghiệp",
-                            "attribute": "L4djJU4gMyb",
-                            "value": `${result[i][10]}`
-                        },
-                        {
-                            "displayName": "Chọn Xã/ Phường/ Thị trấn",
-                            "attribute": "Gy1fkmBZpFk",
-                            "value": `${idOrgUnit}`
-                        }
-                        // {
-                        //     "displayName": "Ngày phát hiện THA",
-                        //     "attribute": "RSNvyMilQxs",
-                        //     "value": `${formatDate(result[i][12])}`
-                        // },
-                        // {
-                        //     "displayName": "Nơi phát hiện THA",
-                        //     "attribute": "ZYzDKzTIhM2",
-                        //     "value": `${convertCode(result[i][13])}`
-                        // }
-                        // {
-                        //     "displayName": "Ngày phát hiện ĐTĐ",
-                        //     "attribute": "LnYKf02oBmF",
-                        //     "value": `${formatDate(result[i][12])}`
-                        // },
-                        // {
-                        //     "displayName": "Nơi phát hiện ĐTĐ",
-                        //     "attribute": "LHVZXlBbn2l",
-                        //     "value": `${convertCode(result[i][13])}`
-                        // }
-                        // {
-                        //     "displayName": "Ngày phát hiện ĐTĐ",
-                        //     "attribute": "LnYKf02oBmF",
-                        //     "value": `${formatDate(result[i][12])}`
-                        // },
-                        // {
-                        //     "displayName": "Nơi phát hiện ĐTĐ",
-                        //     "attribute": "LHVZXlBbn2l",
-                        //     "value": `${convertCode(result[i][13])}`
-                        // }
-                    ]
-                }
-            }
-            resultTei.trackedEntityInstances.push(mTei)
-            let iTei = {
-                "trackedEntityInstances": []
-            };
-            iTei.trackedEntityInstances.push(mTei)
-            if (programId == 'a7arqsOKzsr') {
-                let checkTeiDTD = await checkTeiDTDExist(`${result[i][7]}`);
-                if (checkTeiDTD.status == 0){
-                    console.log(i, await importTei(iTei))
-                }  
             } else {
+                if (programId == 'NAleauPZvIE') {
+                    mTei = {
+                        "orgUnit": `${idOrgUnit}`,
+                        "trackedEntityType": "EL3fkeMR3xK",
+                        "inactive": false,
+                        "deleted": false,
+                        "featureType": "NONE",
+                        "programOwners": [],
+                        "enrollments": [
+                            {
+                                "orgUnit": `${idOrgUnit}`,
+                                "program": `${programId}`,
+                                "enrollmentDate": "2021-01-01",
+                                "incidentDate": "2021-01-01",
+                                "events": []
+                            }
+                        ],
+                        "relationships": [],
+                        "attributes": [
+                            {
+                                "code": "WHO_001",
+                                "displayName": "Mã BHYT",
+                                "attribute": "JHb1hzseNMg",
+                                "value": `${result[i][7]}`
+                            },
+                            {
+                                "code": "WHO_002",
+                                "displayName": "Họ và tên",
+                                "attribute": "xBoLC0aruyJ",
+                                "value": `${result[i][4]}`
+                            },
+                            {
+                                "code": "WHO_003",
+                                "displayName": "Giới tính",
+                                "attribute": "rwreLO34Xg7",
+                                "value": `${convertCode(result[i][5])}`
+                            },
+                            {
+                                "code": "WHO_004",
+                                "displayName": "Năm sinh",
+                                "attribute": "C7USC9MC8yH",
+                                "value": `${formatDate(result[i][6])}`
+                            },
+                            {
+                                "displayName": "Số CMT/CCCD",
+                                "attribute": "ZQ93P672wQR",
+                                "value": `${result[i][8]}`
+                            },
+                            {
+                                "displayName": "Số điện thoại",
+                                "attribute": "mZbgWADLTKY",
+                                "value": `${result[i][11]}`
+                            },
+                            {
+                                "code": "WHO_005",
+                                "displayName": "Địa chỉ",
+                                "attribute": "Bxp1Lhr8ZeN",
+                                "value": `${result[i][9]}`
+                            },
+                            {
+                                "code": "WHO_006",
+                                "displayName": "Nghề nghiệp",
+                                "attribute": "L4djJU4gMyb",
+                                "value": `${result[i][10]}`
+                            },
+                            {
+                                "displayName": "Ngày phát hiện THA",
+                                "attribute": "RSNvyMilQxs",
+                                "value": `${formatDate(result[i][12])}`
+                            },
+                            {
+                                "displayName": "Nơi phát hiện THA",
+                                "attribute": "ZYzDKzTIhM2",
+                                "value": `${convertCode(result[i][13])}`
+                            },
+                            {
+                                "displayName": "Chọn Xã/ Phường/ Thị trấn",
+                                "attribute": "Gy1fkmBZpFk",
+                                "value": `${idOrgUnit}`
+                            }
+                            // {
+                            //     "displayName": "Nơi phát hiện ĐTĐ",
+                            //     "attribute": "LHVZXlBbn2l",
+                            //     "value": `${convertCode(result[i][13])}`
+                            // }
+                            // {
+                            //     "displayName": "Ngày phát hiện ĐTĐ",
+                            //     "attribute": "LnYKf02oBmF",
+                            //     "value": `${formatDate(result[i][12])}`
+                            // },
+                            // {
+                            //     "displayName": "Nơi phát hiện ĐTĐ",
+                            //     "attribute": "LHVZXlBbn2l",
+                            //     "value": `${convertCode(result[i][13])}`
+                            // }
+                        ]
+                    }
+                }
+    
+                if (programId == 'a7arqsOKzsr') {
+                    mTei = {
+                        "orgUnit": `${idOrgUnit}`,
+                        "trackedEntityType": "EL3fkeMR3xK",
+                        "inactive": false,
+                        "deleted": false,
+                        "featureType": "NONE",
+                        "programOwners": [],
+                        "enrollments": [
+                            {
+                                "orgUnit": `${idOrgUnit}`,
+                                "program": `${programId}`,
+                                "enrollmentDate": "2021-01-01",
+                                "incidentDate": "2021-01-01",
+                                "events": []
+                            }
+                        ],
+                        "relationships": [],
+                        "attributes": [
+                            {
+                                "code": "WHO_001",
+                                "displayName": "Mã BHYT",
+                                "attribute": "JHb1hzseNMg",
+                                "value": `${result[i][7]}`
+                            },
+                            {
+                                "code": "WHO_002",
+                                "displayName": "Họ và tên",
+                                "attribute": "xBoLC0aruyJ",
+                                "value": `${result[i][4]}`
+                            },
+                            {
+                                "code": "WHO_003",
+                                "displayName": "Giới tính",
+                                "attribute": "rwreLO34Xg7",
+                                "value": `${convertCode(result[i][5])}`
+                            },
+                            {
+                                "code": "WHO_004",
+                                "displayName": "Năm sinh",
+                                "attribute": "C7USC9MC8yH",
+                                "value": `${formatDate(result[i][6])}`
+                            },
+                            {
+                                "displayName": "Số CMT/CCCD",
+                                "attribute": "ZQ93P672wQR",
+                                "value": `${result[i][8]}`
+                            },
+                            {
+                                "displayName": "Số điện thoại",
+                                "attribute": "mZbgWADLTKY",
+                                "value": `${result[i][11]}`
+                            },
+                            {
+                                "code": "WHO_005",
+                                "displayName": "Địa chỉ",
+                                "attribute": "Bxp1Lhr8ZeN",
+                                "value": `${result[i][9]}`
+                            },
+                            {
+                                "code": "WHO_006",
+                                "displayName": "Nghề nghiệp",
+                                "attribute": "L4djJU4gMyb",
+                                "value": `${result[i][10]}`
+                            },
+                            // {
+                            //     "displayName": "Ngày phát hiện THA",
+                            //     "attribute": "RSNvyMilQxs",
+                            //     "value": `${formatDate(result[i][12])}`
+                            // },
+                            // {
+                            //     "displayName": "Nơi phát hiện THA",
+                            //     "attribute": "ZYzDKzTIhM2",
+                            //     "value": `${convertCode(result[i][13])}`
+                            // }
+                            {
+                                "displayName": "Ngày phát hiện ĐTĐ",
+                                "attribute": "LnYKf02oBmF",
+                                "value": `${formatDate(result[i][12])}`
+                            },
+                            {
+                                "displayName": "Nơi phát hiện ĐTĐ",
+                                "attribute": "LHVZXlBbn2l",
+                                "value": `${convertCode(result[i][13])}`
+                            },
+                            {
+                                "displayName": "Chọn Xã/ Phường/ Thị trấn",
+                                "attribute": "Gy1fkmBZpFk",
+                                "value": `${idOrgUnit}`
+                            }
+                            // {
+                            //     "displayName": "Ngày phát hiện ĐTĐ",
+                            //     "attribute": "LnYKf02oBmF",
+                            //     "value": `${formatDate(result[i][12])}`
+                            // },
+                            // {
+                            //     "displayName": "Nơi phát hiện ĐTĐ",
+                            //     "attribute": "LHVZXlBbn2l",
+                            //     "value": `${convertCode(result[i][13])}`
+                            // }
+                        ]
+                    }
+                }
+    
+                if (programId == 'gPWs4FRX9dj' || programId == 'WmEGO8Ipykm' || programId == 'XrC0U6IV4W0') {
+                    mTei = {
+                        "orgUnit": `${idOrgUnit}`,
+                        "trackedEntityType": "EL3fkeMR3xK",
+                        "inactive": false,
+                        "deleted": false,
+                        "featureType": "NONE",
+                        "programOwners": [],
+                        "enrollments": [
+                            {
+                                "orgUnit": `${idOrgUnit}`,
+                                "program": `${programId}`,
+                                "enrollmentDate": "2021-01-01",
+                                "incidentDate": "2021-01-01",
+                                "events": []
+                            }
+                        ],
+                        "relationships": [],
+                        "attributes": [
+                            {
+                                "code": "WHO_001",
+                                "displayName": "Mã BHYT",
+                                "attribute": "JHb1hzseNMg",
+                                "value": `${result[i][7]}`
+                            },
+                            {
+                                "code": "WHO_002",
+                                "displayName": "Họ và tên",
+                                "attribute": "xBoLC0aruyJ",
+                                "value": `${result[i][4]}`
+                            },
+                            {
+                                "code": "WHO_003",
+                                "displayName": "Giới tính",
+                                "attribute": "rwreLO34Xg7",
+                                "value": `${convertCode(result[i][5])}`
+                            },
+                            {
+                                "code": "WHO_004",
+                                "displayName": "Năm sinh",
+                                "attribute": "C7USC9MC8yH",
+                                "value": `${formatDate(result[i][6])}`
+                            },
+                            {
+                                "displayName": "Số CMT/CCCD",
+                                "attribute": "ZQ93P672wQR",
+                                "value": `${result[i][8]}`
+                            },
+                            {
+                                "displayName": "Số điện thoại",
+                                "attribute": "mZbgWADLTKY",
+                                "value": `${result[i][11]}`
+                            },
+                            {
+                                "code": "WHO_005",
+                                "displayName": "Địa chỉ",
+                                "attribute": "Bxp1Lhr8ZeN",
+                                "value": `${result[i][9]}`
+                            },
+                            {
+                                "code": "WHO_006",
+                                "displayName": "Nghề nghiệp",
+                                "attribute": "L4djJU4gMyb",
+                                "value": `${result[i][10]}`
+                            },
+                            {
+                                "displayName": "Chọn Xã/ Phường/ Thị trấn",
+                                "attribute": "Gy1fkmBZpFk",
+                                "value": `${idOrgUnit}`
+                            }
+                            // {
+                            //     "displayName": "Ngày phát hiện THA",
+                            //     "attribute": "RSNvyMilQxs",
+                            //     "value": `${formatDate(result[i][12])}`
+                            // },
+                            // {
+                            //     "displayName": "Nơi phát hiện THA",
+                            //     "attribute": "ZYzDKzTIhM2",
+                            //     "value": `${convertCode(result[i][13])}`
+                            // }
+                            // {
+                            //     "displayName": "Ngày phát hiện ĐTĐ",
+                            //     "attribute": "LnYKf02oBmF",
+                            //     "value": `${formatDate(result[i][12])}`
+                            // },
+                            // {
+                            //     "displayName": "Nơi phát hiện ĐTĐ",
+                            //     "attribute": "LHVZXlBbn2l",
+                            //     "value": `${convertCode(result[i][13])}`
+                            // }
+                            // {
+                            //     "displayName": "Ngày phát hiện ĐTĐ",
+                            //     "attribute": "LnYKf02oBmF",
+                            //     "value": `${formatDate(result[i][12])}`
+                            // },
+                            // {
+                            //     "displayName": "Nơi phát hiện ĐTĐ",
+                            //     "attribute": "LHVZXlBbn2l",
+                            //     "value": `${convertCode(result[i][13])}`
+                            // }
+                        ]
+                    }
+                }
+                resultTei.trackedEntityInstances.push(mTei)
+                let iTei = {
+                    "trackedEntityInstances": []
+                };
+                iTei.trackedEntityInstances.push(mTei)
+                if(sheetName == 'DTD'){
+                    fs.writeFileSync(`${__dirname}/output/importEnrollments-${orgName}-${sheetName}.json`, JSON.stringify(resultEnrollments));
+                    console.log("[*] Create JSON files New Enrollments successfully!!")
+                }
                 console.log(i, await importTei(iTei))
-            }  
-        }
+            }
+        
     }
     fs.writeFileSync(`${__dirname}/output/importEnrollments-${orgName}-${sheetName}.json`, JSON.stringify(resultEnrollments));
     console.log("[*] Create JSON files New Enrollments successfully!!")
@@ -8465,31 +9251,46 @@ function formatDate(mdate) {
 
 function convertCode(mValue) {
     if (mValue == '') return ''
-    if (mValue && mValue.toLowerCase() == 'Nam'.toLowerCase()) {
+    else if (mValue && mValue.toLowerCase() == 'Nam'.toLowerCase()) {
         return '01'
     }
-    if (mValue && mValue.toLowerCase() == 'Nữ'.toLowerCase()) {
+    else if (mValue && mValue.toLowerCase() == 'Nữ'.toLowerCase()) {
         return '02'
     }
-    if (mValue && mValue.toLowerCase() == 'Nữ'.toLowerCase()) {
+    else if (mValue && mValue.toLowerCase() == 'Nữ'.toLowerCase()) {
         return '02'
     }
-    if (mValue && mValue.toLowerCase() == 'Trạm Y tế'.toLowerCase()) {
+    else if (mValue && mValue.toLowerCase() == 'Trạm Y tế'.toLowerCase()) {
         return '1'
     }
-    if (mValue && mValue.toLowerCase() == 'Bệnh viện huyện'.toLowerCase()) {
+    else if (mValue && mValue.toLowerCase() == 'TYT'.toLowerCase()) {
+        return '1'
+    }
+    else if (mValue && mValue.toLowerCase() == 'Bệnh viện huyện'.toLowerCase()) {
         return '2'
     }
-    if (mValue && mValue.toLowerCase() == 'Bệnh viện tỉnh'.toLowerCase()) {
+    else if (mValue && mValue.toLowerCase() == 'BVH'.toLowerCase()) {
+        return '2'
+    }
+    else if (mValue && mValue.toLowerCase() == 'Bệnh viện tỉnh'.toLowerCase()) {
         return '3'
     }
-    if (mValue && mValue.toLowerCase() == 'Bệnh viện trung ương'.toLowerCase()) {
+    else if (mValue && mValue.toLowerCase() == 'BVT'.toLowerCase()) {
+        return '3'
+    }
+    else if (mValue && mValue.toLowerCase() == 'Bệnh viện trung ương'.toLowerCase()) {
         return '4'
     }
-    if (mValue && mValue.toLowerCase() == 'Bệnh viện tư nhân'.toLowerCase()) {
+    else if (mValue && mValue.toLowerCase() == 'Bệnh viện tư nhân'.toLowerCase()) {
         return '5'
     }
-    if (mValue && mValue.toLowerCase() == 'Khác'.toLowerCase()) {
+    else if (mValue && mValue.toLowerCase() == 'Khác'.toLowerCase()) {
+        return '6'
+    }
+    else if (mValue && mValue.toLowerCase() == 'K'.toLowerCase()) {
+        return '6'
+    }
+    else {
         return '6'
     }
 }
@@ -8499,11 +9300,15 @@ function add0toCMT(mCMT) {
     return mCMT = `0${mCMT}`
 }
 
-function checkTeiExist(mBHYT) {
+function checkTeiTHAExist(mBHYT, mCMT) {
     return new Promise((resolve, reject) => {
         let result = { "status": "", "teiID": "", "orgUnitID": "" };
         let url = ``
-        url = baseUrl + `/api/trackedEntityInstances.json?ou=nJm9lSLVvG8&ouMode=ACCESSIBLE&program=NAleauPZvIE&attribute=JHb1hzseNMg:EQ:${mBHYT}&paging=false`
+        if (mBHYT != '') {
+            url = baseUrl + `/api/trackedEntityInstances.json?ou=nJm9lSLVvG8&ouMode=ACCESSIBLE&program=NAleauPZvIE&attribute=JHb1hzseNMg:EQ:${mBHYT}&paging=false`
+        } else {
+            url = baseUrl + `/api/trackedEntityInstances.json?ou=nJm9lSLVvG8&ouMode=ACCESSIBLE&program=NAleauPZvIE&attribute=ZQ93P672wQR:EQ:${mCMT}&paging=false`
+        }
         _axios.get(url, authentication).then(res => {
             let checkKey = res.data.trackedEntityInstances.length
             if (checkKey == 1) {
@@ -8518,11 +9323,15 @@ function checkTeiExist(mBHYT) {
     })
 }
 
-function checkTeiDTDExist(mBHYT) {
+function checkTeiDTDExist(mBHYT, mCMT) {
     return new Promise((resolve, reject) => {
         let result = { "status": "", "teiID": "", "orgUnitID": "" };
-        let url = ``
-        url = baseUrl + `/api/trackedEntityInstances.json?ou=nJm9lSLVvG8&ouMode=ACCESSIBLE&program=a7arqsOKzsr&attribute=JHb1hzseNMg:EQ:${mBHYT}&paging=false`
+        let url = ``        
+        if (mBHYT != '') {
+            url = baseUrl + `/api/trackedEntityInstances.json?ou=nJm9lSLVvG8&ouMode=ACCESSIBLE&program=a7arqsOKzsr&attribute=JHb1hzseNMg:EQ:${mBHYT}&paging=false`
+        } else {
+            url = baseUrl + `/api/trackedEntityInstances.json?ou=nJm9lSLVvG8&ouMode=ACCESSIBLE&program=a7arqsOKzsr&attribute=ZQ93P672wQR:EQ:${mCMT}&paging=false`
+        }
         _axios.get(url, authentication).then(res => {
             let checkKey = res.data.trackedEntityInstances.length
             if (checkKey == 1) {
