@@ -67,7 +67,7 @@ http://daotao.tkyt.vn/kln/api/events/TED3CN8ipK2
 // DELETE TEI Method: Post
 http://daotao.tkyt.vn/kln/api/trackedEntityInstances?strategy=DELETE
 // Get ID trackedEntityInstances
-http://daotao.tkyt.vn/kln/api/trackedEntityInstances.json?fields=trackedEntityInstance&ou=iNZewtduXP4&program=NAleauPZvIE&ouMode=CHILDREN
+http://daotao.tkyt.vn/kln/api/trackedEntityInstances.json?fields=trackedEntityInstance&ou=iNZewtduXP4&program=NAleauPZvIE&ouMode=CHILDREN&skipPaging=true
 http://daotao.tkyt.vn/kln/api/trackedEntityInstances.json?fields=trackedEntityInstance&ou=pggOaCM0jUQ&program=XrC0U6IV4W0
 {
     "trackedEntityInstances": [
