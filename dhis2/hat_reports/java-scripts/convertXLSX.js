@@ -1322,7 +1322,7 @@ function getIdOrg (nameOrg){
         }
     ]
     // Đà Nẵng 
-    let arrOrgDN = [
+    let arrOrgDaNang = [
         {
             "id": "wIalkCzACQj",
             "name": "Xã Hòa Tiến"
@@ -8058,7 +8058,7 @@ function getIdOrg (nameOrg){
         ]
     
     // An Giang
-    let arrOrg = [
+    let arrOrgAnGiang = [
         {
             "id": "A9TTy61HhWT",
             "name": "Xã An Hảo"
@@ -8816,8 +8816,1446 @@ function getIdOrg (nameOrg){
             "name": "Phòng khám ĐKKV Vĩnh Hòa (Sáp nhập 2020)"
         }
     ]
+    
+    // Thua Thien Hue
+    let arrOrg = [
+        {
+            "id": "A1ppP8wVFuP",
+            "name": "Phường Thuận Hòa"
+        },
+        {
+            "id": "a7hF1eeNm8s",
+            "name": "Xã Hồng Thủy"
+        },
+        {
+            "id": "Ajc6xbiGtNb",
+            "name": "Xã Điền Lộc"
+        },
+        {
+            "id": "AKgwFFNnQMl",
+            "name": "Xã Phú Lương"
+        },
+        {
+            "id": "anfRuJXHSZD",
+            "name": "Xã Điền Hòa"
+        },
+        {
+            "id": "AogBZvW9C5c",
+            "name": "Xã Phú Sơn"
+        },
+        {
+            "id": "ARBesSu7Wkl",
+            "name": "Phường Hương Sơ"
+        },
+        {
+            "id": "ATJZYWdAOPd",
+            "name": "Thị trấn Phú Lộc"
+        },
+        {
+            "id": "AumwzolbcUW",
+            "name": "Xã Phú Hải"
+        },
+        {
+            "id": "bfJkV1p0LfL",
+            "name": "Xã Thượng Long"
+        },
+        {
+            "id": "bISgV9epXln",
+            "name": "Phường Phú Hậu"
+        },
+        {
+            "id": "bnUdWQeQXbE",
+            "name": "Xã Bình Thành"
+        },
+        {
+            "id": "BWfaPTxFFpo",
+            "name": "Phường Trường An"
+        },
+        {
+            "id": "bXYXHMmLJSA",
+            "name": "Phường Hương Xuân"
+        },
+        {
+            "id": "bYQx0hUviBm",
+            "name": "Xã Điền Hương"
+        },
+        {
+            "id": "BZsKIeURB8r",
+            "name": "Phường Thủy Lương"
+        },
+        {
+            "id": "C9BcsqLRYio",
+            "name": "Xã Hương Phú"
+        },
+        {
+            "id": "cGS4TqA6kT4",
+            "name": "Phường Thuận Lộc"
+        },
+        {
+            "id": "ciFKK7gffOg",
+            "name": "Phòng khám ĐKKV 2 Huế"
+        },
+        {
+            "id": "cKAi4VaP5RW",
+            "name": "Xã Bình Tiến"
+        },
+        {
+            "id": "CoPm1y8GUMv",
+            "name": "Xã Hương Nguyên"
+        },
+        {
+            "id": "cqGPlb2g6fJ",
+            "name": "Phường Thủy Dương"
+        },
+        {
+            "id": "cQtRWfIFdH7",
+            "name": "Xã Phú Thanh"
+        },
+        {
+            "id": "CTdIIMVutNC",
+            "name": "Xã Phú An"
+        },
+        {
+            "id": "d5ryEbRAQHt",
+            "name": "Xã Trung Sơn"
+        },
+        {
+            "id": "d9oxAmxj9KK",
+            "name": "Xã Hồng Kim"
+        },
+        {
+            "id": "dFMSlUbq3tf",
+            "name": "Xã A Ngo"
+        },
+        {
+            "id": "dJaCx4H3aIX",
+            "name": "Xã Hồng Thái"
+        },
+        {
+            "id": "DMSNHsajRPk",
+            "name": "Xã Phong Thu"
+        },
+        {
+            "id": "DPuhEUpsXRu",
+            "name": "Xã Thủy Phù"
+        },
+        {
+            "id": "E7NMMxT4mg2",
+            "name": "Xã Phú Hồ"
+        },
+        {
+            "id": "eNmipoR38Ee",
+            "name": "Xã Quảng An"
+        },
+        {
+            "id": "EOq5uQKrGpz",
+            "name": "Phường Vĩ Dạ"
+        },
+        {
+            "id": "ep9e6QvqOtX",
+            "name": "Xã Hương Vinh"
+        },
+        {
+            "id": "epETzgb5PTi",
+            "name": "Phường Hương Vân"
+        },
+        {
+            "id": "et0V7EOK9ec",
+            "name": "Phường Phú Bình"
+        },
+        {
+            "id": "EWE9x408m56",
+            "name": "Xã Quảng Thọ"
+        },
+        {
+            "id": "FAkYqN06KzD",
+            "name": "Xã Vinh Hà"
+        },
+        {
+            "id": "FBQnjVk1ivH",
+            "name": "Phường Phú Hiệp"
+        },
+        {
+            "id": "fD2Av3lr7YM",
+            "name": "Phường Hương Văn"
+        },
+        {
+            "id": "FqeNnKFMRpf",
+            "name": "Xã Lộc An"
+        },
+        {
+            "id": "FUo5uFGDhUK",
+            "name": "Phường Thuận Thành"
+        },
+        {
+            "id": "fWovKIh3jb8",
+            "name": "Xã Sơn Thủy"
+        },
+        {
+            "id": "g8mK9I0esI7",
+            "name": "Xã Thủy Vân"
+        },
+        {
+            "id": "Gsc5bPROwqD",
+            "name": "Xã Hương Phong"
+        },
+        {
+            "id": "guTsY9zUO8x",
+            "name": "Xã Thượng Quảng"
+        },
+        {
+            "id": "GwE6NzabcaB",
+            "name": "Xã Quảng Lợi"
+        },
+        {
+            "id": "gXYDjYC9Dr9",
+            "name": "Xã Quảng Nhâm"
+        },
+        {
+            "id": "gyVdlFi2Vqr",
+            "name": "Phường An Hòa"
+        },
+        {
+            "id": "H66IJQqUuxR",
+            "name": "Xã Quảng Phước"
+        },
+        {
+            "id": "h9cDbk7FvDO",
+            "name": "Phường Phú Thuận"
+        },
+        {
+            "id": "hbRJo3AM3LG",
+            "name": "Xã Đông Sơn"
+        },
+        {
+            "id": "hojTpQQnt4p",
+            "name": "Xã Vinh An"
+        },
+        {
+            "id": "hOVm4mc9Hf6",
+            "name": "Thị trấn Lăng Cô"
+        },
+        {
+            "id": "hRdVocngtZZ",
+            "name": "Xã Phong Hiền"
+        },
+        {
+            "id": "hTlMOc3s84U",
+            "name": "TTYT Huyện Phú Lộc"
+        },
+        {
+            "id": "Hw1UI1JwIh3",
+            "name": "Xã Phong An"
+        },
+        {
+            "id": "i6MlHdEQn2n",
+            "name": "Xã Phong Hòa"
+        },
+        {
+            "id": "IA92W2czHiE",
+            "name": "Xã Thượng Nhật"
+        },
+        {
+            "id": "IdjWrXeUYTZ",
+            "name": "Xã Lộc Thủy"
+        },
+        {
+            "id": "iHHkGRz1OK3",
+            "name": "Xã Thủy Thanh"
+        },
+        {
+            "id": "iJwDThRugva",
+            "name": "TTYT Thị xã Hương Thủy"
+        },
+        {
+            "id": "iny36nATK4p",
+            "name": "Xã Hương Hữu"
+        },
+        {
+            "id": "Iv9yTfzqOOW",
+            "name": "Thị trấn Phong Điền"
+        },
+        {
+            "id": "IYlG5ivc2A1",
+            "name": "Phường Tây Lộc"
+        },
+        {
+            "id": "IzjzxDnb02v",
+            "name": "Xã Phú Xuân"
+        },
+        {
+            "id": "jheons0ZgQh",
+            "name": "Xã Hương Bình"
+        },
+        {
+            "id": "jihI813eWm2",
+            "name": "Xã Hải Dương"
+        },
+        {
+            "id": "JLp8o035krU",
+            "name": "Xã Hồng Vân"
+        },
+        {
+            "id": "jLtq4zrMxOd",
+            "name": "Phòng khám ĐKKV 1 Phú Lộc"
+        },
+        {
+            "id": "JrkcyIFs58h",
+            "name": "Xã Vinh Thanh"
+        },
+        {
+            "id": "jtCgXV64nFu",
+            "name": "TTYT Huyện A Lưới"
+        },
+        {
+            "id": "k29mWMsHvD5",
+            "name": "TTYT Thành phố Huế"
+        },
+        {
+            "id": "K8CFkmw1y4J",
+            "name": "Phòng khám ĐKKV Điền Hải"
+        },
+        {
+            "id": "KjcqCgGuMl4",
+            "name": "Xã Phú Mỹ"
+        },
+        {
+            "id": "KjWOfG1BiEX",
+            "name": "Phường Phú Nhuận"
+        },
+        {
+            "id": "LbBcaIi52ZH",
+            "name": "Phường Hương Hồ"
+        },
+        {
+            "id": "LJtRbzzg2AW",
+            "name": "Xã Phú Thuận"
+        },
+        {
+            "id": "lrCQC6d3B0n",
+            "name": "TTYT Huyện Phú Vang"
+        },
+        {
+            "id": "M2uyRJZGItz",
+            "name": "Phường Thủy Châu"
+        },
+        {
+            "id": "M5ZYiHbnM2v",
+            "name": "Xã Lộc Bổn"
+        },
+        {
+            "id": "mgFS7BAgWVu",
+            "name": "Phường Hương Chữ"
+        },
+        {
+            "id": "miAglTcHA2Z",
+            "name": "Phường Vĩnh Ninh"
+        },
+        {
+            "id": "mJYu5mRT11v",
+            "name": "Phường An Tây"
+        },
+        {
+            "id": "MXwqJxew0RM",
+            "name": "Xã Hồng Thượng"
+        },
+        {
+            "id": "n3aWE9hz46C",
+            "name": "Xã Quảng Ngạn"
+        },
+        {
+            "id": "nEknY58j6N7",
+            "name": "Thị trấn Phú Đa"
+        },
+        {
+            "id": "niAbAAxgCDo",
+            "name": "Thị trấn A Lưới"
+        },
+        {
+            "id": "NTXUB7enJnT",
+            "name": "Xã Phong Hải"
+        },
+        {
+            "id": "nyW9o04WvXX",
+            "name": "TTYT Huyện Quảng Điền"
+        },
+        {
+            "id": "oE6mk0UORlS",
+            "name": "Xã Phong Xuân"
+        },
+        {
+            "id": "oSkSXWSpKN2",
+            "name": "Phường Hương An"
+        },
+        {
+            "id": "OVpPV9V7Cfo",
+            "name": "Phường Thủy Phương"
+        },
+        {
+            "id": "oYcNSxlkDrD",
+            "name": "Xã Phú Thượng"
+        },
+        {
+            "id": "oyrVGJWPm1A",
+            "name": "Phường An Cựu"
+        },
+        {
+            "id": "p3BVmkgwfkk",
+            "name": "Xã Thủy Tân"
+        },
+        {
+            "id": "pBBdUctawUX",
+            "name": "Phường Phú Bài"
+        },
+        {
+            "id": "PBSeT4FiNXv",
+            "name": "TTYT Thị xã Hương Trà"
+        },
+        {
+            "id": "PfZL3MJLpJ3",
+            "name": "Xã A Roằng"
+        },
+        {
+            "id": "pKHIFd14J3a",
+            "name": "Phòng khám ĐKKV 3 Phú Lộc"
+        },
+        {
+            "id": "PNMbdPRyxE7",
+            "name": "Xã Vinh Hiền"
+        },
+        {
+            "id": "pYehjVLSHkG",
+            "name": "Xã Phong Bình"
+        },
+        {
+            "id": "PYH7REn3SgW",
+            "name": "Xã Hương Toàn"
+        },
+        {
+            "id": "QBJmEGI0S6Y",
+            "name": "Xã Hương Sơn"
+        },
+        {
+            "id": "QJ440bnvuyw",
+            "name": "Xã Lộc Điền"
+        },
+        {
+            "id": "qlFkbagLnEo",
+            "name": "Xã Thượng Lộ"
+        },
+        {
+            "id": "QoWGbCvjFFu",
+            "name": "Xã Giang Hải"
+        },
+        {
+            "id": "qv6DYB7TCO9",
+            "name": "Xã Hương Phong"
+        },
+        {
+            "id": "qX4A9xHGysb",
+            "name": "Phường An Đông"
+        },
+        {
+            "id": "r0DvsIzuK8d",
+            "name": "Xã Xuân Lộc"
+        },
+        {
+            "id": "Rbm1sD52dcc",
+            "name": "Xã Phong Sơn"
+        },
+        {
+            "id": "RCDyfZubprU",
+            "name": "Phường Phước Vĩnh"
+        },
+        {
+            "id": "REN7g06k5GG",
+            "name": "Thị trấn Sịa"
+        },
+        {
+            "id": "RHxZg0nZzYc",
+            "name": "Xã Quảng Công"
+        },
+        {
+            "id": "RHyN3W8brYO",
+            "name": "Xã Hương Thọ"
+        },
+        {
+            "id": "RiqF5EEdfvM",
+            "name": "Xã Phú Diên"
+        },
+        {
+            "id": "RjUZoyUJUvM",
+            "name": "Phường Phú Hòa"
+        },
+        {
+            "id": "rkwUdinqdM7",
+            "name": "Xã Thủy Bằng"
+        },
+        {
+            "id": "ROlqDezkpqj",
+            "name": "Xã Quảng Phú"
+        },
+        {
+            "id": "rxL41WeUR6e",
+            "name": "Xã Lộc Bình"
+        },
+        {
+            "id": "RZCjgya0M8N",
+            "name": "Xã Lộc Trì"
+        },
+        {
+            "id": "S535adOLdad",
+            "name": "Xã Điền Hải"
+        },
+        {
+            "id": "SbjZ5FSv4a5",
+            "name": "Xã Phú Dương"
+        },
+        {
+            "id": "sbk2wzhfkyi",
+            "name": "Xã Lộc Sơn"
+        },
+        {
+            "id": "SjnL3DsANR0",
+            "name": "Xã Lộc Tiến"
+        },
+        {
+            "id": "sluOUtd6nMW",
+            "name": "Thị trấn Khe Tre"
+        },
+        {
+            "id": "sUw6wU9etbv",
+            "name": "Phòng khám ĐKKV Thuận An"
+        },
+        {
+            "id": "TKNSfX6LRji",
+            "name": "Xã Quảng Vinh"
+        },
+        {
+            "id": "TmGWzD2gBLs",
+            "name": "Xã Phú Gia"
+        },
+        {
+            "id": "tnsWjHnR9SE",
+            "name": "Phường Phú Hội"
+        },
+        {
+            "id": "tQn2OEBR7qM",
+            "name": "Phường Thuỷ Xuân"
+        },
+        {
+            "id": "TUp58Mi3lR1",
+            "name": "Xã Hồng Bắc"
+        },
+        {
+            "id": "TX9Vxb7Ng4w",
+            "name": "Phường Phú Cát"
+        },
+        {
+            "id": "uHf7dCGXrXe",
+            "name": "Xã Hồng Hạ"
+        },
+        {
+            "id": "uvzAvn6k5Qp",
+            "name": "Xã Vinh Hưng"
+        },
+        {
+            "id": "uzIFykZJyFL",
+            "name": "Xã Phú Vinh"
+        },
+        {
+            "id": "VkFblPrviD8",
+            "name": "Xã Quảng Thái"
+        },
+        {
+            "id": "Vpc3HEKiDk2",
+            "name": "Xã Hương Lộc"
+        },
+        {
+            "id": "VsY7GmTb35H",
+            "name": "Xã Điền Môn"
+        },
+        {
+            "id": "VvR8f7yQ8HU",
+            "name": "Phường Kim Long"
+        },
+        {
+            "id": "VwRvwIN1UBp",
+            "name": "Xã Phong Chương"
+        },
+        {
+            "id": "wbCSh1GuWQ6",
+            "name": "Phòng khám ĐKKV 3 Huế"
+        },
+        {
+            "id": "wfPUDah1u25",
+            "name": "Phường Xuân Phú"
+        },
+        {
+            "id": "wgDLvifNITH",
+            "name": "Xã Dương Hòa"
+        },
+        {
+            "id": "wqB4p5K0JrD",
+            "name": "Xã Lộc Hòa"
+        },
+        {
+            "id": "wz4Ru0peMIC",
+            "name": "Xã Phong Mỹ"
+        },
+        {
+            "id": "XCRa1DvuAc2",
+            "name": "Xã Vinh Mỹ"
+        },
+        {
+            "id": "xFQMxvQmkLl",
+            "name": "Phường Thuỷ Biều"
+        },
+        {
+            "id": "xr9g5LCaeX0",
+            "name": "Xã Lộc Vĩnh"
+        },
+        {
+            "id": "xRZIrc4AE3K",
+            "name": "Thị trấn Thuận An"
+        },
+        {
+            "id": "XYjJZ6njP9q",
+            "name": "Phường Phường Đúc"
+        },
+        {
+            "id": "y4Poj25VIhY",
+            "name": "TTYT Huyện Phong Điền"
+        },
+        {
+            "id": "yKfH6BFF0B2",
+            "name": "Xã Quảng Thành"
+        },
+        {
+            "id": "YMq4VlFHxaP",
+            "name": "Phường Hương Long"
+        },
+        {
+            "id": "yqxsW70mTJE",
+            "name": "Xã Lâm Đớt"
+        },
+        {
+            "id": "Yv3guvgG8ws",
+            "name": "Phường Tứ Hạ"
+        },
+        {
+            "id": "YVqiejc3by4",
+            "name": "TTYT Huyện Nam Đông"
+        },
+        {
+            "id": "Z68Ii2NsSKX",
+            "name": "Xã Vinh Xuân"
+        },
+        {
+            "id": "ZnTtHonrdgT",
+            "name": "Xã Phú Mậu"
+        },
+        {
+            "id": "ZsCtyalVguw",
+            "name": "Xã Hương Xuân"
+        }
+    ]
 
-
+    // Thai Nguyen
+    let arrOrgThaiNguyen = [
+        {
+            "id": "GL7JUBNjH3c",
+            "name": "Xã Đào Xá"
+        },
+        {
+            "id": "A7Na6SUb0iK",
+            "name": "Phường Tân Long"
+        },
+        {
+            "id": "ABePoFM0SAl",
+            "name": "Xã Hợp Tiến"
+        },
+        {
+            "id": "AF1Lmu107k3",
+            "name": "Xã Trung Thành"
+        },
+        {
+            "id": "AGBr5aOtW4w",
+            "name": "Thị trấn Hương Sơn"
+        },
+        {
+            "id": "AGvh4MAfjvN",
+            "name": "Xã Bàn Đạt"
+        },
+        {
+            "id": "AhqcO9NKBye",
+            "name": "Xã Thần Sa"
+        },
+        {
+            "id": "AILvo0BS7V9",
+            "name": "Xã Na Mao"
+        },
+        {
+            "id": "AjK9wDDC3Ii",
+            "name": "Xã Phúc Chu"
+        },
+        {
+            "id": "aS0lt01VIpL",
+            "name": "Phường Thịnh Đán"
+        },
+        {
+            "id": "AxNrpno0uGq",
+            "name": "Xã Huống Thượng"
+        },
+        {
+            "id": "AyPFNC3baIv",
+            "name": "Thị trấn Đu"
+        },
+        {
+            "id": "b0l9tuzj374",
+            "name": "Xã Phượng Tiến"
+        },
+        {
+            "id": "b1tnxiarcBc",
+            "name": "Phường Quang Vinh"
+        },
+        {
+            "id": "b3GzQ6rX8O3",
+            "name": "Bệnh Viện Đa Khoa Huyện Phú Bình"
+        },
+        {
+            "id": "b41pglUR6HQ",
+            "name": "Xã Phương Giao"
+        },
+        {
+            "id": "B77g6eOd6wx",
+            "name": "Xã Đắc Sơn"
+        },
+        {
+            "id": "B8lVl1czyua",
+            "name": "Xã Vũ Chấn"
+        },
+        {
+            "id": "bAzVxU24Umu",
+            "name": "Xã Thành Công"
+        },
+        {
+            "id": "beA5KKhlGjh",
+            "name": "Xã Mỹ Yên"
+        },
+        {
+            "id": "BlgJL2aTra1",
+            "name": "Xã Minh Lập"
+        },
+        {
+            "id": "bPRcX1L7VEo",
+            "name": "Xã Quang Sơn"
+        },
+        {
+            "id": "BZpNomWjaiV",
+            "name": "Bệnh viện đa khoa Yên Bình"
+        },
+        {
+            "id": "cA147gYNx4g",
+            "name": "Thị trấn Trại Cau"
+        },
+        {
+            "id": "CJ1xnVZnSPF",
+            "name": "Phường Phố Cò"
+        },
+        {
+            "id": "cLYLKskGmGU",
+            "name": "Xã Bộc Nhiêu"
+        },
+        {
+            "id": "CP6znoh2eZH",
+            "name": "Xã Phúc Tân"
+        },
+        {
+            "id": "cUagIIWsa51",
+            "name": "Xã Hà Thượng"
+        },
+        {
+            "id": "CWK9WxyqHWg",
+            "name": "Xã Phủ Lý"
+        },
+        {
+            "id": "CzlZLnbL7zq",
+            "name": "Xã Bình Thành"
+        },
+        {
+            "id": "D5Ie9OCqPSv",
+            "name": "Xã Tân Hương"
+        },
+        {
+            "id": "D8rQrYdjwke",
+            "name": "Bệnh Viện Đa Khoa Huyện Đại Từ"
+        },
+        {
+            "id": "ddkU2RQQ1P3",
+            "name": "Xã Phúc Hà"
+        },
+        {
+            "id": "DkiIEAimhZw",
+            "name": "TTYT Huyện Đồng Hỷ"
+        },
+        {
+            "id": "dmus68RDOb5",
+            "name": "Thị trấn Quân Chu"
+        },
+        {
+            "id": "dmy92GSGEmq",
+            "name": "Xã Lâu Thượng"
+        },
+        {
+            "id": "dnASABIYLgH",
+            "name": "Xã Điềm Thụy"
+        },
+        {
+            "id": "E7O5J4G4jhe",
+            "name": "Xã Sơn Phú"
+        },
+        {
+            "id": "e8kudpEmAY2",
+            "name": "Xã Yên Trạch"
+        },
+        {
+            "id": "eAkAH2rOkPS",
+            "name": "Xã Nga My"
+        },
+        {
+            "id": "eBFDrdAHNki",
+            "name": "Xã Nam Tiến"
+        },
+        {
+            "id": "eDx9j7V0w9w",
+            "name": "Xã Hồng Tiến"
+        },
+        {
+            "id": "EMjITXcxrFl",
+            "name": "Xã Tân Phú"
+        },
+        {
+            "id": "EoAavdaRpSP",
+            "name": "Xã Nam Hòa"
+        },
+        {
+            "id": "ESjzXrMlAmA",
+            "name": "Xã Phúc Thuận"
+        },
+        {
+            "id": "ezJJzTVwypk",
+            "name": "TTYT Huyện Phú Lương"
+        },
+        {
+            "id": "F1G4Pjopnb4",
+            "name": "Xã Tân Lợi"
+        },
+        {
+            "id": "f4pyqi7ORca",
+            "name": "Bệnh Viện Đa Khoa Huyện Định Hóa"
+        },
+        {
+            "id": "FHGAQmuRyhe",
+            "name": "Xã Quy Kỳ"
+        },
+        {
+            "id": "fL3TzhxrS18",
+            "name": "Phường Thắng Lợi"
+        },
+        {
+            "id": "fNqWKjxxXBo",
+            "name": "Xã Hà Châu"
+        },
+        {
+            "id": "fYmJ1XkJpgT",
+            "name": "TTYT Thành phố Sông Công"
+        },
+        {
+            "id": "G65kFqzoPxs",
+            "name": "Xã Cây Thị"
+        },
+        {
+            "id": "g9uC6BHxIc4",
+            "name": "Xã Bảo Linh"
+        },
+        {
+            "id": "gbo3iWV25NO",
+            "name": "Xã Tân Thái"
+        },
+        {
+            "id": "GemHEVshlIO",
+            "name": "Xã Bình Sơn"
+        },
+        {
+            "id": "GOi8InfWydS",
+            "name": "Phường Bách Quang"
+        },
+        {
+            "id": "gQXeepkyRsR",
+            "name": "Xã Khôi Kỳ"
+        },
+        {
+            "id": "H6CYGjVtR3J",
+            "name": "Xã Bình Thuận"
+        },
+        {
+            "id": "hKPJmT3Yp92",
+            "name": "Phường Tân Thịnh"
+        },
+        {
+            "id": "HoPIZkWAKZZ",
+            "name": "Xã Dương Thành"
+        },
+        {
+            "id": "hsXst1hK4kQ",
+            "name": "Xã Văn Lăng"
+        },
+        {
+            "id": "IbJbtQUsO3g",
+            "name": "Xã Phục Linh"
+        },
+        {
+            "id": "Iihv6o0spce",
+            "name": "Xã Quân Chu"
+        },
+        {
+            "id": "ITRzIjiYdYn",
+            "name": "Phường Đồng Quang"
+        },
+        {
+            "id": "IxSjWwtThBj",
+            "name": "Xã Kim Phượng"
+        },
+        {
+            "id": "j0jgugL0Ep1",
+            "name": "Xã Bình Yên"
+        },
+        {
+            "id": "J2zE5hKgmqT",
+            "name": "Xã Sơn Cẩm"
+        },
+        {
+            "id": "j5xCFrklnx3",
+            "name": "Phường Trưng Vương"
+        },
+        {
+            "id": "J7a7s4tunru",
+            "name": "Xã Tức Tranh"
+        },
+        {
+            "id": "JCDFXw47xFJ",
+            "name": "Xã Tân Thành"
+        },
+        {
+            "id": "jDQ6tAgaw1R",
+            "name": "Xã Quyết Thắng"
+        },
+        {
+            "id": "je6HdLl9Jf8",
+            "name": "Xã Phú Đô"
+        },
+        {
+            "id": "jFoEIFnxfQh",
+            "name": "Xã Vạn Thọ"
+        },
+        {
+            "id": "Jh5snuPFv6M",
+            "name": "Xã Yên Đổ"
+        },
+        {
+            "id": "jsB0S3ZzQwQ",
+            "name": "Xã Yên Ninh"
+        },
+        {
+            "id": "JwPNb5LF1jK",
+            "name": "Xã Tân Linh"
+        },
+        {
+            "id": "jXrpjeLmOtm",
+            "name": "Xã Cù Vân"
+        },
+        {
+            "id": "jzYWrf6VaTM",
+            "name": "Xã Kha Sơn"
+        },
+        {
+            "id": "kbdu2Gl2vjz",
+            "name": "Xã Cúc Đường"
+        },
+        {
+            "id": "kHLq5gmKwLm",
+            "name": "Xã Hóa Trung"
+        },
+        {
+            "id": "khmD6em8bi5",
+            "name": "Thị trấn Hùng Sơn 1"
+        },
+        {
+            "id": "kQbWhfFvCdN",
+            "name": "Xã Bảo Cường"
+        },
+        {
+            "id": "kqM6rEkVLNX",
+            "name": "Xã Đồng Thịnh"
+        },
+        {
+            "id": "Krj3wL4mPdq",
+            "name": "Xã Vinh Sơn (Sáp nhập 2019)"
+        },
+        {
+            "id": "krxNWElnoGl",
+            "name": "Phường Chùa Hang"
+        },
+        {
+            "id": "KT5c8DWO28r",
+            "name": "Xã Ký Phú"
+        },
+        {
+            "id": "KtfKIAF41Fq",
+            "name": "Phường Đồng Tiến"
+        },
+        {
+            "id": "ky4B0anWVxe",
+            "name": "Xã La Bằng"
+        },
+        {
+            "id": "KyPda6G5hcT",
+            "name": "Xã Điềm Mặc"
+        },
+        {
+            "id": "kyTj9trWOsl",
+            "name": "Phường Cam Giá"
+        },
+        {
+            "id": "L0dqARNkb5L",
+            "name": "Xã Phú Cường"
+        },
+        {
+            "id": "l9zJrRwwoeb",
+            "name": "Phường Đồng Bẩm"
+        },
+        {
+            "id": "LeY8Pa0dmTJ",
+            "name": "Xã Phú Tiến"
+        },
+        {
+            "id": "LfQsZF4Ayin",
+            "name": "Phường Lương Sơn"
+        },
+        {
+            "id": "LJ0ZDV5wccs",
+            "name": "Phường Tích Lương"
+        },
+        {
+            "id": "LmumD5xrGMF",
+            "name": "Xã Sảng Mộc"
+        },
+        {
+            "id": "Ln4gqBforFj",
+            "name": "Xã Kim Sơn (sáp nhập 2020)"
+        },
+        {
+            "id": "lQsv12xdc2G",
+            "name": "Xã Thanh Ninh"
+        },
+        {
+            "id": "LV1Mg4pn8wB",
+            "name": "Xã Linh Thông"
+        },
+        {
+            "id": "mKZvfhvQL6V",
+            "name": "Xã Tân Khánh"
+        },
+        {
+            "id": "mnInouGe9U4",
+            "name": "Phường Hương Sơn"
+        },
+        {
+            "id": "mOZZWoPIWlg",
+            "name": "Xã Úc Kỳ"
+        },
+        {
+            "id": "mRTJ6zmAxFI",
+            "name": "Xã Phú Xuyên"
+        },
+        {
+            "id": "Ms3YS5TsMHc",
+            "name": "Xã Trung Hội"
+        },
+        {
+            "id": "MSvsr3VGJl5",
+            "name": "Xã Ôn Lương"
+        },
+        {
+            "id": "Mu7GZ7R3OAb",
+            "name": "Xã Lương Phú"
+        },
+        {
+            "id": "MV0nrpWCAYu",
+            "name": "Phường Tân Thành"
+        },
+        {
+            "id": "MyaM8hT8WGP",
+            "name": "Xã Trung Lương"
+        },
+        {
+            "id": "N8WXWAgs1Wc",
+            "name": "Xã Phúc Trìu"
+        },
+        {
+            "id": "nBomCQW5bPj",
+            "name": "Xã Cao Ngạn"
+        },
+        {
+            "id": "nK0QZjt4POj",
+            "name": "Xã Lục Ba"
+        },
+        {
+            "id": "Nplzn8cHbkl",
+            "name": "Xã Văn Yên"
+        },
+        {
+            "id": "nTEy6qz339D",
+            "name": "TTYT Huyện Đại Từ"
+        },
+        {
+            "id": "NUjIsvP75eG",
+            "name": "Xã Linh Sơn"
+        },
+        {
+            "id": "NWnLlRKqZIa",
+            "name": "Xã La Hiên"
+        },
+        {
+            "id": "OcYWQnjiMzR",
+            "name": "Phường Quang Trung"
+        },
+        {
+            "id": "oKeQ2VEgS8e",
+            "name": "Xã Liên Minh"
+        },
+        {
+            "id": "ONHD8VUZW6Z",
+            "name": "Xã Hợp Thành"
+        },
+        {
+            "id": "oRxvbvGg7Qt",
+            "name": "Phường Gia Sàng"
+        },
+        {
+            "id": "os6LXFG6BPy",
+            "name": "Xã Nhã Lộng"
+        },
+        {
+            "id": "OU46OGNrIiG",
+            "name": "Xã Quân Chủ"
+        },
+        {
+            "id": "OX8KVrwkqFM",
+            "name": "Xã Tràng Xá"
+        },
+        {
+            "id": "oykIOtBbmqY",
+            "name": "Thị trấn Sông Cầu"
+        },
+        {
+            "id": "oyOvfE9hrTf",
+            "name": "Phường Châu Sơn"
+        },
+        {
+            "id": "P5n29LRsWI6",
+            "name": "Xã Minh Đức"
+        },
+        {
+            "id": "p5outOmarKZ",
+            "name": "Xã Phúc Lương"
+        },
+        {
+            "id": "pmoZm3c0uxs",
+            "name": "Xã Thuận Thành"
+        },
+        {
+            "id": "pypyzHHoN98",
+            "name": "Xã Dân Tiến"
+        },
+        {
+            "id": "q2w4wSeiDZI",
+            "name": "Xã Tân Quang"
+        },
+        {
+            "id": "Q9jQLU2C2ri",
+            "name": "Xã Cổ Lũng"
+        },
+        {
+            "id": "QBESpJVIzHe",
+            "name": "Xã Bản Ngoại"
+        },
+        {
+            "id": "qNGgBD2b7CZ",
+            "name": "Xã Văn Hán"
+        },
+        {
+            "id": "qtfW7FGrEUw",
+            "name": "Thị trấn Đình Cả"
+        },
+        {
+            "id": "QWOWxODPIFb",
+            "name": "Xã Đồng Liên"
+        },
+        {
+            "id": "rmtz79CIUw6",
+            "name": "Phường Trung Thành"
+        },
+        {
+            "id": "rxE2sHWO056",
+            "name": "TTYT Huyện Định Hóa"
+        },
+        {
+            "id": "s1ljZcu91j0",
+            "name": "Phường Ba Hàng"
+        },
+        {
+            "id": "S3U6nPoCJJB",
+            "name": "Xã Bình Long"
+        },
+        {
+            "id": "sBFdSVXYNhK",
+            "name": "Thị Trấn Đại Từ"
+        },
+        {
+            "id": "SH7FnoQBi8D",
+            "name": "Xã Đông Cao"
+        },
+        {
+            "id": "SLdDtSE7e8p",
+            "name": "Thị trấn Hùng Sơn 2"
+        },
+        {
+            "id": "SroB9dbxh8p",
+            "name": "Xã Yên Lạc"
+        },
+        {
+            "id": "T0sGUVQMbAH",
+            "name": "Phường Lương Châu (Sáp nhập 2020)"
+        },
+        {
+            "id": "t7iFdCtycbA",
+            "name": "Xã Phấn Mễ"
+        },
+        {
+            "id": "TJFNA08i7UO",
+            "name": "Xã Xuân Phương"
+        },
+        {
+            "id": "TLF1P6huUN4",
+            "name": "Xã Tiên Phong"
+        },
+        {
+            "id": "TxLFVsK9j7u",
+            "name": "Phường Quán Triều"
+        },
+        {
+            "id": "tYQe916ZuW3",
+            "name": "Xã Tân Đức"
+        },
+        {
+            "id": "u62xALJ7Oew",
+            "name": "Phường Phú Xá"
+        },
+        {
+            "id": "UbFI4BRz1zB",
+            "name": "Phường Mỏ Chè"
+        },
+        {
+            "id": "uDHaZn0wJHE",
+            "name": "Xã Khe Mo"
+        },
+        {
+            "id": "unuWzMmMtqC",
+            "name": "Phường Phan Đình Phùng"
+        },
+        {
+            "id": "Uz2ctguXzwT",
+            "name": "TTYT Thị Xã Phổ Yên"
+        },
+        {
+            "id": "v07ksr4AMni",
+            "name": "Phường Cải Đan"
+        },
+        {
+            "id": "V1UCOm0GoN5",
+            "name": "Phường Bắc Sơn"
+        },
+        {
+            "id": "v2UA0QYBpz9",
+            "name": "Xã Thịnh Đức"
+        },
+        {
+            "id": "v6SR0StdmG8",
+            "name": "Xã Lam Vỹ"
+        },
+        {
+            "id": "vBIkOSxOnY8",
+            "name": "Phường Bãi Bông"
+        },
+        {
+            "id": "vdTevyJ8JDh",
+            "name": "Thị trấn Giang Tiên"
+        },
+        {
+            "id": "vlY8uRJpLGN",
+            "name": "Xã Tân Long"
+        },
+        {
+            "id": "vYNh45sem7i",
+            "name": "Xã Hòa Bình"
+        },
+        {
+            "id": "W6jQKETRz2v",
+            "name": "Xã Thượng Đình"
+        },
+        {
+            "id": "W9l8mrrKGec",
+            "name": "Xã Bảo Lý"
+        },
+        {
+            "id": "wCwcydbhngy",
+            "name": "Xã Tân Thịnh"
+        },
+        {
+            "id": "WgnQlkPxpc1",
+            "name": "Xã Vô Tranh"
+        },
+        {
+            "id": "WHbZ1jfEFNe",
+            "name": "Xã Tân Cương"
+        },
+        {
+            "id": "WmvExlHFOgm",
+            "name": "Phường Túc Duyên"
+        },
+        {
+            "id": "WNuzEaCk7ic",
+            "name": "Xã Phú Đình"
+        },
+        {
+            "id": "WznZW7RqYZQ",
+            "name": "TTYT Thành phố Thái Nguyên"
+        },
+        {
+            "id": "X0tfPej0o16",
+            "name": "Xã Hoàng Nông"
+        },
+        {
+            "id": "X1lTz9aT30J",
+            "name": "Xã Minh Tiến"
+        },
+        {
+            "id": "x6ohOzdiN6g",
+            "name": "Xã Phú Lạc"
+        },
+        {
+            "id": "XBq5yJRuwHn",
+            "name": "Xã Cát Nê"
+        },
+        {
+            "id": "XDoxtEgeeQZ",
+            "name": "Xã Phúc Xuân"
+        },
+        {
+            "id": "xFK61GaTCql",
+            "name": "Xã Định Biên"
+        },
+        {
+            "id": "xuQb3Io7LcP",
+            "name": "TTYT Huyện Phú Bình"
+        },
+        {
+            "id": "xwo6hXZw4aw",
+            "name": "TTYT Huyện Võ Nhai"
+        },
+        {
+            "id": "XwZifv3Lmcq",
+            "name": "Xã Tân Dương"
+        },
+        {
+            "id": "Y3hJKcBIAmC",
+            "name": "Xã Phú Thịnh"
+        },
+        {
+            "id": "YAWk4TwjG1D",
+            "name": "Xã Phú Thượng"
+        },
+        {
+            "id": "YCA43Nc7S1z",
+            "name": "Xã Hóa Thượng"
+        },
+        {
+            "id": "ycN47uZeGiD",
+            "name": "Phường Hoàng Văn Thụ"
+        },
+        {
+            "id": "yCVOMSnJ1ZA",
+            "name": "Xã An Khánh"
+        },
+        {
+            "id": "YhIvAtfdOZl",
+            "name": "Xã Thanh Định"
+        },
+        {
+            "id": "YsjHiV6OnRo",
+            "name": "Xã Nghinh Tường"
+        },
+        {
+            "id": "YuSHRu77ELC",
+            "name": "Xã Tiên Hội"
+        },
+        {
+            "id": "yVoIUNI2sPy",
+            "name": "Xã Tân Kim"
+        },
+        {
+            "id": "YXFCxDqC8ck",
+            "name": "Xã Động Đạt"
+        },
+        {
+            "id": "Z1lg8MMwLhg",
+            "name": "Xã Đức Lương"
+        },
+        {
+            "id": "ZboOBmSpYNp",
+            "name": "Phòng Khám Đa Khoa Thiên Hồng"
+        },
+        {
+            "id": "zC51pOAXpY2",
+            "name": "Xã Vạn Phái"
+        },
+        {
+            "id": "ZfhotP6U10H",
+            "name": "Xã Bá Xuyên"
+        },
+        {
+            "id": "zhYdPfRlUGf",
+            "name": "Phường Tân Lập"
+        },
+        {
+            "id": "zl14UoClo9U",
+            "name": "Thị trấn Chợ Chu"
+        },
+        {
+            "id": "ZPVjXbIr4JV",
+            "name": "Xã Tân Hòa"
+        },
+        {
+            "id": "zRfx5ZsZ3I9",
+            "name": "Xã Yên Lãng"
+        },
+        {
+            "id": "ZYkq5WOrk1G",
+            "name": "Xã Thượng Nung"
+        }
+    ]
     let idOrg = '';
     arrOrg.forEach(e=>{
         if (nameOrg == e.name){

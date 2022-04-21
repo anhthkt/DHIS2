@@ -29,7 +29,7 @@ for(let s = 0; s < arrSheetNames.length-1; s++) {
     // Name file output
     let orgName = 'BoYte'
 
-    let eventDate = '2022-03-06'
+    let eventDate = '2022-04-21'
    
     if(sheetName == 'BoYte') programId = '2'; //Bo Y te
     if(sheetName == 'ChinhPhu') programId = '0'; //Chinh Phu
@@ -125,7 +125,7 @@ async function exportTeiFromExcel(sheetName, programId, eventDate, orgName) {
                     },
                     {
                         "attribute": "hybfvRWTZAm",
-                        "value": `${result[i][4]}`
+                        "value": `${result[i][4].substring(0, 299)}`
                     },
                     {
                         "attribute": "QDKF1LkOQNi",

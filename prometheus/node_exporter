@@ -1,40 +1,305 @@
+--- Installing Prometheus + Grafana on Ubuntu ---
+Download the archive, either by clicking on the link or using wget.
+	wget https://github.com/prometheus/prometheus/releases/download/v2.34.0/prometheus-2.34.0.linux-amd64.tar.gz
+
+Untar the zip
+	tar xvzf prometheus-2.34.0.linux-amd64.tar.gz
+Configuring Prometheus as a service
+Create a Prometheus user with a Prometheus group.
+
+	useradd -rs /bin/false prometheus
+Move the Prometheus binaries to the local bin directory
+
+	cd prometheus-2.34.0.linux-amd64/
+	cp prometheus promtool /usr/local/bin
+	chown prometheus:prometheus /usr/local/bin/prometheus
+Create a folder in the /etc folder for Prometheus and move the console files, console libraries and the prometheus configuration file to this newly created folder.
+
+	mkdir /etc/prometheus
+	cp -R consoles/ console_libraries/ prometheus.yml /etc/prometheus
+Create a data folder at the root directory, with a prometheus folder inside.
+
+	cd /
+	mkdir -p data/prometheus
+	chown -R prometheus:prometheus /data/prometheus /etc/prometheus/*
+Create a Prometheus service
+To create a Prometheus systemd service, head over to the /lib/systemd/system folder and create a new systemd file named prometheus.service.
 
 
-NODE EXPORTER
+	cd /lib/systemd/system
+	touch prometheus.service
+Edit the newly created file, and paste the following content inside:
 
-wget https://github.com/prometheus/node_exporter/releases/download/v1.3.1/node_exporter-1.3.1.linux-amd64.tar.gz
+	[Unit]
+	Description=Prometheus
+	Wants=network-online.target
+	After=network-online.target
 
-tar -xzf node_exporter-1.3.1.linux-amd64.tar.gz
+	[Service]
+	Type=simple
+	User=prometheus
+	Group=prometheus
+	ExecStart=/usr/local/bin/prometheus \
+	  --config.file=/etc/prometheus/prometheus.yml \
+	  --storage.tsdb.path="/data/prometheus" \
+	  --web.console.templates=/etc/prometheus/consoles \
+	  --web.console.libraries=/etc/prometheus/console_libraries \
+	  --web.listen-address=0.0.0.0:9090 \
+	  --web.enable-admin-api
 
-sudo vi /etc/systemd/system/node_exporter.service
+	Restart=always
 
-[Unit]
+	[Install]
+	WantedBy=multi-user.target
 
-Description=node_exporter
-Wants=network-online.target
-After=network-online.target
+Save the file and enable the Prometheus service at startup
 
-[Service]
+	systemctl enable prometheus
+	systemctl start prometheus
+Test that the service is running
 
-User=prometheus
-Group=prometheus
-Type=simple
-ExecStart=/home/thdl/node_exporter-1.3.1.linux-amd64/node_exporter
+	systemctl status prometheus
 
-[Install]
+	...
+	Active: active (running)
+It should be now possible to access the Prometheus UI by accessing http://localhost:9090.
 
-WantedBy=multi-user.target
+--- Set-up Nginx reverse proxy ---
+Prometheus does not natively support authentication or TLS encryption. If Prometheus has to be exposed outside the boundaries of the local network, it is important to enable authentication and TLS encryption. The following steps show how to use Nginx as a reverse proxy.
+
+Install Nginx, if not already installed
+
+	apt update
+	apt-get install nginx
+By default, Nginx will start listening for HTTP requests in the default http port, which is 80.
+
+If there is already an Nginx instance running on the machine and you are unsure on which port it is listening on, run the following command:
+
+
+	> lsof | grep LISTEN | grep nginx
+
+nginx   15792   root   8u   IPv4   1140223421   0t0   TCP *:http (LISTEN)
+The last column shows the port used by Nginx (http -> 80).
+
+By default, Nginx configuration is located in /etc/nginx/nginx.conf
+
+Make sure that nginx.conf contains the Virtual Host Config section
+
+
+	##
+	# Virtual Host Configs
+	##
+
+	include /etc/nginx/conf.d/*.conf;
+	include /etc/nginx/sites-enabled/*;
+Create a new file in /etc/nginx/conf.d called prometheus.conf
+
+	touch /etc/nginx/conf.d/prometheus.conf
+Edit the newly created file, and paste the following content inside:
+
+server {
+  listen 1234;
+
+  location / {
+    proxy_pass           http://localhost:9090/;
+  }
+}
+Restart Nginx and browse to http://localhost:1234
+
+	systemctl restart nginx
+
+# in case of start-up errors
+journalctl -f -u nginx.service
+Configure Prometheus for reverse proxying, by editing /lib/systemd/system/prometheus.service and add the following argument to the list of arguments passed to the Prometheus executable.
+
+--web.external-url=https://localhost:1234
+Restart the service
+
+systemctl daemon-reload
+systemctl restart prometheus
+
+
+# in case of errors
+journalctl -f -u prometheus.service
+Enable reverse proxy authentication¶
+This section shows how to configure basic authentication via the reverse proxy. If you need a different authentication mechanism (SSO, etc.) please check the relevant documentation.
+
+Make sure that htpasswd is installed on the system
+
+	apt-get install apache2-utils
+Create an authentication file
+
+	cd /etc/prometheus
+	htpasswd -c .credentials admin
+Choose a strong password, and make sure that the pass file was correctly created.
+
+Edit the previously created Nginx configuration file (/etc/nginx/conf.d/prometheus.conf), and add the authentication information.
+	vi /etc/nginx/conf.d/prometheus.conf
+	server {
+	  listen 1234;
+
+	  location / {
+	    auth_basic           "Prometheus";
+	    auth_basic_user_file /etc/prometheus/.credentials;
+	    proxy_pass           http://localhost:9090/;
+	  }
+	}
+Restart Nginx
+
+systemctl restart nginx
+
+--- Installing Grafana on Ubuntu and Debian ---
+Add a gpg key and install the OSS Grafana package from APT repo
+
+	apt-get install -y apt-transport-https
+
+	wget -q -O - "https://packages.grafana.com/gpg.key" | sudo apt-key add -
+	add-apt-repository "deb https://packages.grafana.com/oss/deb stable main"
+	apt-get update
+	apt-get install grafana
+If the system is using systemd, a new grafana-service is automatically created. Check the systemd file to gain some insight on the Grafana installation
+
+	cat /usr/lib/systemd/system/grafana-server.service
+This file is quite important because it offers information about the newly installed Grafana instance.
+
+The file shows:
+
+The Grafana server binary is located at /usr/sbin/grafana-server. The file that defines all the environment variables is located at /etc/default/grafana-server The configuration file is given via the CONF_FILE environment variable. The PID of the file is also determined by the PID_FILE_DIR environment variable. Logging, data, plugins and provisioning paths are given by environment variables.
+
+Start the server
+
+	systemctl start grafana-server
+Access Grafana web console: http://localhost:3000
+The default login for Grafana is admin and the default password is also admin. You will be prompted to change the password on first access.
+
+Configure Prometheus as a Grafana datasource
+Access to the datasources panel by clicking on Configuration > Data sources via the left menu.
+
+Click on Add a datasource
+
+Select a Prometheus data source on the next window.
+
+Configure the datasource according to the Prometheus setup (use authentication, TSL, etc.)
+
+--- Installing Prometheus + Grafana using Docker ---
+This section describes how to start-up a Prometheus stack containing Prometheus and Grafana.
+
+The configuration is based on this project: https://github.com/vegasbrianc/prometheus
+
+Clone this Github project: https://github.com/vegasbrianc/prometheus
+
+Start the Prometheus stack using:
+
+
+docker stack deploy -c docker-stack.yml prom
+The above command, may result in the following error:
+
+This node is not a swarm manager. Use "docker swarm init" or "docker swarm join" to connect this node to swarm and try again
+
+If that happens, you need to start Swarm. You can use the following command line:
+
+
+docker swarm init --advertise-addr <YOUR_IP>
+Once this command runs successfully, you should be able to run the previous command without problems.
+
+The stack contains also a Node exporter for Docker monitoring. If you are not interested in Docker monitoring, you can comment out the relevant sections in the docker-stack.yml file:
+
+node-exporter
+cadvisor
+
+To stop the Prometheus stack:
+
+
+docker stack rm prom
+The Prometheus configuration (prometheus.yml) file is located in the prometheus folder.
+
+Access Grafana web console at: http://localhost:3000 with username: admin and password: foobar
+Configure Prometheus to pull metrics from one or more DHIS2 instances¶
+Prior to using Prometheus, it needs basic configuring. Thus, we need to create a configuration file named prometheus.yml
+
+Note
+
+The configuration file of Prometheus is written in YAML which strictly forbids to use tabs. If your file is incorrectly formatted, Prometheus will not start. Be careful when you edit it.
+
+Prometheus’ configuration file is divided into three parts: global, rule_files, and scrape_configs.
+
+In the global part we can find the general configuration of Prometheus: scrape_interval defines how often Prometheus scrapes targets, evaluation_interval controls how often the software will evaluate rules. Rules are used to create new time series and for the generation of alerts.
+
+The rule_files block contains information of the location of any rules we want the Prometheus server to load.
+
+The last block of the configuration file is named scape_configs and contains the information which resources Prometheus monitors.
+
+A simple DHIS2 Prometheus monitoring file looks like this example:
+
+
+global:
+    scrape_interval: 15s
+    evaluation_interval: 15s
+
+scrape_configs:
+    - job_name: "dhis2"
+      metrics_path: "/dhis/api/metrics"
+      basic_auth:
+          username: admin
+          password: district
+      static_configs:
+          - targets: ["localhost:80"]
+The global scrape_interval is set to 15 seconds which is enough for most use cases.
+
+In the scrape_configs part we have defined the DHIS2 exporter. The basic_auth blocks contains the credentials required to access the metrics API: consider creating an ad-hoc user only for accessing the metrics endpoint.
+
+Prometheus may or may not run on the same server as DHIS2: in the above configuration, it is assumed that Prometheus monitors only one DHIS2 instance, running on the same server as Prometheus, so we use localhost.
+
+
+# in case of errors
+journalctl -f -u nginx.service
+http://localhost:1234 should now prompt for username and password.
+
+--- Configure the DHIS2 exporter ---
+Thêm vào file dhis.conf
+	monitoring.api.enabled = on
+	monitoring.jvm.enabled = on
+	monitoring.dbpool.enabled = on
+	monitoring.hibernate.enabled = on
+	monitoring.uptime.enabled = on
+	monitoring.cpu.enabled = on
+restart lại ứng dụng
+
+--- NODE EXPORTER ---
+
+	wget https://github.com/prometheus/node_exporter/releases/download/v1.3.1/node_exporter-1.3.1.linux-amd64.tar.gz
+
+	tar -xzf node_exporter-1.3.1.linux-amd64.tar.gz
+
+	sudo vi /etc/systemd/system/node_exporter.service
+
+	[Unit]
+
+	Description=node_exporter
+	Wants=network-online.target
+	After=network-online.target
+
+	[Service]
+
+	User=prometheus
+	Group=prometheus
+	Type=simple
+	ExecStart=/home/thdl/node_exporter-1.3.1.linux-amd64/node_exporter
+
+	[Install]
+
+	WantedBy=multi-user.target
 
 Start Node Exporter
-sudo systemctl daemon-reload
-sudo systemctl start node_exporter
-sudo systemctl status node_exporter
+	sudo systemctl daemon-reload
+	sudo systemctl start node_exporter
+	sudo systemctl status node_exporter
 
-sudo vi /etc/prmetheus/prometheus.yml
-- job_name: 'node_exporter'
-static_configs:
-- targets: ['localhost:9100']
-
+sudo vi /etc/prometheus/prometheus.yml
+	- job_name: 'node_exporter'
+	static_configs:
+	- targets: ['localhost:9100']
+	
 sudo systemctl stop prometheus.service
 sudo systemctl start prometheus.service
 
@@ -42,37 +307,69 @@ sudo systemctl start prometheus.service
 In Import via grafana.com, put the dashboard id 1860 and click on Load.
 
 
-PostgreSQL Server Exporter
-wget https://github.com/wrouesnel/postgres_exporter/releases/download/v0.5.1/postgres_exporter_v0.5.1_linux-amd64.tar.gz
+--- PostgreSQL Server Exporter ---
+Step 1: Setting up Postgres Exporter
+In this step you’ll set up the Postgres exporter on your machine to collect and expose Postgres metrics in Prometheus format. This guide uses an Ubuntu 20.04 system with Postgres 13.2. Steps may vary slightly depending on your operating system and Postgres version.
 
-tar -xzvf postgres_exporter_v0.5.1_linux-amd64.tar.gz
+To begin, log in to your machine and download the relevant Postgres Exporter binary. This guide uses the linux-amd64 binary but you should choose the one corresponding to your system’s OS and architecture:
 
-cd postgres_exporter_v0.5.1_linux-amd64
+	wget https://github.com/prometheus-community/postgres_exporter/releases/download/v0.9.0/postgres_exporter-0.9.0.linux-amd64.tar.gz
+Replace v0.9.0 with the version you’d like to install. This guide may become stale so it’s best to check the Postgres Exporter Releases page for the latest stable version.
 
-sudo cp postgres_exporter /usr/local/bin
+Unzip the tarball and cd into the directory:
 
-sudo nano postgres_exporter.env
-# Inside the postgres_exporter.env put the following:
-DATA_SOURCE_NAME="postgresql://dhis:dhis@localhost:5432/dhis2?sslmode=disable"
-# or you can use the following to monitor all the databases available on localhost 
-DATA_SOURCE_NAME="postgresql://postgres:postgres@localhost:5432/?sslmode=disable"
+	tar xvfz postgres_exporter-*.linux-amd64.tar.gz
+cd postgres_exporter-*.linux-amd64
+We’ll be running the Postgres exporter as the postgres user to fetch database metrics. To fetch metrics as a non-superuser, you can follow the instructions from the Postgres Exporter Github Repo.
 
+We need to inform the exporter how to reach the Postgres server. We do that by setting the following environment variable:
 
-[Unit]
-Description=Prometheus exporter for Postgresql
-Wants=network-online.target
-After=network-online.target
-[Service]
-User=postgres
-Group=postgres
-WorkingDirectory=/home/thdl/postgres_exporter_v0.5.1_linux-amd64/postgres_exporter
-EnvironmentFile=/home/thdl/postgres_exporter_v0.5.1_linux-amd64/postgres_exporter.env
-ExecStart=/usr/local/bin/postgres_exporter --web.listen-address=:9187 --web.telemetry-path=/metrics
-Restart=always
-[Install]
-WantedBy=multi-user.target
+	export DATA_SOURCE_NAME='postgresql://postgres:enter_password_here@postgres_hostname:5432/postgres?sslmode=disable'
+Be sure to replace postgres with the user you will be using to fetch metrics from Postgres, enter_password_here with the password for your user, and postgres_hostname with the hostname of the Postgres instance (localhost if you’re on the same machine).
 
+Finally, run the exporter:
 
+	./postgres_exporter
+INFO[0000] Starting Server: :9187                        source="postgres_exporter.go:1850"
+If you see the above output, you successfully ran Postgres Exporter.
+
+Postgres Exporter publishes Postgres metrics in Prometheus format on port 9187. You can test this using curl. You will need to open a new SSH session or background the Postgres Exporter process to use curl.
+
+curl http://localhost:9187/metrics
+# TYPE pg_exporter_scrapes_total counter
+pg_exporter_scrapes_total 1
+# HELP pg_locks_count Number of locks
+# TYPE pg_locks_count gauge
+pg_locks_count{datname="postgres",mode="accessexclusivelock",server="localhost:5432"} 0
+pg_locks_count{datname="postgres",mode="accesssharelock",server="localhost:5432"} 1
+pg_locks_count{datname="postgres",mode="exclusivelock",server="localhost:5432"} 0
+pg_locks_count{datname="postgres",mode="rowexclusivelock",server="localhost:5432"} 0
+pg_locks_count{datname="postgres",mode="rowsharelock",server="localhost:5432"} 0
+pg_locks_count{datname="postgres",mode="sharelock",server="localhost:5432"} 0
+pg_locks_count{datname="postgres",mode="sharerowexclusivelock",server="localhost:5432"} 0
+pg_locks_count{datname="postgres",mode="shareupdateexclusivelock",server="localhost:5432"} 0
+pg_locks_count{datname="postgres",mode="sireadlock",server="localhost:5432"} 0
+If you see the above output, you’re ready to begin scraping Postgres metrics using Prometheus.
+
+	sudo useradd -rs /bin/false postgres
+	sudo vi /etc/systemd/system/postgres_exporter.service	
+
+	[Unit]
+	Description=Prometheus exporter for Postgresql
+	Wants=network-online.target
+	After=network-online.target
+	[Service]
+	User=postgres
+	Group=postgres
+	WorkingDirectory=/home/thdl/postgres_exporter_v0.5.1_linux-amd64/postgres_exporter
+	EnvironmentFile=/home/thdl/postgres_exporter_v0.5.1_linux-amd64/postgres_exporter.env
+	ExecStart=/usr/local/bin/postgres_exporter --web.listen-address=:9187 --web.telemetry-path=/metrics
+	Restart=always
+	[Install]
+	WantedBy=multi-user.target
+In Import via grafana.com, put the dashboard id 9628 and click on Load.
+
+	
 
 
 
