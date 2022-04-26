@@ -671,7 +671,7 @@ function getIdOrg (nameOrg){
 
     //Tuyen Quang
     
-    let arrOrgTQ = [
+    let arrOrg = [
         {
             "id": "Ao8hZC6kMGq",
             "name": "Xã Tân Mỹ"
@@ -8818,7 +8818,7 @@ function getIdOrg (nameOrg){
     ]
     
     // Thua Thien Hue
-    let arrOrg = [
+    let arrOrgHue = [
         {
             "id": "A1ppP8wVFuP",
             "name": "Phường Thuận Hòa"
@@ -10315,10 +10315,26 @@ async function exportTeiFromExcel(sheetName, programId, idOrgUnit, orgName) {
     let checkTeiprogramID;
     for (let i = 3; i < Object.keys(result).length + 3; i++) {
         idOrgUnit = getIdOrg(result[i][1]);
-        let checkTeiTHA;
+        let checkTeiTHA = { "status": "", "teiID": "", "orgUnitID": "" };
+        let checkTeiTHABHYT = { "status": "0", "teiID": "", "orgUnitID": "" };
+        let checkTeiTHACMT = { "status": "0", "teiID": "", "orgUnitID": "" };
         let checkTeiDTD;
         
-            checkTeiTHA = await checkTeiTHAExist(`${result[i][7]}`, `${result[i][8]}`);
+            if(`${result[i][7]}` != '') { checkTeiTHABHYT = await checkTeiTHAbyBHYTExist(`${result[i][7]}`);}
+            if(`${result[i][8]}` != '') { checkTeiTHACMT = await checkTeiTHAbyCMTExist(`${result[i][8]}`);}
+            if(checkTeiTHABHYT.status == 1 || checkTeiTHACMT.status == 1){
+                checkTeiTHA.status = 1
+                if(checkTeiTHABHYT.status == 1) {
+                    checkTeiTHA.teiID = checkTeiTHABHYT.teiID
+                    checkTeiTHA.orgUnitID = checkTeiTHABHYT.orgUnitID
+                }
+                if(checkTeiTHACMT.status == 1) {
+                    checkTeiTHA.teiID = checkTeiTHACMT.teiID
+                    checkTeiTHA.orgUnitID = checkTeiTHACMT.orgUnitID
+                }
+            } else {
+                checkTeiTHA.status = 0
+            }
             checkTeiDTD = await checkTeiDTDExist(`${result[i][7]}`, `${result[i][8]}`);
             if (checkTeiTHA.status != 0 || checkTeiDTD.status != 0) {
                 if(checkTeiTHA.status == 1 && checkTeiDTD.status == 0 && sheetName == 'DTD') {
@@ -10738,26 +10754,46 @@ function add0toCMT(mCMT) {
     return mCMT = `0${mCMT}`
 }
 
-function checkTeiTHAExist(mBHYT, mCMT) {
+function checkTeiTHAbyBHYTExist(mBHYT) {
     return new Promise((resolve, reject) => {
-        let result = { "status": "", "teiID": "", "orgUnitID": "" };
+        let result = { "status": "0", "teiID": "", "orgUnitID": "" };
         let url = ``
         if (mBHYT != '') {
             url = baseUrl + `/api/trackedEntityInstances.json?ou=nJm9lSLVvG8&ouMode=ACCESSIBLE&program=NAleauPZvIE&attribute=JHb1hzseNMg:EQ:${mBHYT}&paging=false`
-        } else {
+            _axios.get(url, authentication).then(res => {
+                let checkKey = res.data.trackedEntityInstances.length
+                if (checkKey == 1) {
+                    result.status = '1'
+                    result.teiID = res.data.trackedEntityInstances[0].trackedEntityInstance;
+                    result.orgUnitID = res.data.trackedEntityInstances[0].orgUnit;
+                } else {
+                    result.status = '0'
+                }
+                resolve(result);
+            })
+        }        
+    })
+}
+
+function checkTeiTHAbyCMTExist(mCMT) {
+    return new Promise((resolve, reject) => {
+        let result = { "status": "0", "teiID": "", "orgUnitID": "" };
+        let url = `` 
+        if (mCMT != '') {
             url = baseUrl + `/api/trackedEntityInstances.json?ou=nJm9lSLVvG8&ouMode=ACCESSIBLE&program=NAleauPZvIE&attribute=ZQ93P672wQR:EQ:${mCMT}&paging=false`
+            _axios.get(url, authentication).then(res => {
+                let checkKey = res.data.trackedEntityInstances.length
+                if (checkKey == 1) {
+                    result.status = '1'
+                    result.teiID = res.data.trackedEntityInstances[0].trackedEntityInstance;
+                    result.orgUnitID = res.data.trackedEntityInstances[0].orgUnit;
+                } else {
+                    result.status = '0'
+                }
+                resolve(result);
+            })
         }
-        _axios.get(url, authentication).then(res => {
-            let checkKey = res.data.trackedEntityInstances.length
-            if (checkKey == 1) {
-                result.status = '1'
-                result.teiID = res.data.trackedEntityInstances[0].trackedEntityInstance;
-                result.orgUnitID = res.data.trackedEntityInstances[0].orgUnit;
-            } else {
-                result.status = '0'
-            }
-            resolve(result);
-        })
+        
     })
 }
 
