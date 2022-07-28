@@ -671,7 +671,7 @@ function getIdOrg (nameOrg){
 
     //Tuyen Quang
     
-    let arrOrg = [
+    let arrOrgTuyenQuang = [
         {
             "id": "Ao8hZC6kMGq",
             "name": "Xã Tân Mỹ"
@@ -10256,6 +10256,1210 @@ function getIdOrg (nameOrg){
             "name": "Xã Thượng Nung"
         }
     ]
+
+    // Binh Duong
+    let arrOrg = [
+        {
+            "id": "a15pPz6pD2Y",
+            "name": "Phường Hòa Lợi"
+        },
+        {
+            "id": "adenYSy8P7z",
+            "name": "Phòng khám chuyên khoa huyện Phú Giáo"
+        },
+        {
+            "id": "aFTWaFVEyYA",
+            "name": "Phường Phú Lợi"
+        },
+        {
+            "id": "ahryareTC2t",
+            "name": "PKĐK Tâm Thiện Tâm"
+        },
+        {
+            "id": "AmnG3S1W37N",
+            "name": "Xã Minh Tân"
+        },
+        {
+            "id": "axSNWSQk8Vy",
+            "name": "PKĐK Đức Trí"
+        },
+        {
+            "id": "aYGTGSmkf5d",
+            "name": "PKĐK Nam An"
+        },
+        {
+            "id": "b7xtAY7GrRR",
+            "name": "Phòng y tế Thị xã Dĩ An"
+        },
+        {
+            "id": "Bbk2mrAHFYy",
+            "name": "Phòng khám chuyên khoa TX Tân Uyên"
+        },
+        {
+            "id": "bCbI3mFRuMp",
+            "name": "Xã Bạch Đằng"
+        },
+        {
+            "id": "BdORnkvIKi9",
+            "name": "PKĐK Bình Đáng"
+        },
+        {
+            "id": "Bf3HWHmuPpw",
+            "name": "Phường Uyên Hưng"
+        },
+        {
+            "id": "bfbwSoFjcDX",
+            "name": "Xã Tân Định"
+        },
+        {
+            "id": "bGKQF1XFp1p",
+            "name": "Phường Bình Thắng"
+        },
+        {
+            "id": "bS9ox6efTZK",
+            "name": "PKĐK Thánh Tâm"
+        },
+        {
+            "id": "BSDNOODDEle",
+            "name": "Phòng khám chuyên khoa TX Dĩ An"
+        },
+        {
+            "id": "bWnOrPOVsjt",
+            "name": "Phường Tân An"
+        },
+        {
+            "id": "bXcnRWIgkHH",
+            "name": "PKĐK Phúc Tân "
+        },
+        {
+            "id": "c0mXKiZhpI8",
+            "name": "Xã An Bình"
+        },
+        {
+            "id": "c3XGhxOdyTK",
+            "name": "PKĐK Đại Tín"
+        },
+        {
+            "id": "cCntjtumHHF",
+            "name": "Xã Tân Mỹ"
+        },
+        {
+            "id": "cR4Caxj1BJ6",
+            "name": "Xã Đất Cuốc"
+        },
+        {
+            "id": "cuIMibgkM1Y",
+            "name": "Phòng y tế Huyện Dầu Tiếng"
+        },
+        {
+            "id": "CWhU86etwTA",
+            "name": "PKĐK Nhân Hòa"
+        },
+        {
+            "id": "DbExQkcVc4A",
+            "name": "Phòng y tế Thị xã Thuận An"
+        },
+        {
+            "id": "ddYWrSsGzMh",
+            "name": "Phường An Bình"
+        },
+        {
+            "id": "DlH0iBs0dxU",
+            "name": "PKĐK Nhân Sinh"
+        },
+        {
+            "id": "DmADrb9YRJk",
+            "name": "xã Hưng Hòa"
+        },
+        {
+            "id": "DXT3Y5wAawS",
+            "name": "Phường Tân Phước Khánh"
+        },
+        {
+            "id": "eeSb3WKNc7b",
+            "name": "PKĐK Sóng Thần"
+        },
+        {
+            "id": "eeWKwrc00tN",
+            "name": "Phường Phú Tân"
+        },
+        {
+            "id": "EGjHZ4azvim",
+            "name": "TTYT Thị xã Thuận An"
+        },
+        {
+            "id": "EjNckVdB6A9",
+            "name": "PKĐK Phúc Tâm 2"
+        },
+        {
+            "id": "ErMaUt5kzm0",
+            "name": "TTYT Huyện Dĩ An"
+        },
+        {
+            "id": "EtdtsNamlKS",
+            "name": "Thị trấn Dầu Tiếng"
+        },
+        {
+            "id": "eTWrEFbGRAv",
+            "name": "PKĐK Phúc Tân Phúc"
+        },
+        {
+            "id": "ExndMF4yP6M",
+            "name": "Phường Chánh Mỹ"
+        },
+        {
+            "id": "eXtHSiBgQ7H",
+            "name": "TTYT Huyện Phú Giáo"
+        },
+        {
+            "id": "f0u5OXrrHdj",
+            "name": "Xã Minh Thạnh"
+        },
+        {
+            "id": "F5hVs7ROqGr",
+            "name": "Phòng khám chuyên khoa TX Thuận An"
+        },
+        {
+            "id": "fEmGSjemIft",
+            "name": "Xã Phú Chánh"
+        },
+        {
+            "id": "FjH99ULmylq",
+            "name": "PKĐK Hương Phúc"
+        },
+        {
+            "id": "fLWmfVsIDr4",
+            "name": "Xã Định Thành"
+        },
+        {
+            "id": "furu9J7GVLf",
+            "name": "PKĐK Hồng Phúc"
+        },
+        {
+            "id": "Fy4aLT3Axib",
+            "name": "Xã An Điền"
+        },
+        {
+            "id": "G0XpgD34ezO",
+            "name": "PKĐK Long Bửu"
+        },
+        {
+            "id": "g4QMLyTAZFI",
+            "name": "Phòng khám chuyên khoa huyện Dầu Tiếng"
+        },
+        {
+            "id": "GhZrI3MynOP",
+            "name": "Phòng khám chuyên khoa huyện Bàu Bàng"
+        },
+        {
+            "id": "gI3dHn4GulH",
+            "name": "Xã Hiếu Liêm"
+        },
+        {
+            "id": "gJTM0iYsFrA",
+            "name": "Xã Tân Bình"
+        },
+        {
+            "id": "GLzktCnkCzK",
+            "name": "Phường Lái Thiêu"
+        },
+        {
+            "id": "gRRTfoFBzZY",
+            "name": "PKĐK Minh Phúc "
+        },
+        {
+            "id": "GuE7y4mWD42",
+            "name": "PKĐK An An Bình"
+        },
+        {
+            "id": "gy5gXdBTPe5",
+            "name": "Phường Bình Hòa"
+        },
+        {
+            "id": "H05r2lHSiae",
+            "name": "PKĐK Sài Gòn Meidic"
+        },
+        {
+            "id": "H1UmHHc8zMO",
+            "name": "PKĐK Phúc An Khang"
+        },
+        {
+            "id": "HDdfybWc5AD",
+            "name": "Phường Phú Cường"
+        },
+        {
+            "id": "HiiL0g9x0VZ",
+            "name": "PKĐK Vũ Dương"
+        },
+        {
+            "id": "hR0fPGcih4e",
+            "name": "PKĐK Châu Thành"
+        },
+        {
+            "id": "HZjdvllw1Gh",
+            "name": "Phòng y tế Huyện Bàu Bàng"
+        },
+        {
+            "id": "i3XZ8HY9eLX",
+            "name": "PKĐK Bình An"
+        },
+        {
+            "id": "I6iWiBWYbg0",
+            "name": "Phòng y tế Huyện Bắc Tân Uyên"
+        },
+        {
+            "id": "ieCQQcpFV52",
+            "name": "Xã Phước Hoà"
+        },
+        {
+            "id": "IPJSxPEuT7P",
+            "name": "Phường Đông Hòa"
+        },
+        {
+            "id": "iPw2elpZT2H",
+            "name": "Phường Phú Hòa"
+        },
+        {
+            "id": "IVwVcNZvhpI",
+            "name": "Xã Long Nguyên"
+        },
+        {
+            "id": "iW2fjX7nbLW",
+            "name": "PKĐK Tân Thành Bình Chuẩn"
+        },
+        {
+            "id": "J89wTlM6kB2",
+            "name": "Xã An Sơn"
+        },
+        {
+            "id": "jdyqNmBMFaO",
+            "name": "Phường Phú Thọ"
+        },
+        {
+            "id": "JluI0cUAzIa",
+            "name": "Phường Dĩ An"
+        },
+        {
+            "id": "jmVV9lj76OO",
+            "name": "Phường An Phú"
+        },
+        {
+            "id": "jn54QBXkl6S",
+            "name": "Xã Phú An"
+        },
+        {
+            "id": "JNFIxs94KGP",
+            "name": "Phường Bình Nhâm"
+        },
+        {
+            "id": "JNhzTw58oeJ",
+            "name": "PKĐK Sài Gòn Vĩnh Phú"
+        },
+        {
+            "id": "JRXlom3YvTq",
+            "name": "Xã Tân Lập"
+        },
+        {
+            "id": "juOkbOb0aNE",
+            "name": "Xã Lạc An"
+        },
+        {
+            "id": "jzTZzwR0Guf",
+            "name": "Phòng y tế Thị xã Bến Cát"
+        },
+        {
+            "id": "KjRW587JJC1",
+            "name": "PKĐK Vũ Cao"
+        },
+        {
+            "id": "kvLRaolqlWt",
+            "name": "Xã Tân Hiệp"
+        },
+        {
+            "id": "kwW4pdfBiBv",
+            "name": "Phường Thới Hòa"
+        },
+        {
+            "id": "LbRuvwhopj4",
+            "name": "PKĐK Hoài Anh"
+        },
+        {
+            "id": "lRytvVZ4HtB",
+            "name": "Phường Định Hoà"
+        },
+        {
+            "id": "lW8QXPSHk82",
+            "name": "Phường Tân Hiệp"
+        },
+        {
+            "id": "maT8utsDZ8n",
+            "name": "Phường Tân Đông Hiệp"
+        },
+        {
+            "id": "mb3LRremehL",
+            "name": "Xã Tân Thành"
+        },
+        {
+            "id": "mj1KIpn6RgX",
+            "name": "Xã Vĩnh Hoà"
+        },
+        {
+            "id": "mKeth6pE94v",
+            "name": "Xã Thanh An"
+        },
+        {
+            "id": "Mmc53NGhXIZ",
+            "name": "PKĐK Dĩ An"
+        },
+        {
+            "id": "mpHq2HPiCxb",
+            "name": "PKĐK Nhân Nghĩa"
+        },
+        {
+            "id": "NCZSrGFB5Wl",
+            "name": "PKĐK Bạch Đằng"
+        },
+        {
+            "id": "ngENS63AiO2",
+            "name": "Xã Thường Tân"
+        },
+        {
+            "id": "niza9vaXgD5",
+            "name": "Xã Tân Hưng"
+        },
+        {
+            "id": "NmiGqkJ1SD6",
+            "name": "Xã An Lập"
+        },
+        {
+            "id": "NNZmd8kGaaL",
+            "name": "Xã An Linh"
+        },
+        {
+            "id": "nPHEkti8eMK",
+            "name": "PKĐK Ngọc Hồng"
+        },
+        {
+            "id": "Nt13aW2219k",
+            "name": "Thị trấn Phước Vĩnh"
+        },
+        {
+            "id": "NvfeP8NZW4i",
+            "name": "PKĐK Quốc Tế Perfect (PF 5)"
+        },
+        {
+            "id": "NY6l1fs0I9m",
+            "name": "PKĐK Ngân Hà"
+        },
+        {
+            "id": "o0q2OkWe3fv",
+            "name": "PKĐK Nhân Đức Sài Gòn Hai"
+        },
+        {
+            "id": "oKrRIzFwddn",
+            "name": "PKĐK Tâm Đức"
+        },
+        {
+            "id": "OnnNfGJcXsi",
+            "name": "PKĐK Vạn Phúc 1"
+        },
+        {
+            "id": "ooSiMyFQ9P0",
+            "name": "Xã Tân Vĩnh Hiệp"
+        },
+        {
+            "id": "oQNULeaRI96",
+            "name": "PKĐK An Phước Sài Gòn"
+        },
+        {
+            "id": "OtaUuOMnHo7",
+            "name": "Phường Mỹ Phước"
+        },
+        {
+            "id": "ov36hmkty22",
+            "name": "PKĐK Vạn Phúc 2"
+        },
+        {
+            "id": "ox6RK5JCyra",
+            "name": "Phường Tân Bình"
+        },
+        {
+            "id": "Pee58hDvmAB",
+            "name": "PKĐK An Phước Sài Gòn II"
+        },
+        {
+            "id": "pElYlZyGiSp",
+            "name": "PKĐK Sài Gòn An Tây"
+        },
+        {
+            "id": "PFIl6UgNHGZ",
+            "name": "PKĐK Quốc Tế Perfect (PF5)"
+        },
+        {
+            "id": "PkhkOY1bIEZ",
+            "name": "PKĐK Mecdic Miền Đông"
+        },
+        {
+            "id": "PuyuwcaJEZa",
+            "name": "Phường Bình An"
+        },
+        {
+            "id": "pzrTL4ySu88",
+            "name": "Phường Thái Hòa"
+        },
+        {
+            "id": "QCDae6sWzU5",
+            "name": "Xã Trừ Văn Thố"
+        },
+        {
+            "id": "qjYfrGGrIHa",
+            "name": "Phường Chánh Nghĩa"
+        },
+        {
+            "id": "qmFj32jldvi",
+            "name": "PKĐK Nhi đồng Sài Gòn"
+        },
+        {
+            "id": "qp4tFUoJQkv",
+            "name": "Phường Hiệp An"
+        },
+        {
+            "id": "QPx0jg1Oosu",
+            "name": "Phường Hiệp Thành"
+        },
+        {
+            "id": "QWivxSgc3xx",
+            "name": "Phường Phú Mỹ"
+        },
+        {
+            "id": "QXSEzmdZ49K",
+            "name": "Xã Tam Lập"
+        },
+        {
+            "id": "r93eSt0dmlH",
+            "name": "Xã Thanh Tuyền"
+        },
+        {
+            "id": "RKDzldlnrcI",
+            "name": "TTYT Thị xã Bến Cát"
+        },
+        {
+            "id": "RrfUR8nTmwB",
+            "name": "PKĐK Sài Gòn Tân Bình"
+        },
+        {
+            "id": "RvKJHQt0g5i",
+            "name": "Phòng khám chuyên khoa TP Thủ Dầu Một"
+        },
+        {
+            "id": "s2Ho2id2ihg",
+            "name": "PKĐK Nhân Đức Sài Gòn"
+        },
+        {
+            "id": "s9IId7FMba9",
+            "name": "TTYT TP Thủ Dầu Một"
+        },
+        {
+            "id": "SAVh5XvEbrJ",
+            "name": "PKĐK Hoàn Hảo IV"
+        },
+        {
+            "id": "sgnRSGkbV4V",
+            "name": "PKĐK Sài Gòn Bàu Bàng"
+        },
+        {
+            "id": "SkDA0PIE8aI",
+            "name": "PKĐKKV Phước Hòa"
+        },
+        {
+            "id": "sN6BgLucw6S",
+            "name": "Phường An Thạnh"
+        },
+        {
+            "id": "sTeNlP17SV8",
+            "name": "Phường Khánh Bình"
+        },
+        {
+            "id": "SWDsnyQhNNK",
+            "name": "Xã Long Hoà"
+        },
+        {
+            "id": "sXwKHQ32Xoh",
+            "name": "PKĐK Trần Đức Minh"
+        },
+        {
+            "id": "t5Fidrie5eo",
+            "name": "TTYT Huyện Bàu Bàng"
+        },
+        {
+            "id": "tAzWbZWoIUr",
+            "name": "PKĐK Vũ Mẫn"
+        },
+        {
+            "id": "u5n1hE2XBPy",
+            "name": "Phường Hưng Định"
+        },
+        {
+            "id": "U7LdcgN42R1",
+            "name": "Xã Lai Uyên"
+        },
+        {
+            "id": "uB5rQizhpup",
+            "name": "TTYT Thị xã Tân Uyên"
+        },
+        {
+            "id": "UCTBGKQUuSa",
+            "name": "Xã An Tây"
+        },
+        {
+            "id": "Uk9aCMTG2ZJ",
+            "name": "Phường Tân Định"
+        },
+        {
+            "id": "umD5zz39VkJ",
+            "name": "Phường Vĩnh Phú"
+        },
+        {
+            "id": "uP5Mq0rkfzB",
+            "name": "Xã Tân Long"
+        },
+        {
+            "id": "Ut3WZzynnjd",
+            "name": "Phòng khám chuyên khoa huyện Bắc Tân Uyên"
+        },
+        {
+            "id": "UUF8ToHy9Y2",
+            "name": "Phòng khám chuyên khoa TX Bến Cát"
+        },
+        {
+            "id": "uVM9mzvv1Lf",
+            "name": "Xã An Long"
+        },
+        {
+            "id": "UXL23ircBxO",
+            "name": "Phường Bình Chuẩn"
+        },
+        {
+            "id": "UXNDYz34YtM",
+            "name": "PKĐK HePa Phước An"
+        },
+        {
+            "id": "vJyQTJ5ow2H",
+            "name": "TTYT Huyện Dầu Tiếng"
+        },
+        {
+            "id": "vloO8W3zey8",
+            "name": "Xã Long Tân"
+        },
+        {
+            "id": "VXEwIxA4l8P",
+            "name": "Xã Lai Hưng"
+        },
+        {
+            "id": "WssndchC29c",
+            "name": "Xã An Thái"
+        },
+        {
+            "id": "WY3IAb03e6v",
+            "name": "PKĐK Uyên Uyên"
+        },
+        {
+            "id": "wyHNb8K4sB7",
+            "name": "Phường Thạnh Phước"
+        },
+        {
+            "id": "x3PrZa03xsQ",
+            "name": "Phòng y tế Thị xã Tân Uyên"
+        },
+        {
+            "id": "x3XdtaQH1tv",
+            "name": "Xã Phước Sang"
+        },
+        {
+            "id": "XHzuJcK6rjC",
+            "name": "Xã Hội Nghĩa"
+        },
+        {
+            "id": "XrQec8UZnNS",
+            "name": "PKĐK Quốc tế Sài Gòn 368"
+        },
+        {
+            "id": "xxgUE8KWEts",
+            "name": "Xã Minh Hoà"
+        },
+        {
+            "id": "yaWkKQKTvs7",
+            "name": "Phường Hoà Phú"
+        },
+        {
+            "id": "YaWqMlBNWtu",
+            "name": "PKĐK Nguyễn Trãi"
+        },
+        {
+            "id": "yF10eDrDqX4",
+            "name": "PKĐK Y Dược An Sài Gòn"
+        },
+        {
+            "id": "YF1HDBFuNa5",
+            "name": "PKĐK Thuận Thảo"
+        },
+        {
+            "id": "YNmlWbf9ks6",
+            "name": "PKĐK Tín Đức"
+        },
+        {
+            "id": "Yp78yp8GUeI",
+            "name": "Phường Thuận Giao"
+        },
+        {
+            "id": "yqtwuuXV50s",
+            "name": "Xã Thạnh Hội"
+        },
+        {
+            "id": "yVsCqSrlQZD",
+            "name": "Xã Định An"
+        },
+        {
+            "id": "yxDY9d6rONA",
+            "name": "Phường Tương Bình Hiệp"
+        },
+        {
+            "id": "z4SuM5WqofB",
+            "name": "Xã Cây Trường"
+        },
+        {
+            "id": "ZbFngzhwkp0",
+            "name": "Xã Bình Mỹ"
+        },
+        {
+            "id": "ZeuUDLeC4F4",
+            "name": "Phòng y tế Huyện Phú Giáo"
+        },
+        {
+            "id": "zOeXrm24Wrh",
+            "name": "Xã Định Hiệp"
+        },
+        {
+            "id": "ZPB1TbxLgVt",
+            "name": "Xã Vĩnh Tân"
+        },
+        {
+            "id": "ZQy5OuHWr4O",
+            "name": "TTYT Huyện Bắc Tân Uyên"
+        },
+        {
+            "id": "ZvWLnaGQVNm",
+            "name": "PKĐK Medic BD CS 2"
+        },
+        {
+            "id": "zY0TQTPBaQM",
+            "name": "Phường Chánh Phú Hòa"
+        },
+        {
+            "id": "zzD2pgxz1LG",
+            "name": "PKĐK Đại Minh Phước"
+        }
+    ]
+
+    // Bắc Kạn
+    let arrOrgBacKan = [
+        {
+            "id": "dhqz278i7TV",
+            "name": "Xã Đồng Phúc"
+        },
+        {
+            "id": "avNuefOY4ul",
+            "name": "Xã Yên Mỹ"
+        },
+        {
+            "id": "AZVWZatl4KM",
+            "name": "Phường Xuất Hóa"
+        },
+        {
+            "id": "Bezjxbjys6l",
+            "name": "Xã Vũ Muộn"
+        },
+        {
+            "id": "biruoIvOj83",
+            "name": "PYT Huyện Chợ Mới"
+        },
+        {
+            "id": "bMHoBfsRFSa",
+            "name": "Xã Yên Cư"
+        },
+        {
+            "id": "bnz1gqtSHSW",
+            "name": "Xã Địa Linh"
+        },
+        {
+            "id": "bOzDq38iPSr",
+            "name": "TTYT Huyện Bạch Thông"
+        },
+        {
+            "id": "BSD1gqR8fPE",
+            "name": "TTYT Huyện Pác Nặm"
+        },
+        {
+            "id": "bvqJhESJbsI",
+            "name": "Xã Bằng Thành"
+        },
+        {
+            "id": "c3aEDqLnF4b",
+            "name": "Xã Lục Bình"
+        },
+        {
+            "id": "d3QrL83ZA1W",
+            "name": "Xã Thanh Thịnh"
+        },
+        {
+            "id": "dmYkl2FfaxI",
+            "name": "Phường Huyền Tụng"
+        },
+        {
+            "id": "Do7t27zIDhj",
+            "name": "Xã Hoàng Trĩ"
+        },
+        {
+            "id": "dotehBUKI5K",
+            "name": "TTYT Huyện Ngân Sơn"
+        },
+        {
+            "id": "dpDrIm9bdvO",
+            "name": "Xã Dương Sơn"
+        },
+        {
+            "id": "dTMPb4rWrgR",
+            "name": "Thị trấn Bằng Lũng"
+        },
+        {
+            "id": "dUgWnc9AOdV",
+            "name": "Phường Đức Xuân"
+        },
+        {
+            "id": "DwNPEXzJxKg",
+            "name": "Xã Quân Hà"
+        },
+        {
+            "id": "dY1Pl2Yf7jI",
+            "name": "Xã Đôn Phong"
+        },
+        {
+            "id": "eGPyMylXehl",
+            "name": "Xã Cốc Đán"
+        },
+        {
+            "id": "ePHXlBDUmBn",
+            "name": "Xã Kim Hỷ"
+        },
+        {
+            "id": "eSd3eAn4Dzb",
+            "name": "Xã Bành Trạch"
+        },
+        {
+            "id": "eV5KBi5LVMN",
+            "name": "Xã Nam Mẫu"
+        },
+        {
+            "id": "ewdD9InVlmd",
+            "name": "TTYT Huyện Chợ Mới"
+        },
+        {
+            "id": "EZCnzzFhyMN",
+            "name": "Xã Giáo Hiệu"
+        },
+        {
+            "id": "F4SuGaB3kEf",
+            "name": "Xã Bình Trung"
+        },
+        {
+            "id": "FIBtc7CIu2H",
+            "name": "Xã Yên Hân"
+        },
+        {
+            "id": "FJPcTiaV91B",
+            "name": "Thị trấn Yến Lạc"
+        },
+        {
+            "id": "fPTDlMyGMTl",
+            "name": "Xã Hòa Mục"
+        },
+        {
+            "id": "fWzwpqwefkA",
+            "name": "Thị trấn Phủ Thông"
+        },
+        {
+            "id": "gjru9ZhogyV",
+            "name": "TTYT Huyện Ba Bể"
+        },
+        {
+            "id": "GrOvzigENgY",
+            "name": "Xã Văn Minh"
+        },
+        {
+            "id": "gumuKuEvxAd",
+            "name": "Xã Quảng Khê"
+        },
+        {
+            "id": "gZWYw4trffa",
+            "name": "Xã Nông Hạ"
+        },
+        {
+            "id": "gZXmN2iMuB0",
+            "name": "Xã Phúc Lộc"
+        },
+        {
+            "id": "HpwMF0DVXKM",
+            "name": "Xã Mỹ Thanh"
+        },
+        {
+            "id": "iN6AyongIE6",
+            "name": "Xã Cao Sơn"
+        },
+        {
+            "id": "JANGuos9rSZ",
+            "name": "Xã Côn Minh"
+        },
+        {
+            "id": "jS2uLjEw6Ci",
+            "name": "Xã Thanh Vận"
+        },
+        {
+            "id": "jsCjUWPuWy2",
+            "name": "Xã Xuân La"
+        },
+        {
+            "id": "jzkGrSPshoZ",
+            "name": "Xã Yến Dương"
+        },
+        {
+            "id": "KSPj8bLofWk",
+            "name": "PYT Huyện Pác Nặm"
+        },
+        {
+            "id": "KtBUK3n5PU2",
+            "name": "Xã Quang Phong"
+        },
+        {
+            "id": "L2mIl4HSD4Y",
+            "name": "PYT Huyện Ngân Sơn"
+        },
+        {
+            "id": "LBGZbBxS2uJ",
+            "name": "Xã Quảng Chu"
+        },
+        {
+            "id": "LCEsRwCLmAe",
+            "name": "PYT Huyện Ba Bể"
+        },
+        {
+            "id": "leyU9vD5VA7",
+            "name": "Xã Dương Quang"
+        },
+        {
+            "id": "LIwbLVZ8Gz5",
+            "name": "Phường Phùng Chí Kiên"
+        },
+        {
+            "id": "LMUUx76sCoo",
+            "name": "Xã Phương Viên"
+        },
+        {
+            "id": "LRZcjmM6neK",
+            "name": "Xã Nguyên Phúc"
+        },
+        {
+            "id": "lXuBZSBjqDz",
+            "name": "TTYT Huyện Na Rì"
+        },
+        {
+            "id": "LzdHBMv1CeX",
+            "name": "Xã Nhạn Môn"
+        },
+        {
+            "id": "LZGulJmXSwS",
+            "name": "Xã Cổ Linh"
+        },
+        {
+            "id": "mImbPch0ucr",
+            "name": "Xã Hiệp Lực"
+        },
+        {
+            "id": "mTgk9byN7DT",
+            "name": "Xã Quang Thuận"
+        },
+        {
+            "id": "mXPn6W0S1nc",
+            "name": "PYT Huyện Bạch Thông"
+        },
+        {
+            "id": "n9KwjTJekDJ",
+            "name": "Xã Lương Thượng"
+        },
+        {
+            "id": "nBygPFrSIQU",
+            "name": "TTYT Thành Phố Bắc Kạn"
+        },
+        {
+            "id": "Ncgoy1hQnPy",
+            "name": "Xã Nghiên Loan"
+        },
+        {
+            "id": "NfRUdE81EN4",
+            "name": "Phường Sông Cầu"
+        },
+        {
+            "id": "NGW5gAUINg7",
+            "name": "Xã Bình Văn"
+        },
+        {
+            "id": "NqpG4ibFi76",
+            "name": "Xã Lương Bằng"
+        },
+        {
+            "id": "oUegO5a9gcc",
+            "name": "PYT Thị xã Bắc Kạn"
+        },
+        {
+            "id": "oux8Wo7yD6m",
+            "name": "Xã Nam Cường"
+        },
+        {
+            "id": "p0oSvdVd4Ic",
+            "name": "Xã Xuân Dương"
+        },
+        {
+            "id": "pChGX4O76oL",
+            "name": "Xã Tân Lập"
+        },
+        {
+            "id": "PgimW3DchXy",
+            "name": "Xã Đồng Lạc"
+        },
+        {
+            "id": "puc3bzv6lP6",
+            "name": "Xã Mai Lạp"
+        },
+        {
+            "id": "pxmeIeTQUiI",
+            "name": "Xã Cường Lợi"
+        },
+        {
+            "id": "Q9jAjPsX8XH",
+            "name": "Xã Cao Kỳ"
+        },
+        {
+            "id": "qCRlyFouD1U",
+            "name": "Xã Đại Sảo"
+        },
+        {
+            "id": "QFWtuVZOuxx",
+            "name": "Thị trấn Nà Phặc"
+        },
+        {
+            "id": "QhCwiE3jO2r",
+            "name": "Xã Nông Thượng"
+        },
+        {
+            "id": "QKAj50O0r9Q",
+            "name": "Phường Nguyễn Thị Minh Khai"
+        },
+        {
+            "id": "qwwzUH2gSG9",
+            "name": "Xã An Thắng"
+        },
+        {
+            "id": "R4Ct6VGp7ZX",
+            "name": "Xã Vi Hương"
+        },
+        {
+            "id": "RcRAOj8mOSg",
+            "name": "Xã Công Bằng"
+        },
+        {
+            "id": "RHbZ4f8UqTR",
+            "name": "Xã Dương Phong"
+        },
+        {
+            "id": "rixpW1FqBTz",
+            "name": "Xã Vân Tùng"
+        },
+        {
+            "id": "rRIa74zAmC8",
+            "name": "Xã Bằng Phúc"
+        },
+        {
+            "id": "RsatMxUhYAv",
+            "name": "Xã Văn Vũ"
+        },
+        {
+            "id": "RZtMHHOWl4g",
+            "name": "Xã Khang Ninh"
+        },
+        {
+            "id": "sDbDqi1lO2i",
+            "name": "Xã Trung Hoà"
+        },
+        {
+            "id": "Sh2tY0nEjdM",
+            "name": "Xã Liêm Thủy"
+        },
+        {
+            "id": "SVx6SbKkyiC",
+            "name": "Xã Tân Sơn"
+        },
+        {
+            "id": "swvyC07fE9h",
+            "name": "Xã Thượng Quan"
+        },
+        {
+            "id": "SX7MP3hsSYR",
+            "name": "TTYT Huyện Chợ Đồn"
+        },
+        {
+            "id": "szF3pJEj1t4",
+            "name": "Xã Trần Phú"
+        },
+        {
+            "id": "T24ZpZMgdVn",
+            "name": "Xã Bằng Lãng"
+        },
+        {
+            "id": "tPPcnyvQZk9",
+            "name": "Xã Đồng Thắng"
+        },
+        {
+            "id": "TpqPNxOYiSp",
+            "name": "Xã Văn Lang"
+        },
+        {
+            "id": "tvke1xLKa7l",
+            "name": "Xã Bằng Vân"
+        },
+        {
+            "id": "TyyvCwwYJHH",
+            "name": "Xã Đức Vân"
+        },
+        {
+            "id": "tzB2IKSs4sm",
+            "name": "Xã Cẩm Giàng"
+        },
+        {
+            "id": "UcsUQmTPIY1",
+            "name": "Thị trấn Chợ Rã"
+        },
+        {
+            "id": "UE2okp3hxad",
+            "name": "Xã Cao Tân"
+        },
+        {
+            "id": "uIuzM0h7tDJ",
+            "name": "Xã Yên Phong"
+        },
+        {
+            "id": "UOBq2ouKMWs",
+            "name": "Xã Chu Hương"
+        },
+        {
+            "id": "Up4VmssyCKu",
+            "name": "Xã Cao Thượng"
+        },
+        {
+            "id": "URIQpixz5VI",
+            "name": "PYT Huyện Na Rì"
+        },
+        {
+            "id": "uSnyLheHHAy",
+            "name": "Xã Thượng Giáo"
+        },
+        {
+            "id": "v6C0ufYyren",
+            "name": "Xã Ngọc Phái"
+        },
+        {
+            "id": "VKUTXa4JxlL",
+            "name": "Xã Bộc Bố"
+        },
+        {
+            "id": "Vl2sohrAs4X",
+            "name": "Xã Thanh Mai"
+        },
+        {
+            "id": "Vq8985PXmBr",
+            "name": "Xã Thượng Ân"
+        },
+        {
+            "id": "Vy3Ag2qgx7V",
+            "name": "Xã Thuần Mang"
+        },
+        {
+            "id": "vZMSk9DIbTr",
+            "name": "Xã Đồng Xá"
+        },
+        {
+            "id": "WaF7IzxS7qy",
+            "name": "Xã Quảng Bạch"
+        },
+        {
+            "id": "wBuwuXJ3qGL",
+            "name": "Xã Bản Thi"
+        },
+        {
+            "id": "xLMg2cWlAnd",
+            "name": "Xã Sĩ Bình"
+        },
+        {
+            "id": "XuGg0licxse",
+            "name": "PYT Huyện Chợ Đồn"
+        },
+        {
+            "id": "xunBEyWLztj",
+            "name": "Xã Tân Tú"
+        },
+        {
+            "id": "y0qdVvQoQaA",
+            "name": "Thị trấn Đồng Tâm"
+        },
+        {
+            "id": "y3T7o3coWvQ",
+            "name": "Xã Kim Lư"
+        },
+        {
+            "id": "yD5YA3ke3Or",
+            "name": "Xã Nghĩa Tá"
+        },
+        {
+            "id": "YlvrifoCPTX",
+            "name": "Xã Xuân Lạc"
+        },
+        {
+            "id": "yWIZ1BIioLV",
+            "name": "Xã Mỹ Phương"
+        },
+        {
+            "id": "yZxpz9x7KD7",
+            "name": "Xã Cư Lễ"
+        },
+        {
+            "id": "Zg1i43eq758",
+            "name": "Xã Yên Thượng"
+        },
+        {
+            "id": "zLe85y7i9hO",
+            "name": "Xã Yên Thịnh"
+        },
+        {
+            "id": "zMZoigtmXMa",
+            "name": "Xã Sơn Thành"
+        },
+        {
+            "id": "zQcD6tPS8Ie",
+            "name": "Xã Hà Hiệu"
+        },
+        {
+            "id": "zsacH33Z1Pe",
+            "name": "Xã Như Cố"
+        }
+    ]
     let idOrg = '';
     arrOrg.forEach(e=>{
         if (nameOrg == e.name){
@@ -10314,6 +11518,7 @@ async function exportTeiFromExcel(sheetName, programId, idOrgUnit, orgName) {
     let checkTeiteiID;
     let checkTeiprogramID;
     for (let i = 3; i < Object.keys(result).length + 3; i++) {
+    
         idOrgUnit = getIdOrg(result[i][1]);
         let checkTeiTHA = { "status": "", "teiID": "", "orgUnitID": "" };
         let checkTeiTHABHYT = { "status": "0", "teiID": "", "orgUnitID": "" };
@@ -10335,9 +11540,55 @@ async function exportTeiFromExcel(sheetName, programId, idOrgUnit, orgName) {
             } else {
                 checkTeiTHA.status = 0
             }
-            checkTeiDTD = await checkTeiDTDExist(`${result[i][7]}`, `${result[i][8]}`);
-            if (checkTeiTHA.status != 0 || checkTeiDTD.status != 0) {
-                if(checkTeiTHA.status == 1 && checkTeiDTD.status == 0 && sheetName == 'DTD') {
+            // checkTeiDTD = await checkTeiDTDExist(`${result[i][7]}`, `${result[i][8]}`);
+            // if (checkTeiTHA.status != 0 || checkTeiDTD.status != 0) {
+            //     if(checkTeiTHA.status == 1 && checkTeiDTD.status == 0 && sheetName == 'DTD') {
+            //         checkTeiorgUnitID = checkTeiTHA.orgUnitID
+            //         checkTeiteiID = checkTeiTHA.teiID
+            //         checkTeiprogramID = "a7arqsOKzsr"
+            //         mEnrollment = {
+            //             "orgUnit": `${checkTeiorgUnitID}`,
+            //             "program": `${checkTeiprogramID}`,
+            //             "trackedEntityType": "EL3fkeMR3xK",
+            //             "trackedEntityInstance": `${checkTeiteiID}`,
+            //             "enrollmentDate": "2021-01-01",
+            //             "incidentDate": "2021-01-01",
+            //             "events": []
+            //         }
+            //         resultEnrollments.enrollments.push(mEnrollment);
+            //     } 
+            //     if(checkTeiTHA.status == 0 && checkTeiDTD.status == 1 && sheetName == 'THA') {
+            //         checkTeiorgUnitID = checkTeiDTD.orgUnitID
+            //         checkTeiteiID = checkTeiDTD.teiID
+            //         checkTeiprogramID = "NAleauPZvIE"
+            //         mEnrollment = {
+            //             "orgUnit": `${checkTeiorgUnitID}`,
+            //             "program": `${checkTeiprogramID}`,
+            //             "trackedEntityType": "EL3fkeMR3xK",
+            //             "trackedEntityInstance": `${checkTeiteiID}`,
+            //             "enrollmentDate": "2021-01-01",
+            //             "incidentDate": "2021-01-01",
+            //             "events": []
+            //         }
+            //         resultEnrollments.enrollments.push(mEnrollment);
+            //     }
+            if (checkTeiTHA.status != 0){
+                if (sheetName == 'THA') {
+                    checkTeiorgUnitID = checkTeiTHA.orgUnitID
+                    checkTeiteiID = checkTeiTHA.teiID
+                    checkTeiprogramID = "NAleauPZvIE"
+                    mEnrollment = {
+                        "orgUnit": `${checkTeiorgUnitID}`,
+                        "program": `${checkTeiprogramID}`,
+                        "trackedEntityType": "EL3fkeMR3xK",
+                        "trackedEntityInstance": `${checkTeiteiID}`,
+                        "enrollmentDate": "2021-01-01",
+                        "incidentDate": "2021-01-01",
+                        "events": []
+                    }
+                    resultEnrollments.enrollments.push(mEnrollment);
+                }
+                if (sheetName == 'DTD') {
                     checkTeiorgUnitID = checkTeiTHA.orgUnitID
                     checkTeiteiID = checkTeiTHA.teiID
                     checkTeiprogramID = "a7arqsOKzsr"
@@ -10351,11 +11602,41 @@ async function exportTeiFromExcel(sheetName, programId, idOrgUnit, orgName) {
                         "events": []
                     }
                     resultEnrollments.enrollments.push(mEnrollment);
-                } 
-                if(checkTeiTHA.status == 0 && checkTeiDTD.status == 1 && sheetName == 'THA') {
-                    checkTeiorgUnitID = checkTeiDTD.orgUnitID
-                    checkTeiteiID = checkTeiDTD.teiID
-                    checkTeiprogramID = "NAleauPZvIE"
+                }
+                if (sheetName == 'COPD') {
+                    checkTeiorgUnitID = checkTeiTHA.orgUnitID
+                    checkTeiteiID = checkTeiTHA.teiID
+                    checkTeiprogramID = "gPWs4FRX9dj"
+                    mEnrollment = {
+                        "orgUnit": `${checkTeiorgUnitID}`,
+                        "program": `${checkTeiprogramID}`,
+                        "trackedEntityType": "EL3fkeMR3xK",
+                        "trackedEntityInstance": `${checkTeiteiID}`,
+                        "enrollmentDate": "2021-01-01",
+                        "incidentDate": "2021-01-01",
+                        "events": []
+                    }
+                    resultEnrollments.enrollments.push(mEnrollment);
+                }
+                if (sheetName == 'RLTT') {
+                    checkTeiorgUnitID = checkTeiTHA.orgUnitID
+                    checkTeiteiID = checkTeiTHA.teiID
+                    checkTeiprogramID = "WmEGO8Ipykm"
+                    mEnrollment = {
+                        "orgUnit": `${checkTeiorgUnitID}`,
+                        "program": `${checkTeiprogramID}`,
+                        "trackedEntityType": "EL3fkeMR3xK",
+                        "trackedEntityInstance": `${checkTeiteiID}`,
+                        "enrollmentDate": "2021-01-01",
+                        "incidentDate": "2021-01-01",
+                        "events": []
+                    }
+                    resultEnrollments.enrollments.push(mEnrollment);
+                }
+                if (sheetName == 'KLNKhac') {
+                    checkTeiorgUnitID = checkTeiTHA.orgUnitID
+                    checkTeiteiID = checkTeiTHA.teiID
+                    checkTeiprogramID = "XrC0U6IV4W0"
                     mEnrollment = {
                         "orgUnit": `${checkTeiorgUnitID}`,
                         "program": `${checkTeiprogramID}`,
@@ -10680,12 +11961,19 @@ async function exportTeiFromExcel(sheetName, programId, idOrgUnit, orgName) {
                 };
                 iTei.trackedEntityInstances.push(mTei)
                 if(sheetName == 'DTD'){
-                    fs.writeFileSync(`${__dirname}/output/importEnrollments-${orgName}-${sheetName}.json`, JSON.stringify(resultEnrollments));
+                    fs.writeFileSync(`${__dirname}/output/importEnrollments-${sheetName}.json`, JSON.stringify(resultEnrollments));
+                    console.log("[*] Create JSON files New Enrollments successfully!!")
+                }
+                if(sheetName == 'THA'){
+                    fs.writeFileSync(`${__dirname}/output/importEnrollments-${sheetName}.json`, JSON.stringify(resultEnrollments));
+                    console.log("[*] Create JSON files New Enrollments successfully!!")
+                }
+                if(sheetName == 'COPD'){
+                    fs.writeFileSync(`${__dirname}/output/importEnrollments-${sheetName}.json`, JSON.stringify(resultEnrollments));
                     console.log("[*] Create JSON files New Enrollments successfully!!")
                 }
                 console.log(i, await importTei(iTei))
             }
-        
     }
     fs.writeFileSync(`${__dirname}/output/importEnrollments-${orgName}-${sheetName}.json`, JSON.stringify(resultEnrollments));
     console.log("[*] Create JSON files New Enrollments successfully!!")
@@ -10759,7 +12047,7 @@ function checkTeiTHAbyBHYTExist(mBHYT) {
         let result = { "status": "0", "teiID": "", "orgUnitID": "" };
         let url = ``
         if (mBHYT != '') {
-            url = baseUrl + `/api/trackedEntityInstances.json?ou=nJm9lSLVvG8&ouMode=ACCESSIBLE&program=NAleauPZvIE&attribute=JHb1hzseNMg:EQ:${mBHYT}&paging=false`
+            url = baseUrl + `/api/trackedEntityInstances.json?ou=nJm9lSLVvG8&ouMode=ACCESSIBLE&attribute=JHb1hzseNMg:EQ:${mBHYT}&paging=false`
             _axios.get(url, authentication).then(res => {
                 let checkKey = res.data.trackedEntityInstances.length
                 if (checkKey == 1) {
@@ -10780,7 +12068,7 @@ function checkTeiTHAbyCMTExist(mCMT) {
         let result = { "status": "0", "teiID": "", "orgUnitID": "" };
         let url = `` 
         if (mCMT != '') {
-            url = baseUrl + `/api/trackedEntityInstances.json?ou=nJm9lSLVvG8&ouMode=ACCESSIBLE&program=NAleauPZvIE&attribute=ZQ93P672wQR:EQ:${mCMT}&paging=false`
+            url = baseUrl + `/api/trackedEntityInstances.json?ou=nJm9lSLVvG8&ouMode=ACCESSIBLE&attribute=ZQ93P672wQR:EQ:${mCMT}&paging=false`
             _axios.get(url, authentication).then(res => {
                 let checkKey = res.data.trackedEntityInstances.length
                 if (checkKey == 1) {

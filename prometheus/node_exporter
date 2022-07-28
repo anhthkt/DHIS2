@@ -322,7 +322,7 @@ Unzip the tarball and cd into the directory:
 cd postgres_exporter-*.linux-amd64
 We’ll be running the Postgres exporter as the postgres user to fetch database metrics. To fetch metrics as a non-superuser, you can follow the instructions from the Postgres Exporter Github Repo.
 
-We need to inform the exporter how to reach the Postgres server. We do that by setting the following environment variable:
+We need to inform the exporter how to reach the Postgres server. We do that by setting the following envCironment variable:
 
 	export DATA_SOURCE_NAME='postgresql://postgres:enter_password_here@postgres_hostname:5432/postgres?sslmode=disable'
 Be sure to replace postgres with the user you will be using to fetch metrics from Postgres, enter_password_here with the password for your user, and postgres_hostname with the hostname of the Postgres instance (localhost if you’re on the same machine).
