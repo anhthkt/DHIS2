@@ -1,1 +1,87 @@
-{"categoryOptions":[{"code":"default","created":"2021-04-29T03:07:13.978","lastUpdated":"2021-04-29T03:07:14.001","name":"default","id":"xYerKDKCefk","publicAccess":"rwrw----","userGroupAccesses":[],"attributeValues":[],"translations":[],"userAccesses":[],"organisationUnits":[]},{"created":"2015-07-07T11:47:20.558","lastUpdated":"2021-05-02T09:07:03.803","name":"Female","id":"iFsvA6tMlko","shortName":"Female","publicAccess":"rwrw----","lastUpdatedBy":{"displayName":"P2ild Dev","id":"RBqxIBCBcAO","username":"duylp"},"user":{"code":"admin","displayName":"admin admin","id":"M5zQapPyTZI","username":"admin"},"userGroupAccesses":[],"attributeValues":[],"translations":[{"property":"SHORT_NAME","locale":"vi","value":"Nữ"},{"property":"NAME","locale":"vi","value":"Nữ"}],"userAccesses":[],"organisationUnits":[]},{"created":"2018-04-29T16:45:05.282","lastUpdated":"2021-05-02T09:07:03.803","name":"Male","id":"puIm9IHVNY8","shortName":"Male","publicAccess":"rwrw----","lastUpdatedBy":{"displayName":"P2ild Dev","id":"RBqxIBCBcAO","username":"duylp"},"user":{"code":"admin","displayName":"admin admin","id":"M5zQapPyTZI","username":"admin"},"userGroupAccesses":[],"attributeValues":[],"translations":[{"property":"NAME","locale":"vi","value":"Nam"},{"property":"SHORT_NAME","locale":"vi","value":"Nam"}],"userAccesses":[],"organisationUnits":[]}]}
+{
+    "categoryOptions": [
+        {
+            "code": "default",
+            "created": "2021-04-29T03:07:13.978",
+            "lastUpdated": "2021-04-29T03:07:14.001",
+            "name": "default",
+            "id": "xYerKDKCefk",
+            "publicAccess": "rwrw----",
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "translations": [],
+            "userAccesses": [],
+            "organisationUnits": []
+        },
+        {
+            "created": "2015-07-07T11:47:20.558",
+            "lastUpdated": "2021-05-02T09:07:03.803",
+            "name": "Female",
+            "id": "iFsvA6tMlko",
+            "shortName": "Female",
+            "publicAccess": "rwrw----",
+            "lastUpdatedBy": {
+                "displayName": "P2ild Dev",
+                "id": "RBqxIBCBcAO",
+                "username": "duylp"
+            },
+            "user": {
+                "code": "admin",
+                "displayName": "admin admin",
+                "id": "M5zQapPyTZI",
+                "username": "admin"
+            },
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "translations": [
+                {
+                    "property": "SHORT_NAME",
+                    "locale": "vi",
+                    "value": "Nữ"
+                },
+                {
+                    "property": "NAME",
+                    "locale": "vi",
+                    "value": "Nữ"
+                }
+            ],
+            "userAccesses": [],
+            "organisationUnits": []
+        },
+        {
+            "created": "2018-04-29T16:45:05.282",
+            "lastUpdated": "2021-05-02T09:07:03.803",
+            "name": "Male",
+            "id": "puIm9IHVNY8",
+            "shortName": "Male",
+            "publicAccess": "rwrw----",
+            "lastUpdatedBy": {
+                "displayName": "P2ild Dev",
+                "id": "RBqxIBCBcAO",
+                "username": "duylp"
+            },
+            "user": {
+                "code": "admin",
+                "displayName": "admin admin",
+                "id": "M5zQapPyTZI",
+                "username": "admin"
+            },
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "translations": [
+                {
+                    "property": "NAME",
+                    "locale": "vi",
+                    "value": "Nam"
+                },
+                {
+                    "property": "SHORT_NAME",
+                    "locale": "vi",
+                    "value": "Nam"
+                }
+            ],
+            "userAccesses": [],
+            "organisationUnits": []
+        }
+    ]
+}

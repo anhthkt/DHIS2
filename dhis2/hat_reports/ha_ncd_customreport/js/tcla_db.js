@@ -418,7 +418,7 @@ function TCLADB() {
                 }
             }
         };
-        let fetchData = await fetch('http://kln.tkyt.vn/p2ild/public/analyticsEvent', {
+        let fetchData = await fetch('https://kln.tkyt.vn/p2ild/public/analyticsEvent', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -457,7 +457,7 @@ function TCLADB() {
                 }
             }
         };
-        let fetchData = await fetch('http://kln.tkyt.vn/p2ild/public/analyticsEvent', {
+        let fetchData = await fetch('https://kln.tkyt.vn/p2ild/public/analyticsEvent', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -495,7 +495,7 @@ function TCLADB() {
                 }
             }
         };
-        let fetchData = await fetch('http://kln.tkyt.vn/p2ild/public/analyticsEvent', {
+        let fetchData = await fetch('https://kln.tkyt.vn/p2ild/public/analyticsEvent', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

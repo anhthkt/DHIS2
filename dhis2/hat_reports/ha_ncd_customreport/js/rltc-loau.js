@@ -112,8 +112,8 @@ function CopdHen() {
         showTableDataByOrgSelect(orgHirch.tableID)
         switch (orgHirch) {
             case LEVEL_ORG_SELECT_TYPE.TW:
-                // rqTotal.createWorker().createHolderTitleRow(`tb1ColumnIncrise`, `tongSo`,sumRow(orgGroupSet = undefined, orgGroup = [], "", "TỔNG SỐ"))
-                rqTotal.createWorker().createHolderTitleRow('tb1ColumnIncrise', `sumI`, sumRow(orgGroupSet = undefined, orgGroup = sumI, "I", "Chia theo tỉnh/ thành phố"))
+                // rqTotal.createWorker().createHolderTitleRow(`tb1ColumnIncrise`, `tongSo`,sumRow(orgGroupSet = undefined, orgGroup = [], "", p2ild?.transUtils?.getI18n ? p2ild?.transUtils?.getI18n().t('common:reports.tableContent.titleTotal') : "TỔNG SỐ"))
+                rqTotal.createWorker().createHolderTitleRow('tb1ColumnIncrise', `sumI`, sumRow(orgGroupSet = undefined, orgGroup = sumI, "I", p2ild?.transUtils?.getI18n ? p2ild?.transUtils?.getI18n().t('common:reports.tableContent.titleTotal') : "Chia theo tỉnh/ thành phố"))
                 rqContent.createWorker().createHolderTitleRow('sumI', `writeRow`, writeRow(orgGroupSet = undefined, orgGroup = sumI))
                 break;
             case LEVEL_ORG_SELECT_TYPE.INDIVIDUAL_OU:
@@ -125,25 +125,25 @@ function CopdHen() {
                     initIntergrateData();
                 }
 
-                // rqTotal.createWorker().createHolderTitleRow(`tb1ColumnIncrise`, `tongSo`, sum(sumAll, "", "TỔNG SỐ"))
-                rqTotal.createWorker().createHolderTitleRow(`tb1ColumnIncrise`, `tongSo`, sumRow(orgGroupSet = undefined, orgGroup = [], "", "TỔNG SỐ"))
+                // rqTotal.createWorker().createHolderTitleRow(`tb1ColumnIncrise`, `tongSo`, sum(sumAll, "", p2ild?.transUtils?.getI18n ? p2ild?.transUtils?.getI18n().t('common:reports.tableContent.titleTotal') : "TỔNG SỐ"))
+                rqTotal.createWorker().createHolderTitleRow(`tb1ColumnIncrise`, `tongSo`, sumRow(orgGroupSet = undefined, orgGroup = [], "", p2ild?.transUtils?.getI18n ? p2ild?.transUtils?.getI18n().t('common:reports.tableContent.titleTotal') : "TỔNG SỐ"))
 
-                rqTotal.createWorker().createHolderTitleRow('tongSo', `sumIII`, sumRow(orgGroupSet = undefined, orgGroup = sumIII, "I", "Trạm y tế"))
+                rqTotal.createWorker().createHolderTitleRow('tongSo', `sumIII`, sumRow(orgGroupSet = undefined, orgGroup = sumIII, "I", p2ild?.transUtils?.getI18n ? p2ild?.transUtils?.getI18n().t('common:reports.tableContent.titleTotalCommuneLevelOther') : "Trạm y tế"))
                 rqContent.createWorker().createHolderTitleRow('sumIII', `writeRowByLevelOrgAggregateIII`, writeRow(orgGroupSet = sumIII, orgGroup = [orgGroupHuyenDVHC]))
 
-                rqTotal.createWorker().createHolderTitleRow('writeRowByLevelOrgAggregateIII', `sumII`, sumRow(orgGroupSet = undefined, orgGroup = sumII, "II", "Tuyến huyện"))
+                rqTotal.createWorker().createHolderTitleRow('writeRowByLevelOrgAggregateIII', `sumII`, sumRow(orgGroupSet = undefined, orgGroup = sumII, "II", p2ild?.transUtils?.getI18n ? p2ild?.transUtils?.getI18n().t('common:reports.tableContent.titleTotalDistrictLevel') : "Tuyến huyện"))
                 rqContent.createWorker().createHolderTitleRow('sumII', `writeRowByLevelOrgAggregateII`, writeRow(orgGroupSet = sumII, orgGroup = [orgGroupHuyenDVHC]))
 
-                rqTotal.createWorker().createHolderTitleRow('writeRowByLevelOrgAggregateII', `sumI`, sumRow(orgGroupSet = undefined, orgGroup = sumI, "III", "Tuyến tỉnh"))
+                rqTotal.createWorker().createHolderTitleRow('writeRowByLevelOrgAggregateII', `sumI`, sumRow(orgGroupSet = undefined, orgGroup = sumI, "III", p2ild?.transUtils?.getI18n ? p2ild?.transUtils?.getI18n().t('common:reports.tableContent.titleTotalProvinceLevel') : "Tuyến tỉnh"))
                 rqContent.createWorker().createHolderTitleRow(`sumI`, `writeRowI`, writeRow(orgGroupSet = undefined, orgGroup = sumI))
 
 
                 // rqContent.createWorker().createHolderTitleRow('sumIII', `writeRowByLevelOrgAggregateIII`, writeRowByLevelOrgAggregate(sumIII, 3))
 
-                rqTotal.createWorker().createHolderTitleRow('writeRowI', `sumIV`, sumRow(orgGroupSet = undefined, orgGroup = sumIV, "IV", "Tư nhân"))
-                rqTotal.createWorker().createHolderTitleRow('sumIV', `sumIV_1`, sumRow(orgGroupSet = undefined, orgGroup = sumIV_1, "1", "Tuyến tỉnh"))
+                rqTotal.createWorker().createHolderTitleRow('writeRowI', `sumIV`, sumRow(orgGroupSet = undefined, orgGroup = sumIV, "IV", p2ild?.transUtils?.getI18n ? p2ild?.transUtils?.getI18n().t('common:reports.tableContent.titleTotalPrivateLevel') : "Tư nhân"))
+                rqTotal.createWorker().createHolderTitleRow('sumIV', `sumIV_1`, sumRow(orgGroupSet = undefined, orgGroup = sumIV_1, "1", p2ild?.transUtils?.getI18n ? p2ild?.transUtils?.getI18n().t('common:reports.tableContent.titleTotalProvinceLevel') : "Tuyến tỉnh"))
                 rqContent.createWorker().createHolderTitleRow('sumIV_1', `writeRowIV_1`, writeRow(orgGroupSet = undefined, orgGroup = sumIV_1))
-                rqTotal.createWorker().createHolderTitleRow('writeRowIV_1', `sumIV_2`, sumRow(orgGroupSet = undefined, orgGroup = sumIV_2, "2", "Tuyến huyện"))
+                rqTotal.createWorker().createHolderTitleRow('writeRowIV_1', `sumIV_2`, sumRow(orgGroupSet = undefined, orgGroup = sumIV_2, "2", p2ild?.transUtils?.getI18n ? p2ild?.transUtils?.getI18n().t('common:reports.tableContent.titleTotalDistrictLevel') : "Tuyến huyện"))
                 rqContent.createWorker().createHolderTitleRow('sumIV_2', `writeRowIV_2`, writeRow(orgGroupSet = undefined, orgGroup = sumIV_2))
                 break;
             case LEVEL_ORG_SELECT_TYPE.HUYEN:
@@ -153,15 +153,15 @@ function CopdHen() {
                 }
 
 
-                rqTotal.createWorker().createHolderTitleRow(`tb1ColumnIncrise`, `tongSo`, sumRow(orgGroupSet = undefined, orgGroup = sumAll, "", "TỔNG SỐ"))
+                rqTotal.createWorker().createHolderTitleRow(`tb1ColumnIncrise`, `tongSo`, sumRow(orgGroupSet = undefined, orgGroup = sumAll, "", p2ild?.transUtils?.getI18n ? p2ild?.transUtils?.getI18n().t('common:reports.tableContent.titleTotal') : "TỔNG SỐ"))
 
-                rqTotal.createWorker().createHolderTitleRow('tongSo', `sumII`, sumRow(orgGroupSet = undefined, orgGroup = sumII, "I", "Trạm y tế"))
+                rqTotal.createWorker().createHolderTitleRow('tongSo', `sumII`, sumRow(orgGroupSet = undefined, orgGroup = sumII, "I", p2ild?.transUtils?.getI18n ? p2ild?.transUtils?.getI18n().t('common:reports.tableContent.titleTotalCommuneLevelOther') : "Trạm y tế"))
                 rqContent.createWorker().createHolderTitleRow('sumII', `writeRowII`, writeRow(orgGroupSet = undefined, orgGroup = sumII))
 
-                rqTotal.createWorker().createHolderTitleRow('writeRowII', `sumI`, sumRow(orgGroupSet = undefined, orgGroup = sumI, "II", "Tuyến huyện"))
+                rqTotal.createWorker().createHolderTitleRow('writeRowII', `sumI`, sumRow(orgGroupSet = undefined, orgGroup = sumI, "II", p2ild?.transUtils?.getI18n ? p2ild?.transUtils?.getI18n().t('common:reports.tableContent.titleTotalDistrictLevel') : "Tuyến huyện"))
                 rqContent.createWorker().createHolderTitleRow('sumI', `writeRowI`, writeRow(orgGroupSet = undefined, orgGroup = sumI))
 
-                rqTotal.createWorker().createHolderTitleRow('writeRowI', `sumIII`, sumRow(orgGroupSet = undefined, orgGroup = sumIII, "III", "Tư nhân"))
+                rqTotal.createWorker().createHolderTitleRow('writeRowI', `sumIII`, sumRow(orgGroupSet = undefined, orgGroup = sumIII, "III", p2ild?.transUtils?.getI18n ? p2ild?.transUtils?.getI18n().t('common:reports.tableContent.titleTotalPrivateLevel') : "Tư nhân"))
                 rqContent.createWorker().createHolderTitleRow('sumIII', `writeRowIII`, writeRow(orgGroupSet = undefined, orgGroup = sumIII))
                 break;
             case LEVEL_ORG_SELECT_TYPE.XA:
@@ -373,7 +373,7 @@ function CopdHen() {
             let htmlReport = "";
 
             htmlReport += "<tr><td align='center'><strong>" + seri + "</strong></td>"; //1
-            if (title == "TỔNG SỐ") {
+            if (title == p2ild?.transUtils?.getI18n ? p2ild?.transUtils?.getI18n().t('common:reports.tableContent.titleTotal') : "TỔNG SỐ") {
                 htmlReport += "<td align='center'><strong>" + title + "</strong></td>"; //2
             } else {
                 htmlReport += "<td align='left'><strong>" + title + "</strong></td>"; //2}
