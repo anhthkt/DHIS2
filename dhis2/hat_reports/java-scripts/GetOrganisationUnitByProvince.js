@@ -7,8 +7,8 @@ const fs = require("fs");
 //const baseUrl = _config.urlInstanceDAOTAO_KLN;
 const baseUrl = 'https://kln.tkyt.vn';
 const targetPronvince = {
-    "name": "An Giang",
-    "idOrg": "uAsdFJIqElU"
+    "name": "Viet Nam",
+    "idOrg": "LOdti1gATwC"
 }
 
 const authentication = {
