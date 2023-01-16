@@ -1,0 +1,18 @@
+install docker on ubuntu 
+Config docker api
+	vi /lib/systemd/system/docker.service
+	ExecStart=/usr/bin/dockerd -H fd:// -H=tcp://0.0.0.0:2375 --containerd=/run/containerd/containerd.sock
+
+Tao file docker-compose cho container
+	Tomcat: tao file dhis.conf chua cau hinh dhis
+			Tao file docker-compose.yml 
+	DB: dump db
+		Exec vao container db chay lenh: pg_dump -O -U "POSTGRES_USER" -d "POSTGRES_DB" -Fp -T aggregated* -T analytics* -T completeness* | gzip > ./"Name file output".sql.gz
+		Copy vao thu muc docker-compose cua db
+		Giai nen: unzip -d "Name file output".sql.gz
+		Tao file docker-compose.yml
+		
+Kiểm tra các app
+
+Lập lịch chạy phân tích dữ liệu
+Lập lịch chạy backup
