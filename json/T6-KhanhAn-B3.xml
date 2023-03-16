@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<dataValueSet xmlns="http://dhis2.org/schema/dxf/2.0" dataSet="tONFZrjm2UU" period="202106" orgUnit="lNXs1lrOMMn">
-<dataValue dataElement="I8Eg0GDLPdk" period="202106" orgUnit="lNXs1lrOMMn" categoryOptionCombo="HllvX50cXC0" attributeOptionCombo="HllvX50cXC0" value="true" />
-<dataValue dataElement="RHcaS5LVP6E" period="202106" orgUnit="lNXs1lrOMMn" categoryOptionCombo="HllvX50cXC0" attributeOptionCombo="HllvX50cXC0" value="true" />
-<dataValue dataElement="LgX47Q4nlLs" period="202106" orgUnit="lNXs1lrOMMn" categoryOptionCombo="HllvX50cXC0" attributeOptionCombo="HllvX50cXC0" value="false" />
-<dataValue dataElement="x4ZakxVdTKf" period="202106" orgUnit="lNXs1lrOMMn" categoryOptionCombo="HllvX50cXC0" attributeOptionCombo="HllvX50cXC0" value="false" />
-<dataValue dataElement="kRJZBm6P2RE" period="202106" orgUnit="lNXs1lrOMMn" categoryOptionCombo="HllvX50cXC0" attributeOptionCombo="HllvX50cXC0" value="true" />
-<dataValue dataElement="dXa1wH26j3t" period="202106" orgUnit="lNXs1lrOMMn" categoryOptionCombo="HllvX50cXC0" attributeOptionCombo="HllvX50cXC0" value="false" />
-</dataValueSet>

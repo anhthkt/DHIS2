@@ -35,7 +35,7 @@ function convertAncestorsToStringPath(arrAncestors) {
         let resData = jsonResult.data;
         let resultCsv = `id|name|ancestors\n`;
         jsonResult.data.organisationUnits.sort((a,b)=> {return (convertAncestorsToStringPath(a.ancestors) > convertAncestorsToStringPath(b.ancestors)? 1 : -1)}).forEach((orgElement, idx, arr) => {
-            resultCsv += `${orgElement.id}|${orgElement.name}|${convertAncestorsToStringPath(orgElement.ancestors)}\n${orgElement.dataSets != undefined ? orgElement.dataSets.filter(e=>e.name.toLowerCase().includes('tt37')).map(e => `||||${e.name}`).join("\n") : {}}\n`
+            resultCsv += `${orgElement.id}|${orgElement.name}|${convertAncestorsToStringPath(orgElement.ancestors)}\n${orgElement.dataSets != undefined ? orgElement.dataSets.filter(e=>e.name.toLowerCase().includes('tt37')).map(e => `||||${e.name}`).join("\n") : {}}`
         });
         fs.writeFileSync(`${__dirname}/output/orgWithCode${targetPronvince.name}.csv`, resultCsv)
     })
