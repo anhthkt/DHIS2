@@ -1,0 +1,46 @@
+{
+    "oAuth2Clients": [
+        {
+            "lastUpdated": "2023-03-22T08:50:27.517",
+            "id": "oY1DuuUV1p0",
+            "href": "https://dieuhanh1.ehealth.gov.vn/api/38/oAuth2Clients/oY1DuuUV1p0",
+            "created": "2023-03-22T03:46:53.634",
+            "name": "dieuhanh_app1",
+            "displayName": "dieuhanh_app1",
+            "secret": "e84903637-01fa-9fb4-93fd-18c89048216",
+            "externalAccess": false,
+            "favorite": false,
+            "cid": "hmWMENj5twtsagTnbhtTXE2ipHy6g9C0",
+            "access": {
+                "read": true,
+                "update": true,
+                "externalize": true,
+                "write": true,
+                "delete": true,
+                "manage": true
+            },
+            "lastUpdatedBy": {
+                "displayName": "Anh Trần Hoàng",
+                "name": "Anh Trần Hoàng",
+                "id": "Iren06i4fx6",
+                "username": "anhth"
+            },
+            "sharing": {
+                "userGroups": {},
+                "external": false,
+                "users": {}
+            },
+            "favorites": [],
+            "translations": [],
+            "userGroupAccesses": [],
+            "attributeValues": [],
+            "redirectUris": [
+                "https://keycloak.ehealth.gov.vn/auth/realms/dhis2/protocol/openid-connect/auth"
+            ],
+            "grantTypes": [
+                "password", "refresh_token", "authorization_code"
+            ],
+            "userAccesses": []
+        }
+    ]
+}

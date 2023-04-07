@@ -1,0 +1,33 @@
+The basic flow of authentication and authorization between DHIS2 and Keycloak can be summarized as follows:
+
+1. A user attempts to access a DHIS2 application or resource that requires authentication.
+
+2. The DHIS2 application redirects the user to the Keycloak server for authentication.
+
+3. The user logs in to the Keycloak server using their username and password.
+
+4. If the user's credentials are valid, Keycloak generates an access token and returns it to the DHIS2 application.
+
+5. The DHIS2 application uses the access token to authorize the user's access to the requested resource.
+
+6. If the user is authorized to access the resource, the DHIS2 application allows the user to proceed with their request.
+
+7. If the user is not authorized to access the resource, the DHIS2 application returns an appropriate error message.
+
+8. The user may continue to access resources within the DHIS2 application until their access token expires or is revoked by Keycloak.
+
+9. When the user logs out of the DHIS2 application, the DHIS2 application notifies the Keycloak server to invalidate the user's access token.
+
+
+scope: openid
+response_type: code
+redirect_uri: https://ydct-8dichvucong.moh.gov.vn/Account/SingleSignOnBYT
+state: a39b5644-f90d-46b6-9134-fe2a4aa2eba7
+client_id: dichvucong.moh.gov.vn
+
+response_type: code
+client_id: dieuhanh_app1
+scope: openid email
+state: hahVVM0lvw6qOR2qkK1bMZhNIE6jFvZONrgrf6p3RCE=
+redirect_uri: https://dieuhanh1.ehealth.gov.vn/oauth2/code/keycloak
+nonce: TXimk3Ber5SZOQajXViMtJ0cqSAfc57gjEi2n_TPHRs
