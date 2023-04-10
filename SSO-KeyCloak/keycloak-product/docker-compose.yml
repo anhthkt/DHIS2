@@ -4,6 +4,7 @@ services:
   keycloak:
     image: jboss/keycloak
     environment:
+      TZ: Asia/Ho_Chi_Minh
       KEYCLOAK_USER: admin
       KEYCLOAK_PASSWORD: admin
       DB_VENDOR: postgres
@@ -20,6 +21,7 @@ services:
     image: postgres
     command: postgres -c 'max_connections=200'
     environment:
+      TZ: Asia/Ho_Chi_Minh
       POSTGRES_DB: keycloak
       POSTGRES_USER: keycloak
       POSTGRES_PASSWORD: keycloak

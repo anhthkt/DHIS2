@@ -1,0 +1,10 @@
+{
+    "realm": "dhis2",
+    "auth-server-url": "https://keycloak.ehealth.gov.vn/auth/",
+    "ssl-required": "external",
+    "resource": "app-test",
+    "credentials": {
+      "secret": "UcayXYWIQCZtGeWQxjnFgfkzs8YrS1IF"
+    },
+    "confidential-port": 0
+  }
