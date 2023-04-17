@@ -1,0 +1,26 @@
+version: '3'
+services:
+  web:
+    container_name: docker-tomcat1
+    image: dhis2/core:2.38.1.1-tomcat-9.0-jdk11-openjdk-slim
+    environment:
+      TZ: Asia/Ho_Chi_Minh
+    volumes:
+      - ./dhis.conf:/DHIS2_home/dhis.conf
+    ports:
+      - "8542:8080"
+    restart: always
+  db:
+    container_name: docker-postgres1
+    image: mdillon/postgis:11-alpine
+    command: postgres -c max_locks_per_transaction=100
+    volumes:
+      - ./data/dieuhanh238.sql:/docker-entrypoint-initdb.d/init.sql
+    environment:
+      TZ: Asia/Ho_Chi_Minh
+      POSTGRES_USER: dhis2
+      POSTGRES_DB: dhis2
+      POSTGRES_PASSWORD: dhIs2
+    ports:
+      - "5432:5432"
+    restart: always

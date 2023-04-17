@@ -122,7 +122,7 @@ const ExcelReader = () => {
 
 // Hàm để check row
 const checkDataRow = (row) => {
-  let errorMessage = '';
+    let errorMessage = '';
   // Check Mã đơn vị
   if (row.code === '') {
     errorMessage += "Chua nhap Mã đơn vị. \n";
@@ -164,7 +164,7 @@ const checkDataRow = (row) => {
 
 // Hàm check Ngày tháng năm
 const validateDate = (date) => {
-  if (date !== "") {
+  if (date !== undefined) {
     let mDate2 = date.toString().split("/");
     let mYear2 = parseInt(mDate2[2], 10);
     let mMonth2 = parseInt(mDate2[1], 10);

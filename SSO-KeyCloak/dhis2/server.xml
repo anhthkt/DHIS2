@@ -1,4 +1,3 @@
-<!-- Note: Connector tag add scheme="https" -->
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   Licensed to the Apache Software Foundation (ASF) under one or more
@@ -69,8 +68,8 @@
     -->
     <Connector port="8080" protocol="HTTP/1.1"
                connectionTimeout="20000"
-               redirectPort="8443"
                scheme="https"
+               redirectPort="8443"
                URIEncoding="UTF-8"
                relaxedQueryChars='\ { } | [ ]'/>
     <!-- A "Connector" using the shared thread pool-->
@@ -156,7 +155,7 @@
           unpackWARs="false"
           autoDeploy="false"
       >
-
+      <Context docBase="ROOT" path="/app1/" />
         <!-- SingleSignOn valve, share authentication between web applications
              Documentation at: /docs/config/valve.html -->
         <!--
