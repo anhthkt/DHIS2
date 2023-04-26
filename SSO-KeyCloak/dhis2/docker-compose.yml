@@ -2,11 +2,11 @@ version: '3'
 services:
   web:
     container_name: docker-tomcat1
-    image: dhis2/core:2.38.1.1-tomcat-9.0-jdk11-openjdk-slim
+    image: dhis2/core:2.38.3.1
     environment:
       TZ: Asia/Ho_Chi_Minh
     volumes:
-      - ./dhis.conf:/DHIS2_home/dhis.conf
+      - ./dhis.conf:/opt/dhis2/dhis.conf
     ports:
       - "8542:8080"
     restart: always

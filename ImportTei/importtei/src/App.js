@@ -1,12 +1,16 @@
 import './App.css';
-import ReadAndConvertToJSON from './components/ReadAndConvertToJSON';
+import Header from './components/Header';
+import Main from './components/Main';
+
 function App() {
   return (
     <div className="App">
       <header>
-        <h1>HelloPet111</h1>
-        <ReadAndConvertToJSON/>
+        <Header />
       </header>
+      <main>
+        <Main />
+      </main>
     </div>
   );
 }
