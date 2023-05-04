@@ -1,24 +1,34 @@
-import React from 'react';
+import { Row, Col, Button } from 'antd';
 
 function Header({ activeMenu, onMenuClick }) {
   return (
     <div className="header">
-      <nav>
-        <ul>
-          <li className={activeMenu === 'menu1' ? 'active' : ''}>
-            <a onClick={() => onMenuClick('menu1')}>Menu item 1</a>
-          </li>
-          <li className={activeMenu === 'menu2' ? 'active' : ''}>
-            <a onClick={() => onMenuClick('menu2')}>Menu item 2</a>
-          </li>
-          <li className={activeMenu === 'menu3' ? 'active' : ''}>
-            <a onClick={() => onMenuClick('menu3')}>Menu item 3</a>
-          </li>
-          {/* <li className={activeMenu === 'menu4' ? 'active' : ''}>
-            <a onClick={() => onMenuClick('menu4')}>Menu item 4</a>
-          </li> */}
-        </ul>
-      </nav>
+      <Row justify="space-around">
+        <Col span={2}>
+          <Button
+            type={activeMenu === 'menu1' ? 'primary' : 'default'}
+            onClick={() => onMenuClick('menu1')}
+          >
+            Bước 1. Chọn chương trình
+          </Button>
+        </Col>
+        <Col span={2}>
+          <Button
+            type={activeMenu === 'menu2' ? 'primary' : 'default'}
+            onClick={() => onMenuClick('menu2')}
+          >
+            Bước 2. Tải file excel import
+          </Button>
+        </Col>
+        <Col span={2}>
+          <Button
+            type={activeMenu === 'menu3' ? 'primary' : 'default'}
+            onClick={() => onMenuClick('menu3')}
+          >
+            Bước 3. Import dữ liệu
+          </Button>
+        </Col>
+      </Row>
     </div>
   );
 }

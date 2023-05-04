@@ -10,7 +10,7 @@ function App() {
   };
 
   return (
-    <div className="app">
+    <div className="app" key="app">
       <Header activeMenu={menu} onMenuClick={handleMenuClick} />
       <Main activeMenu={menu} />
     </div>

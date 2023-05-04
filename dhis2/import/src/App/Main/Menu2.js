@@ -1,25 +1,19 @@
-import axios from 'axios';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import XLSX from 'xlsx';
-import RenderData from './RenderData';
+import RenderData from './Function/RenderData';
+import { Modal } from 'antd';
+import { FetchIdOrg, FetchIdTeiByBHYT, FetchIdTeiByCMT } from './Function/Services';
+import { Row, Col } from 'antd';
 
 
 
 const Menu2 = (props) => {
   const [excelFile, setExcelFile] = useState(null);
-  const [header, setHeader] = useState([]);
-  const [keyArr, setKeyArr] = useState([]);
+  // const [header, setHeader] = useState([]);
+  // const [keyArr, setKeyArr] = useState([]);
   const [data, setData] = useState([]);
-  const selectedFields = ["stt", "code", "code2", "code3", "name", "sex", "birth", "bhyt", "cmt", "add", "job", "phone", "date2", "add2", "note"];
-
-  // useEffect(() => {
-  //   // Lấy dữ liệu từ props và cập nhật vào state
-  //   // setData(props.data);
-  //   // setHeader(props.header);
-  //   // setKeyArr(props.keyArr);
-  //   setData(data);
-  //   RenderData();
-  // }, [data]);
+  // const selectedFields = ["stt", "code", "code2", "code3", "name", "sex", "birth", "bhyt", "cmt", "add", "job", "phone", "date2", "add2", "note"];
+  const [isLoading, setIsLoading] = useState(false);
 
   // Hàm xóa dữ liệu trùng nhau trong mảng
   function deleteDuplicate(arr) {
@@ -94,19 +88,6 @@ const Menu2 = (props) => {
     // return false;
   }
 
-  // Hàm get ID Org qua api
-  const FetchIdOrg = async (codeOrg) => {
-    const url = `https://kln.tkyt.vn/api/organisationUnits.json?fields=code,id&filter=code:in:[${codeOrg}]&paging=false`;
-
-    const response = await axios.get(url, {
-      auth: {
-        username: 'anhth',
-        password: `Csdl2018@)!*`
-      }
-    });
-    return (response.data.organisationUnits);
-  };
-
   // Get TeiID
   const getTeiId = async (result) => {
     const newResult = [...result];
@@ -117,11 +98,22 @@ const Menu2 = (props) => {
         let idTeiByCMT = "";
         let rowNote = '';
         let rowTeiId = '';
-        if (row.bhyt !== '' && row.bhyt !== undefined) { idTeiByBHYT = await FetchIdTeiByBHYT(row.bhyt); }
-        if (row.cmt !== '' && row.cmt !== undefined) { idTeiByCMT = await FetchIdTeiByCMT(row.cmt); }
+        let program = [];
+        if (row.bhyt !== '' && row.bhyt !== undefined) {
+          let resFetchIdTeiByBHYT = await FetchIdTeiByBHYT(row.bhyt);
+          idTeiByBHYT = resFetchIdTeiByBHYT.trackedEntityInstance;
+          program = resFetchIdTeiByBHYT.enrollments;
+        }
+        if (row.cmt !== '' && row.cmt !== undefined) {
+          let resFetchIdTeiByCMT = await FetchIdTeiByCMT(row.cmt);
+          idTeiByCMT = resFetchIdTeiByCMT.trackedEntityInstance;
+          program = resFetchIdTeiByCMT.enrollments;
+        }
+
         if (idTeiByBHYT !== "" && idTeiByCMT !== "" && idTeiByBHYT !== idTeiByCMT) {
           rowNote = "BHYT và CMT tồn tại trên 2 BN khác nhau. ";
           rowTeiId = '';
+          program = [];
         } else {
           // row.note += "Import hoặc Enrollment"
           if (idTeiByBHYT !== "" && idTeiByCMT !== "" && idTeiByBHYT === idTeiByCMT) {
@@ -137,50 +129,13 @@ const Menu2 = (props) => {
             // rowNote = "Đã có tei theo CMT. "
           }
         }
-        row.teiId = rowTeiId;
         row.note += rowNote;
+        if (rowTeiId === undefined) { row.teiId = ""; } else { row.teiId = rowTeiId; }
+        if (program === undefined) { row.program = []; } else { row.program = program; }
+
       }
     }
     return newResult;
-  };
-
-  // Hàm check TeiId by BHYT
-  const FetchIdTeiByBHYT = async (bhyt) => {
-    if (bhyt !== '' && bhyt !== undefined) {
-      const url = `https://kln.tkyt.vn/api/trackedEntityInstances.json?fields=trackedEntityInstance&ouMode=ACCESSIBLE&attribute=JHb1hzseNMg:eq:${bhyt}&paging=false`;
-
-      const response = await axios.get(url, {
-        auth: {
-          username: 'anhth',
-          password: `Csdl2018@)!*`
-        }
-      });
-      if (response.data.trackedEntityInstances.length > 0) {
-        return (response.data.trackedEntityInstances[0].trackedEntityInstance);
-      }
-      return ("");
-    } else {
-      return ("");
-    }
-  };
-  // // Hàm check Tei by CMT
-  const FetchIdTeiByCMT = async (cmt) => {
-    if (cmt !== '' && cmt !== undefined) {
-      const url = `https://kln.tkyt.vn/api/trackedEntityInstances.json?fields=trackedEntityInstance&ouMode=ACCESSIBLE&attribute=ZQ93P672wQR:eq:${cmt}&paging=false`;
-
-      const response = await axios.get(url, {
-        auth: {
-          username: 'anhth',
-          password: `Csdl2018@)!*`
-        }
-      });
-      if (response.data.trackedEntityInstances.length > 0) {
-        return (response.data.trackedEntityInstances[0].trackedEntityInstance);
-      }
-      return ("");
-    } else {
-      return ("");
-    }
   };
 
   // Hàm để đọc file Excel
@@ -208,12 +163,13 @@ const Menu2 = (props) => {
 
   // Hàm để lấy header và data. Check row
   async function getHeaderAndData(data) {
-    const header = data[0]; // Dòng đầu tiên là header hiển thị ra table
-    header.push("Ghi chu");
-    const keyArr = ["stt", "code", "code2", "code3", "name", "sex", "birth", "bhyt", "cmt", "add", "job", "phone", "date2", "add2", "note", "idOrg", "teiId"];
-    setHeader(header);
-    setKeyArr(keyArr);
-    props.onGetHeader(header);
+    setIsLoading(true);
+    // const header = data[0]; // Dòng đầu tiên là header hiển thị ra table
+    // header.push("Ghi chú");
+    const keyArr = ["stt", "code", "code2", "code3", "name", "sex", "birth", "bhyt", "cmt", "add", "job", "phone", "date2", "add2", "note", "idOrg", "teiId", "program"];
+    // setHeader(header);
+    // setKeyArr(keyArr);
+    // props.onGetHeader(header);
     props.onGetKeyArr(keyArr);
     // keyArr.push(`${keyArr.length + 1}`)
     const rows = data.slice(2); // Data lấy từ dòng thứ 3
@@ -226,6 +182,7 @@ const Menu2 = (props) => {
       });
       obj.note = checkDataRow(obj);
       result.push(obj);
+
     });
 
     const columnCodeOrg = deleteDuplicate(result.map((row) => row.code)); // Lấy cột mã Đơn vị
@@ -247,19 +204,28 @@ const Menu2 = (props) => {
     });
 
     await getTeiId(result);
-    
+
     setData(result);
     props.onGetData(result);
+    setIsLoading(false);
   }
 
   return (
     <div>
-      <input type="file" onChange={async (e) => {
+      <Row justify="space-around">
+        <Col span={2}></Col>
+        <Col span={2}><h4><input type="file" onChange={async (e) => {
         const file = e.target.files[0];
         // const data = await readExcelFile(file);
         await getHeaderAndData(await readExcelFile(file));
-      }} />
-      {RenderData(header, data, keyArr, selectedFields)}
+      }} /></h4>
+      </Col>
+        <Col span={2}></Col>
+      </Row>
+      <Modal visible={isLoading} title="Đang xử lý dữ liệu">
+        <p>Vui lòng đợi trong giây lát...</p>
+      </Modal>
+      {data && (RenderData(data))}
     </div>
   );
 };

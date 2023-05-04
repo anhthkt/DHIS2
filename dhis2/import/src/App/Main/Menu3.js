@@ -1,190 +1,105 @@
 import React, { useState, useEffect } from 'react';
-import RenderData from './RenderData';
-import axios from 'axios';
+import RenderData from './Function/RenderData';
+import { importTei, importEnrollment } from './Function/Services';
+import { Modal } from 'antd';
+import { Row, Col } from 'antd';
+import { createDataTei, createDataEnrollment } from './Function/CreateBodyRequest';
 
 const Menu3 = (props) => {
-  const programId = props.selectedOption;
-  const [data, setData] = useState(props.data);
-  const header = props.header;
-  const keyArr = props.keyArr;
-  const selectedFields = ["stt", "code", "code2", "code3", "name", "sex", "birth", "bhyt", "cmt", "add", "job", "phone", "date2", "add2", "note"];
+  const programId = props.selectedOption?props.selectedOption[0]:"";
+  const data = props.data;
+  // const header = props.header;
+  // const keyArr = props.keyArr;
+  // const selectedFields = ["stt", "code", "code2", "code3", "name", "sex", "birth", "bhyt", "cmt", "add", "job", "phone", "date2", "add2", "note"];
   const [errorData, setErrorData] = useState('');
+  const [updatedData, setUpdatedData] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
-  
-    let checkData = false;
-    data.forEach((row) => {
-      if (row.note !== "") {
+  var checkData = false;
+  if (data?.length > 0 && programId !== '') {
+    data?.forEach((row) => {
+      if (row.note !== '') {
         checkData = true;
         return;
       }
-    });
+    })
+  }
 
-    if (checkData) {
-      setErrorData('Kiểm tra lại dữ liệu.');
+  var programName = "";
+  if (programId === "NAleauPZvIE") { programName = 'Tăng Huyết Áp' };
+  if (programId === "a7arqsOKzsr") { programName = 'Đái Tháo Đường' };
+  if (programId === "gPWs4FRX9dj") { programName = 'COPD và Hen PQ' };
+  if (programId === "WmEGO8Ipykm") { programName = 'Rối loạn tâm thần' };
+  if (programId === "XrC0U6IV4W0") { programName = 'KLN Khác'};
+ 
+  const importData = async (data) => {
+    setIsLoading(true);
+    const newData = [...data];
+    if (!data || !programId) {
+      setErrorData('Chọn chương trình và tải file excel import.');
     } else {
-      setErrorData('Đang import dữ liệu.');
-      // Thực hiện import dữ liệu tại đây
-      useEffect( async () => {
-        for (let i = 0; i < data.length; i++) {
-          const row = data[i];
-          await importTei(row).then((result) => {
-            row.note = result;
-            setData([...data]);
-          });
-        }
-      }, [data]);
-    }
-  
-
-  // Hàm tạo mới Tei 
-  const importTei = async (dataTei) => {
-    return "Tạo mới BN thành công.";
-  }
-  // Hàm đăng ký chương trình
-  const importEnrollment = async (dataEnrollment) => {
-    return "Đăng ký chương trình thành công.";
-  }
-  // Hàm tạo TeiData
-  const createDataTei = (row, programID) => {
-    let ngayDangKy = "2021-01-01";
-    if (row.date2 !== "" && row.date2 !== undefined) {
-      ngayDangKy = convertDate(row.date2);
-    }
-    if (row.bhyt === undefined) { row.bhyt = '' };
-    if (row.cmt === undefined) { row.cmt = '' };
-    if (row.add === undefined) { row.add = '' };
-    if (row.job === undefined) { row.job = '' };
-    if (row.phone === undefined) { row.phone = '' };
-    if (row.add2 === undefined) { row.add2 = '' };
-    if (row.date2 === undefined) { row.date2 = '' };
-    let dataTei = {
-      "trackedEntityInstances": [{
-        "orgUnit": `${row.idorg}`,
-        "trackedEntityType": "EL3fkeMR3xK",
-        "inactive": false,
-        "deleted": false,
-        "featureType": "NONE",
-        "programOwners": [],
-        "enrollments": [
-          {
-            "orgUnit": `${row.idorg}`,
-            "program": `${programID}`,
-            "enrollmentDate": `${ngayDangKy}`,
-            "incidentDate": `${ngayDangKy}`,
-            "events": []
+      if (checkData) {
+        setErrorData('Kiểm tra lại dữ liệu file import.');
+      } else {
+        for (var i = 0; i < newData.length; i++) {
+          const row = newData[i];
+          //  console.log(i, row.note);
+          // Thực hiện import dữ liệu trên mỗi dòng và ghi kết quả vào note
+          if (row.note === '' && row.teiId === '') {
+            let dataTei = createDataTei(row, programId);
+            try {
+              await importTei(row, dataTei);
+              // row.note = res.importSummaries[0].href;
+              // row.teiId = res.importSummaries[0];
+            } catch (error) {
+              // console.log(`Error importing data for row ${i}: ${error}`);
+              row.note = 'Import failed';
+            }
+            // row.note = await res.importSummaries[0].href;
+            // row.teiId = await res.importSummaries[0];
+          } else {
+            if (row.note === '' && row.teiId !== '') {
+              let checkProgram = true;
+              if (row.program.length > 0) {
+                row.program.forEach((p) => {
+                  if (p.program === programId) {
+                    checkProgram = false;
+                  }
+                })
+              }
+              if (checkProgram === true) {
+                let dataEnroll = createDataEnrollment(row, programId);
+                await importEnrollment(row, dataEnroll);
+                // row.note = res.importSummaries[0].href;
+              } else {
+                row.note = 'Đã có BN trong hệ thống.'
+              }
+            }
+            // row.note = 'Import Data';
           }
-        ],
-        "relationships": [],
-        "attributes": [
-          {
-            "code": "WHO_001",
-            "displayName": "Mã BHYT",
-            "attribute": "JHb1hzseNMg",
-            "value": `${row.bhyt}`
-          },
-          {
-            "code": "WHO_002",
-            "displayName": "Họ và tên",
-            "attribute": "xBoLC0aruyJ",
-            "value": `${row.name}`
-          },
-          {
-            "code": "WHO_003",
-            "displayName": "Giới tính",
-            "attribute": "rwreLO34Xg7",
-            "value": `${row.sex}`
-          },
-          {
-            "code": "WHO_004",
-            "displayName": "Năm sinh",
-            "attribute": "C7USC9MC8yH",
-            "value": `${convertDate(row.birth)}`
-          },
-          {
-            "displayName": "Số CMT/CCCD",
-            "attribute": "ZQ93P672wQR",
-            "value": `${row.cmt}`
-          },
-          {
-            "displayName": "Số điện thoại",
-            "attribute": "mZbgWADLTKY",
-            "value": `${row.phone}`
-          },
-          {
-            "code": "WHO_005",
-            "displayName": "Địa chỉ",
-            "attribute": "Bxp1Lhr8ZeN",
-            "value": `${row.add}`
-          },
-          {
-            "code": "WHO_006",
-            "displayName": "Nghề nghiệp",
-            "attribute": "L4djJU4gMyb",
-            "value": `${row.job}`
-          },
-          {
-            "displayName": "Ngày phát hiện ĐTĐ",
-            "attribute": "LnYKf02oBmF",
-            "value": `${convertDate(row.date2)}`
-          },
-          {
-            "displayName": "Nơi phát hiện ĐTĐ",
-            "attribute": "LHVZXlBbn2l",
-            "value": `${row.add2}`
-          },
-          {
-            "displayName": "Chọn Xã/ Phường/ Thị trấn",
-            "attribute": "Gy1fkmBZpFk",
-            "value": `${row.idorg}`
-          }
-        ]
-      }]
-    }
-    return dataTei;
-  }
-  // Hàm tạo DataEnrollment
-  const createDataEnrollment = (row, programID) => {
-    let ngayDangKy = "2021-01-01"
-    if (row.date2 !== "" && row.date2 !== undefined) {
-      ngayDangKy = convertDate(row.date2);
-    }
-    let dataEnrollment = {
-      "enrollments": [
-        {
-          "orgUnit": `${row.idorg}`,
-          "program": `${programID}`,
-          "trackedEntityType": "EL3fkeMR3xK",
-          "trackedEntityInstance": `${row.teiId}`,
-          "enrollmentDate": `${ngayDangKy}`,
-          "incidentDate": `${ngayDangKy}`,
-          "events": []
         }
-      ]
-    }
-    return dataEnrollment;
-  }
+      }
+    };
+    setUpdatedData(newData);
+    setIsLoading(false);
+  };
 
-  // Hàm convert Date
-  const convertDate = (mdate) => {
-    if (mdate === '' || mdate === undefined) { return '' }
-    let mDate1 = mdate.toString().split("/");
-    let mYear = parseInt(mDate1[2], 10);
-    let mMonthTemp = `0${parseInt(mDate1[1], 10)}`;
-    let mMonth = mMonthTemp.substring(mMonthTemp.length - 2);
-    let mDayTemp = `0${parseInt(mDate1[0], 10)}`;
-    let mDay = mDayTemp.substring(mDayTemp.length - 2);
-    mdate = `${mYear}-${mMonth}-${mDay}`
-    return mdate
-  }
+  useEffect(() => {
+    importData(data);
+  }, [data]);
 
   return (
     <div>
-      <h3>Chương trình đã chọn: {programId}. {errorData && <p>{errorData}</p>}</h3>
-      {data ? data.length > 0 && (
-        <>
-          {RenderData(header, data, keyArr, selectedFields)}
-        </>
-      ) : null}
+      <Row justify="space-around">
+        <Col ><h4>Chương trình đã chọn: {programName}</h4></Col>
+        <Col ><h4>{errorData && <p>{errorData}</p>}</h4></Col>
+        <Col span={2}></Col>
+      </Row>
+
+      <Modal visible={isLoading} title="Đang import dữ liệu">
+        <p>Vui lòng đợi trong giây lát...</p>
+      </Modal>
+      {updatedData.length > 0 && (<>{RenderData(updatedData)}</>)}
     </div>
   );
 };
