@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Menu1 from './Main/Menu1';
 import Menu2 from './Main/Menu2';
 import Menu3 from './Main/Menu3';
+import Menu4 from './Main/Menu4';
 
 function Main({ activeMenu }) {
     const [selectedOption, setSelectedOption] = useState('');
@@ -30,9 +31,9 @@ function Main({ activeMenu }) {
     } else if (activeMenu === 'menu3') {
         content = <Menu3 selectedOption={selectedOption} data={data} header={header} keyArr={keyArr} />;
     } 
-    // else if (activeMenu === 'menu4') {
-    //     content = <Menu4 />;
-    // }
+    else if (activeMenu === 'menu4') {
+        content = <Menu4 onGetData={handleGetData}/>;
+    }
 
     return (
         <div className="main" key={`main-${activeMenu}`}>

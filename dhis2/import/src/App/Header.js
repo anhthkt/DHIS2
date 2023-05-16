@@ -28,6 +28,14 @@ function Header({ activeMenu, onMenuClick }) {
             Bước 3. Import dữ liệu
           </Button>
         </Col>
+        <Col span={2}>
+          <Button
+            type={activeMenu === 'menu4' ? 'primary' : 'default'}
+            onClick={() => onMenuClick('menu4')}
+          >
+            Bước 4. Test
+          </Button>
+        </Col>
       </Row>
     </div>
   );

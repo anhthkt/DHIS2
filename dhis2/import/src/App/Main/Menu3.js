@@ -6,7 +6,7 @@ import { Row, Col } from 'antd';
 import { createDataTei, createDataEnrollment } from './Function/CreateBodyRequest';
 
 const Menu3 = (props) => {
-  const programId = props.selectedOption?props.selectedOption[0]:"";
+  const programId = props.selectedOption ? props.selectedOption[0] : "";
   const data = props.data;
   // const header = props.header;
   // const keyArr = props.keyArr;
@@ -30,13 +30,13 @@ const Menu3 = (props) => {
   if (programId === "a7arqsOKzsr") { programName = 'Đái Tháo Đường' };
   if (programId === "gPWs4FRX9dj") { programName = 'COPD và Hen PQ' };
   if (programId === "WmEGO8Ipykm") { programName = 'Rối loạn tâm thần' };
-  if (programId === "XrC0U6IV4W0") { programName = 'KLN Khác'};
- 
+  if (programId === "XrC0U6IV4W0") { programName = 'KLN Khác' };
+
   const importData = async (data) => {
     setIsLoading(true);
     const newData = [...data];
     if (!data || !programId) {
-      setErrorData('Chọn chương trình và tải file excel import.');
+      setErrorData('Chọn chương trình và Kiểm tra lại dữ liệu file import.');
     } else {
       if (checkData) {
         setErrorData('Kiểm tra lại dữ liệu file import.');
@@ -89,16 +89,17 @@ const Menu3 = (props) => {
   }, [data]);
 
   return (
-    <div>
+    <div className='menu3'>
       <Row justify="space-around">
         <Col ><h4>Chương trình đã chọn: {programName}</h4></Col>
         <Col ><h4>{errorData && <p>{errorData}</p>}</h4></Col>
         <Col span={2}></Col>
       </Row>
 
-      <Modal visible={isLoading} title="Đang import dữ liệu">
+      <Modal open={isLoading} title="Đang import dữ liệu">
         <p>Vui lòng đợi trong giây lát...</p>
       </Modal>
+      
       {updatedData.length > 0 && (<>{RenderData(updatedData)}</>)}
     </div>
   );

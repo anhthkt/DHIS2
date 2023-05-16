@@ -11,8 +11,8 @@ function App() {
 
   return (
     <div className="app" key="app">
-      <Header activeMenu={menu} onMenuClick={handleMenuClick} />
-      <Main activeMenu={menu} />
+      <Header key="header" activeMenu={menu} onMenuClick={handleMenuClick} />
+      <Main key="main" activeMenu={menu} />
     </div>
   );
 }

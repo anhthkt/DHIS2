@@ -5,7 +5,7 @@ const RenderData = (data) => {
   const columns = [
     {
       title: 'STT (*)',
-      dataIndex: 'stt'
+      dataIndex: 'key'
     },
     {
       title: 'Mã Xã/Phường/Thị trấn (*)',
@@ -67,20 +67,21 @@ const RenderData = (data) => {
     },
   ];
 
-  const filteredData = data?.map((item) => {
-    const newItem = {};
-    columns?.forEach((column) => {
-      newItem[column.dataIndex] = item[column.dataIndex];
-    });
-    return newItem;
-  });
+  // const filteredData = data?.map((item) => {
+  //   const newItem = {};
+  //   columns?.forEach((column) => {
+  //     newItem[column.dataIndex] = item[column.dataIndex];
+  //   });
+  //   return newItem;
+  // });
 
   const onChange = (pagination, filters, sorter, extra) => {
-    console.log('params', pagination, filters, sorter, extra);
+    // console.log('params', pagination, filters, sorter, extra);
   };
+
   return (
     <Table
-      dataSource={filteredData}
+      dataSource={data}
       columns={columns}
       onChange={onChange}
       pagination={{ pageSize: 10 }} // phân trang với mỗi trang có 10 dòng

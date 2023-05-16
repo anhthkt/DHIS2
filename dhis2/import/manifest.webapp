@@ -1,0 +1,19 @@
+{
+    "version": "1.1",
+    "name": "hat_app_import",
+    "description": "",
+    "appType": "APP",
+    "developer": {
+        "name": "hat",
+        "url": ""
+    },
+    "default_locale": "hat",
+    "activities": {
+        "dhis": {
+            "href": "*"
+        }
+    },
+    "authorities": [
+        "HAT_APP_IMPORT"
+    ]
+}
