@@ -10,7 +10,7 @@ const baseUrl = [
   // `${process.env.urlInstanceDaotao}/api/apps`,
 
   // `${process.env.urlInstanceDaotaoKln}/api/apps`,
-  `https://kln.tkyt.vn/api/32/apps`,
+  `https://dieuhanh1.ehealth.gov.vn/api/32/apps`,
   // `${process.env.urlInstanceDevLucky}/api/apps`,
   // `https://dev.tkyt.vn/lucky/api/apps`,
   // `http://172.16.31.96:8524/api/32/apps`

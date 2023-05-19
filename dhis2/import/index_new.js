@@ -10,7 +10,7 @@ const baseUrl = [
   // `${process.env.urlInstanceDaotao}/api/apps`,
 
   // `${process.env.urlInstanceDaotaoKln}/api/apps`,
-  `https://dieuhanh1.ehealth.gov.vn/api/apps`,
+  `http://dieuhanh1.ehealth.gov.vn/api/apps`,
   // `${process.env.urlInstanceDevLucky}/api/apps`,
   // `https://dev.tkyt.vn/lucky/api/apps`,
   // `http://172.16.31.96:8524/api/32/apps`
@@ -29,12 +29,12 @@ const baseUrl = [
  **/
 const auth =  {
   username: "anhth",
-  password: "Csdl2018@)!*"
+  password: "CsDl2018@)!*"
 };
 
 importApp({
   isUpload: true,
-  folderName: 'import'
+  folderName: 'build'
 })
 
 
