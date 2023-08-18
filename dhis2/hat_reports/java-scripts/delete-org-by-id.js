@@ -4,7 +4,8 @@ let i = 0;
     if (!running) return;
     [
         // "CH10"
-"YaQ8QkgHhzz"
+        "hxpaTjhpPbe","Rbf3P5mNWTU","vUhfWoRycTo","JO7mjP7I1G4","ZkLv2JCz2RQ","KWXRsWoKR2e","koIZTvCNNTA","kVLfiJ74Dpl","LQtYDdu4qBv","DzYfhIBkrmO"
+
 
     ] 
             .forEach(idEvent => {
@@ -22,7 +23,7 @@ let i = 0;
             //     try {
                     _axios({
                         url: [
-                            `https://kln.tkyt.vn/api/events/${idEvent}`
+                            `http://dev.tkyt.vn/nhanluc/api/organisationUnits/${idEvent}`
                         ].join(''),
                         method: "delete",
                         auth: {

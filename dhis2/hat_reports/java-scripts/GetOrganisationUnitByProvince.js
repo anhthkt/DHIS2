@@ -5,7 +5,7 @@ const fs = require("fs");
 
 //CONSTANT  
 //const baseUrl = _config.urlInstanceDAOTAO_KLN;
-const baseUrl = 'https://kln.tkyt.vn';
+const baseUrl = 'https://baocao.tkyt.vn';
 const targetPronvince = {
     "name": "Viet Nam",
     "idOrg": "LOdti1gATwC"
@@ -29,7 +29,7 @@ function convertAncestorsToStringPath(arrAncestors) {
 //Main function
 (() => {
     let url = ``
-    console.log(url = baseUrl + `/api/organisationUnits.json?fields=id,code,name,dataSets[id,name],ancestors[name]&filter=path:ilike:${targetPronvince.idOrg}&filter=level:eq:4&paging=false`)
+    console.log(url = baseUrl + `/api/organisationUnits.json?fields=id,code,name,dataSets[id,name],ancestors[name]&filter=path:ilike:${targetPronvince.idOrg}&paging=false`)
     // +"&filter=id:in:[UPKEou47AtY]";
     _axios.get(url, authentication).then(jsonResult => {
         let resData = jsonResult.data;
