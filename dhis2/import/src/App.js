@@ -3,7 +3,7 @@ import Header from './App/Header';
 import Main from './App/Main';
 
 function App() {
-  const [menu, setMenu] = useState('menu1');
+  const [menu, setMenu] = useState('');
 
   const handleMenuClick = (menu) => {
     setMenu(menu);
