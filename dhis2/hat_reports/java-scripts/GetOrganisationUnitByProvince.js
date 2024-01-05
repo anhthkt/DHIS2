@@ -66,10 +66,10 @@ const orgs = [
       //   "name": "Các đơn vị thuộc Bộ",
       //   "id": "rY8ZzbdZcim"
       // },
-      // {
-      //   "name": "Các đơn vị trực thuộc Bộ",
-      //   "id": "ISsmukUNfU8"
-      // },
+      {
+        "name": "Các đơn vị trực thuộc Bộ",
+        "id": "ISsmukUNfU8"
+      }
       // {
       //   "name": "Cần Thơ",
       //   "id": "OQ3zNIHUm6b"
@@ -90,54 +90,54 @@ const orgs = [
       //   "name": "Hà Nội",
       //   "id": "kyTR47jtla2"
       // },
-      {
-        "name": "Hà Tĩnh",
-        "id": "rVwEOBkBMc5"
-      },
-      {
-        "name": "Hòa Bình",
-        "id": "HKWxMJZWw2y"
-      },
-      {
-        "name": "Hưng Yên",
-        "id": "WOzUSf72GLJ"
-      },
-      {
-        "name": "Hải Dương",
-        "id": "ZDnpYf8xF3N"
-      },
-      {
-        "name": "Hải Phòng",
-        "id": "jdW4qKTHtRd"
-      },
-      {
-        "name": "Hậu Giang",
-        "id": "e3WipXxPCgj"
-      },
-      {
-        "name": "Hồ Chí Minh",
-        "id": "oVBHhZ43yPD"
-      },
-      {
-        "name": "Khánh Hòa",
-        "id": "xs3U9jOo6T0"
-      },
-      {
-        "name": "Kiên Giang",
-        "id": "pbBzw7Mxdcp"
-      },
-      {
-        "name": "Kon Tum",
-        "id": "wewvAuC7kVe"
-      },
-      {
-        "name": "Lai Châu",
-        "id": "f16CpwI7Z8b"
-      },
-      {
-        "name": "Long An",
-        "id": "vFyCX3tmIlN"
-      }
+      // {
+      //   "name": "Hà Tĩnh",
+      //   "id": "rVwEOBkBMc5"
+      // },
+      // {
+      //   "name": "Hòa Bình",
+      //   "id": "HKWxMJZWw2y"
+      // },
+      // {
+      //   "name": "Hưng Yên",
+      //   "id": "WOzUSf72GLJ"
+      // },
+      // {
+      //   "name": "Hải Dương",
+      //   "id": "ZDnpYf8xF3N"
+      // },
+      // {
+      //   "name": "Hải Phòng",
+      //   "id": "jdW4qKTHtRd"
+      // },
+      // {
+      //   "name": "Hậu Giang",
+      //   "id": "e3WipXxPCgj"
+      // },
+      // {
+      //   "name": "Hồ Chí Minh",
+      //   "id": "oVBHhZ43yPD"
+      // },
+      // {
+      //   "name": "Khánh Hòa",
+      //   "id": "xs3U9jOo6T0"
+      // },
+      // {
+      //   "name": "Kiên Giang",
+      //   "id": "pbBzw7Mxdcp"
+      // },
+      // {
+      //   "name": "Kon Tum",
+      //   "id": "wewvAuC7kVe"
+      // },
+      // {
+      //   "name": "Lai Châu",
+      //   "id": "f16CpwI7Z8b"
+      // },
+      // {
+      //   "name": "Long An",
+      //   "id": "vFyCX3tmIlN"
+      // }
       // {
       //   "name": "Lào Cai",
       //   "id": "Loz5sNNUEKt"

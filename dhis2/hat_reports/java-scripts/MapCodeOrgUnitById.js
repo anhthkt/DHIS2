@@ -1,368 +1,87 @@
-const _axios = require("axios");
-const _lodash = require("lodash");
-const dotenv = require("dotenv");
-const ExcelJS = require('exceljs');
+const axios = require('axios');
+const fs = require('fs').promises;
 
-const fs = require("fs");
 
-dotenv.config()
-//CONSTANT  
-const baseUrl = `http://dev.tkyt.vn/nhanluc`;
-const baseUrlBaoCao = `https://baocao.tkyt.vn`;
-const orgs = [
-      // {
-      //   "name": "An Giang",
-      //   "id": "uAsdFJIqElU"
-      // },
-      // {
-      //   "name": "Bà Rịa - Vũng Tàu",
-      //   "id": "BHQmfUcKfm1"
-      // },
-      // {
-      //   "name": "Bình Dương",
-      //   "id": "FSr4tndBddw"
-      // },
-      // {
-      //   "name": "Bình Phước",
-      //   "id": "ECXvzGHClbu"
-      // },
-      // {
-      //   "name": "Bình Thuận",
-      //   "id": "aheT3Akf5kM"
-      // },
-      // {
-      //   "name": "Bình Định",
-      //   "id": "TqoasbvLrM5"
-      // },
-      // {
-      //   "name": "Bạc Liêu",
-      //   "id": "g2S76y4JDTo"
-      // },
-      // {
-      //   "name": "Bắc Giang",
-      //   "id": "bvuFKVVCZxg"
-      // },
-      // {
-      //   "name": "Bắc Kạn",
-      //   "id": "X9S3sMrxHkI"
-      // },
-      // {
-      //   "name": "Bắc Ninh",
-      //   "id": "kxJqRG6smMB"
-      // },
-      // {
-      //   "name": "Bến Tre",
-      //   "id": "uf7ebucWAG0"
-      // },
-      // {
-      //   "name": "Cao Bằng",
-      //   "id": "rnDtB1wpoGc"
-      // },
-      // {
-      //   "name": "Cà Mau",
-      //   "id": "tkjhRCAQn8b"
-      // },
-      // {
-      //   "name": "Các đơn vị thuộc Bộ",
-      //   "id": "rY8ZzbdZcim"
-      // },
-      // {
-      //   "name": "Các đơn vị trực thuộc Bộ",
-      //   "id": "ISsmukUNfU8"
-      // },
-      // {
-      //   "name": "Cần Thơ",
-      //   "id": "OQ3zNIHUm6b"
-      // },
-      // {
-      //   "name": "Gia Lai",
-      //   "id": "lXnhf8MolUv"
-      // },
-      // {
-      //   "name": "Hà Giang",
-      //   "id": "nmijk75Nfap"
-      // },
-      // {
-      //   "name": "Hà Nam",
-      //   "id": "Ysn2ITT5OZR"
-      // },
-      // {
-      //   "name": "Hà Nội",
-      //   "id": "kyTR47jtla2"
-      // },
-      {
-        "name": "Hà Tĩnh",
-        "id": "rVwEOBkBMc5"
-      },
-      {
-        "name": "Hòa Bình",
-        "id": "HKWxMJZWw2y"
-      },
-      {
-        "name": "Hưng Yên",
-        "id": "WOzUSf72GLJ"
-      },
-      {
-        "name": "Hải Dương",
-        "id": "ZDnpYf8xF3N"
-      },
-      {
-        "name": "Hải Phòng",
-        "id": "jdW4qKTHtRd"
-      },
-      {
-        "name": "Hậu Giang",
-        "id": "e3WipXxPCgj"
-      },
-      {
-        "name": "Hồ Chí Minh",
-        "id": "oVBHhZ43yPD"
-      },
-      {
-        "name": "Khánh Hòa",
-        "id": "xs3U9jOo6T0"
-      },
-      {
-        "name": "Kiên Giang",
-        "id": "pbBzw7Mxdcp"
-      },
-      {
-        "name": "Kon Tum",
-        "id": "wewvAuC7kVe"
-      },
-      {
-        "name": "Lai Châu",
-        "id": "f16CpwI7Z8b"
-      },
-      {
-        "name": "Long An",
-        "id": "vFyCX3tmIlN"
-      }
-      // {
-      //   "name": "Lào Cai",
-      //   "id": "Loz5sNNUEKt"
-      // },
-      // {
-      //   "name": "Lâm Đồng",
-      //   "id": "EStgnLIUVcQ"
-      // },
-      // {
-      //   "name": "Lạng Sơn",
-      //   "id": "VjdV70J3HnU"
-      // },
-      // {
-      //   "name": "Nam Định",
-      //   "id": "tAGHn8IltiO"
-      // },
-      // {
-      //   "name": "Nghệ An",
-      //   "id": "ZJAerHIZ8Ch"
-      // },
-      // {
-      //   "name": "Ninh Bình",
-      //   "id": "ptFYxVC01Dh"
-      // },
-      // {
-      //   "name": "Ninh Thuận",
-      //   "id": "oHhDOTe7fB3"
-      // },
-      // {
-      //   "name": "Phú Thọ",
-      //   "id": "Z7CRWOY8WZM"
-      // },
-      // {
-      //   "name": "Phú Yên",
-      //   "id": "jpN36u4t33g"
-      // },
-      // {
-      //   "name": "Quảng Bình",
-      //   "id": "m7LXwFuxtUy"
-      // },
-      // {
-      //   "name": "Quảng Nam",
-      //   "id": "W449B0OhNyD"
-      // },
-      // {
-      //   "name": "Quảng Ngãi",
-      //   "id": "T6PENxhvy8Z"
-      // },
-      // {
-      //   "name": "Quảng Ninh",
-      //   "id": "LNFIrnLxCxk"
-      // },
-      // {
-      //   "name": "Quảng Trị",
-      //   "id": "LaCv5lKNIBi"
-      // },
-      // {
-      //   "name": "Sóc Trăng",
-      //   "id": "ArAFMKW35CK"
-      // },
-      // {
-      //   "name": "Sơn La",
-      //   "id": "pajSJ8hWr1F"
-      // },
-      // {
-      //   "name": "Thanh Hóa",
-      //   "id": "KbhAlx7J8c7"
-      // },
-      // {
-      //   "name": "Thái Bình",
-      //   "id": "ZF5pyHp7GUK"
-      // },
-      // {
-      //   "name": "Thái Nguyên",
-      //   "id": "d5GgtJKn0Px"
-      // },
-      // {
-      //   "name": "Thừa Thiên Huế",
-      //   "id": "N9g8JZ96gOs"
-      // },
-      // {
-      //   "name": "Tiền Giang",
-      //   "id": "BeoEarCsP0N"
-      // },
-      // {
-      //   "name": "Trà Vinh",
-      //   "id": "wJorKSdTSu2"
-      // },
-      // {
-      //   "name": "Tuyên Quang",
-      //   "id": "uglfBEIDXHY"
-      // },
-      // {
-      //   "name": "Tây Ninh",
-      //   "id": "mlcepxdsrJK"
-      // },
-      // {
-      //   "name": "Vĩnh Long",
-      //   "id": "MDVatffMnzo"
-      // },
-      // {
-      //   "name": "Vĩnh Phúc",
-      //   "id": "VOIqdFpPXFq"
-      // },
-      // {
-      //   "name": "Yên Bái",
-      //   "id": "DJptEDkQmc4"
-      // },
-      // {
-      //   "name": "Điện Biên",
-      //   "id": "GeDxqlWLx9Q"
-      // },
-      // {
-      //   "name": "Đà Nẵng",
-      //   "id": "QqvBYSvbeNj"
-      // },
-      // {
-      //   "name": "Đắk Lắk",
-      //   "id": "Y2AZV0a1Oyj"
-      // },
-      // {
-      //   "name": "Đắk Nông",
-      //   "id": "eyKD8PvVOO4"
-      // },
-      // {
-      //   "name": "Đồng Nai",
-      //   "id": "mQwBhiRXAqY"
-      // },
-      // {
-      //   "name": "Đồng Tháp",
-      //   "id": "T4hQeKvy8KI"
-      // }
-]
-  
 const authentication = {
-    auth: {
-        username: process.env.username,
-        password: `Csdl2018@)!*`
-    }
+  username: `anhth`,
+  password: `Csdl2018@)!*`
 }
+const urlNL = 'http://dev.tkyt.vn/nhanluc';
+const urlBC = 'https://baocao.tkyt.vn';
 
-function wirteJsonToExcel(data, fileName) {
-    // Tạo một workbook mới và một worksheet trong đó
-    const workbook = new ExcelJS.Workbook();
-    const worksheet = workbook.addWorksheet('Data');
+// Địa chỉ API endpoint để cập nhật metadata
+const updateMetadataApiUrl = urlBC + '/api/metadata.json';
 
-    // Định dạng tiêu đề cho worksheet (tùy chọn)
-    worksheet.columns = [
-        { header: 'Code', key: 'code', width: 15 },
-        { header: 'Name', key: 'name', width: 25 },
-        { header: 'ID', key: 'id', width: 25 },
-        { header: 'Ancestors', key: 'ancestors', width: 40 },
-        { header: 'User1', key: 'user1', width: 10 },
-        { header: 'User2', key: 'user2', width: 10 },
-        { header: 'User3', key: 'user3', width: 10 },
-        { header: 'User4', key: 'user4', width: 10 },
-        { header: 'User5', key: 'user5', width: 10 }
-    ];
+// Thêm hoặc cập nhật giá trị trường 'code'
+async function updateCodeField(idOrgArray) {
+  // Địa chỉ API endpoint
+  let urlIdOrgArrBC = urlBC + `/api/organisationUnits.json?fields=id&filter=path:ilike:${idOrgArray}&filter=level:eq:4&pageSize=5000&page=3`;
 
-    // Ghi dữ liệu từ mảng JSON vào worksheet
-    data.forEach(item => {
-        worksheet.addRow({
-            code: item.code,
-            name: item.name,
-            id: item.id,
-            ancestors: item.ancestors.map(ancestor => ancestor.name).join(', '), // Chuyển mảng ancestors thành chuỗi
-            user1: item.user1,
-            user2: item.user2,
-            user3: item.user3,
-            user4: item.user4,
-            user5: item.user5,
-        });
-    });
 
-    // Lưu workbook vào một file Excel
-    workbook.xlsx.writeFile(`${fileName}.xlsx`)
-        .then(function () {
-            console.log('File đã được lưu.');
+  //Get idOrgArray trên BC
+  let responseIdOrgArr = await axios.get(urlIdOrgArrBC, { auth: authentication });
+  let idOrgArr = responseIdOrgArr.data.organisationUnits
+  // let idOrgArr=[{"id": "fi6MjthhuHC"},{"id": "xSMqmMfEtRB"},{"id": "qY4SSRbzUDz"},{"id": "kakG9Ti2sHa"},{"id": "oyOvfE9hrTf"},{"id": "Tf4iBKzoKJN"},{"id": "cMyMjCoPmET"},{"id": "VkrLc8qToiA"},{"id": "RpkkZH5CwZz"},{"id": "Nz4Q6AHgren"},{"id": "XmaUIvpPSTR"},{"id": "UqtowXgfazS"},{"id": "h3wMzrRzyjo"},{"id": "bHXfX2YO5dJ"},{"id": "hnk0LZh40oH"},{"id": "khmD6em8bi5"},{"id": "LrZbz01h32B"},{"id": "CeIMzxmQjvG"},{"id": "dmus68RDOb5"},{"id": "qUICinYkMos"},{"id": "K51ZGfz4gND"},{"id": "plxWxXXlYFh"},{"id": "zZAGLBvKhYI"},{"id": "GUL0G7dEEPO"},{"id": "xu9V80qeKKV"},{"id": "z6srWrdoCOT"},{"id": "YYBeU4JovsH"},{"id": "EFusJ47a5yt"},{"id": "EebQIDzd3e1"},{"id": "bdd3q8Szbbx"},{"id": "CJ4etRag78H"},{"id": "OVwND1gT06j"},{"id": "oaoOCA4QG0L"},{"id": "wo9v9o2W1pH"},{"id": "Ah4aNp6LevO"},{"id": "ZxhbwOSepFx"},{"id": "m6p7bj5Yzb2"},{"id": "LtWvk1KvnOV"},{"id": "wtPUTohJPfr"},{"id": "UCoaK0rLSxR"},{"id": "JO2OdRyjtpm"},{"id": "BdDEY45dftJ"},{"id": "rfX0RNLoAB6"},{"id": "IbfCgxPCgNC"},{"id": "jLuN8PLzZ5D"},{"id": "pDE0OQdlZbI"},{"id": "xGY7mbFxCo2"},{"id": "L3YjnphRa6h"},{"id": "tkQp3soRRHi"},{"id": "wQlqilHDKaC"},{"id": "l0C0Rc7YoCx"},{"id": "OZkv7c1fKgK"},{"id": "R6qTvc8qI3Y"},{"id": "WwEY51tJ8FZ"},{"id": "mIFk4KwOXCP"},{"id": "EheTSoK8T37"},{"id": "h5YWuVkNlWQ"},{"id": "tBLDeDd9ebV"},{"id": "mbKqcEvgEL4"},{"id": "sGdNvFaIJlV"},{"id": "TZ0oOiP6E2T"},{"id": "DOulrWJ7ZqQ"},{"id": "QgJ0RzK5UnB"},{"id": "xwibwP1I1bU"},{"id": "qskvPd1JKCx"},{"id": "dBYF7gUHKmd"},{"id": "dssVfAlLGak"},{"id": "e2VI3D0dAE0"},{"id": "I8UpH6X78vr"},{"id": "NSnCcEH7XfW"},{"id": "cA4qDPz0lqZ"},{"id": "HsjaIxQsbp7"},{"id": "pR8GfE9Zs7A"},{"id": "n3zs8tbBiG3"},{"id": "R8jJa7e5MGX"},{"id": "qH8NbNa2wNM"},{"id": "KdN5YLLXsNF"},{"id": "NzDK2zGPI6V"},{"id": "n1zFRJl85Ua"},{"id": "frdIdp6Foq4"},{"id": "eTpe3lVZdvZ"},{"id": "TRzXSePpijC"},{"id": "NF0Aec6jUSa"},{"id": "pzY2zkHEnDT"},{"id": "lsstHpbiyfz"}]
+  // console.log(idOrgArr);
+
+  for (let idorg of idOrgArr) {
+    console.log(`Đang thực hiện đơn vị: ${idorg.id}`);
+    // Địa chỉ API endpoint
+    let apiUrlNL = urlNL + `/api/organisationUnits.json?fields=code&filter=id:eq:${idorg.id}&paging=false`;
+    let apiUrlBC = urlBC + `/api/organisationUnits.json?fields=:owner&filter=id:eq:${idorg.id}&paging=false`;
+    try {
+      // Check thông tin đơn vị từ API trên NL
+      let responseNL = await axios.get(apiUrlNL, { auth: authentication });
+      // Check if responseNL has a value
+      if (!responseNL.data || !responseNL.data.organisationUnits || responseNL.data.organisationUnits.length === 0) {
+        // console.error(`Không có giá trị ${idorg} từ API trên NL.`);
+        let logMessage = `Không có giá trị ${idorg.id} trên NL\n`;
+        await fs.appendFile(`./updateLog-${idOrgArray}.txt`, logMessage);
+        // return; // Exit function if there is no value
+      } else {
+        let codeNL = responseNL.data.organisationUnits[0].code;
+
+        // Lấy thông tin đơn vị từ API trên BC
+        let responseBC = await axios.get(apiUrlBC, { auth: authentication });
+        let organisationUnit = responseBC.data;
+
+        // Kiểm tra xem có giá trị của trường 'code' hay không
+        if (!organisationUnit.organisationUnits[0].code) {
+          // Nếu không có, thêm giá trị 'code': codeNL
+          organisationUnit.organisationUnits[0].code = codeNL;
+        } else {
+          // Nếu có, sửa giá trị thành codeNL
+          organisationUnit.organisationUnits[0].code = codeNL;
+        }
+
+        // Thực hiện yêu cầu PUT để cập nhật metadata
+        await axios.post(updateMetadataApiUrl, JSON.stringify(organisationUnit), {
+          headers: {
+            // Overwrite Axios's automatically set Content-Type
+            'Content-Type': 'application/json'
+          },
+          maxBodyLength: 104857600, //100mb
+          maxContentLength: 104857600, //100mb
+          timeout: 1200000,
+          // httpsAgent: new https.Agent({ keepAlive: true }),
+          emulateJSON: true,
+          auth: authentication
         })
-        .catch(function (error) {
-            console.error('Lỗi:', error);
-        });
-}
 
-async function createExcel(org) {
-    let url = ``
-    url = baseUrl + `/api/organisationUnits.json?fields=id,code,name,ancestors[name]&filter=path:ilike:${org.id}&paging=false`
-    // +"&filter=id:in:[UPKEou47AtY]";
-    let data = {};
-    await _axios.get(url, authentication).then(jsonResult => {
-        let resData = jsonResult.data;
-        data = resData.organisationUnits
-    })
-    // Sử dụng map để trích xuất các giá trị id
-    let idArray = data.map(item => item.id);
-    // Sử dụng join để nối các giá trị thành một chuỗi với dấu phẩy
-    let idOrgs = idArray.join(',');
-    // console.log(idOrgs);
-
-    url = baseUrl + `/api/users.json?fields=id,username,organisationUnits[id]&filter=organisationUnits.id:in:[${idOrgs}]&paging=false`
-    await _axios.get(url, authentication).then(jsonResult => {
-        let resData = jsonResult.data;
-        users = resData.users
-    })
-
-    const mappedData = data.map(item => {
-        const matchingUsers = users.filter(user => user.organisationUnits[0].id === item.id);
-        return {
-            ...item,
-            user1: matchingUsers[0] ? matchingUsers[0].username : null,
-            user2: matchingUsers[1] ? matchingUsers[1].username : null,
-            user3: matchingUsers[2] ? matchingUsers[2].username : null,
-            user4: matchingUsers[3] ? matchingUsers[3].username : null,
-            user5: matchingUsers[4] ? matchingUsers[4].username : null
-        };
-    });
-    // console.log(mappedData);
-
-    wirteJsonToExcel(mappedData, org.name);
-};
-
-// Main function
-(async () => {
-    for (const org of orgs) {
-      console.log(org);
-      await createExcel(org);
+        // Ghi log ra file text khi cập nhật thành công
+        let logMessage = `Cập nhật thành công: ${JSON.stringify(organisationUnit.organisationUnits[0].id)} | ${JSON.stringify(organisationUnit.organisationUnits[0].code)} | ${JSON.stringify(organisationUnit.organisationUnits[0].name)} | ${JSON.stringify(organisationUnit.organisationUnits[0].path)}\n`;
+        await fs.appendFile(`updateLog-${idOrgArray}.txt`, logMessage);
+        // console.log(res.data);
+      }
     }
-  })();
+  
+  catch (error) {
+    let logMessage = `Lỗi khi cập nhật: ${idorg.id}\n`;
+    await fs.appendFile(`updateLog-${idOrgArray}.txt`, logMessage);
+    console.error('Lỗi khi cập nhật:', error.message);
+  }
+}
+}
+// Gọi hàm để thực hiện cập nhật
+let idOrgArray = 'LOdti1gATwC'; //BN
+ updateCodeField(idOrgArray);

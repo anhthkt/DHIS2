@@ -58,7 +58,7 @@ const { config } = require("process");
 //         username: 'anhth',
 //         password: 'Csdl2018@)!*'
 //     }}
-// ])
+// ])sponse.json();
 // })
 let session_url = `http://daotao.tkyt.vn/kln/api/trackedEntityInstances/urn7Xr2Blgp`
 _axios.delete(session_url, {}, {
