@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Header from './Header';
 import Menu1 from './Main/Menu1';
 import Menu2 from './Main/Menu2';
 import Menu3 from './Main/Menu3';
@@ -22,7 +23,11 @@ function Main({ activeMenu }) {
     const handleGetHeader = (header) => {
         setHeader(header);
     };
-   
+    const [menu, setMenu] = useState('');
+
+    const handleMenuClick = (menu) => {
+      setMenu(menu);
+    };
     let content;
     if (activeMenu === 'menu1') {
         content = <Menu1 setSelectedOption={setSelectedOption} onOptionChange={handleOptionChange}/>;
@@ -37,6 +42,7 @@ function Main({ activeMenu }) {
 
     return (
         <div className="main" key={`main-${activeMenu}`}>
+                  {/* <Header key="header" activeMenu={menu} onMenuClick={handleMenuClick} /> */}
             {content}
         </div>
     );
