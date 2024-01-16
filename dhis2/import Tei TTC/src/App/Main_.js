@@ -4,7 +4,7 @@ import { Dropdown, Menu, Button} from 'antd';
 const menu = (
     <Menu>
         <Menu.Item>
-            <a href="#" onClick={() => import('./Import.js')}>
+            <a href="#" onClick={() => import('./Main.js')}>
                 Import
             </a>
         </Menu.Item>
