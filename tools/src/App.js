@@ -1,39 +1,75 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './components/Header';
-import Content from './components/Content';
-import Footer from './components/Footer';
-import Home from './components/Home';
-import Org from './components/Org';
-import Tool1 from './components/org/Tool1';
-import Tool2 from './components/org/Tool2'; 
-import User from './components/User';
+// App.js
+import React, { useState } from 'react';
+import { Layout, Menu, Dropdown } from 'antd';
+import GetInfoOrgById from './components/org/GetInfoOrgById';
+import Tool2 from './components/org/Tool2';
 import Tool3 from './components/user/Tool3';
 import Tool4 from './components/user/Tool4';
-import Khac from './components/Khac';
 import Tool5 from './components/khac/Tool5';
 
+const { Header, Content, Footer } = Layout;
+
 const App = () => {
+  const [selectedTool, setSelectedTool] = useState(null);
+
+  const tools = {
+    Org: ['GetInfoOrgById', 'Tool 2'],
+    User: ['Tool 3', 'Tool 4'],
+    Other: ['Tool 5'],
+  };
+
+  const handleToolClick = ({ key }) => {
+    setSelectedTool(key);
+  };
+
+  const toolMenu = (category) => (
+    <Menu onClick={handleToolClick}>
+      {tools[category].map((tool) => (
+        <Menu.Item key={tool}>{tool}</Menu.Item>
+      ))}
+    </Menu>
+  );
+
+  const renderContent = () => {
+    switch (selectedTool) {
+      case 'GetInfoOrgById':
+        return <GetInfoOrgById />;
+      case 'Tool 2':
+        return <Tool2 />;
+      case 'Tool 3':
+        return <Tool3 />;
+      case 'Tool 4':
+        return <Tool4 />;
+      case 'Tool 5':
+        return <Tool5 />;
+      default:
+        return <div>Content for Home</div>;
+    }
+  };
+
   return (
-    <Router>
-      <div>
-        <Header />
-        <Content>
-          <Routes>
-            <Route path="/components/" exact component={Home} />
-            <Route path="/components/org" exact component={Org} />
-            <Route path="/components/org/tool1" component={Tool1} />
-            <Route path="/components/org/tool2" component={Tool2} />
-            <Route path="/components/user" exact component={User} />
-            <Route path="/components/user/tool3" component={Tool3} />
-            <Route path="/components/user/tool4" component={Tool4} />
-            <Route path="/components/khac" exact component={Khac} />
-            <Route path="/components/khac/tool5" component={Tool5} />
-          </Routes>
-        </Content>
-        <Footer />
-      </div>
-    </Router>
+    <Layout style={{ minHeight: '100vh' }}>
+      <Header>
+        <Menu theme="dark" mode="horizontal">
+          <Menu.Item key="Home" onClick={() => setSelectedTool(null)}>
+            Home
+          </Menu.Item>
+          {Object.entries(tools).map(([category, items], index) => (
+            <Dropdown key={category} overlay={() => toolMenu(category)}>
+              <a
+                className="ant-dropdown-link"
+                onClick={(e) => e.preventDefault()}
+                style={{ marginLeft: index === 0 ? '0' : '20px' }}
+              >
+                {category}
+              </a>
+            </Dropdown>
+          ))}
+        </Menu>
+      </Header>
+      <Content style={{ padding: '20px', flex: '1' }}>{renderContent()}</Content>
+      <Footer style={{ textAlign: 'center' }}>Footer Content</Footer>
+    </Layout>
   );
 };
 
