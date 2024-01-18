@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Header from './App/Header';
-import Main from './App/Main_';
+import Main from './App/Main';
 
 function App() {
   const [menu, setMenu] = useState('');

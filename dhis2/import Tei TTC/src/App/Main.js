@@ -42,7 +42,7 @@ function Main({ activeMenu }) {
 
     return (
         <div className="main" key={`main-${activeMenu}`}>
-                  {/* <Header key="header" activeMenu={menu} onMenuClick={handleMenuClick} /> */}
+                  <Header key="header" activeMenu={menu} onMenuClick={handleMenuClick} />
             {content}
         </div>
     );
