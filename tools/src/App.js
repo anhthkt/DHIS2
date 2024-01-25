@@ -57,6 +57,7 @@ const App = () => {
           {Object.entries(tools).map(([category, items], index) => (
             <Dropdown key={category} overlay={() => toolMenu(category)}>
               <a
+                href="/main"
                 className="ant-dropdown-link"
                 onClick={(e) => e.preventDefault()}
                 style={{ marginLeft: index === 0 ? '0' : '20px' }}
