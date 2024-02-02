@@ -66,10 +66,10 @@ const orgs = [
       //   "name": "Các đơn vị thuộc Bộ",
       //   "id": "rY8ZzbdZcim"
       // },
-      {
-        "name": "Các đơn vị trực thuộc Bộ",
-        "id": "ISsmukUNfU8"
-      }
+    //   {
+    //     "name": "Các đơn vị trực thuộc Bộ",
+    //     "id": "ISsmukUNfU8"
+    //   }
       // {
       //   "name": "Cần Thơ",
       //   "id": "OQ3zNIHUm6b"
@@ -86,10 +86,10 @@ const orgs = [
       //   "name": "Hà Nam",
       //   "id": "Ysn2ITT5OZR"
       // },
-      // {
-      //   "name": "Hà Nội",
-      //   "id": "kyTR47jtla2"
-      // },
+      {
+        "name": "Hà Nội",
+        "id": "kyTR47jtla2"
+      },
       // {
       //   "name": "Hà Tĩnh",
       //   "id": "rVwEOBkBMc5"
