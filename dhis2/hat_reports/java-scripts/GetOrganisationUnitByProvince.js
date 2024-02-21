@@ -7,7 +7,7 @@ const fs = require("fs");
 
 dotenv.config()
 //CONSTANT  
-const baseUrl = `http://dev.tkyt.vn/nhanluc`;
+const baseUrl = `http://nhanluc.tkyt.vn`;
 
 const orgs = [
       // {
@@ -86,10 +86,10 @@ const orgs = [
       //   "name": "Hà Nam",
       //   "id": "Ysn2ITT5OZR"
       // },
-      {
-        "name": "Hà Nội",
-        "id": "kyTR47jtla2"
-      },
+    //   {
+    //     "name": "Hà Nội",
+    //     "id": "kyTR47jtla2"
+    //   },
       // {
       //   "name": "Hà Tĩnh",
       //   "id": "rVwEOBkBMc5"
@@ -118,10 +118,10 @@ const orgs = [
       //   "name": "Hồ Chí Minh",
       //   "id": "oVBHhZ43yPD"
       // },
-      // {
-      //   "name": "Khánh Hòa",
-      //   "id": "xs3U9jOo6T0"
-      // },
+      {
+        "name": "Khánh Hòa",
+        "id": "xs3U9jOo6T0"
+      },
       // {
       //   "name": "Kiên Giang",
       //   "id": "pbBzw7Mxdcp"
@@ -272,7 +272,6 @@ const orgs = [
       // }
 ]
   
-
 const authentication = {
     auth: {
         username: process.env.username,

@@ -24,6 +24,7 @@
     "read-excel-file": "^5.2.10",
     "write-json-file": "^5.0.0",
     "xlsx": "^0.17.2",
+    "yarn": "^1.22.21",
     "zip-dir": "^2.0.0"
   },
   "description": ""

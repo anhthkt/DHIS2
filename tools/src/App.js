@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Layout, Menu, Dropdown } from 'antd';
 import GetInfoOrgById from './components/org/GetInfoOrgById';
-import Tool2 from './components/org/Tool2';
+import GetIdDataSet from './components/org/GetIdDataSet';
 import Tool3 from './components/user/Tool3';
 import Tool4 from './components/user/Tool4';
 import Tool5 from './components/khac/Tool5';
@@ -13,7 +13,7 @@ const App = () => {
   const [selectedTool, setSelectedTool] = useState(null);
 
   const tools = {
-    Org: ['GetInfoOrgById', 'Tool 2'],
+    Org: ['GetInfoOrgById', 'GetIdDataSet'],
     User: ['Tool 3', 'Tool 4'],
     Other: ['Tool 5'],
   };
@@ -34,8 +34,8 @@ const App = () => {
     switch (selectedTool) {
       case 'GetInfoOrgById':
         return <GetInfoOrgById />;
-      case 'Tool 2':
-        return <Tool2 />;
+      case 'GetIdDataSet':
+        return <GetIdDataSet />;
       case 'Tool 3':
         return <Tool3 />;
       case 'Tool 4':

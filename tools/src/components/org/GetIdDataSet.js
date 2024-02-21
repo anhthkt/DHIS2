@@ -1,9 +1,9 @@
-// Tool2.js
+// GetIdDataSet.js
 import React, { useState } from 'react';
 import { Button, Input } from 'antd';
 import axios from 'axios';
 import ExcelJS from 'exceljs';
-
+import cheerio from 'cheerio';
 
 const baseUrl = `http://dev.tkyt.vn/nhanluc`;
 const authentication = {
@@ -11,7 +11,7 @@ const authentication = {
   password: `Csdl2018@)!*`
 }
 
-const Tool2 = () => {
+const GetIdDataSet = () => {
   const [dataSetId, setDataSetId] = useState('');
 
   const handleDataSetIdChange = (e) => {
@@ -28,21 +28,36 @@ const Tool2 = () => {
       const workbook = new ExcelJS.Workbook();
       const worksheet = workbook.addWorksheet('DataSet');
 
-      // Xử lý dữ liệu từ API response và thêm vào worksheet
-      worksheet.columns = [
-        { header: 'Column 1', key: 'column1', width: 10 },
-        { header: 'Column 2', key: 'column2', width: 20 },
-        // Thêm các cột khác tương ứng với dữ liệu bạn muốn xuất ra Excel
-      ];
+      // Load HTML vào cheerio để phân tích
+      const $ = cheerio.load(response.data.dataSets[0].dataEntryForm.htmlCode);
 
-      // Ghi dữ liệu vào từ response
-      response.data.forEach((item, index) => {
-        worksheet.addRow({
-          column1: item.column1,
-          column2: item.column2,
-          // Thêm các trường dữ liệu khác tương ứng với dữ liệu bạn muốn xuất ra Excel
+      // Trích xuất dữ liệu từ bảng HTML và đưa vào bảng Excel
+      $('table.organization-table').each((index, element) => {
+        $(element).find('tr').each((rowIndex, row) => {
+            const rowData = [];
+            $(row).find('td, th').each((colIndex, col) => {
+                const rowspan = parseInt($(col).attr('rowspan')) || 1;
+                const colspan = parseInt($(col).attr('colspan')) || 1;
+    
+                // Merge cell if rowspan or colspan exists
+                for (let i = 0; i < colspan; i++) {
+                    for (let j = 0; j < rowspan; j++) {
+                        if (i > 0 || j > 0) continue; // Skip first cell
+                        // Kiểm tra nếu có thẻ input trong thẻ td
+                        const input = $(col).find('input');
+                        if (input.length > 0) {
+                            // Nếu có input, lấy giá trị của thuộc tính id
+                            rowData.push(input.attr('id').trim());
+                        } else {
+                            // Nếu không có input, lấy văn bản của thẻ td
+                            rowData.push($(col).text().trim());
+                        }
+                    }
+                }
+            });
+            worksheet.addRow(rowData);
         });
-      });
+    });
 
       // Xuất file Excel
       const buffer = await workbook.xlsx.writeBuffer();
@@ -71,4 +86,4 @@ const Tool2 = () => {
   );
 };
 
-export default Tool2;
+export default GetIdDataSet;
