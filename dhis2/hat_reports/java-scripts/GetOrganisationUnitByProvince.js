@@ -130,18 +130,18 @@ const orgs = [
       //   "name": "Kon Tum",
       //   "id": "wewvAuC7kVe"
       // },
-      // {
-      //   "name": "Lai Châu",
-      //   "id": "f16CpwI7Z8b"
-      // },
+      {
+        "name": "Lai Châu",
+        "id": "f16CpwI7Z8b"
+      },
       // {
       //   "name": "Long An",
       //   "id": "vFyCX3tmIlN"
       // }
-      {
-        "name": "Lào Cai",
-        "id": "Loz5sNNUEKt"
-      },
+    //   {
+    //     "name": "Lào Cai",
+    //     "id": "Loz5sNNUEKt"
+    //   },
       // {
       //   "name": "Lâm Đồng",
       //   "id": "EStgnLIUVcQ"
