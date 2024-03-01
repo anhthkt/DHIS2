@@ -71,7 +71,7 @@ async function processData() {
 
 const abbreviationMap = {
     "Lao động làm việc theo 111/2022/NĐ-CP hoặc 68/2000/NĐ-CP..., Số lao động làm việc theo hợp đồng theo Nghị định số 111/2022/NĐ-CP (hoặc theo Nghị định số 68/2000/NĐ-CP, Nghị định số 161/2018/NĐ-CP khi chưa chuyển đổi sang Nghị định 111/2022/NĐ-CP)":"LD-111-68-161",
-    "Lao động làm việc theo 111/2022/NĐ-CP hoặc 68/2000/NĐ-CP...,":"LD-111-68",
+    "Lao động làm việc theo 111/2022/NĐ-CP hoặc 68/2000/NĐ-CP...,": "LD-111-68",
     "nguồn thu của đơn vị":"NGUON THU",
     "Chuyên ngành": "CN",
     "TTC_": " ",
