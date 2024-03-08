@@ -130,18 +130,18 @@ const orgs = [
       //   "name": "Kon Tum",
       //   "id": "wewvAuC7kVe"
       // },
-      {
-        "name": "Lai Châu",
-        "id": "f16CpwI7Z8b"
-      },
+    //   {
+    //     "name": "Lai Châu",
+    //     "id": "f16CpwI7Z8b"
+    //   },
       // {
       //   "name": "Long An",
       //   "id": "vFyCX3tmIlN"
       // }
-    //   {
-    //     "name": "Lào Cai",
-    //     "id": "Loz5sNNUEKt"
-    //   },
+      {
+        "name": "Lào Cai",
+        "id": "Loz5sNNUEKt"
+      },
       // {
       //   "name": "Lâm Đồng",
       //   "id": "EStgnLIUVcQ"
@@ -287,6 +287,7 @@ function wirteJsonToExcel(data, fileName) {
     // Định dạng tiêu đề cho worksheet (tùy chọn)
     worksheet.columns = [
         { header: 'Code', key: 'code', width: 15 },
+        { header: 'Code BHYT', key: 'codebhyt', width: 15 },
         { header: 'Name', key: 'name', width: 25 },
         { header: 'ID', key: 'id', width: 25 },
         { header: 'Ancestors', key: 'ancestors', width: 40 },
@@ -299,8 +300,13 @@ function wirteJsonToExcel(data, fileName) {
 
     // Ghi dữ liệu từ mảng JSON vào worksheet
     data.forEach(item => {
+        let codeBHYT = ''
+        if(item.attributeValues.length > 0) {
+            codeBHYT = item.attributeValues[0].value;
+        }
         worksheet.addRow({
             code: item.code,
+            codebhyt: codeBHYT,
             name: item.name,
             id: item.id,
             ancestors: item.ancestors.map(ancestor => ancestor.name).join(', '), // Chuyển mảng ancestors thành chuỗi
@@ -324,7 +330,7 @@ function wirteJsonToExcel(data, fileName) {
 
 async function createExcel(org) {
     let url = ``
-    url = baseUrl + `/api/organisationUnits.json?fields=id,code,name,ancestors[name]&filter=path:ilike:${org.id}&paging=false`
+    url = baseUrl + `/api/organisationUnits.json?fields=id,code,name,ancestors[name],attributeValues&filter=path:ilike:${org.id}&paging=false`
     // +"&filter=id:in:[UPKEou47AtY]";
     let data = {};
     await _axios.get(url, authentication).then(jsonResult => {
