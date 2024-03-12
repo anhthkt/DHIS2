@@ -2,19 +2,19 @@ const fs = require('fs');
 const axios = require('axios');
 
 const url = `http://103.124.60.92/baocao/api/events.json?dryRun=false&dataElementIdScheme=UID&orgUnitIdScheme=UID&eventIdScheme=UID&idScheme=UID&payloadFormat=json`;
-const authentication = {
-    username: `anhth`,
-    password: `Csdl2018@)!*`
+const auth = {
+    headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Basic YW5odGg6Q3NkbDIwMThAKSEq' // token authentication
+    }
 }
 
 async function processPostRequest(dataPost) {
     try {
+        // Replace dấu ; = ,
+        const dataPostString = JSON.stringify(dataPost).replace(/;/g, ',');
         // Thực hiện yêu cầu POST bằng Axios
-        const response = await axios.post(url, dataPost, {
-            headers: {
-                'Authorization': authentication
-            }
-        });
+        const response = await axios.post(url, dataPostString, auth);
         console.log('Đã gửi yêu cầu POST thành công:', response.status);
     } catch (error) {
         console.error('Đã xảy ra lỗi khi gửi yêu cầu POST:', error);
@@ -52,9 +52,9 @@ fs.readFile(jsonFilePath, 'utf8', async (err, data) => {
                 "value": createdDateString
             });
             let dataPost = { "events": [] }
-        dataPost.events.push(event);
-        console.log(dataPost.events[0].event, i);
-        await processPostRequest(dataPost);
+            dataPost.events.push(event);
+            console.log(i, dataPost.events[0].event);
+            await processPostRequest(dataPost);
         } else {
             // Nếu "dataElement": "fcbbx6y83mn" đã tồn tại, cập nhật "value" thành ngày tháng năm của "create"
             // existingDataElement.value = createdDateString;
@@ -66,11 +66,11 @@ fs.readFile(jsonFilePath, 'utf8', async (err, data) => {
     };
 
     // Ghi lại dữ liệu đã được cập nhật vào tập tin JSON
-    fs.writeFile(jsonFilePath, JSON.stringify(jsonData, null, 2), err => {
-        if (err) {
-            console.error('Đã xảy ra lỗi khi ghi lại tập tin JSON:', err);
-            return;
-        }
-        console.log('Đã cập nhật thành công dữ liệu vào tập tin JSON.');
-    });
+    // fs.writeFile(jsonFilePath, JSON.stringify(jsonData, null, 2), err => {
+    //     if (err) {
+    //         console.error('Đã xảy ra lỗi khi ghi lại tập tin JSON:', err);
+    //         return;
+    //     }
+    //     console.log('Đã cập nhật thành công dữ liệu vào tập tin JSON.');
+    // });
 });
