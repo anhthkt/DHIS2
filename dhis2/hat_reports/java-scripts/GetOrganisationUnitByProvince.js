@@ -8,8 +8,13 @@ const fs = require("fs");
 dotenv.config()
 //CONSTANT  
 // const baseUrl = `http://nhanluc.tkyt.vn`;
-const baseUrl = `http://103.124.60.92/baocao`;
+const baseUrl = `http://dev.tkyt.vn/nhanluc`;
+// const baseUrl = `http://103.124.60.92/baocao`;
 const orgs = [
+      {
+        "name": "Việt Nam",
+        "id": "LOdti1gATwC"
+      },
       // {
       //   "name": "An Giang",
       //   "id": "uAsdFJIqElU"
@@ -138,10 +143,10 @@ const orgs = [
       //   "name": "Long An",
       //   "id": "vFyCX3tmIlN"
       // }
-      {
-        "name": "Lào Cai",
-        "id": "Loz5sNNUEKt"
-      },
+    //   {
+    //     "name": "Lào Cai",
+    //     "id": "Loz5sNNUEKt"
+    //   },
       // {
       //   "name": "Lâm Đồng",
       //   "id": "EStgnLIUVcQ"
@@ -242,10 +247,10 @@ const orgs = [
       //   "name": "Vĩnh Phúc",
       //   "id": "VOIqdFpPXFq"
       // },
-      // {
-      //   "name": "Yên Bái",
-      //   "id": "DJptEDkQmc4"
-      // },
+    //   {
+    //     "name": "Yên Bái",
+    //     "id": "DJptEDkQmc4"
+    //   },
       // {
       //   "name": "Điện Biên",
       //   "id": "GeDxqlWLx9Q"
@@ -343,6 +348,7 @@ async function createExcel(org) {
     let idOrgs = idArray.join(',');
     // console.log(idOrgs);
 
+    let users = [];
     url = baseUrl + `/api/users.json?fields=id,username,organisationUnits[id]&filter=organisationUnits.id:in:[${idOrgs}]&paging=false`
     await _axios.get(url, authentication).then(jsonResult => {
         let resData = jsonResult.data;
@@ -360,7 +366,7 @@ async function createExcel(org) {
             user5: matchingUsers[4] ? matchingUsers[4].username : null
         };
     });
-    // console.log(mappedData);
+    console.log(mappedData);
 
     wirteJsonToExcel(mappedData, org.name);
 };

@@ -22,7 +22,7 @@ async function processPostRequest(dataPost) {
 }
 
 // Tên và đường dẫn của tập tin JSON
-const jsonFilePath = 'events.json';
+const jsonFilePath = 'data.json';
 let i = 0;
 // Đọc dữ liệu từ tập tin JSON
 fs.readFile(jsonFilePath, 'utf8', async (err, data) => {
