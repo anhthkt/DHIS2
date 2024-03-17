@@ -5,7 +5,8 @@ import axios from 'axios';
 import ExcelJS from 'exceljs';
 import cheerio from 'cheerio';
 
-const baseUrl = `http://dev.tkyt.vn/nhanluc`;
+// const baseUrl = `http://dev.tkyt.vn/nhanluc`;
+const baseUrl = `http://nhanluc.tkyt.vn`;
 const authentication = {
   username: `anhth`,
   password: `Csdl2018@)!*`
