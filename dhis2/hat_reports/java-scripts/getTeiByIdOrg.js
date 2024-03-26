@@ -8,7 +8,7 @@ const authentication = {
 }
 
 // ID Benh-Nhan, Events, Programs
-const idOrg = "Rvr2sS9jB81";
+const idOrg = "ya11NnTBEsR";
 
 
 async function getMetaData(idOrg) {
@@ -31,15 +31,33 @@ async function getMetaData(idOrg) {
     { header: 'SĐT', key: 'phone', width: 20 }
   ];
 
-  const dataTeis = [];
+  const dataTeis = new Set();
   const programs = ["NAleauPZvIE", "a7arqsOKzsr", "gPWs4FRX9dj", "WmEGO8Ipykm", "XrC0U6IV4W0"]
-  programs.forEach(async program => {
+
+  for (const program of programs) {
     let url = urlBase + `api/trackedEntityInstances/query.json?ou=${idOrg}&ouMode=CHILDREN&program=${program}&paging=false`;
-    let response = await axios.get(url, { auth: authentication });
-    dataTeis.concat(response.data.rows);
-  })
-  dataTeis = Set(dataTeis);
-  dataTeis.forEach((element, index) => {
+    try {
+      const response = await axios.get(url, { auth: authentication });
+      if (response.data.rows.length > 0) {
+        response.data.rows.forEach(row => dataTeis.add(row));
+      }
+    } catch (error) {
+      console.error('Lỗi khi lấy dữ liệu từ API:', error);
+    }
+  }
+  const dataArray = Array.from(dataTeis);
+  let set = new Set();
+  let uniqueArr = [];
+
+  dataArray.forEach(subArr => {
+    let key = subArr[0]; // Chuyển mảng con thành chuỗi
+    if (!set.has(key)) { // Kiểm tra xem chuỗi đã tồn tại trong tập hợp hay chưa
+      set.add(key); // Thêm chuỗi vào tập hợp
+      uniqueArr.push(subArr); // Thêm mảng con vào mảng kết quả
+    }
+  });
+
+  uniqueArr.forEach((element, index) => {
 
     wsTei.addRow({
       stt: index + 1,
