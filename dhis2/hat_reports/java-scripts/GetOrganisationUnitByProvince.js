@@ -8,13 +8,14 @@ const fs = require("fs");
 dotenv.config()
 //CONSTANT  
 // const baseUrl = `http://nhanluc.tkyt.vn`;
-const baseUrl = `http://dev.tkyt.vn/nhanluc`;
+// const baseUrl = `http://dev.tkyt.vn/nhanluc`;
+const baseUrl = `https://baocao.tkyt.vn`;
 // const baseUrl = `http://103.124.60.92/baocao`;
 const orgs = [
-      {
-        "name": "Việt Nam",
-        "id": "LOdti1gATwC"
-      },
+      // {
+      //   "name": "Việt Nam",
+      //   "id": "LOdti1gATwC"
+      // },
       // {
       //   "name": "An Giang",
       //   "id": "uAsdFJIqElU"
@@ -159,10 +160,10 @@ const orgs = [
       //   "name": "Nam Định",
       //   "id": "tAGHn8IltiO"
       // },
-      // {
-      //   "name": "Nghệ An",
-      //   "id": "ZJAerHIZ8Ch"
-      // },
+      {
+        "name": "Nghệ An",
+        "id": "ZJAerHIZ8Ch"
+      },
       // {
       //   "name": "Ninh Bình",
       //   "id": "ptFYxVC01Dh"
