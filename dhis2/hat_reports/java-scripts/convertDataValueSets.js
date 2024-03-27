@@ -73,31 +73,31 @@ async function main(dataSetId) {
                 }
             }
         });
-        
-       // Tạo một đối tượng để lưu trữ các phần tử duy nhất
-const uniqueElements = {};
 
-// Duyệt qua mảng dataValues để lọc các phần tử duy nhất
-dataValues.forEach((dataValue) => {
-    const key = JSON.stringify({
-        dataElement: dataValue.dataElement,
-        period: dataValue.period,
-        orgUnit: dataValue.orgUnit,
-        categoryOptionCombo: dataValue.categoryOptionCombo,
-        attributeOptionCombo: dataValue.attributeOptionCombo,
-    });
+        // Tạo một đối tượng để lưu trữ các phần tử duy nhất
+        const uniqueElements = {};
+        const mergedDataValues = { "dataValues": [] }
+        // Duyệt qua mảng dataValues để lọc các phần tử duy nhất
+        dataValuesNew.dataValues.forEach((dataValue) => {
+            const key = JSON.stringify({
+                dataElement: dataValue.dataElement,
+                period: dataValue.period,
+                orgUnit: dataValue.orgUnit,
+                categoryOptionCombo: dataValue.categoryOptionCombo,
+                attributeOptionCombo: dataValue.attributeOptionCombo,
+            });
 
-    if (uniqueElements[key]) {
-        // Nếu phần tử đã tồn tại, cộng giá trị value vào phần tử đó
-        uniqueElements[key].value += parseFloat(dataValue.value);
-    } else {
-        // Nếu không, thêm phần tử mới
-        uniqueElements[key] = {
-            ...dataValue
-        };
-    }
-});
-
+            if (uniqueElements[key]) {
+                // Nếu phần tử đã tồn tại, cộng giá trị value vào phần tử đó
+                uniqueElements[key].value += parseFloat(dataValue.value);
+            } else {
+                // Nếu không, thêm phần tử mới
+                uniqueElements[key] = {
+                    ...dataValue
+                };
+            }
+        });
+        mergedDataValues.dataValues = Object.values(uniqueElements);
         // Ghi dataValuesNew vào file JSON mới
         fs.writeFileSync(`dataValuesNew.json`, JSON.stringify(mergedDataValues, null, 2));
         console.log(`Đã lưu dữ liệu mới vào file dataValuesNew.json`);
