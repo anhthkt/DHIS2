@@ -16,15 +16,16 @@ const authentication = {
     password: `Csdl2018@)!*`
 }
 // Hàm main
-const dataSetId = `t5w7mj2gG8t,MQJjDw7mR73,I5WdVPn7APv,FDoCgzxmrHJ,npbhGALYQF4,E6BgvmSSeEF,CD0h14DBMdW,WFTtT7TzqVB,YK9H8riuEIQ,bsDiOguEu9o,nrP08SVo09v,FWJucjOMj35,Dq83wOzoxnc,Ph19Cx7kOLj`;
+// const dataSetId = 't5w7mj2gG8t,MQJjDw7mR73,I5WdVPn7APv,FDoCgzxmrHJ,npbhGALYQF4,E6BgvmSSeEF,CD0h14DBMdW,WFTtT7TzqVB,YK9H8riuEIQ,bsDiOguEu9o,nrP08SVo09v,FWJucjOMj35,Dq83wOzoxnc,Ph19Cx7kOLj';
+const dataSetId = 't5w7mj2gG8t';
 
 async function main(dataSetId) {
     try {
         // Gọi API để lấy dữ liệu
         const response = await axios.get('http://nhanluc.tkyt.vn/api/dataValueSets.json', {
             params: {
-                dataSet: dataSetId,
-                orgUnit: 'uAsdFJIqElU',
+                dataSet: 't5w7mj2gG8t,MQJjDw7mR73,I5WdVPn7APv,FDoCgzxmrHJ,npbhGALYQF4,E6BgvmSSeEF,CD0h14DBMdW,WFTtT7TzqVB,YK9H8riuEIQ,bsDiOguEu9o,nrP08SVo09v,FWJucjOMj35,Dq83wOzoxnc,Ph19Cx7kOLj',
+                orgUnit: 'iNZewtduXP4',
                 children: true,
                 startDate: '2020-01-01',
                 endDate: '2024-03-20'
@@ -99,11 +100,11 @@ dataValues.forEach((dataValue) => {
 
         // Ghi dataValuesNew vào file JSON mới
         fs.writeFileSync(`dataValuesNew.json`, JSON.stringify(mergedDataValues, null, 2));
-        console.log(`Đã lưu dữ liệu mới vào file ${dataSetId}-dataValuesNew.json`);
+        console.log(`Đã lưu dữ liệu mới vào file dataValuesNew.json`);
 
         // Ghi dataValuesErr vào file JSON mới
         fs.writeFileSync(`dataValuesErr.json`, JSON.stringify(dataValuesErr, null, 2));
-        console.log(`Đã lưu dữ liệu lỗi vào file ${dataSetId}-dataValuesErr.json`);
+        console.log(`Đã lưu dữ liệu lỗi vào file dataValuesErr.json`);
     } catch (error) {
         console.error('Đã xảy ra lỗi:', error);
     }
