@@ -37,11 +37,11 @@ async function getMetaData(idOrg) {
   const programs = ["NAleauPZvIE", "a7arqsOKzsr", "gPWs4FRX9dj", "WmEGO8Ipykm", "XrC0U6IV4W0"]
 
   for (const program of programs) {
-    let url = urlBase + `api/trackedEntityInstances/query.json?ou=${idOrg}&ouMode=CHILDREN&program=${program}&paging=false`;
+    let url = urlBase + `api/trackedEntityInstances.json?ou=${idOrg}&ouMode=CHILDREN&program=${program}&paging=false`;
     try {
       const response = await axios.get(url, { auth: authentication });
-      if (response.data.rows.length > 0) {
-        response.data.rows.forEach(row => dataTeis.add(row));
+      if (response.data.trackedEntityInstances.length > 0) {
+        response.data.trackedEntityInstances.forEach(row => dataTeis.add(row));
       }
     } catch (error) {
       console.error('Lỗi khi lấy dữ liệu từ API:', error);
@@ -52,7 +52,7 @@ async function getMetaData(idOrg) {
   let uniqueArr = [];
 
   dataArray.forEach(subArr => {
-    let key = subArr[0]; // Chuyển mảng con thành chuỗi
+    let key = subArr.trackedEntityInstance;
     if (!set.has(key)) { // Kiểm tra xem chuỗi đã tồn tại trong tập hợp hay chưa
       set.add(key); // Thêm chuỗi vào tập hợp
       uniqueArr.push(subArr); // Thêm mảng con vào mảng kết quả
@@ -60,19 +60,18 @@ async function getMetaData(idOrg) {
   });
 
   uniqueArr.forEach((element, index) => {
-
     wsTei.addRow({
       stt: index + 1,
-      id: element[0],
-      name: element[7],
-      sex: element[8],
-      birthDate: element[9],
-      bhyt: element[10],
-      cmt: element[11],
-      add: element[13],
-      add1: element[12],
-      job: element[14],
-      phone: element[15],
+      id: element.trackedEntityInstance,
+      name: element.attributes.find(attr => attr.attribute === 'xBoLC0aruyJ')?.value || '',
+      sex: element.attributes.find(attr => attr.attribute === 'rwreLO34Xg7')?.value || '',
+      birthDate: element.attributes.find(attr => attr.attribute === 'C7USC9MC8yH')?.value || '',
+      bhyt: element.attributes.find(attr => attr.attribute === 'JHb1hzseNMg')?.value || '',
+      cmt: element.attributes.find(attr => attr.attribute === 'ZQ93P672wQR')?.value || '',
+      add: element.attributes.find(attr => attr.attribute === 'Bxp1Lhr8ZeN')?.value || '',
+      add1: element.attributes.find(attr => attr.attribute === 'Gy1fkmBZpFk')?.value || '',
+      job: element.attributes.find(attr => attr.attribute === 'L4djJU4gMyb')?.value || '',
+      phone: element.attributes.find(attr => attr.attribute === 'mZbgWADLTKY')?.value || ''
     });
   });
 
