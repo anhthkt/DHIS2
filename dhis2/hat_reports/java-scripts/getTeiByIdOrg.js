@@ -1,5 +1,3 @@
-// Chưa xong. headers của các attribute mỗi program là khác nhau
-
 const axios = require('axios');
 const Excel = require('exceljs');
 
@@ -10,7 +8,7 @@ const authentication = {
 }
 
 // ID Benh-Nhan, Events, Programs
-const idOrg = "ya11NnTBEsR";
+const idOrg = "cykYqhJUNmE";
 
 
 async function getMetaData(idOrg) {
@@ -34,8 +32,8 @@ async function getMetaData(idOrg) {
   ];
 
   const dataTeis = new Set();
-  const programs = ["NAleauPZvIE", "a7arqsOKzsr", "gPWs4FRX9dj", "WmEGO8Ipykm", "XrC0U6IV4W0"]
-
+  // const programs = ["NAleauPZvIE", "a7arqsOKzsr", "gPWs4FRX9dj", "WmEGO8Ipykm", "XrC0U6IV4W0"]
+  const programs = ["NAleauPZvIE"]
   for (const program of programs) {
     let url = urlBase + `api/trackedEntityInstances.json?ou=${idOrg}&ouMode=CHILDREN&program=${program}&paging=false`;
     try {

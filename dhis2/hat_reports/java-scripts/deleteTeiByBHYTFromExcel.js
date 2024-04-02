@@ -2,7 +2,7 @@ const readExcel = require('read-excel-file/node');
 const _axios = require('axios');
 
 async function readExcelFile() {
-  const rows = await readExcel('./data.xlsx');
+  const rows = await readExcel('./dataTeiDelete.xlsx');
   
 //   const data = [];
   
@@ -20,7 +20,7 @@ async function readExcelFile() {
                 password: 'Csdl2018@)!*'
             }
         })
-        console.log(BHXH);
+        // console.log(BHXH);
         if(idTei.data.rows.length > 0) {
             try {
                 _axios({
