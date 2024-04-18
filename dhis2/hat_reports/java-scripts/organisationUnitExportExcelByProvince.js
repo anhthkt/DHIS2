@@ -81,10 +81,10 @@ const orgs = [
       //   "name": "Cần Thơ",
       //   "id": "OQ3zNIHUm6b"
       // },
-      // {
-      //   "name": "Gia Lai",
-      //   "id": "lXnhf8MolUv"
-      // },
+      {
+        "name": "Gia Lai",
+        "id": "lXnhf8MolUv"
+      },
       // {
       //   "name": "Hà Giang",
       //   "id": "nmijk75Nfap"
@@ -133,10 +133,10 @@ const orgs = [
       //   "name": "Kiên Giang",
       //   "id": "pbBzw7Mxdcp"
       // },
-      // {
-      //   "name": "Kon Tum",
-      //   "id": "wewvAuC7kVe"
-      // },
+      {
+        "name": "Kon Tum",
+        "id": "wewvAuC7kVe"
+      },
       // {
       //   "name": "Lai Châu",
       //   "id": "f16CpwI7Z8b"
@@ -253,10 +253,10 @@ const orgs = [
     //     "name": "Yên Bái",
     //     "id": "DJptEDkQmc4"
     //   },
-      // {
-      //   "name": "Điện Biên",
-      //   "id": "GeDxqlWLx9Q"
-      // },
+      {
+        "name": "Điện Biên",
+        "id": "GeDxqlWLx9Q"
+      },
       // {
       //   "name": "Đà Nẵng",
       //   "id": "QqvBYSvbeNj"
@@ -265,10 +265,10 @@ const orgs = [
       //   "name": "Đắk Lắk",
       //   "id": "Y2AZV0a1Oyj"
       // },
-      // {
-      //   "name": "Đắk Nông",
-      //   "id": "eyKD8PvVOO4"
-      // },
+      {
+        "name": "Đắk Nông",
+        "id": "eyKD8PvVOO4"
+      },
       // {
       //   "name": "Đồng Nai",
       //   "id": "mQwBhiRXAqY"
