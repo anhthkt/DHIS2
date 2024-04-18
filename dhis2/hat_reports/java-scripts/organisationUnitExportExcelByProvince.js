@@ -137,10 +137,10 @@ const orgs = [
       //   "name": "Kon Tum",
       //   "id": "wewvAuC7kVe"
       // },
-      {
-        "name": "Lai Châu",
-        "id": "f16CpwI7Z8b"
-      },
+      // {
+      //   "name": "Lai Châu",
+      //   "id": "f16CpwI7Z8b"
+      // },
       // {
       //   "name": "Long An",
       //   "id": "vFyCX3tmIlN"
@@ -205,10 +205,10 @@ const orgs = [
       //   "name": "Sóc Trăng",
       //   "id": "ArAFMKW35CK"
       // },
-      // {
-      //   "name": "Sơn La",
-      //   "id": "pajSJ8hWr1F"
-      // },
+      {
+        "name": "Sơn La",
+        "id": "pajSJ8hWr1F"
+      },
       // {
       //   "name": "Thanh Hóa",
       //   "id": "KbhAlx7J8c7"
