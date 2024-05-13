@@ -8,8 +8,8 @@ const fs = require("fs");
 dotenv.config()
 //CONSTANT  
 // const baseUrl = `http://nhanluc.tkyt.vn`;
-// const baseUrl = `http://dev.tkyt.vn/nhanluc`;
-const baseUrl = `https://baocao.tkyt.vn`;
+const baseUrl = `http://dev.tkyt.vn/nhanluc`;
+// const baseUrl = `https://baocao.tkyt.vn`;
 // const baseUrl = `http://103.124.60.92/baocao`;
 // const baseUrl = `http://daotao.tkyt.vn`;
 const orgs = [
@@ -73,10 +73,10 @@ const orgs = [
       //   "name": "Các đơn vị thuộc Bộ",
       //   "id": "rY8ZzbdZcim"
       // },
-    //   {
-    //     "name": "Các đơn vị trực thuộc Bộ",
-    //     "id": "ISsmukUNfU8"
-    //   }
+      // {
+      //   "name": "Các đơn vị trực thuộc Bộ",
+      //   "id": "ISsmukUNfU8"
+      // },
       // {
       //   "name": "Cần Thơ",
       //   "id": "OQ3zNIHUm6b"
@@ -93,10 +93,10 @@ const orgs = [
       //   "name": "Hà Nam",
       //   "id": "Ysn2ITT5OZR"
       // },
-    //   {
-    //     "name": "Hà Nội",
-    //     "id": "kyTR47jtla2"
-    //   },
+      // {
+      //   "name": "Hà Nội",
+      //   "id": "kyTR47jtla2"
+      // },
       // {
       //   "name": "Hà Tĩnh",
       //   "id": "rVwEOBkBMc5"
@@ -125,10 +125,10 @@ const orgs = [
       //   "name": "Hồ Chí Minh",
       //   "id": "oVBHhZ43yPD"
       // },
-    //   {
-    //     "name": "Khánh Hòa",
-    //     "id": "xs3U9jOo6T0"
-    //   },
+      // {
+      //   "name": "Khánh Hòa",
+      //   "id": "xs3U9jOo6T0"
+      // },
       // {
       //   "name": "Kiên Giang",
       //   "id": "pbBzw7Mxdcp"
@@ -144,11 +144,11 @@ const orgs = [
       // {
       //   "name": "Long An",
       //   "id": "vFyCX3tmIlN"
-      // }
-    //   {
-    //     "name": "Lào Cai",
-    //     "id": "Loz5sNNUEKt"
-    //   },
+      // },
+      // {
+      //   "name": "Lào Cai",
+      //   "id": "Loz5sNNUEKt"
+      // },
       // {
       //   "name": "Lâm Đồng",
       //   "id": "EStgnLIUVcQ"
@@ -161,10 +161,10 @@ const orgs = [
       //   "name": "Nam Định",
       //   "id": "tAGHn8IltiO"
       // },
-      {
-        "name": "Nghệ An",
-        "id": "ZJAerHIZ8Ch"
-      },
+      // {
+      //   "name": "Nghệ An",
+      //   "id": "ZJAerHIZ8Ch"
+      // },
       // {
       //   "name": "Ninh Bình",
       //   "id": "ptFYxVC01Dh"
@@ -213,70 +213,70 @@ const orgs = [
       //   "name": "Thanh Hóa",
       //   "id": "KbhAlx7J8c7"
       // },
-      // {
-      //   "name": "Thái Bình",
-      //   "id": "ZF5pyHp7GUK"
-      // },
-      // {
-      //   "name": "Thái Nguyên",
-      //   "id": "d5GgtJKn0Px"
-      // },
-      // {
-      //   "name": "Thừa Thiên Huế",
-      //   "id": "N9g8JZ96gOs"
-      // },
-      // {
-      //   "name": "Tiền Giang",
-      //   "id": "BeoEarCsP0N"
-      // },
-      // {
-      //   "name": "Trà Vinh",
-      //   "id": "wJorKSdTSu2"
-      // },
-      // {
-      //   "name": "Tuyên Quang",
-      //   "id": "uglfBEIDXHY"
-      // },
-      // {
-      //   "name": "Tây Ninh",
-      //   "id": "mlcepxdsrJK"
-      // },
-      // {
-      //   "name": "Vĩnh Long",
-      //   "id": "MDVatffMnzo"
-      // },
-      // {
-      //   "name": "Vĩnh Phúc",
-      //   "id": "VOIqdFpPXFq"
-      // },
-    //   {
-    //     "name": "Yên Bái",
-    //     "id": "DJptEDkQmc4"
-    //   },
-      // {
-      //   "name": "Điện Biên",
-      //   "id": "GeDxqlWLx9Q"
-      // },
-      // {
-      //   "name": "Đà Nẵng",
-      //   "id": "QqvBYSvbeNj"
-      // },
-      // {
-      //   "name": "Đắk Lắk",
-      //   "id": "Y2AZV0a1Oyj"
-      // },
-      // {
-      //   "name": "Đắk Nông",
-      //   "id": "eyKD8PvVOO4"
-      // },
-      // {
-      //   "name": "Đồng Nai",
-      //   "id": "mQwBhiRXAqY"
-      // },
-      // {
-      //   "name": "Đồng Tháp",
-      //   "id": "T4hQeKvy8KI"
-      // }
+      {
+        "name": "Thái Bình",
+        "id": "ZF5pyHp7GUK"
+      },
+      {
+        "name": "Thái Nguyên",
+        "id": "d5GgtJKn0Px"
+      },
+      {
+        "name": "Thừa Thiên Huế",
+        "id": "N9g8JZ96gOs"
+      },
+      {
+        "name": "Tiền Giang",
+        "id": "BeoEarCsP0N"
+      },
+      {
+        "name": "Trà Vinh",
+        "id": "wJorKSdTSu2"
+      },
+      {
+        "name": "Tuyên Quang",
+        "id": "uglfBEIDXHY"
+      },
+      {
+        "name": "Tây Ninh",
+        "id": "mlcepxdsrJK"
+      },
+      {
+        "name": "Vĩnh Long",
+        "id": "MDVatffMnzo"
+      },
+      {
+        "name": "Vĩnh Phúc",
+        "id": "VOIqdFpPXFq"
+      },
+      {
+        "name": "Yên Bái",
+        "id": "DJptEDkQmc4"
+      },
+      {
+        "name": "Điện Biên",
+        "id": "GeDxqlWLx9Q"
+      },
+      {
+        "name": "Đà Nẵng",
+        "id": "QqvBYSvbeNj"
+      },
+      {
+        "name": "Đắk Lắk",
+        "id": "Y2AZV0a1Oyj"
+      },
+      {
+        "name": "Đắk Nông",
+        "id": "eyKD8PvVOO4"
+      },
+      {
+        "name": "Đồng Nai",
+        "id": "mQwBhiRXAqY"
+      },
+      {
+        "name": "Đồng Tháp",
+        "id": "T4hQeKvy8KI"
+      }
 ]
   
 const authentication = {

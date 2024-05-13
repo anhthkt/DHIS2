@@ -15,7 +15,7 @@ function formatResult(arr) {
         //    delete e.userCredentials.lastLogin;
         //    delete e.userCredentials.lastUpdated;
         //    delete e.userCredentials.passwordLastUpdated;
-        e.userCredentials.password = "1234567@Na"
+        e.userCredentials.password = "1234567@Daotao"
     })
 }
 async function main() {
@@ -37,8 +37,8 @@ async function main() {
         }
         console.log('Data written successfully to disk');
       });
-    // const response = await axios.post(urlPost, dataUsersChanged, { auth: authentication });
-    // console.log('Response from server:', response.data.message);
+    const response = await axios.post(urlPost, dataUsersChanged, { auth: authentication });
+    console.log('Response from server:', response);
 }
 
 main();
