@@ -4,8 +4,7 @@ let i = 0;
     if (!running) return;
     [
         // "CH10"
-        "OAnyMX67p3p","CtJNF0qBilK"
-
+        "VPXMoLQA0AK","EU3npOcFwtu","Bz5kLOD4nQ7","BtYpIwia1UH","Xn1saROetJG","qjty9vHnIzD","afPWWnDwxlP","BSMP4UVbcXV","GRddGMHwMkt","RGAR6lnh54g","K9p4iSgQUIk","rAD87ZibXK9","VBNM3Oo5iAv","yeNAsR6D7qk","Z1nkuZPmwhi","V3i55TJYWWa","hHnTn1FkiOh","YmVVHlrI1ri","LYGjU45AtlP","dbxtdAuAkFc","LJCuVmdTNLz","D8k0Y5rgkMy","OKx7ZT2PCyN","HWhulqOYeIv"
 
     ] 
             .forEach(idEvent => {

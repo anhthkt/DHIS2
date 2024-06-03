@@ -45,14 +45,14 @@ const orgs = [
       //   "name": "Bạc Liêu",
       //   "id": "g2S76y4JDTo"
       // },
-      // {
-      //   "name": "Bắc Giang",
-      //   "id": "bvuFKVVCZxg"
-      // },
-      // {
-      //   "name": "Bắc Kạn",
-      //   "id": "X9S3sMrxHkI"
-      // },
+      {
+        "name": "Bắc Giang",
+        "id": "bvuFKVVCZxg"
+      },
+      {
+        "name": "Bắc Kạn",
+        "id": "X9S3sMrxHkI"
+      },
       // {
       //   "name": "Bắc Ninh",
       //   "id": "kxJqRG6smMB"
@@ -61,22 +61,22 @@ const orgs = [
       //   "name": "Bến Tre",
       //   "id": "uf7ebucWAG0"
       // },
-      // {
-      //   "name": "Cao Bằng",
-      //   "id": "rnDtB1wpoGc"
-      // },
+      {
+        "name": "Cao Bằng",
+        "id": "rnDtB1wpoGc"
+      },
       // {
       //   "name": "Cà Mau",
       //   "id": "tkjhRCAQn8b"
       // },
-      // {
-      //   "name": "Các đơn vị thuộc Bộ",
-      //   "id": "rY8ZzbdZcim"
-      // },
-      // {
-      //   "name": "Các đơn vị trực thuộc Bộ",
-      //   "id": "ISsmukUNfU8"
-      // },
+    //   {
+    //     "name": "Các đơn vị thuộc Bộ",
+    //     "id": "rY8ZzbdZcim"
+    //   },
+    //   {
+    //     "name": "Các đơn vị trực thuộc Bộ",
+    //     "id": "ISsmukUNfU8"
+    //   },
       // {
       //   "name": "Cần Thơ",
       //   "id": "OQ3zNIHUm6b"
@@ -85,10 +85,10 @@ const orgs = [
       //   "name": "Gia Lai",
       //   "id": "lXnhf8MolUv"
       // },
-      // {
-      //   "name": "Hà Giang",
-      //   "id": "nmijk75Nfap"
-      // },
+      {
+        "name": "Hà Giang",
+        "id": "nmijk75Nfap"
+      },
       // {
       //   "name": "Hà Nam",
       //   "id": "Ysn2ITT5OZR"
@@ -101,10 +101,10 @@ const orgs = [
       //   "name": "Hà Tĩnh",
       //   "id": "rVwEOBkBMc5"
       // },
-      // {
-      //   "name": "Hòa Bình",
-      //   "id": "HKWxMJZWw2y"
-      // },
+      {
+        "name": "Hòa Bình",
+        "id": "HKWxMJZWw2y"
+      },
       // {
       //   "name": "Hưng Yên",
       //   "id": "WOzUSf72GLJ"
@@ -137,26 +137,26 @@ const orgs = [
       //   "name": "Kon Tum",
       //   "id": "wewvAuC7kVe"
       // },
-      // {
-      //   "name": "Lai Châu",
-      //   "id": "f16CpwI7Z8b"
-      // },
+      {
+        "name": "Lai Châu",
+        "id": "f16CpwI7Z8b"
+      },
       // {
       //   "name": "Long An",
       //   "id": "vFyCX3tmIlN"
       // },
-      // {
-      //   "name": "Lào Cai",
-      //   "id": "Loz5sNNUEKt"
-      // },
+      {
+        "name": "Lào Cai",
+        "id": "Loz5sNNUEKt"
+      },
       // {
       //   "name": "Lâm Đồng",
       //   "id": "EStgnLIUVcQ"
       // },
-      // {
-      //   "name": "Lạng Sơn",
-      //   "id": "VjdV70J3HnU"
-      // },
+      {
+        "name": "Lạng Sơn",
+        "id": "VjdV70J3HnU"
+      },
       // {
       //   "name": "Nam Định",
       //   "id": "tAGHn8IltiO"
@@ -173,10 +173,10 @@ const orgs = [
       //   "name": "Ninh Thuận",
       //   "id": "oHhDOTe7fB3"
       // },
-      // {
-      //   "name": "Phú Thọ",
-      //   "id": "Z7CRWOY8WZM"
-      // },
+      {
+        "name": "Phú Thọ",
+        "id": "Z7CRWOY8WZM"
+      },
       // {
       //   "name": "Phú Yên",
       //   "id": "jpN36u4t33g"
@@ -205,50 +205,50 @@ const orgs = [
       //   "name": "Sóc Trăng",
       //   "id": "ArAFMKW35CK"
       // },
-      // {
-      //   "name": "Sơn La",
-      //   "id": "pajSJ8hWr1F"
-      // },
+      {
+        "name": "Sơn La",
+        "id": "pajSJ8hWr1F"
+      },
       // {
       //   "name": "Thanh Hóa",
       //   "id": "KbhAlx7J8c7"
       // },
-      {
-        "name": "Thái Bình",
-        "id": "ZF5pyHp7GUK"
-      },
+      // {
+      //   "name": "Thái Bình",
+      //   "id": "ZF5pyHp7GUK"
+      // },
       {
         "name": "Thái Nguyên",
         "id": "d5GgtJKn0Px"
       },
-      {
-        "name": "Thừa Thiên Huế",
-        "id": "N9g8JZ96gOs"
-      },
-      {
-        "name": "Tiền Giang",
-        "id": "BeoEarCsP0N"
-      },
-      {
-        "name": "Trà Vinh",
-        "id": "wJorKSdTSu2"
-      },
+      // {
+      //   "name": "Thừa Thiên Huế",
+      //   "id": "N9g8JZ96gOs"
+      // },
+      // {
+      //   "name": "Tiền Giang",
+      //   "id": "BeoEarCsP0N"
+      // },
+      // {
+      //   "name": "Trà Vinh",
+      //   "id": "wJorKSdTSu2"
+      // },
       {
         "name": "Tuyên Quang",
         "id": "uglfBEIDXHY"
       },
-      {
-        "name": "Tây Ninh",
-        "id": "mlcepxdsrJK"
-      },
-      {
-        "name": "Vĩnh Long",
-        "id": "MDVatffMnzo"
-      },
-      {
-        "name": "Vĩnh Phúc",
-        "id": "VOIqdFpPXFq"
-      },
+      // {
+      //   "name": "Tây Ninh",
+      //   "id": "mlcepxdsrJK"
+      // },
+      // {
+      //   "name": "Vĩnh Long",
+      //   "id": "MDVatffMnzo"
+      // },
+      // {
+      //   "name": "Vĩnh Phúc",
+      //   "id": "VOIqdFpPXFq"
+      // },
       {
         "name": "Yên Bái",
         "id": "DJptEDkQmc4"
@@ -257,26 +257,26 @@ const orgs = [
         "name": "Điện Biên",
         "id": "GeDxqlWLx9Q"
       },
-      {
-        "name": "Đà Nẵng",
-        "id": "QqvBYSvbeNj"
-      },
-      {
-        "name": "Đắk Lắk",
-        "id": "Y2AZV0a1Oyj"
-      },
-      {
-        "name": "Đắk Nông",
-        "id": "eyKD8PvVOO4"
-      },
-      {
-        "name": "Đồng Nai",
-        "id": "mQwBhiRXAqY"
-      },
-      {
-        "name": "Đồng Tháp",
-        "id": "T4hQeKvy8KI"
-      }
+      // {
+      //   "name": "Đà Nẵng",
+      //   "id": "QqvBYSvbeNj"
+      // },
+      // {
+      //   "name": "Đắk Lắk",
+      //   "id": "Y2AZV0a1Oyj"
+      // },
+      // {
+      //   "name": "Đắk Nông",
+      //   "id": "eyKD8PvVOO4"
+      // },
+      // {
+      //   "name": "Đồng Nai",
+      //   "id": "mQwBhiRXAqY"
+      // },
+      // {
+      //   "name": "Đồng Tháp",
+      //   "id": "T4hQeKvy8KI"
+      // }
 ]
   
 const authentication = {
