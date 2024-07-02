@@ -15,12 +15,12 @@ function formatResult(arr) {
         //    delete e.userCredentials.lastLogin;
         //    delete e.userCredentials.lastUpdated;
         //    delete e.userCredentials.passwordLastUpdated;
-        e.userCredentials.password = "1234567@Daotao"
+        e.userCredentials.password = "Nhanluc@2024"
     })
 }
 async function main() {
     const url = 'http://daotao.tkyt.vn'
-    const orgId = 'ZJAerHIZ8Ch'
+    const orgId = 'HKWxMJZWw2y'
     const urlApi = `${url}/api/users.json?fields=:all&filter=organisationUnits.path:ilike:${orgId}&paging=false`;
     const urlPost = `${url}/api/metadata`;
     let res = await axios.get(urlApi, { auth: authentication })
