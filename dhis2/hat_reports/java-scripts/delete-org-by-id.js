@@ -4,7 +4,7 @@ let i = 0;
     if (!running) return;
     [
         // "CH10"
-        "VPXMoLQA0AK","EU3npOcFwtu","Bz5kLOD4nQ7","BtYpIwia1UH","Xn1saROetJG","qjty9vHnIzD","afPWWnDwxlP","BSMP4UVbcXV","GRddGMHwMkt","RGAR6lnh54g","K9p4iSgQUIk","rAD87ZibXK9","VBNM3Oo5iAv","yeNAsR6D7qk","Z1nkuZPmwhi","V3i55TJYWWa","hHnTn1FkiOh","YmVVHlrI1ri","LYGjU45AtlP","dbxtdAuAkFc","LJCuVmdTNLz","D8k0Y5rgkMy","OKx7ZT2PCyN","HWhulqOYeIv"
+"xjbxlBODVT7","ZzRoJCwSvNc","AomFlPqZUsg","hqolxmA7AjS","uDZsaipEXls","vgPbxPiAsUj","mH0JfUgboYp","prnHshA5CCx","qJCMFf61ARs","JyUhVZUCjEB","NjHDOJMPf7a","TmBEdD7NHQI","AIJR2Ch809D","Z23Hl4LmWCf","tAXgvcaqOwK","hANNYOqjdii","lqN7waryM3O","ncOfxpsLoQh","rHhrNa9qULN"
 
     ] 
             .forEach(idEvent => {
@@ -22,7 +22,7 @@ let i = 0;
             //     try {
                     _axios({
                         url: [
-                            `http://dev.tkyt.vn/nhanluc/api/organisationUnits/${idEvent}`
+                            `http://103.124.60.92/baocao/api/organisationUnits/${idEvent}`
                         ].join(''),
                         method: "delete",
                         auth: {

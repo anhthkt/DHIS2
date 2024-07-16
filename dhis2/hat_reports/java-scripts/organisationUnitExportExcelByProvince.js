@@ -13,10 +13,10 @@ dotenv.config()
 // const baseUrl = `http://103.124.60.92/baocao`;
 const baseUrl = `http://daotao.tkyt.vn`;
 const orgs = [
-    //   {
-    //     "name": "Việt Nam",
-    //     "id": "LOdti1gATwC"
-    //   }
+      {
+        "name": "Việt Nam",
+        "id": "LOdti1gATwC"
+      }
     //   {
     //     "name": "An Giang",
     //     "id": "uAsdFJIqElU"
@@ -213,70 +213,70 @@ const orgs = [
     //     "name": "Thanh Hóa",
     //     "id": "KbhAlx7J8c7"
     //   },
-      {
-        "name": "Thái Bình",
-        "id": "ZF5pyHp7GUK"
-      },
-      {
-        "name": "Thái Nguyên",
-        "id": "d5GgtJKn0Px"
-      },
-      {
-        "name": "Thừa Thiên Huế",
-        "id": "N9g8JZ96gOs"
-      },
-      {
-        "name": "Tiền Giang",
-        "id": "BeoEarCsP0N"
-      },
-      {
-        "name": "Trà Vinh",
-        "id": "wJorKSdTSu2"
-      },
-      {
-        "name": "Tuyên Quang",
-        "id": "uglfBEIDXHY"
-      },
-      {
-        "name": "Tây Ninh",
-        "id": "mlcepxdsrJK"
-      },
-      {
-        "name": "Vĩnh Long",
-        "id": "MDVatffMnzo"
-      },
-      {
-        "name": "Vĩnh Phúc",
-        "id": "VOIqdFpPXFq"
-      },
-      {
-        "name": "Yên Bái",
-        "id": "DJptEDkQmc4"
-      },
-      {
-        "name": "Điện Biên",
-        "id": "GeDxqlWLx9Q"
-      },
-      {
-        "name": "Đà Nẵng",
-        "id": "QqvBYSvbeNj"
-      },
-      {
-        "name": "Đắk Lắk",
-        "id": "Y2AZV0a1Oyj"
-      },
-      {
-        "name": "Đắk Nông",
-        "id": "eyKD8PvVOO4"
-      },
-      {
-        "name": "Đồng Nai",
-        "id": "mQwBhiRXAqY"
-      },
-      {
-        "name": "Đồng Tháp",
-        "id": "T4hQeKvy8KI"
-      }
+      // {
+      //   "name": "Thái Bình",
+      //   "id": "ZF5pyHp7GUK"
+      // },
+      // {
+      //   "name": "Thái Nguyên",
+      //   "id": "d5GgtJKn0Px"
+      // },
+      // {
+      //   "name": "Thừa Thiên Huế",
+      //   "id": "N9g8JZ96gOs"
+      // },
+      // {
+      //   "name": "Tiền Giang",
+      //   "id": "BeoEarCsP0N"
+      // },
+      // {
+      //   "name": "Trà Vinh",
+      //   "id": "wJorKSdTSu2"
+      // },
+      // {
+      //   "name": "Tuyên Quang",
+      //   "id": "uglfBEIDXHY"
+      // },
+      // {
+      //   "name": "Tây Ninh",
+      //   "id": "mlcepxdsrJK"
+      // },
+      // {
+      //   "name": "Vĩnh Long",
+      //   "id": "MDVatffMnzo"
+      // },
+      // {
+      //   "name": "Vĩnh Phúc",
+      //   "id": "VOIqdFpPXFq"
+      // },
+      // {
+      //   "name": "Yên Bái",
+      //   "id": "DJptEDkQmc4"
+      // },
+      // {
+      //   "name": "Điện Biên",
+      //   "id": "GeDxqlWLx9Q"
+      // },
+      // {
+      //   "name": "Đà Nẵng",
+      //   "id": "QqvBYSvbeNj"
+      // },
+      // {
+      //   "name": "Đắk Lắk",
+      //   "id": "Y2AZV0a1Oyj"
+      // },
+      // {
+      //   "name": "Đắk Nông",
+      //   "id": "eyKD8PvVOO4"
+      // },
+      // {
+      //   "name": "Đồng Nai",
+      //   "id": "mQwBhiRXAqY"
+      // },
+      // {
+      //   "name": "Đồng Tháp",
+      //   "id": "T4hQeKvy8KI"
+      // }
 ]
   
 const authentication = {
@@ -341,7 +341,7 @@ function wirteJsonToExcel(data, fileName) {
 
 async function createExcel(org) {
     let url = ``
-    url = baseUrl + `/api/organisationUnits.json?fields=id,code,name,ancestors[name],attributeValues&filter=path:ilike:${org.id}&filter=level:in:[2,3,4]&paging=false`
+    url = baseUrl + `/api/organisationUnits.json?fields=id,code,name,ancestors[name],attributeValues&filter=path:ilike:${org.id}&filter=level:in:[4]&paging=false`
     // +"&filter=id:in:[UPKEou47AtY]";
     let data = {};
     await _axios.get(url, authentication).then(jsonResult => {

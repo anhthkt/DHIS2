@@ -45,7 +45,7 @@ function writeFile(dataSet) {
 }
 
 async function main() {
-    const path = `/api/dataSets.json?fields=id,name,dataEntryForm[*]&paging=false&filter=id:!in:[xxqF6XKCATC]`;
+    const path = `/api/dataSets.json?fields=id,name,dataEntryForm[*]&paging=false&filter=id:in:[D9xLxq2LP7T]`;
     url = urlBase + path;
     let response = await axios.get(url, { auth: authentication });
     // console.log(response);
