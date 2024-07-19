@@ -4,7 +4,7 @@ const cheerio = require('cheerio');
 const axios = require('axios');
 
 
-const urlBase = `http://dev.tkyt.vn/nhanluc`;
+const urlBase = `http://103.124.60.92/baocao`;
 const authentication = {
     username: `anhth`,
     password: `Csdl2018@)!*`
@@ -45,7 +45,7 @@ function writeFile(dataSet) {
 }
 
 async function main() {
-    const path = `/api/dataSets.json?fields=id,name,dataEntryForm[*]&paging=false&filter=id:in:[D9xLxq2LP7T]`;
+    const path = `/api/dataSets.json?fields=id,name,dataEntryForm[*]&paging=false&filter=id:in:[f7014fmLbUl]`;
     url = urlBase + path;
     let response = await axios.get(url, { auth: authentication });
     // console.log(response);
