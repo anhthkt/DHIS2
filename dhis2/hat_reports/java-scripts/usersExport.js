@@ -13,10 +13,10 @@ dotenv.config()
 // const baseUrl = `http://103.124.60.92/baocao`;
 const baseUrl = `http://nhanluc.tkyt.vn`;
 const orgs = [
-      {
+    {
         "name": "Việt Nam",
         "id": "LOdti1gATwC"
-      }
+    }
     //   {
     //     "name": "An Giang",
     //     "id": "uAsdFJIqElU"
@@ -213,72 +213,72 @@ const orgs = [
     //     "name": "Thanh Hóa",
     //     "id": "KbhAlx7J8c7"
     //   },
-      // {
-      //   "name": "Thái Bình",
-      //   "id": "ZF5pyHp7GUK"
-      // },
-      // {
-      //   "name": "Thái Nguyên",
-      //   "id": "d5GgtJKn0Px"
-      // },
-      // {
-      //   "name": "Thừa Thiên Huế",
-      //   "id": "N9g8JZ96gOs"
-      // },
-      // {
-      //   "name": "Tiền Giang",
-      //   "id": "BeoEarCsP0N"
-      // },
-      // {
-      //   "name": "Trà Vinh",
-      //   "id": "wJorKSdTSu2"
-      // },
-      // {
-      //   "name": "Tuyên Quang",
-      //   "id": "uglfBEIDXHY"
-      // },
-      // {
-      //   "name": "Tây Ninh",
-      //   "id": "mlcepxdsrJK"
-      // },
-      // {
-      //   "name": "Vĩnh Long",
-      //   "id": "MDVatffMnzo"
-      // },
-      // {
-      //   "name": "Vĩnh Phúc",
-      //   "id": "VOIqdFpPXFq"
-      // },
-      // {
-      //   "name": "Yên Bái",
-      //   "id": "DJptEDkQmc4"
-      // },
-      // {
-      //   "name": "Điện Biên",
-      //   "id": "GeDxqlWLx9Q"
-      // },
-      // {
-      //   "name": "Đà Nẵng",
-      //   "id": "QqvBYSvbeNj"
-      // },
-      // {
-      //   "name": "Đắk Lắk",
-      //   "id": "Y2AZV0a1Oyj"
-      // },
-      // {
-      //   "name": "Đắk Nông",
-      //   "id": "eyKD8PvVOO4"
-      // },
-      // {
-      //   "name": "Đồng Nai",
-      //   "id": "mQwBhiRXAqY"
-      // },
-      // {
-      //   "name": "Đồng Tháp",
-      //   "id": "T4hQeKvy8KI"
-      // }
+    // {
+    //   "name": "Thái Bình",
+    //   "id": "ZF5pyHp7GUK"
+    // },
+    // {
+    //   "name": "Thái Nguyên",
+    //   "id": "d5GgtJKn0Px"
+    // },
+    // {
+    //   "name": "Thừa Thiên Huế",
+    //   "id": "N9g8JZ96gOs"
+    // },
+    // {
+    //   "name": "Tiền Giang",
+    //   "id": "BeoEarCsP0N"
+    // },
+    // {
+    //   "name": "Trà Vinh",
+    //   "id": "wJorKSdTSu2"
+    // },
+    // {
+    //   "name": "Tuyên Quang",
+    //   "id": "uglfBEIDXHY"
+    // },
+    // {
+    //   "name": "Tây Ninh",
+    //   "id": "mlcepxdsrJK"
+    // },
+    // {
+    //   "name": "Vĩnh Long",
+    //   "id": "MDVatffMnzo"
+    // },
+    // {
+    //   "name": "Vĩnh Phúc",
+    //   "id": "VOIqdFpPXFq"
+    // },
+    // {
+    //   "name": "Yên Bái",
+    //   "id": "DJptEDkQmc4"
+    // },
+    // {
+    //   "name": "Điện Biên",
+    //   "id": "GeDxqlWLx9Q"
+    // },
+    // {
+    //   "name": "Đà Nẵng",
+    //   "id": "QqvBYSvbeNj"
+    // },
+    // {
+    //   "name": "Đắk Lắk",
+    //   "id": "Y2AZV0a1Oyj"
+    // },
+    // {
+    //   "name": "Đắk Nông",
+    //   "id": "eyKD8PvVOO4"
+    // },
+    // {
+    //   "name": "Đồng Nai",
+    //   "id": "mQwBhiRXAqY"
+    // },
+    // {
+    //   "name": "Đồng Tháp",
+    //   "id": "T4hQeKvy8KI"
+    // }
 ]
-  
+
 const authentication = {
     auth: {
         username: process.env.username,
@@ -293,39 +293,26 @@ function wirteJsonToExcel(data, fileName) {
 
     // Định dạng tiêu đề cho worksheet (tùy chọn)
     worksheet.columns = [
-        { header: 'Code', key: 'code', width: 15 },
-        { header: 'Code BHYT', key: 'codebhyt', width: 15 },
-        { header: 'Name', key: 'name', width: 25 },
-        { header: 'ID', key: 'id', width: 25 },
-        { header: 'Ancestors', key: 'ancestors', width: 40 },
-        { header: 'User1', key: 'user1', width: 10 },
-        { header: 'UserGroup1', key: 'usergroup1', width: 10 },
-        { header: 'User2', key: 'user2', width: 10 },
-        { header: 'UserGroup2', key: 'usergroup2', width: 10 },
-        { header: 'User3', key: 'user3', width: 10 },
-        { header: 'User4', key: 'user4', width: 10 },
-        { header: 'User5', key: 'user5', width: 10 }
+        { header: 'id', key: 'id', width: 15 },
+        { header: 'name', key: 'name', width: 15 },
+        { header: 'userName', key: 'userName', width: 25 },
+        { header: 'organisationUnits', key: 'organisationUnits', width: 25 },
+        { header: 'path', key: 'path', width: 25 },
+        { header: 'userGroups', key: 'userGroups', width: 10 },
+        { header: 'userRoles', key: 'userRoles', width: 10 }
     ];
 
     // Ghi dữ liệu từ mảng JSON vào worksheet
     data.forEach(item => {
-        let codeBHYT = ''
-        if(item.attributeValues.length > 0) {
-            codeBHYT = item.attributeValues[0].value;
-        }
+
         worksheet.addRow({
-            code: item.code,
-            codebhyt: codeBHYT,
-            name: item.name,
             id: item.id,
-            ancestors: item.ancestors.map(ancestor => ancestor.name).join(', '), // Chuyển mảng ancestors thành chuỗi
-            user1: item.user1 ? item.user1.username: null,
-            usergroup1: item.user1 ? item.user1.userGroups.map(usergroup => usergroup.name).join(', ') : null,
-            user2: item.user2 ? item.user2.username : null,
-            usergroup2: item.user2 ? item.user2.userGroups.map(usergroup => usergroup.name).join(', '): null,
-            user3: item.user3 ? item.user3.username: null,
-            user4: item.user4 ? item.user4.username: null,
-            user5: item.user5 ? item.user5.username: null,
+            name: item.name,
+            userName: item.username,
+            userGroups: item.userGroups ? item.userGroups.map(usergroup => usergroup.name).join(', ') : null,
+            organisationUnits: item.organisationUnits ? item.organisationUnits.map(organisationUnits => organisationUnits.name).join(', ') : null,
+            path: item.organisationUnits ? item.organisationUnits.map(organisationUnits => organisationUnits.path).join(', ') : null,
+            userRoles: item.userRoles ? item.userRoles.map(userRoles => userRoles.name).join(', ') : null
         });
     });
 
@@ -341,46 +328,22 @@ function wirteJsonToExcel(data, fileName) {
 
 async function createExcel(org) {
     let url = ``
-    url = baseUrl + `/api/organisationUnits.json?fields=id,code,name,ancestors[name],attributeValues&filter=path:ilike:${org.id}&paging=false`
-    // +"&filter=id:in:[UPKEou47AtY]";
-    let data = {};
-    await _axios.get(url, authentication).then(jsonResult => {
-        let resData = jsonResult.data;
-        data = resData.organisationUnits
-    })
-    // Sử dụng map để trích xuất các giá trị id
-    let idArray = data.map(item => item.id);
-    // Sử dụng join để nối các giá trị thành một chuỗi với dấu phẩy
-    let idOrgs = idArray.join(',');
-    // console.log(idOrgs);
-
     let users = [];
-    url = baseUrl + `/api/users.json?fields=id,username,organisationUnits[id],userGroups[id,name]&filter=organisationUnits.id:in:[${idOrgs}]&paging=false`
+    url = baseUrl + `/api/users.json?fields=id,name,username,userGroups[name],organisationUnits[id,name,path],userRoles[name]&paging=false&filter=organisationUnits.path:ilike:${org.id}`
     await _axios.get(url, authentication).then(jsonResult => {
         let resData = jsonResult.data;
         users = resData.users
     })
 
-    const mappedData = data.map(item => {
-        const matchingUsers = users.filter(user => user.organisationUnits[0].id === item.id);
-        return {
-            ...item,
-            user1: matchingUsers[0] ? matchingUsers[0] : null,
-            user2: matchingUsers[1] ? matchingUsers[1] : null,
-            user3: matchingUsers[2] ? matchingUsers[2] : null,
-            user4: matchingUsers[3] ? matchingUsers[3] : null,
-            user5: matchingUsers[4] ? matchingUsers[4] : null
-        };
-    });
-    console.log(mappedData);
+    console.log(JSON.stringify(users));
 
-    wirteJsonToExcel(mappedData, org.name);
+    wirteJsonToExcel(users, org.name);
 };
 
 // Main function
 (async () => {
     for (const org of orgs) {
-      console.log(org);
-      await createExcel(org);
+        console.log(org);
+        await createExcel(org);
     }
-  })();
+})();

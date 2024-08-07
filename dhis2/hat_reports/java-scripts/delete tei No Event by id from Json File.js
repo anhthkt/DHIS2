@@ -5,14 +5,14 @@ const async = require('async');
 
 async function readJsonFile() {
   try {
-    const data = await fs.readFile('klnSOS_public_analytnrollment_naleaupzvie_5.json', 'utf8');
+    const data = await fs.readFile('./trackedEntityInstances.json', 'utf8');
     const jsonData = JSON.parse(data);
-
-    async.parallelLimit(jsonData.map(tei => {
+    console.log(jsonData);
+    async.parallelLimit(jsonData.trackedEntityInstances.map(tei => {
       return async () => {
         try {
           const eventResponse = await _axios({
-            url: `https://kln.tkyt.vn/api/trackedEntityInstances.json?ou=nJm9lSLVvG8&ouMode=ACCESSIBLE&program=NAleauPZvIE&trackedEntityInstance=${tei.tei}&paging=false&fields=*,enrollments[*]`,
+            url: `https://kln.tkyt.vn/api/trackedEntityInstances.json?ou=nJm9lSLVvG8&ouMode=ACCESSIBLE&program=NAleauPZvIE&trackedEntityInstance=${tei.trackedEntityInstance}&paging=false&fields=*,enrollments[*]`,
             auth: {
               username: 'anhth',
               password: 'Csdl2018@)!*'
@@ -22,14 +22,14 @@ async function readJsonFile() {
           if (eventResponse.data.trackedEntityInstances.length !== 0) {
             if (eventResponse.data.trackedEntityInstances[0].enrollments[0].events.length === 0) {
               // await _axios({
-              //   url: `https://kln.tkyt.vn/api/trackedEntityInstances/${tei.tei}`,
+              //   url: `https://kln.tkyt.vn/api/trackedEntityInstances/${tei.trackedEntityInstance}`,
               //   method: 'DELETE',
               //   auth: {
               //     username: 'anhth',
               //     password: 'Csdl2018@)!*'
               //   }
               // });
-              console.log(`Đã xóa trackedEntityInstance với TEI: ${tei.tei}`);
+              console.log(`Đã xóa trackedEntityInstance với TEI: ${tei.trackedEntityInstance}`);
             } else {
               let attXa = {
                 "attribute": "Gy1fkmBZpFk",
@@ -50,14 +50,14 @@ async function readJsonFile() {
                   password: 'Csdl2018@)!*'
                 }
               });
-              console.log(`Update Tei`, resPost.status, tei.tei);
+              console.log(`Update Tei`, resPost.status, tei.trackedEntityInstance);
             }
           }
         } catch (err) {
-          console.error('Có lỗi xảy ra khi xử lý TEI:', tei.tei, err);
+          console.error('Có lỗi xảy ra khi xử lý TEI:', tei.trackedEntityInstance, err);
         }
       };
-    }), 10, (err, results) => { // Set the limit here
+    }), 1, (err, results) => { // Set the limit here
       if (err) {
         console.error('Có lỗi xảy ra khi xử lý các TEI:', err);
       } else {
