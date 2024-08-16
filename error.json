@@ -1,0 +1,1427 @@
+{
+  "timestamp": "2024-08-14T23:19:06.533Z",
+  "errors": [
+    [
+      {
+        "responseType": "ImportSummary",
+        "status": "ERROR",
+        "importCount": {
+          "imported": 0,
+          "updated": 0,
+          "ignored": 1,
+          "deleted": 0
+        },
+        "conflicts": [
+          {
+            "object": "Attribute.value",
+            "value": "Non-unique attribute value 'HT3865698016943' for attribute JHb1hzseNMg"
+          }
+        ],
+        "reference": "TR5ebEEaKOG",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "ERROR",
+        "importCount": {
+          "imported": 0,
+          "updated": 0,
+          "ignored": 1,
+          "deleted": 0
+        },
+        "conflicts": [
+          {
+            "object": "Attribute.value",
+            "value": "Non-unique attribute value 'HT2868621912514' for attribute JHb1hzseNMg"
+          }
+        ],
+        "reference": "ZzrV1o2iKgy",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "ERROR",
+        "importCount": {
+          "imported": 0,
+          "updated": 0,
+          "ignored": 1,
+          "deleted": 0
+        },
+        "conflicts": [
+          {
+            "object": "Attribute.value",
+            "value": "Non-unique attribute value 'HC4865602002543' for attribute JHb1hzseNMg"
+          }
+        ],
+        "reference": "B6Nif106fAb",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "ERROR",
+        "importCount": {
+          "imported": 0,
+          "updated": 0,
+          "ignored": 1,
+          "deleted": 0
+        },
+        "conflicts": [
+          {
+            "object": "Attribute.value",
+            "value": "Non-unique attribute value 'HT3865697014405' for attribute JHb1hzseNMg"
+          }
+        ],
+        "reference": "M8h98syJhXz",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "ERROR",
+        "importCount": {
+          "imported": 0,
+          "updated": 0,
+          "ignored": 1,
+          "deleted": 0
+        },
+        "conflicts": [
+          {
+            "object": "Attribute.value",
+            "value": "Non-unique attribute value 'HC4865605001854' for attribute JHb1hzseNMg"
+          }
+        ],
+        "reference": "vJA0V4NGQej",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "ERROR",
+        "importCount": {
+          "imported": 0,
+          "updated": 0,
+          "ignored": 1,
+          "deleted": 0
+        },
+        "conflicts": [
+          {
+            "object": "Attribute.value",
+            "value": "Non-unique attribute value 'HC4865699018346' for attribute JHb1hzseNMg"
+          }
+        ],
+        "reference": "lG9b1fZpZXr",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "ERROR",
+        "importCount": {
+          "imported": 0,
+          "updated": 0,
+          "ignored": 1,
+          "deleted": 0
+        },
+        "conflicts": [
+          {
+            "object": "Attribute.value",
+            "value": "Non-unique attribute value 'DN4865603001549' for attribute JHb1hzseNMg"
+          }
+        ],
+        "reference": "cV4Bqms82OA",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "ERROR",
+        "importCount": {
+          "imported": 0,
+          "updated": 0,
+          "ignored": 1,
+          "deleted": 0
+        },
+        "conflicts": [
+          {
+            "object": "Attribute.value",
+            "value": "Non-unique attribute value 'HT3865696010362' for attribute JHb1hzseNMg"
+          }
+        ],
+        "reference": "RcHAjBfgayj",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "ERROR",
+        "importCount": {
+          "imported": 0,
+          "updated": 0,
+          "ignored": 1,
+          "deleted": 0
+        },
+        "conflicts": [
+          {
+            "object": "Attribute.value",
+            "value": "Non-unique attribute value 'HT3865696005322' for attribute JHb1hzseNMg"
+          }
+        ],
+        "reference": "Sfc8N73sr6b",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "LFoWp6Q4MMD",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/LFoWp6Q4MMD",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      }
+    ],
+    [
+      {
+        "responseType": "ImportSummary",
+        "status": "ERROR",
+        "importCount": {
+          "imported": 0,
+          "updated": 0,
+          "ignored": 1,
+          "deleted": 0
+        },
+        "conflicts": [
+          {
+            "object": "Attribute.value",
+            "value": "Non-unique attribute value 'GD4868621929162' for attribute JHb1hzseNMg"
+          }
+        ],
+        "reference": "hzYtRtfDUrm",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "Zigmpq9FpKO",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/Zigmpq9FpKO",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "ExJIYY1VhFN",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/ExJIYY1VhFN",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "nvtrZ3YzoO0",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/nvtrZ3YzoO0",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "qWo4yrIK50W",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/qWo4yrIK50W",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "hfqHGuVPPLR",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/hfqHGuVPPLR",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "X4bpklOJOTq",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/X4bpklOJOTq",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "H5isTwhNDXZ",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/H5isTwhNDXZ",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "J7LenTrKtoU",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/J7LenTrKtoU",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "nxoe3vsMGl5",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/nxoe3vsMGl5",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "ERROR",
+        "importCount": {
+          "imported": 0,
+          "updated": 0,
+          "ignored": 1,
+          "deleted": 0
+        },
+        "conflicts": [
+          {
+            "object": "Attribute.value",
+            "value": "Non-unique attribute value 'BT2868621876060' for attribute JHb1hzseNMg"
+          }
+        ],
+        "reference": "cn4KMNvtm4e",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "ERROR",
+        "importCount": {
+          "imported": 0,
+          "updated": 0,
+          "ignored": 1,
+          "deleted": 0
+        },
+        "conflicts": [
+          {
+            "object": "Attribute.value",
+            "value": "Non-unique attribute value 'GD4868621923857' for attribute JHb1hzseNMg"
+          }
+        ],
+        "reference": "FRLhChhAkwS",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "ERROR",
+        "importCount": {
+          "imported": 0,
+          "updated": 0,
+          "ignored": 1,
+          "deleted": 0
+        },
+        "conflicts": [
+          {
+            "object": "Attribute.value",
+            "value": "Non-unique attribute value 'GD4868621880244' for attribute JHb1hzseNMg"
+          }
+        ],
+        "reference": "bSUqbBdrY8z",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "ERROR",
+        "importCount": {
+          "imported": 0,
+          "updated": 0,
+          "ignored": 1,
+          "deleted": 0
+        },
+        "conflicts": [
+          {
+            "object": "Attribute.value",
+            "value": "Non-unique attribute value 'GD4868621831756' for attribute JHb1hzseNMg"
+          }
+        ],
+        "reference": "yGujEMun0Ak",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "hvktSbs9C8s",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/hvktSbs9C8s",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "tpbhoCzWp6l",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/tpbhoCzWp6l",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "dL8UOiMGE4X",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/dL8UOiMGE4X",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "FudPFSPomYT",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/FudPFSPomYT",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "YqI1t8IEc9u",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/YqI1t8IEc9u",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "Op8GYXlhrHg",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/Op8GYXlhrHg",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "BKoJKJ84Udb",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/BKoJKJ84Udb",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "brv4VpLK6ck",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/brv4VpLK6ck",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "tjda8etxzhe",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/tjda8etxzhe",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "OsmphszZVWE",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/OsmphszZVWE",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "bReEpAEHvph",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/bReEpAEHvph",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      }
+    ],
+    [
+      {
+        "responseType": "ImportSummary",
+        "status": "ERROR",
+        "importCount": {
+          "imported": 0,
+          "updated": 0,
+          "ignored": 1,
+          "deleted": 0
+        },
+        "conflicts": [
+          {
+            "object": "Attribute.value",
+            "value": "Non-unique attribute value 'GD4868622338002' for attribute JHb1hzseNMg"
+          }
+        ],
+        "reference": "sFWcmuFbLP5",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "rlyhF89dyeD",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/rlyhF89dyeD",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "K4A29oYYaKK",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/K4A29oYYaKK",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "ERROR",
+        "importCount": {
+          "imported": 0,
+          "updated": 0,
+          "ignored": 1,
+          "deleted": 0
+        },
+        "conflicts": [
+          {
+            "object": "Attribute.value",
+            "value": "Non-unique attribute value 'HT2868621902378' for attribute JHb1hzseNMg"
+          }
+        ],
+        "reference": "kZqKcQhqxES",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "QbdVrdENjxw",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/QbdVrdENjxw",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "pVLmTLVWiDg",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/pVLmTLVWiDg",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "sDEJw3SsFQb",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/sDEJw3SsFQb",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "QRcLfNOtvFf",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/QRcLfNOtvFf",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "X9MQljVw1yP",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/X9MQljVw1yP",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "ZI0HSHqYDrH",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/ZI0HSHqYDrH",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "hAfC6V25vym",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/hAfC6V25vym",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "ERROR",
+        "importCount": {
+          "imported": 0,
+          "updated": 0,
+          "ignored": 1,
+          "deleted": 0
+        },
+        "conflicts": [
+          {
+            "object": "Attribute.value",
+            "value": "Non-unique attribute value 'HT3865696001178' for attribute JHb1hzseNMg"
+          }
+        ],
+        "reference": "QJCgaZygTfV",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "kVWDtSPnVNy",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/kVWDtSPnVNy",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "ERROR",
+        "importCount": {
+          "imported": 0,
+          "updated": 0,
+          "ignored": 1,
+          "deleted": 0
+        },
+        "conflicts": [
+          {
+            "object": "Attribute.value",
+            "value": "Non-unique attribute value 'HT3865696002331' for attribute JHb1hzseNMg"
+          }
+        ],
+        "reference": "TI7kl868ZrI",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "fVG9ZpxID2b",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/fVG9ZpxID2b",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "vqCIuuPnfIe",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/vqCIuuPnfIe",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      }
+    ],
+    [
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "TN7HtyDjPoR",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/TN7HtyDjPoR",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "HLXifOSuyWo",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/HLXifOSuyWo",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "ERROR",
+        "importCount": {
+          "imported": 0,
+          "updated": 0,
+          "ignored": 1,
+          "deleted": 0
+        },
+        "conflicts": [
+          {
+            "object": "Attribute.value",
+            "value": "Non-unique attribute value 'CK2868621891472' for attribute JHb1hzseNMg"
+          }
+        ],
+        "reference": "vSA5vPJj3fJ",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "ERROR",
+        "importCount": {
+          "imported": 0,
+          "updated": 0,
+          "ignored": 1,
+          "deleted": 0
+        },
+        "conflicts": [
+          {
+            "object": "Attribute.value",
+            "value": "Non-unique attribute value 'BT2868621891548' for attribute JHb1hzseNMg"
+          }
+        ],
+        "reference": "TrHZeVpDG7B",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "lcnPWr9X7Up",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/lcnPWr9X7Up",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "d4p5lHZqgF1",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/d4p5lHZqgF1",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      },
+      {
+        "responseType": "ImportSummary",
+        "status": "SUCCESS",
+        "importCount": {
+          "imported": 0,
+          "updated": 1,
+          "ignored": 0,
+          "deleted": 0
+        },
+        "conflicts": [],
+        "reference": "hHauUQiBAGd",
+        "href": "https://kln.tkyt.vn/api/trackedEntityInstances/hHauUQiBAGd",
+        "enrollments": {
+          "responseType": "ImportSummaries",
+          "status": "SUCCESS",
+          "imported": 0,
+          "updated": 0,
+          "deleted": 0,
+          "ignored": 0,
+          "importSummaries": [],
+          "total": 0
+        }
+      }
+    ]
+  ]
+}

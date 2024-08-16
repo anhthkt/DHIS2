@@ -1,0 +1,797 @@
+<link href="../api/apps/ResourceICT/build/form/css/data.css" rel="stylesheet" /><script src="../api/apps/p2CustomReport/js/DataValueUtil.js"></script><script type="text/javascript">
+    jQuery(document).ready(function() {
+
+    })
+
+    function openPivot(button) {
+        var mUrl = button.attributes.url.nodeValue;
+        if (button != undefined && mUrl != "") {
+            var newTab = window.open('', '');
+            newTab.location.href = mUrl
+        }
+    }
+
+    dhis2.util.on('dhis2.de.event.formReady', function(event, ds) {
+        const period = dhis2.de.getSelectedPeriod().name;
+        const currentOrganisationUnitId = dhis2.de.currentOrganisationUnitId;
+
+        ['#q0hUm0GeTOq-HllvX50cXC0-val'].forEach(e => {
+            $(e).css("width", "-webkit-fill-available")
+            $(e).css("height", "20vh")
+        })
+
+        
+        const des = ["yK8pEAe1HUi", "niRcB5DsPI9", "mftXCfi4yNq", "hU8kAi9W4jh", "eVcAnW2mO1n", "UYjF45zrZmV", "e7DWzWCcfSJ", "DqRun3AXTz4", "WxmTd6q3VRn", "q9TgXtGb497", "WpK3CA1GiFB", "bRoUldKcvm6", "JTBxLXQRhKp", "fzWfb5NkUXR", "vcS2yMpo1UL", "LSlYBmMhM5E", "fzWfb5NkUXR", "uCfgNzu58BZ", "mYN2cR5UuWb", "fzWfb5NkUXR", "HCLD11DQ08c", "Nix9Ht2BTot", "fzWfb5NkUXR", "SjfMTcD2Mue", "eW3TnNPwPBA", "fzWfb5NkUXR", "AtpZpubv2GW", "Rb7YZo0877Z", "fzWfb5NkUXR", "s00pzu2bFow", "Vov1ZBQDPGA", "mYN2cR5UuWb", "qOQNxIAAOeN", "MZEU8meruHx", "fzWfb5NkUXR", "LpxNEOc8P6Z", "QqPcpJ7yLhR", "fzWfb5NkUXR", "G80uScPn7Sk", "fzWfb5NkUXR", "bOHkio114aV", "PZkzL05NpNg", "Zk3iMA292J2", "g5oo4wU1yae", "fzWfb5NkUXR", "WSH2AYS257Z", "CaUTXHA9zK5", "fzWfb5NkUXR", "cgZjsIqjO0b", "fzWfb5NkUXR", "fqb4WJeji1q", "SZpvMstnLjc", "tjnybRhrkJk", "SZpvMstnLjc", "fzWfb5NkUXR", "LdlETep3e3n", "ckrGFqdrq1O", "fzWfb5NkUXR", "o934x7t0yqy", "fzWfb5NkUXR", "G0m2Yj6aa9t", "cdnqvBRbLNA", "H5WUNffChO8", "Jpn3u1SCEI3", "DZ4gp6GzBkJ", "YfPAiNsPQBl", "XGxKRz2pyqF", "fzWfb5NkUXR", "L3WIVnCtqqg", "NveBdKInM5m", "XGxKRz2pyqF", "glM1J4UA39s", "DWCz9b0uIkA", "fzWfb5NkUXR", "or19ZwQA1TW", "tQG9ii5Zh1g", "fzWfb5NkUXR", "whZrfpaC8ef", "j6cPf2NjluG", "fzWfb5NkUXR", "ZOJBgAbjVtK", "aTKuaZLHkMG", "hvS0ROXGv9e", "LLr12AjrMtu", "MdnijP0QA7c", "fzWfb5NkUXR", "jUouGVPDWCD", "g8Rnn7j2ccS", "fzWfb5NkUXR"]
+        $.get("../api/analytics.json?dimension=dx:" + des.join(";") + "&dimension=ou:" + currentOrganisationUnitId + "&filter=pe:" + period + "&skipRounding=true", function(json) {
+            des.forEach((dataElement) => {
+                let val = p2ild.dvu.getValueDE(json, dataElement, currentOrganisationUnitId, null, false);
+                $(`.${dataElement}`).val(`${val}`.includes(".") ? `${roundTo(val, 2)}`.replace(".", ",") : p2ild.dvu.numberWithThousands(val))
+            });
+        })
+    });
+</script>
+<style type="text/css">/* CSS created by thieuhv*/
+  input#selectedOrganisationUnit {
+    font-size: 13px;
+  }
+  td.td {
+    width: 60px;
+}
+  .page input {
+    font-size: 15px;
+    width: 200px;
+  }
+.organization-table td:hover {
+    background-color: #d0ebd0;
+  }
+tr:hover {
+    background-color: #d0ebd0;
+  }
+  input#completeButton {
+    font-size: 13px;
+  }
+  input#validateButton {
+    font-size: 13px;
+  }
+  h3#moduleHeader {
+    display: none;
+  }
+ div#actions {
+    display: none;
+  } 
+  div#leftBar {
+    background-color: #fff;
+  }
+  div.inputCriteria {
+    margin-bottom: 0px;
+  }
+  .organization-table td,
+  .organization-table th {
+    padding: 3px;
+  }
+  .organization-table {
+    background: #fff;
+  }
+  .th {
+    text-align: left;
+  }
+  td span {
+    font-family: Phetsarath, Roboto, sans-serif;
+  }
+  .heading-cell {
+    color: #000000;
+  }
+  .main-heading,
+  .sub-heading,
+  .space-heading {
+
+    font-family: Phetsarath, Roboto, sans-serif;
+    text-align: center;
+    font-size: 15px;
+    color: #000000;
+  }
+  th.main-heading,
+  th.sub-heading {
+    font-family: Phetsarath, Roboto, sans-serif;
+    text-align: center;
+    font-size: 15px;
+    color: #000000;
+    background: #d0ebd0;
+  }
+  .organization-table td {
+    text-align: center;
+    font-size: 15px;
+    padding: 3px;
+    font-family: Phetsarath, Roboto, sans-serif;
+  }
+  .table-wrapper {
+    position: relative;
+  }
+  .table-scroll {
+    height: 73vh;
+    overflow: auto;
+  }
+  input {
+    width: 80%;
+    text-align: center;
+  }
+  .organization-type {
+    width: 300px;
+    display: inline-block;
+  }
+  .organization-quantity {
+    width: 70px;
+    display: inline-block;
+    font-family: Phetsarath, Roboto, sans-serif;
+  }
+  .organization-quantity1 {
+    width: 700px;
+    display: inline-block;
+    font-family: Phetsarath, Roboto, sans-serif;
+text-align: center;
+  }
+  .organization-description {
+    width: 100px;
+    display: inline-block;
+  }
+  .table-fixed-head {
+    overflow: auto;
+    height: 75vh;
+  }
+  .table-fixed-head thead {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+  }
+  .table-fixed-head thead td {
+    top: 0;
+  }
+  tr:hover {
+
+  }
+  .sticky-col,
+  .sticky-col1 {
+    position: sticky;
+    left: 0;
+    z-index: 0;
+    color: #000000;
+  }
+  .sticky-col {
+    background-color: #fff;
+  }
+  .sticky-col1 {
+
+  }
+  .organization-table td:hover {
+
+  }
+  td.sticky-col {
+    text-align: left;
+    width:100px;
+    padding: 5px;
+  }
+  b {
+    font-family: Phetsarath, Roboto, sans-serif;
+  }
+  td.sticky-col1 {
+   width: 600px;
+text-align: left;
+  }
+  span.organization-quantity,
+  span.organization-quantity1,
+  span.organization-description {
+    font-weight: bold;
+  }
+  i {
+    font-style: italic;
+    font-family: Phetsarath, Roboto, sans-serif;
+    font-size: 15px;
+  }
+  td.entry-form-unit {
+    font-style: italic;
+    text-align: right;
+    font-size: 13px;
+    font-family: Phetsarath, Roboto, sans-serif;
+    border: none;
+    background-color: #fff;
+  }
+  td.entry-form-title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    font-family: Phetsarath, Roboto, sans-serif;
+    border: none;
+    background-color: #fff;
+    color: black;
+  }
+  span#currentOrganisationUnit {
+    display: none;
+  }
+  span#currentPeriod {
+    display: none;
+  }
+  span#closeCurrentSelection {
+    display: none;
+  }
+  .disable {
+    background-color: #edebeb;
+  }
+  .dataelementtotal {
+    background-color: rgb(220, 220, 220);
+    border: 1px solid rgb(170, 170, 170);
+  }
+  .popup {
+    position: fixed;
+    top: 5px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 9999; /* Để đảm bảo popup nằm phía trên các phần khác của trang */
+  }
+</style>
+<div style="padding-top: 5px">
+<div class="table-wrapper">
+<div class="table-fixed-head">
+<table class="organization-table">
+	<thead>
+		<tr class="tr">
+			<td class="entry-form-title" colspan="26">
+			<p><span style="font-size:16px;"><span style="font-family: Times New Roman,Times,serif;"><strong>NH&Oacute;M CHỈ SỐ GI&Aacute;M S&Aacute;T, Đ&Aacute;NH GI&Aacute; VỀ HOẠT ĐỘNG CẢI THIỆN DINH DƯỠNG TRONG CTMTQG GIẢM NGH&Egrave;O BỀN VỮNG<br />
+			(Mẫu b&aacute;o c&aacute;o d&agrave;nh cho tuyến x&atilde;)</strong></span></span></p>
+			</td>
+		</tr>
+		<tr class="tr">
+			<td class="heading-cell"><b>Thứ tự</b></td>
+			<td class="sticky-col1" colspan="2"><span class="organization-quantity1">T&ecirc;n chỉ ti&ecirc;u</span></td>
+			<td class="heading-cell"><span class="organization-description">Gi&aacute; trị</span></td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="hvt">
+			<td class="td"><b>I</b></td>
+			<td class="sticky-col" colspan="2"><b>PHẦN I: TH&Ocirc;NG TIN CHUNG</b></td>
+			<td class="td">&nbsp;</td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">1</td>
+			<td class="sticky-col" colspan="2">Họ v&agrave; t&ecirc;n người b&aacute;o c&aacute;o</td>
+			<td class="td"><input id="A5sVCok51CG-HllvX50cXC0-val" name="entryfield" title="GN_Họ tên người báo cáo" value="[ GN_Họ tên người báo cáo ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">2</td>
+			<td class="sticky-col" colspan="2">Số điện thoại</td>
+			<td class="td"><input id="geQczkOam2q-HllvX50cXC0-val" name="entryfield" title="GN_Số điện thoại người báo cáo" value="[ GN_Số điện thoại người báo cáo ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">3</td>
+			<td class="sticky-col" colspan="2">Email</td>
+			<td class="td"><input id="XkoNomoPxHm-HllvX50cXC0-val" name="entryfield" title="GN_Email người báo cáo" value="[ GN_Email người báo cáo ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">4</td>
+			<td class="sticky-col" colspan="2">Ng&agrave;y b&aacute;o c&aacute;o</td>
+			<td class="td"><input id="H5uglMHAFey-HllvX50cXC0-val" name="entryfield" title="GN_Ngày báo cáo" value="[ GN_Ngày báo cáo ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">5</td>
+			<td class="sticky-col" colspan="2">Tổng số th&ocirc;n/bản</td>
+			<td class="td"><input id="m2LXbWcjTSF-HllvX50cXC0-val" name="entryfield" title="GN_Tổng số thôn bản" value="[ GN_Tổng số thôn bản ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">6</td>
+			<td class="sticky-col" colspan="2">Số chuy&ecirc;n tr&aacute;ch dinh dưỡng</td>
+			<td class="td"><input id="xCsH4ZA8dky-HllvX50cXC0-val" name="entryfield" title="GN_Số chuyên trách dinh dưỡng" value="[ GN_Số chuyên trách dinh dưỡng ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">7</td>
+			<td class="sticky-col" colspan="2">Số CTV, y tế th&ocirc;n bản l&agrave;m c&ocirc;ng t&aacute;c dinh dưỡng</td>
+			<td class="td"><input id="hHTbcC0TNUg-HllvX50cXC0-val" name="entryfield" title="GN_Số CTV, YTTB làm công tác dinh dưỡng" value="[ GN_Số CTV, YTTB làm công tác dinh dưỡng ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">8</td>
+			<td class="sticky-col" colspan="2">Số bộ c&acirc;n đang sử dụng</td>
+			<td class="td"><input id="AODIUhPGjI8-HllvX50cXC0-val" name="entryfield" title="GN_Số bộ cân đang sử dụng" value="[ GN_Số bộ cân đang sử dụng ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">9</td>
+			<td class="sticky-col" colspan="2">Số bộ thước đang sử dụng</td>
+			<td class="td"><input id="Yahz8QfSnU5-HllvX50cXC0-val" name="entryfield" title="GN_Số bộ thước đang sử dụng" value="[ GN_Số bộ thước đang sử dụng ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">10</td>
+			<td class="sticky-col" colspan="2">Số hộ ngh&egrave;o, cận ngh&egrave;o, mới tho&aacute;t ngh&egrave;o đang quản l&yacute;</td>
+			<td class="td"><input id="fRddEWLzPSl-HllvX50cXC0-val" name="entryfield" title="GN_Số hộ nghèo đang quản lý" value="[ GN_Số hộ nghèo đang quản lý ]" /></td>
+		</tr>
+		<tr>
+			<td class="td">11</td>
+			<td class="sticky-col" colspan="2">Số trẻ dưới 5 tuổi thuộc hộ ngh&egrave;o, cận ngh&egrave;o, mới tho&aacute;t ngh&egrave;o</td>
+			<td class="td"><input id="DsEF7TsO7wb-HllvX50cXC0-val" name="entryfield" title="GN_Số trẻ dưới 5 tuổi " value="[ GN_Số trẻ dưới 5 tuổi  ]" /></td>
+		</tr>
+		<tr>
+			<td class="td">12</td>
+			<td class="sticky-col" colspan="2">Số trẻ g&aacute;i dưới 5 tuổi thuộc hộ ngh&egrave;o, cận ngh&egrave;o, mới tho&aacute;t ngh&egrave;o</td>
+			<td class="td"><input id="ZYshth9jeqs-HllvX50cXC0-val" name="entryfield" title="GN_Số trẻ gái dưới 5 tuổi " value="[ GN_Số trẻ gái dưới 5 tuổi  ]" /></td>
+		</tr>
+		<tr>
+			<td class="td">13</td>
+			<td class="sticky-col" colspan="2">Số trẻ 5-16 tuổi thuộc hộ ngh&egrave;o, cận ngh&egrave;o, mới tho&aacute;t ngh&egrave;o</td>
+			<td class="td"><input id="hS5ztwT01mO-HllvX50cXC0-val" name="entryfield" title="GN_Số trẻ 5-16 tuổi " value="[ GN_Số trẻ 5-16 tuổi  ]" /></td>
+		</tr>
+		<tr>
+			<td class="td">14</td>
+			<td class="sticky-col" colspan="2">Số trẻ g&aacute;i 5-16 tuổi thuộc hộ ngh&egrave;o, cận ngh&egrave;o, mới tho&aacute;t ngh&egrave;o</td>
+			<td class="td"><input id="c6OWMq6pg4a-HllvX50cXC0-val" name="entryfield" title="GN_Số trẻ gái 5-16 tuổi " value="[ GN_Số trẻ gái 5-16 tuổi  ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">15</td>
+			<td class="sticky-col" colspan="2">Tổng vốn (triệu đồng)</td>
+			<td class="td"><input dataelementid="rDFliD2eb5L" id="totalrDFliD2eb5L" name="total" readonly="readonly" title="GN_Tổng vốn (triệu đồng)" value="[ GN_Tổng vốn (triệu đồng) ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col"><b>Trong đ&oacute;:</b></td>
+			<td class="sticky-col1">- Ng&acirc;n s&aacute;ch trung ương</td>
+			<td class="td"><input id="rDFliD2eb5L-ZcwjJ3Yl66L-val" name="entryfield" title="GN_Tổng vốn (triệu đồng) Ngân sách trung ương" value="[ GN_Tổng vốn (triệu đồng) Ngân sách trung ương ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">&nbsp;</td>
+			<td class="sticky-col1">- Ng&acirc;n s&aacute;ch địa phương</td>
+			<td class="td"><input id="rDFliD2eb5L-UdkPGQu5mO2-val" name="entryfield" title="GN_Tổng vốn (triệu đồng) Ngân sách địa phương" value="[ GN_Tổng vốn (triệu đồng) Ngân sách địa phương ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">&nbsp;</td>
+			<td class="sticky-col1">- Huy động</td>
+			<td class="td"><input id="rDFliD2eb5L-UzaWkkKm2E2-val" name="entryfield" title="GN_Tổng vốn (triệu đồng) Huy động" value="[ GN_Tổng vốn (triệu đồng) Huy động ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td"><b>II</b></td>
+			<td class="sticky-col" colspan="2"><b>PHẦN II: NH&Oacute;M CHỈ SỐ GI&Aacute;M S&Aacute;T HOẠT ĐỘNG CHO B&Agrave; MẸ V&Agrave; TRẺ EM DƯỚI 5 TUỔI</b></td>
+			<td class="td">&nbsp;</td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">1</td>
+			<td class="sticky-col" colspan="2"><b>Tỷ lệ trẻ em dưới 5 tuổi SDD được bổ sung đa vi chất dinh dưỡng (%)</b></td>
+			<td class="td"><input id="indicatorNJLtGUtKZLH" indicatorid="NJLtGUtKZLH" name="indicator" readonly="readonly" title="GN_Tỷ lệ trẻ em dưới 5 tuổi SDD được bổ sung đa vi chất dinh dưỡng (%)" value="[ GN_Tỷ lệ trẻ em dưới 5 tuổi SDD được bổ sung đa vi chất dinh dưỡng (%) ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">Tử số</td>
+			<td class="sticky-col">Số trẻ em dưới 5 tuổi SDD được bổ sung đa vi chất dinh dưỡng</td>
+			<td class="ts"><input id="kpWuED0886w-HllvX50cXC0-val" name="entryfield" title="GN_Số trẻ em dưới 5 tuổi suy dinh dưỡng được bổ sung đa vi chất dinh dưỡng" value="[ GN_Số trẻ em dưới 5 tuổi suy dinh dưỡng được bổ sung đa vi chất dinh dưỡng ]" /></td>
+		</tr>
+		<tr class="td">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">Mẫu số</td>
+			<td class="sticky-col">Tổng số trẻ em SDD dưới 5 tuổi đang quản l&yacute;</td>
+			<td class="ms"><input id="p9ewG41LFJw-HllvX50cXC0-val" name="entryfield" title="GN_Tổng số trẻ em dưới 5 tuổi suy dinh dưỡng đang quản lý" value="[ GN_Tổng số trẻ em dưới 5 tuổi suy dinh dưỡng đang quản lý ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">2</td>
+			<td class="sticky-col" colspan="2"><b>Tỷ lệ trẻ em g&aacute;i dưới 5 tuổi SDD được bổ sung đa vi chất dinh dưỡng (%)</b></td>
+			<td class="td"><input id="indicatorXohBUg7oNZT" indicatorid="XohBUg7oNZT" name="indicator" readonly="readonly" title="GN_Tỷ lệ trẻ em gái dưới 5 tuổi SDD được bổ sung đa vi chất dinh dưỡng (%)" value="[ GN_Tỷ lệ trẻ em gái dưới 5 tuổi SDD được bổ sung đa vi chất dinh dưỡng (%) ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">Tử số</td>
+			<td class="sticky-col">Số trẻ em g&aacute;i dưới 5 tuổi SDD được bổ sung đa vi chất dinh dưỡng</td>
+			<td class="ts"><input id="SoN6CKsrwxF-HllvX50cXC0-val" name="entryfield" title="GN_Số trẻ em gái dưới 5 tuổi suy dinh dưỡng được bổ sung đa vi chất dinh dưỡng" value="[ GN_Số trẻ em gái dưới 5 tuổi suy dinh dưỡng được bổ sung đa vi chất dinh dưỡng ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">Mẫu số</td>
+			<td class="sticky-col">Tổng số trẻ em g&aacute;i SDD dưới 5 tuổi đang quản l&yacute;</td>
+			<td class="ms"><input id="TRJcX68t1Jx-HllvX50cXC0-val" name="entryfield" title="GN_Tổng số trẻ gái dưới 5 tuổi suy dinh dưỡng đang quản lý" value="[ GN_Tổng số trẻ gái dưới 5 tuổi suy dinh dưỡng đang quản lý ]" /></td>
+		</tr>
+		<tr class="hvt353">
+			<td class="td">3</td>
+			<td class="sticky-col" colspan="2"><b>Tỷ lệ phụ nữ c&oacute; thai được bổ sung đa vi chất dinh dưỡng (%)</b></td>
+			<td class="td"><input id="indicatorCli1iwyJlhW" indicatorid="Cli1iwyJlhW" name="indicator" readonly="readonly" title="GN_Tỷ lệ phụ nữ có thai được bổ sung đa vi chất dinh dưỡng (%)" value="[ GN_Tỷ lệ phụ nữ có thai được bổ sung đa vi chất dinh dưỡng (%) ]" /></td>
+		</tr>
+		<tr class="hvt353">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">Tử số</td>
+			<td class="sticky-col">Số phụ nữ c&oacute; thai được bổ sung đa vi chất dinh dưỡng</td>
+			<td class="ts"><input id="sH4bQbiR6gH-HllvX50cXC0-val" name="entryfield" title="GN_Số phụ nữ có thai được bổ sung đa vi chất dinh dưỡng" value="[ GN_Số phụ nữ có thai được bổ sung đa vi chất dinh dưỡng ]" /></td>
+		</tr>
+		<tr class="hvt353">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">Mẫu số</td>
+			<td class="sticky-col">Số phụ nữ c&oacute; thai đang quản l&yacute;</td>
+			<td class="ms"><input id="jXeAs8iVWVX-HllvX50cXC0-val" name="entryfield" title="GN_Số phụ nữ có thai đang quản lý" value="[ GN_Số phụ nữ có thai đang quản lý ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">4</td>
+			<td class="sticky-col" colspan="2"><b>Tỷ lệ b&agrave; mẹ c&oacute; con dưới 5 tuổi v&agrave; b&agrave; mẹ mang thai được tư vấn dinh dưỡng (%)</b></td>
+			<td class="td"><input id="indicatorQ2l8awl8Ely" indicatorid="Q2l8awl8Ely" name="indicator" readonly="readonly" title="GN_Tỷ lệ bà mẹ có con dưới 5 tuổi và bà mẹ mang thai được tư vấn dinh dưỡng (%)" value="[ GN_Tỷ lệ bà mẹ có con dưới 5 tuổi và bà mẹ mang thai được tư vấn dinh dưỡng (%) ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">Tử số</td>
+			<td class="sticky-col">Số b&agrave; mẹ c&oacute; con dưới 5 tuổi v&agrave; b&agrave; mẹ mang thai được tư vấn dinh dưỡng</td>
+			<td class="ts"><input id="IPQcuK2U5rV-HllvX50cXC0-val" name="entryfield" title="GN_Số bà mẹ có con dưới 5 tuổi và bà mẹ mang thai được tư vấn dinh dưỡng" value="[ GN_Số bà mẹ có con dưới 5 tuổi và bà mẹ mang thai được tư vấn dinh dưỡng ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">Mẫu số</td>
+			<td class="sticky-col">Tổng số b&agrave; mẹ c&oacute; con dưới 5 tuổi v&agrave; b&agrave; mẹ mang thai đang quản l&yacute;</td>
+			<td class="ms"><input id="OKDyetX1kmE-HllvX50cXC0-val" name="entryfield" title="GN_Tổng số bà mẹ có con dưới 5 tuổi và bà mẹ mang thai đang quản lý." value="[ GN_Tổng số bà mẹ có con dưới 5 tuổi và bà mẹ mang thai đang quản lý. ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">5</td>
+			<td class="sticky-col" colspan="2"><b>Tỷ lệ trẻ em được theo d&otilde;i v&agrave; quản l&yacute; suy dinh dưỡng cấp t&iacute;nh tại cộng đồng (%)</b></td>
+			<td class="td"><input id="indicatore18zFS4G4Ut" indicatorid="e18zFS4G4Ut" name="indicator" readonly="readonly" title="GN_Tỷ lệ trẻ em được theo dõi và quản lý suy dinh dưỡng cấp tính tại cộng đồng (%)" value="[ GN_Tỷ lệ trẻ em được theo dõi và quản lý suy dinh dưỡng cấp tính tại cộng đồng (%) ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">Tử số</td>
+			<td class="sticky-col">Số trẻ em được theo d&otilde;i v&agrave; quản l&yacute; suy dinh dưỡng cấp t&iacute;nh tại cộng đồng</td>
+			<td class="ts"><input id="gB9N10JSi5O-HllvX50cXC0-val" name="entryfield" title="GN_Số trẻ em được theo dõi và quản lý suy dinh dưỡng cấp tính tại cộng đồng" value="[ GN_Số trẻ em được theo dõi và quản lý suy dinh dưỡng cấp tính tại cộng đồng ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">Mẫu số</td>
+			<td class="sticky-col">Tổng số trẻ em bị suy dinh dưỡng cấp t&iacute;nh đang quản l&yacute;</td>
+			<td class="ms"><input id="XClNIlm7gjt-HllvX50cXC0-val" name="entryfield" title="GN_Tổng số trẻ em bị suy dinh dưỡng cấp tính đang quản lý." value="[ GN_Tổng số trẻ em bị suy dinh dưỡng cấp tính đang quản lý. ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">6</td>
+			<td class="sticky-col" colspan="2"><b>Tỷ lệ trẻ em g&aacute;i được theo d&otilde;i v&agrave; quản l&yacute; suy dinh dưỡng cấp t&iacute;nh tại cộng đồng (%)</b></td>
+			<td class="td"><input id="indicatorC78xDHmPC4m" indicatorid="C78xDHmPC4m" name="indicator" readonly="readonly" title="GN_Tỷ lệ trẻ em gái được theo dõi và quản lý suy dinh dưỡng cấp tính tại cộng đồng (%)" value="[ GN_Tỷ lệ trẻ em gái được theo dõi và quản lý suy dinh dưỡng cấp tính tại cộng đồng (%) ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">Tử số</td>
+			<td class="sticky-col">Số trẻ em g&aacute;i được theo d&otilde;i v&agrave; quản l&yacute; suy dinh dưỡng cấp t&iacute;nh tại cộng đồng</td>
+			<td class="ts"><input id="ADK3U17vaut-HllvX50cXC0-val" name="entryfield" title="GN_Số trẻ em gái được theo dõi và quản lý SDD cấp tính tại cộng đồng" value="[ GN_Số trẻ em gái được theo dõi và quản lý SDD cấp tính tại cộng đồng ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">Mẫu số</td>
+			<td class="sticky-col">Tổng số trẻ em g&aacute;i bị suy dinh dưỡng cấp t&iacute;nh đang quản l&yacute;</td>
+			<td class="ms"><input id="Egxkaxrzrr2-HllvX50cXC0-val" name="entryfield" title="GN_Tổng số trẻ em gái bị suy dinh dưỡng cấp tính đang quản lý" value="[ GN_Tổng số trẻ em gái bị suy dinh dưỡng cấp tính đang quản lý ]" /></td>
+		</tr>
+		<tr class="hvt353">
+			<td class="td">7</td>
+			<td class="sticky-col" colspan="2"><b>Tỷ lệ trẻ được uống vitamin A (%)</b></td>
+			<td class="td"><input id="indicatorPrXK2MuvAJS" indicatorid="PrXK2MuvAJS" name="indicator" readonly="readonly" title="GN_Tỷ lệ trẻ được uống vitamin A (%)" value="[ GN_Tỷ lệ trẻ được uống vitamin A (%) ]" /></td>
+		</tr>
+		<tr class="hvt353">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">Tử số</td>
+			<td class="sticky-col">Số trẻ được uống vitamin A</td>
+			<td class="ts"><input id="Q9vdo69fYQb-HllvX50cXC0-val" name="entryfield" title="GN_Số trẻ được uống vitamin A" value="[ GN_Số trẻ được uống vitamin A ]" /></td>
+		</tr>
+		<tr class="hvt353">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">Mẫu số</td>
+			<td class="sticky-col">Tổng số trẻ em trong độ tuổi được uống Vitamin A đang quản l&yacute;</td>
+			<td class="ms"><input id="eaDas8pCuD5-HllvX50cXC0-val" name="entryfield" title="GN_Tổng số trẻ em trong độ tuổi được uống Vitamin A đang quản lý" value="[ GN_Tổng số trẻ em trong độ tuổi được uống Vitamin A đang quản lý ]" /></td>
+		</tr>
+		<tr class="hvt353">
+			<td class="td">8</td>
+			<td class="sticky-col" colspan="2"><b>Tỷ lệ trẻ được tẩy giun (%)</b></td>
+			<td class="td"><input id="indicatorqGV2fQCMmAf" indicatorid="qGV2fQCMmAf" name="indicator" readonly="readonly" title="GN_Tỷ lệ trẻ được tẩy giun (%)" value="[ GN_Tỷ lệ trẻ được tẩy giun (%) ]" /></td>
+		</tr>
+		<tr class="hvt353">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">Tử số</td>
+			<td class="sticky-col">Số trẻ được tẩy giun</td>
+			<td class="ts"><input id="ERtn1SAURQM-HllvX50cXC0-val" name="entryfield" title="GN_Số trẻ được tẩy giun" value="[ GN_Số trẻ được tẩy giun ]" /></td>
+		</tr>
+		<tr class="hvt353">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">Mẫu số</td>
+			<td class="sticky-col">Tổng số trẻ trong độ tuổi được tẩy giun đang quản l&yacute;</td>
+			<td class="ms"><input id="vGGJeTa4DWc-HllvX50cXC0-val" name="entryfield" title="GN_Tổng số trẻ trong độ tuổi được tẩy giun đang quản lý" value="[ GN_Tổng số trẻ trong độ tuổi được tẩy giun đang quản lý ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td"><b>III</b></td>
+			<td class="sticky-col" colspan="2"><b>PHẦN III: NH&Oacute;M CHỈ SỐ GI&Aacute;M S&Aacute;T HOẠT ĐỘNG CHO TRẺ TỪ 5 ĐẾN 16 TUỔI</b></td>
+			<td class="td">&nbsp;</td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">1</td>
+			<td class="sticky-col" colspan="2"><b>Tỷ lệ trẻ em từ 5 đến dưới 16 tuổi được tư vấn dinh dưỡng</b></td>
+			<td class="td"><input id="indicatorpDb06Sl0IwI" indicatorid="pDb06Sl0IwI" name="indicator" readonly="readonly" title="GN_Tỷ lệ trẻ em từ 5 đến dưới 16 tuổi được tư vấn dinh dưỡng" value="[ GN_Tỷ lệ trẻ em từ 5 đến dưới 16 tuổi được tư vấn dinh dưỡng ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">Tử số</td>
+			<td class="sticky-col">Số trẻ em từ 5 đến dưới 16 tuổi được tư vấn dinh dưỡng</td>
+			<td class="ts"><input id="MHyraiXuP0Q-HllvX50cXC0-val" name="entryfield" title="GN_Số trẻ em từ 5 đến dưới 16 tuổi được tư vấn dinh dưỡng" value="[ GN_Số trẻ em từ 5 đến dưới 16 tuổi được tư vấn dinh dưỡng ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">Mẫu số</td>
+			<td class="sticky-col">Tổng số trẻ em từ 5 đến dưới 16 tuổi đang quản l&yacute;</td>
+			<td class="ms"><input id="lLV2oWkMX35-HllvX50cXC0-val" name="entryfield" title="GN_Số trẻ từ 5 đến dưới 16 tuổi đang quản lý" value="[ GN_Số trẻ từ 5 đến dưới 16 tuổi đang quản lý ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">2</td>
+			<td class="sticky-col" colspan="2"><b>Tỷ lệ trẻ em g&aacute;i từ 5 đến dưới 16 tuổi được tư vấn dinh dưỡng</b></td>
+			<td class="td"><input id="indicatorAAHh8uEGXuo" indicatorid="AAHh8uEGXuo" name="indicator" readonly="readonly" title="GN_Tỷ lệ trẻ em gái từ 5 đến dưới 16 tuổi được tư vấn dinh dưỡng" value="[ GN_Tỷ lệ trẻ em gái từ 5 đến dưới 16 tuổi được tư vấn dinh dưỡng ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">Tử số</td>
+			<td class="sticky-col">Số trẻ em g&aacute;i từ 5 đến dưới 16 tuổi được tư vấn dinh dưỡng</td>
+			<td class="ts"><input id="X2C0Cg0j4YY-HllvX50cXC0-val" name="entryfield" title="GN_Số trẻ em gái từ 5 đến dưới 16 tuổi được tư vấn dinh dưỡng" value="[ GN_Số trẻ em gái từ 5 đến dưới 16 tuổi được tư vấn dinh dưỡng ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">Mẫu số</td>
+			<td class="sticky-col">Tổng số trẻ em g&aacute;i từ 5 đến dưới 16 tuổi đang quản l&yacute;</td>
+			<td class="ms"><input id="I5otYfDhsDY-HllvX50cXC0-val" name="entryfield" title="GN_Số trẻ gái từ 5 đến dưới 16 tuổi đang quản lý" value="[ GN_Số trẻ gái từ 5 đến dưới 16 tuổi đang quản lý ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">3</td>
+			<td class="sticky-col" colspan="2"><b>Tỷ lệ trẻ em từ 5 đến dưới 16 tuổi bị suy dinh dưỡng được bổ sung đa vi chất dinh dưỡng</b></td>
+			<td class="td"><input id="indicatorME2Hvtlu4DM" indicatorid="ME2Hvtlu4DM" name="indicator" readonly="readonly" title="GN_Tỷ lệ trẻ em từ 5 đến dưới 16 tuổi bị suy dinh dưỡng được bổ sung đa vi chất dinh dưỡng" value="[ GN_Tỷ lệ trẻ em từ 5 đến dưới 16 tuổi bị suy dinh dưỡng được bổ sung đa vi chất dinh dưỡng ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">Tử số</td>
+			<td class="sticky-col">Số trẻ em từ 5 đến dưới 16 tuổi bị suy dinh dưỡng được bổ sung đa vi chất dinh dưỡng</td>
+			<td class="ts"><input id="fmxxZYvO72D-HllvX50cXC0-val" name="entryfield" title="GN_Số trẻ em từ 5 đến dưới 16 tuổi bị SDD được bổ sung đa vi chất dinh dưỡng" value="[ GN_Số trẻ em từ 5 đến dưới 16 tuổi bị SDD được bổ sung đa vi chất dinh dưỡng ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">Mẫu số</td>
+			<td class="sticky-col">Tổng số trẻ em từ 5 đến dưới 16 tuổi bị suy dinh dưỡng đang quản l&yacute;</td>
+			<td class="ms"><input id="PVAilYQutga-HllvX50cXC0-val" name="entryfield" title="GN_Tổng số trẻ em từ 5 đến dưới 16 tuổi bị suy dinh dưỡng đang quản lý" value="[ GN_Tổng số trẻ em từ 5 đến dưới 16 tuổi bị suy dinh dưỡng đang quản lý ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">4</td>
+			<td class="sticky-col" colspan="2"><b>Tỷ lệ trẻ em g&aacute;i từ 5 đến dưới 16 tuổi bị suy dinh dưỡng được bổ sung đa vi chất dinh dưỡng</b></td>
+			<td class="td"><input id="indicatoreCNmuDLFJnQ" indicatorid="eCNmuDLFJnQ" name="indicator" readonly="readonly" title="GN_Tỷ lệ trẻ em gái từ 5 đến dưới 16 tuổi bị suy dinh dưỡng được bổ sung đa vi chất dinh dưỡng" value="[ GN_Tỷ lệ trẻ em gái từ 5 đến dưới 16 tuổi bị suy dinh dưỡng được bổ sung đa vi chất dinh dưỡng ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">Tử số</td>
+			<td class="sticky-col">Số trẻ em g&aacute;i từ 5 đến dưới 16 tuổi bị suy dinh dưỡng được bổ sung đa vi chất dinh dưỡng</td>
+			<td class="ts"><input id="uZlnJsnP9b4-HllvX50cXC0-val" name="entryfield" title="GN_Số trẻ em gái từ 5 đến dưới 16 tuổi bị suy dinh dưỡng được bổ sung đa vi chất dinh dưỡng" value="[ GN_Số trẻ em gái từ 5 đến dưới 16 tuổi bị suy dinh dưỡng được bổ sung đa vi chất dinh dưỡng ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">Mẫu số</td>
+			<td class="sticky-col">Tổng số trẻ em g&aacute;i từ 5 đến dưới 16 tuổi bị suy dinh dưỡng đang quản l&yacute;</td>
+			<td class="ms"><input id="VtSigiE1DjB-HllvX50cXC0-val" name="entryfield" title="GN_Tổng số trẻ em gái từ 5 đến dưới 16 tuổi bị SDD đang quản lý" value="[ GN_Tổng số trẻ em gái từ 5 đến dưới 16 tuổi bị SDD đang quản lý ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">5</td>
+			<td class="sticky-col" colspan="2"><b>Tỷ lệ trẻ g&aacute;i 12-16 tuổi c&oacute; kinh nguyệt được bổ sung sắt</b></td>
+			<td class="td"><input id="indicatorFk52CDG5tOO" indicatorid="Fk52CDG5tOO" name="indicator" readonly="readonly" title="GN_Tỷ lệ trẻ gái 12-16 tuổi có kinh nguyệt được bổ sung sắt" value="[ GN_Tỷ lệ trẻ gái 12-16 tuổi có kinh nguyệt được bổ sung sắt ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">Tử số</td>
+			<td class="sticky-col">Số trẻ g&aacute;i 12-16 tuổi c&oacute; kinh nguyệt được bổ sung sắt</td>
+			<td class="ts"><input id="OdOoEeux8EY-HllvX50cXC0-val" name="entryfield" title="GN_Số trẻ gái 12-16 tuổi có kinh nguyệt được bổ sung sắt" value="[ GN_Số trẻ gái 12-16 tuổi có kinh nguyệt được bổ sung sắt ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">Mẫu số</td>
+			<td class="sticky-col">Tổng trẻ g&aacute;i 12-16 tuổi đang quản l&yacute;</td>
+			<td class="ms"><input id="jZRhO0l5801-HllvX50cXC0-val" name="entryfield" title="GN_Tổng trẻ gái 12-16 tuổi đang quản lý" value="[ GN_Tổng trẻ gái 12-16 tuổi đang quản lý ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">6</td>
+			<td class="sticky-col" colspan="2"><b>Số hộ gia đ&igrave;nh được cung cấp c&aacute;c sản phẩm dinh dưỡng trong t&igrave;nh huống khẩn cấp</b></td>
+			<td class="td"><input id="YII6j1bHSHo-HllvX50cXC0-val" name="entryfield" title="GN_Số hộ gia đình được cung cấp các sản phẩm dinh dưỡng trong tình huống khẩn cấp" value="[ GN_Số hộ gia đình được cung cấp các sản phẩm dinh dưỡng trong tình huống khẩn cấp ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td"><b>IV</b></td>
+			<td class="sticky-col" colspan="2"><b>PHẦN IV: NH&Oacute;M CHỈ SỐ Đ&Aacute;NH GI&Aacute; VỀ KẾT QUẢ THỰC HIỆN </b></td>
+			<td class="td">&nbsp;</td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">1</td>
+			<td class="sticky-col" colspan="2"><b>Tỷ lệ trẻ dưới 5 tuổi bị suy dinh dưỡng thể thấp c&ograve;i</b></td>
+			<td class="td"><input id="indicatoroq0uzOBfa2B" indicatorid="oq0uzOBfa2B" name="indicator" readonly="readonly" title="GN_Tỷ lệ trẻ dưới 5 tuổi bị suy dinh dưỡng thể thấp còi" value="[ GN_Tỷ lệ trẻ dưới 5 tuổi bị suy dinh dưỡng thể thấp còi ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">Tử số</td>
+			<td class="sticky-col">Số trẻ dưới 5 tuổi bị suy dinh dưỡng thể thấp c&ograve;i</td>
+			<td class="ts"><input id="x9kpvLQLQTp-HllvX50cXC0-val" name="entryfield" title="GN_Số trẻ dưới 5 tuổi bị suy dinh dưỡng thể thấp còi" value="[ GN_Số trẻ dưới 5 tuổi bị suy dinh dưỡng thể thấp còi ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">Mẫu số</td>
+			<td class="sticky-col">Tổng số trẻ dưới 5 tuổi được đo</td>
+			<td class="ms"><input id="YZmBU0rC5zw-HllvX50cXC0-val" name="entryfield" title="GN_Tổng số trẻ dưới 5 tuổi được đo" value="[ GN_Tổng số trẻ dưới 5 tuổi được đo ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">2</td>
+			<td class="sticky-col" colspan="2"><b>Tỷ số trẻ dưới 5 tuổi bị suy dinh dưỡng thể gầy c&ograve;m</b></td>
+			<td class="td"><input id="indicatorJnIK37XtrJN" indicatorid="JnIK37XtrJN" name="indicator" readonly="readonly" title="GN_Tỷ lệ trẻ dưới 5 tuổi bị suy dinh dưỡng  thể gầy còm" value="[ GN_Tỷ lệ trẻ dưới 5 tuổi bị suy dinh dưỡng  thể gầy còm ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">Tử số</td>
+			<td class="sticky-col">Số trẻ dưới 5 tuổi bị suy dinh dưỡng thể gầy c&ograve;m</td>
+			<td class="ts"><input id="lPej8aGeO76-HllvX50cXC0-val" name="entryfield" title="GN_Số trẻ dưới 5 tuổi bị suy dinh dưỡng thể gầy còm" value="[ GN_Số trẻ dưới 5 tuổi bị suy dinh dưỡng thể gầy còm ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">Mẫu số</td>
+			<td class="sticky-col">Tổng số trẻ dưới 5 tuổi được c&acirc;n đo</td>
+			<td class="ms"><input id="NF9kMLr4Mqr-HllvX50cXC0-val" name="entryfield" title="GN_Tổng số trẻ dưới 5 tuổi được cân đo" value="[ GN_Tổng số trẻ dưới 5 tuổi được cân đo ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">3</td>
+			<td class="sticky-col" colspan="2"><b>Tỷ lệ trẻ dưới 5 tuổi bị suy dinh dưỡng thể gầy c&ograve;m nặng</b></td>
+			<td class="td"><input id="indicatorJIDaI3kvmH5" indicatorid="JIDaI3kvmH5" name="indicator" readonly="readonly" title="GN_Tỷ lệ trẻ dưới 5 tuổi bị suy dinh dưỡng thể gầy còm nặng" value="[ GN_Tỷ lệ trẻ dưới 5 tuổi bị suy dinh dưỡng thể gầy còm nặng ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">Tử số</td>
+			<td class="sticky-col">Số trẻ dưới 5 tuổi bị suy dinh dưỡng thể gầy c&ograve;m nặng</td>
+			<td class="td"><input id="m19e8B5EnpX-HllvX50cXC0-val" name="entryfield" title="GN_Tổng số trẻ dưới 5 tuổi bị suy dinh dưỡng thể gầy còm nặng" value="[ GN_Tổng số trẻ dưới 5 tuổi bị suy dinh dưỡng thể gầy còm nặng ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">Mẫu số</td>
+			<td class="sticky-col">Tổng số trẻ dưới 5 tuổi được c&acirc;n đo</td>
+			<td class="td">&nbsp;</td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">4</td>
+			<td class="sticky-col" colspan="2"><b>Tỷ lệ trẻ từ 5 đến dưới 16 tuổi bị suy dinh dưỡng thể thấp c&ograve;i</b></td>
+			<td class="td"><input id="indicatorBuX3NO7IwOC" indicatorid="BuX3NO7IwOC" name="indicator" readonly="readonly" title="GN_Tỷ lệ trẻ từ 5 đến dưới 16 tuổi bị suy dinh dưỡng thể thấp còi" value="[ GN_Tỷ lệ trẻ từ 5 đến dưới 16 tuổi bị suy dinh dưỡng thể thấp còi ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">Tử số</td>
+			<td class="sticky-col">Số trẻ từ 5 đến dưới 16 tuổi bị suy dinh dưỡng thể thấp c&ograve;i</td>
+			<td class="ts"><input id="fni01vMkx5H-HllvX50cXC0-val" name="entryfield" title="GN_Số trẻ từ 5 đến dưới 16 tuổi bị suy dinh dưỡng thể thấp còi" value="[ GN_Số trẻ từ 5 đến dưới 16 tuổi bị suy dinh dưỡng thể thấp còi ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">Mẫu số</td>
+			<td class="sticky-col">Tổng số trẻ từ 5 đến dưới 16 tuổi được đo</td>
+			<td class="ms"><input id="bMQTBHzVkwN-HllvX50cXC0-val" name="entryfield" title="GN_Số trẻ từ 5 đến dưới 16 tuổi được đo" value="[ GN_Số trẻ từ 5 đến dưới 16 tuổi được đo ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">5</td>
+			<td class="sticky-col" colspan="2"><b>Tỷ lệ trẻ 6-23 th&aacute;ng tuổi được ăn bổ sung đ&uacute;ng, đủ </b></td>
+			<td class="td"><input id="indicatorn5D9kt4ut9D" indicatorid="n5D9kt4ut9D" name="indicator" readonly="readonly" title="GN_Tỷ lệ trẻ 6-23 tháng tuổi được ăn bổ sung đúng, đủ" value="[ GN_Tỷ lệ trẻ 6-23 tháng tuổi được ăn bổ sung đúng, đủ ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">Tử số</td>
+			<td class="sticky-col">Số trẻ 6-23 th&aacute;ng tuổi được ăn bổ sung đ&uacute;ng, đủ</td>
+			<td class="ts"><input id="JCpdL0ZbdwX-HllvX50cXC0-val" name="entryfield" title="GN_Số trẻ 6-23 tháng tuổi được ăn bổ sung đúng, đủ" value="[ GN_Số trẻ 6-23 tháng tuổi được ăn bổ sung đúng, đủ ]" /></td>
+		</tr>
+		<tr class="hvt">
+			<td class="td">&nbsp;</td>
+			<td class="sticky-col">Mẫu số</td>
+			<td class="sticky-col">Tổng số trẻ 6-23 th&aacute;ng tuổi được đ&aacute;nh gi&aacute;</td>
+			<td class="ms"><input id="wEQKexdtzj8-HllvX50cXC0-val" name="entryfield" title="GN_Tổng số trẻ 6-23 tháng tuổi được đánh giá" value="[ GN_Tổng số trẻ 6-23 tháng tuổi được đánh giá ]" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+<script>
+    document.getElementById("geQczkOam2q-HllvX50cXC0-val").addEventListener("input", function() {
+        var phone = this.value;
+        var regex = /^[0-9]*$/;
+        if (!regex.test(phone) || phone.length > 11) {
+            alert("Số điện thoại chỉ được chứa số và tối đa 11 ký tự.");
+            this.value = this.value.replace(/[^0-9]/g, '').substring(0, 11);
+        }
+    });
+    document.getElementById("XkoNomoPxHm-HllvX50cXC0-val").addEventListener("blur", function() {
+        var email = this.value;
+        var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (email !== "" && !regex.test(email)) {
+            alert("Định dạng email không hợp lệ.");
+        }
+    });
+</script><script>
+async function fetchOrganisationUnitId() {
+    try {
+        const domain = window.location.origin;
+        const responseMe = await fetch(`${domain}/api/me`, {
+            credentials: 'include'
+        });
+        if (!responseMe.ok) {
+            throw new Error('Không thể truy cập API /me');
+        }
+        const dataMe = await responseMe.json();
+        const organisationUnits = dataMe.organisationUnits;
+        if (!organisationUnits || organisationUnits.length === 0) {
+            throw new Error('Không tìm thấy tổ chức trong dữ liệu /me');
+        }
+        const organisationUnitId = organisationUnits[0].id;
+        const responseOrgUnit = await fetch(`${domain}/api/29/organisationUnits/${organisationUnitId}.json`, {
+            credentials: 'include'
+        });
+        if (!responseOrgUnit.ok) {
+            throw new Error('Không thể truy cập API /organisationUnits với ID: ' + organisationUnitId);
+        }
+        const dataOrgUnit = await responseOrgUnit.json();
+        const targetString = "QW1NbMvLMjP";
+        if (JSON.stringify(dataOrgUnit).includes(targetString)) {
+            const elementsToHide = document.querySelectorAll('tr.hvt353');
+            elementsToHide.forEach(element => {
+                element.style.display = 'none';
+            });
+        }
+    } catch (error) {
+        console.error('Đã xảy ra lỗi:', error);
+        console.log(`Đã xảy ra lỗi: ${error.message}`);
+    }
+}
+fetchOrganisationUnitId();
+</script><script>
+const inputhvt1 = document.getElementById("DsEF7TsO7wb-HllvX50cXC0-val");
+const inputhvt2 = document.getElementById("ZYshth9jeqs-HllvX50cXC0-val");
+const inputhvt3 = document.getElementById("hS5ztwT01mO-HllvX50cXC0-val");
+const inputhvt4 = document.getElementById("c6OWMq6pg4a-HllvX50cXC0-val");
+const numeratorInputs = document.querySelectorAll('td.ts input');
+const denominatorInputs = document.querySelectorAll('td.ms input');
+inputhvt1.addEventListener("input", checkValues);
+inputhvt2.addEventListener("input", checkValues);
+inputhvt3.addEventListener("input", checkValues);
+inputhvt4.addEventListener("input", checkValues);
+numeratorInputs.forEach((input, index) => {
+  input.addEventListener('input', () => validateRatio(index));
+});
+denominatorInputs.forEach((input, index) => {
+  input.addEventListener('input', () => validateRatio(index));
+});
+
+function checkValues() {
+  const value1 = parseInt(inputhvt1.value);
+  const value2 = parseInt(inputhvt2.value);
+  const value3 = parseInt(inputhvt3.value);
+  const value4 = parseInt(inputhvt4.value);
+  if (value1 < value2) {
+    hvtPopup("Số trẻ gái dưới 5 tuổi phải nhỏ hơn hoặc bằng Số trẻ dưới 5 tuổi");
+  }
+
+  if (value3 < value4) {
+    hvtPopup("Số trẻ gái 5-16 tuổi phải nhỏ hơn hoặc bằng Số trẻ 5-16 tuổi");
+  }
+}
+
+function validateRatio(index) {
+  const numerator = parseFloat(numeratorInputs[index].value);
+  const denominator = parseFloat(denominatorInputs[index].value);
+  if (denominator < numerator) {
+    hvtPopup("Lưu ý: Tử số không được lớn hơn Mẫu số!");
+  } else {
+    hidePopup();
+  }
+}
+function hvtPopup(noiDung) {
+  var existingPopup = document.querySelector(".popup");
+  if (existingPopup) {
+    existingPopup.innerText = noiDung;
+    return;
+  }
+  var popup = document.createElement("div");
+  popup.className = "popup";
+  popup.innerText = noiDung;
+  document.body.appendChild(popup);
+
+  setTimeout(function () {
+    if (popup.parentNode === document.body) {
+      document.body.removeChild(popup);
+    }
+  }, 5000);
+}
+function hidePopup() {
+  var popup = document.querySelector(".popup");
+  if (popup) {
+    document.body.removeChild(popup);
+  }
+}
+    </script>
