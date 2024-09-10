@@ -36,7 +36,7 @@ function writeErrorsToFile() {
 }
 
 // ID Org, Programs
-const idOrg = "cwwGWCvpDW2"; //Bình Tân Vĩnh Long ypVqoYRxQ9l cwwGWCvpDW2
+const idOrg = "upKDIj3LE9R"; // Ngũ Hành Sơn Đà Nẵng
 const idProgram = "NAleauPZvIE";
 
 async function getMetaData(idOrg, idProgram) {
