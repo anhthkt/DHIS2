@@ -9,7 +9,7 @@ Tao file docker-compose cho container
 	DB: dump db
 		Exec vao container db chay lenh: pg_dump -O -U "POSTGRES_USER" -d "POSTGRES_DB" -Fp -T aggregated* -T analytics* -T completeness* | gzip > ./"Name file output".sql.gz
 		Copy vao thu muc docker-compose cua db
-		Giai nen: unzip -d "Name file output".sql.gz
+		Giai nen: gunzip -d "Name file output".sql.gz
 		Tao file docker-compose.yml
 		
 Kiểm tra các app

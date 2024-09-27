@@ -8,7 +8,7 @@ const authentication = {
 }
 
 // ID Benh-Nhan, Events, Programs
-const idOrg = "cykYqhJUNmE";
+const idOrg = "Y2AZV0a1Oyj"; //Dak Lak
 
 
 async function getMetaData(idOrg) {

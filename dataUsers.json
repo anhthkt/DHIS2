@@ -1,0 +1,5194 @@
+{
+  "users": [
+    {
+      "lastUpdated": "2023-08-02T09:01:17.457",
+      "id": "A8SSQulgLyk",
+      "href": "https://baocao.tkyt.vn/api/users/A8SSQulgLyk",
+      "created": "2019-04-17T15:05:28.116",
+      "lastLogin": "2019-08-14T11:19:49.946",
+      "twoFA": false,
+      "invitation": false,
+      "selfRegistered": false,
+      "firstName": "Huyện Chương Mỹ, TYT Xã Hợp Đồng",
+      "name": "Huyện Chương Mỹ, TYT Xã Hợp Đồng Thành phố Hà Nội",
+      "favorite": false,
+      "displayName": "Huyện Chương Mỹ, TYT Xã Hợp Đồng Thành phố Hà Nội",
+      "externalAuth": false,
+      "externalAccess": false,
+      "surname": "Thành phố Hà Nội",
+      "disabled": false,
+      "passwordLastUpdated": "2023-08-02T09:01:19.141",
+      "username": "10072",
+      "lastUpdatedBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "sharing": {
+        "userGroups": {},
+        "external": false,
+        "users": {}
+      },
+      "access": {
+        "read": true,
+        "update": true,
+        "externalize": true,
+        "write": true,
+        "delete": true,
+        "manage": true
+      },
+      "userCredentials": {
+        "lastLogin": "2019-08-14T11:19:49.946",
+        "passwordLastUpdated": "2023-08-02T09:01:19.141",
+        "invitation": false,
+        "externalAuth": false,
+        "selfRegistered": false,
+        "disabled": false,
+        "id": "A8SSQulgLyk",
+        "twoFA": false,
+        "username": "10072",
+        "access": {
+          "read": true,
+          "update": true,
+          "externalize": true,
+          "write": true,
+          "delete": true,
+          "manage": true
+        },
+        "sharing": {
+          "userGroups": {},
+          "external": false,
+          "users": {}
+        },
+        "cogsDimensionConstraints": [],
+        "catDimensionConstraints": [],
+        "userRoles": [
+          {
+            "id": "VH8LyIbYArH"
+          },
+          {
+            "id": "zvc691h4SHZ"
+          },
+          {
+            "id": "Q1aVQ92ECEm"
+          },
+          {
+            "id": "kzz8Dl43AEX"
+          },
+          {
+            "id": "brIf10e0Vk2"
+          }
+        ],
+        "previousPasswords": [],
+        "password": "1234567@Ab"
+      },
+      "createdBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "user": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "translations": [],
+      "dataViewOrganisationUnits": [
+        {
+          "id": "pAFOojoMSBo"
+        }
+      ],
+      "userGroupAccesses": [],
+      "attributeValues": [],
+      "userGroups": [
+        {
+          "id": "KW0pQrXycHd"
+        },
+        {
+          "id": "OJRj6iaAEwE"
+        }
+      ],
+      "userRoles": [
+        {
+          "id": "VH8LyIbYArH"
+        },
+        {
+          "id": "zvc691h4SHZ"
+        },
+        {
+          "id": "Q1aVQ92ECEm"
+        },
+        {
+          "id": "kzz8Dl43AEX"
+        },
+        {
+          "id": "brIf10e0Vk2"
+        }
+      ],
+      "userAccesses": [],
+      "favorites": [],
+      "cogsDimensionConstraints": [],
+      "catDimensionConstraints": [],
+      "teiSearchOrganisationUnits": [],
+      "organisationUnits": [
+        {
+          "id": "pAFOojoMSBo"
+        }
+      ]
+    },
+    {
+      "lastUpdated": "2023-08-02T09:01:17.459",
+      "id": "BHaW4lrm68Z",
+      "href": "https://baocao.tkyt.vn/api/users/BHaW4lrm68Z",
+      "created": "2019-04-17T15:05:28.116",
+      "lastLogin": "2019-08-14T11:19:47.762",
+      "twoFA": false,
+      "invitation": false,
+      "selfRegistered": false,
+      "firstName": "Huyện Chương Mỹ, TYT Thị trấn Xuân Mai",
+      "name": "Huyện Chương Mỹ, TYT Thị trấn Xuân Mai Thành phố Hà Nội",
+      "favorite": false,
+      "displayName": "Huyện Chương Mỹ, TYT Thị trấn Xuân Mai Thành phố Hà Nội",
+      "externalAuth": false,
+      "externalAccess": false,
+      "surname": "Thành phố Hà Nội",
+      "disabled": false,
+      "passwordLastUpdated": "2023-08-02T09:01:23.150",
+      "username": "10018",
+      "lastUpdatedBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "sharing": {
+        "userGroups": {},
+        "external": false,
+        "users": {}
+      },
+      "access": {
+        "read": true,
+        "update": true,
+        "externalize": true,
+        "write": true,
+        "delete": true,
+        "manage": true
+      },
+      "userCredentials": {
+        "lastLogin": "2019-08-14T11:19:47.762",
+        "passwordLastUpdated": "2023-08-02T09:01:23.150",
+        "invitation": false,
+        "externalAuth": false,
+        "selfRegistered": false,
+        "disabled": false,
+        "id": "BHaW4lrm68Z",
+        "twoFA": false,
+        "username": "10018",
+        "access": {
+          "read": true,
+          "update": true,
+          "externalize": true,
+          "write": true,
+          "delete": true,
+          "manage": true
+        },
+        "sharing": {
+          "userGroups": {},
+          "external": false,
+          "users": {}
+        },
+        "cogsDimensionConstraints": [],
+        "catDimensionConstraints": [],
+        "userRoles": [
+          {
+            "id": "VH8LyIbYArH"
+          },
+          {
+            "id": "zvc691h4SHZ"
+          },
+          {
+            "id": "Q1aVQ92ECEm"
+          },
+          {
+            "id": "kzz8Dl43AEX"
+          },
+          {
+            "id": "brIf10e0Vk2"
+          }
+        ],
+        "previousPasswords": [],
+        "password": "1234567@Ab"
+      },
+      "createdBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "user": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "translations": [],
+      "dataViewOrganisationUnits": [
+        {
+          "id": "t8fvWiCegQ5"
+        }
+      ],
+      "userGroupAccesses": [],
+      "attributeValues": [],
+      "userGroups": [
+        {
+          "id": "KW0pQrXycHd"
+        },
+        {
+          "id": "OJRj6iaAEwE"
+        }
+      ],
+      "userRoles": [
+        {
+          "id": "VH8LyIbYArH"
+        },
+        {
+          "id": "zvc691h4SHZ"
+        },
+        {
+          "id": "Q1aVQ92ECEm"
+        },
+        {
+          "id": "kzz8Dl43AEX"
+        },
+        {
+          "id": "brIf10e0Vk2"
+        }
+      ],
+      "userAccesses": [],
+      "favorites": [],
+      "cogsDimensionConstraints": [],
+      "catDimensionConstraints": [],
+      "teiSearchOrganisationUnits": [],
+      "organisationUnits": [
+        {
+          "id": "t8fvWiCegQ5"
+        }
+      ]
+    },
+    {
+      "lastUpdated": "2024-09-19T09:51:23.713",
+      "id": "CEcO6bXzXGQ",
+      "href": "https://baocao.tkyt.vn/api/users/CEcO6bXzXGQ",
+      "created": "2019-04-18T10:51:59.252",
+      "lastLogin": "2024-09-19T09:51:23.710",
+      "twoFA": false,
+      "invitation": false,
+      "selfRegistered": false,
+      "firstName": "Huyện Chương Mỹ, TTYT",
+      "phoneNumber": "0906204807",
+      "name": "Huyện Chương Mỹ, TTYT Thành phố Hà Nội",
+      "favorite": false,
+      "gender": "gender_female",
+      "displayName": "Huyện Chương Mỹ, TTYT Thành phố Hà Nội",
+      "externalAuth": false,
+      "externalAccess": false,
+      "surname": "Thành phố Hà Nội",
+      "disabled": false,
+      "email": "khnvcm@gmail.com",
+      "introduction": "Nguyễn Thu Hiền",
+      "passwordLastUpdated": "2023-08-02T09:01:25.492",
+      "lastCheckedInterpretations": "2022-11-22T14:51:43.910",
+      "username": "277ttyt",
+      "lastUpdatedBy": {
+        "displayName": "Huyện Chương Mỹ, TTYT Thành phố Hà Nội",
+        "name": "Huyện Chương Mỹ, TTYT Thành phố Hà Nội",
+        "id": "CEcO6bXzXGQ",
+        "username": "277ttyt"
+      },
+      "sharing": {
+        "userGroups": {},
+        "external": false,
+        "users": {}
+      },
+      "access": {
+        "read": true,
+        "update": true,
+        "externalize": true,
+        "write": true,
+        "delete": true,
+        "manage": true
+      },
+      "userCredentials": {
+        "lastLogin": "2024-09-19T09:51:23.710",
+        "passwordLastUpdated": "2023-08-02T09:01:25.492",
+        "invitation": false,
+        "externalAuth": false,
+        "selfRegistered": false,
+        "disabled": false,
+        "id": "CEcO6bXzXGQ",
+        "twoFA": false,
+        "username": "277ttyt",
+        "access": {
+          "read": true,
+          "update": true,
+          "externalize": true,
+          "write": true,
+          "delete": true,
+          "manage": true
+        },
+        "sharing": {
+          "userGroups": {},
+          "external": false,
+          "users": {}
+        },
+        "cogsDimensionConstraints": [],
+        "catDimensionConstraints": [],
+        "userRoles": [
+          {
+            "id": "bxI5urCFEZn"
+          },
+          {
+            "id": "VH8LyIbYArH"
+          },
+          {
+            "id": "zvc691h4SHZ"
+          },
+          {
+            "id": "Q1aVQ92ECEm"
+          },
+          {
+            "id": "kzz8Dl43AEX"
+          },
+          {
+            "id": "brIf10e0Vk2"
+          }
+        ],
+        "previousPasswords": [],
+        "password": "1234567@Ab"
+      },
+      "createdBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "user": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "translations": [],
+      "dataViewOrganisationUnits": [
+        {
+          "id": "pZu0UpcC023"
+        }
+      ],
+      "userGroupAccesses": [],
+      "attributeValues": [
+        {
+          "value": "cxJx63yvF3U",
+          "attribute": {
+            "id": "CVsqmX22QY1"
+          }
+        }
+      ],
+      "userGroups": [
+        {
+          "id": "zkFaxi8Dpii"
+        },
+        {
+          "id": "bHvahsOkntM"
+        }
+      ],
+      "userRoles": [
+        {
+          "id": "bxI5urCFEZn"
+        },
+        {
+          "id": "VH8LyIbYArH"
+        },
+        {
+          "id": "zvc691h4SHZ"
+        },
+        {
+          "id": "Q1aVQ92ECEm"
+        },
+        {
+          "id": "kzz8Dl43AEX"
+        },
+        {
+          "id": "brIf10e0Vk2"
+        }
+      ],
+      "userAccesses": [],
+      "favorites": [],
+      "cogsDimensionConstraints": [],
+      "catDimensionConstraints": [],
+      "teiSearchOrganisationUnits": [],
+      "organisationUnits": [
+        {
+          "id": "pZu0UpcC023"
+        }
+      ]
+    },
+    {
+      "lastUpdated": "2023-08-02T09:01:17.462",
+      "id": "DqpGXOHrab8",
+      "href": "https://baocao.tkyt.vn/api/users/DqpGXOHrab8",
+      "created": "2019-04-17T15:05:28.116",
+      "lastLogin": "2019-08-14T11:19:50.498",
+      "twoFA": false,
+      "invitation": false,
+      "selfRegistered": false,
+      "firstName": "Huyện Chương Mỹ, TYT Xã Nam Phương Tiến",
+      "name": "Huyện Chương Mỹ, TYT Xã Nam Phương Tiến Thành phố Hà Nội",
+      "favorite": false,
+      "displayName": "Huyện Chương Mỹ, TYT Xã Nam Phương Tiến Thành phố Hà Nội",
+      "externalAuth": false,
+      "externalAccess": false,
+      "surname": "Thành phố Hà Nội",
+      "disabled": false,
+      "passwordLastUpdated": "2023-08-02T09:01:30.784",
+      "username": "10069",
+      "lastUpdatedBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "sharing": {
+        "userGroups": {},
+        "external": false,
+        "users": {}
+      },
+      "access": {
+        "read": true,
+        "update": true,
+        "externalize": true,
+        "write": true,
+        "delete": true,
+        "manage": true
+      },
+      "userCredentials": {
+        "lastLogin": "2019-08-14T11:19:50.498",
+        "passwordLastUpdated": "2023-08-02T09:01:30.784",
+        "invitation": false,
+        "externalAuth": false,
+        "selfRegistered": false,
+        "disabled": false,
+        "id": "DqpGXOHrab8",
+        "twoFA": false,
+        "username": "10069",
+        "access": {
+          "read": true,
+          "update": true,
+          "externalize": true,
+          "write": true,
+          "delete": true,
+          "manage": true
+        },
+        "sharing": {
+          "userGroups": {},
+          "external": false,
+          "users": {}
+        },
+        "cogsDimensionConstraints": [],
+        "catDimensionConstraints": [],
+        "userRoles": [
+          {
+            "id": "VH8LyIbYArH"
+          },
+          {
+            "id": "zvc691h4SHZ"
+          },
+          {
+            "id": "Q1aVQ92ECEm"
+          },
+          {
+            "id": "kzz8Dl43AEX"
+          },
+          {
+            "id": "brIf10e0Vk2"
+          }
+        ],
+        "previousPasswords": [],
+        "password": "1234567@Ab"
+      },
+      "createdBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "user": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "translations": [],
+      "dataViewOrganisationUnits": [
+        {
+          "id": "jZqS6LXaZJe"
+        }
+      ],
+      "userGroupAccesses": [],
+      "attributeValues": [],
+      "userGroups": [
+        {
+          "id": "KW0pQrXycHd"
+        },
+        {
+          "id": "OJRj6iaAEwE"
+        }
+      ],
+      "userRoles": [
+        {
+          "id": "VH8LyIbYArH"
+        },
+        {
+          "id": "zvc691h4SHZ"
+        },
+        {
+          "id": "Q1aVQ92ECEm"
+        },
+        {
+          "id": "kzz8Dl43AEX"
+        },
+        {
+          "id": "brIf10e0Vk2"
+        }
+      ],
+      "userAccesses": [],
+      "favorites": [],
+      "cogsDimensionConstraints": [],
+      "catDimensionConstraints": [],
+      "teiSearchOrganisationUnits": [],
+      "organisationUnits": [
+        {
+          "id": "jZqS6LXaZJe"
+        }
+      ]
+    },
+    {
+      "lastUpdated": "2023-08-02T09:01:17.462",
+      "id": "E4UZZCiMaUF",
+      "href": "https://baocao.tkyt.vn/api/users/E4UZZCiMaUF",
+      "created": "2019-04-17T15:05:28.116",
+      "lastLogin": "2019-08-14T11:19:47.628",
+      "twoFA": false,
+      "invitation": false,
+      "selfRegistered": false,
+      "firstName": "Huyện Chương Mỹ, TYT Thị trấn Chúc Sơn",
+      "name": "Huyện Chương Mỹ, TYT Thị trấn Chúc Sơn Thành phố Hà Nội",
+      "favorite": false,
+      "displayName": "Huyện Chương Mỹ, TYT Thị trấn Chúc Sơn Thành phố Hà Nội",
+      "externalAuth": false,
+      "externalAccess": false,
+      "surname": "Thành phố Hà Nội",
+      "disabled": false,
+      "passwordLastUpdated": "2023-08-02T09:01:30.979",
+      "lastCheckedInterpretations": "2019-05-29T08:46:17.941",
+      "username": "10015",
+      "lastUpdatedBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "sharing": {
+        "userGroups": {},
+        "external": false,
+        "users": {}
+      },
+      "access": {
+        "read": true,
+        "update": true,
+        "externalize": true,
+        "write": true,
+        "delete": true,
+        "manage": true
+      },
+      "userCredentials": {
+        "lastLogin": "2019-08-14T11:19:47.628",
+        "passwordLastUpdated": "2023-08-02T09:01:30.979",
+        "invitation": false,
+        "externalAuth": false,
+        "selfRegistered": false,
+        "disabled": false,
+        "id": "E4UZZCiMaUF",
+        "twoFA": false,
+        "username": "10015",
+        "access": {
+          "read": true,
+          "update": true,
+          "externalize": true,
+          "write": true,
+          "delete": true,
+          "manage": true
+        },
+        "sharing": {
+          "userGroups": {},
+          "external": false,
+          "users": {}
+        },
+        "cogsDimensionConstraints": [],
+        "catDimensionConstraints": [],
+        "userRoles": [
+          {
+            "id": "VH8LyIbYArH"
+          },
+          {
+            "id": "zvc691h4SHZ"
+          },
+          {
+            "id": "Q1aVQ92ECEm"
+          },
+          {
+            "id": "kzz8Dl43AEX"
+          },
+          {
+            "id": "brIf10e0Vk2"
+          }
+        ],
+        "previousPasswords": [],
+        "password": "1234567@Ab"
+      },
+      "createdBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "user": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "translations": [],
+      "dataViewOrganisationUnits": [
+        {
+          "id": "jwEIhSuxELX"
+        }
+      ],
+      "userGroupAccesses": [],
+      "attributeValues": [],
+      "userGroups": [
+        {
+          "id": "KW0pQrXycHd"
+        },
+        {
+          "id": "OJRj6iaAEwE"
+        }
+      ],
+      "userRoles": [
+        {
+          "id": "VH8LyIbYArH"
+        },
+        {
+          "id": "zvc691h4SHZ"
+        },
+        {
+          "id": "Q1aVQ92ECEm"
+        },
+        {
+          "id": "kzz8Dl43AEX"
+        },
+        {
+          "id": "brIf10e0Vk2"
+        }
+      ],
+      "userAccesses": [],
+      "favorites": [],
+      "cogsDimensionConstraints": [],
+      "catDimensionConstraints": [],
+      "teiSearchOrganisationUnits": [],
+      "organisationUnits": [
+        {
+          "id": "jwEIhSuxELX"
+        }
+      ]
+    },
+    {
+      "lastUpdated": "2023-08-02T09:01:17.464",
+      "id": "Fm8XPF2DQeQ",
+      "href": "https://baocao.tkyt.vn/api/users/Fm8XPF2DQeQ",
+      "created": "2019-04-17T15:05:28.116",
+      "lastLogin": "2021-09-30T14:27:46.172",
+      "twoFA": false,
+      "invitation": false,
+      "selfRegistered": false,
+      "firstName": "Huyện Chương Mỹ, TYT Xã Hồng Phong",
+      "name": "Huyện Chương Mỹ, TYT Xã Hồng Phong Thành phố Hà Nội",
+      "favorite": false,
+      "displayName": "Huyện Chương Mỹ, TYT Xã Hồng Phong Thành phố Hà Nội",
+      "externalAuth": false,
+      "externalAccess": false,
+      "surname": "Thành phố Hà Nội",
+      "disabled": false,
+      "passwordLastUpdated": "2023-08-02T09:01:36.661",
+      "username": "10093",
+      "lastUpdatedBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "sharing": {
+        "userGroups": {},
+        "external": false,
+        "users": {}
+      },
+      "access": {
+        "read": true,
+        "update": true,
+        "externalize": true,
+        "write": true,
+        "delete": true,
+        "manage": true
+      },
+      "userCredentials": {
+        "lastLogin": "2021-09-30T14:27:46.172",
+        "passwordLastUpdated": "2023-08-02T09:01:36.661",
+        "invitation": false,
+        "externalAuth": false,
+        "selfRegistered": false,
+        "disabled": false,
+        "id": "Fm8XPF2DQeQ",
+        "twoFA": false,
+        "username": "10093",
+        "access": {
+          "read": true,
+          "update": true,
+          "externalize": true,
+          "write": true,
+          "delete": true,
+          "manage": true
+        },
+        "sharing": {
+          "userGroups": {},
+          "external": false,
+          "users": {}
+        },
+        "cogsDimensionConstraints": [],
+        "catDimensionConstraints": [],
+        "userRoles": [
+          {
+            "id": "VH8LyIbYArH"
+          },
+          {
+            "id": "zvc691h4SHZ"
+          },
+          {
+            "id": "Q1aVQ92ECEm"
+          },
+          {
+            "id": "kzz8Dl43AEX"
+          },
+          {
+            "id": "brIf10e0Vk2"
+          }
+        ],
+        "previousPasswords": [],
+        "password": "1234567@Ab"
+      },
+      "createdBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "user": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "translations": [],
+      "dataViewOrganisationUnits": [
+        {
+          "id": "IExQUKw9JUH"
+        }
+      ],
+      "userGroupAccesses": [],
+      "attributeValues": [],
+      "userGroups": [
+        {
+          "id": "KW0pQrXycHd"
+        },
+        {
+          "id": "OJRj6iaAEwE"
+        }
+      ],
+      "userRoles": [
+        {
+          "id": "VH8LyIbYArH"
+        },
+        {
+          "id": "zvc691h4SHZ"
+        },
+        {
+          "id": "Q1aVQ92ECEm"
+        },
+        {
+          "id": "kzz8Dl43AEX"
+        },
+        {
+          "id": "brIf10e0Vk2"
+        }
+      ],
+      "userAccesses": [],
+      "favorites": [],
+      "cogsDimensionConstraints": [],
+      "catDimensionConstraints": [],
+      "teiSearchOrganisationUnits": [],
+      "organisationUnits": [
+        {
+          "id": "IExQUKw9JUH"
+        }
+      ]
+    },
+    {
+      "lastUpdated": "2023-08-02T09:01:17.465",
+      "id": "FrRhW4doCuP",
+      "href": "https://baocao.tkyt.vn/api/users/FrRhW4doCuP",
+      "created": "2019-04-17T15:05:28.116",
+      "lastLogin": "2019-08-14T11:19:53.340",
+      "twoFA": false,
+      "invitation": false,
+      "selfRegistered": false,
+      "firstName": "Huyện Chương Mỹ, TYT Xã Trung Hòa",
+      "name": "Huyện Chương Mỹ, TYT Xã Trung Hòa Thành phố Hà Nội",
+      "favorite": false,
+      "displayName": "Huyện Chương Mỹ, TYT Xã Trung Hòa Thành phố Hà Nội",
+      "externalAuth": false,
+      "externalAccess": false,
+      "surname": "Thành phố Hà Nội",
+      "disabled": false,
+      "passwordLastUpdated": "2023-08-02T09:01:37.439",
+      "lastCheckedInterpretations": "2019-05-29T15:00:51.939",
+      "username": "10051",
+      "lastUpdatedBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "sharing": {
+        "userGroups": {},
+        "external": false,
+        "users": {}
+      },
+      "access": {
+        "read": true,
+        "update": true,
+        "externalize": true,
+        "write": true,
+        "delete": true,
+        "manage": true
+      },
+      "userCredentials": {
+        "lastLogin": "2019-08-14T11:19:53.340",
+        "passwordLastUpdated": "2023-08-02T09:01:37.439",
+        "invitation": false,
+        "externalAuth": false,
+        "selfRegistered": false,
+        "disabled": false,
+        "id": "FrRhW4doCuP",
+        "twoFA": false,
+        "username": "10051",
+        "access": {
+          "read": true,
+          "update": true,
+          "externalize": true,
+          "write": true,
+          "delete": true,
+          "manage": true
+        },
+        "sharing": {
+          "userGroups": {},
+          "external": false,
+          "users": {}
+        },
+        "cogsDimensionConstraints": [],
+        "catDimensionConstraints": [],
+        "userRoles": [
+          {
+            "id": "VH8LyIbYArH"
+          },
+          {
+            "id": "zvc691h4SHZ"
+          },
+          {
+            "id": "Q1aVQ92ECEm"
+          },
+          {
+            "id": "kzz8Dl43AEX"
+          },
+          {
+            "id": "brIf10e0Vk2"
+          }
+        ],
+        "previousPasswords": [],
+        "password": "1234567@Ab"
+      },
+      "createdBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "user": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "translations": [],
+      "dataViewOrganisationUnits": [
+        {
+          "id": "GHrucWxPpIy"
+        }
+      ],
+      "userGroupAccesses": [],
+      "attributeValues": [],
+      "userGroups": [
+        {
+          "id": "KW0pQrXycHd"
+        },
+        {
+          "id": "OJRj6iaAEwE"
+        }
+      ],
+      "userRoles": [
+        {
+          "id": "VH8LyIbYArH"
+        },
+        {
+          "id": "zvc691h4SHZ"
+        },
+        {
+          "id": "Q1aVQ92ECEm"
+        },
+        {
+          "id": "kzz8Dl43AEX"
+        },
+        {
+          "id": "brIf10e0Vk2"
+        }
+      ],
+      "userAccesses": [],
+      "favorites": [],
+      "cogsDimensionConstraints": [],
+      "catDimensionConstraints": [],
+      "teiSearchOrganisationUnits": [],
+      "organisationUnits": [
+        {
+          "id": "GHrucWxPpIy"
+        }
+      ]
+    },
+    {
+      "lastUpdated": "2023-08-02T09:01:17.465",
+      "id": "GMlRTR0QZF9",
+      "href": "https://baocao.tkyt.vn/api/users/GMlRTR0QZF9",
+      "created": "2019-04-17T15:05:28.116",
+      "lastLogin": "2019-08-14T11:19:52.941",
+      "twoFA": false,
+      "invitation": false,
+      "selfRegistered": false,
+      "firstName": "Huyện Chương Mỹ, TYT Xã Tiên Phương",
+      "name": "Huyện Chương Mỹ, TYT Xã Tiên Phương Thành phố Hà Nội",
+      "favorite": false,
+      "displayName": "Huyện Chương Mỹ, TYT Xã Tiên Phương Thành phố Hà Nội",
+      "externalAuth": false,
+      "externalAccess": false,
+      "surname": "Thành phố Hà Nội",
+      "disabled": false,
+      "passwordLastUpdated": "2023-08-02T09:01:39.197",
+      "username": "10024",
+      "lastUpdatedBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "sharing": {
+        "userGroups": {},
+        "external": false,
+        "users": {}
+      },
+      "access": {
+        "read": true,
+        "update": true,
+        "externalize": true,
+        "write": true,
+        "delete": true,
+        "manage": true
+      },
+      "userCredentials": {
+        "lastLogin": "2019-08-14T11:19:52.941",
+        "passwordLastUpdated": "2023-08-02T09:01:39.197",
+        "invitation": false,
+        "externalAuth": false,
+        "selfRegistered": false,
+        "disabled": false,
+        "id": "GMlRTR0QZF9",
+        "twoFA": false,
+        "username": "10024",
+        "access": {
+          "read": true,
+          "update": true,
+          "externalize": true,
+          "write": true,
+          "delete": true,
+          "manage": true
+        },
+        "sharing": {
+          "userGroups": {},
+          "external": false,
+          "users": {}
+        },
+        "cogsDimensionConstraints": [],
+        "catDimensionConstraints": [],
+        "userRoles": [
+          {
+            "id": "VH8LyIbYArH"
+          },
+          {
+            "id": "zvc691h4SHZ"
+          },
+          {
+            "id": "Q1aVQ92ECEm"
+          },
+          {
+            "id": "kzz8Dl43AEX"
+          },
+          {
+            "id": "brIf10e0Vk2"
+          }
+        ],
+        "previousPasswords": [],
+        "password": "1234567@Ab"
+      },
+      "createdBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "user": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "translations": [],
+      "dataViewOrganisationUnits": [
+        {
+          "id": "z2EySdEsOkz"
+        }
+      ],
+      "userGroupAccesses": [],
+      "attributeValues": [],
+      "userGroups": [
+        {
+          "id": "KW0pQrXycHd"
+        },
+        {
+          "id": "OJRj6iaAEwE"
+        }
+      ],
+      "userRoles": [
+        {
+          "id": "VH8LyIbYArH"
+        },
+        {
+          "id": "zvc691h4SHZ"
+        },
+        {
+          "id": "Q1aVQ92ECEm"
+        },
+        {
+          "id": "kzz8Dl43AEX"
+        },
+        {
+          "id": "brIf10e0Vk2"
+        }
+      ],
+      "userAccesses": [],
+      "favorites": [],
+      "cogsDimensionConstraints": [],
+      "catDimensionConstraints": [],
+      "teiSearchOrganisationUnits": [],
+      "organisationUnits": [
+        {
+          "id": "z2EySdEsOkz"
+        }
+      ]
+    },
+    {
+      "lastUpdated": "2023-08-02T09:01:17.468",
+      "id": "HpDShSMvdGn",
+      "href": "https://baocao.tkyt.vn/api/users/HpDShSMvdGn",
+      "created": "2019-04-17T15:05:28.116",
+      "lastLogin": "2019-08-14T11:19:51.681",
+      "twoFA": false,
+      "invitation": false,
+      "selfRegistered": false,
+      "firstName": "Huyện Chương Mỹ, TYT Xã Tân Tiến",
+      "name": "Huyện Chương Mỹ, TYT Xã Tân Tiến Thành phố Hà Nội",
+      "favorite": false,
+      "displayName": "Huyện Chương Mỹ, TYT Xã Tân Tiến Thành phố Hà Nội",
+      "externalAuth": false,
+      "externalAccess": false,
+      "surname": "Thành phố Hà Nội",
+      "disabled": false,
+      "passwordLastUpdated": "2023-08-02T09:01:44.084",
+      "username": "10066",
+      "lastUpdatedBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "sharing": {
+        "userGroups": {},
+        "external": false,
+        "users": {}
+      },
+      "access": {
+        "read": true,
+        "update": true,
+        "externalize": true,
+        "write": true,
+        "delete": true,
+        "manage": true
+      },
+      "userCredentials": {
+        "lastLogin": "2019-08-14T11:19:51.681",
+        "passwordLastUpdated": "2023-08-02T09:01:44.084",
+        "invitation": false,
+        "externalAuth": false,
+        "selfRegistered": false,
+        "disabled": false,
+        "id": "HpDShSMvdGn",
+        "twoFA": false,
+        "username": "10066",
+        "access": {
+          "read": true,
+          "update": true,
+          "externalize": true,
+          "write": true,
+          "delete": true,
+          "manage": true
+        },
+        "sharing": {
+          "userGroups": {},
+          "external": false,
+          "users": {}
+        },
+        "cogsDimensionConstraints": [],
+        "catDimensionConstraints": [],
+        "userRoles": [
+          {
+            "id": "VH8LyIbYArH"
+          },
+          {
+            "id": "zvc691h4SHZ"
+          },
+          {
+            "id": "Q1aVQ92ECEm"
+          },
+          {
+            "id": "kzz8Dl43AEX"
+          },
+          {
+            "id": "brIf10e0Vk2"
+          }
+        ],
+        "previousPasswords": [],
+        "password": "1234567@Ab"
+      },
+      "createdBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "user": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "translations": [],
+      "dataViewOrganisationUnits": [
+        {
+          "id": "Yad4duvYecm"
+        }
+      ],
+      "userGroupAccesses": [],
+      "attributeValues": [],
+      "userGroups": [
+        {
+          "id": "KW0pQrXycHd"
+        },
+        {
+          "id": "OJRj6iaAEwE"
+        }
+      ],
+      "userRoles": [
+        {
+          "id": "VH8LyIbYArH"
+        },
+        {
+          "id": "zvc691h4SHZ"
+        },
+        {
+          "id": "Q1aVQ92ECEm"
+        },
+        {
+          "id": "kzz8Dl43AEX"
+        },
+        {
+          "id": "brIf10e0Vk2"
+        }
+      ],
+      "userAccesses": [],
+      "favorites": [],
+      "cogsDimensionConstraints": [],
+      "catDimensionConstraints": [],
+      "teiSearchOrganisationUnits": [],
+      "organisationUnits": [
+        {
+          "id": "Yad4duvYecm"
+        }
+      ]
+    },
+    {
+      "lastUpdated": "2023-08-02T09:01:17.468",
+      "id": "I1tHuO7OufN",
+      "href": "https://baocao.tkyt.vn/api/users/I1tHuO7OufN",
+      "created": "2019-04-17T15:05:28.116",
+      "lastLogin": "2019-08-14T11:19:50.236",
+      "twoFA": false,
+      "invitation": false,
+      "selfRegistered": false,
+      "firstName": "Huyện Chương Mỹ, TYT Xã Lam Điền",
+      "name": "Huyện Chương Mỹ, TYT Xã Lam Điền Thành phố Hà Nội",
+      "favorite": false,
+      "displayName": "Huyện Chương Mỹ, TYT Xã Lam Điền Thành phố Hà Nội",
+      "externalAuth": false,
+      "externalAccess": false,
+      "surname": "Thành phố Hà Nội",
+      "disabled": false,
+      "passwordLastUpdated": "2023-08-02T09:01:44.669",
+      "lastCheckedInterpretations": "2019-05-29T15:02:40.862",
+      "username": "10063",
+      "lastUpdatedBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "sharing": {
+        "userGroups": {},
+        "external": false,
+        "users": {}
+      },
+      "access": {
+        "read": true,
+        "update": true,
+        "externalize": true,
+        "write": true,
+        "delete": true,
+        "manage": true
+      },
+      "userCredentials": {
+        "lastLogin": "2019-08-14T11:19:50.236",
+        "passwordLastUpdated": "2023-08-02T09:01:44.669",
+        "invitation": false,
+        "externalAuth": false,
+        "selfRegistered": false,
+        "disabled": false,
+        "id": "I1tHuO7OufN",
+        "twoFA": false,
+        "username": "10063",
+        "access": {
+          "read": true,
+          "update": true,
+          "externalize": true,
+          "write": true,
+          "delete": true,
+          "manage": true
+        },
+        "sharing": {
+          "userGroups": {},
+          "external": false,
+          "users": {}
+        },
+        "cogsDimensionConstraints": [],
+        "catDimensionConstraints": [],
+        "userRoles": [
+          {
+            "id": "VH8LyIbYArH"
+          },
+          {
+            "id": "zvc691h4SHZ"
+          },
+          {
+            "id": "Q1aVQ92ECEm"
+          },
+          {
+            "id": "kzz8Dl43AEX"
+          },
+          {
+            "id": "brIf10e0Vk2"
+          }
+        ],
+        "previousPasswords": [],
+        "password": "1234567@Ab"
+      },
+      "createdBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "user": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "translations": [],
+      "dataViewOrganisationUnits": [
+        {
+          "id": "U5h1rNuBi64"
+        }
+      ],
+      "userGroupAccesses": [],
+      "attributeValues": [],
+      "userGroups": [
+        {
+          "id": "KW0pQrXycHd"
+        },
+        {
+          "id": "OJRj6iaAEwE"
+        }
+      ],
+      "userRoles": [
+        {
+          "id": "VH8LyIbYArH"
+        },
+        {
+          "id": "zvc691h4SHZ"
+        },
+        {
+          "id": "Q1aVQ92ECEm"
+        },
+        {
+          "id": "kzz8Dl43AEX"
+        },
+        {
+          "id": "brIf10e0Vk2"
+        }
+      ],
+      "userAccesses": [],
+      "favorites": [],
+      "cogsDimensionConstraints": [],
+      "catDimensionConstraints": [],
+      "teiSearchOrganisationUnits": [],
+      "organisationUnits": [
+        {
+          "id": "U5h1rNuBi64"
+        }
+      ]
+    },
+    {
+      "lastUpdated": "2023-08-02T09:01:17.468",
+      "id": "I7DsGGOQz5O",
+      "href": "https://baocao.tkyt.vn/api/users/I7DsGGOQz5O",
+      "created": "2019-04-17T15:05:28.116",
+      "lastLogin": "2019-08-14T11:19:53.466",
+      "twoFA": false,
+      "invitation": false,
+      "selfRegistered": false,
+      "firstName": "Huyện Chương Mỹ, TYT Xã Trường Yên",
+      "name": "Huyện Chương Mỹ, TYT Xã Trường Yên Thành phố Hà Nội",
+      "favorite": false,
+      "displayName": "Huyện Chương Mỹ, TYT Xã Trường Yên Thành phố Hà Nội",
+      "externalAuth": false,
+      "externalAccess": false,
+      "surname": "Thành phố Hà Nội",
+      "disabled": false,
+      "passwordLastUpdated": "2023-08-02T09:01:45.061",
+      "username": "10039",
+      "lastUpdatedBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "sharing": {
+        "userGroups": {},
+        "external": false,
+        "users": {}
+      },
+      "access": {
+        "read": true,
+        "update": true,
+        "externalize": true,
+        "write": true,
+        "delete": true,
+        "manage": true
+      },
+      "userCredentials": {
+        "lastLogin": "2019-08-14T11:19:53.466",
+        "passwordLastUpdated": "2023-08-02T09:01:45.061",
+        "invitation": false,
+        "externalAuth": false,
+        "selfRegistered": false,
+        "disabled": false,
+        "id": "I7DsGGOQz5O",
+        "twoFA": false,
+        "username": "10039",
+        "access": {
+          "read": true,
+          "update": true,
+          "externalize": true,
+          "write": true,
+          "delete": true,
+          "manage": true
+        },
+        "sharing": {
+          "userGroups": {},
+          "external": false,
+          "users": {}
+        },
+        "cogsDimensionConstraints": [],
+        "catDimensionConstraints": [],
+        "userRoles": [
+          {
+            "id": "VH8LyIbYArH"
+          },
+          {
+            "id": "zvc691h4SHZ"
+          },
+          {
+            "id": "Q1aVQ92ECEm"
+          },
+          {
+            "id": "kzz8Dl43AEX"
+          },
+          {
+            "id": "brIf10e0Vk2"
+          }
+        ],
+        "previousPasswords": [],
+        "password": "1234567@Ab"
+      },
+      "createdBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "user": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "translations": [],
+      "dataViewOrganisationUnits": [
+        {
+          "id": "zXds3ebEdvB"
+        }
+      ],
+      "userGroupAccesses": [],
+      "attributeValues": [],
+      "userGroups": [
+        {
+          "id": "KW0pQrXycHd"
+        },
+        {
+          "id": "OJRj6iaAEwE"
+        }
+      ],
+      "userRoles": [
+        {
+          "id": "VH8LyIbYArH"
+        },
+        {
+          "id": "zvc691h4SHZ"
+        },
+        {
+          "id": "Q1aVQ92ECEm"
+        },
+        {
+          "id": "kzz8Dl43AEX"
+        },
+        {
+          "id": "brIf10e0Vk2"
+        }
+      ],
+      "userAccesses": [],
+      "favorites": [],
+      "cogsDimensionConstraints": [],
+      "catDimensionConstraints": [],
+      "teiSearchOrganisationUnits": [],
+      "organisationUnits": [
+        {
+          "id": "zXds3ebEdvB"
+        }
+      ]
+    },
+    {
+      "lastUpdated": "2023-08-02T09:01:17.470",
+      "id": "JvgGoRYulBP",
+      "href": "https://baocao.tkyt.vn/api/users/JvgGoRYulBP",
+      "created": "2019-04-17T15:05:28.116",
+      "lastLogin": "2019-08-14T11:19:48.710",
+      "twoFA": false,
+      "invitation": false,
+      "selfRegistered": false,
+      "firstName": "Huyện Chương Mỹ, TYT Xã Đông Sơn",
+      "name": "Huyện Chương Mỹ, TYT Xã Đông Sơn Thành phố Hà Nội",
+      "favorite": false,
+      "displayName": "Huyện Chương Mỹ, TYT Xã Đông Sơn Thành phố Hà Nội",
+      "externalAuth": false,
+      "externalAccess": false,
+      "surname": "Thành phố Hà Nội",
+      "disabled": false,
+      "passwordLastUpdated": "2023-08-02T09:01:49.760",
+      "lastCheckedInterpretations": "2019-05-29T14:56:18.026",
+      "username": "10027",
+      "lastUpdatedBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "sharing": {
+        "userGroups": {},
+        "external": false,
+        "users": {}
+      },
+      "access": {
+        "read": true,
+        "update": true,
+        "externalize": true,
+        "write": true,
+        "delete": true,
+        "manage": true
+      },
+      "userCredentials": {
+        "lastLogin": "2019-08-14T11:19:48.710",
+        "passwordLastUpdated": "2023-08-02T09:01:49.760",
+        "invitation": false,
+        "externalAuth": false,
+        "selfRegistered": false,
+        "disabled": false,
+        "id": "JvgGoRYulBP",
+        "twoFA": false,
+        "username": "10027",
+        "access": {
+          "read": true,
+          "update": true,
+          "externalize": true,
+          "write": true,
+          "delete": true,
+          "manage": true
+        },
+        "sharing": {
+          "userGroups": {},
+          "external": false,
+          "users": {}
+        },
+        "cogsDimensionConstraints": [],
+        "catDimensionConstraints": [],
+        "userRoles": [
+          {
+            "id": "VH8LyIbYArH"
+          },
+          {
+            "id": "zvc691h4SHZ"
+          },
+          {
+            "id": "Q1aVQ92ECEm"
+          },
+          {
+            "id": "kzz8Dl43AEX"
+          },
+          {
+            "id": "brIf10e0Vk2"
+          }
+        ],
+        "previousPasswords": [],
+        "password": "1234567@Ab"
+      },
+      "createdBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "user": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "translations": [],
+      "dataViewOrganisationUnits": [
+        {
+          "id": "Vn3G6a06zmZ"
+        }
+      ],
+      "userGroupAccesses": [],
+      "attributeValues": [],
+      "userGroups": [
+        {
+          "id": "KW0pQrXycHd"
+        },
+        {
+          "id": "OJRj6iaAEwE"
+        }
+      ],
+      "userRoles": [
+        {
+          "id": "VH8LyIbYArH"
+        },
+        {
+          "id": "zvc691h4SHZ"
+        },
+        {
+          "id": "Q1aVQ92ECEm"
+        },
+        {
+          "id": "kzz8Dl43AEX"
+        },
+        {
+          "id": "brIf10e0Vk2"
+        }
+      ],
+      "userAccesses": [],
+      "favorites": [],
+      "cogsDimensionConstraints": [],
+      "catDimensionConstraints": [],
+      "teiSearchOrganisationUnits": [],
+      "organisationUnits": [
+        {
+          "id": "Vn3G6a06zmZ"
+        }
+      ]
+    },
+    {
+      "lastUpdated": "2023-08-02T09:01:17.471",
+      "id": "KN8NQ88VZRr",
+      "href": "https://baocao.tkyt.vn/api/users/KN8NQ88VZRr",
+      "created": "2019-04-17T15:05:28.116",
+      "lastLogin": "2019-08-14T11:19:52.190",
+      "twoFA": false,
+      "invitation": false,
+      "selfRegistered": false,
+      "firstName": "Huyện Chương Mỹ, TYT Xã Thượng Vực",
+      "name": "Huyện Chương Mỹ, TYT Xã Thượng Vực Thành phố Hà Nội",
+      "favorite": false,
+      "displayName": "Huyện Chương Mỹ, TYT Xã Thượng Vực Thành phố Hà Nội",
+      "externalAuth": false,
+      "externalAccess": false,
+      "surname": "Thành phố Hà Nội",
+      "disabled": false,
+      "passwordLastUpdated": "2023-08-02T09:01:50.935",
+      "lastCheckedInterpretations": "2019-05-28T14:22:35.850",
+      "username": "10090",
+      "lastUpdatedBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "sharing": {
+        "userGroups": {},
+        "external": false,
+        "users": {}
+      },
+      "access": {
+        "read": true,
+        "update": true,
+        "externalize": true,
+        "write": true,
+        "delete": true,
+        "manage": true
+      },
+      "userCredentials": {
+        "lastLogin": "2019-08-14T11:19:52.190",
+        "passwordLastUpdated": "2023-08-02T09:01:50.935",
+        "invitation": false,
+        "externalAuth": false,
+        "selfRegistered": false,
+        "disabled": false,
+        "id": "KN8NQ88VZRr",
+        "twoFA": false,
+        "username": "10090",
+        "access": {
+          "read": true,
+          "update": true,
+          "externalize": true,
+          "write": true,
+          "delete": true,
+          "manage": true
+        },
+        "sharing": {
+          "userGroups": {},
+          "external": false,
+          "users": {}
+        },
+        "cogsDimensionConstraints": [],
+        "catDimensionConstraints": [],
+        "userRoles": [
+          {
+            "id": "VH8LyIbYArH"
+          },
+          {
+            "id": "zvc691h4SHZ"
+          },
+          {
+            "id": "Q1aVQ92ECEm"
+          },
+          {
+            "id": "kzz8Dl43AEX"
+          },
+          {
+            "id": "brIf10e0Vk2"
+          }
+        ],
+        "previousPasswords": [],
+        "password": "1234567@Ab"
+      },
+      "createdBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "user": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "translations": [],
+      "dataViewOrganisationUnits": [
+        {
+          "id": "s8k1XBtYhUD"
+        }
+      ],
+      "userGroupAccesses": [],
+      "attributeValues": [],
+      "userGroups": [
+        {
+          "id": "KW0pQrXycHd"
+        },
+        {
+          "id": "OJRj6iaAEwE"
+        }
+      ],
+      "userRoles": [
+        {
+          "id": "VH8LyIbYArH"
+        },
+        {
+          "id": "zvc691h4SHZ"
+        },
+        {
+          "id": "Q1aVQ92ECEm"
+        },
+        {
+          "id": "kzz8Dl43AEX"
+        },
+        {
+          "id": "brIf10e0Vk2"
+        }
+      ],
+      "userAccesses": [],
+      "favorites": [],
+      "cogsDimensionConstraints": [],
+      "catDimensionConstraints": [],
+      "teiSearchOrganisationUnits": [],
+      "organisationUnits": [
+        {
+          "id": "s8k1XBtYhUD"
+        }
+      ]
+    },
+    {
+      "lastUpdated": "2023-08-02T09:01:17.471",
+      "id": "KgHHf0qwuWm",
+      "href": "https://baocao.tkyt.vn/api/users/KgHHf0qwuWm",
+      "created": "2019-04-17T15:05:28.116",
+      "lastLogin": "2019-08-14T11:19:53.206",
+      "twoFA": false,
+      "invitation": false,
+      "selfRegistered": false,
+      "firstName": "Huyện Chương Mỹ, TYT Xã Trần Phú",
+      "name": "Huyện Chương Mỹ, TYT Xã Trần Phú Thành phố Hà Nội",
+      "favorite": false,
+      "displayName": "Huyện Chương Mỹ, TYT Xã Trần Phú Thành phố Hà Nội",
+      "externalAuth": false,
+      "externalAccess": false,
+      "surname": "Thành phố Hà Nội",
+      "disabled": false,
+      "passwordLastUpdated": "2023-08-02T09:01:51.714",
+      "username": "10099",
+      "lastUpdatedBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "sharing": {
+        "userGroups": {},
+        "external": false,
+        "users": {}
+      },
+      "access": {
+        "read": true,
+        "update": true,
+        "externalize": true,
+        "write": true,
+        "delete": true,
+        "manage": true
+      },
+      "userCredentials": {
+        "lastLogin": "2019-08-14T11:19:53.206",
+        "passwordLastUpdated": "2023-08-02T09:01:51.714",
+        "invitation": false,
+        "externalAuth": false,
+        "selfRegistered": false,
+        "disabled": false,
+        "id": "KgHHf0qwuWm",
+        "twoFA": false,
+        "username": "10099",
+        "access": {
+          "read": true,
+          "update": true,
+          "externalize": true,
+          "write": true,
+          "delete": true,
+          "manage": true
+        },
+        "sharing": {
+          "userGroups": {},
+          "external": false,
+          "users": {}
+        },
+        "cogsDimensionConstraints": [],
+        "catDimensionConstraints": [],
+        "userRoles": [
+          {
+            "id": "VH8LyIbYArH"
+          },
+          {
+            "id": "zvc691h4SHZ"
+          },
+          {
+            "id": "Q1aVQ92ECEm"
+          },
+          {
+            "id": "kzz8Dl43AEX"
+          },
+          {
+            "id": "brIf10e0Vk2"
+          }
+        ],
+        "previousPasswords": [],
+        "password": "1234567@Ab"
+      },
+      "createdBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "user": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "translations": [],
+      "dataViewOrganisationUnits": [
+        {
+          "id": "DT1OHV8U7Jq"
+        }
+      ],
+      "userGroupAccesses": [],
+      "attributeValues": [],
+      "userGroups": [
+        {
+          "id": "KW0pQrXycHd"
+        },
+        {
+          "id": "OJRj6iaAEwE"
+        }
+      ],
+      "userRoles": [
+        {
+          "id": "VH8LyIbYArH"
+        },
+        {
+          "id": "zvc691h4SHZ"
+        },
+        {
+          "id": "Q1aVQ92ECEm"
+        },
+        {
+          "id": "kzz8Dl43AEX"
+        },
+        {
+          "id": "brIf10e0Vk2"
+        }
+      ],
+      "userAccesses": [],
+      "favorites": [],
+      "cogsDimensionConstraints": [],
+      "catDimensionConstraints": [],
+      "teiSearchOrganisationUnits": [],
+      "organisationUnits": [
+        {
+          "id": "DT1OHV8U7Jq"
+        }
+      ]
+    },
+    {
+      "lastUpdated": "2023-08-02T09:01:17.473",
+      "id": "MMzimfgzx5p",
+      "href": "https://baocao.tkyt.vn/api/users/MMzimfgzx5p",
+      "created": "2019-04-17T15:05:28.116",
+      "lastLogin": "2019-08-14T11:19:48.950",
+      "twoFA": false,
+      "invitation": false,
+      "selfRegistered": false,
+      "firstName": "Huyện Chương Mỹ, TYT Xã Hòa Chính",
+      "name": "Huyện Chương Mỹ, TYT Xã Hòa Chính Thành phố Hà Nội",
+      "favorite": false,
+      "displayName": "Huyện Chương Mỹ, TYT Xã Hòa Chính Thành phố Hà Nội",
+      "externalAuth": false,
+      "externalAccess": false,
+      "surname": "Thành phố Hà Nội",
+      "disabled": false,
+      "passwordLastUpdated": "2023-08-02T09:01:56.019",
+      "lastCheckedInterpretations": "2019-06-13T10:05:25.787",
+      "username": "10108",
+      "lastUpdatedBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "sharing": {
+        "userGroups": {},
+        "external": false,
+        "users": {}
+      },
+      "access": {
+        "read": true,
+        "update": true,
+        "externalize": true,
+        "write": true,
+        "delete": true,
+        "manage": true
+      },
+      "userCredentials": {
+        "lastLogin": "2019-08-14T11:19:48.950",
+        "passwordLastUpdated": "2023-08-02T09:01:56.019",
+        "invitation": false,
+        "externalAuth": false,
+        "selfRegistered": false,
+        "disabled": false,
+        "id": "MMzimfgzx5p",
+        "twoFA": false,
+        "username": "10108",
+        "access": {
+          "read": true,
+          "update": true,
+          "externalize": true,
+          "write": true,
+          "delete": true,
+          "manage": true
+        },
+        "sharing": {
+          "userGroups": {},
+          "external": false,
+          "users": {}
+        },
+        "cogsDimensionConstraints": [],
+        "catDimensionConstraints": [],
+        "userRoles": [
+          {
+            "id": "VH8LyIbYArH"
+          },
+          {
+            "id": "zvc691h4SHZ"
+          },
+          {
+            "id": "Q1aVQ92ECEm"
+          },
+          {
+            "id": "kzz8Dl43AEX"
+          },
+          {
+            "id": "brIf10e0Vk2"
+          }
+        ],
+        "previousPasswords": [],
+        "password": "1234567@Ab"
+      },
+      "createdBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "user": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "translations": [],
+      "dataViewOrganisationUnits": [
+        {
+          "id": "Zq5rqMy8Wz8"
+        }
+      ],
+      "userGroupAccesses": [],
+      "attributeValues": [],
+      "userGroups": [
+        {
+          "id": "KW0pQrXycHd"
+        },
+        {
+          "id": "OJRj6iaAEwE"
+        }
+      ],
+      "userRoles": [
+        {
+          "id": "VH8LyIbYArH"
+        },
+        {
+          "id": "zvc691h4SHZ"
+        },
+        {
+          "id": "Q1aVQ92ECEm"
+        },
+        {
+          "id": "kzz8Dl43AEX"
+        },
+        {
+          "id": "brIf10e0Vk2"
+        }
+      ],
+      "userAccesses": [],
+      "favorites": [],
+      "cogsDimensionConstraints": [],
+      "catDimensionConstraints": [],
+      "teiSearchOrganisationUnits": [],
+      "organisationUnits": [
+        {
+          "id": "Zq5rqMy8Wz8"
+        }
+      ]
+    },
+    {
+      "lastUpdated": "2023-08-02T09:01:17.476",
+      "id": "P9NHqIa7qbS",
+      "href": "https://baocao.tkyt.vn/api/users/P9NHqIa7qbS",
+      "created": "2019-04-17T15:05:28.116",
+      "lastLogin": "2019-08-14T11:19:51.555",
+      "twoFA": false,
+      "invitation": false,
+      "selfRegistered": false,
+      "firstName": "Huyện Chương Mỹ, TYT Xã Quảng Bị",
+      "name": "Huyện Chương Mỹ, TYT Xã Quảng Bị Thành phố Hà Nội",
+      "favorite": false,
+      "displayName": "Huyện Chương Mỹ, TYT Xã Quảng Bị Thành phố Hà Nội",
+      "externalAuth": false,
+      "externalAccess": false,
+      "surname": "Thành phố Hà Nội",
+      "disabled": false,
+      "passwordLastUpdated": "2023-08-02T09:02:04.386",
+      "username": "10084",
+      "lastUpdatedBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "sharing": {
+        "userGroups": {},
+        "external": false,
+        "users": {}
+      },
+      "access": {
+        "read": true,
+        "update": true,
+        "externalize": true,
+        "write": true,
+        "delete": true,
+        "manage": true
+      },
+      "userCredentials": {
+        "lastLogin": "2019-08-14T11:19:51.555",
+        "passwordLastUpdated": "2023-08-02T09:02:04.386",
+        "invitation": false,
+        "externalAuth": false,
+        "selfRegistered": false,
+        "disabled": false,
+        "id": "P9NHqIa7qbS",
+        "twoFA": false,
+        "username": "10084",
+        "access": {
+          "read": true,
+          "update": true,
+          "externalize": true,
+          "write": true,
+          "delete": true,
+          "manage": true
+        },
+        "sharing": {
+          "userGroups": {},
+          "external": false,
+          "users": {}
+        },
+        "cogsDimensionConstraints": [],
+        "catDimensionConstraints": [],
+        "userRoles": [
+          {
+            "id": "VH8LyIbYArH"
+          },
+          {
+            "id": "zvc691h4SHZ"
+          },
+          {
+            "id": "Q1aVQ92ECEm"
+          },
+          {
+            "id": "kzz8Dl43AEX"
+          },
+          {
+            "id": "brIf10e0Vk2"
+          }
+        ],
+        "previousPasswords": [],
+        "password": "1234567@Ab"
+      },
+      "createdBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "user": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "translations": [],
+      "dataViewOrganisationUnits": [
+        {
+          "id": "kCFrXjkDIqd"
+        }
+      ],
+      "userGroupAccesses": [],
+      "attributeValues": [],
+      "userGroups": [
+        {
+          "id": "KW0pQrXycHd"
+        },
+        {
+          "id": "OJRj6iaAEwE"
+        }
+      ],
+      "userRoles": [
+        {
+          "id": "VH8LyIbYArH"
+        },
+        {
+          "id": "zvc691h4SHZ"
+        },
+        {
+          "id": "Q1aVQ92ECEm"
+        },
+        {
+          "id": "kzz8Dl43AEX"
+        },
+        {
+          "id": "brIf10e0Vk2"
+        }
+      ],
+      "userAccesses": [],
+      "favorites": [],
+      "cogsDimensionConstraints": [],
+      "catDimensionConstraints": [],
+      "teiSearchOrganisationUnits": [],
+      "organisationUnits": [
+        {
+          "id": "kCFrXjkDIqd"
+        }
+      ]
+    },
+    {
+      "lastUpdated": "2023-08-02T09:01:17.480",
+      "id": "TDI0gkltl8a",
+      "href": "https://baocao.tkyt.vn/api/users/TDI0gkltl8a",
+      "created": "2019-04-17T15:05:28.116",
+      "lastLogin": "2019-08-14T11:19:50.758",
+      "twoFA": false,
+      "invitation": false,
+      "selfRegistered": false,
+      "firstName": "Huyện Chương Mỹ, TYT Xã Phú Nam An",
+      "name": "Huyện Chương Mỹ, TYT Xã Phú Nam An Thành phố Hà Nội",
+      "favorite": false,
+      "displayName": "Huyện Chương Mỹ, TYT Xã Phú Nam An Thành phố Hà Nội",
+      "externalAuth": false,
+      "externalAccess": false,
+      "surname": "Thành phố Hà Nội",
+      "disabled": false,
+      "passwordLastUpdated": "2023-08-02T09:02:15.003",
+      "username": "10111",
+      "lastUpdatedBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "sharing": {
+        "userGroups": {},
+        "external": false,
+        "users": {}
+      },
+      "access": {
+        "read": true,
+        "update": true,
+        "externalize": true,
+        "write": true,
+        "delete": true,
+        "manage": true
+      },
+      "userCredentials": {
+        "lastLogin": "2019-08-14T11:19:50.758",
+        "passwordLastUpdated": "2023-08-02T09:02:15.003",
+        "invitation": false,
+        "externalAuth": false,
+        "selfRegistered": false,
+        "disabled": false,
+        "id": "TDI0gkltl8a",
+        "twoFA": false,
+        "username": "10111",
+        "access": {
+          "read": true,
+          "update": true,
+          "externalize": true,
+          "write": true,
+          "delete": true,
+          "manage": true
+        },
+        "sharing": {
+          "userGroups": {},
+          "external": false,
+          "users": {}
+        },
+        "cogsDimensionConstraints": [],
+        "catDimensionConstraints": [],
+        "userRoles": [
+          {
+            "id": "VH8LyIbYArH"
+          },
+          {
+            "id": "zvc691h4SHZ"
+          },
+          {
+            "id": "Q1aVQ92ECEm"
+          },
+          {
+            "id": "kzz8Dl43AEX"
+          },
+          {
+            "id": "brIf10e0Vk2"
+          }
+        ],
+        "previousPasswords": [],
+        "password": "1234567@Ab"
+      },
+      "createdBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "user": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "translations": [],
+      "dataViewOrganisationUnits": [
+        {
+          "id": "ZT0eR3MoPgA"
+        }
+      ],
+      "userGroupAccesses": [],
+      "attributeValues": [],
+      "userGroups": [
+        {
+          "id": "KW0pQrXycHd"
+        },
+        {
+          "id": "OJRj6iaAEwE"
+        }
+      ],
+      "userRoles": [
+        {
+          "id": "VH8LyIbYArH"
+        },
+        {
+          "id": "zvc691h4SHZ"
+        },
+        {
+          "id": "Q1aVQ92ECEm"
+        },
+        {
+          "id": "kzz8Dl43AEX"
+        },
+        {
+          "id": "brIf10e0Vk2"
+        }
+      ],
+      "userAccesses": [],
+      "favorites": [],
+      "cogsDimensionConstraints": [],
+      "catDimensionConstraints": [],
+      "teiSearchOrganisationUnits": [],
+      "organisationUnits": [
+        {
+          "id": "ZT0eR3MoPgA"
+        }
+      ]
+    },
+    {
+      "lastUpdated": "2023-08-02T09:01:17.481",
+      "id": "U5fOEtODbsK",
+      "href": "https://baocao.tkyt.vn/api/users/U5fOEtODbsK",
+      "created": "2019-04-17T15:05:28.116",
+      "lastLogin": "2019-08-14T11:19:50.367",
+      "twoFA": false,
+      "invitation": false,
+      "selfRegistered": false,
+      "firstName": "Huyện Chương Mỹ, TYT Xã Mỹ Lương",
+      "name": "Huyện Chương Mỹ, TYT Xã Mỹ Lương Thành phố Hà Nội",
+      "favorite": false,
+      "displayName": "Huyện Chương Mỹ, TYT Xã Mỹ Lương Thành phố Hà Nội",
+      "externalAuth": false,
+      "externalAccess": false,
+      "surname": "Thành phố Hà Nội",
+      "disabled": false,
+      "passwordLastUpdated": "2023-08-02T09:02:17.550",
+      "username": "10087",
+      "lastUpdatedBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "sharing": {
+        "userGroups": {},
+        "external": false,
+        "users": {}
+      },
+      "access": {
+        "read": true,
+        "update": true,
+        "externalize": true,
+        "write": true,
+        "delete": true,
+        "manage": true
+      },
+      "userCredentials": {
+        "lastLogin": "2019-08-14T11:19:50.367",
+        "passwordLastUpdated": "2023-08-02T09:02:17.550",
+        "invitation": false,
+        "externalAuth": false,
+        "selfRegistered": false,
+        "disabled": false,
+        "id": "U5fOEtODbsK",
+        "twoFA": false,
+        "username": "10087",
+        "access": {
+          "read": true,
+          "update": true,
+          "externalize": true,
+          "write": true,
+          "delete": true,
+          "manage": true
+        },
+        "sharing": {
+          "userGroups": {},
+          "external": false,
+          "users": {}
+        },
+        "cogsDimensionConstraints": [],
+        "catDimensionConstraints": [],
+        "userRoles": [
+          {
+            "id": "VH8LyIbYArH"
+          },
+          {
+            "id": "zvc691h4SHZ"
+          },
+          {
+            "id": "Q1aVQ92ECEm"
+          },
+          {
+            "id": "kzz8Dl43AEX"
+          },
+          {
+            "id": "brIf10e0Vk2"
+          }
+        ],
+        "previousPasswords": [],
+        "password": "1234567@Ab"
+      },
+      "createdBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "user": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "translations": [],
+      "dataViewOrganisationUnits": [
+        {
+          "id": "OAsA025FYTE"
+        }
+      ],
+      "userGroupAccesses": [],
+      "attributeValues": [],
+      "userGroups": [
+        {
+          "id": "KW0pQrXycHd"
+        },
+        {
+          "id": "OJRj6iaAEwE"
+        }
+      ],
+      "userRoles": [
+        {
+          "id": "VH8LyIbYArH"
+        },
+        {
+          "id": "zvc691h4SHZ"
+        },
+        {
+          "id": "Q1aVQ92ECEm"
+        },
+        {
+          "id": "kzz8Dl43AEX"
+        },
+        {
+          "id": "brIf10e0Vk2"
+        }
+      ],
+      "userAccesses": [],
+      "favorites": [],
+      "cogsDimensionConstraints": [],
+      "catDimensionConstraints": [],
+      "teiSearchOrganisationUnits": [],
+      "organisationUnits": [
+        {
+          "id": "OAsA025FYTE"
+        }
+      ]
+    },
+    {
+      "lastUpdated": "2023-08-02T09:01:17.484",
+      "id": "VuGqLrSiiqW",
+      "href": "https://baocao.tkyt.vn/api/users/VuGqLrSiiqW",
+      "created": "2019-04-17T15:05:28.116",
+      "lastLogin": "2019-08-14T11:19:52.411",
+      "twoFA": false,
+      "invitation": false,
+      "selfRegistered": false,
+      "firstName": "Huyện Chương Mỹ, TYT Xã Thụy Hương",
+      "name": "Huyện Chương Mỹ, TYT Xã Thụy Hương Thành phố Hà Nội",
+      "favorite": false,
+      "displayName": "Huyện Chương Mỹ, TYT Xã Thụy Hương Thành phố Hà Nội",
+      "externalAuth": false,
+      "externalAccess": false,
+      "surname": "Thành phố Hà Nội",
+      "disabled": false,
+      "passwordLastUpdated": "2023-08-02T09:02:22.697",
+      "username": "10057",
+      "lastUpdatedBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "sharing": {
+        "userGroups": {},
+        "external": false,
+        "users": {}
+      },
+      "access": {
+        "read": true,
+        "update": true,
+        "externalize": true,
+        "write": true,
+        "delete": true,
+        "manage": true
+      },
+      "userCredentials": {
+        "lastLogin": "2019-08-14T11:19:52.411",
+        "passwordLastUpdated": "2023-08-02T09:02:22.697",
+        "invitation": false,
+        "externalAuth": false,
+        "selfRegistered": false,
+        "disabled": false,
+        "id": "VuGqLrSiiqW",
+        "twoFA": false,
+        "username": "10057",
+        "access": {
+          "read": true,
+          "update": true,
+          "externalize": true,
+          "write": true,
+          "delete": true,
+          "manage": true
+        },
+        "sharing": {
+          "userGroups": {},
+          "external": false,
+          "users": {}
+        },
+        "cogsDimensionConstraints": [],
+        "catDimensionConstraints": [],
+        "userRoles": [
+          {
+            "id": "VH8LyIbYArH"
+          },
+          {
+            "id": "zvc691h4SHZ"
+          },
+          {
+            "id": "Q1aVQ92ECEm"
+          },
+          {
+            "id": "kzz8Dl43AEX"
+          },
+          {
+            "id": "brIf10e0Vk2"
+          }
+        ],
+        "previousPasswords": [],
+        "password": "1234567@Ab"
+      },
+      "createdBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "user": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "translations": [],
+      "dataViewOrganisationUnits": [
+        {
+          "id": "RZwnvg5aK8k"
+        }
+      ],
+      "userGroupAccesses": [],
+      "attributeValues": [],
+      "userGroups": [
+        {
+          "id": "KW0pQrXycHd"
+        },
+        {
+          "id": "OJRj6iaAEwE"
+        }
+      ],
+      "userRoles": [
+        {
+          "id": "VH8LyIbYArH"
+        },
+        {
+          "id": "zvc691h4SHZ"
+        },
+        {
+          "id": "Q1aVQ92ECEm"
+        },
+        {
+          "id": "kzz8Dl43AEX"
+        },
+        {
+          "id": "brIf10e0Vk2"
+        }
+      ],
+      "userAccesses": [],
+      "favorites": [],
+      "cogsDimensionConstraints": [],
+      "catDimensionConstraints": [],
+      "teiSearchOrganisationUnits": [],
+      "organisationUnits": [
+        {
+          "id": "RZwnvg5aK8k"
+        }
+      ]
+    },
+    {
+      "lastUpdated": "2023-08-02T09:01:17.487",
+      "id": "ZbiItiMk7QN",
+      "href": "https://baocao.tkyt.vn/api/users/ZbiItiMk7QN",
+      "created": "2019-04-17T15:05:28.116",
+      "lastLogin": "2019-08-14T11:19:53.598",
+      "twoFA": false,
+      "invitation": false,
+      "selfRegistered": false,
+      "firstName": "Huyện Chương Mỹ, TYT Xã Văn Võ",
+      "name": "Huyện Chương Mỹ, TYT Xã Văn Võ Thành phố Hà Nội",
+      "favorite": false,
+      "displayName": "Huyện Chương Mỹ, TYT Xã Văn Võ Thành phố Hà Nội",
+      "externalAuth": false,
+      "externalAccess": false,
+      "surname": "Thành phố Hà Nội",
+      "disabled": false,
+      "passwordLastUpdated": "2023-08-02T09:02:31.332",
+      "username": "10102",
+      "lastUpdatedBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "sharing": {
+        "userGroups": {},
+        "external": false,
+        "users": {}
+      },
+      "access": {
+        "read": true,
+        "update": true,
+        "externalize": true,
+        "write": true,
+        "delete": true,
+        "manage": true
+      },
+      "userCredentials": {
+        "lastLogin": "2019-08-14T11:19:53.598",
+        "passwordLastUpdated": "2023-08-02T09:02:31.332",
+        "invitation": false,
+        "externalAuth": false,
+        "selfRegistered": false,
+        "disabled": false,
+        "id": "ZbiItiMk7QN",
+        "twoFA": false,
+        "username": "10102",
+        "access": {
+          "read": true,
+          "update": true,
+          "externalize": true,
+          "write": true,
+          "delete": true,
+          "manage": true
+        },
+        "sharing": {
+          "userGroups": {},
+          "external": false,
+          "users": {}
+        },
+        "cogsDimensionConstraints": [],
+        "catDimensionConstraints": [],
+        "userRoles": [
+          {
+            "id": "VH8LyIbYArH"
+          },
+          {
+            "id": "zvc691h4SHZ"
+          },
+          {
+            "id": "Q1aVQ92ECEm"
+          },
+          {
+            "id": "kzz8Dl43AEX"
+          },
+          {
+            "id": "brIf10e0Vk2"
+          }
+        ],
+        "previousPasswords": [],
+        "password": "1234567@Ab"
+      },
+      "createdBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "user": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "translations": [],
+      "dataViewOrganisationUnits": [
+        {
+          "id": "iQANJmqubue"
+        }
+      ],
+      "userGroupAccesses": [],
+      "attributeValues": [],
+      "userGroups": [
+        {
+          "id": "KW0pQrXycHd"
+        },
+        {
+          "id": "OJRj6iaAEwE"
+        }
+      ],
+      "userRoles": [
+        {
+          "id": "VH8LyIbYArH"
+        },
+        {
+          "id": "zvc691h4SHZ"
+        },
+        {
+          "id": "Q1aVQ92ECEm"
+        },
+        {
+          "id": "kzz8Dl43AEX"
+        },
+        {
+          "id": "brIf10e0Vk2"
+        }
+      ],
+      "userAccesses": [],
+      "favorites": [],
+      "cogsDimensionConstraints": [],
+      "catDimensionConstraints": [],
+      "teiSearchOrganisationUnits": [],
+      "organisationUnits": [
+        {
+          "id": "iQANJmqubue"
+        }
+      ]
+    },
+    {
+      "lastUpdated": "2023-08-02T09:01:17.489",
+      "id": "bNZAqwcHMdz",
+      "href": "https://baocao.tkyt.vn/api/users/bNZAqwcHMdz",
+      "created": "2019-04-17T15:05:28.116",
+      "lastLogin": "2019-08-14T11:19:48.180",
+      "twoFA": false,
+      "invitation": false,
+      "selfRegistered": false,
+      "firstName": "Huyện Chương Mỹ, TYT Xã Đồng Lạc",
+      "name": "Huyện Chương Mỹ, TYT Xã Đồng Lạc Thành phố Hà Nội",
+      "favorite": false,
+      "displayName": "Huyện Chương Mỹ, TYT Xã Đồng Lạc Thành phố Hà Nội",
+      "externalAuth": false,
+      "externalAccess": false,
+      "surname": "Thành phố Hà Nội",
+      "disabled": false,
+      "passwordLastUpdated": "2023-08-02T09:02:36.629",
+      "username": "10105",
+      "lastUpdatedBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "sharing": {
+        "userGroups": {},
+        "external": false,
+        "users": {}
+      },
+      "access": {
+        "read": true,
+        "update": true,
+        "externalize": true,
+        "write": true,
+        "delete": true,
+        "manage": true
+      },
+      "userCredentials": {
+        "lastLogin": "2019-08-14T11:19:48.180",
+        "passwordLastUpdated": "2023-08-02T09:02:36.629",
+        "invitation": false,
+        "externalAuth": false,
+        "selfRegistered": false,
+        "disabled": false,
+        "id": "bNZAqwcHMdz",
+        "twoFA": false,
+        "username": "10105",
+        "access": {
+          "read": true,
+          "update": true,
+          "externalize": true,
+          "write": true,
+          "delete": true,
+          "manage": true
+        },
+        "sharing": {
+          "userGroups": {},
+          "external": false,
+          "users": {}
+        },
+        "cogsDimensionConstraints": [],
+        "catDimensionConstraints": [],
+        "userRoles": [
+          {
+            "id": "VH8LyIbYArH"
+          },
+          {
+            "id": "zvc691h4SHZ"
+          },
+          {
+            "id": "Q1aVQ92ECEm"
+          },
+          {
+            "id": "kzz8Dl43AEX"
+          },
+          {
+            "id": "brIf10e0Vk2"
+          }
+        ],
+        "previousPasswords": [],
+        "password": "1234567@Ab"
+      },
+      "createdBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "user": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "translations": [],
+      "dataViewOrganisationUnits": [
+        {
+          "id": "mZJLIJST4O1"
+        }
+      ],
+      "userGroupAccesses": [],
+      "attributeValues": [],
+      "userGroups": [
+        {
+          "id": "KW0pQrXycHd"
+        },
+        {
+          "id": "OJRj6iaAEwE"
+        }
+      ],
+      "userRoles": [
+        {
+          "id": "VH8LyIbYArH"
+        },
+        {
+          "id": "zvc691h4SHZ"
+        },
+        {
+          "id": "Q1aVQ92ECEm"
+        },
+        {
+          "id": "kzz8Dl43AEX"
+        },
+        {
+          "id": "brIf10e0Vk2"
+        }
+      ],
+      "userAccesses": [],
+      "favorites": [],
+      "cogsDimensionConstraints": [],
+      "catDimensionConstraints": [],
+      "teiSearchOrganisationUnits": [],
+      "organisationUnits": [
+        {
+          "id": "mZJLIJST4O1"
+        }
+      ]
+    },
+    {
+      "lastUpdated": "2023-08-02T09:01:17.490",
+      "id": "cdjsoR5eYIs",
+      "href": "https://baocao.tkyt.vn/api/users/cdjsoR5eYIs",
+      "created": "2019-04-17T15:05:28.116",
+      "lastLogin": "2019-08-14T11:19:53.071",
+      "twoFA": false,
+      "invitation": false,
+      "selfRegistered": false,
+      "firstName": "Huyện Chương Mỹ, TYT Xã Tốt Động",
+      "name": "Huyện Chương Mỹ, TYT Xã Tốt Động Thành phố Hà Nội",
+      "favorite": false,
+      "displayName": "Huyện Chương Mỹ, TYT Xã Tốt Động Thành phố Hà Nội",
+      "externalAuth": false,
+      "externalAccess": false,
+      "surname": "Thành phố Hà Nội",
+      "disabled": false,
+      "passwordLastUpdated": "2023-08-02T09:02:39.385",
+      "username": "10060",
+      "lastUpdatedBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "sharing": {
+        "userGroups": {},
+        "external": false,
+        "users": {}
+      },
+      "access": {
+        "read": true,
+        "update": true,
+        "externalize": true,
+        "write": true,
+        "delete": true,
+        "manage": true
+      },
+      "userCredentials": {
+        "lastLogin": "2019-08-14T11:19:53.071",
+        "passwordLastUpdated": "2023-08-02T09:02:39.385",
+        "invitation": false,
+        "externalAuth": false,
+        "selfRegistered": false,
+        "disabled": false,
+        "id": "cdjsoR5eYIs",
+        "twoFA": false,
+        "username": "10060",
+        "access": {
+          "read": true,
+          "update": true,
+          "externalize": true,
+          "write": true,
+          "delete": true,
+          "manage": true
+        },
+        "sharing": {
+          "userGroups": {},
+          "external": false,
+          "users": {}
+        },
+        "cogsDimensionConstraints": [],
+        "catDimensionConstraints": [],
+        "userRoles": [
+          {
+            "id": "VH8LyIbYArH"
+          },
+          {
+            "id": "zvc691h4SHZ"
+          },
+          {
+            "id": "Q1aVQ92ECEm"
+          },
+          {
+            "id": "kzz8Dl43AEX"
+          },
+          {
+            "id": "brIf10e0Vk2"
+          }
+        ],
+        "previousPasswords": [],
+        "password": "1234567@Ab"
+      },
+      "createdBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "user": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "translations": [],
+      "dataViewOrganisationUnits": [
+        {
+          "id": "loq4F7e1P1J"
+        }
+      ],
+      "userGroupAccesses": [],
+      "attributeValues": [],
+      "userGroups": [
+        {
+          "id": "KW0pQrXycHd"
+        },
+        {
+          "id": "OJRj6iaAEwE"
+        }
+      ],
+      "userRoles": [
+        {
+          "id": "VH8LyIbYArH"
+        },
+        {
+          "id": "zvc691h4SHZ"
+        },
+        {
+          "id": "Q1aVQ92ECEm"
+        },
+        {
+          "id": "kzz8Dl43AEX"
+        },
+        {
+          "id": "brIf10e0Vk2"
+        }
+      ],
+      "userAccesses": [],
+      "favorites": [],
+      "cogsDimensionConstraints": [],
+      "catDimensionConstraints": [],
+      "teiSearchOrganisationUnits": [],
+      "organisationUnits": [
+        {
+          "id": "loq4F7e1P1J"
+        }
+      ]
+    },
+    {
+      "lastUpdated": "2023-08-02T09:01:17.491",
+      "id": "d1nobrS94kV",
+      "href": "https://baocao.tkyt.vn/api/users/d1nobrS94kV",
+      "created": "2019-04-17T15:05:28.116",
+      "lastLogin": "2019-12-19T14:51:45.782",
+      "twoFA": false,
+      "invitation": false,
+      "selfRegistered": false,
+      "firstName": "Huyện Chương Mỹ, TYT Xã Hoàng Văn Thụ",
+      "name": "Huyện Chương Mỹ, TYT Xã Hoàng Văn Thụ Thành phố Hà Nội",
+      "favorite": false,
+      "displayName": "Huyện Chương Mỹ, TYT Xã Hoàng Văn Thụ Thành phố Hà Nội",
+      "externalAuth": false,
+      "externalAccess": false,
+      "surname": "Thành phố Hà Nội",
+      "disabled": false,
+      "passwordLastUpdated": "2023-08-02T09:02:40.588",
+      "username": "10075",
+      "lastUpdatedBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "sharing": {
+        "userGroups": {},
+        "external": false,
+        "users": {}
+      },
+      "access": {
+        "read": true,
+        "update": true,
+        "externalize": true,
+        "write": true,
+        "delete": true,
+        "manage": true
+      },
+      "userCredentials": {
+        "lastLogin": "2019-12-19T14:51:45.782",
+        "passwordLastUpdated": "2023-08-02T09:02:40.588",
+        "invitation": false,
+        "externalAuth": false,
+        "selfRegistered": false,
+        "disabled": false,
+        "id": "d1nobrS94kV",
+        "twoFA": false,
+        "username": "10075",
+        "access": {
+          "read": true,
+          "update": true,
+          "externalize": true,
+          "write": true,
+          "delete": true,
+          "manage": true
+        },
+        "sharing": {
+          "userGroups": {},
+          "external": false,
+          "users": {}
+        },
+        "cogsDimensionConstraints": [],
+        "catDimensionConstraints": [],
+        "userRoles": [
+          {
+            "id": "VH8LyIbYArH"
+          },
+          {
+            "id": "zvc691h4SHZ"
+          },
+          {
+            "id": "Q1aVQ92ECEm"
+          },
+          {
+            "id": "kzz8Dl43AEX"
+          },
+          {
+            "id": "brIf10e0Vk2"
+          }
+        ],
+        "previousPasswords": [],
+        "password": "1234567@Ab"
+      },
+      "createdBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "user": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "translations": [],
+      "dataViewOrganisationUnits": [
+        {
+          "id": "KphsjjuHUFX"
+        }
+      ],
+      "userGroupAccesses": [],
+      "attributeValues": [],
+      "userGroups": [
+        {
+          "id": "KW0pQrXycHd"
+        },
+        {
+          "id": "OJRj6iaAEwE"
+        }
+      ],
+      "userRoles": [
+        {
+          "id": "VH8LyIbYArH"
+        },
+        {
+          "id": "zvc691h4SHZ"
+        },
+        {
+          "id": "Q1aVQ92ECEm"
+        },
+        {
+          "id": "kzz8Dl43AEX"
+        },
+        {
+          "id": "brIf10e0Vk2"
+        }
+      ],
+      "userAccesses": [],
+      "favorites": [],
+      "cogsDimensionConstraints": [],
+      "catDimensionConstraints": [],
+      "teiSearchOrganisationUnits": [],
+      "organisationUnits": [
+        {
+          "id": "KphsjjuHUFX"
+        }
+      ]
+    },
+    {
+      "lastUpdated": "2024-08-26T07:00:04.280",
+      "id": "dYapyxmYY6i",
+      "href": "https://baocao.tkyt.vn/api/users/dYapyxmYY6i",
+      "created": "2019-04-10T10:01:58.664",
+      "lastLogin": "2024-08-26T07:00:04.270",
+      "twoFA": false,
+      "invitation": false,
+      "selfRegistered": false,
+      "firstName": "Bệnh viện đa khoa Huyện Chương Mỹ",
+      "name": "Bệnh viện đa khoa Huyện Chương Mỹ Huyện Chương Mỹ",
+      "favorite": false,
+      "displayName": "Bệnh viện đa khoa Huyện Chương Mỹ Huyện Chương Mỹ",
+      "externalAuth": false,
+      "externalAccess": false,
+      "surname": "Huyện Chương Mỹ",
+      "disabled": false,
+      "passwordLastUpdated": "2023-08-24T01:25:47.339",
+      "lastCheckedInterpretations": "2022-11-23T10:00:57.500",
+      "username": "277dkcm",
+      "lastUpdatedBy": {
+        "displayName": "Bệnh viện đa khoa Huyện Chương Mỹ Huyện Chương Mỹ",
+        "name": "Bệnh viện đa khoa Huyện Chương Mỹ Huyện Chương Mỹ",
+        "id": "dYapyxmYY6i",
+        "username": "277dkcm"
+      },
+      "sharing": {
+        "userGroups": {},
+        "external": false,
+        "users": {}
+      },
+      "access": {
+        "read": true,
+        "update": true,
+        "externalize": true,
+        "write": true,
+        "delete": true,
+        "manage": true
+      },
+      "userCredentials": {
+        "lastLogin": "2024-08-26T07:00:04.270",
+        "passwordLastUpdated": "2023-08-24T01:25:47.339",
+        "invitation": false,
+        "externalAuth": false,
+        "selfRegistered": false,
+        "disabled": false,
+        "id": "dYapyxmYY6i",
+        "twoFA": false,
+        "username": "277dkcm",
+        "access": {
+          "read": true,
+          "update": true,
+          "externalize": true,
+          "write": true,
+          "delete": true,
+          "manage": true
+        },
+        "sharing": {
+          "userGroups": {},
+          "external": false,
+          "users": {}
+        },
+        "cogsDimensionConstraints": [],
+        "catDimensionConstraints": [],
+        "userRoles": [
+          {
+            "id": "bxI5urCFEZn"
+          },
+          {
+            "id": "VH8LyIbYArH"
+          },
+          {
+            "id": "zvc691h4SHZ"
+          },
+          {
+            "id": "Q1aVQ92ECEm"
+          },
+          {
+            "id": "m7Ab0zSWIKS"
+          }
+        ],
+        "previousPasswords": [],
+        "password": "1234567@Ab"
+      },
+      "createdBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "user": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "translations": [],
+      "dataViewOrganisationUnits": [
+        {
+          "id": "pZu0UpcC023"
+        }
+      ],
+      "userGroupAccesses": [],
+      "attributeValues": [],
+      "userGroups": [
+        {
+          "id": "bHvahsOkntM"
+        },
+        {
+          "id": "eYmfdwKPuZi"
+        }
+      ],
+      "userRoles": [
+        {
+          "id": "bxI5urCFEZn"
+        },
+        {
+          "id": "VH8LyIbYArH"
+        },
+        {
+          "id": "zvc691h4SHZ"
+        },
+        {
+          "id": "Q1aVQ92ECEm"
+        },
+        {
+          "id": "m7Ab0zSWIKS"
+        }
+      ],
+      "userAccesses": [],
+      "favorites": [],
+      "cogsDimensionConstraints": [],
+      "catDimensionConstraints": [],
+      "teiSearchOrganisationUnits": [],
+      "organisationUnits": [
+        {
+          "id": "Bb5bvvorxzv"
+        }
+      ]
+    },
+    {
+      "lastUpdated": "2023-08-02T09:01:17.493",
+      "id": "faLKO0wCDM7",
+      "href": "https://baocao.tkyt.vn/api/users/faLKO0wCDM7",
+      "created": "2019-04-17T15:05:28.116",
+      "lastLogin": "2019-08-14T11:19:51.049",
+      "twoFA": false,
+      "invitation": false,
+      "selfRegistered": false,
+      "firstName": "Huyện Chương Mỹ, TYT Xã Phụng Châu",
+      "name": "Huyện Chương Mỹ, TYT Xã Phụng Châu Thành phố Hà Nội",
+      "favorite": false,
+      "displayName": "Huyện Chương Mỹ, TYT Xã Phụng Châu Thành phố Hà Nội",
+      "externalAuth": false,
+      "externalAccess": false,
+      "surname": "Thành phố Hà Nội",
+      "disabled": false,
+      "passwordLastUpdated": "2023-08-02T09:02:47.220",
+      "username": "10021",
+      "lastUpdatedBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "sharing": {
+        "userGroups": {},
+        "external": false,
+        "users": {}
+      },
+      "access": {
+        "read": true,
+        "update": true,
+        "externalize": true,
+        "write": true,
+        "delete": true,
+        "manage": true
+      },
+      "userCredentials": {
+        "lastLogin": "2019-08-14T11:19:51.049",
+        "passwordLastUpdated": "2023-08-02T09:02:47.220",
+        "invitation": false,
+        "externalAuth": false,
+        "selfRegistered": false,
+        "disabled": false,
+        "id": "faLKO0wCDM7",
+        "twoFA": false,
+        "username": "10021",
+        "access": {
+          "read": true,
+          "update": true,
+          "externalize": true,
+          "write": true,
+          "delete": true,
+          "manage": true
+        },
+        "sharing": {
+          "userGroups": {},
+          "external": false,
+          "users": {}
+        },
+        "cogsDimensionConstraints": [],
+        "catDimensionConstraints": [],
+        "userRoles": [
+          {
+            "id": "VH8LyIbYArH"
+          },
+          {
+            "id": "zvc691h4SHZ"
+          },
+          {
+            "id": "Q1aVQ92ECEm"
+          },
+          {
+            "id": "kzz8Dl43AEX"
+          },
+          {
+            "id": "brIf10e0Vk2"
+          }
+        ],
+        "previousPasswords": [],
+        "password": "1234567@Ab"
+      },
+      "createdBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "user": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "translations": [],
+      "dataViewOrganisationUnits": [
+        {
+          "id": "rpeLXeeA3QO"
+        }
+      ],
+      "userGroupAccesses": [],
+      "attributeValues": [],
+      "userGroups": [
+        {
+          "id": "KW0pQrXycHd"
+        },
+        {
+          "id": "OJRj6iaAEwE"
+        }
+      ],
+      "userRoles": [
+        {
+          "id": "VH8LyIbYArH"
+        },
+        {
+          "id": "zvc691h4SHZ"
+        },
+        {
+          "id": "Q1aVQ92ECEm"
+        },
+        {
+          "id": "kzz8Dl43AEX"
+        },
+        {
+          "id": "brIf10e0Vk2"
+        }
+      ],
+      "userAccesses": [],
+      "favorites": [],
+      "cogsDimensionConstraints": [],
+      "catDimensionConstraints": [],
+      "teiSearchOrganisationUnits": [],
+      "organisationUnits": [
+        {
+          "id": "rpeLXeeA3QO"
+        }
+      ]
+    },
+    {
+      "lastUpdated": "2023-08-02T09:01:17.494",
+      "id": "g6GBL5oWNMG",
+      "href": "https://baocao.tkyt.vn/api/users/g6GBL5oWNMG",
+      "created": "2019-04-17T15:05:28.116",
+      "lastLogin": "2019-08-14T11:19:47.903",
+      "twoFA": false,
+      "invitation": false,
+      "selfRegistered": false,
+      "firstName": "Huyện Chương Mỹ, TYT Xã Đại Yên",
+      "name": "Huyện Chương Mỹ, TYT Xã Đại Yên Thành phố Hà Nội",
+      "favorite": false,
+      "displayName": "Huyện Chương Mỹ, TYT Xã Đại Yên Thành phố Hà Nội",
+      "externalAuth": false,
+      "externalAccess": false,
+      "surname": "Thành phố Hà Nội",
+      "disabled": false,
+      "passwordLastUpdated": "2023-08-02T09:02:48.389",
+      "lastCheckedInterpretations": "2019-05-29T15:00:38.140",
+      "username": "10054",
+      "lastUpdatedBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "sharing": {
+        "userGroups": {},
+        "external": false,
+        "users": {}
+      },
+      "access": {
+        "read": true,
+        "update": true,
+        "externalize": true,
+        "write": true,
+        "delete": true,
+        "manage": true
+      },
+      "userCredentials": {
+        "lastLogin": "2019-08-14T11:19:47.903",
+        "passwordLastUpdated": "2023-08-02T09:02:48.389",
+        "invitation": false,
+        "externalAuth": false,
+        "selfRegistered": false,
+        "disabled": false,
+        "id": "g6GBL5oWNMG",
+        "twoFA": false,
+        "username": "10054",
+        "access": {
+          "read": true,
+          "update": true,
+          "externalize": true,
+          "write": true,
+          "delete": true,
+          "manage": true
+        },
+        "sharing": {
+          "userGroups": {},
+          "external": false,
+          "users": {}
+        },
+        "cogsDimensionConstraints": [],
+        "catDimensionConstraints": [],
+        "userRoles": [
+          {
+            "id": "VH8LyIbYArH"
+          },
+          {
+            "id": "zvc691h4SHZ"
+          },
+          {
+            "id": "Q1aVQ92ECEm"
+          },
+          {
+            "id": "kzz8Dl43AEX"
+          },
+          {
+            "id": "brIf10e0Vk2"
+          }
+        ],
+        "previousPasswords": [],
+        "password": "1234567@Ab"
+      },
+      "createdBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "user": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "translations": [],
+      "dataViewOrganisationUnits": [
+        {
+          "id": "pWflQr3lM5i"
+        }
+      ],
+      "userGroupAccesses": [],
+      "attributeValues": [],
+      "userGroups": [
+        {
+          "id": "KW0pQrXycHd"
+        },
+        {
+          "id": "OJRj6iaAEwE"
+        }
+      ],
+      "userRoles": [
+        {
+          "id": "VH8LyIbYArH"
+        },
+        {
+          "id": "zvc691h4SHZ"
+        },
+        {
+          "id": "Q1aVQ92ECEm"
+        },
+        {
+          "id": "kzz8Dl43AEX"
+        },
+        {
+          "id": "brIf10e0Vk2"
+        }
+      ],
+      "userAccesses": [],
+      "favorites": [],
+      "cogsDimensionConstraints": [],
+      "catDimensionConstraints": [],
+      "teiSearchOrganisationUnits": [],
+      "organisationUnits": [
+        {
+          "id": "pWflQr3lM5i"
+        }
+      ]
+    },
+    {
+      "lastUpdated": "2023-08-02T09:01:17.494",
+      "id": "gAmIgSQOolr",
+      "href": "https://baocao.tkyt.vn/api/users/gAmIgSQOolr",
+      "created": "2019-04-17T15:05:28.116",
+      "lastLogin": "2019-08-14T11:19:49.248",
+      "twoFA": false,
+      "invitation": false,
+      "selfRegistered": false,
+      "firstName": "Huyện Chương Mỹ, TYT Xã Hoàng Diệu",
+      "name": "Huyện Chương Mỹ, TYT Xã Hoàng Diệu Thành phố Hà Nội",
+      "favorite": false,
+      "displayName": "Huyện Chương Mỹ, TYT Xã Hoàng Diệu Thành phố Hà Nội",
+      "externalAuth": false,
+      "externalAccess": false,
+      "surname": "Thành phố Hà Nội",
+      "disabled": false,
+      "passwordLastUpdated": "2023-08-02T09:02:48.972",
+      "lastCheckedInterpretations": "2019-05-29T15:02:53.022",
+      "username": "10078",
+      "lastUpdatedBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "sharing": {
+        "userGroups": {},
+        "external": false,
+        "users": {}
+      },
+      "access": {
+        "read": true,
+        "update": true,
+        "externalize": true,
+        "write": true,
+        "delete": true,
+        "manage": true
+      },
+      "userCredentials": {
+        "lastLogin": "2019-08-14T11:19:49.248",
+        "passwordLastUpdated": "2023-08-02T09:02:48.972",
+        "invitation": false,
+        "externalAuth": false,
+        "selfRegistered": false,
+        "disabled": false,
+        "id": "gAmIgSQOolr",
+        "twoFA": false,
+        "username": "10078",
+        "access": {
+          "read": true,
+          "update": true,
+          "externalize": true,
+          "write": true,
+          "delete": true,
+          "manage": true
+        },
+        "sharing": {
+          "userGroups": {},
+          "external": false,
+          "users": {}
+        },
+        "cogsDimensionConstraints": [],
+        "catDimensionConstraints": [],
+        "userRoles": [
+          {
+            "id": "VH8LyIbYArH"
+          },
+          {
+            "id": "zvc691h4SHZ"
+          },
+          {
+            "id": "Q1aVQ92ECEm"
+          },
+          {
+            "id": "kzz8Dl43AEX"
+          },
+          {
+            "id": "brIf10e0Vk2"
+          }
+        ],
+        "previousPasswords": [],
+        "password": "1234567@Ab"
+      },
+      "createdBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "user": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "translations": [],
+      "dataViewOrganisationUnits": [
+        {
+          "id": "KUfaAQUI7TJ"
+        }
+      ],
+      "userGroupAccesses": [],
+      "attributeValues": [],
+      "userGroups": [
+        {
+          "id": "KW0pQrXycHd"
+        },
+        {
+          "id": "OJRj6iaAEwE"
+        }
+      ],
+      "userRoles": [
+        {
+          "id": "VH8LyIbYArH"
+        },
+        {
+          "id": "zvc691h4SHZ"
+        },
+        {
+          "id": "Q1aVQ92ECEm"
+        },
+        {
+          "id": "kzz8Dl43AEX"
+        },
+        {
+          "id": "brIf10e0Vk2"
+        }
+      ],
+      "userAccesses": [],
+      "favorites": [],
+      "cogsDimensionConstraints": [],
+      "catDimensionConstraints": [],
+      "teiSearchOrganisationUnits": [],
+      "organisationUnits": [
+        {
+          "id": "KUfaAQUI7TJ"
+        }
+      ]
+    },
+    {
+      "lastUpdated": "2023-08-02T09:01:17.494",
+      "id": "gjpV0KoNsK0",
+      "href": "https://baocao.tkyt.vn/api/users/gjpV0KoNsK0",
+      "created": "2019-04-17T15:05:28.116",
+      "lastLogin": "2019-08-14T11:19:51.938",
+      "twoFA": false,
+      "invitation": false,
+      "selfRegistered": false,
+      "firstName": "Huyện Chương Mỹ, TYT Xã Thanh Bình",
+      "name": "Huyện Chương Mỹ, TYT Xã Thanh Bình Thành phố Hà Nội",
+      "favorite": false,
+      "displayName": "Huyện Chương Mỹ, TYT Xã Thanh Bình Thành phố Hà Nội",
+      "externalAuth": false,
+      "externalAccess": false,
+      "surname": "Thành phố Hà Nội",
+      "disabled": false,
+      "passwordLastUpdated": "2023-08-02T09:02:49.950",
+      "lastCheckedInterpretations": "2019-05-28T10:48:09.895",
+      "username": "10048",
+      "lastUpdatedBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "sharing": {
+        "userGroups": {},
+        "external": false,
+        "users": {}
+      },
+      "access": {
+        "read": true,
+        "update": true,
+        "externalize": true,
+        "write": true,
+        "delete": true,
+        "manage": true
+      },
+      "userCredentials": {
+        "lastLogin": "2019-08-14T11:19:51.938",
+        "passwordLastUpdated": "2023-08-02T09:02:49.950",
+        "invitation": false,
+        "externalAuth": false,
+        "selfRegistered": false,
+        "disabled": false,
+        "id": "gjpV0KoNsK0",
+        "twoFA": false,
+        "username": "10048",
+        "access": {
+          "read": true,
+          "update": true,
+          "externalize": true,
+          "write": true,
+          "delete": true,
+          "manage": true
+        },
+        "sharing": {
+          "userGroups": {},
+          "external": false,
+          "users": {}
+        },
+        "cogsDimensionConstraints": [],
+        "catDimensionConstraints": [],
+        "userRoles": [
+          {
+            "id": "VH8LyIbYArH"
+          },
+          {
+            "id": "zvc691h4SHZ"
+          },
+          {
+            "id": "Q1aVQ92ECEm"
+          },
+          {
+            "id": "kzz8Dl43AEX"
+          },
+          {
+            "id": "brIf10e0Vk2"
+          }
+        ],
+        "previousPasswords": [],
+        "password": "1234567@Ab"
+      },
+      "createdBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "user": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "translations": [],
+      "dataViewOrganisationUnits": [
+        {
+          "id": "zLyfWTDSu8I"
+        }
+      ],
+      "userGroupAccesses": [],
+      "attributeValues": [],
+      "userGroups": [
+        {
+          "id": "KW0pQrXycHd"
+        },
+        {
+          "id": "OJRj6iaAEwE"
+        }
+      ],
+      "userRoles": [
+        {
+          "id": "VH8LyIbYArH"
+        },
+        {
+          "id": "zvc691h4SHZ"
+        },
+        {
+          "id": "Q1aVQ92ECEm"
+        },
+        {
+          "id": "kzz8Dl43AEX"
+        },
+        {
+          "id": "brIf10e0Vk2"
+        }
+      ],
+      "userAccesses": [],
+      "favorites": [],
+      "cogsDimensionConstraints": [],
+      "catDimensionConstraints": [],
+      "teiSearchOrganisationUnits": [],
+      "organisationUnits": [
+        {
+          "id": "zLyfWTDSu8I"
+        }
+      ]
+    },
+    {
+      "lastUpdated": "2024-07-19T08:30:27.567",
+      "id": "hFcsqMPH2k9",
+      "href": "https://baocao.tkyt.vn/api/users/hFcsqMPH2k9",
+      "created": "2019-05-20T14:32:21.079",
+      "lastLogin": "2024-07-19T08:30:27.564",
+      "twoFA": false,
+      "invitation": false,
+      "selfRegistered": false,
+      "firstName": "Huyện Chương Mỹ, PYT",
+      "name": "Huyện Chương Mỹ, PYT Thành phố Hà Nội",
+      "favorite": false,
+      "displayName": "Huyện Chương Mỹ, PYT Thành phố Hà Nội",
+      "externalAuth": false,
+      "externalAccess": false,
+      "surname": "Thành phố Hà Nội",
+      "disabled": false,
+      "passwordLastUpdated": "2023-08-02T09:02:51.320",
+      "username": "277pyt",
+      "lastUpdatedBy": {
+        "displayName": "Huyện Chương Mỹ, PYT Thành phố Hà Nội",
+        "name": "Huyện Chương Mỹ, PYT Thành phố Hà Nội",
+        "id": "hFcsqMPH2k9",
+        "username": "277pyt"
+      },
+      "sharing": {
+        "userGroups": {},
+        "external": false,
+        "users": {}
+      },
+      "access": {
+        "read": true,
+        "update": true,
+        "externalize": true,
+        "write": true,
+        "delete": true,
+        "manage": true
+      },
+      "userCredentials": {
+        "lastLogin": "2024-07-19T08:30:27.564",
+        "passwordLastUpdated": "2023-08-02T09:02:51.320",
+        "invitation": false,
+        "externalAuth": false,
+        "selfRegistered": false,
+        "disabled": false,
+        "id": "hFcsqMPH2k9",
+        "twoFA": false,
+        "username": "277pyt",
+        "access": {
+          "read": true,
+          "update": true,
+          "externalize": true,
+          "write": true,
+          "delete": true,
+          "manage": true
+        },
+        "sharing": {
+          "userGroups": {},
+          "external": false,
+          "users": {}
+        },
+        "cogsDimensionConstraints": [],
+        "catDimensionConstraints": [],
+        "userRoles": [
+          {
+            "id": "bxI5urCFEZn"
+          },
+          {
+            "id": "VH8LyIbYArH"
+          },
+          {
+            "id": "zvc691h4SHZ"
+          },
+          {
+            "id": "Q1aVQ92ECEm"
+          },
+          {
+            "id": "kzz8Dl43AEX"
+          },
+          {
+            "id": "brIf10e0Vk2"
+          }
+        ],
+        "previousPasswords": [],
+        "password": "1234567@Ab"
+      },
+      "createdBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "user": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "translations": [],
+      "dataViewOrganisationUnits": [
+        {
+          "id": "pZu0UpcC023"
+        }
+      ],
+      "userGroupAccesses": [],
+      "attributeValues": [],
+      "userGroups": [
+        {
+          "id": "XV7FQT70xA9"
+        },
+        {
+          "id": "bHvahsOkntM"
+        }
+      ],
+      "userRoles": [
+        {
+          "id": "bxI5urCFEZn"
+        },
+        {
+          "id": "VH8LyIbYArH"
+        },
+        {
+          "id": "zvc691h4SHZ"
+        },
+        {
+          "id": "Q1aVQ92ECEm"
+        },
+        {
+          "id": "kzz8Dl43AEX"
+        },
+        {
+          "id": "brIf10e0Vk2"
+        }
+      ],
+      "userAccesses": [],
+      "favorites": [],
+      "cogsDimensionConstraints": [],
+      "catDimensionConstraints": [],
+      "teiSearchOrganisationUnits": [],
+      "organisationUnits": [
+        {
+          "id": "ESgil0H402K"
+        }
+      ]
+    },
+    {
+      "lastUpdated": "2023-08-02T09:01:17.495",
+      "id": "hm18IvAk3mf",
+      "href": "https://baocao.tkyt.vn/api/users/hm18IvAk3mf",
+      "created": "2019-04-17T15:05:28.116",
+      "lastLogin": "2019-08-14T11:19:50.090",
+      "twoFA": false,
+      "invitation": false,
+      "selfRegistered": false,
+      "firstName": "Huyện Chương Mỹ, TYT Xã Hữu Văn",
+      "name": "Huyện Chương Mỹ, TYT Xã Hữu Văn Thành phố Hà Nội",
+      "favorite": false,
+      "displayName": "Huyện Chương Mỹ, TYT Xã Hữu Văn Thành phố Hà Nội",
+      "externalAuth": false,
+      "externalAccess": false,
+      "surname": "Thành phố Hà Nội",
+      "disabled": false,
+      "passwordLastUpdated": "2023-08-02T09:02:52.682",
+      "username": "10081",
+      "lastUpdatedBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "sharing": {
+        "userGroups": {},
+        "external": false,
+        "users": {}
+      },
+      "access": {
+        "read": true,
+        "update": true,
+        "externalize": true,
+        "write": true,
+        "delete": true,
+        "manage": true
+      },
+      "userCredentials": {
+        "lastLogin": "2019-08-14T11:19:50.090",
+        "passwordLastUpdated": "2023-08-02T09:02:52.682",
+        "invitation": false,
+        "externalAuth": false,
+        "selfRegistered": false,
+        "disabled": false,
+        "id": "hm18IvAk3mf",
+        "twoFA": false,
+        "username": "10081",
+        "access": {
+          "read": true,
+          "update": true,
+          "externalize": true,
+          "write": true,
+          "delete": true,
+          "manage": true
+        },
+        "sharing": {
+          "userGroups": {},
+          "external": false,
+          "users": {}
+        },
+        "cogsDimensionConstraints": [],
+        "catDimensionConstraints": [],
+        "userRoles": [
+          {
+            "id": "VH8LyIbYArH"
+          },
+          {
+            "id": "zvc691h4SHZ"
+          },
+          {
+            "id": "Q1aVQ92ECEm"
+          },
+          {
+            "id": "kzz8Dl43AEX"
+          },
+          {
+            "id": "brIf10e0Vk2"
+          }
+        ],
+        "previousPasswords": [],
+        "password": "1234567@Ab"
+      },
+      "createdBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "user": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "translations": [],
+      "dataViewOrganisationUnits": [
+        {
+          "id": "LF8UJvs2QUI"
+        }
+      ],
+      "userGroupAccesses": [],
+      "attributeValues": [],
+      "userGroups": [
+        {
+          "id": "KW0pQrXycHd"
+        },
+        {
+          "id": "OJRj6iaAEwE"
+        }
+      ],
+      "userRoles": [
+        {
+          "id": "VH8LyIbYArH"
+        },
+        {
+          "id": "zvc691h4SHZ"
+        },
+        {
+          "id": "Q1aVQ92ECEm"
+        },
+        {
+          "id": "kzz8Dl43AEX"
+        },
+        {
+          "id": "brIf10e0Vk2"
+        }
+      ],
+      "userAccesses": [],
+      "favorites": [],
+      "cogsDimensionConstraints": [],
+      "catDimensionConstraints": [],
+      "teiSearchOrganisationUnits": [],
+      "organisationUnits": [
+        {
+          "id": "LF8UJvs2QUI"
+        }
+      ]
+    },
+    {
+      "lastUpdated": "2023-08-02T09:01:17.496",
+      "id": "ihpCrSDuknm",
+      "href": "https://baocao.tkyt.vn/api/users/ihpCrSDuknm",
+      "created": "2019-05-28T14:46:39.308",
+      "lastLogin": "2019-07-18T14:21:43.578",
+      "twoFA": false,
+      "invitation": false,
+      "selfRegistered": false,
+      "firstName": "Huyện Chương Mỹ, PKĐK Xuân Mai",
+      "name": "Huyện Chương Mỹ, PKĐK Xuân Mai Hà Nội",
+      "favorite": false,
+      "displayName": "Huyện Chương Mỹ, PKĐK Xuân Mai Hà Nội",
+      "externalAuth": false,
+      "externalAccess": false,
+      "surname": "Hà Nội",
+      "disabled": false,
+      "passwordLastUpdated": "2023-08-02T09:02:54.257",
+      "username": "277pkxm",
+      "lastUpdatedBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "sharing": {
+        "userGroups": {},
+        "external": false,
+        "users": {}
+      },
+      "access": {
+        "read": true,
+        "update": true,
+        "externalize": true,
+        "write": true,
+        "delete": true,
+        "manage": true
+      },
+      "userCredentials": {
+        "lastLogin": "2019-07-18T14:21:43.578",
+        "passwordLastUpdated": "2023-08-02T09:02:54.257",
+        "invitation": false,
+        "externalAuth": false,
+        "selfRegistered": false,
+        "disabled": false,
+        "id": "ihpCrSDuknm",
+        "twoFA": false,
+        "username": "277pkxm",
+        "access": {
+          "read": true,
+          "update": true,
+          "externalize": true,
+          "write": true,
+          "delete": true,
+          "manage": true
+        },
+        "sharing": {
+          "userGroups": {},
+          "external": false,
+          "users": {}
+        },
+        "cogsDimensionConstraints": [],
+        "catDimensionConstraints": [],
+        "userRoles": [
+          {
+            "id": "bxI5urCFEZn"
+          },
+          {
+            "id": "VH8LyIbYArH"
+          },
+          {
+            "id": "zvc691h4SHZ"
+          },
+          {
+            "id": "Q1aVQ92ECEm"
+          },
+          {
+            "id": "kzz8Dl43AEX"
+          },
+          {
+            "id": "brIf10e0Vk2"
+          }
+        ],
+        "previousPasswords": [],
+        "password": "1234567@Ab"
+      },
+      "createdBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "user": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "translations": [],
+      "dataViewOrganisationUnits": [
+        {
+          "id": "pZu0UpcC023"
+        }
+      ],
+      "userGroupAccesses": [],
+      "attributeValues": [],
+      "userGroups": [
+        {
+          "id": "bHvahsOkntM"
+        },
+        {
+          "id": "bGugQcfKDK7"
+        }
+      ],
+      "userRoles": [
+        {
+          "id": "bxI5urCFEZn"
+        },
+        {
+          "id": "VH8LyIbYArH"
+        },
+        {
+          "id": "zvc691h4SHZ"
+        },
+        {
+          "id": "Q1aVQ92ECEm"
+        },
+        {
+          "id": "kzz8Dl43AEX"
+        },
+        {
+          "id": "brIf10e0Vk2"
+        }
+      ],
+      "userAccesses": [],
+      "favorites": [],
+      "cogsDimensionConstraints": [],
+      "catDimensionConstraints": [],
+      "teiSearchOrganisationUnits": [],
+      "organisationUnits": [
+        {
+          "id": "kraQDSHOPky"
+        }
+      ]
+    },
+    {
+      "lastUpdated": "2023-08-02T09:01:17.497",
+      "id": "jY7yQyFJtir",
+      "href": "https://baocao.tkyt.vn/api/users/jY7yQyFJtir",
+      "created": "2019-05-28T14:46:39.308",
+      "lastLogin": "2019-07-18T14:21:25.009",
+      "twoFA": false,
+      "invitation": false,
+      "selfRegistered": false,
+      "firstName": "Huyện Chương Mỹ, PKĐK Lương Mỹ",
+      "name": "Huyện Chương Mỹ, PKĐK Lương Mỹ Hà Nội",
+      "favorite": false,
+      "displayName": "Huyện Chương Mỹ, PKĐK Lương Mỹ Hà Nội",
+      "externalAuth": false,
+      "externalAccess": false,
+      "surname": "Hà Nội",
+      "disabled": false,
+      "passwordLastUpdated": "2023-08-02T09:02:57.208",
+      "username": "277pklm",
+      "lastUpdatedBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "sharing": {
+        "userGroups": {},
+        "external": false,
+        "users": {}
+      },
+      "access": {
+        "read": true,
+        "update": true,
+        "externalize": true,
+        "write": true,
+        "delete": true,
+        "manage": true
+      },
+      "userCredentials": {
+        "lastLogin": "2019-07-18T14:21:25.009",
+        "passwordLastUpdated": "2023-08-02T09:02:57.208",
+        "invitation": false,
+        "externalAuth": false,
+        "selfRegistered": false,
+        "disabled": false,
+        "id": "jY7yQyFJtir",
+        "twoFA": false,
+        "username": "277pklm",
+        "access": {
+          "read": true,
+          "update": true,
+          "externalize": true,
+          "write": true,
+          "delete": true,
+          "manage": true
+        },
+        "sharing": {
+          "userGroups": {},
+          "external": false,
+          "users": {}
+        },
+        "cogsDimensionConstraints": [],
+        "catDimensionConstraints": [],
+        "userRoles": [
+          {
+            "id": "bxI5urCFEZn"
+          },
+          {
+            "id": "VH8LyIbYArH"
+          },
+          {
+            "id": "zvc691h4SHZ"
+          },
+          {
+            "id": "Q1aVQ92ECEm"
+          },
+          {
+            "id": "kzz8Dl43AEX"
+          },
+          {
+            "id": "brIf10e0Vk2"
+          }
+        ],
+        "previousPasswords": [],
+        "password": "1234567@Ab"
+      },
+      "createdBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "user": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "translations": [],
+      "dataViewOrganisationUnits": [
+        {
+          "id": "pZu0UpcC023"
+        }
+      ],
+      "userGroupAccesses": [],
+      "attributeValues": [],
+      "userGroups": [
+        {
+          "id": "bHvahsOkntM"
+        },
+        {
+          "id": "bGugQcfKDK7"
+        }
+      ],
+      "userRoles": [
+        {
+          "id": "bxI5urCFEZn"
+        },
+        {
+          "id": "VH8LyIbYArH"
+        },
+        {
+          "id": "zvc691h4SHZ"
+        },
+        {
+          "id": "Q1aVQ92ECEm"
+        },
+        {
+          "id": "kzz8Dl43AEX"
+        },
+        {
+          "id": "brIf10e0Vk2"
+        }
+      ],
+      "userAccesses": [],
+      "favorites": [],
+      "cogsDimensionConstraints": [],
+      "catDimensionConstraints": [],
+      "teiSearchOrganisationUnits": [],
+      "organisationUnits": [
+        {
+          "id": "eTRPncFh4X5"
+        }
+      ]
+    },
+    {
+      "lastUpdated": "2023-08-02T09:01:17.499",
+      "id": "l0UQVpFD7jD",
+      "href": "https://baocao.tkyt.vn/api/users/l0UQVpFD7jD",
+      "created": "2019-04-17T15:05:28.116",
+      "lastLogin": "2019-08-14T11:19:52.685",
+      "twoFA": false,
+      "invitation": false,
+      "selfRegistered": false,
+      "firstName": "Huyện Chương Mỹ, TYT Xã Thủy Xuân Tiên",
+      "name": "Huyện Chương Mỹ, TYT Xã Thủy Xuân Tiên Thành phố Hà Nội",
+      "favorite": false,
+      "displayName": "Huyện Chương Mỹ, TYT Xã Thủy Xuân Tiên Thành phố Hà Nội",
+      "externalAuth": false,
+      "externalAccess": false,
+      "surname": "Thành phố Hà Nội",
+      "disabled": false,
+      "passwordLastUpdated": "2023-08-02T09:03:01.919",
+      "lastCheckedInterpretations": "2019-05-28T14:37:17.986",
+      "username": "10045",
+      "lastUpdatedBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "sharing": {
+        "userGroups": {},
+        "external": false,
+        "users": {}
+      },
+      "access": {
+        "read": true,
+        "update": true,
+        "externalize": true,
+        "write": true,
+        "delete": true,
+        "manage": true
+      },
+      "userCredentials": {
+        "lastLogin": "2019-08-14T11:19:52.685",
+        "passwordLastUpdated": "2023-08-02T09:03:01.919",
+        "invitation": false,
+        "externalAuth": false,
+        "selfRegistered": false,
+        "disabled": false,
+        "id": "l0UQVpFD7jD",
+        "twoFA": false,
+        "username": "10045",
+        "access": {
+          "read": true,
+          "update": true,
+          "externalize": true,
+          "write": true,
+          "delete": true,
+          "manage": true
+        },
+        "sharing": {
+          "userGroups": {},
+          "external": false,
+          "users": {}
+        },
+        "cogsDimensionConstraints": [],
+        "catDimensionConstraints": [],
+        "userRoles": [
+          {
+            "id": "VH8LyIbYArH"
+          },
+          {
+            "id": "zvc691h4SHZ"
+          },
+          {
+            "id": "Q1aVQ92ECEm"
+          },
+          {
+            "id": "kzz8Dl43AEX"
+          },
+          {
+            "id": "brIf10e0Vk2"
+          }
+        ],
+        "previousPasswords": [],
+        "password": "1234567@Ab"
+      },
+      "createdBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "user": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "translations": [],
+      "dataViewOrganisationUnits": [
+        {
+          "id": "OoiK6QYK3zG"
+        }
+      ],
+      "userGroupAccesses": [],
+      "attributeValues": [],
+      "userGroups": [
+        {
+          "id": "KW0pQrXycHd"
+        },
+        {
+          "id": "OJRj6iaAEwE"
+        }
+      ],
+      "userRoles": [
+        {
+          "id": "VH8LyIbYArH"
+        },
+        {
+          "id": "zvc691h4SHZ"
+        },
+        {
+          "id": "Q1aVQ92ECEm"
+        },
+        {
+          "id": "kzz8Dl43AEX"
+        },
+        {
+          "id": "brIf10e0Vk2"
+        }
+      ],
+      "userAccesses": [],
+      "favorites": [],
+      "cogsDimensionConstraints": [],
+      "catDimensionConstraints": [],
+      "teiSearchOrganisationUnits": [],
+      "organisationUnits": [
+        {
+          "id": "OoiK6QYK3zG"
+        }
+      ]
+    },
+    {
+      "lastUpdated": "2023-08-02T09:01:17.501",
+      "id": "mmsttCcFeHy",
+      "href": "https://baocao.tkyt.vn/api/users/mmsttCcFeHy",
+      "created": "2019-04-17T15:05:28.116",
+      "lastLogin": "2019-08-14T11:19:50.632",
+      "twoFA": false,
+      "invitation": false,
+      "selfRegistered": false,
+      "firstName": "Huyện Chương Mỹ, TYT Xã Ngọc Hòa",
+      "name": "Huyện Chương Mỹ, TYT Xã Ngọc Hòa Thành phố Hà Nội",
+      "favorite": false,
+      "displayName": "Huyện Chương Mỹ, TYT Xã Ngọc Hòa Thành phố Hà Nội",
+      "externalAuth": false,
+      "externalAccess": false,
+      "surname": "Thành phố Hà Nội",
+      "disabled": false,
+      "passwordLastUpdated": "2023-08-02T09:03:07.433",
+      "username": "10042",
+      "lastUpdatedBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "sharing": {
+        "userGroups": {},
+        "external": false,
+        "users": {}
+      },
+      "access": {
+        "read": true,
+        "update": true,
+        "externalize": true,
+        "write": true,
+        "delete": true,
+        "manage": true
+      },
+      "userCredentials": {
+        "lastLogin": "2019-08-14T11:19:50.632",
+        "passwordLastUpdated": "2023-08-02T09:03:07.433",
+        "invitation": false,
+        "externalAuth": false,
+        "selfRegistered": false,
+        "disabled": false,
+        "id": "mmsttCcFeHy",
+        "twoFA": false,
+        "username": "10042",
+        "access": {
+          "read": true,
+          "update": true,
+          "externalize": true,
+          "write": true,
+          "delete": true,
+          "manage": true
+        },
+        "sharing": {
+          "userGroups": {},
+          "external": false,
+          "users": {}
+        },
+        "cogsDimensionConstraints": [],
+        "catDimensionConstraints": [],
+        "userRoles": [
+          {
+            "id": "VH8LyIbYArH"
+          },
+          {
+            "id": "zvc691h4SHZ"
+          },
+          {
+            "id": "Q1aVQ92ECEm"
+          },
+          {
+            "id": "kzz8Dl43AEX"
+          },
+          {
+            "id": "brIf10e0Vk2"
+          }
+        ],
+        "previousPasswords": [],
+        "password": "1234567@Ab"
+      },
+      "createdBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "user": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "translations": [],
+      "dataViewOrganisationUnits": [
+        {
+          "id": "UO7wE8cnKj7"
+        }
+      ],
+      "userGroupAccesses": [],
+      "attributeValues": [],
+      "userGroups": [
+        {
+          "id": "KW0pQrXycHd"
+        },
+        {
+          "id": "OJRj6iaAEwE"
+        }
+      ],
+      "userRoles": [
+        {
+          "id": "VH8LyIbYArH"
+        },
+        {
+          "id": "zvc691h4SHZ"
+        },
+        {
+          "id": "Q1aVQ92ECEm"
+        },
+        {
+          "id": "kzz8Dl43AEX"
+        },
+        {
+          "id": "brIf10e0Vk2"
+        }
+      ],
+      "userAccesses": [],
+      "favorites": [],
+      "cogsDimensionConstraints": [],
+      "catDimensionConstraints": [],
+      "teiSearchOrganisationUnits": [],
+      "organisationUnits": [
+        {
+          "id": "UO7wE8cnKj7"
+        }
+      ]
+    },
+    {
+      "lastUpdated": "2023-08-02T09:01:17.505",
+      "id": "qwYp2pmbUNH",
+      "href": "https://baocao.tkyt.vn/api/users/qwYp2pmbUNH",
+      "created": "2019-04-17T15:05:28.116",
+      "lastLogin": "2019-08-14T11:19:48.318",
+      "twoFA": false,
+      "invitation": false,
+      "selfRegistered": false,
+      "firstName": "Huyện Chương Mỹ, TYT Xã Đồng Phú",
+      "name": "Huyện Chương Mỹ, TYT Xã Đồng Phú Thành phố Hà Nội",
+      "favorite": false,
+      "displayName": "Huyện Chương Mỹ, TYT Xã Đồng Phú Thành phố Hà Nội",
+      "externalAuth": false,
+      "externalAccess": false,
+      "surname": "Thành phố Hà Nội",
+      "disabled": false,
+      "passwordLastUpdated": "2023-08-02T09:03:18.228",
+      "username": "10096",
+      "lastUpdatedBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "sharing": {
+        "userGroups": {},
+        "external": false,
+        "users": {}
+      },
+      "access": {
+        "read": true,
+        "update": true,
+        "externalize": true,
+        "write": true,
+        "delete": true,
+        "manage": true
+      },
+      "userCredentials": {
+        "lastLogin": "2019-08-14T11:19:48.318",
+        "passwordLastUpdated": "2023-08-02T09:03:18.228",
+        "invitation": false,
+        "externalAuth": false,
+        "selfRegistered": false,
+        "disabled": false,
+        "id": "qwYp2pmbUNH",
+        "twoFA": false,
+        "username": "10096",
+        "access": {
+          "read": true,
+          "update": true,
+          "externalize": true,
+          "write": true,
+          "delete": true,
+          "manage": true
+        },
+        "sharing": {
+          "userGroups": {},
+          "external": false,
+          "users": {}
+        },
+        "cogsDimensionConstraints": [],
+        "catDimensionConstraints": [],
+        "userRoles": [
+          {
+            "id": "VH8LyIbYArH"
+          },
+          {
+            "id": "zvc691h4SHZ"
+          },
+          {
+            "id": "Q1aVQ92ECEm"
+          },
+          {
+            "id": "kzz8Dl43AEX"
+          },
+          {
+            "id": "brIf10e0Vk2"
+          }
+        ],
+        "previousPasswords": [],
+        "password": "1234567@Ab"
+      },
+      "createdBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "user": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "translations": [],
+      "dataViewOrganisationUnits": [
+        {
+          "id": "clUGd7i7FXY"
+        }
+      ],
+      "userGroupAccesses": [],
+      "attributeValues": [],
+      "userGroups": [
+        {
+          "id": "KW0pQrXycHd"
+        },
+        {
+          "id": "OJRj6iaAEwE"
+        }
+      ],
+      "userRoles": [
+        {
+          "id": "VH8LyIbYArH"
+        },
+        {
+          "id": "zvc691h4SHZ"
+        },
+        {
+          "id": "Q1aVQ92ECEm"
+        },
+        {
+          "id": "kzz8Dl43AEX"
+        },
+        {
+          "id": "brIf10e0Vk2"
+        }
+      ],
+      "userAccesses": [],
+      "favorites": [],
+      "cogsDimensionConstraints": [],
+      "catDimensionConstraints": [],
+      "teiSearchOrganisationUnits": [],
+      "organisationUnits": [
+        {
+          "id": "clUGd7i7FXY"
+        }
+      ]
+    },
+    {
+      "lastUpdated": "2023-08-02T09:01:17.505",
+      "id": "rC57g9ct938",
+      "href": "https://baocao.tkyt.vn/api/users/rC57g9ct938",
+      "created": "2019-04-17T15:05:28.116",
+      "lastLogin": "2019-08-14T11:19:51.279",
+      "twoFA": false,
+      "invitation": false,
+      "selfRegistered": false,
+      "firstName": "Huyện Chương Mỹ, TYT Xã Phú Nghĩa",
+      "name": "Huyện Chương Mỹ, TYT Xã Phú Nghĩa Thành phố Hà Nội",
+      "favorite": false,
+      "displayName": "Huyện Chương Mỹ, TYT Xã Phú Nghĩa Thành phố Hà Nội",
+      "externalAuth": false,
+      "externalAccess": false,
+      "surname": "Thành phố Hà Nội",
+      "disabled": false,
+      "passwordLastUpdated": "2023-08-02T09:03:19.433",
+      "username": "10033",
+      "lastUpdatedBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "sharing": {
+        "userGroups": {},
+        "external": false,
+        "users": {}
+      },
+      "access": {
+        "read": true,
+        "update": true,
+        "externalize": true,
+        "write": true,
+        "delete": true,
+        "manage": true
+      },
+      "userCredentials": {
+        "lastLogin": "2019-08-14T11:19:51.279",
+        "passwordLastUpdated": "2023-08-02T09:03:19.433",
+        "invitation": false,
+        "externalAuth": false,
+        "selfRegistered": false,
+        "disabled": false,
+        "id": "rC57g9ct938",
+        "twoFA": false,
+        "username": "10033",
+        "access": {
+          "read": true,
+          "update": true,
+          "externalize": true,
+          "write": true,
+          "delete": true,
+          "manage": true
+        },
+        "sharing": {
+          "userGroups": {},
+          "external": false,
+          "users": {}
+        },
+        "cogsDimensionConstraints": [],
+        "catDimensionConstraints": [],
+        "userRoles": [
+          {
+            "id": "VH8LyIbYArH"
+          },
+          {
+            "id": "zvc691h4SHZ"
+          },
+          {
+            "id": "Q1aVQ92ECEm"
+          },
+          {
+            "id": "kzz8Dl43AEX"
+          },
+          {
+            "id": "brIf10e0Vk2"
+          }
+        ],
+        "previousPasswords": [],
+        "password": "1234567@Ab"
+      },
+      "createdBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "user": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "translations": [],
+      "dataViewOrganisationUnits": [
+        {
+          "id": "kB4oPYbDpgR"
+        }
+      ],
+      "userGroupAccesses": [],
+      "attributeValues": [],
+      "userGroups": [
+        {
+          "id": "KW0pQrXycHd"
+        },
+        {
+          "id": "OJRj6iaAEwE"
+        }
+      ],
+      "userRoles": [
+        {
+          "id": "VH8LyIbYArH"
+        },
+        {
+          "id": "zvc691h4SHZ"
+        },
+        {
+          "id": "Q1aVQ92ECEm"
+        },
+        {
+          "id": "kzz8Dl43AEX"
+        },
+        {
+          "id": "brIf10e0Vk2"
+        }
+      ],
+      "userAccesses": [],
+      "favorites": [],
+      "cogsDimensionConstraints": [],
+      "catDimensionConstraints": [],
+      "teiSearchOrganisationUnits": [],
+      "organisationUnits": [
+        {
+          "id": "kB4oPYbDpgR"
+        }
+      ]
+    },
+    {
+      "lastUpdated": "2023-08-02T09:01:17.512",
+      "id": "xH2ZlxIGRkv",
+      "href": "https://baocao.tkyt.vn/api/users/xH2ZlxIGRkv",
+      "created": "2019-04-17T15:05:28.116",
+      "lastLogin": "2019-08-14T11:19:48.570",
+      "twoFA": false,
+      "invitation": false,
+      "selfRegistered": false,
+      "firstName": "Huyện Chương Mỹ, TYT Xã Đông Phương Yên",
+      "name": "Huyện Chương Mỹ, TYT Xã Đông Phương Yên Thành phố Hà Nội",
+      "favorite": false,
+      "displayName": "Huyện Chương Mỹ, TYT Xã Đông Phương Yên Thành phố Hà Nội",
+      "externalAuth": false,
+      "externalAccess": false,
+      "surname": "Thành phố Hà Nội",
+      "disabled": false,
+      "passwordLastUpdated": "2023-08-02T09:03:37.527",
+      "username": "10030",
+      "lastUpdatedBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "sharing": {
+        "userGroups": {},
+        "external": false,
+        "users": {}
+      },
+      "access": {
+        "read": true,
+        "update": true,
+        "externalize": true,
+        "write": true,
+        "delete": true,
+        "manage": true
+      },
+      "userCredentials": {
+        "lastLogin": "2019-08-14T11:19:48.570",
+        "passwordLastUpdated": "2023-08-02T09:03:37.527",
+        "invitation": false,
+        "externalAuth": false,
+        "selfRegistered": false,
+        "disabled": false,
+        "id": "xH2ZlxIGRkv",
+        "twoFA": false,
+        "username": "10030",
+        "access": {
+          "read": true,
+          "update": true,
+          "externalize": true,
+          "write": true,
+          "delete": true,
+          "manage": true
+        },
+        "sharing": {
+          "userGroups": {},
+          "external": false,
+          "users": {}
+        },
+        "cogsDimensionConstraints": [],
+        "catDimensionConstraints": [],
+        "userRoles": [
+          {
+            "id": "VH8LyIbYArH"
+          },
+          {
+            "id": "zvc691h4SHZ"
+          },
+          {
+            "id": "Q1aVQ92ECEm"
+          },
+          {
+            "id": "kzz8Dl43AEX"
+          },
+          {
+            "id": "brIf10e0Vk2"
+          }
+        ],
+        "previousPasswords": [],
+        "password": "1234567@Ab"
+      },
+      "createdBy": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "user": {
+        "displayName": "Trần Hoàng Anh 00_EHA",
+        "name": "Trần Hoàng Anh 00_EHA",
+        "id": "Iren06i4fx6",
+        "username": "anhth"
+      },
+      "translations": [],
+      "dataViewOrganisationUnits": [
+        {
+          "id": "w72oHg2QUI9"
+        }
+      ],
+      "userGroupAccesses": [],
+      "attributeValues": [],
+      "userGroups": [
+        {
+          "id": "KW0pQrXycHd"
+        },
+        {
+          "id": "OJRj6iaAEwE"
+        }
+      ],
+      "userRoles": [
+        {
+          "id": "VH8LyIbYArH"
+        },
+        {
+          "id": "zvc691h4SHZ"
+        },
+        {
+          "id": "Q1aVQ92ECEm"
+        },
+        {
+          "id": "kzz8Dl43AEX"
+        },
+        {
+          "id": "brIf10e0Vk2"
+        }
+      ],
+      "userAccesses": [],
+      "favorites": [],
+      "cogsDimensionConstraints": [],
+      "catDimensionConstraints": [],
+      "teiSearchOrganisationUnits": [],
+      "organisationUnits": [
+        {
+          "id": "w72oHg2QUI9"
+        }
+      ]
+    }
+  ]
+}

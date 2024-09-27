@@ -1,0 +1,2022 @@
+{
+  "enrollments": [
+    {
+      "storedBy": "494ttyt",
+      "created": "2023-02-09T15:55:37.129",
+      "orgUnit": "EIJvv2oAVKP",
+      "createdAtClient": "2023-02-09T15:55:37.131",
+      "program": "NAleauPZvIE",
+      "trackedEntityInstance": "fje0n7OpBSn",
+      "enrollment": "ndFbpUdTYQI",
+      "lastUpdated": "2024-09-19T12:39:53.167",
+      "trackedEntityType": "EL3fkeMR3xK",
+      "lastUpdatedAtClient": "2024-09-19T12:39:53.167",
+      "orgUnitName": "Phường Hoà Hải",
+      "enrollmentDate": "2021-01-01T00:00:00.000",
+      "deleted": false,
+      "incidentDate": "2023-02-09T00:00:00.000",
+      "status": "ACTIVE",
+      "notes": [],
+      "relationships": [],
+      "attributes": [],
+      "events": [
+        {
+          "storedBy": "494ttyt",
+          "dueDate": "2023-02-09T00:00:00.000",
+          "program": "NAleauPZvIE",
+          "event": "TFfpCoKJMH0",
+          "programStage": "WeA1NcfqeyZ",
+          "orgUnit": "RLpRuh1NKWm",
+          "trackedEntityInstance": "fje0n7OpBSn",
+          "enrollment": "ndFbpUdTYQI",
+          "enrollmentStatus": "ACTIVE",
+          "status": "COMPLETED",
+          "orgUnitName": "TTYT Quận Ngũ Hành Sơn",
+          "eventDate": "2023-02-08T00:00:00.000",
+          "attributeCategoryOptions": "xYerKDKCefk",
+          "lastUpdated": "2024-09-19T12:39:53.232",
+          "created": "2023-02-09T15:55:37.190",
+          "completedDate": "2023-02-09T00:00:00.000",
+          "deleted": false,
+          "attributeOptionCombo": "HllvX50cXC0",
+          "lastUpdatedByUserInfo": {
+            "uid": "XS0QSpYe3nz",
+            "firstName": "Hoang",
+            "surname": "Tran Anh",
+            "username": "anhth"
+          },
+          "createdByUserInfo": {
+            "uid": "AU6KHLoLImS",
+            "firstName": "Quận Ngũ Hành Sơn, TTYT",
+            "surname": "Thành phố Đà Nẵng",
+            "username": "494ttyt"
+          },
+          "dataValues": [
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-02-09T15:56:15.514",
+              "dataElement": "dqT5ZDL27U4",
+              "value": "Coversyl 5mg (5mg) X 30V, Sáng 1 Viên    ( Uống 30 ngày)",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-02-09T15:55:55.144",
+              "dataElement": "iXw1Eq7HqjS",
+              "value": "2",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-02-09T15:56:16.533",
+              "dataElement": "p7yeofZbmFi",
+              "value": "0",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-02-09T15:55:39.315",
+              "dataElement": "Nk8aKZwlkrY",
+              "value": "0",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-02-09T15:56:06.108",
+              "dataElement": "fBj7BCdA665",
+              "value": "1",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-02-09T15:55:39.287",
+              "dataElement": "DyhkspXTTxg",
+              "value": "0",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-02-09T15:56:03.729",
+              "dataElement": "l24NDXKDv94",
+              "value": "1",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-02-09T15:56:16.533",
+              "dataElement": "TdMpebGRK9i",
+              "value": "0",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-02-09T15:55:59.210",
+              "dataElement": "iedBhc5hNku",
+              "value": "168",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-02-09T15:56:02.876",
+              "dataElement": "vig6FKWLnu7",
+              "value": "81",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            }
+          ],
+          "notes": [],
+          "relationships": []
+        },
+        {
+          "storedBy": "494ttyt",
+          "dueDate": "2023-03-30T07:32:21.347",
+          "program": "NAleauPZvIE",
+          "event": "mEHnbe6A1Mg",
+          "programStage": "WeA1NcfqeyZ",
+          "orgUnit": "RLpRuh1NKWm",
+          "trackedEntityInstance": "fje0n7OpBSn",
+          "enrollment": "ndFbpUdTYQI",
+          "enrollmentStatus": "ACTIVE",
+          "status": "COMPLETED",
+          "orgUnitName": "TTYT Quận Ngũ Hành Sơn",
+          "eventDate": "2023-03-30T00:00:00.000",
+          "attributeCategoryOptions": "xYerKDKCefk",
+          "lastUpdated": "2024-09-19T12:39:53.232",
+          "created": "2023-03-30T07:32:01.906",
+          "completedDate": "2023-03-30T00:00:00.000",
+          "deleted": false,
+          "attributeOptionCombo": "HllvX50cXC0",
+          "lastUpdatedByUserInfo": {
+            "uid": "XS0QSpYe3nz",
+            "firstName": "Hoang",
+            "surname": "Tran Anh",
+            "username": "anhth"
+          },
+          "createdByUserInfo": {
+            "uid": "AU6KHLoLImS",
+            "firstName": "Quận Ngũ Hành Sơn, TTYT",
+            "surname": "Thành phố Đà Nẵng",
+            "username": "494ttyt"
+          },
+          "dataValues": [
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-03-30T07:32:19.945",
+              "dataElement": "dqT5ZDL27U4",
+              "value": "Amlodipine Stella 5mg (5mg) VX30V/, Sáng 1 Viên    ( Uống 30 ngày",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-03-30T07:32:06.085",
+              "dataElement": "iXw1Eq7HqjS",
+              "value": "2",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-03-30T07:32:03.999",
+              "dataElement": "p7yeofZbmFi",
+              "value": "0",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-03-30T07:32:04.049",
+              "dataElement": "Nk8aKZwlkrY",
+              "value": "0",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-03-30T07:32:21.345",
+              "dataElement": "DyhkspXTTxg",
+              "value": "0",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-03-30T07:32:21.345",
+              "dataElement": "TdMpebGRK9i",
+              "value": "0",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-03-30T07:32:09.688",
+              "dataElement": "iedBhc5hNku",
+              "value": "169",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-03-30T07:32:13.406",
+              "dataElement": "vig6FKWLnu7",
+              "value": "82",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            }
+          ],
+          "notes": [],
+          "relationships": []
+        },
+        {
+          "storedBy": "494ttyt",
+          "dueDate": "2023-05-10T16:20:59.820",
+          "program": "NAleauPZvIE",
+          "event": "NmvMm0nT9Px",
+          "programStage": "WeA1NcfqeyZ",
+          "orgUnit": "RLpRuh1NKWm",
+          "trackedEntityInstance": "fje0n7OpBSn",
+          "enrollment": "ndFbpUdTYQI",
+          "enrollmentStatus": "ACTIVE",
+          "status": "COMPLETED",
+          "orgUnitName": "TTYT Quận Ngũ Hành Sơn",
+          "eventDate": "2023-05-10T00:00:00.000",
+          "attributeCategoryOptions": "xYerKDKCefk",
+          "lastUpdated": "2024-09-19T12:39:53.232",
+          "created": "2023-05-10T16:20:46.326",
+          "completedDate": "2023-05-10T00:00:00.000",
+          "deleted": false,
+          "attributeOptionCombo": "HllvX50cXC0",
+          "lastUpdatedByUserInfo": {
+            "uid": "XS0QSpYe3nz",
+            "firstName": "Hoang",
+            "surname": "Tran Anh",
+            "username": "anhth"
+          },
+          "createdByUserInfo": {
+            "uid": "AU6KHLoLImS",
+            "firstName": "Quận Ngũ Hành Sơn, TTYT",
+            "surname": "Thành phố Đà Nẵng",
+            "username": "494ttyt"
+          },
+          "dataValues": [
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-05-10T16:20:59.017",
+              "dataElement": "dqT5ZDL27U4",
+              "value": "Troysar AM (5mg + 50mg) X30V , Sáng 1 Viên    ( Uống 30 ngày )",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-05-10T16:20:48.520",
+              "dataElement": "iXw1Eq7HqjS",
+              "value": "2",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-05-10T16:20:46.967",
+              "dataElement": "p7yeofZbmFi",
+              "value": "0",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-05-10T16:20:47.062",
+              "dataElement": "Nk8aKZwlkrY",
+              "value": "0",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-05-10T16:20:59.817",
+              "dataElement": "DyhkspXTTxg",
+              "value": "0",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-05-10T16:20:47.021",
+              "dataElement": "TdMpebGRK9i",
+              "value": "0",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-05-10T16:20:52.802",
+              "dataElement": "iedBhc5hNku",
+              "value": "167",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-05-10T16:20:57.083",
+              "dataElement": "vig6FKWLnu7",
+              "value": "86",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            }
+          ],
+          "notes": [],
+          "relationships": []
+        },
+        {
+          "storedBy": "494ttyt",
+          "dueDate": "2023-07-18T16:40:28.692",
+          "program": "NAleauPZvIE",
+          "event": "aP3R4E0u9g8",
+          "programStage": "WeA1NcfqeyZ",
+          "orgUnit": "RLpRuh1NKWm",
+          "trackedEntityInstance": "fje0n7OpBSn",
+          "enrollment": "ndFbpUdTYQI",
+          "enrollmentStatus": "ACTIVE",
+          "status": "COMPLETED",
+          "orgUnitName": "TTYT Quận Ngũ Hành Sơn",
+          "eventDate": "2023-07-18T00:00:00.000",
+          "attributeCategoryOptions": "xYerKDKCefk",
+          "lastUpdated": "2024-09-19T12:39:53.232",
+          "created": "2023-07-18T16:39:24.180",
+          "completedDate": "2023-07-18T00:00:00.000",
+          "deleted": false,
+          "attributeOptionCombo": "HllvX50cXC0",
+          "lastUpdatedByUserInfo": {
+            "uid": "XS0QSpYe3nz",
+            "firstName": "Hoang",
+            "surname": "Tran Anh",
+            "username": "anhth"
+          },
+          "createdByUserInfo": {
+            "uid": "AU6KHLoLImS",
+            "firstName": "Quận Ngũ Hành Sơn, TTYT",
+            "surname": "Thành phố Đà Nẵng",
+            "username": "494ttyt"
+          },
+          "dataValues": [
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-07-18T16:40:27.978",
+              "dataElement": "dqT5ZDL27U4",
+              "value": "Ebitac 12.5 10mg + 12,5mg  Sáng 1 Viên  (Uống 30)",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-07-18T16:40:19.429",
+              "dataElement": "iXw1Eq7HqjS",
+              "value": "2",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-07-18T16:40:28.690",
+              "dataElement": "p7yeofZbmFi",
+              "value": "0",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-07-18T16:39:24.882",
+              "dataElement": "Nk8aKZwlkrY",
+              "value": "0",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-07-18T16:39:24.789",
+              "dataElement": "DyhkspXTTxg",
+              "value": "0",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-07-18T16:40:28.690",
+              "dataElement": "TdMpebGRK9i",
+              "value": "0",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-07-18T16:40:21.978",
+              "dataElement": "iedBhc5hNku",
+              "value": "162",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-07-18T16:40:25.790",
+              "dataElement": "vig6FKWLnu7",
+              "value": "81",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            }
+          ],
+          "notes": [],
+          "relationships": []
+        },
+        {
+          "storedBy": "494ttyt",
+          "dueDate": "2023-08-22T15:25:04.840",
+          "program": "NAleauPZvIE",
+          "event": "kFY4klE9gDF",
+          "programStage": "WeA1NcfqeyZ",
+          "orgUnit": "RLpRuh1NKWm",
+          "trackedEntityInstance": "fje0n7OpBSn",
+          "enrollment": "ndFbpUdTYQI",
+          "enrollmentStatus": "ACTIVE",
+          "status": "COMPLETED",
+          "orgUnitName": "TTYT Quận Ngũ Hành Sơn",
+          "eventDate": "2023-08-22T00:00:00.000",
+          "attributeCategoryOptions": "xYerKDKCefk",
+          "lastUpdated": "2024-09-19T12:39:53.232",
+          "created": "2023-08-22T15:24:53.669",
+          "completedDate": "2023-08-22T00:00:00.000",
+          "deleted": false,
+          "attributeOptionCombo": "HllvX50cXC0",
+          "lastUpdatedByUserInfo": {
+            "uid": "XS0QSpYe3nz",
+            "firstName": "Hoang",
+            "surname": "Tran Anh",
+            "username": "anhth"
+          },
+          "createdByUserInfo": {
+            "uid": "AU6KHLoLImS",
+            "firstName": "Quận Ngũ Hành Sơn, TTYT",
+            "surname": "Thành phố Đà Nẵng",
+            "username": "494ttyt"
+          },
+          "dataValues": [
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-08-22T15:25:03.521",
+              "dataElement": "dqT5ZDL27U4",
+              "value": "Coversyl 5mg (5mg) X 30V, Sáng 1 Viên    ( Uống 30 ngày)",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-08-22T15:24:55.884",
+              "dataElement": "iXw1Eq7HqjS",
+              "value": "2",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-08-22T15:25:04.837",
+              "dataElement": "p7yeofZbmFi",
+              "value": "0",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-08-22T15:25:04.837",
+              "dataElement": "Nk8aKZwlkrY",
+              "value": "0",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-08-22T15:25:04.837",
+              "dataElement": "DyhkspXTTxg",
+              "value": "0",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-08-22T15:24:54.127",
+              "dataElement": "TdMpebGRK9i",
+              "value": "0",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-08-22T15:24:58.009",
+              "dataElement": "iedBhc5hNku",
+              "value": "168",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2023-08-22T15:24:59.551",
+              "dataElement": "vig6FKWLnu7",
+              "value": "82",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            }
+          ],
+          "notes": [],
+          "relationships": []
+        },
+        {
+          "storedBy": "494ttyt",
+          "dueDate": "2024-01-15T14:40:28.713",
+          "program": "NAleauPZvIE",
+          "event": "VUXOc17r7Vt",
+          "programStage": "WeA1NcfqeyZ",
+          "orgUnit": "RLpRuh1NKWm",
+          "trackedEntityInstance": "fje0n7OpBSn",
+          "enrollment": "ndFbpUdTYQI",
+          "enrollmentStatus": "ACTIVE",
+          "status": "COMPLETED",
+          "orgUnitName": "TTYT Quận Ngũ Hành Sơn",
+          "eventDate": "2023-12-28T00:00:00.000",
+          "attributeCategoryOptions": "xYerKDKCefk",
+          "lastUpdated": "2024-09-19T12:39:53.232",
+          "created": "2024-01-15T14:40:16.748",
+          "completedDate": "2024-01-15T00:00:00.000",
+          "deleted": false,
+          "attributeOptionCombo": "HllvX50cXC0",
+          "lastUpdatedByUserInfo": {
+            "uid": "XS0QSpYe3nz",
+            "firstName": "Hoang",
+            "surname": "Tran Anh",
+            "username": "anhth"
+          },
+          "createdByUserInfo": {
+            "uid": "AU6KHLoLImS",
+            "firstName": "Quận Ngũ Hành Sơn, TTYT",
+            "surname": "Thành phố Đà Nẵng",
+            "username": "494ttyt"
+          },
+          "dataValues": [
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-01-15T14:40:28.021",
+              "dataElement": "dqT5ZDL27U4",
+              "value": "Troysar AM (5mg + 50mg) X30V , Sáng 1 Viên    ( Uống 30 ngày )",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-01-15T14:40:20.148",
+              "dataElement": "iXw1Eq7HqjS",
+              "value": "2",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-01-15T14:40:28.709",
+              "dataElement": "p7yeofZbmFi",
+              "value": "0",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-01-15T14:40:28.709",
+              "dataElement": "Nk8aKZwlkrY",
+              "value": "0",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-01-15T14:40:28.709",
+              "dataElement": "DyhkspXTTxg",
+              "value": "0",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-01-15T14:40:17.320",
+              "dataElement": "TdMpebGRK9i",
+              "value": "0",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-01-15T14:40:23.390",
+              "dataElement": "iedBhc5hNku",
+              "value": "168",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-01-15T14:40:25.730",
+              "dataElement": "vig6FKWLnu7",
+              "value": "84",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            }
+          ],
+          "notes": [],
+          "relationships": []
+        },
+        {
+          "storedBy": "494ttyt",
+          "dueDate": "2024-06-04T16:03:46.040",
+          "program": "NAleauPZvIE",
+          "event": "k5orje5UdTI",
+          "programStage": "WeA1NcfqeyZ",
+          "orgUnit": "RLpRuh1NKWm",
+          "trackedEntityInstance": "fje0n7OpBSn",
+          "enrollment": "ndFbpUdTYQI",
+          "enrollmentStatus": "ACTIVE",
+          "status": "COMPLETED",
+          "orgUnitName": "TTYT Quận Ngũ Hành Sơn",
+          "eventDate": "2024-04-23T00:00:00.000",
+          "attributeCategoryOptions": "xYerKDKCefk",
+          "lastUpdated": "2024-09-19T12:39:53.232",
+          "created": "2024-06-04T16:03:46.040",
+          "completedDate": "2024-06-04T00:00:00.000",
+          "deleted": false,
+          "attributeOptionCombo": "HllvX50cXC0",
+          "lastUpdatedByUserInfo": {
+            "uid": "XS0QSpYe3nz",
+            "firstName": "Hoang",
+            "surname": "Tran Anh",
+            "username": "anhth"
+          },
+          "createdByUserInfo": {
+            "uid": "AU6KHLoLImS",
+            "firstName": "Quận Ngũ Hành Sơn, TTYT",
+            "surname": "Thành phố Đà Nẵng",
+            "username": "494ttyt"
+          },
+          "dataValues": [
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-06-04T16:03:46.033",
+              "dataElement": "dqT5ZDL27U4",
+              "value": "Amlodipin 5mg x 28v/28 ngày",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-06-04T16:03:46.033",
+              "dataElement": "iXw1Eq7HqjS",
+              "value": "2",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-07-23T13:44:11.213",
+              "dataElement": "p7yeofZbmFi",
+              "value": "0",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "loAIPgDQyUg",
+                "firstName": "p2ild",
+                "surname": "dev",
+                "username": "duylp"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-07-23T13:44:11.213",
+              "dataElement": "Nk8aKZwlkrY",
+              "value": "0",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "loAIPgDQyUg",
+                "firstName": "p2ild",
+                "surname": "dev",
+                "username": "duylp"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-07-23T13:44:11.213",
+              "dataElement": "DyhkspXTTxg",
+              "value": "0",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "loAIPgDQyUg",
+                "firstName": "p2ild",
+                "surname": "dev",
+                "username": "duylp"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-07-23T13:44:11.213",
+              "dataElement": "TdMpebGRK9i",
+              "value": "0",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "loAIPgDQyUg",
+                "firstName": "p2ild",
+                "surname": "dev",
+                "username": "duylp"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-06-04T16:03:46.033",
+              "dataElement": "iedBhc5hNku",
+              "value": "153",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-06-04T16:03:46.033",
+              "dataElement": "vig6FKWLnu7",
+              "value": "93",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            }
+          ],
+          "notes": [],
+          "relationships": []
+        },
+        {
+          "storedBy": "494ttyt",
+          "dueDate": "2024-06-26T08:29:24.549",
+          "program": "NAleauPZvIE",
+          "event": "djGl5ce0VzN",
+          "programStage": "WeA1NcfqeyZ",
+          "orgUnit": "RLpRuh1NKWm",
+          "trackedEntityInstance": "fje0n7OpBSn",
+          "enrollment": "ndFbpUdTYQI",
+          "enrollmentStatus": "ACTIVE",
+          "status": "COMPLETED",
+          "orgUnitName": "TTYT Quận Ngũ Hành Sơn",
+          "eventDate": "2024-06-14T00:00:00.000",
+          "attributeCategoryOptions": "xYerKDKCefk",
+          "lastUpdated": "2024-09-19T12:39:53.232",
+          "created": "2024-06-26T08:29:24.549",
+          "completedDate": "2024-06-26T00:00:00.000",
+          "deleted": false,
+          "attributeOptionCombo": "HllvX50cXC0",
+          "lastUpdatedByUserInfo": {
+            "uid": "XS0QSpYe3nz",
+            "firstName": "Hoang",
+            "surname": "Tran Anh",
+            "username": "anhth"
+          },
+          "createdByUserInfo": {
+            "uid": "AU6KHLoLImS",
+            "firstName": "Quận Ngũ Hành Sơn, TTYT",
+            "surname": "Thành phố Đà Nẵng",
+            "username": "494ttyt"
+          },
+          "dataValues": [
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-06-26T08:29:24.538",
+              "dataElement": "dqT5ZDL27U4",
+              "value": "Coversyl 5mg 5mg x30viên/30ngày",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-06-26T08:29:24.538",
+              "dataElement": "iXw1Eq7HqjS",
+              "value": "2",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-07-23T13:44:11.213",
+              "dataElement": "p7yeofZbmFi",
+              "value": "1",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "loAIPgDQyUg",
+                "firstName": "p2ild",
+                "surname": "dev",
+                "username": "duylp"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-07-23T13:44:11.213",
+              "dataElement": "Nk8aKZwlkrY",
+              "value": "0",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "loAIPgDQyUg",
+                "firstName": "p2ild",
+                "surname": "dev",
+                "username": "duylp"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-07-23T13:44:11.213",
+              "dataElement": "DyhkspXTTxg",
+              "value": "0",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "loAIPgDQyUg",
+                "firstName": "p2ild",
+                "surname": "dev",
+                "username": "duylp"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-07-23T13:44:11.213",
+              "dataElement": "TdMpebGRK9i",
+              "value": "1",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "loAIPgDQyUg",
+                "firstName": "p2ild",
+                "surname": "dev",
+                "username": "duylp"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-06-26T08:29:24.538",
+              "dataElement": "iedBhc5hNku",
+              "value": "120",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-06-26T08:29:24.538",
+              "dataElement": "vig6FKWLnu7",
+              "value": "80",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            }
+          ],
+          "notes": [],
+          "relationships": []
+        },
+        {
+          "storedBy": "494ttyt",
+          "dueDate": "2024-08-01T09:33:54.843",
+          "program": "NAleauPZvIE",
+          "event": "fb0PrTBRxwU",
+          "programStage": "WeA1NcfqeyZ",
+          "orgUnit": "RLpRuh1NKWm",
+          "trackedEntityInstance": "fje0n7OpBSn",
+          "enrollment": "ndFbpUdTYQI",
+          "enrollmentStatus": "ACTIVE",
+          "status": "COMPLETED",
+          "orgUnitName": "TTYT Quận Ngũ Hành Sơn",
+          "eventDate": "2024-07-17T00:00:00.000",
+          "attributeCategoryOptions": "xYerKDKCefk",
+          "lastUpdated": "2024-09-19T12:39:53.232",
+          "created": "2024-08-01T09:33:54.843",
+          "completedDate": "2024-08-01T00:00:00.000",
+          "deleted": false,
+          "attributeOptionCombo": "HllvX50cXC0",
+          "lastUpdatedByUserInfo": {
+            "uid": "XS0QSpYe3nz",
+            "firstName": "Hoang",
+            "surname": "Tran Anh",
+            "username": "anhth"
+          },
+          "createdByUserInfo": {
+            "uid": "AU6KHLoLImS",
+            "firstName": "Quận Ngũ Hành Sơn, TTYT",
+            "surname": "Thành phố Đà Nẵng",
+            "username": "494ttyt"
+          },
+          "dataValues": [
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-08-01T09:33:54.837",
+              "dataElement": "oXwh2J3F8ql",
+              "value": "163",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-08-01T09:33:54.837",
+              "dataElement": "dqT5ZDL27U4",
+              "value": "Coversyl 5mg 5mg x30viên/30ngày",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-08-01T09:33:54.837",
+              "dataElement": "iXw1Eq7HqjS",
+              "value": "2",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-09-11T07:59:09.726",
+              "dataElement": "p7yeofZbmFi",
+              "value": "0",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "loAIPgDQyUg",
+                "firstName": "p2ild",
+                "surname": "dev",
+                "username": "duylp"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-09-11T07:59:09.726",
+              "dataElement": "Nk8aKZwlkrY",
+              "value": "0",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "loAIPgDQyUg",
+                "firstName": "p2ild",
+                "surname": "dev",
+                "username": "duylp"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-08-01T09:33:54.837",
+              "dataElement": "G7CZ83GipKS",
+              "value": "74",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-09-11T07:59:09.726",
+              "dataElement": "DyhkspXTTxg",
+              "value": "27.85200797922391",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "loAIPgDQyUg",
+                "firstName": "p2ild",
+                "surname": "dev",
+                "username": "duylp"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-09-11T07:59:09.726",
+              "dataElement": "TdMpebGRK9i",
+              "value": "1",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "loAIPgDQyUg",
+                "firstName": "p2ild",
+                "surname": "dev",
+                "username": "duylp"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-08-01T09:33:54.837",
+              "dataElement": "iedBhc5hNku",
+              "value": "140",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-08-01T09:33:54.837",
+              "dataElement": "vig6FKWLnu7",
+              "value": "80",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            }
+          ],
+          "notes": [],
+          "relationships": []
+        }
+      ]
+    },
+    {
+      "storedBy": "494ttyt",
+      "created": "2024-08-01T10:22:46.262",
+      "orgUnit": "EIJvv2oAVKP",
+      "createdAtClient": "2024-08-01T10:22:46.265",
+      "program": "a7arqsOKzsr",
+      "trackedEntityInstance": "fje0n7OpBSn",
+      "enrollment": "pgVyv1U3oCP",
+      "lastUpdated": "2024-09-19T12:39:53.179",
+      "trackedEntityType": "EL3fkeMR3xK",
+      "lastUpdatedAtClient": "2024-09-19T12:39:53.179",
+      "orgUnitName": "Phường Hoà Hải",
+      "enrollmentDate": "2024-07-18T00:00:00.000",
+      "deleted": false,
+      "incidentDate": "2024-08-01T10:22:46.262",
+      "status": "ACTIVE",
+      "notes": [],
+      "relationships": [],
+      "attributes": [],
+      "events": [
+        {
+          "storedBy": "494ttyt",
+          "dueDate": "2024-08-01T10:22:46.301",
+          "program": "a7arqsOKzsr",
+          "event": "XKXhpOpquge",
+          "programStage": "zb4274oHwSq",
+          "orgUnit": "RLpRuh1NKWm",
+          "trackedEntityInstance": "fje0n7OpBSn",
+          "enrollment": "pgVyv1U3oCP",
+          "enrollmentStatus": "ACTIVE",
+          "status": "ACTIVE",
+          "orgUnitName": "TTYT Quận Ngũ Hành Sơn",
+          "eventDate": "2024-07-18T00:00:00.000",
+          "attributeCategoryOptions": "xYerKDKCefk",
+          "lastUpdated": "2024-09-19T12:39:53.232",
+          "created": "2024-08-01T10:22:46.301",
+          "deleted": false,
+          "attributeOptionCombo": "HllvX50cXC0",
+          "lastUpdatedByUserInfo": {
+            "uid": "XS0QSpYe3nz",
+            "firstName": "Hoang",
+            "surname": "Tran Anh",
+            "username": "anhth"
+          },
+          "createdByUserInfo": {
+            "uid": "AU6KHLoLImS",
+            "firstName": "Quận Ngũ Hành Sơn, TTYT",
+            "surname": "Thành phố Đà Nẵng",
+            "username": "494ttyt"
+          },
+          "dataValues": [
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-08-01T10:22:46.295",
+              "dataElement": "oXwh2J3F8ql",
+              "value": "163",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-08-01T10:22:46.295",
+              "dataElement": "iXw1Eq7HqjS",
+              "value": "0",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-08-01T10:22:46.295",
+              "dataElement": "ZPPVAD13Evr",
+              "value": "100",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-08-01T10:22:46.295",
+              "dataElement": "G7CZ83GipKS",
+              "value": "74",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-08-01T10:22:46.295",
+              "dataElement": "EzaRSAEibBC",
+              "value": "2",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-08-01T10:22:46.295",
+              "dataElement": "iedBhc5hNku",
+              "value": "150",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-08-01T10:22:46.295",
+              "dataElement": "vig6FKWLnu7",
+              "value": "100",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-08-01T10:22:46.295",
+              "dataElement": "ueYR0Cp6V7D",
+              "value": "5.26",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            },
+            {
+              "lastUpdated": "2024-09-19T12:39:53.226",
+              "created": "2024-08-01T10:22:46.295",
+              "dataElement": "kuc11Gzf1Ln",
+              "value": "Melanov-M 80mg + 500mg",
+              "providedElsewhere": false,
+              "createdByUserInfo": {
+                "uid": "AU6KHLoLImS",
+                "firstName": "Quận Ngũ Hành Sơn, TTYT",
+                "surname": "Thành phố Đà Nẵng",
+                "username": "494ttyt"
+              },
+              "lastUpdatedByUserInfo": {
+                "uid": "XS0QSpYe3nz",
+                "firstName": "Hoang",
+                "surname": "Tran Anh",
+                "username": "anhth"
+              }
+            }
+          ],
+          "notes": [],
+          "relationships": []
+        }
+      ]
+    }
+  ]
+}

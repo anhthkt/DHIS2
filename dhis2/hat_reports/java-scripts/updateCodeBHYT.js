@@ -7,9 +7,9 @@ const authentication = {
 };
 
 async function main() {
-    const url1 = 'http://103.124.60.92/baocao'; 
-    const url2 = 'https://baocao.tkyt.vn'; 
-    const orgId = 'pajSJ8hWr1F'; // Đắk Nông
+    const url1 = 'https://baocao.tkyt.vn'; 
+    const url2 = 'https://kln.tkyt.vn'; 
+    const orgId = 'eyKD8PvVOO4'; // Đắk Nông
 
     
     let urlApi1 = `${url1}/api/organisationUnits.json?fields=:owner&paging=false&filter=path:ilike:${orgId}`;

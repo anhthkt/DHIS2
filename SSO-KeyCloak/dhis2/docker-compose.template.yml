@@ -1,0 +1,40 @@
+version: '3.3'
+services:
+ db:
+   container_name: kln_dev_db
+   image: postgis/postgis:13-3.1-alpine
+   command: postgres -c max_locks_per_transaction=100
+   shm_size: 1gb
+   environment:
+     POSTGRES_USER: kln_dev
+     POSTGRES_DB: kln_dev
+     POSTGRES_PASSWORD: kln_dev
+   volumes:
+    #over default script to prevent create default database with POSTGRES_DB and create exists POSTGIS
+     - ./init.sh:/docker-entrypoint-initdb.d/10_postgis.sh
+    #after that create custom shell script
+#     - ./init.sh:/docker-entrypoint-initdb.d/init-database.sh
+    #create new 
+     - ./klnSOS.sql:/docker-entrypoint-initdb.d/init.sql
+     - data:/var/lib/postgresql/data/
+   ports:
+     - "5412:5432"
+volumes:
+    data:
+
+  # web:
+  #    container_name: kln_dev_tc
+  #    image: dhis2.38.3.1
+  #    volumes:
+  #     - ./dhis.conf:/DHIS2_home/dhis.conf
+  #     - DHIS_home:/DHIS2_home 
+  #     - conf:/usr/local/tomcat/conf
+  #     - webapps:/usr/local/tomcat/webapps
+  #    environment:
+  #      - JAVA_OPTS=-Djava.awt.headless=true -XX:+UseG1GC  -Xmx8G -Xms8G -Djava.security.egd=file:/dev/./urandom
+  #    ports:
+  #    - "8547:8080"
+#volumes:
+  #  DHIS_home: 
+  #  conf:
+  #  webapps:
