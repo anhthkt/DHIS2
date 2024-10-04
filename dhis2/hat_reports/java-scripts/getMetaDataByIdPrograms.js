@@ -1,14 +1,14 @@
 const axios = require('axios');
 const Excel = require('exceljs');
 
-const urlBase = `http://dev.tkyt.vn/nhanluc/`;
+const urlBase = `https://baocao.tkyt.vn/`;
 const authentication = {
   username: `anhth`,
   password: `Csdl2018@)!*`
 }
 
 // ID DataSets, Events, Programs
-const arrDataSets = ["GY79aDzNnMZ"];
+const arrDataSets = ["jtc2UxekeS1"];
 const arrEvents = [];
 const arrTrackers = [];
 
@@ -111,91 +111,91 @@ async function getMetaData(arrDataSets, arrEvents, arrTrackers) {
     });
   }
 
-  for (let i = 0; i < arrEvents.length; i++) {
-    let id = arrEvents[i];
-    let url = urlBase + `api/programs.json?filter=id:eq:${id}&fields=id,name,programStages[programStageDataElements[dataElement[id,name,displayName,valueType,categoryCombo[id,name],optionSet[id,name]]]]&paging=false`;
+  // for (let i = 0; i < arrEvents.length; i++) {
+  //   let id = arrEvents[i];
+  //   let url = urlBase + `api/programs.json?filter=id:eq:${id}&fields=id,name,programStages[programStageDataElements[dataElement[id,name,displayName,valueType,categoryCombo[id,name],optionSet[id,name]]]]&paging=false`;
 
-    let response = await axios.get(url, { auth: authentication });
-    let dataSetElements = response.data.programs[0].programStages[0].programStageDataElements;
+  //   let response = await axios.get(url, { auth: authentication });
+  //   let dataSetElements = response.data.programs[0].programStages[0].programStageDataElements;
 
-    wsEvents.addRow({
-      id: response.data.programs[0].id,
-      name: response.data.programs[0].name
-    });
+  //   wsEvents.addRow({
+  //     id: response.data.programs[0].id,
+  //     name: response.data.programs[0].name
+  //   });
 
-    dataSetElements.forEach((element, index) => {
+  //   dataSetElements.forEach((element, index) => {
       
-      let optionSetName = '';
-      if (element.dataElement.optionSet) {
-        optionSetName = element.dataElement.optionSet.name;
-        wsOptionSets.addRow({
-          id: element.dataElement.optionSet.id,
-          name: optionSetName
-        });
-      }
+  //     let optionSetName = '';
+  //     if (element.dataElement.optionSet) {
+  //       optionSetName = element.dataElement.optionSet.name;
+  //       wsOptionSets.addRow({
+  //         id: element.dataElement.optionSet.id,
+  //         name: optionSetName
+  //       });
+  //     }
 
-      let categoryComboName = '';
-      if (element.dataElement.categoryCombo) {
-        categoryComboName = element.dataElement.categoryCombo.name;
-        wsCatagoryOptions.addRow({
-          id: element.dataElement.categoryCombo.id,
-          name: categoryComboName
-        });
-      }
+  //     let categoryComboName = '';
+  //     if (element.dataElement.categoryCombo) {
+  //       categoryComboName = element.dataElement.categoryCombo.name;
+  //       wsCatagoryOptions.addRow({
+  //         id: element.dataElement.categoryCombo.id,
+  //         name: categoryComboName
+  //       });
+  //     }
       
-      wsEvents.addRow({
-        stt: index + 1,
-        id: element.dataElement.id,
-        name: element.dataElement.displayName,
-        valueType: element.dataElement.valueType,
-        optionSet: optionSetName,
-        categoryCombo: categoryComboName
-      });
-    });
-  }
+  //     wsEvents.addRow({
+  //       stt: index + 1,
+  //       id: element.dataElement.id,
+  //       name: element.dataElement.displayName,
+  //       valueType: element.dataElement.valueType,
+  //       optionSet: optionSetName,
+  //       categoryCombo: categoryComboName
+  //     });
+  //   });
+  // }
 
-  for (let i = 0; i < arrTrackers.length; i++) {
-    let id = arrTrackers[i];
-    let url = urlBase + `api/29/programs.json?filter=id:eq:${id}&fields=id,name,programTrackedEntityAttributes[trackedEntityAttribute[id,name,displayName,valueType,aggregationType,optionSet[id,name]]]&paging=false`;
+  // for (let i = 0; i < arrTrackers.length; i++) {
+  //   let id = arrTrackers[i];
+  //   let url = urlBase + `api/29/programs.json?filter=id:eq:${id}&fields=id,name,programTrackedEntityAttributes[trackedEntityAttribute[id,name,displayName,valueType,aggregationType,optionSet[id,name]]]&paging=false`;
 
-    let response = await axios.get(url, { auth: authentication });
-    let trackedEntityAttributes = response.data.programs[0].programTrackedEntityAttributes;
+  //   let response = await axios.get(url, { auth: authentication });
+  //   let trackedEntityAttributes = response.data.programs[0].programTrackedEntityAttributes;
 
-    wsTrackers.addRow({
-      id: response.data.programs[0].id,
-      name: response.data.programs[0].name
-    });
+  //   wsTrackers.addRow({
+  //     id: response.data.programs[0].id,
+  //     name: response.data.programs[0].name
+  //   });
 
-    trackedEntityAttributes.forEach((attribute, index) => {
+  //   trackedEntityAttributes.forEach((attribute, index) => {
       
-      let optionSetName = '';
-      if (attribute.trackedEntityAttribute.optionSet) {
-        optionSetName = attribute.trackedEntityAttribute.optionSet.name;
-        wsOptionSets.addRow({
-          id: attribute.trackedEntityAttribute.optionSet.id,
-          name: optionSetName
-        });
-      }
+  //     let optionSetName = '';
+  //     if (attribute.trackedEntityAttribute.optionSet) {
+  //       optionSetName = attribute.trackedEntityAttribute.optionSet.name;
+  //       wsOptionSets.addRow({
+  //         id: attribute.trackedEntityAttribute.optionSet.id,
+  //         name: optionSetName
+  //       });
+  //     }
 
-      let categoryComboName = '';
-      if (attribute.trackedEntityAttribute.categoryCombo) {
-        categoryComboName = attribute.trackedEntityAttribute.categoryCombo.name;
-        wsCatagoryOptions.addRow({
-          id: attribute.trackedEntityAttribute.categoryCombo.id,
-          name: categoryComboName
-        });
-      }
+  //     let categoryComboName = '';
+  //     if (attribute.trackedEntityAttribute.categoryCombo) {
+  //       categoryComboName = attribute.trackedEntityAttribute.categoryCombo.name;
+  //       wsCatagoryOptions.addRow({
+  //         id: attribute.trackedEntityAttribute.categoryCombo.id,
+  //         name: categoryComboName
+  //       });
+  //     }
       
-      wsTrackers.addRow({
-        stt: index + 1,
-        id: attribute.trackedEntityAttribute.id,
-        name: attribute.trackedEntityAttribute.displayName,
-        valueType: attribute.trackedEntityAttribute.valueType,
-        optionSet: optionSetName,
-        categoryCombo: categoryComboName
-      });
-    });
-  }
+  //     wsTrackers.addRow({
+  //       stt: index + 1,
+  //       id: attribute.trackedEntityAttribute.id,
+  //       name: attribute.trackedEntityAttribute.displayName,
+  //       valueType: attribute.trackedEntityAttribute.valueType,
+  //       optionSet: optionSetName,
+  //       categoryCombo: categoryComboName
+  //     });
+  //   });
+  // }
 
   await workbook.xlsx.writeFile('metaDataByIdPrograms.xlsx');
 
