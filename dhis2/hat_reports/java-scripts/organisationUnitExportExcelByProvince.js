@@ -161,10 +161,10 @@ const orgs = [
     //     "name": "Nam Định",
     //     "id": "tAGHn8IltiO"
       // },
-      {
-        "name": "Nghệ An",
-        "id": "ZJAerHIZ8Ch"
-      },
+      // {
+      //   "name": "Nghệ An",
+      //   "id": "ZJAerHIZ8Ch"
+      // },
     //   {
     //     "name": "Ninh Bình",
     //     "id": "ptFYxVC01Dh"
@@ -189,10 +189,10 @@ const orgs = [
     //     "name": "Quảng Nam",
     //     "id": "W449B0OhNyD"
     //   },
-    //   {
-    //     "name": "Quảng Ngãi",
-    //     "id": "T6PENxhvy8Z"
-    //   },
+      {
+        "name": "Quảng Ngãi",
+        "id": "T6PENxhvy8Z"
+      },
     //   {
     //     "name": "Quảng Ninh",
     //     "id": "LNFIrnLxCxk"
