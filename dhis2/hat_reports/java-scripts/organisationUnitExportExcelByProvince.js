@@ -7,9 +7,9 @@ const fs = require("fs");
 
 dotenv.config()
 //CONSTANT  
-const baseUrl = `http://nhanluc.tkyt.vn`;
+// const baseUrl = `http://nhanluc.tkyt.vn`;
 // const baseUrl = `http://dev.tkyt.vn/nhanluc`;
-// const baseUrl = `https://baocao.tkyt.vn`;
+const baseUrl = `https://baocao.tkyt.vn`;
 // const baseUrl = `http://103.124.60.92/baocao`;
 // const baseUrl = `http://nhanluc.tkyt.vn`;
 const orgs = [
@@ -53,10 +53,10 @@ const orgs = [
     //     "name": "Bắc Kạn",
     //     "id": "X9S3sMrxHkI"
     //   },
-    //   {
-    //     "name": "Bắc Ninh",
-    //     "id": "kxJqRG6smMB"
-    //   },
+      // {
+      //   "name": "Bắc Ninh",
+      //   "id": "kxJqRG6smMB"
+      // },
     //   {
     //     "name": "Bến Tre",
     //     "id": "uf7ebucWAG0"
@@ -149,10 +149,10 @@ const orgs = [
       //   "name": "Lào Cai",
       //   "id": "Loz5sNNUEKt"
       // },
-    //   {
-    //     "name": "Lâm Đồng",
-    //     "id": "EStgnLIUVcQ"
-    //   },
+      // {
+      //   "name": "Lâm Đồng",
+      //   "id": "EStgnLIUVcQ"
+      // },
     //   {
     //     "name": "Lạng Sơn",
     //     "id": "VjdV70J3HnU"
